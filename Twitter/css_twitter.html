@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <style>
+        * {
+            font-family: "Segoe UI", Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            position: relative;
+            height: 2000px;
+            background-color: #E6ECF0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1190px;
+            margin: 0 auto;
+        }
+        .nav {
+            z-index: 99;
+            position: fixed;
+            height: 46px;
+            width: 100%;    
+            top: 0;
+            left: 0;
+            background-color: white;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .box-left {
+            margin-left: 14px;
+            line-height: 46px;
+            float: left;
+        }
+
+        .fab {
+            line-height: 46px;
+            margin-right: 8px;
+            margin-left: 2px;
+            margin-bottom: 1px;
+            color: #1DA1F2;
+            font-size: 20px;
+            float: left;
+
+        }
+
+        .boxA{
+            margin-left: 20px;
+        }
+
+        .navbar-link{
+            line-height: 47px;
+            color: dimgray;
+            font-size: 13px;
+            font-weight: bold;
+            float: left;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+        .navbar-link:first-child{
+            margin-right: 30px;
+            margin-left: -2px;
+        }
+
+        .navbar-link:hover {
+            color: #1DA1F2;
+            transition: 0.5s;
+        }
+
+        .box-right {
+            line-height: 46px;
+            float: right;
+        }
+
+        .fas {
+            margin-bottom: 1px;
+            line-height: 46px;
+            float: right;
+        }
+        .search-box{
+            height: 33px;
+            width: 221px;
+            outline: none;
+            margin: 7px 15px 0 0;
+            background-color: #f5f8fa;
+            border-radius: 20px;
+            border: 1px solid #E6ECF0;
+            transition: all .2s ease-in-out;
+            float: left;
+            font-size: 12px;
+            padding-left: 6px;
+            padding-bottom: 2px;
+        }
+        .search-box:focus{
+            border-color: #1293C4;
+        }
+
+        .search-box::placeholder{ 
+            color: #657786;
+        }
+
+        .search-box:focus::placeholder{
+            color: #A2ADB6;
+        }
+        .boxB-1{
+            margin-right: 30px;
+            line-height: 46px;
+            color: dimgray;
+            font-size: 13px;
+            font-weight: bold;
+            float: right;
+        }
+        .boxB-2{
+            margin-top: 1px; 
+            margin-right: 5px;
+            line-height: 46px;
+            color: dimgray;
+            font-size: 12px;
+            float: right;
+        }
+        .navbar2{
+            position: sticky;
+            top: 60px;
+            background-color: white;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+        }
+        .navbar2-link{
+            height: 60px;
+            float: left;
+            text-align: center;
+            padding: 8px 14px;
+            text-decoration: none;
+            font-size: 12px;
+            letter-spacing: .02em;
+            font-weight: bold;
+            color: rgb(102, 117, 127);
+            border: 1px solid white;
+            transition: 0.3s;
+        }
+        .navbar2-link:hover{
+            transition:  0.15s ease-in-out;
+            border-bottom: 2px solid #1293C4;
+        }
+        .boxC{
+            float: left;
+        }
+        .boxC-1{
+            height: 200px;
+            width: 200px;
+            overflow: hidden;
+            border: 5px solid white;
+            border-radius: 50%;
+            background-image: url("dog.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: -127px;
+            margin-left: 11px;
+            float: left;
+        }
+        .boxC-2{
+            margin-left: 300px;
+
+        }
+        .boxD{
+            height: 34px;
+            width: 105px;
+            border: 1px solid#1293C4;
+            border-radius: 25px;
+            float: right;
+            margin: 13px 0;
+            cursor: pointer;
+        }
+
+        .boxD:hover{
+            
+        }
+        .navbar3-link{
+            color: dimgray;
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: none;
+
+        }
+        .word{
+            line-height: 33px;
+            color: #1293C4;
+            font-size: 14px;
+            font-weight: bold;
+            padding-left: 30px;
+        }
+
+        .imgA{
+            height: 550px;
+            background-image: url("dog3.jpg");
+            background-size:  cover;
+            background-repeat: no-repeat;
+            background-position: 0 center;
+        }
+        .boxC-1 a{
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        .word2{
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="box-left">
+                <i class="fab fa-twitter"></i>
+                <a href="#">
+                    <span class="navbar-link">Home</span>
+                </a>
+                <a href="#">
+                    <span class="navbar-link boxA">About</span>
+                </a>
+            </div>
+            <div class="box-right">
+                <span class="boxB-1">
+                    <i class="fas fa-sort-down"></i>Log In</span>
+                <span class="boxB-2">Have an account?</span>
+                <input class="search-box" type="text" placeholder="Search Twitter">
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </nav>
+    <div class="imgA"></div>
+    <nav class="navbar2">
+        <div class="container">
+            <div class="boxC">
+                <div class="boxC-1"></div>
+                <div class="boxC-2">
+                    <a href="#" class="navbar2-link">Tweets<br><span class="word2">1,323</span>
+                    </a>
+                    <a href="#" class="navbar2-link">Following<br><span class="word2">177</span>
+                    </a>
+                    <a href="#" class="navbar2-link">Followers<br><span class="word2">40.3K</span>
+                    </a>
+                    <a href="#" class="navbar2-link">Likes<br><span class="word2">1,788</span>
+                    </a>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="boxD">
+                <span class="word">Follow</span>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </nav>
+</body>
+
+</html>
