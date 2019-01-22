@@ -1,0 +1,430 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Noto Serif TC', serif;
+}
+
+body{
+    margin: 0;
+    width: calc(100vw - 17px);
+    max-width: 1920px;
+
+}
+
+#navbtn{
+    display: block;
+    position: absolute;
+    height: 9px;
+    width: 50%;
+    background: #d3531a;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.main{
+    width: calc(100vw - 17px);
+    max-width: 1920px;
+    height: 100vh;
+    max-height: 1080px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main .logo{
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url("/img/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(0px 0px 10px black);
+}
+
+.idea{
+    width: calc(100vw - 17px);
+    max-width: 1920px;
+    height: 133vh;
+    position: relative;
+}
+
+
+.idea .img1{
+    width: 100%;
+    height: 137%;
+    background-image: url("/img/coffeeimg-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: -445px;
+    top: 15px;
+    z-index: -1;
+    
+}
+
+.idea .hide{
+    width: 50%;
+    height: 73%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    
+}
+
+.idea .hide .img2{
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/coffeebeans-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: -180px;
+    top: 0;
+    z-index: -1;
+}
+
+.idea .img3{
+    width: 30%;
+    height: 30%;
+    background-image: url("/img/coffeebeans-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 315px;
+    top: 1060px;
+    z-index: -1;
+}
+
+
+.idea .intro{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(165, 14, 14);
+    margin-top: 10px;
+}
+
+.idea .intro h1{
+    margin: 0;
+    font-size: 60px;
+    font-weight: bold;
+    
+}
+
+.idea .intro div{
+    border-top-style: solid;
+    border-top-color: rgb(165, 14, 14);
+    border-top-width: 1px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.idea .intro span{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+.idea .intro2{
+    width: 30%;
+    margin: 0 auto;
+    text-align: left;
+    color: rgb(66, 66, 66);
+    margin-top: 440px;
+
+}
+
+.idea .intro2 span{
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.product{
+    width: calc(100vw - 17px);
+    max-width: 1920px;
+    height: 100vh;
+    max-height: 1080px;
+    overflow: hidden;
+}
+
+.product .secition1{
+    width: 110%;
+    height: 70vh;
+    transform: rotate(-8deg) translateX(-5%) translateY(19%);
+    display: flex;
+    overflow: hidden;
+    background-color: black;
+}
+
+.product .secition1 div:nth-child(1){
+    width: calc(100vw / 6);
+    height: 100%;
+    background-image: url("/img/product-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(8deg) translateX(-6%) translateY(23%); 
+
+}
+
+.product .secition1 div:nth-child(2){
+    width: calc(100vw / 6);
+    height: 100%;
+    background-image: url("/img/product-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(8deg) translateX(-6%) translateY(23%); 
+
+}
+
+.product .secition1 div:nth-child(3){
+    width: calc(100vw / 6);
+    height: 100%;
+    background-image: url("/img/product-3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(8deg) translateX(-6%) translateY(23%); 
+
+}
+
+.product .secition1 div:nth-child(4){
+    width: calc(100vw / 6);
+    height: 100%;
+    background-image: url("/img/product-4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(8deg) translateX(-6%) translateY(23%); 
+}
+
+.product .secition1 div:nth-child(5){
+    width: calc(100vw / 6);
+    height: 100%;
+    background-image: url("/img/product-5.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(8deg) translateX(-6%) translateY(23%); 
+}
+
+.product .secition1 div:nth-child(6){
+    width: calc(100vw / 6);
+    height: 100%;
+    background-image: url("/img/product-6.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(8deg) translateX(-6%) translateY(23%); 
+}
+
+.idea2{
+    width: calc(100vw - 17px);
+    max-width: 1920px;
+    height: 55vh;
+    position: relative;
+}
+
+.idea2 .img4{
+    width: 60%;
+    height: 120%;
+    background-image: url("/img/coffeebeans-3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 60px;
+    top: -135px;
+    z-index: -2;
+    
+}
+
+.idea2 .img5{
+    width: 50%;
+    height: 195%;
+    background-image: url("/img/coffeeimg-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 835px;
+    top: -615px;
+    z-index: -2;
+}
+
+.idea2 .intro3{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 95px;
+    color: black;
+    text-align: center;
+}
+
+.idea2 .intro3 span{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.idea2 .intro3 h2{
+    margin: 0;
+    display: inline;
+    font-size: 48px;
+    font-weight: 600;
+    color: red;
+}
+
+.idea2 .intro3 h1{
+    margin: 0;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.shop{
+    width: calc(100vw - 17px);
+    max-width: 1920px;
+    height: 100vh;
+    max-height: 1080px;
+    overflow: hidden;
+}
+
+.shop .secition2{
+    width: 110%;
+    height: 70vh;
+    background-color: bisque;
+    transform: rotate(8deg) translateX(-5%) translateY(23%);
+}
+
+.map{
+    width: calc(100vw - 17px);
+    max-width: 1920px;
+    height: 55vh;
+    position: relative;
+}
+
+.map .world{
+    width: 100%;
+    height: 185%;
+    background-image: url("/img/map-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0px;
+    top: -210px;
+    z-index: -1;
+}
+
+.map .big-logo{
+    width: 60%;
+    height: 80%;
+    background-image: url("/img/logo-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    padding-top: 640px;
+}
+
+.footer{
+    width: calc(100vw - 17px);
+    max-width: 1920px;
+    height: 200vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.footer .secition3{
+    width: 110%;
+    height: 130vh;
+    background-color: bisque;
+    transform: rotate(8deg) translateX(-5%) translateY(23%);
+    overflow: hidden;
+}
+
+.footer .secition3 .history{
+    width: 70%;
+    height: 103%;
+    background-image: url("/img/coffeeimg-3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 95px;
+    top: -215px;
+    transform: rotate(-8deg);
+}
+
+.footer .secition4{
+    width: 110%;
+    height: 120vh;
+    background-color: white;
+    transform: rotate(-8deg) translateX(-4%) translateY(-2%);
+    overflow: hidden;
+}
+
+.footer .secition4 .mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+
+}
+
+.footer .secition4 .mask .foo-logo{
+    width: 30%;
+    height: 30%;
+    background-image: url("/img/logo-3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: rotate(8deg) translate(-55%,-100%);
+    z-index: -1;
+}
+
+.footer .secition4 .mask .contact{
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: rotate(8deg) translate(-61%,-82%);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer .secition4 .mask .contact div{
+    width: 100%;
+    height: 187px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.footer .secition4 .mask .contact div h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.footer .secition4 .mask .contact div h2{
+    margin: 0;
+}
+
+.footer .secition4 .mask .contact div span{
+    font-size: 24px;
+    font-weight: 600;
+}
