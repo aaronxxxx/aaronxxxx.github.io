@@ -37,7 +37,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-image: url("/CSS/img/logo.png");
+    background-image: url("img/logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -55,7 +55,7 @@ body{
 .idea .img1{
     width: 100%;
     height: 137%;
-    background-image: url("/CSS/img/coffeeimg-1.png");
+    background-image: url("img/coffeeimg-1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -79,7 +79,7 @@ body{
 .idea .hide .img2{
     width: 100%;
     height: 100%;
-    background-image: url("/CSS/img/coffeebeans-1.png");
+    background-image: url("img/coffeebeans-1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -92,7 +92,7 @@ body{
 .idea .img3{
     width: 30%;
     height: 30%;
-    background-image: url("/CSS/img/coffeebeans-2.png");
+    background-image: url("img/coffeebeans-2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -166,7 +166,7 @@ body{
 .product .secition1 div:nth-child(1){
     width: calc(100vw / 6);
     height: 100%;
-    background-image: url("/CSS/img/product-1.png");
+    background-image: url("img/product-1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -177,7 +177,7 @@ body{
 .product .secition1 div:nth-child(2){
     width: calc(100vw / 6);
     height: 100%;
-    background-image: url("/CSS/img/product-2.png");
+    background-image: url("img/product-2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -188,7 +188,7 @@ body{
 .product .secition1 div:nth-child(3){
     width: calc(100vw / 6);
     height: 100%;
-    background-image: url("/CSS/img/product-3.png");
+    background-image: url("img/product-3.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -199,7 +199,7 @@ body{
 .product .secition1 div:nth-child(4){
     width: calc(100vw / 6);
     height: 100%;
-    background-image: url("/CSS/img/product-4.png");
+    background-image: url("img/product-4.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -209,7 +209,7 @@ body{
 .product .secition1 div:nth-child(5){
     width: calc(100vw / 6);
     height: 100%;
-    background-image: url("/CSS/img/product-5.png");
+    background-image: url("img/product-5.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -219,7 +219,7 @@ body{
 .product .secition1 div:nth-child(6){
     width: calc(100vw / 6);
     height: 100%;
-    background-image: url("/CSS/img/product-6.png");
+    background-image: url("img/product-6.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -236,7 +236,7 @@ body{
 .idea2 .img4{
     width: 60%;
     height: 120%;
-    background-image: url("/CSS/img/coffeebeans-3.png");
+    background-image: url("img/coffeebeans-3.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -250,7 +250,7 @@ body{
 .idea2 .img5{
     width: 50%;
     height: 195%;
-    background-image: url("/CSS/img/coffeeimg-2.png");
+    background-image: url("img/coffeeimg-2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -312,7 +312,7 @@ body{
 .map .world{
     width: 100%;
     height: 185%;
-    background-image: url("/CSS/img/map-1.png");
+    background-image: url("img/map-1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -325,7 +325,7 @@ body{
 .map .big-logo{
     width: 60%;
     height: 80%;
-    background-image: url("/CSS/img/logo-2.png");
+    background-image: url("img/logo-2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -352,7 +352,7 @@ body{
 .footer .secition3 .history{
     width: 70%;
     height: 103%;
-    background-image: url("/CSS/img/coffeeimg-3.png");
+    background-image: url("img/coffeeimg-3.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -381,7 +381,7 @@ body{
 .footer .secition4 .mask .foo-logo{
     width: 30%;
     height: 30%;
-    background-image: url("/CSS/img/logo-3.png");
+    background-image: url("img/logo-3.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
