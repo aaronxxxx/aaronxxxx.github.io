@@ -1,0 +1,482 @@
+body{
+    position: relative;
+}
+
+#bag {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    filter: blur(5px);
+    animation: box-hide 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+#bag.show {
+    opacity: 1;
+    filter: blur(0px);
+    animation: box-filter 0.5s;
+    background-color: #242424;
+    
+}
+
+
+
+@keyframes box-hide {
+    0% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+    100% {
+        opacity: 0;
+        filter: blur(5px);
+    }
+}
+
+@keyframes box-filter {
+    0% {
+        opacity: 0;
+        filter: blur(5px)
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0px)
+    }
+}
+
+#menubtn {
+    position: fixed;
+    top: 32px;
+    right: 267px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1%;
+    overflow: hidden;
+    z-index: 53;
+}
+
+#menubtn:before {
+     content: " ";
+     display: block;
+     padding-top: 100%;
+}
+  
+#hamburger {
+    width: 40px;
+    cursor: pointer;
+}
+  
+#hamburger span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: black;
+    margin-bottom: 8px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+  
+#hamburger.active span:nth-child(1) {
+    
+    transform: translateY(12px) rotate(45deg);
+    background-color: black;
+}
+
+#hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburger.active span:nth-child(3) {
+    
+    transform: translateY(-12px) rotate(-45deg);
+    background-color: black;
+}
+
+#nav-inner{
+    width: calc(100vw - 17px);
+    height: 100vh;
+    background-color: white;
+    top: -2500px;
+    transition: cubic-bezier(0.34, 0.08, 0.44, 0.82) 2.5s;
+    z-index: 52;
+    position: fixed;
+    padding: 90px 140px;
+
+    
+}
+
+#nav-inner.show{
+    top: 0;
+    transition:  cubic-bezier(0.34, 0.08, 0.44, 0.82) 1.5s;
+
+
+}
+
+#nav-inner .big-box{
+    float: left;
+}
+
+#nav-inner .big-box h1{
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    letter-spacing: 14px;
+}
+
+#nav-inner .big-box span{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    
+}
+
+#nav-inner .inner-title{
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+
+#nav-inner .inner-title .text{
+    writing-mode: vertical-rl;
+    text-align: center;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    margin:0 26px;
+}
+
+#nav-inner .inner-title .text hr{
+    width: 20px;
+    border: 1px solid black;
+    margin:0 15px;
+    margin-bottom: 37px;
+}
+
+#nav-inner .inner-title .text h1{
+    margin: 0;
+    font-size: 28px;
+    margin-bottom: 37px;
+    line-height: 52px;
+    letter-spacing: 21px;
+}
+
+#nav-inner .inner-title .text span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 5px;
+     
+}
+
+#nav-inner .logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #808080;
+    float: right;
+}
+
+#nav-inner .box{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+#nav-inner .box h1{
+    margin: 0; 
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 10px;
+}
+
+#nav-inner .box hr{
+    width: 90px;
+    border: 1px solid black;
+}
+
+#nav-inner .box span{   
+    font-size: 6px;
+    font-weight: 500;
+    letter-spacing: 0px;
+}
+
+.main.show{
+    color: white;
+}
+
+.main #big-box{
+    position: fixed;
+    z-index: 2;
+    top: 105px;
+    left: 145px;
+}
+
+
+.main #big-box h1{
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    letter-spacing: 14px;
+}
+
+.main #big-box span{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    
+}
+
+.main #big-box.show{
+    color: white;
+}
+
+.main #box{
+    position: fixed;
+    z-index: 2;
+    top: 285px;
+    left: 145px;
+}
+
+
+.main #box h1{
+    margin: 0; 
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    margin-bottom: 7px;
+}
+
+.main #box span{   
+    font-size: 6px;
+    font-weight: 500;
+    letter-spacing: 0px;
+}
+
+.main #box.show{
+    color: white;
+}
+
+.main .title{
+    width: calc(100vw - 457px);
+    float: right;
+    margin-top: 250px;
+    position: relative;
+    z-index: 3;
+}
+
+.main .title div{
+    border-top-style: solid;
+    border-top-color: black;
+    border-width: 1px;
+    height: 159px;
+    
+}
+
+.main .title div.show{
+    color: white;
+    border-top-style: solid;
+    border-top-color: white;
+    border-width: 1px;
+    text-shadow: 20px 5px 40px rgb(130, 63, 255),0px 5px 40px rgb(255, 0, 85),-20px 5px 40px rgb(228, 77, 31);
+    opacity: 0.8;
+}
+
+
+.main .title div span{
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    float: left;
+    margin-top: 40px;
+}
+
+.main .title div h1{
+    font-size: 97px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 400px;
+    
+}
+
+.swiper-container {
+    height: 360px;
+    max-width: calc(100vw - 17px);
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    filter: blur(10px);
+    animation: hide 0.5s;
+    opacity: 0;
+    z-index: 1;
+
+}
+
+#swiper1.show {
+    opacity: 1;
+    filter: blur(0px);
+    animation: filter 0.5s;
+}
+
+#swiper2.show {
+    opacity: 1;
+    filter: blur(0px);
+    animation: filter 0.5s;
+}
+
+#swiper3.show {
+    opacity: 1;
+    filter: blur(0px);
+    animation: filter 0.5s;
+}
+
+#swiper4.show {
+    opacity: 1;
+    filter: blur(0px);
+    animation: filter 0.5s;
+}
+
+#swiper5.show {
+    opacity: 1;
+    filter: blur(0px);
+    animation: filter 0.5s;
+}
+
+#swiper6.show {
+    opacity: 1;
+    filter: blur(0px);
+    animation: filter 0.5s;
+}
+
+#swiper7.show {
+    opacity: 1;
+    filter: blur(0px);
+    animation: filter 0.5s;
+}
+
+#swiper8.show {
+    opacity: 1;
+    filter: blur(0px);
+    animation: filter 0.5s;
+}
+
+#swiper9.show {
+    opacity: 1;
+    filter: blur(0px);
+    animation: filter 0.5s;
+}
+
+#swiper10.show {
+    opacity: 1;
+    filter: blur(0px);
+    animation: filter 0.5s;
+}
+
+#swiper11.show {
+    opacity: 1;
+    filter: blur(0px);
+    animation: filter 0.5s;
+}
+
+#swiper12.show {
+    opacity: 1;
+    filter: blur(0px);
+    animation: filter 0.5s;
+}
+
+#swiper13.show {
+    opacity: 1;
+    filter: blur(0px);
+    animation: filter 0.5s;
+}
+
+#swiper14.show {
+    opacity: 1;
+    filter: blur(0px);
+    animation: filter 0.5s;
+}
+
+#swiper15.show {
+    opacity: 1;
+    filter: blur(0px);
+    animation: filter 0.5s;
+}
+
+#swiper16.show {
+    opacity: 1;
+    filter: blur(0px);
+    animation: filter 0.5s;
+}
+
+#swiper17.show {
+    opacity: 1;
+    filter: blur(0px);
+    animation: filter 0.5s;
+}
+
+#swiper18.show {
+    opacity: 1;
+    filter: blur(0px);
+    animation: filter 0.5s;
+}
+
+#swiper19.show {
+    opacity: 1;
+    filter: blur(0px);
+    animation: filter 0.5s;
+}
+
+.swiper-container .swiper-wrapper {
+    transition-timing-function: linear;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide {
+    width: 560px;
+    height: 360px;
+    background-color: #999999;
+
+}
+
+@keyframes filter {
+    0% {
+        
+        filter: blur(10px)
+    }
+
+    100% {
+        
+        filter: blur(0px)
+    }
+}
+
+@keyframes hide {
+    0% {
+        
+        filter: blur(0px)
+    }
+
+    100% {
+        
+        filter: blur(10px)
+    }
+}
+
+#btn{
+    font-size: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
