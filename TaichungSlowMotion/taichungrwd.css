@@ -282,7 +282,7 @@ a:link,a:visited,a:hover,a:active{
     width: 700px;
     height: 750px;
     float: right;
-    background-image: url(專題/img/map2.png);
+    background-image: url("專題/img/map2.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -1;
@@ -2103,6 +2103,6 @@ a:link,a:visited,a:hover,a:active{
 
 
 .main .home .city-img{
-    background-image: url(專題/img/Path188.png);
+    background-image: url("專題/img/Path188.png");
 }
 
