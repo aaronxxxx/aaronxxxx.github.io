@@ -13,17 +13,10 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="navbtn">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
     <div class="main">
         <div class="logo"></div>
         <video loop="true" autoplay="autoplay" muted="true">
@@ -38,9 +31,9 @@
         </div>
         <div class="img3" data-1000="transform: translateY(-35%)" data-2000="transform: translateY(20%)"></div>
         <div class="intro">
-            <h1>The Coffee Company 的實現</h1>
+            <h1 data-aos="fade-up"  data-aos-easing="linear" data-aos-duration="1000"data-aos-anchor-placement="center-bottom">The Coffee Company 的實現</h1>
             <div></div>
-            <span>為了追求香濃美味的咖啡,UCC自1933年創業以來,<br>
+            <span data-aos="fade-up"  data-aos-easing="linear" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" data-aos-delay="300">為了追求香濃美味的咖啡,UCC自1933年創業以來,<br>
                 即期望能藉由一杯咖啡帶給所有人會心的微笑.<br>
                 並以「實現專業咖啡企業」為企業理念,<br>
                 憑藉著對咖啡的執著,<br>
@@ -49,19 +42,38 @@
             </span>
         </div>
         <div class="intro2">
-            <span>長達四分之三個世紀的堅持:UCC咖啡,始終如一.<br>
+            <span data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-anchor-placement="center-bottom">長達四分之三個世紀的堅持:UCC咖啡,始終如一.<br>
                 讓咖啡的本領發揮至極致,將香醇美味送到世界的每一雙手上.
             </span>
         </div>
     </div>
     <div class="product">
         <div class="secition1">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-lazy img1"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-lazy img2"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-lazy img3"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-lazy img4"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-lazy img5"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-lazy img6"></div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </div>
     </div>
     <div class="idea2">
@@ -69,7 +81,7 @@
         <div class="img5" data-2100="transform: translateY(0%) translateX(0%) rotate(0deg)" data-3100="transform: translateY(10%) translateX(10%) rotate(-10deg)"></div>
         <div class="intro3">
             <span>
-                <h2>UCC</h2>的使命<br>
+                UCC的使命<br>
                 是要讓更多的人不論何時何地<br>
                 皆能品嘗到真正美味的咖啡<br>
                 並將咖啡帶來的笑容擴展到全世界<br>
@@ -141,6 +153,10 @@
     </script>
     <script type="text/javascript">
         var skrollr_obj = skrollr.init();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
 </body>

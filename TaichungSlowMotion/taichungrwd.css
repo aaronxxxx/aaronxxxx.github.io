@@ -10,7 +10,7 @@ html{
 body {
     margin: 0;
     padding: 0;
-    background-image: url("/專題/img/BG2081.png");
+    background-image: url("專題/img/BG2081.png");
 }
 
 #window{
@@ -22,6 +22,10 @@ body {
 
 .clearfix {
     clear: both;
+}
+
+a:link,a:visited,a:hover,a:active{
+    text-decoration:none;
 }
 
 .nav {
@@ -278,7 +282,7 @@ body {
     width: 700px;
     height: 750px;
     float: right;
-    background-image: url(/專題/img/map2.png);
+    background-image: url(專題/img/map2.png);
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -1;
@@ -331,19 +335,11 @@ body {
     height: 48px;
     border: 1.5px solid black;
     left: 0px;
-    text-align: center;
-}
-
-.history2 .secition1 span {
     font-size: 24px;
     letter-spacing: 8px;
     line-height: 42px;
+    text-align: center;
 }
-
-.section1:visited{
-    text-decoration: none;
-}
-
 
 .space{
     display: none;
@@ -787,7 +783,7 @@ body {
     left: 1302px;
 }
 
-.history2 #history-inner .slides #scroll-swiper8 .scroll-secition p {
+.history2 #history-inner .slides #scroll-swiper8 .scroll-secition a {
     font-size: 24px;
     letter-spacing: 8px;
     margin: 0;
@@ -1290,7 +1286,7 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-image: url("/專題/img/money-icon-05.png");
+    background-image: url("專題/img/money-icon-05.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1324,7 +1320,7 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-image: url("/專題/img/horn-icon-05.png");
+    background-image: url("專題/img/horn-icon-05.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -2107,6 +2103,6 @@ body {
 
 
 .main .home .city-img{
-    background-image: url(/專題/img/Path188.png);
+    background-image: url(專題/img/Path188.png);
 }
 
