@@ -152,7 +152,7 @@ body{
     background-color: #ffffff;
 }
 
-.swiper-container {
+#slides {
     width: 100%;
     height: 150%;
     transform: rotate(8deg) translateX(-2%) translateY(-16%);
@@ -164,62 +164,134 @@ body{
     transition-timing-function: linear;
 }
 
-.swiper-slide .img1{
+.idea2{
+    width: calc(100vw - 17px);
+    max-width: 1920px;
+    height: 55vh;
+    position: relative;
+}
+
+.idea2 .img4{
+    width: 60%;
+    height: 120%;
+    background-image: url("img/coffeebeans-3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 60px;
+    top: -135px;
+    z-index: -2;
+    
+}
+
+.idea2 .img5{
+    width: 50%;
+    height: 195%;
+    background-image: url("img/coffeeimg-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 835px;
+    top: -615px;
+    z-index: -2;
+}
+
+.idea2 .intro3{
+    width: 50%;
+    height: 120%;
+    margin: 0 auto;
+    padding-top: 95px;
+    text-align: center;
+    position:relative;
+    z-index: -3;
+	color: black;
+	text-shadow: 0 0 2px rgba(255,255,255,0.3), -1px -1px 0 #fcfcfc, 1px 1px 0 #ccc;
+}
+
+.idea2 .intro3 span{
+    font-size: 32px;
+    font-weight: 600;
+    position:absolute;
+	display:block;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+    
+}
+
+.idea2 .intro3 h1{
+    margin: 0;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.shop{
+    width: calc(100vw - 17px);
+    max-width: 1920px;
+    height: 100vh;
+    max-height: 1080px;
+    overflow: hidden;
+}
+
+.shop .secition2{
+    width: 110%;
+    height: 70vh;
+    display: flex;
+    overflow: hidden;
+    transform: rotate(8deg) translateX(-5%) translateY(23%);
+    background-color: white;
+}
+
+#slides2{
+    width: 100%;
+    height: 150%;
+    transform: rotate(-8deg) translateX(3%) translateY(-16%)
+}
+
+#slides2 .swiper-slide {
+    width: 1000px;
+    height: 150%;
+    transition-timing-function: linear;
+    background-color: bisque;
+}
+
+#slides2 .img1{
     width: 100%;
     height: 100%;
-    background-image: url("/img/product-1.png");
-    background-position-x: center;
-    background-position-y: 120px;
+    background-image: url("/img/shop-1.jpg");
+    background-position: center;
+    background-position-y: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#slides2 .img2{
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/shop-2.jpg");
+    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.swiper-slide .img2{
+#slides2 .img3{
     width: 100%;
     height: 100%;
-    background-image: url("/img/product-2.png");
-    background-position-x: center;
-    background-position-y: 120px;
+    background-image: url("/img/shop-3.png");
+    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.swiper-slide .img3{
+#slides2 .img4{
     width: 100%;
     height: 100%;
-    background-image: url("/img/product-3.png");
-    background-position-x: center;
-    background-position-y: 120px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.swiper-slide .img4{
-    width: 100%;
-    height: 100%;
-    background-image: url("/img/product-4.png");
-    background-position-x: center;
-    background-position-y: 120px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.swiper-slide .img5{
-    width: 100%;
-    height: 100%;
-    background-image: url("/img/product-5.png");
-    background-position-x: center;
-    background-position-y: 120px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.swiper-slide .img6{
-    width: 100%;
-    height: 100%;
-    background-image: url("/img/product-6.png");
-    background-position-x: center;
-    background-position-y: 120px;
+    background-image: url("/img/shop-4.png");
+    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -343,86 +415,6 @@ body{
         left: 2px;
     }
 
-}
-
-.idea2{
-    width: calc(100vw - 17px);
-    max-width: 1920px;
-    height: 55vh;
-    position: relative;
-}
-
-.idea2 .img4{
-    width: 60%;
-    height: 120%;
-    background-image: url("img/coffeebeans-3.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    left: 60px;
-    top: -135px;
-    z-index: -2;
-    
-}
-
-.idea2 .img5{
-    width: 50%;
-    height: 195%;
-    background-image: url("img/coffeeimg-2.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    left: 835px;
-    top: -615px;
-    z-index: -2;
-}
-
-.idea2 .intro3{
-    width: 50%;
-    height: 120%;
-    margin: 0 auto;
-    padding-top: 95px;
-    text-align: center;
-    position:relative;
-    z-index: -3;
-	color: black;
-	text-shadow: 0 0 2px rgba(255,255,255,0.3), -1px -1px 0 #fcfcfc, 1px 1px 0 #ccc;
-}
-
-.idea2 .intro3 span{
-    font-size: 32px;
-    font-weight: 600;
-    position:absolute;
-	display:block;
-	top:0;
-	left:0;
-	height:100%;
-	width:100%;
-    
-}
-
-.idea2 .intro3 h1{
-    margin: 0;
-    font-size: 50px;
-    font-weight: bold;
-
-}
-
-.shop{
-    width: calc(100vw - 17px);
-    max-width: 1920px;
-    height: 100vh;
-    max-height: 1080px;
-    overflow: hidden;
-}
-
-.shop .secition2{
-    width: 110%;
-    height: 70vh;
-    background-color: bisque;
-    transform: rotate(8deg) translateX(-5%) translateY(23%);
 }
 
 .map{
