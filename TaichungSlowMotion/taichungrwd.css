@@ -96,7 +96,8 @@ a:link,a:visited,a:hover,a:active{
 #nav-inner{
     width: calc(100vw - 62px);
     height: 100vh;
-    background-color: white;
+    background-image: url("img/backgroup.png");
+    color: white;
     left: -2500px;
     transition: cubic-bezier(0.34, 0.08, 0.44, 0.82) 2.5s;
     position: fixed;
@@ -149,7 +150,7 @@ a:link,a:visited,a:hover,a:active{
 
 #nav-inner .inner-title .text hr{
     width: 20px;
-    border: 1px solid black;
+    border: solid 1px white;
     margin:0 15px;
     margin-bottom: 37px;
 }
@@ -174,7 +175,8 @@ a:link,a:visited,a:hover,a:active{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #808080;
+    background-image: url("img/Path188.png");
+    background-size: cover;
     float: right;
 }
 
@@ -196,7 +198,7 @@ a:link,a:visited,a:hover,a:active{
 
 #nav-inner .box hr{
     width: 90px;
-    border: 1px solid black;
+    border: solid 1px white;
 }
 
 #nav-inner .box span{ 
@@ -250,6 +252,7 @@ a:link,a:visited,a:hover,a:active{
 .main .home .city-img{
     width: 129px;
     height: 129px;
+    background-image: url("img/Path188.png");
     border-radius: 50%;
     position: absolute;
     right: 384px;
@@ -2104,24 +2107,3 @@ a:link,a:visited,a:hover,a:active{
     }
 }
 
-.main .home .city-img{
-    background-image: url("img/Path188.png");
-}
-
-#nav-inner{
-    background-image: url("img/backgroup.png");
-    color: white;
-}
-
-#nav-inner .inner-title .text hr{
-    border: solid 1px white;
-}
-
-#nav-inner .box hr{
-    border: solid 1px white;
-}
-
-#nav-inner .logo{
-    background-image: url("img/Path188.png");
-    background-size: cover;
-}
