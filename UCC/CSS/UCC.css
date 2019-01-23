@@ -386,8 +386,8 @@ body{
     padding-top: 95px;
     text-align: center;
     position:relative;
-	color: #f06369;
-	background: #000;
+    z-index: -3;
+	color: black;
 	text-shadow: 0 0 2px rgba(255,255,255,0.3), -1px -1px 0 #fcfcfc, 1px 1px 0 #ccc;
 }
 
@@ -400,7 +400,6 @@ body{
 	left:0;
 	height:100%;
 	width:100%;
-	background:url("");
     
 }
 

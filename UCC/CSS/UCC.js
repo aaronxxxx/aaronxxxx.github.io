@@ -7,7 +7,36 @@ window.onscroll = function () {
 
 }
 
-var swiper = new Swiper('.swiper-container', {
+
+var swiper = new Swiper('#slides1',{
+    direction : 'vertical',
+    followFinger : false,
+    speed:800,
+    mousewheel: true,
+    pagination : {
+        el:'.swiper-pagination',
+    },
+    on:{
+        init:function(swiper){
+            slide=this.slides.eq(0);
+            slide.addClass('ani-slide');
+        },
+        transitionStart: function(){
+            for(i=0;i<this.slides.length;i++){
+                slide=this.slides.eq(i);
+                slide.removeClass('ani-slide');
+            }
+        },
+        transitionEnd: function(){
+            slide=this.slides.eq(this.activeIndex);
+            slide.addClass('ani-slide');
+            
+        },
+    }
+});
+
+
+var swiper = new Swiper('#slides2', {
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
@@ -46,3 +75,4 @@ var swiper = new Swiper('.swiper-container', {
 window.onresize = function () {
     swiper.update();
 }
+
