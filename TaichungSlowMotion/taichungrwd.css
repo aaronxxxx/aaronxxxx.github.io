@@ -806,7 +806,11 @@ a:link,a:visited,a:hover,a:active{
 
 }
 
-.introduction h1 {
+.introduction .mb-title{
+    display: none;
+}
+
+.introduction .pc-title{
     font-size: 62px;
     writing-mode: vertical-lr;
     letter-spacing: 7px;
@@ -817,13 +821,13 @@ a:link,a:visited,a:hover,a:active{
     z-index: 2;
 }
 
-.introduction h1 span {
+.introduction .pc-title span {
     font-size: 49px;
     letter-spacing: 0px;
     margin-right: 27px;
 }
 
-.introduction h1 div {
+.introduction .pc-title div {
     border-left-style: solid;
     margin-right: 15px;
 }
@@ -1147,6 +1151,10 @@ a:link,a:visited,a:hover,a:active{
     margin-top: 28px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.tourism .mb-swiper{
+    display: none;
 }
 
 .tour-Service .container {
@@ -2024,6 +2032,7 @@ a:link,a:visited,a:hover,a:active{
     }
 
     .nav{
+        position: absolute;
         width: 100%;
         height: 225px;
         z-index: 1;
@@ -2107,6 +2116,203 @@ a:link,a:visited,a:hover,a:active{
 
     .introduction h1 {
         writing-mode: horizontal-tb;
+    }
+
+    .introduction .pc-title{
+        display: none;
+    }
+
+    .introduction .mb-title{
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .introduction .mb-title div{
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 110px;
+        border-top-style: solid;
+        border-top-color: black;
+        border-top-width: 1px; 
+    }
+
+    .introduction .mb-title span{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .introduction #slides {
+        top: 100px;
+    }
+
+    .introduction #slides #swiper {
+        max-width: 100vw;
+    }
+
+    .introduction .secition2 {
+        margin-top: 540px;
+    }
+
+    .tourism .map-grounp {
+        width: 100%;
+    }
+
+    .tourism h1 {
+        display: none;
+    }
+
+    .tourism .map-grounp .mapbtn #mapswiper .swiper-slide {
+        font-size: 13px;
+    }
+
+    .tourism .map-grounp .map {
+        width: 100vw;
+        top: 275px;
+    }
+
+    .tourism .map-grounp .map-img1.show{
+        display: none;
+    }
+
+    .tourism .map-grounp .map-img2.show{
+        display: none;
+    }
+
+    .tourism .map-grounp .map-img3.show{
+        display: none;
+    }
+
+    .tourism .map-grounp .map-img4.show{
+        display: none;
+    }
+
+    .tourism .map-grounp .map-img5.show{
+        display: none;
+    }
+
+    .tourism .map-grounp .map-img6.show{
+        display: none;
+    }
+
+    .tourism .mb-swiper{
+        display: flex;
+        width: 100vw;
+        height: 200px;
+        position: absolute;
+        top: 800px;
+    }
+
+    .tourism .mb-swiper #mb-slide{
+        width: 120px;
+        height: 120px;
+        border-radius: 10px;
+        background-color: #000;
+
+    }
+
+    .tourism .map-grounp .map-href {
+        width: 227px;
+        height: 40px;
+        margin-top: 840px;
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .tourism .map-grounp p {
+        margin-top: -180px;
+    }
+
+    .tour-Service {
+        width: 100%;
+        position: relative;
+        top: 410px;
+
+    }
+
+    .tour-Service .big-box h1 {
+      
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .tour-Service .big-box h1 hr {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .tour-Service .big-box h1 span {
+        font-size: 20px;
+    }
+
+    .description{
+        position: relative;
+        top: -1020px;
+    }
+
+    .description .big-box1 {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+
+    .description .big-box2 {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+
+    .description .big-box1 .icon1 {
+        width: 78px;
+        height: 78px;
+    }
+
+    .description .big-box1 .boxA {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .description .big-box2 .icon2 {
+        width: 78px;
+        height: 78px;
+    }
+
+    .description .big-box2 .boxB {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .tour-Service .big-box .box {
+        position: relative;
+        height: 132px;
+        padding-top: 18px;
+        top: 500px;
+    }
+
+    .tour-Service .content {
+        position: relative;
+        top: -230px;
+    }
+
+    .tour-Service .content span {
+        line-height: 35px;
+        letter-spacing: 2px;
+    }
+
+    .tour-Service .content p {
+        margin-top: 30px;
+        line-height: 35px;
+        letter-spacing: 2px;
+    }
+
+    footer{
+        position: relative;
+        top: -300px;
     }
 }
 
