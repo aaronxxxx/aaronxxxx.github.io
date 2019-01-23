@@ -17,6 +17,17 @@
 </head>
 
 <body>
+    <div id="mb-menubtn">
+        <div id="mb-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="mb-cross">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
     <nav class="nav">
         <span class="nav-title">TAICHUNG<span>CITY</span><span>TOURISM</span></span>
         <div id="menubtn">
@@ -31,7 +42,7 @@
             </div>
         </div>
     </nav>
-    
+
     <div id="nav-inner">
         <div class="big-box">
             <h1>舊城漫漫</h1>
@@ -199,7 +210,7 @@
                     <div></div><span>Introduction</span><br>景點介紹
                 </h1>
                 <h1 class="mb-title">
-                   景點介紹<div></div><span>Introduction</span>
+                    景點介紹<div></div><span>Introduction</span>
                 </h1>
                 <span class="text">青山依舊在，幾度夕陽紅。慣看<br>秋月春風。一壺濁酒喜相逢，浪</span>
             </div>
@@ -519,7 +530,7 @@
     <script type="text/javascript">
         // When the window has finished loading create our google map below
         google.maps.event.addDomListener(window, 'load', init);
-    
+
         function init() {
             // Basic options for a simple Google Map
             // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
@@ -532,7 +543,7 @@
 
                 // How you would like to style the map. 
                 // This is where you would paste any style found on Snazzy Maps.
-                styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.land_parcel","elementType":"labels.text.stroke","stylers":[{"color":"#d7caca"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#d7d2d2"},{"visibility":"on"}]}]
+                styles: [{ "featureType": "administrative", "elementType": "labels.text.fill", "stylers": [{ "color": "#444444" }] }, { "featureType": "administrative.land_parcel", "elementType": "labels.text.stroke", "stylers": [{ "color": "#d7caca" }] }, { "featureType": "landscape", "elementType": "all", "stylers": [{ "color": "#f2f2f2" }] }, { "featureType": "poi", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "road", "elementType": "all", "stylers": [{ "saturation": -100 }, { "lightness": 45 }] }, { "featureType": "road.highway", "elementType": "all", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "road.arterial", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#d7d2d2" }, { "visibility": "on" }] }]
             };
 
             // Get the HTML DOM element that will contain your map 

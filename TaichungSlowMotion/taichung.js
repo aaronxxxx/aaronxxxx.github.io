@@ -10,6 +10,18 @@ $(function () {
 
 });
 
+$(function () {
+
+    $('#mb-hamburger').on('click', function () {
+
+        $('#nav-inner').toggleClass('show');
+
+        $(this).toggleClass('active');
+
+    });
+
+});
+
 var historyBtn = document.getElementById('history-btn');
 
 var historyInner = document.getElementById('history-inner');

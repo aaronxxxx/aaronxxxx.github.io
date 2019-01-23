@@ -93,6 +93,46 @@ a:link,a:visited,a:hover,a:active{
     transform: translateY(-12px) rotate(-45deg);
 }
 
+#mb-menubtn {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin: 0 1%;
+    overflow: hidden;
+    z-index: 53;
+}
+
+#mb-hamburger {
+    width: 25px;
+    cursor: pointer;
+}
+  
+#mb-hamburger span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-bottom: 8px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+  
+#mb-hamburger.active span:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+}
+
+#mb-hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+#mb-hamburger.active span:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg);
+}
+
+
 #nav-inner{
     width: calc(100vw - 60px);
     height: 100vh;
@@ -2031,6 +2071,22 @@ a:link,a:visited,a:hover,a:active{
         left: 0;
     }
 
+    #menubtn{
+        display: none;
+    }
+
+    #mb-menubtn{
+        display: flex;
+        top: 10px;
+        left: 10px;
+    }
+
+    #hamburger {
+        position: fixed;
+        top: 18px;
+        left: 12px;
+    }
+
     #nav-inner {
         width: 100vw;
     }
@@ -2050,12 +2106,6 @@ a:link,a:visited,a:hover,a:active{
         display: none;
     }
 
-    #hamburger {
-        position: fixed;
-        top: 18px;
-        left: 12px;
-    }
-
     .main .home{
         width: 100%;
         height: 40vh;
@@ -2063,7 +2113,7 @@ a:link,a:visited,a:hover,a:active{
 
     .main .home .main-title {
         position: absolute;
-        top: 55px;
+        top: 5px;
         right: 45px;
         font-size: 45px;
         letter-spacing: 1px;
@@ -2084,7 +2134,7 @@ a:link,a:visited,a:hover,a:active{
         text-align: right;
         margin-top: 15px;
         position: absolute;
-        top: 115px;
+        top: 75px;
         right: 55px;
         z-index: 2;
         color: white;
@@ -2099,7 +2149,7 @@ a:link,a:visited,a:hover,a:active{
     .nav-img{
         width: 100%;
         height: 460px;
-        top: 225px;
+        top: 185px;
     }
 
     .history{
@@ -2108,7 +2158,7 @@ a:link,a:visited,a:hover,a:active{
 
     .history .container{
         margin: 0 auto;
-        margin-top: 130px;
+        margin-top: 80px;
     }
 
     .history h1 {
