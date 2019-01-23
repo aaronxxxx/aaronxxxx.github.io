@@ -94,9 +94,11 @@ a:link,a:visited,a:hover,a:active{
 }
 
 #nav-inner{
-    width: calc(100vw - 62px);
+    width: calc(100vw - 60px);
     height: 100vh;
     background-image: url("img/backgroup.png");
+    background-position: center;
+    background-size: cover;
     color: white;
     left: -2500px;
     transition: cubic-bezier(0.34, 0.08, 0.44, 0.82) 2.5s;
