@@ -304,10 +304,12 @@ body{
 }
 
 .swiper-button-next {
+    color: white;
     background-image: url("/img/right.svg");
 }
 
 .swiper-button-prev {
+    color: white;
     background-image: url("/img/left.svg");
 }
 
