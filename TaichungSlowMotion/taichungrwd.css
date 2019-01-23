@@ -2031,6 +2031,14 @@ a:link,a:visited,a:hover,a:active{
         left: 0;
     }
 
+    #nav-inner {
+        width: 100vw;
+    }
+
+    #nav-inner.show {
+        left: 0;
+    }
+
     .nav{
         position: absolute;
         width: 100%;
@@ -2100,6 +2108,7 @@ a:link,a:visited,a:hover,a:active{
 
     .history .container{
         margin: 0 auto;
+        margin-top: 130px;
     }
 
     .history h1 {
@@ -2154,7 +2163,21 @@ a:link,a:visited,a:hover,a:active{
     }
 
     .introduction .secition2 {
+        width: 140px;
+        height: 30px;
         margin-top: 540px;
+        text-align: center;
+        
+    }
+
+    .introduction .secition2 span {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 30px;
+    }
+
+    .tourism .container {
+        padding-top: 0px;
     }
 
     .tourism .map-grounp {
@@ -2171,7 +2194,7 @@ a:link,a:visited,a:hover,a:active{
 
     .tourism .map-grounp .map {
         width: 100vw;
-        top: 275px;
+        top: 50px;
     }
 
     .tourism .map-grounp .map-img1.show{
@@ -2203,7 +2226,7 @@ a:link,a:visited,a:hover,a:active{
         width: 100vw;
         height: 200px;
         position: absolute;
-        top: 800px;
+        top: 575px;
     }
 
     .tourism .mb-swiper #mb-slide{
@@ -2217,19 +2240,19 @@ a:link,a:visited,a:hover,a:active{
     .tourism .map-grounp .map-href {
         width: 227px;
         height: 40px;
-        margin-top: 840px;
+        margin-top: 800px;
         font-size: 18px;
         line-height: 40px;
     }
 
     .tourism .map-grounp p {
-        margin-top: -180px;
+        margin-top: -165px;
     }
 
     .tour-Service {
         width: 100%;
         position: relative;
-        top: 410px;
+        top: 680px;
 
     }
 
@@ -2250,7 +2273,11 @@ a:link,a:visited,a:hover,a:active{
 
     .description{
         position: relative;
-        top: -1020px;
+        top: -730px;
+    }
+
+    .description .container{
+        margin-top: 0;
     }
 
     .description .big-box1 {
@@ -2290,8 +2317,21 @@ a:link,a:visited,a:hover,a:active{
     .tour-Service .big-box .box {
         position: relative;
         height: 132px;
-        padding-top: 18px;
-        top: 500px;
+        padding: 15px;
+        top: 530px;
+    }
+
+    .tour-Service .big-box .box .href {
+        margin: 0;
+        margin-top: 3px;
+    }
+
+    .tour-Service .big-box .box p {
+        margin-top: 6px;
+    }
+
+    .tour-Service .container {
+        padding-top: 0;
     }
 
     .tour-Service .content {
@@ -2312,7 +2352,121 @@ a:link,a:visited,a:hover,a:active{
 
     footer{
         position: relative;
-        top: -300px;
+        bottom: 0;
     }
+
+    .footer .container {
+        width: 100vw;
+        position: relative;
+    }
+
+    .footer .container .left-box{
+        position: absolute;
+        top: 120px;
+        left: calc(50% - 137px);
+    }
+
+    .footer .container .left-box h1 {
+        margin-top: 0;
+        font-size: 34px;
+        margin-right: 10px;
+    }
+
+    .footer .container .left-box span {
+        margin: 0;
+        font-size: 5px;
+    }
+
+    .footer .container .mid-box {
+        position: absolute;
+        top: 40px;
+        left: calc(50% - 145px);
+        padding: 0 20px;
+    }
+
+    .footer .container .mid-box .text1 {
+        width: 50%;
+        margin: 0;
+        margin: 0;
+    }
+
+    .footer .container .mid-box .text1 div {
+        margin-right: 15px;
+    }
+
+    .footer .container .mid-box .text1 h1 {
+        margin-right: 15px;
+        margin-bottom: 0;
+        letter-spacing: 8px;
+        font-size: 15px;
+
+    }
+
+    .footer .container .mid-box .text1 span {
+        display: none;
+    }
+
+    .footer .container .mid-box .text2 {
+        width: 50%;
+        margin: 0;
+    }
+
+    .footer .container .mid-box .text2 div {
+        margin-right: 15px;
+    }
+
+    .footer .container .mid-box .text2 h1 {
+        margin-right: 15px;
+        margin-bottom: 0;
+        letter-spacing: 8px;
+        font-size: 15px;
+
+    }
+
+    .footer .container .mid-box .text2 span {
+        display: none;
+    }
+
+    .footer .container .mid-box .text3 {
+        width: 50%;
+        margin: 0;
+    }
+
+    .footer .container .mid-box .text3 div {
+        margin-right: 15px;
+    }
+
+    .footer .container .mid-box .text3 h1 {
+        margin-right: 15px;
+        margin-bottom: 0;
+        letter-spacing: 8px;
+        font-size: 15px;
+
+    }
+
+    .footer .container .mid-box .text3 span {
+        display: none;
+    }
+
+    .footer .container .mid-box .text4 {
+        width: 50%;
+        margin: 0;
+    }
+
+    .footer .container .mid-box .text4 div {
+        margin-right: 15px;
+    }
+
+    .footer .container .mid-box .text4 h1 {
+        margin-right: 15px;
+        margin-bottom: 0;
+        letter-spacing: 8px;
+        font-size: 15px;
+    }
+
+    .footer .container .mid-box .text4 span {
+        display: none;
+    }
+
 }
 
