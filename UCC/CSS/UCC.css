@@ -341,7 +341,7 @@ body{
 }
 
 .swiper-pagination-bullet i {
-    background: #000;
+    background: #CCC;
     height: 1px;
     width: 20px;
     position: absolute;
@@ -357,7 +357,7 @@ body{
     height: 9px;
     margin-top: 0;
     margin-left: 0;
-    background: #000;
+    background: #CCC;
     position: relative;
     z-index: 1;
 }
