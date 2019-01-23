@@ -1344,8 +1344,11 @@ a:link,a:visited,a:hover,a:active{
 }
 
 .footer-img {
+    width: 100%;
     height: 605px;
-    background-color: #999999;
+    background-image: url("img/Group208.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-top: 150px;
 }
 
@@ -2121,10 +2124,4 @@ a:link,a:visited,a:hover,a:active{
 #nav-inner .logo{
     background-image: url("img/Path188.png");
     background-size: cover;
-}
-
-.footer-img{
-    background-image: url("img/Group208.png");
-    background-size: cover;
-    background-repeat: no-repeat;
 }
