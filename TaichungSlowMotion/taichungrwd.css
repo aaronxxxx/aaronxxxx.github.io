@@ -263,7 +263,7 @@ a:link,a:visited,a:hover,a:active{
     position: absolute;
     left: 0px;
     top: 600px;
-    background-image: url("/webpic/Group\ 114.png")
+    background-image: url("img/Group114.png")
 
 }
 
@@ -2101,8 +2101,30 @@ a:link,a:visited,a:hover,a:active{
     }
 }
 
-
 .main .home .city-img{
     background-image: url("img/Path188.png");
 }
 
+#nav-inner{
+    background-image: url("img/backgroup.png");
+    color: white;
+}
+
+#nav-inner .inner-title .text hr{
+    border: solid 1px white;
+}
+
+#nav-inner .box hr{
+    border: solid 1px white;
+}
+
+#nav-inner .logo{
+    background-image: url("img/Path188.png");
+    background-size: cover;
+}
+
+.footer-img{
+    background-image: url("img/Group208.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
