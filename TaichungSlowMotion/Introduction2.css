@@ -285,15 +285,6 @@ body{
     
 }
 
-.main .title div.show{
-    color: white;
-    border-top-style: solid;
-    border-top-color: white;
-    border-width: 1px;
-    text-shadow: 20px 5px 40px rgb(130, 63, 255),0px 5px 40px rgb(255, 0, 85),-20px 5px 40px rgb(228, 77, 31);
-    opacity: 0.8;
-}
-
 
 .main .title div span{
     width: 180px;
@@ -312,6 +303,16 @@ body{
     margin-top: 15px;
     margin-left: 400px;
     
+}
+
+
+.main .title div.show{
+    color: white;
+    border-top-style: solid;
+    border-top-color: white;
+    border-width: 1px;
+    text-shadow: 20px 5px 40px rgb(130, 63, 255),0px 5px 40px rgb(255, 0, 85),-20px 5px 40px rgb(228, 77, 31);
+    opacity: 0.8;
 }
 
 .swiper-container {
