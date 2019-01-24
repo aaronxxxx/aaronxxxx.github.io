@@ -282,6 +282,7 @@ body{
     border-top-color: black;
     border-width: 1px;
     height: 159px;
+    color: black;
     
 }
 
@@ -296,7 +297,6 @@ body{
 }
 
 .main .title div a{
-    color: black;
     text-decoration: none;
     font-size: 97px;
     font-weight: bold;
