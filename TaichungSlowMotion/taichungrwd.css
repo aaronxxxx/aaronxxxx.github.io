@@ -24,6 +24,11 @@ body {
     clear: both;
 }
 
+a{
+    color: black;
+    text-decoration:none;
+}
+
 a:link,a:visited,a:hover,a:active{
     text-decoration:none;
 }
@@ -196,7 +201,9 @@ a:link,a:visited,a:hover,a:active{
     margin-bottom: 37px;
 }
 
-#nav-inner .inner-title .text h1{
+#nav-inner .inner-title .text a{
+    color: white;
+    text-decoration:none;
     margin: 0;
     font-size: 28px;
     margin-bottom: 37px;
@@ -922,7 +929,9 @@ a:link,a:visited,a:hover,a:active{
     margin-right: auto;
 }
 
-.introduction .secition2 span {
+.introduction .secition2 a {
+    color: black;
+    text-decoration: none;
     font-size: 24px;
     letter-spacing: 8px;
     line-height: 42px;
@@ -3163,4 +3172,451 @@ a:link,a:visited,a:hover,a:active{
     .tour-Service .big-box .box {
         top: 600px;
     }
+}
+
+.line3pic1{
+    background-image: url("img/Group116.png");
+    background-size: contain;
+}
+
+
+.line3pic2{
+    background-image: url("img/Group118.png");
+    background-size: contain;
+}
+
+.line3pic3{
+    background-image: url("img/Group120.png");
+    background-size: contain;
+}
+
+.line3pic4{
+    background-image: url("img/Group124.png");
+    background-size: contain;
+}
+
+.line3pic5{
+    background-image: url("img/Group126.png");
+    background-size: contain;
+}
+
+.line3pic6{
+    background-image: url("img/Group132.png");
+    background-size: contain;
+}
+
+.line3pic7{
+    background-image: url("img/Group116.png");
+    background-size: contain;
+}
+
+.line3pic8{
+    background-image: url("img/Group118.png");
+    background-size: contain;
+}
+
+.line3pic9{
+    background-image: url("img/Group120.png");
+    background-size: contain;
+}
+
+.line3pic10{
+    background-image: url("img/Group124.png");
+    background-size: contain;
+}
+
+.line3pic11{
+    background-image: url("img/Group126.png");
+    background-size: contain;
+}
+
+/* 第二行 */
+
+.line2pic1{
+    background-image: url("img/Group134.png");
+    background-size: contain;
+}
+
+.line2pic2{
+    background-image: url("img/Group138.png");
+    background-size: contain;
+}
+
+.line2pic3{
+    background-image: url("img/Group140.png");
+    background-size: contain;
+}
+
+.line2pic4{
+    background-image: url("img/Group142.png");
+    background-size: contain;
+}
+
+.line2pic5{
+    background-image: url("img/Group145.png");
+    background-size: contain;
+}
+
+.line2pic6{
+    background-image: url("img/Group148.png");
+    background-size: contain;
+}
+
+.line2pic7{
+    background-image: url("img/Group134.png");
+    background-size: contain;
+}
+
+.line2pic8{
+    background-image: url("img/Group138.png");
+    background-size: contain;
+}
+
+.line2pic9{
+    background-image: url("img/Group140.png");
+    background-size: contain;
+}
+
+.line2pic10{
+    background-image: url("img/Group142.png");
+    background-size: contain;
+}
+
+.line2pic11{
+    background-image: url("img/Group145.png");
+    background-size: contain;
+}
+
+/* 第一行 */
+
+
+.line1pic1{
+    background-image: url("img/Group150.png");
+    background-size: contain;
+}
+
+.line1pic2{
+    background-image: url("img/Group152.png");
+    background-size: contain;
+}
+
+.line1pic3{
+    background-image: url("img/Group154.png");
+    background-size: contain;
+}
+
+.line1pic4{
+    background-image: url("img/Group157.png");
+    background-size: contain;
+}
+
+.line1pic5{
+    background-image: url("img/Group148.png");
+    background-size: contain;
+}
+
+.line1pic6{
+    background-image: url("img/Group150.png");
+    background-size: contain;
+}
+
+.line1pic7{
+    background-image: url("img/Group152.png");
+    background-size: contain;
+}
+
+.line1pic8{
+    background-image: url("img/Group154.png");
+    background-size: contain;
+}
+
+.line1pic9{
+    background-image: url("img/Group157.png");
+    background-size: contain;
+}
+
+.line1pic10{
+    background-image: url("img/Group124.png");
+    background-size: contain;
+}
+
+.line1pic11{
+    background-image: url("img/Group120.png");
+    background-size: contain;
+}
+
+/* 歷史介紹 */
+
+.history2 #history-inner .slides #scroll-swiper1 div{
+    background-image: url("img/Group91.png");
+    background-size: contain;
+}
+
+.history2 #history-inner .slides #scroll-swiper2 div{
+    background-image: url("img/p026a.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.history2 #history-inner .slides #scroll-swiper3 div{
+    background-image: url("img/Group85.png");
+    background-size: contain;
+}
+
+.history2 #history-inner .slides #scroll-swiper4 .img1{
+    background-image: url("img/Group87.png");
+    background-size: contain;
+}
+.history2 #history-inner .slides #scroll-swiper4 .img2{
+    background-image: url("img/Group89.png");
+    background-size: contain;
+}
+.history2 #history-inner .slides #scroll-swiper4 .img3{
+    background-image: url("img/Group2109.png");
+    background-size: contain;
+}
+
+.history2 #history-inner .slides #scroll-swiper6 .img1{
+    background-image: url("img/Group96.png");
+    background-size: contain;
+}
+
+.history2 #history-inner .slides #scroll-swiper6 .img2{
+    background-image: url("img/Rectangle114.png");
+    background-size: contain;
+}
+
+.history2 #history-inner .slides #scroll-swiper7 div{
+    background-image: url("img/Rectangle112.png");
+    background-size: contain;
+}
+
+.history2 #history-inner .slides #scroll-swiper8 .img{
+    background-image: url("img/Rectangle113.png");
+    background-size: contain;
+}
+
+
+/* 推薦路線 */
+
+.map1pic1{
+    background-image: url("img/火車站/01.jpg");
+    background-size: cover;
+}
+
+.map1pic2{
+    background-image: url("img/宮原眼科/01.jpg");
+    background-size: cover;
+}
+
+.map1pic3{
+    background-image: url("img/綠川/01.jpg");
+    background-size: cover;
+}
+
+.map1pic4{
+    background-image: url("img/盛橋/01.jpg");
+    background-size: cover;
+}
+
+.map1pic5{
+    background-image: url("img/中山路建築/02.jpg");
+    background-size: cover;
+}
+
+.map1pic6{
+    background-image: url("img/第四信用/01.jpg");
+    background-size: cover;
+}
+
+/* 深度旅行 */
+
+
+.map2pic1{
+    background-image: url(/專題/img/火車站/01.jpg);
+    background-size: cover;
+}
+
+.map2pic2{
+    background-image: url(/專題/img/宮原眼科/01.jpg);
+    background-size: cover;
+}
+
+.map2pic3{
+    background-image: url(/專題/img/綠川/01.jpg);
+    background-size: cover;
+}
+
+.map2pic4{
+    background-image: url(/專題/img/盛橋/01.jpg);
+    background-size: cover;
+}
+
+.map2pic5{
+    background-image: url(/專題/img/中山路建築/02.jpg);
+    background-size: cover;
+}
+
+.map2pic6{
+    background-image: url(/專題/img/第四信用/01.jpg);
+    background-size: cover;
+}
+
+.map2pic7{
+    background-image: url(/專題/img/第四信用/01.jpg);
+    background-size: cover;
+}
+
+
+/* 美軍大兵 */
+
+
+.map3pic1{
+    background-image: url(/專題/img/火車站/01.jpg);
+    background-size: cover;
+}
+
+.map3pic2{
+    background-image: url(/專題/img/宮原眼科/01.jpg);
+    background-size: cover;
+}
+
+.map3pic3{
+    background-image: url(/專題/img/綠川/01.jpg);
+    background-size: cover;
+}
+
+.map3pic4{
+    background-image: url(/專題/img/盛橋/01.jpg);
+    background-size: cover;
+}
+
+.map3pic5{
+    background-image: url(/專題/img/中山路建築/02.jpg);
+    background-size: cover;
+}
+
+.map3pic6{
+    background-image: url(/專題/img/第四信用/01.jpg);
+    background-size: cover;
+}
+
+.map3pic7{
+    background-image: url(/專題/img/綠川/02.jpg);
+    background-size: cover;
+}
+.map3pic8{
+    background-image: url(/專題/img/台灣大道/ca02f08a07b73c7c8ea49328e78955353_22310450_190117_0004.jpg);
+    background-size: cover;
+}
+.map3pic9{
+    background-image: url(/專題/img/中區再生基地/第一銀行.jpg);
+    background-size: cover;
+}
+.map3pic10{
+    background-image: url(/專題/img/青草街/阿蘭.jpg);
+    background-size: cover;
+}
+
+
+/* 千越大樓 */
+
+
+.map4pic1{
+    background-image: url(/專題/img/火車站/01.jpg);
+    background-size: cover;
+}
+
+.map4pic2{
+    background-image: url(/專題/img/宮原眼科/01.jpg);
+    background-size: cover;
+}
+
+.map4pic3{
+    background-image: url(/專題/img/綠川/01.jpg);
+    background-size: cover;
+}
+
+.map4pic4{
+    background-image: url(/專題/img/盛橋/01.jpg);
+    background-size: cover;
+}
+
+.map4pic5{
+    background-image: url(/專題/img/中山路建築/02.jpg);
+    background-size: cover;
+}
+
+.map4pic6{
+    background-image: url(/專題/img/第四信用/01.jpg);
+    background-size: cover;
+}
+
+
+
+/* 人生交易所 */
+
+
+.map5pic1{
+    background-image: url(/專題/img/火車站/01.jpg);
+    background-size: cover;
+}
+
+.map5pic2{
+    background-image: url(/專題/img/宮原眼科/01.jpg);
+    background-size: cover;
+}
+
+.map5pic3{
+    background-image: url(/專題/img/綠川/01.jpg);
+    background-size: cover;
+}
+
+.map5pic4{
+    background-image: url(/專題/img/盛橋/01.jpg);
+    background-size: cover;
+}
+
+.map5pic5{
+    background-image: url(/專題/img/中山路建築/02.jpg);
+    background-size: cover;
+}
+
+.map5pic6{
+    background-image: url(/專題/img/第四信用/01.jpg);
+    background-size: cover;
+}
+
+
+/* 時光印記 */
+
+
+.map6pic1{
+    background-image: url(/專題/img/火車站/01.jpg);
+    background-size: cover;
+}
+
+.map6pic2{
+    background-image: url(/專題/img/宮原眼科/01.jpg);
+    background-size: cover;
+}
+
+.map6pic3{
+    background-image: url(/專題/img/綠川/01.jpg);
+    background-size: cover;
+}
+
+.map6pic4{
+    background-image: url(/專題/img/盛橋/01.jpg);
+    background-size: cover;
+}
+
+.map6pic5{
+    background-image: url(/專題/img/中山路建築/02.jpg);
+    background-size: cover;
+}
+
+.map6pic6{
+    background-image: url(/專題/img/第四信用/01.jpg);
+    background-size: cover;
 }

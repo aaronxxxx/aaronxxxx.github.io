@@ -303,7 +303,7 @@ body{
     margin-top: 40px;
 }
 
-.main .title div h1{
+.main .title div a{
     font-size: 97px;
     font-weight: bold;
     margin-top: 15px;

@@ -22,6 +22,50 @@ $(function () {
 
 });
 
+$(function () {
+
+    $('#his').on('click', function () {
+
+        $('#nav-inner').toggleClass('show');
+
+    });
+
+});
+
+$(function () {
+
+    $('#int').on('click', function () {
+
+        $('#nav-inner').toggleClass('show');
+
+    });
+
+});
+
+$(function () {
+
+    $('#tou').on('click', function () {
+
+        $('#nav-inner').toggleClass('show');
+
+    });
+
+});
+
+$(function () {
+
+    $('#tou2').on('click', function () {
+
+        $('#nav-inner').toggleClass('show');
+
+    });
+
+});
+
+
+
+
+
 var historyBtn = document.getElementById('history-btn');
 
 var historyInner = document.getElementById('history-inner');
