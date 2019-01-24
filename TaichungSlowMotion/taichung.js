@@ -276,6 +276,7 @@ var swiper1 = new Swiper("#mb-slide", {
         delay: 0,
     },
     loop: true,
+    loopAdditionalSlides: 6,
     width: 120,
     height: 120,
     
