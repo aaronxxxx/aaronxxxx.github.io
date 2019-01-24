@@ -174,7 +174,6 @@ a:link,a:visited,a:hover,a:active{
 
 #nav-inner .inner-title{
     position: absolute;
-    margin: 0 auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -1683,30 +1682,16 @@ a:link,a:visited,a:hover,a:active{
     }
 
 }
-
-@media screen and (max-width: 1100px) {
-    .history .container{
-        width: 1060px;
-    }
-
-    .introduction .container{
-        width: 1060px;
+@media (min-width: 1200px) and (max-width: 1250px) {
+    .tour-Service .big-box .box {
+        margin-top: 90px;
     }
 }
 
-@media screen and (max-width: 1250px) {
-
-    .tour-Service .content span {
-        line-height: 30px;
+@media (min-width: 992px) and (max-width: 1200px) {
+    .tour-Service .big-box .box {
+        margin-top: 90px;
     }
-
-    .tour-Service .content p {
-        line-height: 30px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-
     .description .big-box2 .boxB h1{
         margin-bottom: 0;
 } 
@@ -1715,60 +1700,13 @@ a:link,a:visited,a:hover,a:active{
     }
 
 }
-
-@media screen and (max-width: 1020px) {
-
-    .tour-Service .content p {
-        margin-top: 5px;
-    }
-
-    .tourism .map-grounp .container {
-        width: 960px;
+@media screen and (max-width: 1020px){
+    .tour-Service .big-box .box {
+        margin-top: 125px;
     }
 }
 
-@media screen and (max-width: 1000px) {
-
-    .description .big-box1 .icon1 {
-        width: 100px;
-    }
-
-    .description .big-box2 .icon2 {
-        width: 110px;
-    }
-
-    .description .big-box1 .boxA{
-        margin-left: 25px;
-    }
-
-    .description .big-box2 .boxB{
-        margin-left: 25px;
-    }
-
-    .description .big-box2 .boxB span {
-        line-height: 25px;
-    }
-
-    
-}
-
-@media screen and (max-width: 905px) {
-
-    .tour-Service .content h2{
-        margin-bottom: 20px;
-    }
-
-    .tour-Service .content span {
-        line-height: 28px;
-    }
-
-    .tour-Service .content p {
-        line-height: 28px;
-    }
-}
-
-@media screen and (max-width: 834px) {
-    
+@media(min-width: 768px) and (max-width:992px){
     #window{
         left: -20px;
         width: calc(100vw - 40px);
@@ -1785,6 +1723,14 @@ a:link,a:visited,a:hover,a:active{
         line-height: 0px;
         font-size: 14px;
         letter-spacing: 2px;
+    }
+
+    #nav-inner {
+        width: 100%;
+    }
+
+    #nav-inner.show {
+        left: 0;
     }
 
     .main .home{
@@ -1901,11 +1847,17 @@ a:link,a:visited,a:hover,a:active{
 
     .description .big-box1 {
         width: 100%;
+        float: none;
+        margin: 0 auto;
         margin-bottom: 60px;
+        
+        
     }
 
     .description .big-box2 {
         width: 100%;
+        float: none;
+        margin: 0 auto;
     }
 
     .map-grounp{
@@ -1961,25 +1913,23 @@ a:link,a:visited,a:hover,a:active{
     }
 }
 
-@media screen and (max-width: 590px){
-
-    .container{
-        max-width: 80vw;
-    }
-
+@media (min-width: 576px) and (max-width: 768px){
     .introduction .text{
         display: none;
     }
     
-    .history .container{
-        max-width: 80vw;
-        margin: 20px;
+    .history .map {
+        width: 100%;
+        height: 60vh;
+        float: none;
+        margin: 0 auto;
     }
     .history2 .container{
         display: none;
     }
 
     .history h1{
+        margin-top: 0;
         text-align: center;
     }
 
@@ -1989,28 +1939,72 @@ a:link,a:visited,a:hover,a:active{
         margin-right: auto;
     }
 
-    .history p {
-        text-align: justify;
+    .history .container p {
+        max-width: 100%;
         font-size: 16px;
     }
 
+    .tour-Service .big-box{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .tour-Service .big-box h1 {
+        width: 50%;
+        text-align: center;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .tour-Service .content{
+        width: 100%;
+        max-width: 100%;
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        top: 50px;
+
+    }
+
     .tour-Service .big-box .box{
+        width: 100%;
         height: 100px;
         padding-left: 20px;
         padding-top: 8px;
         padding-bottom: 5px;
         padding-right: 20px;
+        margin-top: 75px;
     }
+
+    .tour-Service .big-box .box p{
+        clear: both;
+    }
+
     .tour-Service .big-box .box span{
         margin: 0;
     }
 
     .tour-Service .big-box .box .href{
-        margin: 10px;
+        margin: 5px;
+    }
+
+    .tour-Service .text{
+        width: 100%;
+        max-width: 100%;
     }
 
     .tourism .map-grounp .container {
         width: 540px;
+    }
+
+    .description .big-box1 {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .description .big-box2 {
+        width: 100%;
     }
     
     .footer{
@@ -2041,28 +2035,7 @@ a:link,a:visited,a:hover,a:active{
 
 }
 
-@media screen and (max-width: 470px){
-    .main .home .main-title {
-        font-size: 55px;
-        letter-spacing: 5px;
-    }
-}
-
-@media screen and (max-width: 440px){
-    .main .home .main-title {
-        font-size: 50px;
-        letter-spacing: 1px;
-    }
-}
-
-@media screen and (max-width: 405px){
-    .main .home .main-title {
-        font-size: 45px;
-        letter-spacing: 1px;
-    }
-}
-
-@media screen and (max-width: 400px){
+@media (min-width: 375px) and (max-width: 576px){
     #window{
         position: relative;
         overflow: hidden;
@@ -2088,11 +2061,16 @@ a:link,a:visited,a:hover,a:active{
     }
 
     #nav-inner {
-        width: 100vw;
+        width: 100%;
     }
 
     #nav-inner.show {
         left: 0;
+    }
+
+    #nav-inner .big-box h1 {
+        font-size: 38px;
+        letter-spacing: 10px;
     }
 
     .nav{
@@ -2157,11 +2135,25 @@ a:link,a:visited,a:hover,a:active{
     }
 
     .history .container{
+        width: 80vw;
+        max-width: 80vw;
         margin: 0 auto;
-        margin-top: 80px;
+        margin-top: 0px;
+    }
+
+    .history .map {
+        width: 100%;
+        height: 40vh;
+        float: none;
+        margin: 0 auto;
+
     }
 
     .history h1 {
+        display: none;
+    }
+
+    .history2 .secition1 {
         display: none;
     }
 
@@ -2170,6 +2162,9 @@ a:link,a:visited,a:hover,a:active{
     }
 
     .introduction .container {
+        width: 80vw;
+        max-width: 80vw;
+        margin: 0 auto;
         padding-top: 30px;
     }
 
@@ -2204,6 +2199,10 @@ a:link,a:visited,a:hover,a:active{
         font-weight: 600;
     }
 
+    .introduction .text {
+        display: none;
+    }
+
     .introduction #slides {
         top: 100px;
     }
@@ -2230,6 +2229,12 @@ a:link,a:visited,a:hover,a:active{
         padding-top: 0px;
     }
 
+    .tourism .map-grounp .container {
+        width: 80vw;
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+
     .tourism .map-grounp {
         width: 100%;
     }
@@ -2239,11 +2244,12 @@ a:link,a:visited,a:hover,a:active{
     }
 
     .tourism .map-grounp .mapbtn #mapswiper .swiper-slide {
-        font-size: 13px;
+        width: 33.33%;
+        font-size: 15px;
     }
 
     .tourism .map-grounp .map {
-        width: 100vw;
+        width: 100%;
         top: 50px;
     }
 
@@ -2290,13 +2296,13 @@ a:link,a:visited,a:hover,a:active{
     .tourism .map-grounp .map-href {
         width: 227px;
         height: 40px;
-        margin-top: 800px;
+        margin-top: 820px;
         font-size: 18px;
         line-height: 40px;
     }
 
     .tourism .map-grounp p {
-        margin-top: -165px;
+        margin-top: -170px;
     }
 
     .tour-Service {
@@ -2306,8 +2312,22 @@ a:link,a:visited,a:hover,a:active{
 
     }
 
+    .tour-Service .container {
+        width: 80vw;
+        max-width: 80vw;
+        margin: 0 auto;
+        padding-top: 0;
+    }
+
+    .tour-Service .big-box {
+        width: 50%;
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+    }
+
     .tour-Service .big-box h1 {
-      
+        float: none;
         font-size: 20px;
         line-height: 30px;
     }
@@ -2321,25 +2341,72 @@ a:link,a:visited,a:hover,a:active{
         font-size: 20px;
     }
 
+    .tour-Service .big-box .box {
+        position: relative;
+        height: 132px;
+        padding: 15px;
+        left: calc(50% - 164px);
+        top: 350px;
+    }
+
+    .tour-Service .big-box .box .href {
+        margin: 0;
+        margin-top: 3px;
+    }
+
+    .tour-Service .big-box .box p {
+        margin-top: 6px;
+    }
+
+    .tour-Service .content {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        text-align: center;
+        position: relative;
+        top: -230px;
+    }
+
+    .tour-Service .content span {
+        line-height: 35px;
+        letter-spacing: 2px;
+    }
+
+    .tour-Service .content p {
+        margin-top: 30px;
+        line-height: 35px;
+        letter-spacing: 2px;
+    }
+
+    .tour-Service .text {
+        width: 100%;
+        max-width: 100%;
+    }
+
     .description{
         position: relative;
-        top: -730px;
+        top: -550px;
     }
 
     .description .container{
-        margin-top: 0;
+        width: 80vw;
+        max-width: 80vw;
+        margin: 0 auto;
     }
 
     .description .big-box1 {
+        width: 100%;
         display: flex;
         flex-flow: wrap;
         justify-content: center;
     }
 
     .description .big-box2 {
+        width: 100%;
         display: flex;
         flex-flow: wrap;
         justify-content: center;
+        margin-top: 40px;
     }
 
     .description .big-box1 .icon1 {
@@ -2364,40 +2431,8 @@ a:link,a:visited,a:hover,a:active{
         text-align: center;
     }
 
-    .tour-Service .big-box .box {
-        position: relative;
-        height: 132px;
-        padding: 15px;
-        top: 530px;
-    }
-
-    .tour-Service .big-box .box .href {
-        margin: 0;
-        margin-top: 3px;
-    }
-
-    .tour-Service .big-box .box p {
-        margin-top: 6px;
-    }
-
-    .tour-Service .container {
-        padding-top: 0;
-    }
-
-    .tour-Service .content {
-        position: relative;
-        top: -230px;
-    }
-
-    .tour-Service .content span {
-        line-height: 35px;
-        letter-spacing: 2px;
-    }
-
-    .tour-Service .content p {
-        margin-top: 30px;
-        line-height: 35px;
-        letter-spacing: 2px;
+    .footer-img {
+        margin-top: 250px;
     }
 
     footer{
@@ -2406,7 +2441,7 @@ a:link,a:visited,a:hover,a:active{
     }
 
     .footer .container {
-        width: 100vw;
+        width: 100%;
         position: relative;
     }
 
@@ -2430,8 +2465,8 @@ a:link,a:visited,a:hover,a:active{
     .footer .container .mid-box {
         position: absolute;
         top: 40px;
-        left: calc(50% - 145px);
-        padding: 0 20px;
+        left: calc(50% - 135px);
+        padding: 0 10px;
     }
 
     .footer .container .mid-box .text1 {
@@ -2518,5 +2553,614 @@ a:link,a:visited,a:hover,a:active{
         display: none;
     }
 
+    .footer .right-box {
+        display: none;
+    }
+
 }
 
+@media screen and (max-width: 495px){
+    .history .map{
+        height: 35vh;
+    }
+
+    .description {
+        top: -640px;
+    }
+
+    .tour-Service .big-box .box {
+        top: 430px;
+    }
+}
+
+@media screen and (max-width: 471px){
+    #nav-inner .big-box h1 {
+        font-size: 28px;
+        letter-spacing: 3px;
+    }
+}
+
+@media screen and (max-width: 412px){
+    .description {
+        top: -700px;
+    }
+
+    .tour-Service .big-box .box {
+        top: 470px;
+    }
+}
+
+@media screen and (max-width: 381px){
+    .description {
+        top: -740px;
+    }
+
+    .tour-Service .big-box .box {
+        top: 520px;
+    }
+}
+
+
+@media screen and (max-width: 375px){
+    #window{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        margin-left: 0;
+        left: 0;
+    }
+
+    #menubtn{
+        display: none;
+    }
+
+    #mb-menubtn{
+        display: flex;
+        top: 10px;
+        left: 10px;
+    }
+
+    #hamburger {
+        position: fixed;
+        top: 18px;
+        left: 12px;
+    }
+
+    #nav-inner {
+        width: 100%;
+    }
+
+    #nav-inner.show {
+        left: 0;
+    }
+
+    #nav-inner .big-box h1{
+        font-size: 30px;
+        letter-spacing: 14px;
+        
+    }
+
+    .nav{
+        position: absolute;
+        width: 100%;
+        height: 225px;
+        z-index: 1;
+    }
+
+    .nav .nav-title {
+        display: none;
+    }
+
+    .main .home{
+        width: 100%;
+        height: 40vh;
+    }
+
+    .main .home .main-title {
+        position: absolute;
+        top: 5px;
+        right: 45px;
+        font-size: 45px;
+        letter-spacing: 1px;
+        z-index: 2;
+        color: white;
+        letter-spacing: 5px;
+    }
+
+    .main .home .line {
+        display: none;
+    }
+
+    .main .home .text1 {
+        display: none;
+    }
+
+    .main .home .text2{
+        text-align: right;
+        margin-top: 15px;
+        position: absolute;
+        top: 75px;
+        right: 55px;
+        z-index: 2;
+        color: white;
+        font-size: 7px;
+        line-height: 20px;
+    }
+
+    .main .home .city-img {
+        display: none;
+    }
+
+    .nav-img{
+        width: 100%;
+        height: 460px;
+        top: 185px;
+    }
+
+    .history{
+        width: 100%;
+    }
+
+    .history .container{
+        width: 80vw;
+        max-width: 80vw;
+        margin: 0 auto;
+        margin-top: 0px;
+    }
+
+    .history .map {
+        width: 100%;
+        height: 30vh;
+        float: none;
+        margin: 0 auto;
+
+    }
+
+    .history h1 {
+        display: none;
+    }
+
+    .history2 .secition1 {
+        display: none;
+    }
+
+    .introduction{
+        width: 100%;
+    }
+
+    .introduction .container {
+        width: 80vw;
+        max-width: 80vw;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    .introduction h1 {
+        writing-mode: horizontal-tb;
+    }
+
+    .introduction .pc-title{
+        display: none;
+    }
+
+    .introduction .mb-title{
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .introduction .mb-title div{
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 110px;
+        border-top-style: solid;
+        border-top-color: black;
+        border-top-width: 1px; 
+    }
+
+    .introduction .mb-title span{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .introduction .text {
+        display: none;
+    }
+
+    .introduction #slides {
+        top: 100px;
+    }
+
+    .introduction #slides #swiper {
+        max-width: 100vw;
+    }
+
+    .introduction .secition2 {
+        width: 140px;
+        height: 30px;
+        margin-top: 540px;
+        text-align: center;
+        
+    }
+
+    .introduction .secition2 span {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 30px;
+    }
+
+    .tourism .container {
+        padding-top: 0px;
+    }
+
+    .tourism .map-grounp .container {
+        width: 80vw;
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+
+    .tourism .map-grounp {
+        width: 100%;
+    }
+
+    .tourism h1 {
+        display: none;
+    }
+
+    .tourism .map-grounp .mapbtn #mapswiper .swiper-slide {
+        width: 33.33%;
+        font-size: 15px;
+    }
+
+    .tourism .map-grounp .map {
+        width: 100%;
+        top: 50px;
+    }
+
+    .tourism .map-grounp .map-img1.show{
+        display: none;
+    }
+
+    .tourism .map-grounp .map-img2.show{
+        display: none;
+    }
+
+    .tourism .map-grounp .map-img3.show{
+        display: none;
+    }
+
+    .tourism .map-grounp .map-img4.show{
+        display: none;
+    }
+
+    .tourism .map-grounp .map-img5.show{
+        display: none;
+    }
+
+    .tourism .map-grounp .map-img6.show{
+        display: none;
+    }
+
+    .tourism .mb-swiper{
+        display: flex;
+        width: 100vw;
+        height: 200px;
+        position: absolute;
+        top: 575px;
+    }
+
+    .tourism .mb-swiper #mb-slide{
+        width: 120px;
+        height: 120px;
+        border-radius: 10px;
+        background-color: #000;
+
+    }
+
+    .tourism .map-grounp .map-href {
+        width: 227px;
+        height: 40px;
+        margin-top: 820px;
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .tourism .map-grounp p {
+        margin-top: -190px;
+    }
+
+    .tour-Service {
+        width: 100%;
+        position: relative;
+        top: 680px;
+
+    }
+
+    .tour-Service .container {
+        width: 80vw;
+        max-width: 80vw;
+        margin: 0 auto;
+        padding-top: 0;
+    }
+
+    .tour-Service .big-box {
+        width: 50%;
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+    }
+
+    .tour-Service .big-box h1 {
+        float: none;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .tour-Service .big-box h1 hr {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .tour-Service .big-box h1 span {
+        font-size: 20px;
+    }
+
+    .tour-Service .big-box .box {
+        position: relative;
+        height: 132px;
+        padding: 15px;
+        left: calc(50% - 164px);
+        top: 510px;
+    }
+
+    .tour-Service .big-box .box .href {
+        margin: 0;
+        margin-top: 3px;
+    }
+
+    .tour-Service .big-box .box p {
+        margin-top: 6px;
+    }
+
+    .tour-Service .content {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        text-align: center;
+        position: relative;
+        top: -230px;
+    }
+
+    .tour-Service .content span {
+        line-height: 35px;
+        letter-spacing: 2px;
+    }
+
+    .tour-Service .content p {
+        margin-top: 30px;
+        line-height: 35px;
+        letter-spacing: 2px;
+    }
+
+    .tour-Service .text {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .description{
+        position: relative;
+        top: -720px;
+    }
+
+    .description .container{
+        width: 80vw;
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+
+    .description .big-box1 {
+        width: 100%;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+
+    .description .big-box2 {
+        width: 100%;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .description .big-box1 .icon1 {
+        width: 78px;
+        height: 78px;
+    }
+
+    .description .big-box1 .boxA {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .description .big-box2 .icon2 {
+        width: 78px;
+        height: 78px;
+    }
+
+    .description .big-box2 .boxB {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .footer-img {
+        margin-top: 250px;
+    }
+
+    footer{
+        position: relative;
+        bottom: 0;
+    }
+
+    .footer .container {
+        width: 100%;
+        position: relative;
+    }
+
+    .footer .container .left-box{
+        position: absolute;
+        top: 120px;
+        left: calc(50% - 137px);
+    }
+
+    .footer .container .left-box h1 {
+        margin-top: 0;
+        font-size: 34px;
+        margin-right: 10px;
+    }
+
+    .footer .container .left-box span {
+        margin: 0;
+        font-size: 5px;
+    }
+
+    .footer .container .mid-box {
+        position: absolute;
+        top: 40px;
+        left: calc(50% - 135px);
+        padding: 0 10px;
+    }
+
+    .footer .container .mid-box .text1 {
+        width: 50%;
+        margin: 0;
+        margin: 0;
+    }
+
+    .footer .container .mid-box .text1 div {
+        margin-right: 15px;
+    }
+
+    .footer .container .mid-box .text1 h1 {
+        margin-right: 15px;
+        margin-bottom: 0;
+        letter-spacing: 8px;
+        font-size: 15px;
+
+    }
+
+    .footer .container .mid-box .text1 span {
+        display: none;
+    }
+
+    .footer .container .mid-box .text2 {
+        width: 50%;
+        margin: 0;
+    }
+
+    .footer .container .mid-box .text2 div {
+        margin-right: 15px;
+    }
+
+    .footer .container .mid-box .text2 h1 {
+        margin-right: 15px;
+        margin-bottom: 0;
+        letter-spacing: 8px;
+        font-size: 15px;
+
+    }
+
+    .footer .container .mid-box .text2 span {
+        display: none;
+    }
+
+    .footer .container .mid-box .text3 {
+        width: 50%;
+        margin: 0;
+    }
+
+    .footer .container .mid-box .text3 div {
+        margin-right: 15px;
+    }
+
+    .footer .container .mid-box .text3 h1 {
+        margin-right: 15px;
+        margin-bottom: 0;
+        letter-spacing: 8px;
+        font-size: 15px;
+
+    }
+
+    .footer .container .mid-box .text3 span {
+        display: none;
+    }
+
+    .footer .container .mid-box .text4 {
+        width: 50%;
+        margin: 0;
+    }
+
+    .footer .container .mid-box .text4 div {
+        margin-right: 15px;
+    }
+
+    .footer .container .mid-box .text4 h1 {
+        margin-right: 15px;
+        margin-bottom: 0;
+        letter-spacing: 8px;
+        font-size: 15px;
+    }
+
+    .footer .container .mid-box .text4 span {
+        display: none;
+    }
+
+    .footer .right-box {
+        display: none;
+    }
+}  
+
+@media screen and (max-width: 366px){
+    #nav-inner .big-box h1 {
+        display: none;
+    }
+
+    #nav-inner .big-box span {
+        display: none;
+    }
+
+    #nav-inner .logo {
+        display: none;
+    }
+
+    #nav-inner .inner-title {
+        width: 100%;
+    }
+
+    #nav-inner .inner-title .text {
+        margin: 0 13px;
+    }
+}
+
+@media screen and (max-width: 325px){
+    .history .map{
+        height: 25vh;
+    }
+
+    .tourism .map-grounp p {
+        margin-top: -200px;
+    }
+
+    .description {
+        top: -840px;
+    }
+
+    .tour-Service .big-box .box {
+        top: 600px;
+    }
+}
