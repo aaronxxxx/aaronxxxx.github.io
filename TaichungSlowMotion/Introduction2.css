@@ -285,11 +285,6 @@ body{
     
 }
 
-.main .title div:hover{
-    color: white;
-}
-
-
 .main .title div span{
     width: 180px;
     font-size: 14px;
@@ -322,6 +317,11 @@ body{
     text-shadow: 20px 5px 40px rgb(130, 63, 255),0px 5px 40px rgb(255, 0, 85),-20px 5px 40px rgb(228, 77, 31);
     opacity: 0.8;
 }
+
+.main .title div:hover{
+    color: white;
+}
+
 
 .swiper-container {
     height: 360px;
