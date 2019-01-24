@@ -144,6 +144,7 @@ a:link,a:visited,a:hover,a:active{
     background-image: url("img/backgroup.png");
     background-position: center;
     background-size: cover;
+    background-color: #1a1a1a;
     color: white;
     left: -2500px;
     transition: cubic-bezier(0.34, 0.08, 0.44, 0.82) 2.5s;
