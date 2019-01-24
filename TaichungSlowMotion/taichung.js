@@ -28,6 +28,8 @@ $(function () {
 
         $('#nav-inner').toggleClass('show');
 
+        $('#mb-hamburger').toggleClass('show');
+
     });
 
 });
@@ -37,6 +39,9 @@ $(function () {
     $('#int').on('click', function () {
 
         $('#nav-inner').toggleClass('show');
+
+        $('#mb-hamburger').toggleClass('show');
+
 
     });
 
@@ -48,6 +53,9 @@ $(function () {
 
         $('#nav-inner').toggleClass('show');
 
+        $('#mb-hamburger').toggleClass('show');
+
+
     });
 
 });
@@ -57,6 +65,9 @@ $(function () {
     $('#tou2').on('click', function () {
 
         $('#nav-inner').toggleClass('show');
+
+        $('#mb-hamburger').toggleClass('show');
+
 
     });
 
