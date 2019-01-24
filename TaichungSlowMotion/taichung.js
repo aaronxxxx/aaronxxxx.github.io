@@ -270,6 +270,15 @@ mapBtn6.onclick = function(){
     tourCon.classList.add('move');
 }
 
-
+var swiper1 = new Swiper("#mb-slide", {
+    speed: 2000,
+    autoplay: {
+        delay: 0,
+    },
+    loop: true,
+    width: 120,
+    height: 120,
+    
+});
 
 
