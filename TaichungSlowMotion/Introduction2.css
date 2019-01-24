@@ -480,3 +480,1127 @@ body{
     bottom: 0;
     left: 50%;
 }
+
+/* 放圖片進來 */
+
+
+#swiper1 .swiper-wrapper .pic1{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper1 .swiper-wrapper .pic2{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper1 .swiper-wrapper .pic3{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper1 .swiper-wrapper .pic4{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+#swiper1 .swiper-wrapper .pic5{
+    background-image: url("img/05/taichung.jpg");
+    background-size: cover;
+}
+
+#swiper1 .swiper-wrapper .pic6{
+    background-image: url("img/05/first.jpg");
+    background-size: cover;
+}
+
+#swiper1 .swiper-wrapper .pic7{
+    background-image: url("img/05/second.jpg");
+    background-size: cover;
+}
+
+#swiper1 .swiper-wrapper .pic8{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper1 .swiper-wrapper .pic9{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper1 .swiper-wrapper .pic10{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper1 .swiper-wrapper .pic11{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+
+/* 第二行 */
+
+#swiper2 .swiper-wrapper .pic1{
+    background-image: url("img/08/01.jpg");
+    background-size: cover;
+}
+
+#swiper2 .swiper-wrapper .pic2{
+    background-image: url("img/08/02.jpg");
+    background-size: cover;
+}
+
+#swiper2 .swiper-wrapper .pic3{
+    background-image: url("img/08/03.jpg");
+    background-size: cover;
+}
+
+#swiper2 .swiper-wrapper .pic4{
+    background-image: url("img/08/04.jpg");
+    background-size: cover;
+}
+
+#swiper2 .swiper-wrapper .pic5{
+    background-image: url("img/08/ca02f08a07b73c7c8ea49328e78955353_22309465_190117_0003.jpg");
+    background-size: cover;
+}
+
+#swiper2 .swiper-wrapper .pic6{
+    background-image: url("img/08/01.jpg");
+    background-size: cover;
+}
+
+#swiper2 .swiper-wrapper .pic7{
+    background-image: url("img/08/02.jpg");
+    background-size: cover;
+}
+
+#swiper2 .swiper-wrapper .pic8{
+    background-image: url("img/08/03.jpg");
+    background-size: cover;
+}
+
+#swiper2 .swiper-wrapper .pic9{
+    background-image: url("img/08/04.jpg");
+    background-size: cover;
+}
+
+#swiper2 .swiper-wrapper .pic10{
+    background-image: url("img/08/ca02f08a07b73c7c8ea49328e78955353_22309465_190117_0003.jpg");
+    background-size: cover;
+}
+
+#swiper2 .swiper-wrapper .pic11{
+    background-image: url("img/08/01.jpg");
+    background-size: cover;
+}
+
+
+
+/* 第三行 */
+
+
+#swiper3 .swiper-wrapper .pic1{
+    background-image: url("img/09/01.jpg");
+    background-size: cover;
+}
+
+#swiper3 .swiper-wrapper .pic2{
+    background-image: url("img/09/02.jpg");
+    background-size: cover;
+}
+
+#swiper3 .swiper-wrapper .pic3{
+    background-image: url("img/09/03.jpg");
+    background-size: cover;
+}
+
+#swiper3 .swiper-wrapper .pic4{
+    background-image: url("img/09/04.jpg");
+    background-size: cover;
+}
+
+#swiper3 .swiper-wrapper .pic5{
+    background-image: url("img/09/ca02f08a07b73c7c8ea49328e78955353_22309471_190117_0005.jpg");
+    background-size: cover;
+}
+
+#swiper3 .swiper-wrapper .pic6{
+    background-image: url("img/09/01.jpg");
+    background-size: cover;
+}
+
+#swiper3 .swiper-wrapper .pic7{
+    background-image: url("img/09/02.jpg");
+    background-size: cover;
+}
+
+#swiper3 .swiper-wrapper .pic8{
+    background-image: url("img/09/03.jpg");
+    background-size: cover;
+}
+
+#swiper3 .swiper-wrapper .pic9{
+    background-image: url("img/09/04.jpg");
+    background-size: cover;
+}
+
+#swiper3 .swiper-wrapper .pic10{
+    background-image: url("img/09/ca02f08a07b73c7c8ea49328e78955353_22309471_190117_0005.jpg");
+    background-size: cover;
+}
+
+#swiper3 .swiper-wrapper .pic11{
+    background-image: url("img/09/04.jpg");
+    background-size: cover;
+}
+
+
+/* 第四行 */
+
+
+#swiper4 .swiper-wrapper .pic1{
+    background-image: url("img/12/01.jpg");
+    background-size: cover;
+}
+
+#swiper4 .swiper-wrapper .pic2{
+    background-image: url("img/12/02.jpg");
+    background-size: cover;
+}
+
+#swiper4 .swiper-wrapper .pic3{
+    background-image: url("img/12/03.jpg");
+    background-size: cover;
+}
+
+#swiper4 .swiper-wrapper .pic4{
+    background-image: url("img/12/04.jpg");
+    background-size: cover;
+}
+
+#swiper4 .swiper-wrapper .pic5{
+    background-image: url("img/12/05.jpg");
+    background-size: cover;
+}
+
+#swiper4 .swiper-wrapper .pic6{
+    background-image: url("img/12/img-1543554329-11765.jpg");
+    background-size: cover;
+}
+
+#swiper4 .swiper-wrapper .pic7{
+    background-image: url("img/12/T_190118_0019_0.jpg");
+    background-size: cover;
+}
+
+#swiper4 .swiper-wrapper .pic8{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper4 .swiper-wrapper .pic9{
+    background-image: url("img/12/02.jpg");
+    background-size: cover;
+}
+
+#swiper4 .swiper-wrapper .pic10{
+    background-image: url("img/12/03.jpg");
+    background-size: cover;
+}
+
+#swiper4 .swiper-wrapper .pic11{
+    background-image: url("img/12/04.jpg");
+    background-size: cover;
+}
+
+
+/* 第五行 */
+
+
+#swiper5 .swiper-wrapper .pic1{
+    background-image: url("img/01/14910410_1127722610597903_1334434285265983764_n.jpg");
+    background-size: cover;
+}
+
+#swiper5 .swiper-wrapper .pic2{
+    background-image: url("img/01/16422633_1218236021546561_4168359449025589505_o.jpg");
+    background-size: cover;
+}
+
+#swiper5 .swiper-wrapper .pic3{
+    background-image: url("img/01/mpark.news-2018-01-21_01-41-00_546036-770x513.jpg");
+    background-size: cover;
+}
+
+#swiper5 .swiper-wrapper .pic4{
+    background-image: url("img/01/Pic_190117_0001.jpg");
+    background-size: cover;
+}
+
+#swiper5 .swiper-wrapper .pic5{
+    background-image: url("img/01/14910410_1127722610597903_1334434285265983764_n.jpg");
+    background-size: cover;
+}
+
+#swiper5 .swiper-wrapper .pic6{
+    background-image: url("img/01/16422633_1218236021546561_4168359449025589505_o.jpg");
+    background-size: cover;
+}
+
+#swiper5 .swiper-wrapper .pic7{
+    background-image: url("img/01/Pic_190117_0001.jpg");
+    background-size: cover;
+}
+
+#swiper5 .swiper-wrapper .pic8{
+    background-image: url("img/01/mpark.news-2018-01-21_01-41-00_546036-770x513.jpg");
+    background-size: cover;
+}
+
+#swiper5 .swiper-wrapper .pic9{
+    background-image: url("img/01/14910410_1127722610597903_1334434285265983764_n.jpg");
+    background-size: cover;
+}
+
+#swiper5 .swiper-wrapper .pic10{
+    background-image: url("img/01/16422633_1218236021546561_4168359449025589505_o.jpg");
+    background-size: cover;
+}
+
+#swiper5 .swiper-wrapper .pic11{
+    background-image: url("img/01/Pic_190117_0001.jpg");
+    background-size: cover;
+}
+
+
+/* 第六行 */
+
+
+#swiper6 .swiper-wrapper .pic1{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper6 .swiper-wrapper .pic2{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper6 .swiper-wrapper .pic3{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper6 .swiper-wrapper .pic4{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+#swiper6 .swiper-wrapper .pic5{
+    background-image: url("img/05/taichung.jpg");
+    background-size: cover;
+}
+
+#swiper6 .swiper-wrapper .pic6{
+    background-image: url("img/05/first.jpg");
+    background-size: cover;
+}
+
+#swiper6 .swiper-wrapper .pic7{
+    background-image: url("img/05/second.jpg");
+    background-size: cover;
+}
+
+#swiper6 .swiper-wrapper .pic8{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper6 .swiper-wrapper .pic9{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper6 .swiper-wrapper .pic10{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper6 .swiper-wrapper .pic11{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+
+/* 第七行 */
+
+
+#swiper7 .swiper-wrapper .pic1{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper7 .swiper-wrapper .pic2{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper7 .swiper-wrapper .pic3{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper7 .swiper-wrapper .pic4{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+#swiper7 .swiper-wrapper .pic5{
+    background-image: url("img/05/taichung.jpg");
+    background-size: cover;
+}
+
+#swiper7 .swiper-wrapper .pic6{
+    background-image: url("img/05/first.jpg");
+    background-size: cover;
+}
+
+#swiper7 .swiper-wrapper .pic7{
+    background-image: url("img/05/second.jpg");
+    background-size: cover;
+}
+
+#swiper7 .swiper-wrapper .pic8{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper7 .swiper-wrapper .pic9{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper7 .swiper-wrapper .pic10{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper7 .swiper-wrapper .pic11{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+
+/* 第八行 */
+
+
+#swiper8 .swiper-wrapper .pic1{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper8 .swiper-wrapper .pic2{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper8 .swiper-wrapper .pic3{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper8 .swiper-wrapper .pic4{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+#swiper8 .swiper-wrapper .pic5{
+    background-image: url("img/05/taichung.jpg");
+    background-size: cover;
+}
+
+#swiper8 .swiper-wrapper .pic6{
+    background-image: url("img/05/first.jpg");
+    background-size: cover;
+}
+
+#swiper8 .swiper-wrapper .pic7{
+    background-image: url("img/05/second.jpg");
+    background-size: cover;
+}
+
+#swiper8 .swiper-wrapper .pic8{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper8 .swiper-wrapper .pic9{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper8 .swiper-wrapper .pic10{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper8 .swiper-wrapper .pic11{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+
+/* 第九行 */
+
+
+#swiper9 .swiper-wrapper .pic1{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper9 .swiper-wrapper .pic2{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper9 .swiper-wrapper .pic3{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper9 .swiper-wrapper .pic4{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+#swiper9 .swiper-wrapper .pic5{
+    background-image: url("img/05/taichung.jpg");
+    background-size: cover;
+}
+
+#swiper9 .swiper-wrapper .pic6{
+    background-image: url("img/05/first.jpg");
+    background-size: cover;
+}
+
+#swiper9 .swiper-wrapper .pic7{
+    background-image: url("img/05/second.jpg");
+    background-size: cover;
+}
+
+#swiper9 .swiper-wrapper .pic8{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper9 .swiper-wrapper .pic9{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper9 .swiper-wrapper .pic10{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper9 .swiper-wrapper .pic11{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+
+/* 第十行 */
+
+
+#swiper10 .swiper-wrapper .pic1{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper10 .swiper-wrapper .pic2{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper10 .swiper-wrapper .pic3{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper10 .swiper-wrapper .pic4{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+#swiper10 .swiper-wrapper .pic5{
+    background-image: url("img/05/taichung.jpg");
+    background-size: cover;
+}
+
+#swiper10 .swiper-wrapper .pic6{
+    background-image: url("img/05/first.jpg");
+    background-size: cover;
+}
+
+#swiper10 .swiper-wrapper .pic7{
+    background-image: url("img/05/second.jpg");
+    background-size: cover;
+}
+
+#swiper10 .swiper-wrapper .pic8{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper10 .swiper-wrapper .pic9{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper10 .swiper-wrapper .pic10{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper10 .swiper-wrapper .pic11{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+
+/* 第十一行 */
+
+
+#swiper11 .swiper-wrapper .pic1{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper11 .swiper-wrapper .pic2{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper11 .swiper-wrapper .pic3{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper11 .swiper-wrapper .pic4{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+#swiper11 .swiper-wrapper .pic5{
+    background-image: url("img/05/taichung.jpg");
+    background-size: cover;
+}
+
+#swiper11 .swiper-wrapper .pic6{
+    background-image: url("img/05/first.jpg");
+    background-size: cover;
+}
+
+#swiper11 .swiper-wrapper .pic7{
+    background-image: url("img/05/second.jpg");
+    background-size: cover;
+}
+
+#swiper11 .swiper-wrapper .pic8{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper11 .swiper-wrapper .pic9{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper11 .swiper-wrapper .pic10{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper11 .swiper-wrapper .pic11{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+
+/* 第十二行 */
+
+
+#swiper12 .swiper-wrapper .pic1{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper12 .swiper-wrapper .pic2{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper12 .swiper-wrapper .pic3{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper12 .swiper-wrapper .pic4{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+#swiper12 .swiper-wrapper .pic5{
+    background-image: url("img/05/taichung.jpg");
+    background-size: cover;
+}
+
+#swiper12 .swiper-wrapper .pic6{
+    background-image: url("img/05/first.jpg");
+    background-size: cover;
+}
+
+#swiper12 .swiper-wrapper .pic7{
+    background-image: url("img/05/second.jpg");
+    background-size: cover;
+}
+
+#swiper12 .swiper-wrapper .pic8{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper12 .swiper-wrapper .pic9{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper12 .swiper-wrapper .pic10{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper12 .swiper-wrapper .pic11{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+
+
+/* 第十三行 */
+
+
+#swiper13 .swiper-wrapper .pic1{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper13 .swiper-wrapper .pic2{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper13 .swiper-wrapper .pic3{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper13 .swiper-wrapper .pic4{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+#swiper13 .swiper-wrapper .pic5{
+    background-image: url("img/05/taichung.jpg");
+    background-size: cover;
+}
+
+#swiper13 .swiper-wrapper .pic6{
+    background-image: url("img/05/first.jpg");
+    background-size: cover;
+}
+
+#swiper13 .swiper-wrapper .pic7{
+    background-image: url("img/05/second.jpg");
+    background-size: cover;
+}
+
+#swiper13 .swiper-wrapper .pic8{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper13 .swiper-wrapper .pic9{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper13 .swiper-wrapper .pic10{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper13 .swiper-wrapper .pic11{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+
+/* 第十四行 */
+
+
+#swiper14 .swiper-wrapper .pic1{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper14 .swiper-wrapper .pic2{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper14 .swiper-wrapper .pic3{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper14 .swiper-wrapper .pic4{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+#swiper14 .swiper-wrapper .pic5{
+    background-image: url("img/05/taichung.jpg");
+    background-size: cover;
+}
+
+#swiper14 .swiper-wrapper .pic6{
+    background-image: url("img/05/first.jpg");
+    background-size: cover;
+}
+
+#swiper14 .swiper-wrapper .pic7{
+    background-image: url("img/05/second.jpg");
+    background-size: cover;
+}
+
+#swiper14 .swiper-wrapper .pic8{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper14 .swiper-wrapper .pic9{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper14 .swiper-wrapper .pic10{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper14 .swiper-wrapper .pic11{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+
+
+/* 第十五行 */
+
+
+#swiper15 .swiper-wrapper .pic1{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper15 .swiper-wrapper .pic2{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper15 .swiper-wrapper .pic3{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper15 .swiper-wrapper .pic4{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+#swiper15 .swiper-wrapper .pic5{
+    background-image: url("img/05/taichung.jpg");
+    background-size: cover;
+}
+
+#swiper15 .swiper-wrapper .pic6{
+    background-image: url("img/05/first.jpg");
+    background-size: cover;
+}
+
+#swiper15 .swiper-wrapper .pic7{
+    background-image: url("img/05/second.jpg");
+    background-size: cover;
+}
+
+#swiper15 .swiper-wrapper .pic8{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper15 .swiper-wrapper .pic9{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper15 .swiper-wrapper .pic10{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper15 .swiper-wrapper .pic11{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+
+/* 第十六行 */
+
+
+#swiper16 .swiper-wrapper .pic1{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper16 .swiper-wrapper .pic2{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper16 .swiper-wrapper .pic3{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper16 .swiper-wrapper .pic4{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+#swiper16 .swiper-wrapper .pic5{
+    background-image: url("img/05/taichung.jpg");
+    background-size: cover;
+}
+
+#swiper16 .swiper-wrapper .pic6{
+    background-image: url("img/05/first.jpg");
+    background-size: cover;
+}
+
+#swiper16 .swiper-wrapper .pic7{
+    background-image: url("img/05/second.jpg");
+    background-size: cover;
+}
+
+#swiper16 .swiper-wrapper .pic8{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper16 .swiper-wrapper .pic9{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper16 .swiper-wrapper .pic10{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper16 .swiper-wrapper .pic11{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+
+
+/* 第十七行 */
+
+
+#swiper17 .swiper-wrapper .pic1{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper17 .swiper-wrapper .pic2{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper17 .swiper-wrapper .pic3{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper17 .swiper-wrapper .pic4{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+#swiper17 .swiper-wrapper .pic5{
+    background-image: url("img/05/taichung.jpg");
+    background-size: cover;
+}
+
+#swiper17 .swiper-wrapper .pic6{
+    background-image: url("img/05/first.jpg");
+    background-size: cover;
+}
+
+#swiper17 .swiper-wrapper .pic7{
+    background-image: url("img/05/second.jpg");
+    background-size: cover;
+}
+
+#swiper17 .swiper-wrapper .pic8{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper17 .swiper-wrapper .pic9{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper17 .swiper-wrapper .pic10{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper17 .swiper-wrapper .pic11{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+
+
+/* 第十八行 */
+
+
+#swiper18 .swiper-wrapper .pic1{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper18 .swiper-wrapper .pic2{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper18 .swiper-wrapper .pic3{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper18 .swiper-wrapper .pic4{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+#swiper18 .swiper-wrapper .pic5{
+    background-image: url("img/05/taichung.jpg");
+    background-size: cover;
+}
+
+#swiper18 .swiper-wrapper .pic6{
+    background-image: url("img/05/first.jpg");
+    background-size: cover;
+}
+
+#swiper18 .swiper-wrapper .pic7{
+    background-image: url("img/05/second.jpg");
+    background-size: cover;
+}
+
+#swiper18 .swiper-wrapper .pic8{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper18 .swiper-wrapper .pic9{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper18 .swiper-wrapper .pic10{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper18 .swiper-wrapper .pic11{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+
+/* 第十九行 */
+
+
+#swiper19 .swiper-wrapper .pic1{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper19 .swiper-wrapper .pic2{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper19 .swiper-wrapper .pic3{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper19 .swiper-wrapper .pic4{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
+
+#swiper19 .swiper-wrapper .pic5{
+    background-image: url("img/05/taichung.jpg");
+    background-size: cover;
+}
+
+#swiper19 .swiper-wrapper .pic6{
+    background-image: url("img/05/first.jpg");
+    background-size: cover;
+}
+
+#swiper19 .swiper-wrapper .pic7{
+    background-image: url("img/05/second.jpg");
+    background-size: cover;
+}
+
+#swiper19 .swiper-wrapper .pic8{
+    background-image: url("img/05/01.jpg");
+    background-size: cover;
+}
+
+#swiper19 .swiper-wrapper .pic9{
+    background-image: url("img/05/1966.jpg");
+    background-size: cover;
+}
+
+#swiper19 .swiper-wrapper .pic10{
+    background-image: url("img/05/20181008001513_18.jpg");
+    background-size: cover;
+}
+
+#swiper19 .swiper-wrapper .pic11{
+    background-image: url("img/05/Pic_190117_0010.jpg");
+    background-size: cover;
+}
