@@ -15,7 +15,7 @@ body {
 .main{
     width: calc(100vw - 17px);
     height: 100vh;
-    background-image: url("/img/火車站/Pic_190117_0010.jpg");
+    background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -350px;
@@ -256,7 +256,7 @@ body {
 .content .intro-img .img1{
     width: 970px;
     height: 480px;
-    background-image: url("/img/火車站/1966年火車站.jpg");
+    background-image: url("img/05/1966年05.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -100px;
@@ -274,7 +274,7 @@ body {
 .content .intro-img .img2{
     width: 970px;
     height: 480px;
-    background-image: url("/img/火車站/Pic_190117_0010.jpg");
+    background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -200px;
@@ -284,7 +284,7 @@ body {
 .content .intro-img .img3{
     width: 970px;
     height: 480px;
-    background-image: url("/img/火車站/20181008001513_18.jpg");
+    background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -100px;
@@ -431,7 +431,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 40px;
-    background-image: url("/img/火車站/01.jpg");
+    background-image: url("img/05/01.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -50px;
@@ -443,7 +443,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 40px;
-    background-image: url("/img/盛橋/02.jpg");
+    background-image: url("img/盛橋/02.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -30px;
@@ -455,7 +455,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 40px;
-    background-image: url("/img/宮原眼科/02.jpg");
+    background-image: url("img/宮原眼科/02.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -50px;
@@ -467,7 +467,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 40px;
-    background-image: url("/img/陳沙茶繼光香香雞/店.jpg");
+    background-image: url("img/陳沙茶繼光香香雞/店.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -50px;
@@ -479,7 +479,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 40px;
-    background-image: url("/img/陳沙茶繼光香香雞/陳沙茶.jpg");
+    background-image: url("img/陳沙茶繼光香香雞/陳沙茶.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -80px;
@@ -491,7 +491,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 40px;
-    background-image: url("/img/綠川/02.jpg");
+    background-image: url("img/綠川/02.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -60px;
@@ -503,7 +503,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 40px;
-    background-image: url("/img/第四信用/01.jpg");
+    background-image: url("img/第四信用/01.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -80px;
@@ -515,7 +515,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 40px;
-    background-image: url("/img/台灣大道/幸.jpg");
+    background-image: url("img/台灣大道/幸.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -30px;

@@ -15,7 +15,7 @@ body {
 .main{
     width: calc(100vw - 17px);
     height: 100vh;
-    background-image: url("/img/一廣/Pic_190117_0001.jpg");
+    background-image: url("img/01/Pic_190117_0001.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -256,7 +256,7 @@ body {
 .content .intro-img .img1{
     width: 970px;
     height: 480px;
-    background-image: url("/img/一廣/16422633_1218236021546561_4168359449025589505_o.jpg");
+    background-image: url("img/01/16422633_1218236021546561_4168359449025589505_o.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 65px;
@@ -274,7 +274,7 @@ body {
 .content .intro-img .img2{
     width: 970px;
     height: 480px;
-    background-image: url("/img/一廣/14910410_1127722610597903_1334434285265983764_n.jpg");
+    background-image: url("img/01/14910410_1127722610597903_1334434285265983764_n.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 30px;
@@ -283,7 +283,7 @@ body {
 .content .intro-img .img3{
     width: 970px;
     height: 480px;
-    background-image: url("/img/一廣/mpark.news-2018-01-21_01-41-00_546036-770x513.jpg");
+    background-image: url("img/01/mpark.news-2018-01-21_01-41-00_546036-770x513.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 80px;
@@ -430,7 +430,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 40px;
-    background-image: url("/img/火車站/01.jpg");
+    background-image: url("img/火車站/01.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -50px;
@@ -442,7 +442,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 40px;
-    background-image: url("/img/盛橋/02.jpg");
+    background-image: url("img/盛橋/02.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -30px;
@@ -454,7 +454,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 40px;
-    background-image: url("/img/宮原眼科/02.jpg");
+    background-image: url("img/宮原眼科/02.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -50px;
@@ -466,7 +466,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 40px;
-    background-image: url("/img/陳沙茶繼光香香雞/店.jpg");
+    background-image: url("img/陳沙茶繼光香香雞/店.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -50px;
@@ -478,7 +478,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 40px;
-    background-image: url("/img/陳沙茶繼光香香雞/陳沙茶.jpg");
+    background-image: url("img/陳沙茶繼光香香雞/陳沙茶.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -80px;
@@ -490,7 +490,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 40px;
-    background-image: url("/img/綠川/02.jpg");
+    background-image: url("img/綠川/02.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -60px;
@@ -502,7 +502,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 40px;
-    background-image: url("/img/第四信用/01.jpg");
+    background-image: url("img/第四信用/01.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -80px;
@@ -514,7 +514,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 40px;
-    background-image: url("/img/台灣大道/幸.jpg");
+    background-image: url("img/台灣大道/幸.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -30px;
