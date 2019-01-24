@@ -928,6 +928,7 @@ a:link,a:visited,a:hover,a:active{
     margin-top: 732px;
     margin-left: auto;
     margin-right: auto;
+    text-decoration: none;
 }
 
 .introduction .secition2 a {
