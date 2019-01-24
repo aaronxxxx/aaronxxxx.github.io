@@ -838,6 +838,7 @@ a:link,a:visited,a:hover,a:active{
     letter-spacing: 8px;
     margin: 0;
     color: black;
+    text-decoration: none;
 }
 
 .introduction{
