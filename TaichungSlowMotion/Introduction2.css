@@ -285,6 +285,10 @@ body{
     
 }
 
+.main .title div:hover{
+    color: white;
+}
+
 
 .main .title div span{
     width: 180px;
