@@ -15,7 +15,7 @@ body {
 .main{
     width: calc(100vw - 17px);
     height: 100vh;
-    background-image: url("img/09/遠東百貨.jpg");
+    background-image: url("img/06/11.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -350px;
@@ -258,7 +258,7 @@ body {
 .content .intro-img .img1{
     width: 970px;
     height: 480px;
-    background-image: url("img/09/成功戲院.jpg");
+    background-image: url("img/06/12.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -100px;
@@ -277,7 +277,7 @@ body {
 .content .intro-img .img2{
     width: 970px;
     height: 480px;
-    background-image: url("img/09/成功戲院01.jpg");
+    background-image: url("img/06/13.jpg");
     background-position-y: -50px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -288,7 +288,7 @@ body {
 .content .intro-img .img3{
     width: 970px;
     height: 480px;
-    background-image: url("img//09/遠東百貨2.jpg");
+    background-image: url("img//06/14.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 80px;
@@ -435,7 +435,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 40px;
-    background-image: url("img/一廣/Pic_190117_0001.jpg");
+    background-image: url("img/01/Pic_190117_0001.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -50px;
@@ -447,7 +447,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 40px;
-    background-image: url("img/09/幸.jpg");
+    background-image: url("img/06/01.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -40px;
@@ -459,7 +459,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 40px;
-    background-image: url("img/青草街/地面logo.jpg");
+    background-image: url("img/07/logo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -50px;
@@ -471,7 +471,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 40px;
-    background-image: url("img/陳沙茶繼光香香雞/店.jpg");
+    background-image: url("img/11/01.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -50px;
@@ -483,7 +483,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 40px;
-    background-image: url("img/09/全安堂.jpg");
+    background-image: url("img/06/002.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -45px;
@@ -495,7 +495,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 40px;
-    background-image: url("img/綠川/02.jpg");
+    background-image: url("img/12/02.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -60px;
@@ -507,7 +507,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 40px;
-    background-image: url("img/09/沁園春.jpg");
+    background-image: url("img/09/03.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -150px;
@@ -519,7 +519,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 40px;
-    background-image: url("img/09/後引.jpg");
+    background-image: url("img/09/01.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -30px;
