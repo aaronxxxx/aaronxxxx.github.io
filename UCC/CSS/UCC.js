@@ -48,16 +48,16 @@ var swiper = new Swiper('#slides2', {
         loadPrevNextAmount: 3,
     },
     centeredSlides: true,
-    spaceBetween: 50,
+    spaceBetween: 60,
     slidesOffsetBefore: 40,
     loop: true,
     slidesPerView: 'auto',
     on: {
         slideChangeTransitionEnd: function () {
-            this.slides.transition(this.params.autoplay.delay + this.params.speed).transform('translate3d(-60px, 0, 0)');
+            this.slides.transition(this.params.autoplay.delay + this.params.speed).transform('translate3d(-80px, 0, 0)');
         },
         slideChangeTransitionStart: function () {
-            this.slides.transition(this.params.speed).transform('translate3d(0, 0, 0)');
+            this.slides.transition(this.params.speed).transform('translate3d(-30px, 0, 0)');
         },
     },
     pagination: {

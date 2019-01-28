@@ -372,46 +372,141 @@ body{
 }
 
 #slides2 .swiper-slide {
-    width: 1000px;
+    width: 100vw;
+    max-width: 1920px;
     height: 150%;
     transition-timing-function: linear;
 }
 
 #slides2 .img1{
     width: 100%;
-    height: 100%;
+    height: 80%;
     background-image: url("img/shop-1.jpg");
-    background-position: center;
+    background-position-x: center;
+    background-position-y: -200px; 
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+}
+
+#slides2 .img1 a{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#slides2 .img1 a:hover{
+    color: black;
+    text-shadow: 0px 0px 10px white;
 }
 
 #slides2 .img2{
     width: 100%;
-    height: 100%;
+    height: 80%;
     background-image: url("img/shop-2.jpg");
-    background-position: center;
+    background-position-x: center;
+    background-position-y: -200px; 
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+}
+
+#slides2 .img2 a{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#slides2 .img2 a:hover{
+    color: black;
+    text-shadow: 0px 0px 10px white;
 }
 
 #slides2 .img3{
     width: 100%;
-    height: 100%;
+    height: 80%;
     background-image: url("img/shop-3.png");
-    background-position: center;
+    background-position-x: center;
+    background-position-y: -200px; 
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
 }
+
+#slides2 .img3 a{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#slides2 .img3 a:hover{
+    color: black;
+    text-shadow: 0px 0px 10px white;
+}
+
 
 #slides2 .img4{
     width: 100%;
-    height: 100%;
+    height: 80%;
     background-image: url("img/shop-4.png");
-    background-position: center;
+    background-position-x: center;
+    background-position-y: -200px; 
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
 }
+
+#slides2 .img4 a{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#slides2 .img4 a:hover{
+    color: black;
+    text-shadow: 0px 0px 10px white;
+}
+
 
 .swiper-button-next,.swiper-button-prev {
     width: 400px;
@@ -1053,4 +1148,181 @@ body{
 .footer .secition4 .mask .contact div span{
     font-size: 24px;
     font-weight: 600;
+}
+
+@media (min-width:1440px) and (max-width:1920px){
+    body{
+        max-width: 1440px;
+        height: 6700px;
+    }
+
+    .main {
+        max-width: 1440px;
+        max-height: 900px;
+    }
+
+    .idea {
+        max-width: 1440px;
+    }
+
+    .idea .img1 {
+        top: -75px;
+    }
+
+    .idea .hide {
+        top: 50px;
+    }
+
+    .idea .hide .img2 {
+        right: -240px;
+        top: -40px;
+    }
+
+    .idea .intro2 {
+        margin-top: 230px;
+    }
+
+    .idea .intro2 span {
+        font-size: 20px;
+    }
+
+    .idea .img3 {
+        right: 215px;
+        top: 970px;
+    }
+
+    .product {
+        max-width: 1440px;
+        max-height: 900px;
+        position: relative;
+        top: -100px;
+    }
+
+    .idea2 {
+        max-width: 1440px;
+    }
+
+    .idea2 .img4 {
+        left: 10px;
+        top: -255px;
+    }
+
+    .idea2 .img5 {
+        left: 680px;
+        top: -655px;
+    }
+
+    .idea2 .intro3 span:nth-child(1) {
+        font-size: 25px;
+    }
+
+    .idea2 .intro3 span:nth-child(2) {
+        font-size: 25px;
+    }
+
+    .idea2 .intro3 span:nth-child(3) {
+        font-size: 25px;
+    }
+
+    .idea2 .intro3 span:nth-child(4) {
+        font-size: 25px;
+    }
+
+    .idea2 .intro3 span:nth-child(5) {
+        font-size: 25px;
+    }
+
+    .idea2 .intro3 span:nth-child(6) {
+        font-size: 25px;
+    }
+
+    .idea2 .intro3 span:nth-child(7) {
+        font-size: 25px;
+    }
+
+    .idea2 .intro3 span:nth-child(8) {
+        font-size: 25px;
+    }
+
+    .idea2 .intro3 span:nth-child(9) {
+        font-size: 25px;
+    }
+
+    .shop {
+        max-width: 1440px;
+        max-height: 900px;
+    }
+
+    .shop .secition2 {
+        transform: rotate(8deg) translateX(-3%) translateY(23%);
+    }
+
+    .map {
+        max-width: 1440px;
+    }
+
+    .map .world {
+        top: -260px;
+    }
+
+    .map .big-logo {
+        padding-top: 380px;
+    }
+
+    .footer {
+        max-width: 1440px;
+        height: 205vh;
+        position: relative;
+        top: -210px;
+        
+    }
+
+    .footer .secition3 .history .coffeemap {
+        left: 300px;
+    }
+
+    .footer .secition3 .history .coffeeintro {
+        left: 300px;
+    }
+
+    .footer .secition3 .history #his-intro1 {
+        font-size: 22px;
+    }
+
+    .footer .secition3 .history #his-intro2 {
+        font-size: 22px;
+    }
+
+    .footer .secition3 .history #his-intro3 {
+        font-size: 22px;
+    }
+
+    .footer .secition3 .history #his-intro4 {
+        font-size: 22px;
+    }
+
+    .footer .secition3 .history #his-intro5 {
+        font-size: 22px;
+    }
+
+    .footer .secition3 .history #his-intro6 {
+        font-size: 22px;
+    }
+
+    .footer .secition3 .history #his-intro7 {
+        font-size: 22px;
+    }
+
+    .footer .secition3 .history .time {
+        top: 330px;
+        left: 1230px;
+    }
+
+    .footer .secition4 {
+        transform: rotate(-8deg) translateX(-3%) translateY(-2%);
+    }
+
+    .footer .secition4 .mask .contact {
+        transform: rotate(8deg) translate(-65%,-82%);
+    }
 }
