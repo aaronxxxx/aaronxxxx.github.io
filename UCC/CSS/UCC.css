@@ -571,7 +571,6 @@ body{
     max-width: 1920px;
     height: 200vh;
     overflow: hidden;
-    position: relative;
 }
 
 .footer .secition3{
@@ -584,15 +583,409 @@ body{
 
 .footer .secition3 .history{
     width: 70%;
-    height: 103%;
+    height: 90%;
     background-image: url("img/coffeeimg-3.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    position: absolute;
-    left: 95px;
-    top: -215px;
+    position: relative;
+    left: 90px;
+    top: -130px;
     transform: rotate(-8deg);
+}
+
+.footer .secition3 .history .coffeemap{
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: 400px;
+    left: 430px;
+}
+
+.footer .secition3 .history #history1{
+    width: 60%;
+    height: 200px;
+    background-image: url("img/history-1.gif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+
+}
+
+.footer .secition3 .history #history2{
+    width: 60%;
+    height: 200px;
+    background-image: url("img/history-2.gif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+
+.footer .secition3 .history #history3{
+    width: 60%;
+    height: 200px;
+    background-image: url("img/history-3.gif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+
+.footer .secition3 .history #history4{
+    width: 60%;
+    height: 200px;
+    background-image: url("img/history-4.gif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+
+.footer .secition3 .history #history5{
+    width: 60%;
+    height: 200px;
+    background-image: url("img/history-5.gif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+
+.footer .secition3 .history #history6{
+    width: 60%;
+    height: 200px;
+    background-image: url("img/history-6.gif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+
+.footer .secition3 .history #history7{
+    width: 60%;
+    height: 200px;
+    background-image: url("img/history-7.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.footer .secition3 .history #history1.show{
+    opacity: 1;
+    
+}
+
+.footer .secition3 .history #history2.show{
+    opacity: 1;
+}
+
+.footer .secition3 .history #history3.show{
+    opacity: 1;
+}
+
+.footer .secition3 .history #history4.show{
+    opacity: 1;
+}
+
+.footer .secition3 .history #history5.show{
+    opacity: 1;
+}
+
+.footer .secition3 .history #history6.show{
+    opacity: 1;
+}
+
+.footer .secition3 .history #history7.show{
+    opacity: 1;
+}
+
+.footer .secition3 .history .coffeeintro{
+    width: 800px;
+    height: 50px;
+    position: absolute;
+    top: 670px;
+    left: 430px;
+}
+
+.footer .secition3 .history #his-intro1{
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.footer .secition3 .history #his-intro2{
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+
+.footer .secition3 .history #his-intro3{
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+
+.footer .secition3 .history #his-intro4{
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+
+.footer .secition3 .history #his-intro5{
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+
+.footer .secition3 .history #his-intro6{
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+
+.footer .secition3 .history #his-intro7{
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.footer .secition3 .history #his-intro1.show{
+    opacity: 1;
+}
+
+.footer .secition3 .history #his-intro2.show{
+    opacity: 1;
+}
+
+.footer .secition3 .history #his-intro3.show{
+    opacity: 1;
+}
+
+.footer .secition3 .history #his-intro4.show{
+    opacity: 1;
+}
+
+.footer .secition3 .history #his-intro5.show{
+    opacity: 1;
+}
+
+.footer .secition3 .history #his-intro6.show{
+    opacity: 1;
+}
+
+.footer .secition3 .history #his-intro7.show{
+    opacity: 1;
+}
+
+.footer .secition3 .history .time{
+    width: 300px;
+    height: 650px;
+    position: relative;
+    top: 380px;
+    left: 1550px;
+}
+
+.footer .secition3 .history .time .line{
+    width: 2px;
+    height: 100%;
+    border-left-style: solid;
+    border-left-color: black;
+    border-left-width: 2px;
+}
+
+.footer .secition3 .history #his1btn{
+    font-size: 36px;
+    font-weight: bold;
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.footer .secition3 .history #his1btn:hover{
+    transition: linear 0.3s;
+    transform: scale(1.5);
+    color: red;
+}
+
+.footer .secition3 .history #his2btn{
+    font-size: 36px;
+    font-weight: bold;
+    position: absolute;
+    top: 60px;
+    left: -110px;
+    cursor: pointer;
+}
+
+.footer .secition3 .history #his2btn:hover{
+    transition: linear 0.3s;
+    transform: scale(1.5);
+    color: red;
+}
+
+.footer .secition3 .history #his3btn{
+    font-size: 36px;
+    font-weight: bold;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.footer .secition3 .history #his3btn:hover{
+    transition: linear 0.3s;
+    transform: scale(1.5);
+    color: red;
+}
+
+.footer .secition3 .history #his4btn{
+    font-size: 36px;
+    font-weight: bold;
+    position: absolute;
+    top: 240px;
+    left: -110px;
+    cursor: pointer;
+}
+
+.footer .secition3 .history #his4btn:hover{
+    transition: linear 0.3s;
+    transform: scale(1.5);
+    color: red;
+}
+
+.footer .secition3 .history #his5btn{
+    font-size: 36px;
+    font-weight: bold;
+    position: absolute;
+    top: 330px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.footer .secition3 .history #his5btn:hover{
+    transition: linear 0.3s;
+    transform: scale(1.5);
+    color: red;
+}
+
+.footer .secition3 .history #his6btn{
+    font-size: 36px;
+    font-weight: bold;
+    position: absolute;
+    top: 420px;
+    left: -110px;
+    cursor: pointer;
+}
+
+.footer .secition3 .history #his6btn:hover{
+    transition: linear 0.3s;
+    transform: scale(1.5);
+    color: red;
+}
+
+.footer .secition3 .history #his7btn{
+    font-size: 36px;
+    font-weight: bold;
+    position: absolute;
+    top: 510px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.footer .secition3 .history #his7btn:hover{
+    transition: linear 0.3s;
+    transform: scale(1.5);
+    color: red;
+}
+
+.footer .secition3 .history .time .circle{
+    position: relative;
+    top: -690px;
+    left: -3px;
+    font-size: 50px;
+}
+
+.footer .secition3 .history .time .circle li:nth-child(1){
+    position: absolute;
+    top: 0;
+}
+
+.footer .secition3 .history .time .circle li:nth-child(2){
+    position: absolute;
+    top: 90px;
+}
+
+.footer .secition3 .history .time .circle li:nth-child(3){
+    position: absolute;
+    top: 180px;
+}
+
+.footer .secition3 .history .time .circle li:nth-child(4){
+    position: absolute;
+    top: 270px;
+}
+
+.footer .secition3 .history .time .circle li:nth-child(5){
+    position: absolute;
+    top: 360px;
+}
+
+.footer .secition3 .history .time .circle li:nth-child(6){
+    position: absolute;
+    top: 450px;
+}
+
+.footer .secition3 .history .time .circle li:nth-child(7){
+    position: absolute;
+    top: 540px;
 }
 
 .footer .secition4{
