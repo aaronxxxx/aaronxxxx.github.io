@@ -36,14 +36,24 @@ body{
 .idea{
     width: calc(100vw - 17px);
     max-width: 1920px;
-    height: 133vh;
+    height: 130vh;
     position: relative;
 }
 
+.idea .hide1{
+    width: calc(100vw - 17px);
+    max-width: 1920px;
+    height: 160vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    
+}
 
-.idea .img1{
+.idea .hide1 .img1{
     width: 100%;
-    height: 137%;
+    height: 115%;
     background-image: url("img/coffeeimg-1.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -55,25 +65,15 @@ body{
     
 }
 
-.idea .hide{
-    width: 50%;
-    height: 73%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    overflow: hidden;
-    
-}
-
-.idea .hide .img2{
+.idea .hide1 .img2{
     width: 100%;
-    height: 100%;
+    height: 65%;
     background-image: url("img/coffeebeans-1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    right: -180px;
+    right: -720px;
     top: 0;
     z-index: -1;
 }
@@ -189,30 +189,40 @@ body{
     position: relative;
 }
 
+.idea2 .hide2{
+    width: calc(100vw - 17px);
+    max-width: 1920px;
+    height: 120vh;
+    position: absolute;
+    right: 0;
+    top: -300px;
+    overflow: hidden;
+}
+
 .idea2 .img4{
     width: 60%;
-    height: 120%;
+    height: 50%;
     background-image: url("img/coffeebeans-3.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     left: 60px;
-    top: -135px;
+    top: 145px;
     z-index: -2;
     
 }
 
 .idea2 .img5{
     width: 50%;
-    height: 195%;
+    height: 95%;
     background-image: url("img/coffeeimg-2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     left: 835px;
-    top: -615px;
+    top: -405px;
     z-index: -2;
 }
 
@@ -220,9 +230,9 @@ body{
     width: 50%;
     height: 120%;
     margin: 0 auto;
-    padding-top: 95px;
     text-align: center;
     position:relative;
+    top: 90px;
     z-index: -3;
 	color: black;
 	text-shadow: 0 0 2px rgba(255,255,255,0.3), -1px -1px 0 #fcfcfc, 1px 1px 0 #ccc;
@@ -1150,7 +1160,7 @@ body{
     font-weight: 600;
 }
 
-@media (min-width:1440px) and (max-width:1920px){
+@media (min-width:1440px) and (max-width:1919px){
     body{
         max-width: 1440px;
         height: 6700px;
@@ -1165,25 +1175,37 @@ body{
         max-width: 1440px;
     }
 
-    .idea .img1 {
-        top: -75px;
+    
+    .idea .intro h1 {
+        font-size: 50px;
     }
 
-    .idea .hide {
-        top: 50px;
+    .idea .intro span {
+        font-size: 20px;
     }
 
-    .idea .hide .img2 {
-        right: -240px;
-        top: -40px;
+    .idea .hide1 {
+        max-width: 1440px;
+    }
+
+    .idea .hide1 .img1 {
+        height: 105%;
+        left: -335px;
+        top: 5px;
+    }
+
+    .idea .hide1 .img2 {
+        height: 55%;
+        right: -610px;
+        top: -30px;
     }
 
     .idea .intro2 {
-        margin-top: 230px;
+        margin-top: 370px;
     }
 
     .idea .intro2 span {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .idea .img3 {
@@ -1202,14 +1224,23 @@ body{
         max-width: 1440px;
     }
 
-    .idea2 .img4 {
-        left: 10px;
-        top: -255px;
+    .idea2 .hide2 {
+        max-width: 1440px;
+        top: -340px;
     }
 
-    .idea2 .img5 {
+    .idea2 .hide2 .img4 {
+        left: 10px;
+        top: 85px;
+    }
+
+    .idea2 .hide2 .img5 {
         left: 680px;
-        top: -655px;
+        top: -375px;
+    }
+
+    .idea2 .intro3 {
+        top: -40px;
     }
 
     .idea2 .intro3 span:nth-child(1) {
@@ -1324,5 +1355,19 @@ body{
 
     .footer .secition4 .mask .contact {
         transform: rotate(8deg) translate(-65%,-82%);
+    }
+
+    .footer .secition4 .mask .contact div h1 {
+        font-size: 30px;
+    }
+
+    
+    .footer .secition4 .mask .contact div h2 {
+        font-size: 20px;
+    }
+
+    .footer .secition4 .mask .contact div span {
+        font-size: 22px;
+
     }
 }
