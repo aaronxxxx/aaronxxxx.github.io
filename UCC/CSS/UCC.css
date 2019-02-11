@@ -3,20 +3,24 @@
     font-family: 'Noto Serif TC', serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
-    width: calc(100vw - 17px);
+    width: 100%;
     max-width: 1920px;
 
 }
 
 .main{
-    width: calc(100vw - 17px);
+    width: 100%;
     max-width: 1920px;
     height: 100vh;
     max-height: 1080px;
     overflow: hidden;
-    position: relative;
+
 }
 
 .main .logo{
@@ -34,14 +38,15 @@ body{
 }
 
 .idea{
-    width: calc(100vw - 17px);
+    width: 100%;
     max-width: 1920px;
     height: 130vh;
     position: relative;
+
 }
 
 .idea .hide1{
-    width: calc(100vw - 17px);
+    width: 100%;
     max-width: 1920px;
     height: 160vh;
     position: absolute;
@@ -59,8 +64,8 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    left: -445px;
-    top: 15px;
+    left: -22%;
+    top: 1%;
     z-index: -1;
     
 }
@@ -73,8 +78,8 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    right: -720px;
-    top: 0;
+    right: -36%;
+    top: -6%;
     z-index: -1;
 }
 
@@ -86,8 +91,8 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    right: 315px;
-    top: 1060px;
+    right: 16%;
+    top: 87%;
     z-index: -1;
 }
 
@@ -126,7 +131,7 @@ body{
     margin: 0 auto;
     text-align: left;
     color: rgb(66, 66, 66);
-    margin-top: 440px;
+    margin-top: 24%;
 
 }
 
@@ -136,7 +141,7 @@ body{
 }
 
 .product{
-    width: calc(100vw - 17px);
+    width: 100%;
     max-width: 1920px;
     height: 100vh;
     max-height: 1080px;
@@ -183,19 +188,19 @@ body{
 }
 
 .idea2{
-    width: calc(100vw - 17px);
+    width: 100%;
     max-width: 1920px;
     height: 55vh;
     position: relative;
 }
 
 .idea2 .hide2{
-    width: calc(100vw - 17px);
+    width: 100%;
     max-width: 1920px;
     height: 120vh;
     position: absolute;
     right: 0;
-    top: -300px;
+    top: -58%;
     overflow: hidden;
 }
 
@@ -207,8 +212,8 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    left: 60px;
-    top: 145px;
+    left: 2%;
+    top: 12%;
     z-index: -2;
     
 }
@@ -221,8 +226,8 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    left: 835px;
-    top: -405px;
+    left: 44%;
+    top: -36%;
     z-index: -2;
 }
 
@@ -231,8 +236,8 @@ body{
     height: 120%;
     margin: 0 auto;
     text-align: center;
-    position:relative;
-    top: 90px;
+    position: relative;
+    top: 17%;
     z-index: -3;
 	color: black;
 	text-shadow: 0 0 2px rgba(255,255,255,0.3), -1px -1px 0 #fcfcfc, 1px 1px 0 #ccc;
@@ -359,7 +364,7 @@ body{
 }
 
 .shop{
-    width: calc(100vw - 17px);
+    width: 100%;
     max-width: 1920px;
     height: 100vh;
     max-height: 1080px;
@@ -641,7 +646,7 @@ body{
 }
 
 .map{
-    width: calc(100vw - 17px);
+    width: 100%;
     max-width: 1920px;
     height: 55vh;
     position: relative;
@@ -672,7 +677,7 @@ body{
 }
 
 .footer{
-    width: calc(100vw - 17px);
+    width: 100%;
     max-width: 1920px;
     height: 200vh;
     overflow: hidden;
@@ -1158,435 +1163,4 @@ body{
 .footer .secition4 .mask .contact div span{
     font-size: 24px;
     font-weight: 600;
-}
-
-@media  (max-width:1919px){
-    body{
-        max-width: 100vw;
-    }
-
-    .main {
-        max-width: 100vw;
-    }
-
-    .idea {
-        max-width: 100vw;
-    }
-
-    
-    .idea .intro h1 {
-        font-size: 50px;
-    }
-
-    .idea .intro span {
-        font-size: 20px;
-    }
-
-    .idea .hide1 {
-        max-width: 100%;
-        max-height: 130%;
-    }
-
-    .idea .hide1 .img1 {
-        width: 95%;
-        height: 95%;
-        left: -22%;
-        top: -2%;
-    }
-
-    .idea .hide1 .img2 {
-        width: 95%;
-        height: 55%;
-        right: -36%;
-        top: -3%;
-    }
-
-    .idea .intro2 {
-        margin-top: 21%;
-    }
-
-    .idea .intro2 span {
-        font-size: 18px;
-    }
-
-    .idea .img3 {
-        right: 13%;
-        top: 63%;
-    }
-
-    .product {
-        max-width: 100vw;
-        position: relative;
-        top: -4%;
-    }
-
-    .idea2 {
-        max-width: 100vw;
-        top: -4%;
-    }
-
-    .idea2 .hide2 {
-        max-width: 100%;
-        top: -57%;
-    }
-
-    .idea2 .hide2 .img4 {
-        left: 7%;
-        top: 9%;
-    }
-
-    .idea2 .hide2 .img5 {
-        left: 44%;
-        top: -34%;
-    }
-
-    .idea2 .intro3 {
-        top: 25%;
-    }
-
-    .idea2 .intro3 span:nth-child(1) {
-        font-size: 25px;
-    }
-
-    .idea2 .intro3 span:nth-child(2) {
-        font-size: 25px;
-    }
-
-    .idea2 .intro3 span:nth-child(3) {
-        font-size: 25px;
-    }
-
-    .idea2 .intro3 span:nth-child(4) {
-        font-size: 25px;
-    }
-
-    .idea2 .intro3 span:nth-child(5) {
-        font-size: 25px;
-    }
-
-    .idea2 .intro3 span:nth-child(6) {
-        font-size: 25px;
-    }
-
-    .idea2 .intro3 span:nth-child(7) {
-        font-size: 25px;
-    }
-
-    .idea2 .intro3 span:nth-child(8) {
-        font-size: 25px;
-    }
-
-    .idea2 .intro3 span:nth-child(9) {
-        font-size: 25px;
-    }
-
-    .idea2 .intro3 h1 {
-        top: 71%;
-        left: 21%;
-        font-size: 40px;
-    }
-
-    .shop {
-        max-width: 100vw;
-        max-height: 100%;
-        position: relative;
-        top: -4%;
-    }
-
-    .shop .secition2 {
-        transform: rotate(8deg) translateX(-3%) translateY(23%);
-    }
-
-    .map {
-        max-width: 100vw;
-        top: -4%
-    }
-
-    .map .world {
-        top: -45%;
-    }
-
-    .map .big-logo {
-        padding-top: 0%;
-    }
-
-    .footer {
-        max-width: 100vw;
-        max-height: 200%;
-        position: relative;
-        top: -7%;
-        
-    }
-
-    .footer .secition3 .history {
-        left: 5%;
-        top: -11%;
-    }
-
-    .footer .secition3 .history .coffeemap {
-        left: 30%;
-        top: 40%;
-    }
-
-    .footer .secition3 .history .coffeeintro {
-        left: 30%;
-        top: 60%;
-    }
-
-    .footer .secition3 .history #his-intro1 {
-        font-size: 22px;
-    }
-
-    .footer .secition3 .history #his-intro2 {
-        font-size: 22px;
-    }
-
-    .footer .secition3 .history #his-intro3 {
-        font-size: 22px;
-    }
-
-    .footer .secition3 .history #his-intro4 {
-        font-size: 22px;
-    }
-
-    .footer .secition3 .history #his-intro5 {
-        font-size: 22px;
-    }
-
-    .footer .secition3 .history #his-intro6 {
-        font-size: 22px;
-    }
-
-    .footer .secition3 .history #his-intro7 {
-        font-size: 22px;
-    }
-
-    .footer .secition3 .history .time {
-        width: 20%;
-        height: 59%;
-        top: 36%;
-        left: 113%;
-    }
-
-    .footer .secition3 .history .time .circle {
-        top: -106%;
-        left: -1.5%;
-    }
-
-    .footer .secition4 {
-        transform: rotate(-8deg) translateX(-3%) translateY(-2%);
-    }
-
-    .footer .secition4 .mask .contact {
-        transform: rotate(8deg) translate(-65%,-82%);
-    }
-
-    .footer .secition4 .mask .contact div h1 {
-        font-size: 30px;
-    }
-
-    
-    .footer .secition4 .mask .contact div h2 {
-        font-size: 20px;
-    }
-
-    .footer .secition4 .mask .contact div span {
-        font-size: 22px;
-
-    }
-
-}
-
-@media  (max-width:1439px){
-    .idea .intro h1 {
-        font-size: 40px;
-    }
-
-    .idea .intro span {
-        font-size: 18px;
-    }
-
-    .idea .intro2 {
-        margin-top: 25%;
-    }
-
-    .idea .intro2 span{
-        font-size: 16px;
-    }
-
-    .idea .img3 {
-        top: 73%;
-    }
-
-    .idea2 .intro3 {
-        top: 15%;
-    }
-
-    .idea2 .intro3 span:nth-child(1) {
-        font-size: 23px;
-    }
-
-    .idea2 .intro3 span:nth-child(2) {
-        font-size: 23px;
-    }
-
-    .idea2 .intro3 span:nth-child(3) {
-        font-size: 23px;
-    }
-
-    .idea2 .intro3 span:nth-child(4) {
-        font-size: 23px;
-    }
-
-    .idea2 .intro3 span:nth-child(5) {
-        font-size: 23px;
-    }
-
-    .idea2 .intro3 span:nth-child(6) {
-        font-size: 23px;
-    }
-
-    .idea2 .intro3 span:nth-child(7) {
-        font-size: 23px;
-    }
-
-    .idea2 .intro3 span:nth-child(8) {
-        font-size: 23px;
-    }
-
-    .idea2 .intro3 span:nth-child(9) {
-        font-size: 23px;
-    }
-
-    .idea2 .intro3 h1 {
-        font-size: 35px;
-        top: 74%;
-        left: 22%;
-    }
-
-    .map .world {
-        top: -54%;
-    }
-}
-
-@media  (max-width:1439px){
-    .idea .intro h1 {
-        font-size: 35px;
-    }
-
-    .idea .intro span {
-        font-size: 18px;
-    }
-
-    .idea .intro2 {
-        margin-top: 22%;
-    }
-    .idea .intro2 span{
-        font-size: 16px;
-    }
-    .idea2 .intro3 span:nth-child(1) {
-        font-size: 16px;
-    }
-
-    .idea2 .intro3 span:nth-child(2) {
-        font-size: 16px;
-    }
-
-    .idea2 .intro3 span:nth-child(3) {
-        font-size: 16px;
-    }
-
-    .idea2 .intro3 span:nth-child(4) {
-        font-size: 16px;
-    }
-
-    .idea2 .intro3 span:nth-child(5) {
-        font-size: 16px;
-    }
-
-    .idea2 .intro3 span:nth-child(6) {
-        font-size: 16px;
-    }
-
-    .idea2 .intro3 span:nth-child(7) {
-        font-size: 16px;
-    }
-
-    .idea2 .intro3 span:nth-child(8) {
-        font-size: 16px;
-    }
-
-    .idea2 .intro3 span:nth-child(9) {
-        font-size: 16px;
-    }
-
-    .idea2 .intro3 h1 {
-        top: 75%;
-        left: 30%;
-        font-size: 25px;
-    }
-
-    .footer .secition3 .history .time {
-        top: 34%;
-    }
-
-    .footer .secition4 .mask .contact div h1 {
-        font-size: 35px;
-    }
-
-    .footer .secition4 .mask .contact div h2 {
-        font-size: 16px;
-    }
-
-    .footer .secition4 .mask .contact div span {
-        font-size: 18px;
-    }
-}
-
-@media  (max-width:1250px){
-    .idea .intro2 {
-        width: 39%;
-    }
-
-    .idea .intro2 span{
-        font-size: 12px;
-    }
-
-    .idea2 .intro3{
-        top: 6%;
-    }
-
-    .idea2 .intro3 h1 {
-        top: 86%;
-        left: 23%;
-    }
-
-    .map .world {
-        top: -62%;
-    }
-
-    .footer{
-        top: -8%;
-    }
-
-    .footer .secition3 .history .time {
-        height: 65%;
-        top: 29%;
-    }
-
-    .footer .secition4 .mask .contact {
-        top: 47%;
-    }
-
-    .footer .secition4 .mask .contact div h1 {
-        font-size: 30px;
-    }
-
-    .footer .secition4 .mask .contact div h2 {
-        font-size: 14px;
-    }
-
-    .footer .secition4 .mask .contact div span {
-        font-size: 16px;
-    }
 }

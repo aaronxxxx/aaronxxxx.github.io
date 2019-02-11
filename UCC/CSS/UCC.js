@@ -1,13 +1,3 @@
-
-window.onscroll = function () {
-
-    var scroll = document.documentElement.scrollTop;
-
-    console.log(scroll);
-
-}
-
-
 var swiper = new Swiper('#slides1',{
     direction : 'vertical',
     followFinger : false,
