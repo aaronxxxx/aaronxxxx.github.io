@@ -62,6 +62,7 @@ var swiper = new Swiper('#slides2', {
         prevEl: '.swiper-button-prev',
     },
 });
+
 window.onresize = function () {
     swiper.update();
 }
@@ -191,3 +192,9 @@ his7Btn.onmouseleave = function(){
     history7.classList.remove('show');
     hisintro7.classList.remove('show');
 }
+
+$("#intro-h1").fitText(1.5, { minFontSize: '22px', maxFontSize: '60px' });
+
+$("#intro-span").fitText(1.5, { minFontSize: '12px', maxFontSize: '25px' });
+
+$("#intro2-span").fitText(1.5, { minFontSize: '12px', maxFontSize: '21px' });

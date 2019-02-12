@@ -11,7 +11,6 @@ body{
     margin: 0;
     width: 100%;
     max-width: 1920px;
-
 }
 
 .main{
@@ -39,14 +38,13 @@ body{
 .idea{
     width: 100%;
     max-width: 1920px;
-    height: 130vh;
     position: relative;
 }
 
 .idea .hide1{
     width: 100%;
     max-width: 1920px;
-    height: 160vh;
+    height: 190%;
     position: absolute;
     right: 0;
     top: 0;
@@ -54,42 +52,27 @@ body{
 }
 
 .idea .hide1 .img1{
-    width: 100%;
-    height: 115%;
-    background-image: url("img/coffeeimg-1.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    width: 65%;
     position: absolute;
-    left: -22%;
-    top: 1%;
+    left: -4%;
+    top: 0%;
     z-index: -1;
     
 }
 
 .idea .hide1 .img2{
-    width: 100%;
-    height: 65%;
-    background-image: url("img/coffeebeans-1.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    width: 45%;
     position: absolute;
-    right: -36%;
+    right: -8%;
     top: -6%;
     z-index: -1;
 }
 
 .idea .img3{
-    width: 30%;
-    height: 30%;
-    background-image: url("img/coffeebeans-2.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    width: 18%;
     position: absolute;
-    right: 16%;
-    top: 87%;
+    right: 21%;
+    top: 122%;
     z-index: -1;
 }
 
@@ -99,41 +82,43 @@ body{
     margin: 0 auto;
     text-align: center;
     color: rgb(165, 14, 14);
-    margin-top: 10px;
 }
 
 .idea .intro h1{
     margin: 0;
-    font-size: 60px;
     font-weight: bold;
     
 }
 
-.idea .intro div{
-    border-top-style: solid;
-    border-top-color: rgb(165, 14, 14);
-    border-top-width: 1px;
-    margin-top: 10px;
-    margin-bottom: 3px;
+.idea .intro hr{
+    border-color: rgb(165, 14, 14);
+    width: 50%;
 }
 
-.idea .intro span{
-    font-size: 25px;
+.idea .intro-box{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(165, 14, 14);
+}
+
+.idea .intro-box span{
     font-weight: 600;
+    display: block;
 }
 
 
 .idea .intro2{
     width: 30%;
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
     color: rgb(66, 66, 66);
     margin-top: 24%;
+    margin-bottom: 22%;
 
 }
 
 .idea .intro2 span{
-    font-size: 21px;
     font-weight: 600;
 }
 
@@ -143,6 +128,7 @@ body{
     height: 100vh;
     max-height: 1080px;
     overflow: hidden;
+
 }
 
 .product .secition1{
@@ -151,14 +137,13 @@ body{
     transform: rotate(-8deg) translateX(-5%) translateY(19%);
     display: flex;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: black;
 }
 
 #slides1 {
     width: 100%;
     height: 150%;
-    transform: rotate(8deg) translateX(-2%) translateY(-16%);
-    
+    transform: rotate(8deg) translateX(-2%) translateY(-16%); 
 }
 
 #slides1 video{
@@ -169,19 +154,16 @@ body{
 #slides1 .product1{
     width: 100%;
     transition-timing-function: linear;
-    background-color: #000;
 }
 
 #slides1 .product2{
     width: 100%;
     transition-timing-function: linear;
-    background-color: #000;
 }
 
 #slides1 .product3{
     width: 100%;
     transition-timing-function: linear;
-    background-color: #000;
 }
 
 .idea2{
@@ -194,160 +176,128 @@ body{
 .idea2 .hide2{
     width: 100%;
     max-width: 1920px;
-    height: 120vh;
+    height: 230%;
     position: absolute;
     right: 0;
-    top: -58%;
+    top: -54%;
     overflow: hidden;
 }
 
 .idea2 .img4{
-    width: 60%;
-    height: 50%;
-    background-image: url("img/coffeebeans-3.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    width: 37%;
     position: absolute;
-    left: 2%;
-    top: 12%;
+    left: 10%;
+    top: 8%;
     z-index: -2;
     
 }
 
 .idea2 .img5{
-    width: 50%;
-    height: 95%;
-    background-image: url("img/coffeeimg-2.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    width: 47%;
     position: absolute;
-    left: 44%;
-    top: -36%;
+    left: 50%;
+    top: -38%;
     z-index: -2;
 }
 
 .idea2 .intro3{
-    width: 50%;
-    height: 120%;
+    font-size: 32px;
     margin: 0 auto;
     text-align: center;
     position: relative;
-    top: 17%;
     z-index: -3;
 	color: black;
-	text-shadow: 0 0 2px rgba(255,255,255,0.3), -1px -1px 0 #fcfcfc, 1px 1px 0 #ccc;
+    text-shadow: 0 0 2px rgba(255,255,255,0.3), -1px -1px 0 #fcfcfc, 1px 1px 0 #ccc;
 }
 
 .idea2 .intro3 span:nth-child(1){
-    font-size: 32px;
     font-weight: 600;
     position:absolute;
 	display:block;
 	top:0;
 	left:0;
-	height:100%;
     width:100%;
-    
 }
 
 
 .idea2 .intro3 span:nth-child(2){
-    font-size: 32px;
     font-weight: 600;
     position:absolute;
 	display:block;
 	top:50px;
 	left:0;
-	height:100%;
 	width:100%;
     
 }
 
 .idea2 .intro3 span:nth-child(3){
-    font-size: 32px;
     font-weight: 600;
     position:absolute;
 	display:block;
 	top:100px;
 	left:0;
-	height:100%;
 	width:100%;
     
 }
 
 
 .idea2 .intro3 span:nth-child(4){
-    font-size: 32px;
     font-weight: 600;
     position:absolute;
 	display:block;
 	top:150px;
 	left:0;
-	height:100%;
 	width:100%;
     
 }
 
 .idea2 .intro3 span:nth-child(5){
-    font-size: 32px;
     font-weight: 600;
     position:absolute;
 	display:block;
 	top:200px;
 	left:0;
-	height:100%;
 	width:100%;
     
 }
 
 .idea2 .intro3 span:nth-child(6){
-    font-size: 32px;
     font-weight: 600;
     position:absolute;
 	display:block;
 	top:250px;
 	left:0;
-	height:100%;
 	width:100%;
     
 }
 
 .idea2 .intro3 span:nth-child(7){
-    font-size: 32px;
     font-weight: 600;
     position:absolute;
 	display:block;
 	top:300px;
 	left:0;
-	height:100%;
 	width:100%;
     
 }
 
 .idea2 .intro3 span:nth-child(8){
-    font-size: 32px;
     font-weight: 600;
     position:absolute;
 	display:block;
 	top:350px;
 	left:0;
-	height:100%;
 	width:100%;
     
 }
 
 .idea2 .intro3 span:nth-child(9){
-    font-size: 32px;
     font-weight: 600;
     position:absolute;
 	display:block;
 	top:400px;
 	left:0;
-	height:100%;
 	width:100%;
-    
 }
 
 .idea2 .intro3 h1{
@@ -384,7 +334,7 @@ body{
 }
 
 #slides2 .swiper-slide {
-    width: 100vw;
+    width: 100%;
     max-width: 1920px;
     height: 150%;
     transition-timing-function: linear;
