@@ -20,7 +20,6 @@ body{
     height: 100vh;
     max-height: 1080px;
     overflow: hidden;
-
 }
 
 .main .logo{
@@ -42,7 +41,6 @@ body{
     max-width: 1920px;
     height: 130vh;
     position: relative;
-
 }
 
 .idea .hide1{
@@ -53,7 +51,6 @@ body{
     right: 0;
     top: 0;
     overflow: hidden;
-    
 }
 
 .idea .hide1 .img1{
