@@ -601,26 +601,17 @@ body{
 
 .map .world{
     width: 100%;
-    height: 185%;
-    background-image: url("img/map-1.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
     position: absolute;
-    left: 0px;
-    top: -210px;
+    left: 0;
+    top: -41%;
     z-index: -1;
 }
 
 .map .big-logo{
     width: 60%;
-    height: 80%;
-    background-image: url("img/logo-2.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 0 auto;
-    padding-top: 640px;
+    position: absolute;
+    left: 20%;
+    padding-top: 7%;
 }
 
 .footer{
@@ -633,7 +624,7 @@ body{
 .footer .secition3{
     width: 110%;
     height: 130vh;
-    background-color: bisque;
+    background: linear-gradient(270deg, rgba(188, 139, 93, 1)25%, rgba(227, 200, 153, 1)75%); 
     transform: rotate(8deg) translateX(-5%) translateY(23%);
     overflow: hidden;
 }
@@ -646,17 +637,17 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
-    left: 90px;
-    top: -130px;
+    left: 5%;
+    top: -11%;
     transform: rotate(-8deg);
 }
 
 .footer .secition3 .history .coffeemap{
-    width: 450px;
-    height: 450px;
+    width: 30%;
+    height: 35%;
     position: absolute;
-    top: 400px;
-    left: 430px;
+    top: 37%;
+    left: 32%;
 }
 
 .footer .secition3 .history #history1{
@@ -779,11 +770,11 @@ body{
 }
 
 .footer .secition3 .history .coffeeintro{
-    width: 800px;
-    height: 50px;
+    width: 50%;
+    height: 5%;
     position: absolute;
-    top: 670px;
-    left: 430px;
+    top: 63%;
+    left: 32%;
 }
 
 .footer .secition3 .history #his-intro1{
@@ -883,11 +874,11 @@ body{
 }
 
 .footer .secition3 .history .time{
-    width: 300px;
-    height: 650px;
+    width: 2%;
+    height: 60%;
     position: relative;
-    top: 380px;
-    left: 1550px;
+    top: 34%;
+    left: 106%;
 }
 
 .footer .secition3 .history .time .line{
@@ -902,8 +893,8 @@ body{
     font-size: 36px;
     font-weight: bold;
     position: absolute;
-    top: -30px;
-    left: 20px;
+    top: -5%;
+    left: 65%;
     cursor: pointer;
 }
 
@@ -917,8 +908,8 @@ body{
     font-size: 36px;
     font-weight: bold;
     position: absolute;
-    top: 60px;
-    left: -110px;
+    top: 9%;
+    left: -370%;
     cursor: pointer;
 }
 
@@ -932,8 +923,8 @@ body{
     font-size: 36px;
     font-weight: bold;
     position: absolute;
-    top: 150px;
-    left: 20px;
+    top: 23%;
+    left: 65%;
     cursor: pointer;
 }
 
@@ -947,8 +938,8 @@ body{
     font-size: 36px;
     font-weight: bold;
     position: absolute;
-    top: 240px;
-    left: -110px;
+    top: 37%;
+    left: -370%;
     cursor: pointer;
 }
 
@@ -963,7 +954,7 @@ body{
     font-weight: bold;
     position: absolute;
     top: 330px;
-    left: 20px;
+    left: 65%;
     cursor: pointer;
 }
 
@@ -978,7 +969,7 @@ body{
     font-weight: bold;
     position: absolute;
     top: 420px;
-    left: -110px;
+    left: -370%;
     cursor: pointer;
 }
 
@@ -993,7 +984,7 @@ body{
     font-weight: bold;
     position: absolute;
     top: 510px;
-    left: 20px;
+    left: 65%;
     cursor: pointer;
 }
 
@@ -1005,8 +996,8 @@ body{
 
 .footer .secition3 .history .time .circle{
     position: relative;
-    top: -690px;
-    left: -3px;
+    top: -114%;
+    left: -12%;
     font-size: 50px;
 }
 
@@ -1110,4 +1101,158 @@ body{
 .footer .secition4 .mask .contact div span{
     font-size: 24px;
     font-weight: 600;
+}
+
+@media screen and (max-width:1440px){
+    .idea .hide1 .img2 {
+        top: 0%;
+    }
+
+    .idea .intro2 {
+        margin-top: 15%;
+        margin-bottom: 17%;
+    }
+
+    .idea .img3 {
+        top: 127%;
+    }
+
+    .idea2 .img4 {
+        width: 40%;
+    }
+
+    .idea2 .img5 {
+        top: -25%;
+    }
+
+    .idea2 .intro3 {
+        font-size: 26px;
+    }
+
+    .idea2 .intro3 h1 {
+        font-size: 45px;
+        left: 32%;
+    }
+
+    #slides2 .img1 a {
+        font-size: 60px;
+    }
+
+    #slides2 .img2 a {
+        font-size: 60px;
+    }
+
+    #slides2 .img3 a {
+        font-size: 60px;
+    }
+
+    #slides2 .img4 a {
+        font-size: 60px;
+    }
+
+    .map .big-logo{
+        padding-top: 5%;
+    }
+
+    .footer {
+        height: 190vh;
+    }
+
+    .footer .secition3 {
+        transform: rotate(8deg) translateX(-5%) translateY(12%);
+    }
+
+    .footer .secition3 .history .coffeemap{
+        left: 29%;
+    }
+
+    .footer .secition3 .history .coffeeintro{
+        left: 29%;
+    }
+
+    .footer .secition3 .history .time {
+        left: 109%;
+    }
+
+    .footer .secition3 .history #his1btn{
+        font-size: 32px;
+    }
+
+    .footer .secition3 .history #his2btn{
+        top: 8%;
+        left: -420%;
+        font-size: 32px;
+    }
+
+    .footer .secition3 .history #his3btn{
+        top: 21%;
+        font-size: 32px;
+    }
+
+    .footer .secition3 .history #his4btn{
+        top: 34%;
+        left: -420%;
+        font-size: 32px;
+    }
+
+    .footer .secition3 .history #his5btn{
+        top: 47%;
+        font-size: 32px;
+    }
+
+    .footer .secition3 .history #his6btn{
+        top: 60%;
+        left: -420%;
+        font-size: 32px;
+    }
+
+    .footer .secition3 .history #his7btn{
+        top: 73%;
+        font-size: 32px;
+    }
+
+    .footer .secition3 .history .time .circle{
+        top: -117%;
+        left: -20%;
+    }
+
+    .footer .secition3 .history .time .circle li:nth-child(2){
+        top: 68px;
+    }
+
+    .footer .secition3 .history .time .circle li:nth-child(3){
+        top: 138px;
+    }
+
+    .footer .secition3 .history .time .circle li:nth-child(4){
+        top: 208px;
+    }
+
+    .footer .secition3 .history .time .circle li:nth-child(5){
+        top: 278px;
+    }
+
+    .footer .secition3 .history .time .circle li:nth-child(6){
+        top: 348px;
+    }
+
+    .footer .secition3 .history .time .circle li:nth-child(7){
+        top: 418px;
+    }
+
+    .footer .secition4{
+        transform: rotate(-8deg) translateX(-2%) translateY(-15%);
+    }
+
+    .footer .secition4 .mask .contact {
+        transform: rotate(8deg) translate(-64%,-82%);
+    }
+
+    .footer .secition4 .mask .contact div h1{
+        font-size: 33px;
+    }
+
+    .footer .secition4 .mask .contact div span{
+        font-size: 22px;
+    }
 }
