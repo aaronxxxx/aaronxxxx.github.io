@@ -195,6 +195,4 @@ his7Btn.onmouseleave = function(){
 
 $("#intro-h1").fitText(1.5, { minFontSize: '22px', maxFontSize: '60px' });
 
-$("#intro-span").fitText(1.5, { minFontSize: '12px', maxFontSize: '25px' });
-
 $("#intro2-span").fitText(1.5, { minFontSize: '12px', maxFontSize: '21px' });

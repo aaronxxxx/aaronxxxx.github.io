@@ -38,6 +38,7 @@ body{
 .idea{
     width: 100%;
     max-width: 1920px;
+    height: 130vh;
     position: relative;
 }
 
@@ -64,7 +65,7 @@ body{
     width: 45%;
     position: absolute;
     right: -8%;
-    top: -6%;
+    top: -3%;
     z-index: -1;
 }
 
@@ -72,7 +73,7 @@ body{
     width: 18%;
     position: absolute;
     right: 21%;
-    top: 122%;
+    top: 82%;
     z-index: -1;
 }
 
@@ -95,31 +96,21 @@ body{
     width: 50%;
 }
 
-.idea .intro-box{
+.idea .word{
     width: 30%;
-    margin: 0 auto;
-    text-align: center;
-    color: rgb(165, 14, 14);
+    position: absolute;
+    z-index: -2;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.idea .intro-box span{
-    font-weight: 600;
-    display: block;
-}
-
-
-.idea .intro2{
+.idea .word2{
     width: 30%;
-    margin: 0 auto;
-    text-align: center;
-    color: rgb(66, 66, 66);
-    margin-top: 24%;
-    margin-bottom: 22%;
-
-}
-
-.idea .intro2 span{
-    font-weight: 600;
+    position: absolute;
+    z-index: -2;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 33%;
 }
 
 .product{
@@ -184,7 +175,7 @@ body{
 }
 
 .idea2 .img4{
-    width: 37%;
+    width: 40%;
     position: absolute;
     left: 10%;
     top: 8%;
@@ -306,7 +297,7 @@ body{
     font-weight: bold;
     position: absolute;
     top: 450px;
-    left: calc(50% - 305px);
+    left: 35%;
 
 }
 
@@ -874,33 +865,30 @@ body{
 }
 
 .footer .secition3 .history .time{
-    width: 2%;
+    width: 3%;
     height: 60%;
     position: relative;
     top: 34%;
     left: 106%;
 }
 
-.footer .secition3 .history .time .line{
-    width: 2px;
+.footer .secition3 .history .time .timeline{
+    width: 100%;
     height: 100%;
-    border-left-style: solid;
-    border-left-color: black;
-    border-left-width: 2px;
 }
 
 .footer .secition3 .history #his1btn{
     font-size: 36px;
     font-weight: bold;
     position: absolute;
-    top: -5%;
-    left: 65%;
+    top: -1%;
+    left: 105%;
     cursor: pointer;
 }
 
 .footer .secition3 .history #his1btn:hover{
     transition: linear 0.3s;
-    transform: scale(1.5);
+    transform: scale(1.2);
     color: red;
 }
 
@@ -908,14 +896,14 @@ body{
     font-size: 36px;
     font-weight: bold;
     position: absolute;
-    top: 9%;
-    left: -370%;
+    top: 13%;
+    left: -200%;
     cursor: pointer;
 }
 
 .footer .secition3 .history #his2btn:hover{
     transition: linear 0.3s;
-    transform: scale(1.5);
+    transform: scale(1.2);
     color: red;
 }
 
@@ -923,14 +911,14 @@ body{
     font-size: 36px;
     font-weight: bold;
     position: absolute;
-    top: 23%;
-    left: 65%;
+    top: 26%;
+    left: 105%;
     cursor: pointer;
 }
 
 .footer .secition3 .history #his3btn:hover{
     transition: linear 0.3s;
-    transform: scale(1.5);
+    transform: scale(1.2);
     color: red;
 }
 
@@ -938,14 +926,14 @@ body{
     font-size: 36px;
     font-weight: bold;
     position: absolute;
-    top: 37%;
-    left: -370%;
+    top: 40%;
+    left: -200%;
     cursor: pointer;
 }
 
 .footer .secition3 .history #his4btn:hover{
     transition: linear 0.3s;
-    transform: scale(1.5);
+    transform: scale(1.2);
     color: red;
 }
 
@@ -953,14 +941,14 @@ body{
     font-size: 36px;
     font-weight: bold;
     position: absolute;
-    top: 330px;
-    left: 65%;
+    top: 53%;
+    left: 105%;
     cursor: pointer;
 }
 
 .footer .secition3 .history #his5btn:hover{
     transition: linear 0.3s;
-    transform: scale(1.5);
+    transform: scale(1.2);
     color: red;
 }
 
@@ -968,14 +956,14 @@ body{
     font-size: 36px;
     font-weight: bold;
     position: absolute;
-    top: 420px;
-    left: -370%;
+    top: 67%;
+    left: -200%;
     cursor: pointer;
 }
 
 .footer .secition3 .history #his6btn:hover{
     transition: linear 0.3s;
-    transform: scale(1.5);
+    transform: scale(1.2);
     color: red;
 }
 
@@ -983,57 +971,15 @@ body{
     font-size: 36px;
     font-weight: bold;
     position: absolute;
-    top: 510px;
-    left: 65%;
+    top: 80%;
+    left: 105%;
     cursor: pointer;
 }
 
 .footer .secition3 .history #his7btn:hover{
     transition: linear 0.3s;
-    transform: scale(1.5);
+    transform: scale(1.2);
     color: red;
-}
-
-.footer .secition3 .history .time .circle{
-    position: relative;
-    top: -114%;
-    left: -12%;
-    font-size: 50px;
-}
-
-.footer .secition3 .history .time .circle li:nth-child(1){
-    position: absolute;
-    top: 0;
-}
-
-.footer .secition3 .history .time .circle li:nth-child(2){
-    position: absolute;
-    top: 90px;
-}
-
-.footer .secition3 .history .time .circle li:nth-child(3){
-    position: absolute;
-    top: 180px;
-}
-
-.footer .secition3 .history .time .circle li:nth-child(4){
-    position: absolute;
-    top: 270px;
-}
-
-.footer .secition3 .history .time .circle li:nth-child(5){
-    position: absolute;
-    top: 360px;
-}
-
-.footer .secition3 .history .time .circle li:nth-child(6){
-    position: absolute;
-    top: 450px;
-}
-
-.footer .secition3 .history .time .circle li:nth-child(7){
-    position: absolute;
-    top: 540px;
 }
 
 .footer .secition4{
@@ -1103,36 +1049,129 @@ body{
     font-weight: 600;
 }
 
+@media screen and (max-width:1680px){
+
+    .idea{
+        height: 113vh;
+    }
+
+    .idea .hide1 .img2{
+        top: -2%;
+    }
+
+    .idea2 .img5{
+        top: -33%;
+    }
+
+    .map{
+        height: 48vh;
+    }
+
+    .map .world{
+        top: -44%;
+    }
+
+    .footer .secition3 .history #his2btn{
+        left: -230%;
+    }
+
+    .footer .secition3 .history #his4btn{
+        left: -230%;
+    }
+
+    .footer .secition3 .history #his6btn{
+        left: -230%;
+    }
+
+    .footer .secition4 .mask .contact div h1{
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width:1600px){
+
+    .footer .secition3 .history .coffeemap{
+        left: 29%;
+    }
+
+    .footer .secition3 .history .coffeeintro{
+        left: 29%;
+    }
+
+    .footer .secition4 .mask .contact div h1{
+        font-size: 36px;
+    }
+}
+
 @media screen and (max-width:1440px){
+
+    .idea{
+        height: 120vh;
+    }
+
     .idea .hide1 .img2 {
         top: 0%;
     }
 
-    .idea .intro2 {
-        margin-top: 15%;
-        margin-bottom: 17%;
-    }
-
     .idea .img3 {
-        top: 127%;
+        top: 93%;
     }
 
     .idea2 .img4 {
-        width: 40%;
+        top: 8%;
+        left: 9%;
     }
 
     .idea2 .img5 {
-        top: -25%;
+        top: -31%;
     }
 
     .idea2 .intro3 {
         font-size: 26px;
     }
 
+    .idea2 .intro3 span:nth-child(1){
+        top: 0px;
+    }
+
+    .idea2 .intro3 span:nth-child(2){
+        top: 45px;
+    }
+
+    .idea2 .intro3 span:nth-child(3){
+        top: 90px;
+    }
+
+    .idea2 .intro3 span:nth-child(4){
+        top: 135px;
+    }
+
+    .idea2 .intro3 span:nth-child(5){
+        top: 180px;
+    }
+
+    .idea2 .intro3 span:nth-child(6){
+        top: 225px;
+    }
+
+    .idea2 .intro3 span:nth-child(7){
+        top: 270px;
+    }
+
+    .idea2 .intro3 span:nth-child(8){
+        top: 315px;
+    }
+
+    .idea2 .intro3 span:nth-child(9){
+        top: 360px;
+    }
+
     .idea2 .intro3 h1 {
         font-size: 45px;
         left: 32%;
+        top: 410px;
     }
+
 
     #slides2 .img1 a {
         font-size: 60px;
@@ -1148,6 +1187,14 @@ body{
 
     #slides2 .img4 a {
         font-size: 60px;
+    }
+
+    .map{
+        height: 50vh;
+    }
+
+    .map .world{
+        top: -45%;
     }
 
     .map .big-logo{
@@ -1170,74 +1217,35 @@ body{
         left: 29%;
     }
 
-    .footer .secition3 .history .time {
-        left: 109%;
-    }
-
     .footer .secition3 .history #his1btn{
-        font-size: 32px;
+        top: -2%;
     }
 
     .footer .secition3 .history #his2btn{
-        top: 8%;
-        left: -420%;
-        font-size: 32px;
+        top: 12%;
+        left: -270%;
     }
 
     .footer .secition3 .history #his3btn{
-        top: 21%;
-        font-size: 32px;
+        top: 25%;
     }
 
     .footer .secition3 .history #his4btn{
-        top: 34%;
-        left: -420%;
-        font-size: 32px;
+        top: 39%;
+        left: -270%;
     }
 
     .footer .secition3 .history #his5btn{
-        top: 47%;
-        font-size: 32px;
+        top: 52%;
     }
 
     .footer .secition3 .history #his6btn{
-        top: 60%;
-        left: -420%;
-        font-size: 32px;
+        top: 66%;
+        left: -270%;
     }
 
     .footer .secition3 .history #his7btn{
-        top: 73%;
-        font-size: 32px;
-    }
-
-    .footer .secition3 .history .time .circle{
-        top: -117%;
-        left: -20%;
-    }
-
-    .footer .secition3 .history .time .circle li:nth-child(2){
-        top: 68px;
-    }
-
-    .footer .secition3 .history .time .circle li:nth-child(3){
-        top: 138px;
-    }
-
-    .footer .secition3 .history .time .circle li:nth-child(4){
-        top: 208px;
-    }
-
-    .footer .secition3 .history .time .circle li:nth-child(5){
-        top: 278px;
-    }
-
-    .footer .secition3 .history .time .circle li:nth-child(6){
-        top: 348px;
-    }
-
-    .footer .secition3 .history .time .circle li:nth-child(7){
-        top: 418px;
+        top: 79%;
     }
 
     .footer .secition4{
@@ -1254,5 +1262,156 @@ body{
 
     .footer .secition4 .mask .contact div span{
         font-size: 22px;
+    }
+}
+
+@media screen and (max-width:1366px){
+
+    .idea{
+        height: 140vh;
+    }
+
+    .idea2 .img4{
+        width: 37%;
+        top: 5%;
+        left: 12%;
+    }
+
+    .idea2 .img5{
+        width: 43%;
+        top: -37%;
+    }
+
+    .idea2 .intro3{
+        font-size: 22px;
+    }
+
+    .idea2 .intro3 span:nth-child(1){
+        top: -5px;
+    }
+
+    .idea2 .intro3 span:nth-child(2){
+        top: 30px;
+    }
+
+    .idea2 .intro3 span:nth-child(3){
+        top: 65px;
+    }
+
+    .idea2 .intro3 span:nth-child(4){
+        top: 100px;
+    }
+
+    .idea2 .intro3 span:nth-child(5){
+        top: 135px;
+    }
+
+    .idea2 .intro3 span:nth-child(6){
+        top: 170px;
+    }
+
+    .idea2 .intro3 span:nth-child(7){
+        top: 205px;
+    }
+
+    .idea2 .intro3 span:nth-child(8){
+        top: 240px;
+    }
+
+    .idea2 .intro3 span:nth-child(9){
+        top: 275px;
+    }
+
+    .idea2 .intro3 h1{
+        font-size: 40px;
+        top: 310px;
+    }
+
+    .map{
+        height: 55vh;
+    }
+
+    .footer .secition3{
+        transform: rotate(8deg) translateX(-5%) translateY(14%);
+    }
+
+    .footer .secition3 .history{
+        left: 2%;
+    }
+
+    .footer .secition3 .history .time{
+        top: 32%;
+    }
+
+    .footer .secition3 .history #his-intro1{
+        font-size: 22px;
+    }
+
+    .footer .secition3 .history #his-intro2{
+        font-size: 22px;
+    }
+
+    .footer .secition3 .history #his-intro3{
+        font-size: 22px;
+    }
+
+    .footer .secition3 .history #his-intro4{
+        font-size: 22px;
+    }
+
+    .footer .secition3 .history #his-intro5{
+        font-size: 22px;
+    }
+
+    .footer .secition3 .history #his-intro6{
+        font-size: 22px;
+    }
+
+    .footer .secition3 .history #his-intro7{
+        font-size: 22px;
+    }
+
+    .footer .secition3 .history #his1btn{
+        font-size: 32px;
+        top: -3%;
+    }
+
+    .footer .secition3 .history #his2btn{
+        font-size: 32px;
+        top: 11%;
+        left: -250%;
+    }
+
+    .footer .secition3 .history #his3btn{
+        font-size: 32px;
+        top: 24%;
+    }
+
+    .footer .secition3 .history #his4btn{
+        font-size: 32px;
+        top: 38%;
+        left: -250%;
+    }
+
+    .footer .secition3 .history #his5btn{
+        font-size: 32px;
+        top: 51%;
+    }
+
+    .footer .secition3 .history #his6btn{
+        font-size: 32px;
+        left: -250%;
+    }
+
+    .footer .secition3 .history #his7btn{
+        font-size: 32px;
+    }
+
+    .footer .secition4 .mask .contact div h1{
+        font-size: 30px;
+    }
+
+    .footer .secition4 .mask .contact div span{
+        font-size: 17px;
     }
 }
