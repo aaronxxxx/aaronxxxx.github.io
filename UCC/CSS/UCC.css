@@ -22,17 +22,12 @@ body{
 }
 
 .main .logo{
-    height: 200px;
-    width: 400px;
+    width: 30%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-image: url("img/logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: drop-shadow(0px 0px 10px black);
+    filter: drop-shadow(0px 0px 5px black);
 }
 
 .idea{
@@ -73,7 +68,7 @@ body{
     width: 18%;
     position: absolute;
     right: 21%;
-    top: 82%;
+    top: 91%;
     z-index: -1;
 }
 
@@ -87,8 +82,7 @@ body{
 
 .idea .intro h1{
     margin: 0;
-    font-weight: bold;
-    
+    font-weight: bold; 
 }
 
 .idea .intro hr{
@@ -1008,7 +1002,7 @@ body{
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: rotate(8deg) translate(-55%,-100%);
+    transform: rotate(8deg) translate(-55%,-93%);
     z-index: -1;
 }
 
@@ -1018,7 +1012,7 @@ body{
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: rotate(8deg) translate(-61%,-82%);
+    transform: rotate(8deg) translate(-58%,-86%);
     display: flex;
     flex-direction: column;
     
@@ -1094,6 +1088,26 @@ body{
 
 @media screen and (max-width:1600px){
 
+    .idea{
+        height: 121vh;
+    }
+
+    .idea2 .hide2{
+        top: -78%;
+    }
+
+    .map .world{
+        top: -85%;
+    }
+
+    .map .big-logo{
+        padding-top: 0%;
+    }
+
+    .footer .secition3 .history #his1btn{
+        top: -2%;
+    }
+
     .footer .secition3 .history .coffeemap{
         left: 29%;
     }
@@ -1105,9 +1119,37 @@ body{
     .footer .secition4 .mask .contact div h1{
         font-size: 36px;
     }
+
+    .footer .secition3 .history #his2btn{
+        top: 12%;
+    }
+
+    .footer .secition3 .history #his3btn{
+        top: 25%;
+    }
+
+    .footer .secition3 .history #his4btn{
+        top: 39%;
+    }
+
+    .footer .secition3 .history #his5btn{
+        top: 52%;
+    }
+
+    .footer .secition3 .history #his6btn{
+        top: 66%;
+    }
+
+    .footer .secition3 .history #his7btn{
+        top: 79%;
+    }
 }
 
 @media screen and (max-width:1440px){
+
+    .idea{
+        height: 100vh;
+    }
 
     .idea .hide1 .img2 {
         top: 0%;
@@ -1117,6 +1159,18 @@ body{
         top: 105%;
     }
 
+    .idea2{
+        height: 40vh;
+    }
+
+    .idea2 .hide2{
+        top: -84%;
+    }
+
+    .idea2 .img4{
+        top: 12%;
+        left: 10%;
+    }
 
     .idea2 .intro3 {
         font-size: 26px;
@@ -1187,10 +1241,6 @@ body{
 
     .map .world{
         top: -62%;
-    }
-
-    .map .big-logo{
-        padding-top: 0%;
     }
 
     .footer {
@@ -1264,12 +1314,11 @@ body{
     }
 
     .idea2 .hide2{
-        top: -70%;
+        top: -123%;
     }
 
-    .idea2 .img5{
-        width: 43%;
-        top: -37%;
+    .idea2 .img4{
+        left: 14%;
     }
 
     .idea2 .intro3{
@@ -1403,5 +1452,499 @@ body{
 
     .footer .secition4 .mask .contact div span{
         font-size: 17px;
+    }
+}
+
+@media screen and (max-device-width:1280px) and (max-device-height:1024px){
+
+    .idea{
+        height: 73vh;
+    }
+
+    .idea .img3{
+        top: 112%;
+    }
+
+    .idea2 {
+        height: 25vh;
+    }
+
+    .idea2 .hide2{
+        height: 260%;
+        top: -131%;
+    }
+
+    .idea2 .img4{
+        width: 43%;
+    }
+
+    .shop .secition2{
+        transform: rotate(8deg) translateX(-4%) translateY(23%);
+    }
+
+    #slides2 .img4 a {
+        font-size: 50px;
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+        background-size: 60px 60px;
+    }
+
+
+    .map{
+        height: 35vh;
+    }
+
+    .map .world{
+        top: -89%;
+    }
+
+    .footer .secition3 .history .time{
+        top: 42%;
+        left: 112%;
+    }
+
+    .footer .secition3 .history .time .timeline{
+        height: 80%;
+    }
+
+    .footer .secition3 .history #his1btn{
+        top: -2%;
+    }
+
+    .footer .secition3 .history #his2btn{
+        top: 9.7%;
+        left: -260%;
+    }
+
+    .footer .secition3 .history #his3btn{
+        top: 20%;
+    }
+
+    .footer .secition3 .history #his4btn{
+        top: 31.4%;
+        left: -260%;
+    }
+
+    .footer .secition3 .history #his5btn{
+        top: 41.5%;
+    }
+
+    .footer .secition3 .history #his6btn{
+        top: 53%;
+        left: -260%;
+    }
+
+    .footer .secition3 .history #his7btn{
+        top: 63%;
+    }
+
+    .footer .secition4{
+        transform: rotate(-8deg) translateX(0%) translateY(-15%);
+    }
+
+    .footer .secition4 .mask .foo-logo{
+        transform: rotate(8deg) translate(-63%,-100%);
+    }
+
+    .footer .secition4 .mask .contact{
+        transform: rotate(8deg) translate(-74%,-87%);
+    }
+
+    .footer .secition4 .mask .contact div h1{
+        font-size: 28px;
+    }
+
+    .footer .secition4 .mask .contact div h2{
+        font-size: 20px;
+    }
+
+    .footer .secition4 .mask .contact div span{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-device-width:1280px) and (max-device-height:960px){
+
+    .idea{
+        height: 80vh;
+    }
+
+    .idea2 .hide2{
+        height: 275%;
+    }
+
+    .map .world{
+        top: -93%;
+    }
+}
+
+
+@media screen and (max-device-width:1280px) and (max-device-height:800px){
+    .idea{
+        height: 105vh;
+    }
+
+    .idea .hide1 .img2{
+        top: -2%;
+    }
+
+    .idea .img3{
+        top: 97%;
+    }
+
+    .product .secition1{
+        transform: rotate(-8deg) translateX(-5%) translateY(30%);
+    }
+
+    .idea2{
+        height: 40vh;
+    }
+
+    .idea2 .hide2{
+        top: -91%;
+    }
+
+    .idea2 .img4{
+        width: 40%;
+        left: 13%;
+    }
+
+    .shop .secition2{
+        transform: rotate(8deg) translateX(-4%) translateY(35%);
+    }
+
+    #slides2 .img1{
+        background-position-y:-150px; 
+    }
+
+    #slides2 .img2{
+        background-position-y:-150px; 
+    }
+
+    #slides2 .img3{
+        background-position-y:-150px; 
+    }
+
+    #slides2 .img4{
+        background-position-y:-150px; 
+    }
+
+    .map{
+        height: 45vh;
+    }
+
+    .footer .secition3 .history .time{
+        top: 35%;
+    }
+
+    .footer .secition3 .history .time .timeline{
+        height: 95%;
+    }
+
+    .footer .secition3 .history #his1btn{
+        top: -2.5%;
+    }
+
+    .footer .secition3 .history #his2btn{
+        top: 10.7%;
+        left: -270%;
+    }
+
+    .footer .secition3 .history #his3btn{
+        top: 23%;
+    }
+
+    .footer .secition3 .history #his4btn{
+        top: 36.4%;
+        left: -270%;
+    }
+
+    .footer .secition3 .history #his5btn{
+        top: 48.9%;
+    }
+
+    .footer .secition3 .history #his6btn{
+        top: 62%;
+        left: -270%;
+    }
+
+    .footer .secition3 .history #his7btn{
+        top: 74.4%;
+    }
+}
+
+@media screen and (max-device-width:1280px) and (max-device-height:768px){
+
+    .idea{
+        height: 112vh;
+    }
+
+    .idea .img3{
+        top: 103%;
+    }
+
+    .idea2 .hide2{
+        top: -99%;
+    }
+
+    .product .secition1{
+        transform: rotate(-8deg) translateX(-5%) translateY(20%);
+    }
+
+    .shop .secition2{
+        transform: rotate(8deg) translateX(-4%) translateY(25%)
+    }
+
+    .map{
+        height: 50vh;
+    }
+}
+
+@media screen and (max-device-width:1280px) and (max-device-height:720px){
+    .idea{
+        height: 125vh;
+    }
+
+    .idea2 .hide2{
+        top: -101%;
+    }
+
+    .map{
+        height: 55vh;
+    }
+
+    .footer .secition3 .history .time{
+        top: 30%;
+    }
+
+    .footer .secition3 .history .time .timeline{
+        height: 105%;
+    }
+
+    .footer .secition3 .history #his1btn{
+        top: -3.2%;
+    }
+
+    .footer .secition3 .history #his2btn{
+        top: 11.5%;
+    }
+
+    .footer .secition3 .history #his3btn{
+        top: 25.3%;
+    }
+
+    .footer .secition3 .history #his4btn{
+        top: 39.9%;
+    }
+
+    .footer .secition3 .history #his5btn{
+        top: 53.5%;
+    }
+
+    .footer .secition3 .history #his6btn{
+        top: 68.3%;
+    }
+
+    .footer .secition3 .history #his7btn{
+        top: 82.4%;
+    }
+}
+
+@media screen and (max-width:1152px){
+
+    .idea2 .hide2{
+        top: -148%;
+    }
+
+    .footer .secition3 .history #his1btn{
+        top: -2.5%;
+    }
+
+    .footer .secition3 .history #his2btn{
+        top: 9%;
+        left: -300%
+    }
+
+    .footer .secition3 .history #his3btn{
+        top: 19.3%;
+    }
+
+    .footer .secition3 .history #his4btn{
+        top: 30.4%;
+        left: -300%
+    }
+
+    .footer .secition3 .history #his5btn{
+        top: 40.7%;
+    }
+
+    .footer .secition3 .history #his6btn{
+        top: 52.1%;
+        left: -300%
+    }
+
+    .footer .secition3 .history #his7btn{
+        top: 62.5%;
+    }
+
+    .footer .secition4 .mask .contact div h1{
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width:1024px){
+
+    .idea{
+        height: 82vh;
+    }
+
+    .idea .word{
+        width: 35%;
+    }
+
+    .idea .word2{
+        width: 35%;
+        margin-top: 31%;
+    }
+
+    .idea .img3{
+        top: 109%;
+    }
+
+    .product .secition1{
+        transform: rotate(-8deg) translateX(-5%) translateY(5%);
+    }
+
+    .idea2{
+        height: 25vh;
+    }
+
+    .idea2 .hide2{
+        top: -175%;
+    }
+
+    .idea2 .img4{
+        width: 43%;
+    }
+
+    .idea2 .intro3 span{
+        font-size: 20px;
+    }
+
+    .idea2 .intro3 span:nth-child(1){
+        top: -45px;
+    }
+
+    .idea2 .intro3 span:nth-child(2){
+        top: -10px;
+    }
+
+    .idea2 .intro3 span:nth-child(3){
+        top: 25px;
+    }
+
+    .idea2 .intro3 span:nth-child(4){
+        top: 60px;
+    }
+
+    .idea2 .intro3 span:nth-child(5){
+        top: 95px;
+    }
+
+    .idea2 .intro3 span:nth-child(6){
+        top: 130px;
+    }
+
+    .idea2 .intro3 span:nth-child(7){
+        top: 165px;
+    }
+
+    .idea2 .intro3 span:nth-child(8){
+        top: 200px;
+    }
+
+    .idea2 .intro3 span:nth-child(9){
+        top: 235px;
+    }
+
+    .idea2 .intro3 h1{
+        font-size: 35px;
+        top: 265px;
+        left: 30.5%;
+    }
+
+    #slides2 .img1 a{
+        font-size: 45px;
+    }
+
+    #slides2 .img2 a{
+        font-size: 45px;
+    }
+
+    #slides2 .img3 a{
+        font-size: 45px;
+    }
+
+    #slides2 .img4 a{
+        font-size: 45px;
+    }
+
+    .map{
+        height: 35vh;
+    }
+
+    .map .world{
+        top: -98%;
+    }
+
+    .footer .secition3 .history #his1btn{
+        font-size: 30px;
+        top: -2.5%;
+    }
+
+    .footer .secition3 .history #his2btn{
+        font-size: 30px;
+        top: 11%;
+        left: -320%
+    }
+
+    .footer .secition3 .history #his3btn{
+        font-size: 30px;
+        top: 23.3%;
+    }
+
+    .footer .secition3 .history #his4btn{
+        font-size: 30px;
+        top: 36.4%;
+        left: -320%
+    }
+
+    .footer .secition3 .history #his5btn{
+        font-size: 30px;
+        top: 48.7%;
+    }
+
+    .footer .secition3 .history #his6btn{
+        font-size: 30px;
+        top: 62.1%;
+        left: -320%
+    }
+
+    .footer .secition3 .history #his7btn{
+        font-size: 30px;
+        top: 74.5%;
+    }
+
+    .footer .secition4 .mask .contact div h1{
+        font-size: 23px;
+    }
+
+    .footer .secition4 .mask .contact div h2{
+        font-size: 18px;
+    }
+
+    .footer .secition4 .mask .contact div span{
+        font-size: 15px;
     }
 }
