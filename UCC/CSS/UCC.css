@@ -38,7 +38,7 @@ body{
 .idea{
     width: 100%;
     max-width: 1920px;
-    height: 130vh;
+    height: 115vh;
     position: relative;
 }
 
@@ -160,7 +160,7 @@ body{
 .idea2{
     width: 100%;
     max-width: 1920px;
-    height: 55vh;
+    height: 50vh;
     position: relative;
 }
 
@@ -170,7 +170,7 @@ body{
     height: 230%;
     position: absolute;
     right: 0;
-    top: -54%;
+    top: -65%;
     overflow: hidden;
 }
 
@@ -178,7 +178,7 @@ body{
     width: 40%;
     position: absolute;
     left: 10%;
-    top: 8%;
+    top: 4%;
     z-index: -2;
     
 }
@@ -586,7 +586,7 @@ body{
 .map{
     width: 100%;
     max-width: 1920px;
-    height: 55vh;
+    height: 50vh;
     position: relative;
 }
 
@@ -594,7 +594,7 @@ body{
     width: 100%;
     position: absolute;
     left: 0;
-    top: -41%;
+    top: -65%;
     z-index: -1;
 }
 
@@ -602,7 +602,7 @@ body{
     width: 60%;
     position: absolute;
     left: 20%;
-    padding-top: 7%;
+    padding-top: 3%;
 }
 
 .footer{
@@ -1052,23 +1052,27 @@ body{
 @media screen and (max-width:1680px){
 
     .idea{
-        height: 113vh;
+        height: 100vh;
     }
 
     .idea .hide1 .img2{
         top: -2%;
     }
 
-    .idea2 .img5{
-        top: -33%;
+    .idea .img3{
+        top: 95%;
     }
 
+    .idea2 .intro3 h1{
+        left: 33%;
+    }
+    
     .map{
-        height: 48vh;
+        height: 45vh;
     }
 
     .map .world{
-        top: -44%;
+        top: -73%;
     }
 
     .footer .secition3 .history #his2btn{
@@ -1105,26 +1109,14 @@ body{
 
 @media screen and (max-width:1440px){
 
-    .idea{
-        height: 120vh;
-    }
-
     .idea .hide1 .img2 {
         top: 0%;
     }
 
     .idea .img3 {
-        top: 93%;
+        top: 105%;
     }
 
-    .idea2 .img4 {
-        top: 8%;
-        left: 9%;
-    }
-
-    .idea2 .img5 {
-        top: -31%;
-    }
 
     .idea2 .intro3 {
         font-size: 26px;
@@ -1190,19 +1182,19 @@ body{
     }
 
     .map{
-        height: 50vh;
+        height: 55vh;
     }
 
     .map .world{
-        top: -45%;
+        top: -62%;
     }
 
     .map .big-logo{
-        padding-top: 5%;
+        padding-top: 0%;
     }
 
     .footer {
-        height: 190vh;
+        height: 185vh;
     }
 
     .footer .secition3 {
@@ -1268,13 +1260,11 @@ body{
 @media screen and (max-width:1366px){
 
     .idea{
-        height: 140vh;
+        height: 120vh;
     }
 
-    .idea2 .img4{
-        width: 37%;
-        top: 5%;
-        left: 12%;
+    .idea2 .hide2{
+        top: -70%;
     }
 
     .idea2 .img5{
@@ -1327,8 +1317,8 @@ body{
         top: 310px;
     }
 
-    .map{
-        height: 55vh;
+    .map .world{
+        top: -70%
     }
 
     .footer .secition3{
