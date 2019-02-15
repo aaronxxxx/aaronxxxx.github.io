@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
     <title>UCC</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css">
-    <link rel="stylesheet" href="UCC.css">
+    <link rel="stylesheet" href="css/UCC.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:200,300,400,500,600,700,900" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -25,15 +25,15 @@
     </div>
     <div id="idea" class="idea">
         <div class="hide1">
-            <img src="img/coffeeimg-1.png" class="img1" data-anchor-target="#idea"
-                data-bottom-top="transform: rotate(-20deg)" data-top-bottom="transform: rotate(0deg)">
+            <img src="img/coffeeimg-1.png" class="img1" data-bottom-top="transform: rotate(-20deg)"
+                data-top-bottom="transform: rotate(0deg)">
             </img>
-            <img src="img/coffeebeans-1.png" class="img2" data-anchor-target="#idea"
-                data-bottom-top="transform: rotate(20deg)" data-top-bottom="transform: rotate(0deg)">
+            <img src="img/coffeebeans-1.png" class="img2" data-bottom-top="transform: rotate(20deg)"
+                data-top-bottom="transform: rotate(0deg)">
             </img>
         </div>
-        <img src="img/coffeebeans-2.png" class="img3" data-bottom-top="transform: translateY(-35%)"
-            data-top-bottom="transform: translateY(20%)">
+        <img src="img/coffeebeans-2.png" class="img3" data-anchor-target="#idea" data-bottom-top="transform: translateY(-35%)"
+            data-top-bottom="transform: translateY(30%)">
         </img>
         <div class="intro">
             <h1 id="intro-h1" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
@@ -41,12 +41,13 @@
                 Coffee Company 的實現</h1>
             <hr>
         </div>
-        <img class="word" src="img/word.png"></img>
-        <img class="word2" src="img/word2.png"></img>
+        <div class="word-box">
+            <img class="word" src="img/word.png"></img>
+            <img class="word2" src="img/word2.png"></img>
+        </div>
     </div>
     <div id="product" class="product">
-        <div class="secition1" data-anchor-target="#product" data-bottom-top="margin-top:10rem;"
-            data-top-bottom="margin-top:-10rem;">
+        <div class="secition1" data-anchor-target="#product" data-bottom-top="margin-top:10rem;" data-top-bottom="margin-top:-10rem;">
             <div id="slides1" class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide product1">
@@ -80,50 +81,29 @@
                 data-bottom-top="transform: translateY(0%) translateX(0%) rotate(0deg)"
                 data-top-bottom="transform: translateY(10%) translateX(10%) rotate(-10deg)"></img>
         </div>
-        <div class="intro3">
-            <span data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="800"
-                data-aos-anchor-placement="top-bottom" data-aos-delay="100">UCC的使命<br></span>
-            <span data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="800"
-                data-aos-anchor-placement="top-bottom" data-aos-delay="150">是要讓更多的人不論何時何地<br></span>
-            <span data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="800"
-                data-aos-anchor-placement="top-bottom" data-aos-delay="200">皆能品嘗到真正美味的咖啡<br></span>
-            <span data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="800"
-                data-aos-anchor-placement="top-bottom" data-aos-delay="250">並將咖啡帶來的笑容擴展到全世界<br></span>
-            <span data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="800"
-                data-aos-anchor-placement="top-bottom" data-aos-delay="300">秉持著這份理想<br></span>
-            <span data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="800"
-                data-aos-anchor-placement="top-bottom" data-aos-delay="350">咖啡的專家UCC集團今後仍將一心一意地為咖啡注入熱情<br></span>
-            <span data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="800"
-                data-aos-anchor-placement="top-bottom" data-aos-delay="400">提高集團的宗和競爭力<br></span>
-            <span data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="800"
-                data-aos-anchor-placement="top-bottom" data-aos-delay="450">以日本、亞洲，甚至是世界的「The Coffee
-                Company」為目標<br></span>
-            <span data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="800"
-                data-aos-anchor-placement="top-bottom" data-aos-delay="500">在全球創造出<br></span>
-            <h1 data-anchor-target="#idea2" data-center-center="transform:translateX(0%)"
-                data-top-bottom="transform:translateX(20%)">「Good Coffee Smile！」</h1>
-        </div>
+        <img class="word3" src="img/word3.png"></img>
+        <h1 data-anchor-target="#idea2" data-center-center="transform:translateX(0%)"
+            data-top-bottom="transform:translateX(20%)">「Good Coffee Smile！」</h1>
     </div>
     <div id="shop" class="shop">
-        <div class="secition2" data-anchor-target="#shop" data-bottom-top="margin-top:10rem;"
-            data-top-bottom="margin-top:-10rem;">
+        <div class="secition2" data-anchor-target="#shop" data-bottom-top="margin-top:10rem;" data-top-bottom="margin-top:-10rem;">
             <div id="slides2" class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="swiper-lazy img1"><a
+                        <div class="swiper-lazy shop1"><a
                                 href="http://www.ucc-coffee.com.tw/LoversPlanet/LoversPlanet.html">Coffee
                                 Love's Planet</a></div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="swiper-lazy img2"><a href="http://www.ueshima-coffee.com.tw/">上島珈琲店</a>
+                        <div class="swiper-lazy shop2"><a href="http://www.ueshima-coffee.com.tw/">上島珈琲店</a>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="swiper-lazy img3"><a href="http://www.ucc-coffee.com.tw/mercado/mercado.html">UCC
+                        <div class="swiper-lazy shop3"><a href="http://www.ucc-coffee.com.tw/mercado/mercado.html">UCC
                                 Coffee Mercado</a></div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="swiper-lazy img4"><a href="http://www.ucc-coffee.com.tw/ks/ks.html">K's
+                        <div class="swiper-lazy shop4"><a href="http://www.ucc-coffee.com.tw/ks/ks.html">K's
                                 Cafe</a>
                         </div>
                     </div>
@@ -136,9 +116,7 @@
     </div>
     <div id="map" class="map">
         <img src="img/map-1.png" class="world"></img>
-        <img src="img/logo-2.png" class="big-logo" data-anchor-target="#map"
-            data-bottom-top="transform: scale(0) rotate(0deg)"
-            data-center-top="transform: scale(1) rotate(2880deg)"></img>
+        <img src="img/logo-2.png" class="big-logo"></img>
     </div>
     <div id="footer" class="footer">
         <div class="secition3">
@@ -206,7 +184,7 @@
             smoothScrolling: true,
             smoothScrollingDuration: 200,
             scale: 1,
-            forceHeight: true,
+            forceHeight: false,
             mobileCheck: function () { },
             mobileDeceleration: 0.004,
             edgeStrategy: 'set',

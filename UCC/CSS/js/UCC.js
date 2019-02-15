@@ -21,7 +21,6 @@ var swiper = new Swiper('#slides2', {
         loadPrevNextAmount: 3,
     },
     centeredSlides: true,
-    spaceBetween: 60,
     slidesOffsetBefore: 40,
     loop: true,
     slidesPerView: 'auto',
