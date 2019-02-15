@@ -1793,10 +1793,10 @@ body{
     }
 }
 
-@media screen and (max-width:1024px){
+@media all and (max-width:1024px){
 
     .idea{
-        height: 82vh;
+        height: 77vh;
     }
 
     .idea .word{
@@ -1809,11 +1809,11 @@ body{
     }
 
     .idea .img3{
-        top: 109%;
+        top: 112%;
     }
 
     .product .secition1{
-        transform: rotate(-8deg) translateX(-5%) translateY(5%);
+        transform: rotate(-8deg) translateX(-5%) translateY(22%);
     }
 
     .idea2{
@@ -1821,6 +1821,7 @@ body{
     }
 
     .idea2 .hide2{
+        height: 295%;
         top: -175%;
     }
 
