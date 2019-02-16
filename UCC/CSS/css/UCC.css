@@ -115,39 +115,108 @@ body{
 }
 
 .product .secition1{
-    width: 110%;
+    width: 120%;
     height: 70vh;
-    transform: rotate(-8deg) translateX(-5%) translateY(22%);
+    transform: rotate(-8deg) translateX(-11%) translateY(19%);
     display: flex;
     overflow: hidden;
-    background-color: black;
+
 }
 
-#slides1 {
-    width: 100%;
-    height: 150%;
-    transform: rotate(8deg) translateX(-2%) translateY(-16%); 
-}
-
-#slides1 video{
+#mac-video {
+    position: relative;
     width: 100%;
     height: 100%;
+    transform: rotate(8deg) translateX(2%) translateY(-48%); 
 }
 
-#slides1 .product1{
-    width: 100%;
-    transition-timing-function: linear;
+#title {
+	width: 100%;
+	height: 100%;
+    position: absolute;
+    top: 50%;
+    left: -20.4%;
+	z-index: 2;
+	overflow: hidden;
 }
 
-#slides1 .product2{
-    width: 100%;
-    transition-timing-function: linear;
+#title .swiper-slide {
+    color: #fff;
+    left: 28.3%;
 }
 
-#slides1 .product3{
-    width: 100%;
-    transition-timing-function: linear;
+#title .ethiopia {
+	width: 30%;
 }
+
+#title .papua {
+	width: 30%;
+}
+
+#title .black {
+	width: 30%;
+}
+
+#title .swiper-slide h3 {
+	font-size: 60px;
+	margin-top: 10vw;
+	line-height: .91667;
+	font-weight: 600;
+	letter-spacing: -.015em;
+	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	transition: opacity .3s;
+    cursor: pointer;
+}
+
+#title .swiper-slide h3:hover {
+	opacity: 1;
+}
+
+#title .prev h3 {
+	opacity: 0;
+}
+
+#title .next h3 {
+	opacity: 0.25;
+}
+
+#title .swiper-pagination {
+	width: 980px;
+	left: 48.7%;
+	text-align: left;
+	bottom: 30px;
+}
+
+#title .swiper-pagination .swiper-pagination-bullet {
+	margin: 0 8px;
+	background: #fff;
+	outline: none;
+}
+
+#videos {
+	width: 100%;
+}
+
+#videos .swiper-slide {
+	position: relative;
+}
+
+#videos video {
+	width: 100%;
+}
+
+#videos .swiper-slide  .txt {
+	color: #fff;
+	position: absolute;
+	top: 34vw;
+	width: 700px;
+	margin-left: calc(50% - 490px);
+	font-size: 28px;
+	line-height: 1.28595;
+	font-weight: 600;
+	letter-spacing: .007em;
+	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}	
 
 .idea2{
     width: 100%;
@@ -214,7 +283,7 @@ body{
     height: 70vh;
     display: flex;
     overflow: hidden;
-    transform: rotate(8deg) translateX(-4%) translateY(26%);
+    transform: rotate(8deg) translateX(-4.8%) translateY(26%);
     background-color: white;
 }
 
@@ -361,7 +430,7 @@ body{
 }
 
 
-.swiper-button-next,.swiper-button-prev {
+.shop .swiper-button-next,.swiper-button-prev {
     width: 400px;
     height: 100px;
     background-size: 86px 112px;
@@ -369,22 +438,22 @@ body{
     outline: none;
 }
 
-.swiper-button-next {
+.shop .swiper-button-next {
     background-image: url("/img/right.svg");
 }
 
-.swiper-button-prev {
+.shop .swiper-button-prev {
     background-image: url("/img/left.svg");
 
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets {
+.shop .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 200px;
     left: 20px;
     width: 100%;
 }
 
-.swiper-pagination-bullet {
+.shop .swiper-pagination-bullet {
     background: none;
     opacity: 1;
     margin: 0 6px !important;
@@ -395,7 +464,7 @@ body{
     vertical-align: middle;
 }
 
-.swiper-pagination-bullet span {
+.shop .swiper-pagination-bullet span {
     width: 3px;
     height: 3px;
     background: #CCC;
@@ -405,7 +474,7 @@ body{
     margin-left: 3px;
 }
 
-.swiper-pagination-bullet i {
+.shop .swiper-pagination-bullet i {
     background: #000;
     height: 1px;
     width: 20px;
@@ -417,7 +486,7 @@ body{
     transition-timing-function: linear;
 }
 
-.swiper-pagination-bullet-active span,.swiper-pagination-bullet:hover span {
+.shop .swiper-pagination-bullet-active span,.swiper-pagination-bullet:hover span {
     width: 9px;
     height: 9px;
     margin-top: 0;
@@ -427,15 +496,15 @@ body{
     z-index: 1;
 }
 
-.swiper-pagination-bullet-active i {
+.shop .swiper-pagination-bullet-active i {
     animation: middle 6s;
 }
 
-.swiper-pagination-bullet:first-child.swiper-pagination-bullet-active i {
+.shop .swiper-pagination-bullet:first-child.swiper-pagination-bullet-active i {
     animation: first 6s;
 }
 
-.swiper-pagination-bullet:last-child.swiper-pagination-bullet-active i {
+.shop .swiper-pagination-bullet:last-child.swiper-pagination-bullet-active i {
     animation: last 6s;
 }
 
@@ -1558,4 +1627,8 @@ body{
     .footer .secition4 .mask .contact div span{
         font-size: 15px;
     }
+}
+
+@media all and (max-width:768px){
+
 }

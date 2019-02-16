@@ -1,13 +1,3 @@
-var swiper = new Swiper('#slides1',{
-    direction : 'vertical',
-    followFinger : false,
-    speed:800,
-    mousewheel: true,
-    pagination : {
-        el:'.swiper-pagination',
-    },
-});
-
 
 var swiper = new Swiper('#slides2', {
     autoplay: {

@@ -32,8 +32,8 @@
                 data-top-bottom="transform: rotate(0deg)">
             </img>
         </div>
-        <img src="img/coffeebeans-2.png" class="img3" data-anchor-target="#idea" data-bottom-top="transform: translateY(-35%)"
-            data-top-bottom="transform: translateY(30%)">
+        <img src="img/coffeebeans-2.png" class="img3" data-anchor-target="#idea"
+            data-bottom-top="transform: translateY(-35%)" data-top-bottom="transform: translateY(30%)">
         </img>
         <div class="intro">
             <h1 id="intro-h1" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
@@ -47,26 +47,46 @@
         </div>
     </div>
     <div id="product" class="product">
-        <div class="secition1" data-anchor-target="#product" data-bottom-top="margin-top:10rem;" data-top-bottom="margin-top:-10rem;">
-            <div id="slides1" class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide product1">
-                        <video loop="true" autoplay="autoplay" muted="true">
-                            <source type="video/mp4" src="img/UCC-E.mp4">
-                            </source>
-                        </video>
+        <div class="secition1" data-anchor-target="#product" data-bottom-top="margin-top:10rem;"
+            data-top-bottom="margin-top:-10rem;">
+            <div id="mac-video">
+                <div class="swiper-container" id="title">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ethiopia">
+                            <h3>UCC<br>衣索比亞黑咖啡</h3>
+                        </div>
+                        <div class="swiper-slide papua">
+                            <h3>UCC<br>巴布亞紐幾內亞黑咖啡</h3>
+                        </div>
+                        <div class="swiper-slide black">
+                            <h3>UCC<br>BLACK黑咖啡</h3>
+                        </div>
                     </div>
-                    <div class="swiper-slide product2">
-                        <video loop="true" autoplay="autoplay" muted="true">
-                            <source type="video/mp4" src="img/UCC-B.mp4">
-                            </source>
-                        </video>
-                    </div>
-                    <div class="swiper-slide product3">
-                        <video loop="true" autoplay="autoplay" muted="true">
-                            <source type="video/mp4" src="img/UCC-N.mp4">
-                            </source>
-                        </video>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-container" id="videos">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="txt" data-swiper-parallax="-1">
+                                <p class="desc">Learn how photographer Bruce Hall, who is legally blind, uses&nbsp;his
+                                    Mac to create beautiful images.</p>
+                                <p>Watch the film</p>
+                            </div><video src="img/UCC-E.mp4" loop="true" autoplay="autoplay" muted="true"></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="txt" data-swiper-parallax="-1">
+                                <p class="desc">See how Peter Kariuki developed an app on his Mac that’s helping make
+                                    Rwanda’s roads safer.</p>
+                                <p>Watch the film</p>
+                            </div><video src="img/UCC-B.mp4" loop="true" autoplay="autoplay" muted="true"="true"></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="txt" data-swiper-parallax="-1">
+                                <p class="desc">Discover how Grimes writes, records, and produces her own music — all on
+                                    her Mac.</p>
+                                <p>Watch the film</p>
+                            </div><video src="img/UCC-N.mp4" loop="true" autoplay="autoplay" muted="true"="true"></video>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -86,7 +106,8 @@
             data-top-bottom="transform:translateX(20%)">「Good Coffee Smile！」</h1>
     </div>
     <div id="shop" class="shop">
-        <div class="secition2" data-anchor-target="#shop" data-bottom-top="margin-top:10rem;" data-top-bottom="margin-top:-10rem;">
+        <div class="secition2" data-anchor-target="#shop" data-bottom-top="margin-top:10rem;"
+            data-top-bottom="margin-top:-10rem;">
             <div id="slides2" class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -177,6 +198,7 @@
     <script src="js/jquery-min.js"></script>
     <script src="js/jquery.fittext.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
+    <script src="js/mac.min.js"></script>
     <script src="js/UCC.js"></script>
     <script type="text/javascript" src="js/skrollr.min.js"></script>
     <script type="text/javascript">
@@ -194,6 +216,7 @@
     <script>
         AOS.init();
     </script>
+
 </body>
 
 </html>
