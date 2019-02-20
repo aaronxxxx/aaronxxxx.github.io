@@ -921,11 +921,18 @@ body{
 }
 
 #footer .contact .mask-video{
-    height: 95%;
+    height: 100%;
     position: absolute;
-    top: 2.5%;
+    top: 0%;
     left: 0;
     right: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .contact .mask-video video{
+    height: 90%;
 }
 
