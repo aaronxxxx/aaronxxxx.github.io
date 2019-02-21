@@ -81,9 +81,8 @@ body{
 }
 
 #idea .intro-box h1{
-    font-size: 3.750em;
     margin: 0;
-
+    font-size: 3.750em;
 }
 
 #idea .intro-box hr{
@@ -93,8 +92,8 @@ body{
 }
 
 #idea .intro-box p{
-    font-size: 1.875em;
     margin: 0;
+    font-size: 1.875em;
     font-weight: 600;
     
 }
@@ -124,13 +123,16 @@ body{
 }
 
 #title {
-	width: 120%;
+	width: 100%;
 	height: 100%;
     position: absolute;
     top: 32vh;
-    left: 3vw;
 	z-index: 2;
     overflow: hidden;
+}
+
+#title .swiper-slide{
+    left: 469px;
 }
 
 #title .ethiopia {
@@ -181,9 +183,9 @@ body{
 
 #title .swiper-pagination {
 	width: 50%;
-	left: 45.6vw;
+	left: 48.6vw;
 	text-align: left;
-	bottom: 6vh;
+	bottom: 3rem;
 }
 
 #title .swiper-pagination .swiper-pagination-bullet {
@@ -280,7 +282,7 @@ body{
     width: 40%;
     position: absolute;
     left: 11vw;
-    top: 19vh;
+    top: 16vh;
     z-index: 1;
     
 }
@@ -339,7 +341,7 @@ body{
     height: 80%;
     background-image: url("/img/shop-1.jpg");
     background-position-x: center;
-    background-position-y: -200px; 
+    background-position-y: -12em; 
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -371,7 +373,7 @@ body{
     height: 80%;
     background-image: url("/img/shop-2.jpg");
     background-position-x: center;
-    background-position-y: -200px; 
+    background-position-y: -12em; 
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -403,7 +405,7 @@ body{
     height: 80%;
     background-image: url("/img/shop-3.png");
     background-position-x: center;
-    background-position-y: -200px; 
+    background-position-y: -12em; 
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -436,7 +438,7 @@ body{
     height: 80%;
     background-image: url("/img/shop-4.png");
     background-position-x: center;
-    background-position-y: -200px; 
+    background-position-y: -12em; 
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -930,3 +932,67 @@ body{
     height: 90%;
 }
 
+@media screen and (max-width:1440px){
+    #idea .intro-box h1{
+        font-size: 3.125em;
+    }
+
+    #idea .intro-box p{
+        font-size: 1.750em;
+    }
+
+    #title .swiper-slide h3{
+        font-size: 3.125em;
+    }
+
+    #videos .swiper-slide .txt{
+        font-size: 1.375em;
+    }
+
+    #title .swiper-pagination{
+        bottom: 1rem;
+    }
+
+    .idea2 .intro2-box p{
+        font-size: 1.875em;
+    }
+
+    .idea2 h1{
+        font-size: 3.125em;
+    }
+
+    #slides2 .shop1{
+        background-position-y: -10em;
+    }
+
+    #slides2 .shop2{
+        background-position-y: -10em;
+    }
+
+    #slides2 .shop3{
+        background-position-y: -10em;
+    }
+
+    #slides2 .shop4{
+        background-position-y: -10em;
+    }
+
+    
+    #slides2 .shop1 a{
+        font-size: 4.375em;
+    }
+
+    
+    #slides2 .shop2 a{
+        font-size: 4.375em;
+    }
+
+    #slides2 .shop3 a{
+        font-size: 4.375em;
+    }
+
+    
+    #slides2 .shop4 a{
+        font-size: 4.375em;
+    }
+}
