@@ -61,8 +61,8 @@ var timelineSwiper = new Swiper('#slides3', {
     
 });
 
-$("#intro-h1").fitText(1.5, { minFontSize: '15px', maxFontSize: '60px' });
+// $("#intro-h1").fitText(1.5, { minFontSize: '15px', maxFontSize: '60px' });
 
-$("#intro-p").fitText(1.5, { minFontSize: '12px', maxFontSize: '30px' });
+// $("#intro-p").fitText(1.5, { minFontSize: '12px', maxFontSize: '30px' });
 
-$("#intro2-p").fitText(1.5, { minFontSize: '12px', maxFontSize: '36px' });
+// $("#intro2-p").fitText(1.5, { minFontSize: '12px', maxFontSize: '36px' });

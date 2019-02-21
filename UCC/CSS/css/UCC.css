@@ -60,8 +60,8 @@ body{
 #idea .idea-hide .img1{
     width: 56%;
     position: absolute;
-    left: 5%;
-    top: 45%;
+    left: 5em;
+    top: 29em;
     z-index: -1;
    
 }
@@ -69,8 +69,7 @@ body{
 #idea .idea-hide .img2{
     width: 45%;
     position: absolute;
-    right: -22%;
-    top: 0%;
+    right: -23em;
     z-index: -1;
 }
 
@@ -82,7 +81,7 @@ body{
 }
 
 #idea .intro-box h1{
-    font-size: 60px;
+    font-size: 3.750em;
     margin: 0;
 
 }
@@ -94,7 +93,7 @@ body{
 }
 
 #idea .intro-box p{
-    font-size: 30px;
+    font-size: 1.875em;
     margin: 0;
     font-weight: 600;
     
@@ -128,14 +127,14 @@ body{
 	width: 100%;
 	height: 100%;
     position: absolute;
-    top: 50%;
-    left: -8%;
+    top: 19em;
+    left: -11.3em;
 	z-index: 2;
     overflow: hidden;
 }
 
 #title .swiper-slide {
-    left: 28.6%;  
+    left: 40.8em;  
 }
 
 
@@ -152,8 +151,8 @@ body{
 }
 
 #title .swiper-slide h3 {
-	font-size: 65px;
-	margin-top: 20%;
+	font-size: 4.063em;
+	margin-top: 9rem;
 	line-height: .91667;
 	font-weight: bold;
 	letter-spacing: -.015em;
@@ -187,9 +186,9 @@ body{
 
 #title .swiper-pagination {
 	width: 50%;
-	left: 49%;
+	left: 69.8em;
 	text-align: left;
-	bottom: 100px;
+	bottom: 3rem;
 }
 
 #title .swiper-pagination .swiper-pagination-bullet {
@@ -224,10 +223,10 @@ body{
 #videos .swiper-slide  .txt {
 	color: #fff;
 	position: absolute;
-    top: 46%;
-    left: 41.3%;
+    top: 21em;
+    left: 33.7em;
 	width: 26%;
-	font-size: 28px;
+	font-size: 1.750em;
 	line-height: 1.28595;
 	font-weight: 600;
 	letter-spacing: .007em;
@@ -254,7 +253,8 @@ body{
 }
 
 .idea2 .intro2-box p{
-    font-size: 36px;
+    margin: 0;
+    font-size: 2.500em;
     font-weight: bold;
     -webkit-background-clip: text;
     color: transparent !important;
@@ -277,15 +277,15 @@ body{
     height: 230%;
     position: absolute;
     right: 0;
-    top: -90%;
+    top: -26em;
     overflow: hidden;
 }
 
 .idea2 .img4{
     width: 40%;
     position: absolute;
-    left: 13%;
-    top: 13%;
+    left: 10em;
+    top: 11em;
     z-index: 1;
     
 }
@@ -293,20 +293,19 @@ body{
 .idea2 .img5{
     width: 47%;
     position: absolute;
-    left: 50%;
-    top: -33%;
+    left: 60em;
+    top: -19em;
     z-index: 1;
 }
 
 .idea2 h1{
     margin: 0;
     color: goldenrod;
-    font-size: 50px;
-    letter-spacing: 5px;
+    font-size: 4.063em;
     font-weight: bold;
     position: absolute;
-    top: 480px;
-    left: 33%;
+    top: 8.6em;
+    left: 9.1em;
 
 }
 
@@ -355,10 +354,10 @@ body{
 #slides2 .shop1 a{
     width: 100%;
     position: absolute;
-    top: 40%;
+    top: 6em;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 80px;
+    font-size: 5.000em;
     font-weight: bold;
     color: white;
     text-shadow: 0px 0px 10px black;
@@ -387,10 +386,10 @@ body{
 #slides2 .shop2 a{
     width: 100%;
     position: absolute;
-    top: 40%;
+    top: 6em;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 80px;
+    font-size: 5.000em;
     font-weight: bold;
     color: white;
     text-shadow: 0px 0px 10px black;
@@ -419,10 +418,10 @@ body{
 #slides2 .shop3 a{
     width: 100%;
     position: absolute;
-    top: 40%;
+    top: 6em;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 80px;
+    font-size: 5.000em;
     font-weight: bold;
     color: white;
     text-shadow: 0px 0px 10px black;
@@ -452,10 +451,10 @@ body{
 #slides2 .shop4 a{
     width: 100%;
     position: absolute;
-    top: 40%;
+    top: 6em;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 80px;
+    font-size: 5.000em;
     font-weight: bold;
     color: white;
     text-shadow: 0px 0px 10px black;
@@ -471,10 +470,10 @@ body{
 
 
 .shop .swiper-button-next,.swiper-button-prev {
-    width: 400px;
-    height: 100px;
-    background-size: 86px 112px;
-    margin-top: -56px;
+    width: 20%;
+    height: 20%;
+    background-size: 5em;
+    margin-top: -6.5em;
     outline: none;
 }
 
@@ -597,14 +596,14 @@ body{
     max-width: 1920px;
     position: relative;
     text-align: center;
-    margin-bottom: 21%;
+    margin-bottom: 24rem;
 }
 
 .map .world{
     width: 100%;
     position: absolute;
     left: 0;
-    top: -95%;
+    top: -21em;
     z-index: -1;
 }
 
@@ -695,14 +694,14 @@ body{
     right: 50%;
     top: 13%;
     transform: translate(50%, 0);
-    font-size: 12px;
+    font-size: 1.000em;
     z-index: 2;
 }
 
 #footer .container .timeline .swiper-slide .timeline-year {
     display: block;
     font-style: italic;
-    font-size: 42px;
+    font-size: 2.625em;
     margin-bottom: 50px;
     transform: translate3d(20px, 0, 0);
     color: #d4a024;
@@ -713,7 +712,7 @@ body{
 
 #footer .container .timeline .swiper-slide .timeline-title {
     font-weight: 800;
-    font-size: 34px;
+    font-size: 2.125em;
     margin: 0 0 30px;
     opacity: 0;
     transform: translate3d(20px, 0, 0);
@@ -843,17 +842,17 @@ body{
         top: 50%;
         transform: translateY(-50%);
         width: 310px;
-        font-size: 11px;
+        font-size: 0.875em;
         text-align: right;
     }
 
     #footer .container .timeline .swiper-slide .timeline-year {
         margin-bottom: 0;
-        font-size: 32px;
+        font-size: 2.000em;
     }
 
     #footer .container .timeline .swiper-slide .timeline-title {
-        font-size: 46px;
+        font-size: 2.875em;
         margin: 0;
     }
 
