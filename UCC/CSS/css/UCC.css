@@ -127,14 +127,14 @@ body{
 	width: 100%;
 	height: 100%;
     position: absolute;
-    top: 19em;
-    left: -11.3em;
+    top: 19rem;
+    left: -11.3rem;
 	z-index: 2;
     overflow: hidden;
 }
 
 #title .swiper-slide {
-    left: 40.8em;  
+    left: 34vw;  
 }
 
 
@@ -152,7 +152,7 @@ body{
 
 #title .swiper-slide h3 {
 	font-size: 4.063em;
-	margin-top: 9rem;
+	margin-top: 15vh;
 	line-height: .91667;
 	font-weight: bold;
 	letter-spacing: -.015em;
@@ -186,9 +186,9 @@ body{
 
 #title .swiper-pagination {
 	width: 50%;
-	left: 69.8em;
+	left: 58vw;
 	text-align: left;
-	bottom: 3rem;
+	bottom: 6vh;
 }
 
 #title .swiper-pagination .swiper-pagination-bullet {
@@ -223,8 +223,8 @@ body{
 #videos .swiper-slide  .txt {
 	color: #fff;
 	position: absolute;
-    top: 21em;
-    left: 33.7em;
+    top: 63vh;
+    left: 49vw;
 	width: 26%;
 	font-size: 1.750em;
 	line-height: 1.28595;
@@ -277,15 +277,15 @@ body{
     height: 230%;
     position: absolute;
     right: 0;
-    top: -26em;
+    top: -46vh;
     overflow: hidden;
 }
 
 .idea2 .img4{
     width: 40%;
     position: absolute;
-    left: 10em;
-    top: 11em;
+    left: 11vw;
+    top: 19vh;
     z-index: 1;
     
 }
@@ -293,8 +293,8 @@ body{
 .idea2 .img5{
     width: 47%;
     position: absolute;
-    left: 60em;
-    top: -19em;
+    left: 50vw;
+    top: -33vh;
     z-index: 1;
 }
 
@@ -304,8 +304,8 @@ body{
     font-size: 4.063em;
     font-weight: bold;
     position: absolute;
-    top: 8.6em;
-    left: 9.1em;
+    top: 58vh;
+    left: 30vw;
 
 }
 
@@ -354,7 +354,7 @@ body{
 #slides2 .shop1 a{
     width: 100%;
     position: absolute;
-    top: 6em;
+    top: 50vh;
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 5.000em;
@@ -386,7 +386,7 @@ body{
 #slides2 .shop2 a{
     width: 100%;
     position: absolute;
-    top: 6em;
+    top: 50vh;
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 5.000em;
@@ -418,7 +418,7 @@ body{
 #slides2 .shop3 a{
     width: 100%;
     position: absolute;
-    top: 6em;
+    top: 50vh;
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 5.000em;
@@ -451,7 +451,7 @@ body{
 #slides2 .shop4 a{
     width: 100%;
     position: absolute;
-    top: 6em;
+    top: 50vh;
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 5.000em;
@@ -473,7 +473,7 @@ body{
     width: 20%;
     height: 20%;
     background-size: 5em;
-    margin-top: -6.5em;
+    margin-top: -13vh;
     outline: none;
 }
 
@@ -596,14 +596,14 @@ body{
     max-width: 1920px;
     position: relative;
     text-align: center;
-    margin-bottom: 24rem;
+    margin-bottom: 42vh;
 }
 
 .map .world{
     width: 100%;
     position: absolute;
     left: 0;
-    top: -21em;
+    top: -36vh;
     z-index: -1;
 }
 
