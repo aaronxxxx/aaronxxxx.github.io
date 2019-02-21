@@ -124,19 +124,14 @@ body{
 }
 
 #title {
-	width: 100%;
+	width: 120%;
 	height: 100%;
     position: absolute;
     top: 32vh;
-    left: -9.5vw;
+    left: 3vw;
 	z-index: 2;
     overflow: hidden;
 }
-
-#title .swiper-slide {
-    left: 34vw;  
-}
-
 
 #title .ethiopia {
     width: 30%;
@@ -186,7 +181,7 @@ body{
 
 #title .swiper-pagination {
 	width: 50%;
-	left: 58.1vw;
+	left: 45.6vw;
 	text-align: left;
 	bottom: 6vh;
 }
