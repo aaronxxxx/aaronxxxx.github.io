@@ -44,12 +44,12 @@ var timelineSwiper = new Swiper('#slides3', {
         el: '.swiper-pagination',
         clickable: true,
         renderBullet: function (index, className) {
-            switch(index){
-                case 0:text='1951';break;
-                case 1:text='1969';break;
-                case 2:text='1981';break;
-                case 3:text='1987';break;
-                case 4:text='1989';break;
+            switch (index) {
+                case 0: text = '1951'; break;
+                case 1: text = '1969'; break;
+                case 2: text = '1981'; break;
+                case 3: text = '1987'; break;
+                case 4: text = '1989'; break;
             }
             return '<span class="' + className + '">' + text + '</span>';
         },
@@ -58,5 +58,5 @@ var timelineSwiper = new Swiper('#slides3', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    
+
 });
