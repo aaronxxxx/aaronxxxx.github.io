@@ -164,7 +164,7 @@ body{
 
     .swiper-slide h3{
         background-repeat: no-repeat;
-        background-image: url("/img/paper.jpg");
+        background-image: url("img/paper.jpg");
     }
 
 }
