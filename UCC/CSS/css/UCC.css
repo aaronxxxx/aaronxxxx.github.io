@@ -33,7 +33,7 @@ body{
 }
 
 #main .bg{
-    background-image: url("/img/bg.png");
+    background-image: url("UCC/CSS/img/bg.png");
 }
 
 #main .logo{
@@ -164,7 +164,7 @@ body{
 
     .swiper-slide h3{
         background-repeat: no-repeat;
-        background-image: url("img/paper.jpg");
+        background-image: url("UCC/CSS/img/paper.jpg");
     }
 
 }
@@ -262,7 +262,7 @@ body{
     .intro2-box p{
         background-repeat: no-repeat;
         background-position: 40% 40%;
-        background-image: url("/img/coffeebeans-1.png");
+        background-image: url("UCC/CSS/img/coffeebeans-1.png");
     }
 
 }
@@ -339,7 +339,7 @@ body{
 #slides2 .shop1{
     width: 100%;
     height: 80%;
-    background-image: url("/img/shop-1.jpg");
+    background-image: url("UCC/CSS/img/shop-1.jpg");
     background-position-x: center;
     background-position-y: -12em; 
     background-size: cover;
@@ -371,7 +371,7 @@ body{
 #slides2 .shop2{
     width: 100%;
     height: 80%;
-    background-image: url("/img/shop-2.jpg");
+    background-image: url("UCC/CSS/img/shop-2.jpg");
     background-position-x: center;
     background-position-y: -12em; 
     background-size: cover;
@@ -403,7 +403,7 @@ body{
 #slides2 .shop3{
     width: 100%;
     height: 80%;
-    background-image: url("/img/shop-3.png");
+    background-image: url("UCC/CSS/img/shop-3.png");
     background-position-x: center;
     background-position-y: -12em; 
     background-size: cover;
@@ -436,7 +436,7 @@ body{
 #slides2 .shop4{
     width: 100%;
     height: 80%;
-    background-image: url("/img/shop-4.png");
+    background-image: url("UCC/CSS/img/shop-4.png");
     background-position-x: center;
     background-position-y: -12em; 
     background-size: cover;
@@ -475,11 +475,11 @@ body{
 }
 
 .shop .swiper-button-next {
-    background-image: url("/img/right.svg");
+    background-image: url("UCC/CSS/img/right.svg");
 }
 
 .shop .swiper-button-prev {
-    background-image: url("/img/left.svg");
+    background-image: url("UCC/CSS/img/left.svg");
 
 }
 
