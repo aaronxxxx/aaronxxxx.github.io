@@ -33,7 +33,7 @@ body{
 }
 
 #main .bg{
-    background-image: url(/UCC/CSS/img/bg.png);
+    background-image: url("/img/bg.png");
 }
 
 #main .logo{
@@ -165,7 +165,7 @@ body{
 
     .swiper-slide h3{
         background-repeat: no-repeat;
-        background-image: url(UCC/CSS/img/paper.jpg);
+        background-image: url("/img/paper.jpg");
     }
 
 }
