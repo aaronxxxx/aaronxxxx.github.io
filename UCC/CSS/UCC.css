@@ -5,6 +5,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 body{
@@ -31,12 +32,15 @@ body{
     position: relative;
 }
 
+
 #main .logo{
     width: 30%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    margin: auto;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
     filter: drop-shadow(0px 0px 5px black);
 }
 
@@ -123,12 +127,16 @@ body{
 	height: 100%;
     position: absolute;
     top: 32vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
 	z-index: 2;
     overflow: hidden;
 }
 
 #title .swiper-slide{
-    left: 29.3em;
+    left: 469px;
+    
 }
 
 #title .ethiopia {
@@ -929,77 +937,38 @@ body{
 }
 
 @media screen and (max-width:1680px){
-    #title .swiper-slide{
-        left: 29.7em;
+    html{
+        font-size: 14px;
+    }
+
+    #title .swiper-slide {
+        left: 472px;
     }
 
     #title .swiper-pagination{
         bottom: 1rem;
     }
 
-    .idea2 .intro2-box p{
-        font-size: 2.000em;
-    }
-
-    .idea2 h1{
-        font-size: 3.750em;
-        top: 48vh;
-    }
 }
 
 @media screen and (max-width:1600px) and (device-height:1024px){
-    #idea .intro-box h1{
-        font-size: 3.483em;
+    html{
+        font-size: 13px;
     }
 
-    #idea .intro-box p{
-        font-size: 1.625em;
-    }
-
-    #title .swiper-slide h3{
-        font-size: 3.750em;
-    }
-
-    #videos .swiper-slide .txt{
-        font-size: 1.563em;
-    }
-
-    #slides2 .shop1 a{
-        font-size: 4.688em;
-    }
-
-    
-    #slides2 .shop2 a{
-        font-size: 4.688em;
-    }
-
-    #slides2 .shop3 a{
-        font-size: 4.688em;
-    }
-
-    
-    #slides2 .shop4 a{
-        font-size: 4.688em;
-    }
 }
 
 @media screen and (max-width:1600px) and (device-height:900px){
-    #title .swiper-slide h3{
-        font-size: 3.438em;
+    html{
+        font-size: 13px;
+    }
+
+    #title .swiper-slide {
+        left: 472px;
     }
 
     #title .swiper-pagination{
         left: 48.5vw;
-    }
-
-    #videos .swiper-slide .txt{
-        font-size: 1.375em;
-    }
-    
-    .idea2 h1{
-        font-size: 3.125em;
-        top: 58vh;
-        left: 32vw;
     }
 
     .map .world{
@@ -1008,22 +977,8 @@ body{
 }
 
 @media screen and (max-width:1440px){
-
-
-    #idea .intro-box h1{
-        font-size: 3.125em;
-    }
-
-    #idea .intro-box p{
-        font-size: 1.625em;
-    }
-
-    #title .swiper-slide h3{
-        font-size: 3.125em;
-    }
-
-    .idea2 .intro2-box p{
-        font-size: 1.875em;
+    html{
+        font-size: 12px;
     }
 
     #slides2 .shop1{
@@ -1042,82 +997,28 @@ body{
         background-position-y: -10em;
     }
 
-    
-    #slides2 .shop1 a{
-        font-size: 4.375em;
-    }
-
-    
-    #slides2 .shop2 a{
-        font-size: 4.375em;
-    }
-
-    #slides2 .shop3 a{
-        font-size: 4.375em;
-    }
-
-    
-    #slides2 .shop4 a{
-        font-size: 4.375em;
-    }
 }
 
 @media screen and (max-width:1366px){
-    #idea .intro-box h1{
-        font-size: 2.813em;
+    html{
+        font-size: 11px;
     }
 
-    
-    #idea .intro-box p{
-        font-size: 1.500em;
+    #title .swiper-slide {
+        left: 476px;
     }
 
     #title .swiper-pagination{
-        left: 48.4vw;;
-    }
-    
-    #title .swiper-slide h3{
-        font-size: 2.813em;
-    }
-
-    #videos .swiper-slide .txt{
-        font-size: 1.188em;
+        left: 48.5vw;;
     }
 
     #title .swiper-pagination .swiper-pagination-bullet{
         width: 15px;
         height: 15px;
     }
-    
-    .idea2 .intro2-box p{
-        font-size: 1.750em;
-    }
 
     .idea2 .img5{
         width: 45%;      
-    }
-
-    .idea2 h1{
-        font-size: 2.813em;
-        top: 60vh;
-    }
-
-    #slides2 .shop1 a{
-        font-size: 3.750em;
-    }
-
-    
-    #slides2 .shop2 a{
-        font-size: 3.750em;
-    }
-
-    #slides2 .shop3 a{
-        font-size: 3.750em;
-    }
-
-    
-    #slides2 .shop4 a{
-        font-size: 3.750em;
     }
 
     .map .world{
@@ -1167,12 +1068,8 @@ body{
         width: 60%;
     }
 
-    .idea2 .intro2-box p{
-        font-size: 1.875em;
-    }
-
     .idea2 h1{
-        top: 48vh;
+        top: 46vh;
     }
 
     .shop .secition2{
@@ -1223,12 +1120,9 @@ body{
         width: 60%;
     }
 
-    .idea2 .intro2-box p{
-        font-size: 1.875em;
-    }
-
     .idea2 h1{
         top: 48vh;
+        
     }
 
     .shop .secition2{
@@ -1257,10 +1151,6 @@ body{
         top: 57vh;
     }
 
-    .idea2 .intro2-box p{
-        font-size: 1.500em;
-    }
-
     .idea2 .img4{
         width: 45%;
         left: 10vw;
@@ -1272,7 +1162,8 @@ body{
     }
 
     .idea2 h1{
-        top: 52vh;
+        top: 62vh;
+        left: 29vw;
     }
 
     .map .world{
@@ -1285,32 +1176,9 @@ body{
         top: 13vh;
     }
 
-    .idea2 .intro2-box p{
-        font-size: 1.375em;
-    }
-
     .idea2 h1{
-        font-size: 2.500em;
-        top: 50vh;
-        left: 32vw;;
-    }
-
-    #slides2 .shop1 a{
-        font-size: 3.125em;
-    }
-
-    
-    #slides2 .shop2 a{
-        font-size: 3.125em;
-    }
-
-    #slides2 .shop3 a{
-        font-size: 3.125em;
-    }
-
-    
-    #slides2 .shop4 a{
-        font-size: 3.125em;
+        top: 65vh;
+        left: 29vw;
     }
 
     .map .world{
@@ -1319,12 +1187,8 @@ body{
 }
 
 @media screen and (max-width:1280px) and (device-height:720px){
-    #idea .intro-box h1{
-        font-size: 2.500em;
-    }
-
-    #idea .intro-box p{
-        font-size: 1.375em
+    html{
+        font-size: 10px;
     }
 
     #product-video{
@@ -1334,50 +1198,14 @@ body{
     #title{
         top: 37vh;
     }
-    
-    #title .swiper-slide h3{
-        font-size: 2.500em;
-        
-    }
-
+ 
     #videos .swiper-slide .txt{
-        font-size: 1.063em;
         top: 69vh;
     }
 
-    .idea2 .intro2-box p{
-        font-size: 1.563em;
-    }
-
-    
-    #slides2 .shop1 a{
-        font-size: 3.125em;
-    }
-
-    
-    #slides2 .shop2 a{
-        font-size: 3.125em;
-    }
-
-    #slides2 .shop3 a{
-        font-size: 3.125em;
-    }
-
-    
-    #slides2 .shop4 a{
-        font-size: 3.125em;
-    }
 }
 
 @media screen and (max-width:1152px){
-    #idea .intro-box h1{
-        font-size: 2.500em;
-    }
-
-    #idea .intro-box p{
-        font-size: 1.375em
-    }
-
     #product-video{
         transform: rotate(8deg) translateX(2%) translateY(-26%);
     }
@@ -1394,10 +1222,6 @@ body{
         top: 44vh;
     }
 
-    .idea2 .intro2-box p{
-        font-size: 1.500em;
-    }
-
     .idea2 .img4{
         width: 45%;
         left: 10vw;
@@ -1409,9 +1233,8 @@ body{
         top: -23vh;
     }
 
-    .idea2 h1{
-        top: 48vh;
-        left: 28vw;
+    .idea2 .intro2-box{
+        width: 60%;
     }
 
     .map{
@@ -1429,63 +1252,30 @@ body{
 }
 
 @media screen and (max-width:1024px){
-    #title .swiper-slide{
-        left:29.8em;
-    }
-
-    #idea .intro-box h1{
-        font-size: 2.188em;
-    }
-
-    #idea .intro-box p{
-        font-size: 1.125em;
+    html{
+        font-size: 9px;
     }
 
     .idea2 .img4{
         top: 13vh;
     }
 
-    .idea2 .intro2-box p{
-        font-size: 1.375em;
-    }
-
     .idea2 h1{
-        font-size: 2.500em;
         top: 50vh;
-        left: 32vw;;
-    }
-
-    #slides2 .shop1 a{
-        font-size: 3.125em;
-    }
-
-    
-    #slides2 .shop2 a{
-        font-size: 3.125em;
-    }
-
-    #slides2 .shop3 a{
-        font-size: 3.125em;
-    }
-
-    
-    #slides2 .shop4 a{
-        font-size: 3.125em;
     }
 
     .map .world{
         top: -37vh;
     }
+
+    #footer .contact{
+        height: 400px;
+    }
 }
 
 @media all and (max-width:768px){
-    #main{
-        height: 48vh;
-    }
-
-    #main .bg{
-        background-image:none;
-        top: 3em !important;
+    #idea .intro-box{
+        width: 80%;
     }
 
     #main .bg video{
@@ -1493,24 +1283,20 @@ body{
     }
 
     #main .logo{
-        top: 55%;
+        width: 50%;
     }
 
-    #idea .intro-box h1{
-        font-size: 1.625em;
-    }
-
-    #idea .intro-box p{
-        font-size: 0.875em;
+    #idea .idea-hide .img1{
+        top: 30vh;
     }
 
     #product{
-        height: 60vh;
+        height: 70vh;
     }
 
     #product .secition1{
         height: 35vh;
-        transform: rotate(-8deg) translateX(-13%) translateY(30%);
+        transform: rotate(-8deg) translateX(-13%) translateY(42%);
     }
 
     #title{
@@ -1518,17 +1304,14 @@ body{
         top: 3vh;
     }
 
-    #title .swiper-slide{
-        left: 30.1em;;
-    }
-
     #title .swiper-slide h3{
-        font-size: 2.000em;
+        margin-top: 12vh;
+        font-size: 3.438em;
     }
 
     #videos .swiper-slide .txt{
-        font-size: 0.500em;
-        top: 25vh;
+        top: 23vh;
+        font-size: 1.125em;
     }
 
     #title .swiper-pagination{
@@ -1540,15 +1323,11 @@ body{
         width: 10px;
         height: 10px;
     }
-
+    
     .idea2 .hide2{
         top: -35vh;
-        height: 370%
+        height: 280%
         
-    }
-
-    .idea2 .intro2-box p{
-        font-size: 1em;
     }
 
     .idea2 .img4{
@@ -1560,14 +1339,21 @@ body{
         top: 1vh;
     }
 
-    .idea2 h1{
+    .idea2 .intro2-box{
+        width: 80%;
+    }
+
+    .idea2 .intro2-box p{
         font-size: 1.875em;
-        top: 23vh;
-        left: 25vw;
+    }
+
+    .idea2 h1{
+        top: 30vh;
+        left: 22vw;
     }
 
     .shop{
-        height: 60vh;
+        height: 70vh;
     }
 
     .shop .secition2{
@@ -1605,27 +1391,23 @@ body{
 
     #slides2 .shop1 a{
         top: 26vh;
-        font-size: 2.500em;
     }
     
     #slides2 .shop2 a{
         top: 26vh;
-        font-size: 2.500em;
     }
 
     #slides2 .shop3 a{
         top: 26vh;
-        font-size: 2.500em;
     }
 
     
     #slides2 .shop4 a{
         top: 26vh;
-        font-size: 2.500em;
     }
 
     .map{
-        margin-bottom: 4vh;
+        margin-bottom: 22vh;
     }
 
     .map .world{
@@ -1633,7 +1415,45 @@ body{
         
     }
 
+    .map .big-logo{
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #footer .container .timeline .swiper-container{
+        height: 400px;
+    }
+
     #footer .contact{
         height: 300px;
     }
+}
+
+
+@media all and (max-width:414px){
+    html{
+        font-size: 5px;
+    }
+
+    #idea .idea-hide .img1{
+        width: 80%;
+        top: 100vh;
+    }
+
+    #idea .idea-hide .img2{
+        display: none;
+    }
+
+    #product{
+        height: 100vh;
+    }
+
+    #product .secition1{
+        height: 70vh;
+    }
+
 }
