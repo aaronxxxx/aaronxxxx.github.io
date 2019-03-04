@@ -60,3 +60,26 @@ var timelineSwiper = new Swiper('#slides3', {
     },
 
 });
+
+var mySwiper = new Swiper('#slides-mb', {
+    direction: 'vertical',
+    mousewheel: true,
+    speed: 1500,
+    height: window.innerHeight,
+    on: {
+        slideChangeTransitionEnd: function () {
+            var coffeeBean = document.querySelector('.coffeebean');
+            var coffee = document.querySelector('.coffee');
+            coffeeBean.classList.toggle('show');
+            coffee.classList.toggle('show');
+        },
+    },
+})
+
+var productSwiper = new Swiper('#product-video-mb', {
+    pagination: {
+        el: '.swiper-pagination',
+        clickable :true,
+    },
+})
+

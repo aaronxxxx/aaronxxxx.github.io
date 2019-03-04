@@ -7,234 +7,336 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
     <title>UCC</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css">
     <link rel="stylesheet" href="UCC.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:200,300,400,500,600,700,900" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <div id="main" class="main">
-        <video loop="true" autoplay="autoplay" muted="true">
-            <source type="video/mp4" src="img/UCC.mp4">
-            </source>
-        </video>
-        <img src="img/logo.png" class="logo"></img>
-    </div>
-    <div id="idea" class="idea">
-        <div class="idea-hide bg">
-            <img src="img/coffeeimg-1.png" class="img1" data-anchor-target="#idea"
-                data-center-top="margin-top: -68rem;transform: rotate(-85deg) scale(1,1);opacity: 0;"
-                data-center-center="margin-top: -36rem;transform: rotate(-22deg) scale(1.3,1.3);opacity: 1;"
-                data--150-top-center="margin-top: -3rem;transform: rotate(5deg) scale(1.6,1.6);opacity: 0;"
-                data-smooth-scrolling="on">
-            </img>
-            <img src="img/coffeebeans-1.png" class="img2" data-anchor-target="#main"
-                data-center-center="margin-top: -65rem;transform: rotate(18deg) scale(1,1);opacity: 1;"
-                data--150-top-center="margin-top: 0rem;transform: rotate(8deg) scale(1.5,1.5);opacity: 0;"
-                data-smooth-scrolling="on">
-            </img>
+    <div id="PC">
+        <div id="main">
+            <video loop="true" autoplay="autoplay" muted="true">
+                <source type="video/mp4" src="img/UCC2.mp4">
+                </source>
+            </video>
+            <img src="img/logo.png" class="logo"></img>
         </div>
-        <div class="intro-box">
-            <h1 id="intro-h1">The Coffee Company 的實現</h1>
-            <hr>
-            <p id="intro-p">為了追求美味香濃的咖啡,UCC自1933創業以來<br>
-                即期望能藉由一杯咖啡帶給所有人會心的微笑<br>
-                並以實現專業咖啡企業為企業理念<br>
-                憑藉著對咖啡的執著<br>
-                從一杯咖啡到農園生產的每一環節<br>
-                UCC皆不斷追求美味的咖啡和無限的可能
-            </p>
+        <div id="idea">
+            <div class="idea-hide bg">
+                <img src="img/coffeeimg-1.png" class="img1" data-anchor-target="#idea"
+                    data-center-top="margin-top: -68rem;transform: rotate(-85deg) scale(1,1);opacity: 0;"
+                    data-center-center="margin-top: -36rem;transform: rotate(-22deg) scale(1.3,1.3);opacity: 1;"
+                    data--150-top-center="margin-top: -3rem;transform: rotate(5deg) scale(1.6,1.6);opacity: 0;"
+                    data-smooth-scrolling="on">
+                </img>
+                <img src="img/coffeebeans-1.png" class="img2" data-anchor-target="#main"
+                    data-center-center="margin-top: -65rem;transform: rotate(18deg) scale(1,1);opacity: 1;"
+                    data--150-top-center="margin-top: 0rem;transform: rotate(8deg) scale(1.5,1.5);opacity: 0;"
+                    data-smooth-scrolling="on">
+                </img>
+            </div>
+            <div class="intro-box">
+                <h1 id="intro-h1">The Coffee Company 的實現</h1>
+                <hr>
+                <p id="intro-p">為了追求美味香濃的咖啡,UCC自1933創業以來<br>
+                    即期望能藉由一杯咖啡帶給所有人會心的微笑<br>
+                    並以實現專業咖啡企業為企業理念<br>
+                    憑藉著對咖啡的執著<br>
+                    從一杯咖啡到農園生產的每一環節<br>
+                    UCC皆不斷追求美味的咖啡和無限的可能
+                </p>
+            </div>
         </div>
-    </div>
-    <div id="product" class="product">
-        <div class="secition1" data-anchor-target="#product" data-bottom-top="margin-top:10rem;"
-            data-top-bottom="margin-top:-10rem;" data-smooth-scrolling="on">
-            <div id="product-video">
-                <div class="swiper-container" id="title">
+        <div id="product">
+            <div class="secition1" data-anchor-target="#product" data-bottom-top="margin-top:10rem;"
+                data-top-bottom="margin-top:-10rem;" data-smooth-scrolling="on">
+                <div id="mac-video">
+                    <div class="swiper-container" id="title">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide ethiopia">
+                                <h3>UCC<br>衣索比亞黑咖啡</h3>
+                            </div>
+                            <div class="swiper-slide papua">
+                                <h3>UCC<br>BLACK黑咖啡</h3>
+                            </div>
+                            <div class="swiper-slide black">
+                                <h3>UCC<br>巴布亞紐幾內亞黑咖啡</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-container" id="videos">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="txt" data-swiper-parallax="-1">
+                                    <p>
+                                        採用100%衣索比亞生產的耶加雪菲咖啡豆，在衣索比亞肥沃土壤以及冷暖變化劇烈的天候下，培育而成。具有獨特明顯的果酸味，呈現出低苦味的咖啡餘韻，並富有高香氣及順口口感。
+                                    </p>
+                                    <a>Watch the film</a>
+                                </div>
+                                <div class="mask"></div>
+                                <video src="img/UCC-E.mp4" loop="true" autoplay="autoplay" muted="true"></video>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="txt" data-swiper-parallax="-1">
+                                    <p>採用UCC獨家專利，利用低溫、中溫、高溫三溫度帶自然萃取咖啡，可呈現高香氣、均衡的口感及濃醇感。</p>
+                                    <a>Watch the
+                                        film</a>
+                                </div>
+                                <div class="mask"></div>
+                                <video src="img/UCC-N.mp4" loop="true" autoplay="autoplay" muted="true"></video>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="txt" data-swiper-parallax="-1">
+                                    <p>採用100%巴布亞紐幾內亞咖啡豆，成長於巴布亞紐幾內亞西部高地的肥沃盆地，呈現出顯著的芬芳香氣及圓潤的柔和口感，調和著高雅的酸味與甘甜。
+                                    </p>
+                                    <a>Watch the
+                                        film</a>
+                                </div>
+                                <div class="mask"></div>
+                                <video src="img/UCC-B.mp4" loop="true" autoplay="autoplay" muted="true"></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="idea2">
+            <div class="hide2">
+                <img src="img/coffeebeans-3.png" class="img4" data-anchor-target="#idea2"
+                    data-bottom-top="transform: translateY(0%) translateX(0%) rotate(0deg)"
+                    data-center-bottom="transform: translateY(10%) translateX(-10%) rotate(10deg)"
+                    data-smooth-scrolling="on"></img>
+                <img src="img/coffeeimg-2.png" class="img5" data-anchor-target="#idea2"
+                    data-bottom-top="transform: translateY(0%) translateX(0%) rotate(0deg)"
+                    data-top-bottom="transform: translateY(10%) translateX(10%) rotate(-10deg)"
+                    data-smooth-scrolling="on"></img>
+            </div>
+            <div class="intro2-box">
+                <p id="intro2-p">UCC的使命<br>
+                    是要讓更多的人不論何時何地<br>
+                    皆能品嚐到真正美味的咖啡<br>
+                    並將咖啡帶來的笑容擴展到全世界<br>
+                    秉持著這份理想<br>
+                    咖啡的專家UCC今後仍將一心一意地為咖啡注入熱情<br>
+                    以日本、亞洲，甚至是世界的<br>
+                    「The Coffee Company」為目標<br>
+                    在全球創造出</p>
+            </div>
+            <h1 data-anchor-target="#idea2" data-center-center="transform:translateX(0%)"
+                data-top-bottom="transform:translateX(20%)" data-smooth-scrolling="on">「Good Coffee Smile！」</h1>
+        </div>
+        <div id="shop">
+            <div class="secition2" data-anchor-target="#shop" data-bottom-top="margin-top:10rem;"
+                data-top-bottom="margin-top:-10rem;" data-smooth-scrolling="on">
+                <div id="slides2" class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide ethiopia">
-                            <h3>UCC<br>衣索比亞黑咖啡</h3>
+                        <div class="swiper-slide">
+                            <div class="swiper-lazy shop1"><a
+                                    href="http://www.ucc-coffee.com.tw/LoversPlanet/LoversPlanet.html">Coffee
+                                    Love's Planet</a></div>
                         </div>
-                        <div class="swiper-slide papua">
-                            <h3>UCC<br>BLACK黑咖啡</h3>
+                        <div class="swiper-slide">
+                            <div class="swiper-lazy shop2"><a href="http://www.ueshima-coffee.com.tw/">上島珈琲店</a>
+                            </div>
                         </div>
-                        <div class="swiper-slide black">
-                            <h3>UCC<br>巴布亞紐幾內亞黑咖啡</h3>
+                        <div class="swiper-slide">
+                            <div class="swiper-lazy shop3"><a
+                                    href="http://www.ucc-coffee.com.tw/mercado/mercado.html">UCC
+                                    Coffee Mercado</a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-lazy shop4"><a href="http://www.ucc-coffee.com.tw/ks/ks.html">K's
+                                    Cafe</a>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
-                </div>
-                <div class="swiper-container" id="videos">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="txt" data-swiper-parallax="-1">
-                                <p>
-                                    採用100%衣索比亞生產的耶加雪菲咖啡豆，在衣索比亞肥沃土壤以及冷暖變化劇烈的天候下，培育而成。具有獨特明顯的果酸味，呈現出低苦味的咖啡餘韻，並富有高香氣及順口口感。
-                                </p>
-                                <a>Watch the film</a>
-                            </div>
-                            <div class="mask"></div>
-                            <video src="img/UCC-E.mp4" loop="true" autoplay="autoplay" muted="true"></video>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="txt" data-swiper-parallax="-1">
-                                <p>採用UCC獨家專利，利用低溫、中溫、高溫三溫度帶自然萃取咖啡，可呈現高香氣、均衡的口感及濃醇感。</p>
-                                <a>Watch the
-                                    film</a>
-                            </div>
-                            <div class="mask"></div>
-                            <video src="img/UCC-N.mp4" loop="true" autoplay="autoplay" muted="true"></video>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="txt" data-swiper-parallax="-1">
-                                <p>採用100%巴布亞紐幾內亞咖啡豆，成長於巴布亞紐幾內亞西部高地的肥沃盆地，呈現出顯著的芬芳香氣及圓潤的柔和口感，調和著高雅的酸味與甘甜。
-                                </p>
-                                <a>Watch the
-                                    film</a>
-                            </div>
-                            <div class="mask"></div>
-                            <video src="img/UCC-B.mp4" loop="true" autoplay="autoplay" muted="true"></video>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="idea2" class="idea2">
-        <div class="hide2">
-            <img src="img/coffeebeans-3.png" class="img4" data-anchor-target="#idea2"
-                data-bottom-top="transform: translateY(0%) translateX(0%) rotate(0deg)"
-                data-center-bottom="transform: translateY(10%) translateX(-10%) rotate(10deg)"
-                data-smooth-scrolling="on"></img>
-            <img src="img/coffeeimg-2.png" class="img5" data-anchor-target="#idea2"
-                data-bottom-top="transform: translateY(0%) translateX(0%) rotate(0deg)"
-                data-top-bottom="transform: translateY(10%) translateX(10%) rotate(-10deg)"
-                data-smooth-scrolling="on"></img>
-        </div>
-        <div class="intro2-box">
-            <p id="intro2-p">UCC的使命<br>
-                是要讓更多的人不論何時何地<br>
-                皆能品嚐到真正美味的咖啡<br>
-                並將咖啡帶來的笑容擴展到全世界<br>
-                秉持著這份理想<br>
-                咖啡的專家UCC今後仍將一心一意地為咖啡注入熱情<br>
-                以日本、亞洲，甚至是世界的<br>
-                「The Coffee Company」為目標<br>
-                在全球創造出</p>
-        </div>
-        <h1 data-anchor-target="#idea2" data-center-center="transform:translateX(0%)"
-            data-top-bottom="transform:translateX(20%)" data-smooth-scrolling="on">「Good Coffee Smile！」</h1>
-    </div>
-    <div id="shop" class="shop">
-        <div class="secition2" data-anchor-target="#shop" data-bottom-top="margin-top:10rem;"
-            data-top-bottom="margin-top:-10rem;" data-smooth-scrolling="on">
-            <div id="slides2" class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="swiper-lazy shop1"><a
-                                href="http://www.ucc-coffee.com.tw/LoversPlanet/LoversPlanet.html">Coffee
-                                Love's Planet</a></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-lazy shop2"><a href="http://www.ueshima-coffee.com.tw/">上島珈琲店</a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-lazy shop3"><a href="http://www.ucc-coffee.com.tw/mercado/mercado.html">UCC
-                                Coffee Mercado</a></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-lazy shop4"><a href="http://www.ucc-coffee.com.tw/ks/ks.html">K's
-                                Cafe</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-        </div>
-    </div>
-    <div id="map" class="map">
-        <img src="img/map-1.png" class="world"></img>
-        <img src="img/logo-2.png" class="big-logo"></img>
-    </div>
-    <div id="footer" class="footer">
-        <div class="container">
-            <div class="timeline">
-                <div id="slides3" class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide" style="background-image: url(img/history-1951.jpg)">
-                            <div class="swiper-slide-content"><span class="timeline-year">1951</span>
-                                <h4 class="timeline-title">成立Ueshima咖啡有限公司</h4>
-                                <p class="timeline-text">成立上島咖啡有限公司，資本金100萬日元。同時開設東京分公司</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" style="background-image: url(img/history-1969.jpg)">
-                            <div class="swiper-slide-content"><span class="timeline-year">1969</span>
-                                <h4 class="timeline-title">開發出世界上第一個罐裝咖啡</h4>
-                                <p class="timeline-text">開發並開始生產銷售世界上第一支的罐裝咖啡飲料</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" style="background-image: url(img/history-1981.jpg)">
-                            <div class="swiper-slide-content"><span class="timeline-year">1981</span>
-                                <h4 class="timeline-title">藍山咖啡種植園業務開始於牙買加</h4>
-                                <p class="timeline-text">參加神戸PORT ISLAND博覽會展覽、並設置展出“UCC咖啡館”
-                                    開始在牙買加經營藍山咖啡自營農場的事業</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" style="background-image: url(img/history-1987.jpg)">
-                            <div class="swiper-slide-content"><span class="timeline-year">1987</span>
-                                <h4 class="timeline-title">開設了UCC咖啡館</h4>
-                                <p class="timeline-text">於神戸PORT ISLAND開設亞洲第一家的”UCC咖啡館“
-                                    於台灣設立優味企業股份有限公司、開始咖啡店的展店經營</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" style="background-image: url(img/history-1989.jpg)">
-                            <div class="swiper-slide-content"><span class="timeline-year">1989</span>
-                                <h4 class="timeline-title">在美國夏威夷開設夏威夷咖啡直接管理農場。</h4>
-                                <p class="timeline-text">在美國夏威夷開設HAWAII KONA COFFEE的直營農場</p>
-                            </div>
-                        </div>
-                    </div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
-                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
-        <div class="contact">
-            <div class="mask">
-                <img src="img/logo-4.png" alt="Logo">
+        <div id="map">
+            <img src="img/map-1.png" class="world"></img>
+            <img src="img/logo-2.png" class="big-logo"></img>
+        </div>
+        <div id="footer">
+            <div class="container">
+                <div class="timeline">
+                    <div id="slides3" class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image: url(img/history-1951.jpg)">
+                                <div class="swiper-slide-content"><span class="timeline-year">1951</span>
+                                    <h4 class="timeline-title">成立Ueshima咖啡有限公司</h4>
+                                    <p class="timeline-text">成立上島咖啡有限公司，資本金100萬日元。同時開設東京分公司</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" style="background-image: url(img/history-1969.jpg)">
+                                <div class="swiper-slide-content"><span class="timeline-year">1969</span>
+                                    <h4 class="timeline-title">開發出世界上第一個罐裝咖啡</h4>
+                                    <p class="timeline-text">開發並開始生產銷售世界上第一支的罐裝咖啡飲料</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" style="background-image: url(img/history-1981.jpg)">
+                                <div class="swiper-slide-content"><span class="timeline-year">1981</span>
+                                    <h4 class="timeline-title">藍山咖啡種植園業務開始於牙買加</h4>
+                                    <p class="timeline-text">參加神戸PORT ISLAND博覽會展覽、並設置展出“UCC咖啡館”
+                                        開始在牙買加經營藍山咖啡自營農場的事業</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" style="background-image: url(img/history-1987.jpg)">
+                                <div class="swiper-slide-content"><span class="timeline-year">1987</span>
+                                    <h4 class="timeline-title">開設了UCC咖啡館</h4>
+                                    <p class="timeline-text">於神戸PORT ISLAND開設亞洲第一家的”UCC咖啡館“
+                                        於台灣設立優味企業股份有限公司、開始咖啡店的展店經營</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" style="background-image: url(img/history-1989.jpg)">
+                                <div class="swiper-slide-content"><span class="timeline-year">1989</span>
+                                    <h4 class="timeline-title">在美國夏威夷開設夏威夷咖啡直接管理農場。</h4>
+                                    <p class="timeline-text">在美國夏威夷開設HAWAII KONA COFFEE的直營農場</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
             </div>
-            <div class="mask-video">
-                <video loop="true" autoplay="autoplay" muted="true">
-                    <source type="video/mp4" src="img/UCC.mp4">
-                    </source>
-                </video>
+            <div class="contact">
+                <div class="mask">
+                    <img src="img/logo-4.png" alt="Logo">
+                </div>
+                <div class="mask-video">
+                    <video loop="true" autoplay="autoplay" muted="true">
+                        <source type="video/mp4" src="img/UCC.mp4">
+                        </source>
+                    </video>
+                </div>
             </div>
         </div>
     </div>
-    <script src="js/jquery-min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
-    <script src="js/mac.min.js"></script>
-    <script src="js/UCC.js"></script>
-    <script type="text/javascript" src="js/skrollr.min.js"></script>
-    <script type="text/javascript">
-        skrollr.init({
-            forceHeight: true,
-            smoothScrolling: true,
-        });
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
+    <div id="MB">
+        <div id="navbar-mb">
+            <div class="outer-menu">
+                <input class="checkbox-toggle" type="checkbox" />
+                <div class="hamburger">
+                    <div></div>
+                </div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="slides-mb" class="swiper-container">
+            <div class="swiper-wrapper">
+                <div id="contact-mb" class="swiper-slide">
+                    <div class="video">
+                        <img src="img/logo.png" class="logo"></img>
+                        <video loop="true" autoplay="autoplay" muted="true">
+                            <source type="video/mp4" src="img/UCC2.mp4">
+                            </source>
+                        </video>
+                        <video loop="true" autoplay="autoplay" muted="true">
+                            <source type="video/mp4" src="img/UCC2.mp4">
+                            </source>
+                        </video>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </div>
+                <div id="intro-mb" class="swiper-slide">
+                    <img class="intro" src="img/fix.png" alt="">
+                    <img class="coffeebean" src="img/coffeebeans-1.png" alt="">
+                    <img class="coffee" src="img/coffeeimg-1.png" alt="">
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div id="product-mb" class="swiper-slide">
+                    <div id="product-video-mb" class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <h1>衣索比亞黑咖啡</h1>
+                                <div class="video">
+                                    <video loop="true" autoplay="autoplay" muted="true">
+                                        <source type="video/mp4" src="img/UCC-E.mp4">
+                                        </source>
+                                    </video>
+                                    <video loop="true" autoplay="autoplay" muted="true">
+                                        <source type="video/mp4" src="img/UCC-E.mp4">
+                                        </source>
+                                    </video>
+                                </div>
+                                <p>採用100%衣索比亞生產的耶加雪菲咖啡豆，在衣索比亞肥沃土壤以及冷暖變化劇烈的天候下，培育而成。具有獨特明顯的果酸味，呈現出低苦味的咖啡餘韻，並富有高香氣及順口口感。
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h1>BLACK黑咖啡</h1>
+                                <div class="video">
+                                    <video loop="true" autoplay="autoplay" muted="true">
+                                        <source type="video/mp4" src="img/UCC-N.mp4">
+                                        </source>
+                                    </video>
+                                    <video loop="true" autoplay="autoplay" muted="true">
+                                        <source type="video/mp4" src="img/UCC-N.mp4">
+                                        </source>
+                                    </video>
+                                </div>
+                                <p>採用UCC獨家專利，利用低溫、中溫、高溫三溫度帶自然萃取咖啡，可呈現高香氣、均衡的口感及濃醇感。</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h1>巴布亞紐幾內亞黑咖啡</h1>
+                                <div class="video">
+                                    <video loop="true" autoplay="autoplay" muted="true">
+                                        <source type="video/mp4" src="img/UCC-B.mp4">
+                                        </source>
+                                    </video>
+                                    <video loop="true" autoplay="autoplay" muted="true">
+                                        <source type="video/mp4" src="img/UCC-B.mp4">
+                                        </source>
+                                    </video>
+                                </div>
+                                <p>採用100%巴布亞紐幾內亞咖啡豆，成長於巴布亞紐幾內亞西部高地的肥沃盆地，呈現出顯著的芬芳香氣及圓潤的柔和口感，調和著高雅的酸味與甘甜。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div id="intro2-mb" class="swiper-slide">
+                    <video loop="true" autoplay="autoplay" muted="true">
+                        <source type="video/mp4" src="img/UCC.mp4">
+                        </source>
+                    </video>
+                    <img src="img/word-mb.png"></img>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/mac.min.js"></script>
+        <script type="text/javascript" src="js/skrollr.min.js"></script>
+        <script type="text/javascript">
+            skrollr.init({
+                forceHeight: true,
+                smoothScrolling: true,
+            });
+        </script>
+        <script src="js/UCC.js"></script>
 </body>
 
 </html>
