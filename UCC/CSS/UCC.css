@@ -62,6 +62,9 @@ a:active {
 }
 
 #navbar .outer-menu .checkbox-toggle:checked+.hamburger>div {
+    -o-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
 }
@@ -69,6 +72,9 @@ a:active {
 #navbar .outer-menu .checkbox-toggle:checked+.hamburger>div:before,
 #navbar .outer-menu .checkbox-toggle:checked+.hamburger>div:after {
     top: 0;
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
@@ -83,6 +89,9 @@ a:active {
 }
 
 #navbar .outer-menu .checkbox-toggle:checked~.menu>div {
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
     -webkit-transform: scale(1);
     transform: scale(1);
     transition-duration: 0.75s;
@@ -98,6 +107,9 @@ a:active {
 }
 
 #navbar .outer-menu .checkbox-toggle:checked:hover+.hamburger>div {
+    -o-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
     -webkit-transform: rotate(225deg);
     transform: rotate(225deg);
 }
@@ -175,6 +187,9 @@ a:active {
     border-radius: 50%;
     transition: all 0.4s ease;
     flex: none;
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    -moz-transform: scale(0);
     -webkit-transform: scale(0);
     transform: scale(0);
     -webkit-backface-visibility: hidden;
@@ -260,6 +275,10 @@ a:active {
     position: absolute;
     top: 10vh;
     left: 50%;
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     opacity: 0;
     animation: logoshow 1.5s 3s forwards;
@@ -342,6 +361,10 @@ a:active {
 #product .secition1{
     width: 120%;
     height: 70vh;
+    -o-transform: rotate(-8deg) translateX(-11%) translateY(20%);
+    -ms-transform: rotate(-8deg) translateX(-11%) translateY(20%);
+    -moz-transform: rotate(-8deg) translateX(-11%) translateY(20%);
+    -webkit-transform: rotate(-8deg) translateX(-11%) translateY(20%);
     transform: rotate(-8deg) translateX(-11%) translateY(20%);
     display: flex;
     overflow: hidden;
@@ -351,6 +374,10 @@ a:active {
     position: relative;
     width: 100%;
     height: 100%;
+    -o-transform: rotate(8deg) translateX(2%) translateY(-48%); 
+    -ms-transform: rotate(8deg) translateX(2%) translateY(-48%); 
+    -moz-transform: rotate(8deg) translateX(2%) translateY(-48%); 
+    -webkit-transform: rotate(8deg) translateX(2%) translateY(-48%); 
     transform: rotate(8deg) translateX(2%) translateY(-48%); 
 }
 
@@ -555,6 +582,10 @@ a:active {
     height: 70vh;
     display: flex;
     overflow: hidden;
+    -o-transform: rotate(8deg) translateX(-4.8%) translateY(26%);
+    -ms-transform: rotate(8deg) translateX(-4.8%) translateY(26%);
+    -moz-transform: rotate(8deg) translateX(-4.8%) translateY(26%);
+    -webkit-transform: rotate(8deg) translateX(-4.8%) translateY(26%);
     transform: rotate(8deg) translateX(-4.8%) translateY(26%);
     background-color: white;
 }
@@ -562,6 +593,10 @@ a:active {
 #slides2{
     width: 100%;
     height: 150%;
+    -o-transform: rotate(-8deg) translateX(2%) translateY(-16%);
+    -ms-transform: rotate(-8deg) translateX(2%) translateY(-16%);
+    -moz-transform: rotate(-8deg) translateX(2%) translateY(-16%);
+    -webkit-transform: rotate(-8deg) translateX(2%) translateY(-16%);
     transform: rotate(-8deg) translateX(2%) translateY(-16%);
 }
 
@@ -589,6 +624,10 @@ a:active {
     position: absolute;
     top: 50vh;
     left: 50%;
+    -o-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     font-size: 5.000em;
     font-weight: bold;
@@ -621,6 +660,10 @@ a:active {
     position: absolute;
     top: 50vh;
     left: 50%;
+    -o-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     font-size: 5.000em;
     font-weight: bold;
@@ -653,6 +696,10 @@ a:active {
     position: absolute;
     top: 50vh;
     left: 50%;
+    -o-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     font-size: 5.000em;
     font-weight: bold;
@@ -686,6 +733,10 @@ a:active {
     position: absolute;
     top: 50vh;
     left: 50%;
+    -o-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     font-size: 5.000em;
     font-weight: bold;
@@ -752,6 +803,10 @@ a:active {
     width: 20px;
     position: absolute;
     top: 4px;
+    -o-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -webkit-transform: scaleX(0);
     transform: scaleX(0);
     transform-origin: left;
     z-index: 3;
@@ -782,10 +837,18 @@ a:active {
 
 @keyframes first {
     0% {
+        -o-transform: scaleX(0.5);
+        -ms-transform: scaleX(0.5);
+        -moz-transform: scaleX(0.5);
+        -webkit-transform: scaleX(0.5);
         transform: scaleX(0.5);
         left: 0px;
     }
     100% {
+        -o-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -webkit-transform: scaleX(1);
         transform: scaleX(1);
         left: 2px;
     }
@@ -794,14 +857,26 @@ a:active {
 
 @keyframes last {
     0% {
+        -o-transform: scaleX(0.7);
+        -ms-transform: scaleX(0.7);
+        -moz-transform: scaleX(0.7);
+        -webkit-transform: scaleX(0.7);
         transform: scaleX(0.7);
         left: -10px;
     }
     20% {
+        -o-transform: scaleX(0.3);
+        -ms-transform: scaleX(0.3);
+        -moz-transform: scaleX(0.3);
+        -webkit-transform: scaleX(0.3);
         transform: scaleX(0.3);
         left: 2px;
     }
     100% {
+        -o-transform: scaleX(0.3);
+        -ms-transform: scaleX(0.3);
+        -moz-transform: scaleX(0.3);
+        -webkit-transform: scaleX(0.3);
         transform: scaleX(0.3);
         left: 0px;
     }
@@ -810,14 +885,26 @@ a:active {
 
 @keyframes middle {
     0% {
+        -o-transform: scaleX(0.7);
+        -ms-transform: scaleX(0.7);
+        -moz-transform: scaleX(0.7);
+        -webkit-transform: scaleX(0.7);
         transform: scaleX(0.7);
         left: -10px;
     }
     20% {
+        -o-transform: scaleX(0.45);
+        -ms-transform: scaleX(0.45);
+        -moz-transform: scaleX(0.45);
+        -webkit-transform: scaleX(0.45);
         transform: scaleX(0.45);
         left: 2px;
     }
     100% {
+        -o-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -webkit-transform: scaleX(1);
         transform: scaleX(1);
         left: 2px;
     }
@@ -850,24 +937,43 @@ a:active {
 
 @keyframes heartBeat {
     0% {
-      transform: scale(1);
+        -o-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        transform: scale(1);
     }
   
     14% {
-      transform: scale(1.3);
+        -o-transform: scaleX(1.3);
+        -ms-transform: scaleX(1.3);
+        -moz-transform: scaleX(1.3);
+        -webkit-transform: scaleX(1.3);
+        transform: scale(1.3);
     }
 
     28% {
-
-      transform: scale(1);
+        -o-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        transform: scale(1);
     }
   
     42% {
-      transform: scale(1.3);
+        -o-transform: scaleX(1.3);
+        -ms-transform: scaleX(1.3);
+        -moz-transform: scaleX(1.3);
+        -webkit-transform: scaleX(1.3);
+        transform: scale(1.3);
     }
   
     70% {
-      transform: scale(1);
+        -o-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        transform: scale(1);
     }
   }
 
@@ -926,6 +1032,10 @@ a:active {
     max-width: 310px;
     right: 50%;
     top: 13%;
+    -o-transform: translate(50%, 0);
+    -ms-transform: translate(50%, 0);
+    -moz-transform: translate(50%, 0);
+    -webkit-transform: translate(50%, 0);
     transform: translate(50%, 0);
     font-size: 1.000em;
     z-index: 2;
@@ -936,6 +1046,10 @@ a:active {
     font-style: italic;
     font-size: 2.625em;
     margin-bottom: 50px;
+    -o-transform: translate3d(20px, 0, 0);
+    -ms-transform: translate3d(20px, 0, 0);
+    -moz-transform: translate3d(20px, 0, 0);
+    -webkit-transform: translate3d(20px, 0, 0);
     transform: translate3d(20px, 0, 0);
     color: #d4a024;
     font-weight: 300;
@@ -948,6 +1062,10 @@ a:active {
     font-size: 2.125em;
     margin: 0 0 30px;
     opacity: 0;
+    -o-transform: translate3d(20px, 0, 0);
+    -ms-transform: translate3d(20px, 0, 0);
+    -moz-transform: translate3d(20px, 0, 0);
+    -webkit-transform: translate3d(20px, 0, 0);
     transform: translate3d(20px, 0, 0);
     transition: .2s ease .5s;
 }
@@ -955,18 +1073,30 @@ a:active {
 #footer .container .timeline .swiper-slide .timeline-text {
     line-height: 1.5;
     opacity: 0;
+    -o-transform: translate3d(20px, 0, 0);
+    -ms-transform: translate3d(20px, 0, 0);
+    -moz-transform: translate3d(20px, 0, 0);
+    -webkit-transform: translate3d(20px, 0, 0);
     transform: translate3d(20px, 0, 0);
     transition: .2s ease .6s;
 }
 
 #footer .container .timeline .swiper-slide-active .timeline-year {
     opacity: 1;
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     transition: .4s ease 1.6s;
 }
 
 #footer .container .timeline .swiper-slide-active .timeline-title {
     opacity: 1;
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     transition: .4s ease 1.7s;
 }
@@ -974,6 +1104,10 @@ a:active {
 #footer .container .timeline .swiper-slide-active .timeline-text {
     font-size: 16px;
     opacity: 1;
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     transition: .4s ease 1.8s;
 }
@@ -1020,6 +1154,10 @@ a:active {
     height: 6px;
     border-radius: 100%;
     background-color: #d4a024;
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    -moz-transform: scale(0);
+    -webkit-transform: scale(0);
     transform: scale(0);
     transition: .2s;
 }
@@ -1029,6 +1167,10 @@ a:active {
 }
 
 #footer .container .timeline .swiper-pagination-bullet-active::before {
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
     transform: scale(1);
 }
 
@@ -1049,6 +1191,10 @@ a:active {
 }
 
 #footer .container .timeline .swiper-button-prev:hover {
+    -o-transform: translateX(-3px);
+    -ms-transform: translateX(-3px);
+    -moz-transform: translateX(-3px);
+    -webkit-transform: translateX(-3px);
     transform: translateX(-3px);
 }
 
@@ -1058,6 +1204,10 @@ a:active {
 }
 
 #footer .container .timeline .swiper-button-next:hover {
+    -o-transform: translateX(3px);
+    -ms-transform: translateX(3px);
+    -moz-transform: translateX(3px);
+    -webkit-transform: translateX(3px);
     transform: translateX(3px);
 }
 
@@ -1073,6 +1223,10 @@ a:active {
     #footer .container .timeline .swiper-slide-content {
         right: 30%;
         top: 50%;
+        -o-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
         width: 310px;
         font-size: 0.875em;
@@ -1097,10 +1251,18 @@ a:active {
         top: 15%;
         left: auto;
         right: 15%;
+        -o-transform: rotate(90deg) translate(0, 10px);
+        -ms-transform: rotate(90deg) translate(0, 10px);
+        -moz-transform: rotate(90deg) translate(0, 10px);
+        -webkit-transform: rotate(90deg) translate(0, 10px);
         transform: rotate(90deg) translate(0, 10px);
     }
 
     #footer .container .timeline .swiper-button-prev:hover {
+        -o-transform: rotate(90deg) translate(-3px, 10px);
+        -ms-transform: rotate(90deg) translate(-3px, 10px);
+        -moz-transform: rotate(90deg) translate(-3px, 10px);
+        -webkit-transform: rotate(90deg) translate(-3px, 10px);
         transform: rotate(90deg) translate(-3px, 10px);
     }
 
@@ -1108,10 +1270,18 @@ a:active {
         top: auto;
         bottom: 15%;
         right: 15%;
+        -o-transform: rotate(90deg) translate(0, 10px);
+        -ms-transform: rotate(90deg) translate(0, 10px);
+        -moz-transform: rotate(90deg) translate(0, 10px);
+        -webkit-transform: rotate(90deg) translate(0, 10px);
         transform: rotate(90deg) translate(0, 10px);
     }
 
     #footer .container .timeline .swiper-button-next:hover {
+        -o-transform: rotate(90deg) translate(3px, 10px);
+        -ms-transform: rotate(90deg) translate(3px, 10px);
+        -moz-transform: rotate(90deg) translate(3px, 10px);
+        -webkit-transform: rotate(90deg) translate(3px, 10px);
         transform: rotate(90deg) translate(3px, 10px);
     }
 }
@@ -1263,6 +1433,10 @@ a:active {
 
 @media screen and (max-width:1280px) and (device-height:1024px){
     #product-video{
+        -o-transform: rotate(8deg) translateX(2%) translateY(-21%);
+        -ms-transform: rotate(8deg) translateX(2%) translateY(-21%);
+        -moz-transform: rotate(8deg) translateX(2%) translateY(-21%);
+        -webkit-transform: rotate(8deg) translateX(2%) translateY(-21%);
         transform: rotate(8deg) translateX(2%) translateY(-21%);
     }
 
@@ -1301,6 +1475,10 @@ a:active {
     }
 
     #shop .secition2{
+        -o-transform: rotate(8deg) translateX(-3%) translateY(26%);
+        -ms-transform: rotate(8deg) translateX(-3%) translateY(26%);
+        -moz-transform: rotate(8deg) translateX(-3%) translateY(26%);
+        -webkit-transform: rotate(8deg) translateX(-3%) translateY(26%);
         transform: rotate(8deg) translateX(-3%) translateY(26%);
     }
 
@@ -1315,6 +1493,10 @@ a:active {
 
 @media screen and (max-width:1280px) and (device-height:960px){
     #product-video{
+        -o-transform: rotate(8deg) translateX(2%) translateY(-25%);
+        -ms-transform: rotate(8deg) translateX(2%) translateY(-25%);
+        -moz-transform: rotate(8deg) translateX(2%) translateY(-25%);
+        -webkit-transform: rotate(8deg) translateX(2%) translateY(-25%);
         transform: rotate(8deg) translateX(2%) translateY(-25%);
     }
 
@@ -1354,6 +1536,10 @@ a:active {
     }
 
     #shop .secition2{
+        -o-transform: rotate(8deg) translateX(-3%) translateY(26%);
+        -ms-transform: rotate(8deg) translateX(-3%) translateY(26%);
+        -moz-transform: rotate(8deg) translateX(-3%) translateY(26%);
+        -webkit-transform: rotate(8deg) translateX(-3%) translateY(26%);
         transform: rotate(8deg) translateX(-3%) translateY(26%);
     }
 
@@ -1368,6 +1554,10 @@ a:active {
 
 @media screen and (max-width:1280px) and (device-height:800px){
     #product-video{
+        -o-transform: rotate(8deg) translateX(2%) translateY(-44%);
+        -ms-transform: rotate(8deg) translateX(2%) translateY(-44%);
+        -moz-transform: rotate(8deg) translateX(2%) translateY(-44%);
+        -webkit-transform: rotate(8deg) translateX(2%) translateY(-44%);
         transform: rotate(8deg) translateX(2%) translateY(-44%);
     }
 
@@ -1420,6 +1610,10 @@ a:active {
     }
 
     #product-video{
+        -o-transform: rotate(8deg) translateX(2%) translateY(-57%);
+        -ms-transform: rotate(8deg) translateX(2%) translateY(-57%);
+        -moz-transform: rotate(8deg) translateX(2%) translateY(-57%);
+        -webkit-transform: rotate(8deg) translateX(2%) translateY(-57%);
         transform: rotate(8deg) translateX(2%) translateY(-57%);
     }
 
@@ -1435,6 +1629,10 @@ a:active {
 
 @media screen and (max-width:1152px){
     #product-video{
+        -o-transform: rotate(8deg) translateX(2%) translateY(-26%);
+        -ms-transform: rotate(8deg) translateX(2%) translateY(-26%);
+        -moz-transform: rotate(8deg) translateX(2%) translateY(-26%);
+        -webkit-transform: rotate(8deg) translateX(2%) translateY(-26%);
         transform: rotate(8deg) translateX(2%) translateY(-26%);
     }
 
@@ -1524,6 +1722,10 @@ a:active {
 
     #product .secition1{
         height: 35vh;
+        -o-transform: rotate(-8deg) translateX(-13%) translateY(42%);
+        -ms-transform: rotate(-8deg) translateX(-13%) translateY(42%);
+        -moz-transform: rotate(-8deg) translateX(-13%) translateY(42%);
+        -webkit-transform: rotate(-8deg) translateX(-13%) translateY(42%);
         transform: rotate(-8deg) translateX(-13%) translateY(42%);
     }
 
@@ -1598,6 +1800,10 @@ a:active {
     }
 
     #shop .secition2{
+        -o-transform: rotate(8deg) translateX(-3%) translateY(31%);
+        -ms-transform: rotate(8deg) translateX(-3%) translateY(31%);
+        -moz-transform: rotate(8deg) translateX(-3%) translateY(31%);
+        -webkit-transform: rotate(8deg) translateX(-3%) translateY(31%);
         transform: rotate(8deg) translateX(-3%) translateY(31%);
     }
 
@@ -1690,6 +1896,9 @@ a:active {
     }
 
     #navbar-mb .outer-menu .checkbox-toggle:checked+.hamburger>div {
+        -o-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
         -webkit-transform: rotate(135deg);
         transform: rotate(135deg);
     }
@@ -1697,6 +1906,9 @@ a:active {
     #navbar-mb .outer-menu .checkbox-toggle:checked+.hamburger>div:before,
     #navbar-mb .outer-menu .checkbox-toggle:checked+.hamburger>div:after {
         top: 0;
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
         -webkit-transform: rotate(90deg);
         transform: rotate(90deg);
     }
@@ -1711,6 +1923,9 @@ a:active {
     }
 
     #navbar-mb .outer-menu .checkbox-toggle:checked~.menu>div {
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        -moz-transform: scale(1);
         -webkit-transform: scale(1);
         transform: scale(1);
         transition-duration: 0.75s;
@@ -1726,6 +1941,9 @@ a:active {
     }
 
     #navbar-mb .outer-menu .checkbox-toggle:checked:hover+.hamburger>div {
+        -o-transform: rotate(225deg);
+        -ms-transform: rotate(225deg);
+        -moz-transform: rotate(225deg);
         -webkit-transform: rotate(225deg);
         transform: rotate(225deg);
     }
@@ -1803,6 +2021,9 @@ a:active {
         border-radius: 50%;
         transition: all 0.4s ease;
         flex: none;
+        -o-transform: scale(0);
+        -ms-transform: scale(0);
+        -moz-transform: scale(0);
         -webkit-transform: scale(0);
         transform: scale(0);
         -webkit-backface-visibility: hidden;
@@ -1881,6 +2102,10 @@ a:active {
         position: absolute;
         top: 14%;
         left: 50%;
+        -o-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         z-index: 1;
     }
@@ -1891,6 +2116,10 @@ a:active {
         position: absolute;
         top: 85vh;
         left: 50%;
+        -o-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         animation: jump 0.8s infinite;
     }
@@ -1899,7 +2128,6 @@ a:active {
         0%{
             top:85vh;
         }
-
         100%{
             top:88vh;
         }
@@ -1909,6 +2137,10 @@ a:active {
         position: absolute;
         top: 50%;
         left: 50%;
+        -o-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
         transform: translate(-50%,-50%);
         filter: blur(15px);
     }
@@ -1918,6 +2150,10 @@ a:active {
         position: absolute;
         top: 50%;
         left: 50%;
+        -o-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
         transform: translate(-50%,-50%);
     }
 
@@ -1950,20 +2186,36 @@ a:active {
     @keyframes coffeebean{
         0%{
             opacity: 0;
+            -o-transform: scale(1,1);
+            -ms-transform: scale(1,1);
+            -moz-transform: scale(1,1);
+            -webkit-transform: scale(1,1);
             transform: scale(1,1);
         }
         50%{
             opacity: 1;
+            -o-transform: scale(1.2,1.2);
+            -ms-transform: scale(1.2,1.2);
+            -moz-transform: scale(1.2,1.2);
+            -webkit-transform: scale(1.2,1.2);
             transform: scale(1.2,1.2);
         }
         100%{
             opacity: 0;
+            -o-transform: scale(1.5,1.5);
+            -ms-transform: scale(1.5,1.5);
+            -moz-transform: scale(1.5,1.5);
+            -webkit-transform: scale(1.5,1.5);
             transform: scale(1.5,1.5);
         }
     }
 
     #intro-mb .coffee{
         width: 100%;
+        -o-transform: rotate(243deg);
+        -ms-transform: rotate(243deg);
+        -moz-transform: rotate(243deg);
+        -webkit-transform: rotate(243deg);
         transform: rotate(243deg);
         position: absolute;
         left: -80px;
@@ -1978,14 +2230,26 @@ a:active {
     @keyframes coffee{
         0%{
             opacity: 0;
+            -o-transform: rotate(243deg) scale(1,1);
+            -ms-transform: rotate(243deg) scale(1,1);
+            -moz-transform: rotate(243deg) scale(1,1);
+            -webkit-transform: rotate(243deg) scale(1,1);
             transform: rotate(243deg) scale(1,1);
         }
         50%{
             opacity: 1;
+            -o-transform: rotate(313deg) scale(1.2,1.2);
+            -ms-transform: rotate(313deg) scale(1.2,1.2);
+            -moz-transform: rotate(313deg) scale(1.2,1.2);
+            -webkit-transform: rotate(313deg) scale(1.2,1.2);
             transform: rotate(313deg) scale(1.2,1.2);
         }
         100%{
             opacity: 0;
+            -o-transform: rotate(347deg) scale(1.5,1.5);
+            -ms-transform: rotate(347deg) scale(1.5,1.5);
+            -moz-transform: rotate(347deg) scale(1.5,1.5);
+            -webkit-transform: rotate(347deg) scale(1.5,1.5);
             transform: rotate(347deg) scale(1.5,1.5);
         }
     }
@@ -1996,6 +2260,10 @@ a:active {
         position: absolute;
         top: 85vh;
         left: 50%;
+        -o-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         animation: jump 0.8s infinite;
     }
@@ -2019,6 +2287,10 @@ a:active {
         position: absolute;
         top: 50%;
         left: 50%;
+        -o-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
         transform: translate(-50%,-50%);
         filter: blur(15px);
     }
@@ -2028,6 +2300,10 @@ a:active {
         position: absolute;
         top: 50%;
         left: 50%;
+        -o-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
         transform: translate(-50%,-50%);
     }
 
@@ -2039,6 +2315,10 @@ a:active {
         position: absolute;
         top: 75vh;
         left: 50%;
+        -o-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
     }
 
@@ -2046,6 +2326,10 @@ a:active {
         position: relative;
         bottom: 5.5vh;
         left: 50%;
+        -o-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
     }
 
@@ -2068,6 +2352,10 @@ a:active {
         position: absolute;
         top: 50%;
         left: 50%;
+        -o-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
         transform: translate(-50%,-50%);
     }
 
@@ -2076,6 +2364,10 @@ a:active {
         position: absolute;
         top: 50%;
         left: 50%;
+        -o-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
         transform: translate(-50%,-50%);
     }
 
@@ -2085,6 +2377,10 @@ a:active {
         position: absolute;
         top: 85vh;
         left: 50%;
+        -o-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         animation: jump 0.8s infinite;
     }
@@ -2135,6 +2431,10 @@ a:active {
         position: absolute;
         top: 50vh;
         left: 50%;
+        -o-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
         transform: translate(-50%,-50%);
         font-size: 5.000em;
         font-weight: bold;
@@ -2161,6 +2461,10 @@ a:active {
         position: absolute;
         top: 50vh;
         left: 50%;
+        -o-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
         transform: translate(-50%,-50%);
         font-size: 5.000em;
         font-weight: bold;
@@ -2187,6 +2491,10 @@ a:active {
         position: absolute;
         top: 50vh;
         left: 50%;
+        -o-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
         transform: translate(-50%,-50%);
         font-size: 5.000em;
         font-weight: bold;
@@ -2213,6 +2521,10 @@ a:active {
         position: absolute;
         top: 50vh;
         left: 50%;
+        -o-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
         transform: translate(-50%,-50%);
         font-size: 5.000em;
         font-weight: bold;
@@ -2226,6 +2538,10 @@ a:active {
     #shop-mb .swiper-container-horizontal > .swiper-pagination-bullets {
         top: 85vh;
         left: 50%;
+        -o-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         width: 100%;
         height: 22px;
@@ -2259,6 +2575,10 @@ a:active {
         width: 20px;
         position: absolute;
         top: 4px;
+        -o-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        -moz-transform: scaleX(0);
+        -webkit-transform: scaleX(0);
         transform: scaleX(0);
         transform-origin: left;
         z-index: 3;
@@ -2333,6 +2653,10 @@ a:active {
         position: absolute;
         top: 6vh;
         left: 50%;
+        -o-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
     }
 
@@ -2344,6 +2668,10 @@ a:active {
         position: absolute;
         top: 61vh;
         left: 50%;
+        -o-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
     }
 
@@ -2352,6 +2680,10 @@ a:active {
         position: absolute;
         top: 50%;
         left: 50%;
+        -o-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
         transform: translate(-50%,-50%);
     }
 
@@ -2366,7 +2698,6 @@ a:active {
     #history-mb .gallery-thumbs .swiper-slide-thumb-active {
         opacity: 1;
     }
-    
 }
 
 @media all and (max-width:375px){
@@ -2386,8 +2717,6 @@ a:active {
         font-size: 5px;
     }
 }
-
-
 
 
 
