@@ -264,6 +264,8 @@ a:active {
     max-height: 1080px;
     overflow: hidden;
     position: relative;
+    background-color: white;
+    z-index: 1;
 }
 
 #main .logo{
