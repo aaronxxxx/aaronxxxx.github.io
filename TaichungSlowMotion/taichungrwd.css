@@ -5,6 +5,7 @@
 
 html{
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 body {
@@ -20,20 +21,11 @@ body {
     overflow: hidden;
 }
 
-.clearfix {
-    clear: both;
-}
-
-a{
-    color: black;
-    text-decoration:none;
-}
-
 a:link,a:visited,a:hover,a:active{
     text-decoration:none;
 }
 
-.nav {
+#nav {
     height: 100vh;
     width: 60px;
     background-color: #423F4B;
@@ -43,23 +35,26 @@ a:link,a:visited,a:hover,a:active{
     
 }
 
-.nav .nav-title{
+#nav .nav-title{
     writing-mode: vertical-lr;
     position: absolute;
     top: 148px;
     left: 20px;
-    font-size: 12px;
+    font-size: 0.750em;
     letter-spacing: 2px;
     color: white;
 
 }
 
-.nav .nav-title span{
+#nav .nav-title span{
     padding-top: 8px;
 }
 
-#menubtn {
+#menubtn{
     position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -70,12 +65,12 @@ a:link,a:visited,a:hover,a:active{
     z-index: 53;
 }
 
-#hamburger {
+#hamburger{
     width: 25px;
     cursor: pointer;
 }
   
-#hamburger span {
+#hamburger span{
     display: block;
     width: 100%;
     height: 4px;
@@ -86,19 +81,19 @@ a:link,a:visited,a:hover,a:active{
     transition: all 0.3s ease-in-out;
 }
   
-#hamburger.active span:nth-child(1) {
+#hamburger.active span:nth-child(1){
     transform: translateY(12px) rotate(45deg);
 }
 
-#hamburger.active span:nth-child(2) {
+#hamburger.active span:nth-child(2){
     opacity: 0;
 }
 
-#hamburger.active span:nth-child(3) {
+#hamburger.active span:nth-child(3){
     transform: translateY(-12px) rotate(-45deg);
 }
 
-#mb-menubtn {
+#mb-menubtn{
     position: relative;
     display: none;
     justify-content: center;
@@ -109,12 +104,12 @@ a:link,a:visited,a:hover,a:active{
     z-index: 53;
 }
 
-#mb-hamburger {
-    width: 25px;
+#mb-hamburger{
+    width: 35px;
     cursor: pointer;
 }
   
-#mb-hamburger span {
+#mb-hamburger span{
     display: block;
     width: 100%;
     height: 4px;
@@ -125,21 +120,21 @@ a:link,a:visited,a:hover,a:active{
     transition: all 0.3s ease-in-out;
 }
   
-#mb-hamburger.active span:nth-child(1) {
+#mb-hamburger.active span:nth-child(1){
     transform: translateY(12px) rotate(45deg);
 }
 
-#mb-hamburger.active span:nth-child(2) {
+#mb-hamburger.active span:nth-child(2){
     opacity: 0;
 }
 
-#mb-hamburger.active span:nth-child(3) {
+#mb-hamburger.active span:nth-child(3){
     transform: translateY(-12px) rotate(-45deg);
 }
 
 
 #nav-inner{
-    width: calc(100vw - 60px);
+    width: calc(100% - 60px);
     height: 100vh;
     background-image: url("img/backgroup.png");
     background-position: center;
@@ -164,14 +159,14 @@ a:link,a:visited,a:hover,a:active{
 }
 
 #nav-inner .big-box h1{
-    font-size: 44px;
+    font-size: 2.750em;
     font-weight: bold;
     margin-bottom: 25px;
     letter-spacing: 14px;
 }
 
 #nav-inner .big-box span{
-    font-size: 12px;
+    font-size: 0.750em;
     font-weight: 500;
     line-height: 24px;
     
@@ -205,14 +200,14 @@ a:link,a:visited,a:hover,a:active{
     color: white;
     text-decoration:none;
     margin: 0;
-    font-size: 28px;
+    font-size: 1.750em;
     margin-bottom: 37px;
     line-height: 52px;
     letter-spacing: 21px;
 }
 
 #nav-inner .inner-title .text span{
-    font-size: 20px;
+    font-size: 1.250em;
     font-weight: 500;
     line-height: 48px;
     letter-spacing: 1px;
@@ -239,7 +234,7 @@ a:link,a:visited,a:hover,a:active{
 
 #nav-inner .box h1{
     margin: 0; 
-    font-size: 15px;
+    font-size: 0.938em;
     font-weight: 600;
     letter-spacing: 10px;
 }
@@ -250,18 +245,18 @@ a:link,a:visited,a:hover,a:active{
 }
 
 #nav-inner .box span{ 
-    font-size: 6px;
+    font-size: 0.3750em;
     font-weight: 500;
     letter-spacing: 0px;
 }
 
-.main .home {
+#main .home {
     height: 100vh;
 
 }
 
-.main .home .main-title{
-    font-size: 99px;
+#main .home .main-title{
+    font-size: 6.188em;
     font-weight: 500;
     letter-spacing: 30px;
     position: absolute;
@@ -269,7 +264,7 @@ a:link,a:visited,a:hover,a:active{
     top: 174px;
 }
 
-.main .home .line{
+#main .home .line{
     height: 205px;
     border-left-style: solid;
     border-left-color: black;
@@ -279,8 +274,8 @@ a:link,a:visited,a:hover,a:active{
     top: 210px;
 }
 
-.main .home .text1{
-    font-size: 16px;
+#main .home .text1{
+    font-size: 1.000em;
     font-weight: 500;
     letter-spacing: 3px;
     line-height: 29px;
@@ -289,15 +284,15 @@ a:link,a:visited,a:hover,a:active{
     top: 203px;
 }
 
-.main .home .text2{
-    font-size: 14px;
+#main .home .text2{
+    font-size: 0.875em;
     line-height: 29px;
     position: absolute;
     right: 610px;
     top: 372px;
 }
 
-.main .home .city-img{
+#main .home .city-img{
     width: 129px;
     height: 129px;
     background-image: url("img/Path188.png");
@@ -307,7 +302,7 @@ a:link,a:visited,a:hover,a:active{
     top: 372px;
 }
 
-.nav-img{
+#main .nav-img{
     width: 1520px;
     height: 600px;
     background-color: #666;
@@ -318,18 +313,15 @@ a:link,a:visited,a:hover,a:active{
 
 }
 
-.history .container {
-    width: 1170px;
-    margin: 0 auto;
-    padding: 0;
+#history .container {
     padding-top: 300px;
 }
 
-.history .container p{
+#history .container p{
     max-width: 420px;
 }
 
-.history .map {
+#history .map {
     width: 700px;
     height: 750px;
     float: right;
@@ -339,15 +331,15 @@ a:link,a:visited,a:hover,a:active{
     z-index: -1;
 }
 
-.history h1 {
-    font-size: 56px;
+#history h1 {
+    font-size: 3.500em;
     letter-spacing: 6px;
     font-weight: 600;
     margin: 0;
     margin-top: 320px;
 }
 
-.history h1 hr {
+#history h1 hr {
     margin: 0;
     border: 2px solid black;
     width: 275px;
@@ -356,13 +348,13 @@ a:link,a:visited,a:hover,a:active{
     
 }
 
-.history h1 span {
-    font-size: 49px;
+#history h1 span {
+    font-size: 3.063rem;
     letter-spacing: 2px;
 }
 
-.history p {
-    font-size: 18px;
+#history p {
+    font-size: 1.125em;
     padding-top: 57px;
     line-height: 37px;
     letter-spacing: 2px;
@@ -371,25 +363,24 @@ a:link,a:visited,a:hover,a:active{
 }
 
 
-.history2{
+#history2{
     position: relative;
 }
 
-.history2 .container{
-    width: 1170px;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.history2 .secition1 {
+#history2 .secition1 {
     width: 228px;
     height: 48px;
     border: 1.5px solid black;
     left: 0px;
-    font-size: 24px;
+    text-align: center;
+}
+
+#history2 .secition1 a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.500em;
     letter-spacing: 8px;
     line-height: 42px;
-    text-align: center;
 }
 
 .space{
@@ -411,7 +402,7 @@ a:link,a:visited,a:hover,a:active{
     transition: 3s;
 } 
 
-.history2 #line{
+#history2 #line{
     height: 0px;
     border-left-style: solid;
     border-width: 1px; 
@@ -425,7 +416,7 @@ a:link,a:visited,a:hover,a:active{
     animation-duration: 2s;
 }
 
-.history2 #circle{
+#history2 #circle{
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -439,7 +430,7 @@ a:link,a:visited,a:hover,a:active{
     animation-duration: 2s;
 }
 
-.history2 #circle2{
+#history2 #circle2{
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -451,31 +442,39 @@ a:link,a:visited,a:hover,a:active{
     z-index: 4;
 }
 
-.history2 #line.show{
+#history2 #line.show{
     height: 686px;
     display: block;
 }
 
-.history2 #circle.show{
+#history2 #circle.show{
     top: 775px;
     display: block;
 }
 
-.history2 #circle2.show{
+#history2 #circle2.show{
     display: block;
 }
 
 @keyframes line{
-    0%{height: 0px}
-    100%{height: 686px;}
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 686px;
+    }
 }
 
 @keyframes circle{
-    0%{top: 96px}
-    100%{top: 775px;}
+    0%{
+        top: 96px;
+    }
+    100%{
+        top: 775px;
+    }
 }
 
-.history2 #history-inner{
+#history2 #history-inner{
     width: 100%;
     height: 820px;
     display: none;
@@ -484,7 +483,7 @@ a:link,a:visited,a:hover,a:active{
     overflow: hidden;
 }
 
-.history2 #history-inner.show{
+#history2 #history-inner.show{
     display: block;
     position: absolute;
     top: 206px;
@@ -495,33 +494,37 @@ a:link,a:visited,a:hover,a:active{
 }
 
 @keyframes show{
-    0%{opacity: 0}
-    100%{opacity: 1}
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
-.history2 #history-inner .slides{
+#history2 #history-inner .slides{
     width: 100%;
     height: 100%;
 }
 
-.history2 #history-inner #scroll{
+#history2 #history-inner #scroll{
     width: 100%;
     height: 100%;
 }
 
 
-.history2 #history-inner .swiper-slide{
+#history2 #history-inner .swiper-slide{
     transition-timing-function: ease-in;
 }
 
-.history2 #history-inner .slides #scroll-swiper1{
+#history2 #history-inner .slides #scroll-swiper1{
     width: calc(100vw - 102px);
     height: 820px;
     position: relative;
 }
 
-.history2 #history-inner .slides #scroll-swiper1 h1{
-    font-size: 180px;
+#history2 #history-inner .slides #scroll-swiper1 h1{
+    font-size: 11.250em;
     font-weight: bold;
     margin: 0;
     position: absolute;
@@ -529,8 +532,8 @@ a:link,a:visited,a:hover,a:active{
     top: 281px;
 }
 
-.history2 #history-inner .slides #scroll-swiper1 h5{
-    font-size: 80px;
+#history2 #history-inner .slides #scroll-swiper1 h5{
+    font-size: 5.000em;
     font-weight: 600;
     margin: 0;
     position: absolute;
@@ -538,8 +541,8 @@ a:link,a:visited,a:hover,a:active{
     top: 487px;
 }
 
-.history2 #history-inner .slides #scroll-swiper1 span{
-    font-size: 18px;
+#history2 #history-inner .slides #scroll-swiper1 span{
+    font-size: 1.125em;
     font-weight: 500;
     line-height: 40px;
     position: absolute;
@@ -547,7 +550,7 @@ a:link,a:visited,a:hover,a:active{
     top: 588px;
 }
 
-.history2 #history-inner .slides #scroll-swiper1 div{
+#history2 #history-inner .slides #scroll-swiper1 div{
     width: 524px;
     height: 772px;
     background-color: #555;
@@ -556,13 +559,13 @@ a:link,a:visited,a:hover,a:active{
     right: 97px;
 }
 
-.history2 #history-inner .slides #scroll-swiper2{
+#history2 #history-inner .slides #scroll-swiper2{
     width: calc(100vw - 102px);
     height: 820px;
     position: relative;
 }
 
-.history2 #history-inner .slides #scroll-swiper2 div{
+#history2 #history-inner .slides #scroll-swiper2 div{
     width: 375px;
     height: 552px;
     background-color: #555;
@@ -572,8 +575,8 @@ a:link,a:visited,a:hover,a:active{
 
 }
 
-.history2 #history-inner .slides #scroll-swiper2 h5{
-    font-size: 80px;
+#history2 #history-inner .slides #scroll-swiper2 h5{
+    font-size: 5.000em;
     font-weight: 600;
     margin: 0;
     position: absolute;
@@ -581,8 +584,8 @@ a:link,a:visited,a:hover,a:active{
     top: 160px;
 }
 
-.history2 #history-inner .slides #scroll-swiper2 h1{
-    font-size: 180px;
+#history2 #history-inner .slides #scroll-swiper2 h1{
+    font-size: 11.250em;
     font-weight: bold;
     margin: 0;
     position: absolute;
@@ -590,8 +593,8 @@ a:link,a:visited,a:hover,a:active{
     top: 242px;
 }
 
-.history2 #history-inner .slides #scroll-swiper2 span{
-    font-size: 18px;
+#history2 #history-inner .slides #scroll-swiper2 span{
+    font-size: 1.125em;
     font-weight: 500;
     line-height: 40px;
     position: absolute;
@@ -599,13 +602,13 @@ a:link,a:visited,a:hover,a:active{
     left: 775px;
 }
 
-.history2 #history-inner .slides #scroll-swiper3{
+#history2 #history-inner .slides #scroll-swiper3{
     width: calc(100vw - 102px);
     height: 820px;
     position: relative;
 }
 
-.history2 #history-inner .slides #scroll-swiper3 div{
+#history2 #history-inner .slides #scroll-swiper3 div{
     width: 642px;
     height: 725px;
     background-color: #555;
@@ -614,8 +617,8 @@ a:link,a:visited,a:hover,a:active{
     top: 65px;
 }
 
-.history2 #history-inner .slides #scroll-swiper3 h1{
-    font-size: 180px;
+#history2 #history-inner .slides #scroll-swiper3 h1{
+    font-size: 11.250em;
     font-weight: bold;
     margin: 0;
     position: absolute;
@@ -623,8 +626,8 @@ a:link,a:visited,a:hover,a:active{
     bottom: 159px;
 }
 
-.history2 #history-inner .slides #scroll-swiper3 span{
-    font-size: 18px;
+#history2 #history-inner .slides #scroll-swiper3 span{
+    font-size: 1.125em;
     font-weight: 500;
     line-height: 40px;
     position: absolute;
@@ -632,8 +635,8 @@ a:link,a:visited,a:hover,a:active{
     top: 274px;
 }
 
-.history2 #history-inner .slides #scroll-swiper3 h5{
-    font-size: 80px;
+#history2 #history-inner .slides #scroll-swiper3 h5{
+    font-size: 5.000em;
     font-weight: 600;
     margin: 0;
     position: absolute;
@@ -642,13 +645,13 @@ a:link,a:visited,a:hover,a:active{
 }
 
 
-.history2 #history-inner .slides #scroll-swiper4{
+#history2 #history-inner .slides #scroll-swiper4{
     width: calc(100vw - 102px);
     height: 820px;
     position: relative;
 }
 
-.history2 #history-inner .slides #scroll-swiper4 .img1{
+#history2 #history-inner .slides #scroll-swiper4 .img1{
     width: 1280px;
     height: 820px;
     background-color: #555;
@@ -657,7 +660,7 @@ a:link,a:visited,a:hover,a:active{
     left: -690px;
 }
 
-.history2 #history-inner .slides #scroll-swiper4 .img2{
+#history2 #history-inner .slides #scroll-swiper4 .img2{
     width: 466px;
     height: 630px;
     background-color: #555;
@@ -666,7 +669,7 @@ a:link,a:visited,a:hover,a:active{
     left: 680px;
 }
 
-.history2 #history-inner .slides #scroll-swiper4 .img3{
+#history2 #history-inner .slides #scroll-swiper4 .img3{
     width: 504px;
     height: 325px;
     background-color: #555;
@@ -675,14 +678,14 @@ a:link,a:visited,a:hover,a:active{
     right: 99px;
 }
 
-.history2 #history-inner .slides #scroll-swiper5{
+#history2 #history-inner .slides #scroll-swiper5{
     width: calc(100vw - 102px);
     height: 820px;
     position: relative;
 }
 
-.history2 #history-inner .slides #scroll-swiper5 h1{
-    font-size: 180px;
+#history2 #history-inner .slides #scroll-swiper5 h1{
+    font-size: 11.250em;
     font-weight: bold;
     margin: 0;
     position: absolute;
@@ -690,8 +693,8 @@ a:link,a:visited,a:hover,a:active{
     top: 69px;
 }
 
-.history2 #history-inner .slides #scroll-swiper5 h5{
-    font-size: 80px;
+#history2 #history-inner .slides #scroll-swiper5 h5{
+    font-size: 5.000em;
     font-weight: 600;
     margin: 0;
     position: absolute;
@@ -699,8 +702,8 @@ a:link,a:visited,a:hover,a:active{
     top: 168px;
 }
 
-.history2 #history-inner .slides #scroll-swiper5 span{
-    font-size: 18px;
+#history2 #history-inner .slides #scroll-swiper5 span{
+    font-size: 1.125em;
     font-weight: 500;
     line-height: 40px;
     position: absolute;
@@ -708,13 +711,13 @@ a:link,a:visited,a:hover,a:active{
     top: 360px;
 }
 
-.history2 #history-inner .slides #scroll-swiper6{
+#history2 #history-inner .slides #scroll-swiper6{
     width: calc(100vw - 102px);
     height: 820px;
     position: relative;
 }
 
-.history2 #history-inner .slides #scroll-swiper6 .img1{
+#history2 #history-inner .slides #scroll-swiper6 .img1{
     width: 1292px;
     height: 820px;
     background-color: #555;
@@ -723,7 +726,7 @@ a:link,a:visited,a:hover,a:active{
     left: -737px;
 }
 
-.history2 #history-inner .slides #scroll-swiper6 .img2{
+#history2 #history-inner .slides #scroll-swiper6 .img2{
     width: 751px;
     height: 583px;
     background-color: #555;
@@ -732,14 +735,14 @@ a:link,a:visited,a:hover,a:active{
     left: 632px;
 }
 
-.history2 #history-inner .slides #scroll-swiper7{
+#history2 #history-inner .slides #scroll-swiper7{
     width: calc(100vw - 102px);
     height: 820px;
     position: relative;
 }
 
-.history2 #history-inner .slides #scroll-swiper7 h5{
-    font-size: 80px;
+#history2 #history-inner .slides #scroll-swiper7 h5{
+    font-size: 5.000em;
     font-weight: 600;
     margin: 0;
     position: absolute;
@@ -748,8 +751,8 @@ a:link,a:visited,a:hover,a:active{
 
 }
 
-.history2 #history-inner .slides #scroll-swiper7 h1{
-    font-size: 180px;
+#history2 #history-inner .slides #scroll-swiper7 h1{
+    font-size: 11.250em;
     font-weight: bold;
     margin: 0;
     position: absolute;
@@ -758,8 +761,8 @@ a:link,a:visited,a:hover,a:active{
     
 }
 
-.history2 #history-inner .slides #scroll-swiper7 span{
-    font-size: 18px;
+#history2 #history-inner .slides #scroll-swiper7 span{
+    font-size: 1.125em;
     font-weight: 500;
     line-height: 40px;
     position: absolute;
@@ -768,7 +771,7 @@ a:link,a:visited,a:hover,a:active{
 
 }
 
-.history2 #history-inner .slides #scroll-swiper7 div{
+#history2 #history-inner .slides #scroll-swiper7 div{
     width: 498px;
     height: 372px;
     background-color: #555;
@@ -777,8 +780,8 @@ a:link,a:visited,a:hover,a:active{
     top: 225px;
 }
 
-.history2 #history-inner .slides #scroll-swiper7 p{
-    font-size: 18px;
+#history2 #history-inner .slides #scroll-swiper7 p{
+    font-size: 1.125em;
     font-weight: 500;
     line-height: 40px;
     position: absolute;
@@ -786,13 +789,13 @@ a:link,a:visited,a:hover,a:active{
     left: 779px;
 }
 
-.history2 #history-inner .slides #scroll-swiper8{
+#history2 #history-inner .slides #scroll-swiper8{
     width: calc(100vw - 102px);
     height: 820px;
     position: relative;
 }
 
-.history2 #history-inner .slides #scroll-swiper8 div{
+#history2 #history-inner .slides #scroll-swiper8 div{
     width: 1118px;
     height: 820px;
     background-color: #555;
@@ -801,8 +804,8 @@ a:link,a:visited,a:hover,a:active{
     top: 0;
 }
 
-.history2 #history-inner .slides #scroll-swiper8 h1{
-    font-size: 180px;
+#history2 #history-inner .slides #scroll-swiper8 h1{
+    font-size: 11.250em;
     font-weight: bold;
     margin: 0;
     position: absolute;
@@ -811,8 +814,8 @@ a:link,a:visited,a:hover,a:active{
     
 }
 
-.history2 #history-inner .slides #scroll-swiper8 span{
-    font-size: 18px;
+#history2 #history-inner .slides #scroll-swiper8 span{
+    font-size: 1.125em;
     font-weight: 500;
     line-height: 40px;
     position: absolute;
@@ -821,7 +824,7 @@ a:link,a:visited,a:hover,a:active{
 
 }
 
-.history2 #history-inner .slides #scroll-swiper8 .scroll-secition {
+#history2 #history-inner .slides #scroll-swiper8 .scroll-secition {
     width: 230px;
     height: 48px;
     border: 1px solid black;
@@ -833,32 +836,28 @@ a:link,a:visited,a:hover,a:active{
     left: 1302px;
 }
 
-.history2 #history-inner .slides #scroll-swiper8 .scroll-secition a {
-    font-size: 24px;
+#history2 #history-inner .slides #scroll-swiper8 .scroll-secition a {
+    font-size: 1.500em;
     letter-spacing: 8px;
     margin: 0;
     color: black;
     text-decoration: none;
 }
 
-.introduction{
+#introduction{
     position: relative;
 }
 
-.introduction .container {
-    width: 1170px;
-    margin: 0 auto;
-    padding: 0;
+#introduction .container {
     padding-top: 250px;
-
 }
 
-.introduction .mb-title{
+#introduction .mb-title{
     display: none;
 }
 
-.introduction .pc-title{
-    font-size: 62px;
+#introduction .pc-title{
+    font-size: 3.875em;
     writing-mode: vertical-lr;
     letter-spacing: 7px;
     font-weight: 600;
@@ -868,46 +867,45 @@ a:link,a:visited,a:hover,a:active{
     z-index: 2;
 }
 
-.introduction .pc-title span {
-    font-size: 49px;
+#introduction .pc-title span {
+    font-size: 3.063rem;
     letter-spacing: 0px;
     margin-right: 27px;
 }
 
-.introduction .pc-title div {
+#introduction .pc-title div {
     border-left-style: solid;
     margin-right: 15px;
 }
 
-.introduction .text {
-    font-size: 18px;
+#introduction .text {
+    font-size: 1.125em;
     color: black;
     letter-spacing: 5px;
     padding-top: 68px;
     float: right;
 }
 
-.introduction #slides {
+#introduction #slides {
     position: absolute;
     top: 380px;
-    
 }
 
-.introduction #slides #swiper {
+#introduction #slides #swiper {
     max-width: calc(100vw - 60px);
     overflow: hidden;
 }
 
-.introduction #slides #swiper .swiper-container {
+#introduction #slides #swiper .swiper-container {
     width: 100%;
     height: 100%;
 }
 
-.introduction #slides #swiper .swiper-container .swiper-wrapper{
+#introduction #slides #swiper .swiper-container .swiper-wrapper{
     transition-timing-function: linear;
 }
 
-.introduction #slides #swiper .swiper-container .swiper-slide {
+#introduction #slides #swiper .swiper-container .swiper-slide {
     width: 300px;
     height: 160px;
     background-color: #999999;
@@ -916,11 +914,11 @@ a:link,a:visited,a:hover,a:active{
     position: relative;
 }
 
-.introduction #slides #swiper .swiper-container .swiper-slide:hover{
+#introduction #slides #swiper .swiper-container .swiper-slide:hover{
     filter: opacity(100%);
 }
 
-.introduction .secition2 {
+#introduction .secition2 {
     width: 228px;
     height: 48px;
     border: 1px solid black;
@@ -931,28 +929,25 @@ a:link,a:visited,a:hover,a:active{
     text-decoration: none;
 }
 
-.introduction .secition2 a {
+#introduction .secition2 a {
     color: black;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1.500em;
     letter-spacing: 8px;
     line-height: 42px;
 }
 
-.tourism {
+#tourism {
     position: relative;
 }
 
-.tourism .container {
-    width: 1170px;
-    margin: 0 auto;
-    padding: 0;
-    padding-top: 144px;
+#tourism .container {
+    padding-top: 100px;
 }
 
-.tourism h1 {
+#tourism h1 {
     width: 270px;
-    font-size: 62px;
+    font-size: 3.875em;
     line-height: 40px;
     letter-spacing: 5px;
     font-weight: 600;
@@ -962,51 +957,45 @@ a:link,a:visited,a:hover,a:active{
     margin-right: auto;
 }
 
-.tourism h1 hr {
+#tourism h1 hr {
     border: 1px solid black;
     margin-top: 30px;
     margin-bottom: 12px;
 }
 
-.tourism h1 span {
-    font-size: 49px;
+#tourism h1 span {
+    font-size: 3.063rem;
     line-height: 33px;
     letter-spacing: 0px;
 }
 
-.tourism  .map-grounp .container{
-    width: 1170px;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.tourism  .map-grounp .mapbtn{
-    margin-top: 67px;
+#tourism  .map-grounp .mapbtn{
     margin-left: auto;
     margin-right: auto;
 }
 
-.tourism  .map-grounp .mapbtn #mapswiper{
+#tourism  .map-grounp .mapbtn #mapswiper{
     width: 100%;
     height: 100%;
 }
 
-.tourism  .map-grounp .mapbtn #mapswiper .swiper-slide{
-    font-size: 20px;
+#tourism  .map-grounp .mapbtn #mapswiper .swiper-slide{
+    font-size: 1.875em;
     width: 240px;
     height: 50px;
     text-align: center;
+    cursor: pointer;
 }
 
-.tourism  .map-grounp .mapbtn #mapswiper .mapslide.click{
+#tourism  .map-grounp .mapbtn #mapswiper .mapslide.click{
     width: 240px;
     height: 50px;
-    font-size: 30px;
+    font-size: 1.875em;
     text-align: center;
 }
 
 
-.tourism .map-grounp .map{
+#tourism .map-grounp .map{
     width: calc(100vw - 60px);
     height: 500px;
     background-color: #B3B3B3;
@@ -1015,7 +1004,7 @@ a:link,a:visited,a:hover,a:active{
     
 }
 
-.tourism  .map-grounp .map-img1{
+#tourism  .map-grounp .map-img1{
     width: 100%;
     max-width: 1170px;
     display: none;
@@ -1024,14 +1013,14 @@ a:link,a:visited,a:hover,a:active{
 
 }
 
-.tourism  .map-grounp .map-img1.show{
+#tourism  .map-grounp .map-img1.show{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
 }
 
-.tourism  .map-grounp .map-img1 div{
+#tourism  .map-grounp .map-img1 div{
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -1039,32 +1028,7 @@ a:link,a:visited,a:hover,a:active{
     margin-top: 50px;
 }
 
-.tourism  .map-grounp .map-img2{
-    width: 100%;
-    max-width: 1170px;
-    float: left;
-    display: none;
-    margin: 0 1px;
-    margin-top: 580px;
-
-}
-
-.tourism  .map-grounp .map-img2.show{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
-}
-
-.tourism  .map-grounp .map-img2 div{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: #1a1a1a;
-    margin-top: 50px;
-}
-
-.tourism  .map-grounp .map-img3{
+#tourism  .map-grounp .map-img2{
     width: 100%;
     max-width: 1170px;
     float: left;
@@ -1074,14 +1038,14 @@ a:link,a:visited,a:hover,a:active{
 
 }
 
-.tourism  .map-grounp .map-img3.show{
+#tourism  .map-grounp .map-img2.show{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
 }
 
-.tourism  .map-grounp .map-img3 div{
+#tourism  .map-grounp .map-img2 div{
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -1089,7 +1053,7 @@ a:link,a:visited,a:hover,a:active{
     margin-top: 50px;
 }
 
-.tourism  .map-grounp .map-img4{
+#tourism  .map-grounp .map-img3{
     width: 100%;
     max-width: 1170px;
     float: left;
@@ -1099,14 +1063,14 @@ a:link,a:visited,a:hover,a:active{
 
 }
 
-.tourism  .map-grounp .map-img4.show{
+#tourism  .map-grounp .map-img3.show{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
 }
 
-.tourism  .map-grounp .map-img4 div{
+#tourism  .map-grounp .map-img3 div{
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -1114,7 +1078,7 @@ a:link,a:visited,a:hover,a:active{
     margin-top: 50px;
 }
 
-.tourism  .map-grounp .map-img5{
+#tourism  .map-grounp .map-img4{
     width: 100%;
     max-width: 1170px;
     float: left;
@@ -1124,14 +1088,14 @@ a:link,a:visited,a:hover,a:active{
 
 }
 
-.tourism  .map-grounp .map-img5.show{
+#tourism  .map-grounp .map-img4.show{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
 }
 
-.tourism  .map-grounp .map-img5 div{
+#tourism  .map-grounp .map-img4 div{
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -1139,7 +1103,7 @@ a:link,a:visited,a:hover,a:active{
     margin-top: 50px;
 }
 
-.tourism  .map-grounp .map-img6{
+#tourism  .map-grounp .map-img5{
     width: 100%;
     max-width: 1170px;
     float: left;
@@ -1149,14 +1113,14 @@ a:link,a:visited,a:hover,a:active{
 
 }
 
-.tourism  .map-grounp .map-img6.show{
+#tourism  .map-grounp .map-img5.show{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
 }
 
-.tourism  .map-grounp .map-img6 div{
+#tourism  .map-grounp .map-img5 div{
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -1164,8 +1128,33 @@ a:link,a:visited,a:hover,a:active{
     margin-top: 50px;
 }
 
-.tourism .map-grounp span{
-    font-size: 16px;
+#tourism  .map-grounp .map-img6{
+    width: 100%;
+    max-width: 1170px;
+    float: left;
+    display: none;
+    margin: 0 1px;
+    margin-top: 580px;
+
+}
+
+#tourism  .map-grounp .map-img6.show{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#tourism  .map-grounp .map-img6 div{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #1a1a1a;
+    margin-top: 50px;
+}
+
+#tourism .map-grounp span{
+    font-size: 1.000em;
     font-weight: 500;
     line-height: 33px;
     letter-spacing: 1px;
@@ -1175,11 +1164,11 @@ a:link,a:visited,a:hover,a:active{
     
 }
 
-.tourism .map-grounp .map-href{
+#tourism .map-grounp .map-href{
     width: 430px;
     height: 75px;
     background-color: #605566;
-    font-size: 36px;
+    font-size: 2.250em;
     font-weight: bold;
     text-align: center;
     letter-spacing: 9px;
@@ -1190,10 +1179,10 @@ a:link,a:visited,a:hover,a:active{
     
 }
 
-.tourism .map-grounp p{
+#tourism .map-grounp p{
     padding: 0;
     margin: 0;
-    font-size: 16px;
+    font-size: 1.000em;
     font-weight: 500;
     letter-spacing: 4px;
     line-height: 32px;
@@ -1203,30 +1192,27 @@ a:link,a:visited,a:hover,a:active{
     margin-right: auto;
 }
 
-.tourism .mb-swiper{
+#tourism .mb-swiper{
     display: none;
 }
 
-.tour-Service .container {
-    width: 1170px;
-    margin: 0 auto;
-    padding: 0;
+#tour-Service .container {
     padding-top: 350px;
 
 }
 
-.tour-Service .container.move{
+#tour-Service .container.move{
     padding-top: 150px;
 
 }
 
-.tour-Service .big-box{
+#tour-Service .big-box{
     float: left;
     width: 328px;
 }
 
-.tour-Service .big-box h1 {
-    font-size: 62px;
+#tour-Service .big-box h1 {
+    font-size: 3.875em;
     float: left;
     line-height: 40px;
     letter-spacing: 5px;
@@ -1234,21 +1220,21 @@ a:link,a:visited,a:hover,a:active{
     margin: 0;
 }
 
-.tour-Service .big-box h1 hr {
+#tour-Service .big-box h1 hr {
     border: 1px solid black;
     margin-top: 30px;
     margin-bottom: 12px;
 }
 
-.tour-Service .big-box h1 span {
-    font-size: 45px;
+#tour-Service .big-box h1 span {
+    font-size: 2.813rem;
     line-height: 33px;
     font-weight: 600;
     letter-spacing: -1px;
 
 }
 
-.tour-Service .big-box .box {
+#tour-Service .big-box .box {
     width: 328px;
     height: 132px;
     padding-top: 18px;
@@ -1261,8 +1247,8 @@ a:link,a:visited,a:hover,a:active{
     margin-top: 55px;
 }
 
-.tour-Service .big-box .box span {
-    font-size: 20px;
+#tour-Service .big-box .box span {
+    font-size: 1.250em;
     float: left;
     margin: 0;
     letter-spacing: 2px;
@@ -1270,67 +1256,66 @@ a:link,a:visited,a:hover,a:active{
     margin-bottom: 18px;
 }
 
-.tour-Service .big-box .box .href {
+#tour-Service .big-box .box .href {
     float: right;
     margin-right: 35px;
     line-height: 0;
 }
 
-.tour-Service .box .href a {
+#tour-Service .box .href a {
     color: black;
-    font-size: 25px;
+    font-size: 1.563em;
     margin-right: 5px;
 }
 
-.tour-Service .big-box .box p {
-    font-size: 16px;
+#tour-Service .big-box .box p {
+    font-size: 1.000em;
     float: left;
     margin: 0;
     letter-spacing: 1px;
     margin-left: 12px;
 }
 
-.tour-Service .text{
-    width: 680px;   
-   }
-
-.tour-Service .content {
-    width: calc(100% - 164px);
-    margin-left: 412px;
+#tour-Service .text{
+    width: 100%;
+    max-width: 680px;   
 }
 
-.tour-Service .content h2 {
-    font-size: 26px;
+#tour-Service .content {
+    width: calc(100% - 368px);
+    float: right;
+
+}
+
+#tour-Service .content h2 {
+    font-size: 1.625em;
     letter-spacing: 3px;
     margin-bottom: 35px;
     line-height: 10px;
 }
 
-.tour-Service .content span {
-    font-size: 16px;
+#tour-Service .content span {
+    font-size: 1.000em;
     letter-spacing: 1px;
     font-weight: 400;
     line-height: 42px;
 }
 
-.tour-Service .content p {
+#tour-Service .content p {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 1.000em;
     letter-spacing: 1px;
     font-weight: 400;
     line-height: 42px;
     margin-top: 30px;
 }
 
-.description .container {
-    width: 1170px;
-    margin: 0 auto;
-    padding: 0;
+#description .container {
     margin-top: 100px;
 }
 
-.description .big-box1 {
+#description .big-box1 {
     width: 50%;
     float: left;
     display: flex;
@@ -1338,7 +1323,7 @@ a:link,a:visited,a:hover,a:active{
     align-items: center;
 }
 
-.description .big-box2 {
+#description .big-box2 {
     width: 50%;
     float: right;
     display: flex;
@@ -1346,7 +1331,7 @@ a:link,a:visited,a:hover,a:active{
     align-items: center;
 }
 
-.description .big-box1 .icon1 {
+#description .big-box1 .icon1 {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -1356,31 +1341,31 @@ a:link,a:visited,a:hover,a:active{
     background-repeat: no-repeat;
 }
 
-.description .big-box1 .boxA {
+#description .big-box1 .boxA {
     margin-left: 50px;
 
 }
 
-.description .big-box1 .boxA h1 {
-    font-size: 36px;
+#description .big-box1 .boxA h1 {
+    font-size: 2.250em;
     margin: 0;
     margin-bottom: 22px;
 }
 
-.description .big-box1 .boxA span {
-    font-size: 16px;
+#description .big-box1 .boxA span {
+    font-size: 1.000em;
     font-weight: 500;
     line-height: 27px;
 }
 
-.description .big-box1 .boxA p {
-    font-size: 16px;
+#description .big-box1 .boxA p {
+    font-size: 1.000em;
     margin: 0;
     font-weight: 500;
     opacity: 0.8;
 }
 
-.description .big-box2 .icon2 {
+#description .big-box2 .icon2 {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -1391,58 +1376,49 @@ a:link,a:visited,a:hover,a:active{
 
 }
 
-.description .big-box2 .boxB {
+#description .big-box2 .boxB {
     margin-left: 50px;
 }
 
-.description .big-box2 .boxB h1 {
-    font-size: 36px;
+#description .big-box2 .boxB h1 {
+    font-size: 2.250em;
     margin: 0;
     margin-bottom: 22px;
 }
 
-.description .big-box2 .boxB span {
-    font-size: 16px;
+#description .big-box2 .boxB span {
+    font-size: 1.000em;
     font-weight: 500;
     line-height: 27px;
 }
 
-.footer-img {
+#footer-img {
     width: 100%;
     height: 605px;
-    background-image: url("img/Group208.png");
-    background-size: cover;
-    background-repeat: no-repeat;
     margin-top: 150px;
 }
 
-.footer {
+#footer {
     height: 200px;
     background-color: #1a1a1a;
 }
 
-.footer .container{
-    width: 1170px;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.footer .left-box{
+#footer .left-box{
     float: left;
     color: white;
 }
 
-.footer .left-box  h1{
+#footer .left-box  h1{
     margin: 0;
-    font-size: 40px;
+    font-size: 2.500em;
     font-weight: 600;
     margin-top: 82px;
     letter-spacing: 12px;
     float: left;
 }
 
-.footer .left-box  span{
-    font-size: 8px;
+#footer .left-box  span{
+    font-size: 0.500em;
     font-weight: 500;
     margin-top: 87px;
     margin-left: 12px;
@@ -1450,19 +1426,19 @@ a:link,a:visited,a:hover,a:active{
     float: left;
 }
 
-.footer .mid-box{
+#footer .mid-box{
     float: left;
     color: white;
     padding: 0 100px;
     
 }
 
-.footer .mid-box .text1{
+#footer .mid-box .text1{
     margin-top: 87px;
     float: left;
 }
 
-.footer .mid-box .text1 div{
+#footer .mid-box .text1 div{
     border-left-style: solid;
     border-left-color: white;
     height: 14px;
@@ -1470,28 +1446,28 @@ a:link,a:visited,a:hover,a:active{
     float: left;
 }
 
-.footer .mid-box .text1 h1{
-    font-size: 12px;
+#footer .mid-box .text1 h1{
+    font-size: 0.750em;
     font-weight: 500;
     letter-spacing: 5px;
     margin-right:21px;
     float: left;
 }
 
-.footer .mid-box .text1 span{
-    font-size: 6px;
+#footer .mid-box .text1 span{
+    font-size: 0.375em;
     font-weight: 500;
     letter-spacing: 5px;
     float: left;
 }
 
-.footer .mid-box .text2{
+#footer .mid-box .text2{
     margin-top: 87px;
     margin-left: 50px;
     float: left;
 }
 
-.footer .mid-box .text2 div{
+#footer .mid-box .text2 div{
     border-left-style: solid;
     border-left-color: white;
     height: 14px;
@@ -1499,27 +1475,27 @@ a:link,a:visited,a:hover,a:active{
     float: left;
 }
 
-.footer .mid-box .text2 h1{
-    font-size: 12px;
+#footer .mid-box .text2 h1{
+    font-size: 0.750em;
     font-weight: 500;
     letter-spacing: 5px;
     margin-right:21px;
     float: left;
 }
 
-.footer .mid-box .text2 span{
-    font-size: 6px;
+#footer .mid-box .text2 span{
+    font-size: 0.375em;
     font-weight: 500;
     letter-spacing: 5px;
     float: left;
 }
 
-.footer .mid-box .text3{
+#footer .mid-box .text3{
     margin-top: 4px;
     float: left;
 }
 
-.footer .mid-box .text3 div{
+#footer .mid-box .text3 div{
     border-left-style: solid;
     border-left-color: white;
     height: 14px;
@@ -1527,28 +1503,28 @@ a:link,a:visited,a:hover,a:active{
     float: left;
 }
 
-.footer .mid-box .text3 h1{
-    font-size: 12px;
+#footer .mid-box .text3 h1{
+    font-size: 0.750em;
     font-weight: 500;
     letter-spacing: 5px;
     margin-right:21px;
     float: left;
 }
 
-.footer .mid-box .text3 span{
-    font-size: 6px;
+#footer .mid-box .text3 span{
+    font-size: 0.375em;
     font-weight: 500;
     letter-spacing: 5px;
     float: left;
 }
 
-.footer .mid-box .text4{
+#footer .mid-box .text4{
     margin-top: 4px;
     margin-left: 50px;
     float: left;
 }
 
-.footer .mid-box .text4 div{
+#footer .mid-box .text4 div{
     border-left-style: solid;
     border-left-color: white;
     height: 14px;
@@ -1556,22 +1532,22 @@ a:link,a:visited,a:hover,a:active{
     float: left;
 }
 
-.footer .mid-box .text4 h1{
-    font-size: 12px;
+#footer .mid-box .text4 h1{
+    font-size: 0.750em;
     font-weight: 500;
     letter-spacing: 5px;
     margin-right:21px;
     float: left;
 }
 
-.footer .mid-box .text4 span{
-    font-size: 6px;
+#footer .mid-box .text4 span{
+    font-size: 0.375em;
     font-weight: 500;
     letter-spacing: 5px;
     float: left;
 }
 
-.footer .right-box{
+#footer .right-box{
     position: relative;
     top: 85px;
     right: 3px;
@@ -1579,161 +1555,164 @@ a:link,a:visited,a:hover,a:active{
 
 }
 
-.footer .right-box h1{
+#footer .right-box h1{
     margin: 0;
-    font-size: 14px;
+    font-size: 0.875em;
     letter-spacing: 3px;
     float: left;
 }
 
-.footer .right-box h1 hr{
+#footer .right-box h1 hr{
     margin:0;
     margin-top: 8px;
     margin-bottom: 3px;
     border: 1px solid white;
     
-}.footer .right-box h1 span{
-    font-size: 5px;
-    letter-spacing: 0px;
 }
 
-.footer .right-box div{
-    width: 77px;
-    height: 45px;
-    float: left;
-    border: 1px solid white;
-    margin-left: 8px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
+#footer .right-box h1 span{
+    font-size: 0.313em;
+    letter-spacing: 2px;
 }
 
-.footer .right-box div h1{
-    margin: 0;
-    margin-top: 9px;
-    margin-bottom: 4px;
-    font-size: 14px;
-    
-}
-
-.footer .right-box div span{
-    font-size: 7px;
-    margin-bottom: 9px;
-}
-
-@media screen and (max-width: 1440px) {
-
-}
-
-@media screen and (max-width: 1280px){
-
-    .main .home .main-title{
-        font-size: 84px;
-        letter-spacing: 26px;
-        right: 180px;
+@media screen and (max-width:1680px){
+    #history .container{
+        padding-top: 370px;
     }
 
-    .main .home .line{
-        right: 175px;
-        top: 212px;
-    }
-
-    .main .home .text1{
-        font-size: 14px;
-        right: 80px;
-        top: 205px;
-    }
-
-    .main .home .text2{
-        right: 410px;
-        top: 320px;
-
-    }
-
-    .main .home .city-img{
-        position: absolute;
-        right: 240px;
-        top: 325px;
-    }
-
-    .tour-Service .text{
-     max-width: calc(50vw - 80px);   
-    }
-
-    .tour-Service .content {
-        max-width: calc(100% - 164px);
-        margin-left: 380px;
-    }
-
-    .tour-Service .content span {
-        line-height: 35px;
-    }
-
-    .tour-Service .content p {
-        line-height: 35px;
-    }
-
-    .footer{
-        overflow: hidden;
-    }
-    
-    .footer .mid-box{
-        padding-right: 20px;
-        padding-left: 40px;
-    }
-
-    .footer .mid-box .text2{
-        margin-left: 20px;
-        margin-top: 90px;
-    }
-
-    .footer .mid-box .text4{
-        margin-left: 20px;
-    }
-
-}
-@media (min-width: 1200px) and (max-width: 1250px) {
-    .tour-Service .big-box .box {
-        margin-top: 90px;
+    #nav .nav-title{
+        top: 120px;
     }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
-    .tour-Service .big-box .box {
-        margin-top: 90px;
-    }
-    .description .big-box2 .boxB h1{
-        margin-bottom: 0;
-} 
-    .footer .mid-box {
-        padding-left: 20px;
+@media screen and (max-width:1600px) and (device-height:900px){
+    #nav .nav-title{
+        top: 80px;
     }
 
-}
-@media screen and (max-width: 1020px){
-    .tour-Service .big-box .box {
-        margin-top: 125px;
+    #history .container{
+        padding-top: 500px;
     }
 }
 
-@media(min-width: 768px) and (max-width:992px){
+@media screen and (max-width:1440px){
+    html{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:1366px){
+    html{
+        font-size: 13px;
+    }
+
+    #nav .nav-title{
+        top: 45px;  
+    }
+
+    #history .container{
+        padding-top: 620px;
+    }
+}
+
+@media screen and (max-width:1280px) and (device-height:1024px){
+    #nav .nav-title{
+        top: 110px;
+    }
+
+    #history .container{
+        padding-top: 380px;
+    }
+}
+
+
+@media screen and (max-width:1280px) and (device-height:960px){
+    #nav .nav-title{
+        top: 90px;
+    }
+
+    #history .container{
+        padding-top: 450px;
+    }
+}
+
+@media screen and (max-width:1280px) and (device-height:800px){
+    #nav .nav-title{
+        top: 55px;
+    }
+
+    #history .container{
+        padding-top: 580px;
+    }
+}
+
+@media screen and (max-width:1280px) and (device-height:720px){
+    #nav .nav-title{
+        top: 35px;
+    }
+
+    #history .container{
+        padding-top: 670px;
+    }
+}
+
+@media screen and (max-width:1152px){
+    #nav .nav-title{
+        top: 65px;
+    }
+
+    #history .container{
+        padding-top: 550px;
+    }
+
+    #footer .left-box{
+        display: none;
+    }
+
+    #footer .right-box{
+        display: none;
+    }
+
+    #footer .mid-box{
+        float: initial;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:1024px){
+    html{
+        font-size: 12px;
+    }
+
+    #nav .nav-title{
+        top: 45px;
+    }
+
+    #history .container{
+        padding-top: 620px;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    html{
+        font-size: 11px;
+    }
+
     #window{
         left: -20px;
-        width: calc(100vw - 40px);
+        width: calc(100% - 40px);
         overflow: hidden;
     }
 
-    .nav{
+    #nav{
         height: 100%;
         width: 40px;
     }
-
-
-    .nav-title{
-        line-height: 0px;
-        font-size: 14px;
-        letter-spacing: 2px;
+    
+    #nav .nav-title{
+        top: 114px;
+        left: 11px;
     }
 
     #nav-inner {
@@ -1744,84 +1723,137 @@ a:link,a:visited,a:hover,a:active{
         left: 0;
     }
 
-    .main .home{
-        width: calc(100vw - 40px);
-    }
-    .main .home .main-title{
-        font-size: 60px;
-        letter-spacing: 8px;
-        right: 160px;
+    #main .home{
+        width: calc(100% - 40px);
     }
 
-    .main .home .line{
+    #main .home .line{
         right: 135px;
         top: 202px;
     }
 
-    .main .home .text1{
-        font-size: 14px;
-        right: 40px;
-        top: 195px;
+    #main .home .main-title{
+        letter-spacing: 22px;
+        right: 158px;
+        top: 177px;
     }
 
-    .main .home .text2{
-        right: 260px;
-        top: 280px;
+    #main .home .text1{
+        right: 36px;
+        top: 193px;
+    }
+
+    #main .home .text2{
+        line-height: 22px;
+        right: 351px;
+        top: 338px;
 
     }
-    .history{
+
+    #main .home .city-img{
+        right: 177px;
+        top: 342px;
+    }
+
+    #history{
         width: calc(100vw - 40px);
     }
 
-    .history .map{
-        max-width: 75vw;
-        height: 75vw;
-        float: left;
-        margin-left: 10vw;
-        display: block;
+    #history .container{
+        padding-top: 380px;
     }
 
-    .history h1{
-        margin-top: 80vw
+    #history .map{
+        width: 100%;
+        height: 60vh;
+        float: none;
+        margin: 0 auto;
     }
 
-    .introduction {
+    #history h1{
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    #history .container hr{
+        width: 33%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #history .container p {
+        max-width: 100%;
+    }  
+
+    #history2 .container{
+        display: none;
+    }
+
+    #introduction {
         width: calc(100vw - 40px);
     }
-    .introduction #slides #swiper {
+
+    #introduction .container{
+        padding-top: 100px;
+    }
+
+    #introduction #slides{
+        top: 210px;
+    }
+
+    #introduction #slides #swiper {
         max-width: calc(100vw - 40px);
         overflow: hidden;
     }
 
-    .tourism .map-grounp .map{
-        width: calc(100vw - 40px);
+    #introduction .secition2{
+        margin-top: 652px;
     }
 
-    .tourism .map-grounp .container {
+    #tourism .container{
+        padding-top: 80px;
+    }
+    
+    #tourism h1 hr{
+        width: 65%;
+    }
+
+    #tourism .map-grounp .map{
+        width: calc(100vw - 40px);
+        top: 370px;
+    }
+
+    #tourism .map-grounp .container {
         width: 720px;
     }
 
-    .tour-Service{
+    #tourism .map-grounp .mapbtn #mapswiper .swiper-slide{
+        height: 32px;
+    }
+
+    #tour-Service{
         width: calc(100vw - 40px);
     }
 
-    .tour-Service h1{
-        width: 100%;
-        text-align: center;
-    }
-
-    .tour-Service hr{
-        width: 40%;
-    }
-
-    .tour-Service .big-box{
+    #tour-Service .big-box{
         width: 100%;
         display: block;
         margin-right: 100%;
         margin-bottom: 80px;
     }
 
-    .tour-Service .big-box .box span{
+    #tour-Service .big-box h1 {
+        width: 50%;
+        text-align: center;
+        float: none;
+        margin: 0 auto;
+    }
+
+    #tour-Service .big-box h1 hr{
+        width: 70%;
+    }
+
+    #tour-Service .big-box .box span{
         margin-bottom: 0;
         display: block;
         width: 154px;
@@ -1829,9 +1861,7 @@ a:link,a:visited,a:hover,a:active{
         margin-bottom: 10px;
     }
 
-
-
-    .tour-Service .big-box .box{
+    #tour-Service .big-box .box{
         width: 100%;
         padding-top: 20px;
         padding-left: 100px;
@@ -1839,33 +1869,33 @@ a:link,a:visited,a:hover,a:active{
         padding-bottom: 20px;
     }
 
+    #tour-Service .big-box .box .href{
+        margin-right: 0;
+    }
 
-    .tour-Service .content {
+    #tour-Service .content {
         max-width: 1200px;
         width: 100%;
         margin-left: 0px;
     }
 
-    .tour-Service .content h2{
-        text-align: center;
-    }
-
-    .tour-Service .content .text{
+    #tour-Service .content .text{
         max-width: 100vw;
         width: 100%;
-        text-align: justify;
     }
 
-    .description .big-box1 {
+    #description .container{
+        margin-top: 150px;
+    }
+
+    #description .big-box1 {
         width: 100%;
         float: none;
         margin: 0 auto;
         margin-bottom: 60px;
-        
-        
     }
 
-    .description .big-box2 {
+    #description .big-box2 {
         width: 100%;
         float: none;
         margin: 0 auto;
@@ -1875,178 +1905,54 @@ a:link,a:visited,a:hover,a:active{
         width: calc(100vw - 40px);
     }
 
-    .footer{
-        width: 100vw;
-        height: 150px;
+    #footer{
+        width: calc(100vw - 40px);
+        height: 120px;
         overflow: hidden;
     }
 
-    .footer .container .left-box{
+    #footer-img{
+        height: 350px;
+    }
+
+    #footer .container .left-box{
         display: block;
         margin-right: 150px;
     }
 
-    .footer .container .left-box h1{
-        margin-top: 20px;
+    #footer .container .left-box h1{
+        display: none;
     }
 
-    .footer .container .left-box span{
-        margin-top: 27px;
+    #footer .container .left-box span{
+        display: none;
     }
 
-    .footer .container .mid-box{
-        display: inline-block;
-        margin-right: 0;
+    #footer .container .mid-box{
+        width: 100%;
         padding: 0;
+        margin-top: 38px;
     }
-
-    .footer .mid-box .text1{
-        margin-top: 20px;
-        float: left;
-    }
-
-
-    .footer .mid-box .text2{
-        margin-top: 20px;
-        margin-left: 20;
-        float: left;
-    }
-    
-    .footer .container .right-box{
-        display: none;
-        margin-top: 16px;
-        float: left;
-        margin-left: 30px;
-    }
-
-    .footer .container .right-box div{
-        margin-left: 15px;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 768px){
-    .introduction .text{
-        display: none;
-    }
-    
-    .history .map {
-        width: 100%;
-        height: 60vh;
-        float: none;
-        margin: 0 auto;
-    }
-    .history2 .container{
-        display: none;
-    }
-
-    .history h1{
-        margin-top: 0;
-        text-align: center;
-    }
-
-    .history .container hr{
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .history .container p {
-        max-width: 100%;
-        font-size: 16px;
-    }
-
-    .tour-Service .big-box{
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .tour-Service .big-box h1 {
-        width: 50%;
-        text-align: center;
-        float: none;
-        margin: 0 auto;
-    }
-
-    .tour-Service .content{
-        width: 100%;
-        max-width: 100%;
-        float: none;
-        margin: 0 auto;
-        text-align: center;
-        position: relative;
-        top: 50px;
-
-    }
-
-    .tour-Service .big-box .box{
-        width: 100%;
-        height: 100px;
-        padding-left: 20px;
-        padding-top: 8px;
-        padding-bottom: 5px;
-        padding-right: 20px;
-        margin-top: 75px;
-    }
-
-    .tour-Service .big-box .box p{
-        clear: both;
-    }
-
-    .tour-Service .big-box .box span{
+    #footer .mid-box .text1{
         margin: 0;
     }
 
-    .tour-Service .big-box .box .href{
-        margin: 5px;
+    #footer .mid-box .text2{
+        margin-top: 0;
     }
 
-    .tour-Service .text{
-        width: 100%;
-        max-width: 100%;
+    #footer .mid-box .text3{
+        margin-top: 15px;
     }
 
-    .tourism .map-grounp .container {
-        width: 540px;
-    }
-
-    .description .big-box1 {
-        width: 100%;
-        margin-bottom: 60px;
-    }
-
-    .description .big-box2 {
-        width: 100%;
-    }
-    
-    .footer{
-        height: 200px;
-    }
-    
-    .footer .container .left-box{
-        margin-right: 0px;
-    }
-
-    .footer .mid-box .text1{
-        margin-right: 70px;
-    }
-
-    .footer .mid-box .text2{
-        margin-top: 5px;
-        margin-left: 0;
-    }
-
-    .footer .mid-box .text3{
-        margin-right: 70px;
-    }
-
-    .footer .mid-box .text4{
-        margin-left: 0;
+    #footer .mid-box .text4{
+        margin-top: 15px;
     }
 
 
 }
 
-@media (min-width: 375px) and (max-width: 576px){
+@media screen and (max-width: 480px){
     #window{
         position: relative;
         overflow: hidden;
@@ -2092,25 +1998,25 @@ a:link,a:visited,a:hover,a:active{
         display: none;
     }
 
-    .nav{
+    #nav{
         position: absolute;
         width: 100%;
         height: 225px;
         z-index: 1;
     }
 
-    .nav .nav-title {
+    #nav .nav-title {
         display: none;
     }
 
-    .main .home{
+    #main .home{
         width: 100%;
         height: 40vh;
     }
 
-    .main .home .main-title {
+    #main .home .main-title {
         position: absolute;
-        top: 5px;
+        top: 45px;
         right: 45px;
         font-size: 45px;
         letter-spacing: 1px;
@@ -2119,19 +2025,19 @@ a:link,a:visited,a:hover,a:active{
         letter-spacing: 5px;
     }
 
-    .main .home .line {
+    #main .home .line {
         display: none;
     }
 
-    .main .home .text1 {
+    #main .home .text1 {
         display: none;
     }
 
-    .main .home .text2{
+    #main .home .text2{
         text-align: right;
         margin-top: 15px;
         position: absolute;
-        top: 75px;
+        top: 115px;
         right: 55px;
         z-index: 2;
         color: white;
@@ -2139,7 +2045,7 @@ a:link,a:visited,a:hover,a:active{
         line-height: 20px;
     }
 
-    .main .home .city-img {
+    #main .home .city-img {
         display: none;
     }
 
@@ -2149,85 +2055,89 @@ a:link,a:visited,a:hover,a:active{
         top: 185px;
     }
 
-    .history{
+    #main .nav-img{
+        top: 210px;
+    }
+
+    #history{
         width: 100%;
     }
 
-    .history .container{
+    #history .container{
         width: 80vw;
         max-width: 80vw;
         margin: 0 auto;
         margin-top: 0px;
+        padding-top: 580px;
     }
 
-    .history .map {
-        display: none;
-
-    }
-
-    .history h1 {
+    #history h1 {
         display: none;
     }
 
-    .history2 .secition1 {
+    #history2 .secition1 {
         display: none;
     }
 
-    .introduction{
+    #history p{
+        padding-top: 0;
+    }
+
+    #introduction{
         width: 100%;
     }
 
-    .introduction .container {
+    #introduction .container {
         width: 80vw;
         max-width: 80vw;
         margin: 0 auto;
         padding-top: 30px;
     }
 
-    .introduction h1 {
+    #introduction h1 {
         writing-mode: horizontal-tb;
     }
 
-    .introduction .pc-title{
+    #introduction .pc-title{
         display: none;
     }
 
-    .introduction .mb-title{
+    #introduction .mb-title{
         display: block;
         margin: 0 auto;
-        font-size: 20px;
+        font-size: 3.250em;
         font-weight: bold;
         text-align: center;
     }
 
-    .introduction .mb-title div{
+    #introduction .mb-title div{
         margin-top: 5px;
         margin-left: auto;
         margin-right: auto;
-        width: 110px;
+        width: 140px;
         border-top-style: solid;
         border-top-color: black;
-        border-top-width: 1px; 
+        border-top-width: 2px; 
     }
 
-    .introduction .mb-title span{
-        font-size: 20px;
+    #introduction .mb-title span{
+        font-size: 2.250rem;
         font-weight: 600;
     }
 
-    .introduction .text {
+    #introduction .text {
         display: none;
     }
 
-    .introduction #slides {
-        top: 100px;
+    #introduction #slides {
+        top: 140px;
     }
 
-    .introduction #slides #swiper {
+    #introduction #slides #swiper {
         max-width: 100vw;
     }
 
-    .introduction .secition2 {
+    #introduction .secition2 {
         width: 140px;
         height: 30px;
         margin-top: 540px;
@@ -2235,65 +2145,67 @@ a:link,a:visited,a:hover,a:active{
         
     }
 
-    .introduction .secition2 span {
-        font-size: 14px;
-        font-weight: bold;
-        line-height: 30px;
+    #introduction .secition2 a{
+        letter-spacing: 0;
+        line-height: 29px;
+        font-weight: 600;
     }
 
-    .tourism .container {
-        padding-top: 0px;
+    #tourism .container{
+        padding-top: 30px;
     }
 
-    .tourism .map-grounp .container {
+    #tourism .map-grounp .container {
         width: 80vw;
         max-width: 80vw;
         margin: 0 auto;
     }
 
-    .tourism .map-grounp {
+    #tourism .map-grounp {
         width: 100%;
     }
 
-    .tourism h1 {
+    #tourism h1 {
         display: none;
     }
 
-    .tourism .map-grounp .mapbtn #mapswiper .swiper-slide {
+
+    #tourism .map-grounp .mapbtn #mapswiper .swiper-slide {
         width: 33.33%;
-        font-size: 15px;
+        height: 22px;
+        font-size: 1.250em;
     }
 
-    .tourism .map-grounp .map {
+    #tourism .map-grounp .map {
         width: 100%;
-        top: 50px;
+        top: 110px;
     }
 
-    .tourism .map-grounp .map-img1.show{
+    #tourism .map-grounp .map-img1.show{
         display: none;
     }
 
-    .tourism .map-grounp .map-img2.show{
+    #tourism .map-grounp .map-img2.show{
         display: none;
     }
 
-    .tourism .map-grounp .map-img3.show{
+    #tourism .map-grounp .map-img3.show{
         display: none;
     }
 
-    .tourism .map-grounp .map-img4.show{
+    #tourism .map-grounp .map-img4.show{
         display: none;
     }
 
-    .tourism .map-grounp .map-img5.show{
+    #tourism .map-grounp .map-img5.show{
         display: none;
     }
 
-    .tourism .map-grounp .map-img6.show{
+    #tourism .map-grounp .map-img6.show{
         display: none;
     }
 
-    .tourism .mb-swiper{
+    #tourism .mb-swiper{
         display: flex;
         width: 100vw;
         height: 200px;
@@ -2302,7 +2214,7 @@ a:link,a:visited,a:hover,a:active{
         left: 0px;
     }
 
-    .tourism .map-grounp .map-href {
+    #tourism .map-grounp .map-href {
         width: 227px;
         height: 40px;
         margin-top: 820px;
@@ -2310,676 +2222,107 @@ a:link,a:visited,a:hover,a:active{
         line-height: 40px;
     }
 
-    .tourism .map-grounp p {
+    #tourism .map-grounp p {
         margin-top: -170px;
     }
 
-    .tour-Service {
+    #tour-Service {
         width: 100%;
         position: relative;
-        top: 680px;
+        top: 520px;
 
     }
 
-    .tour-Service .container {
+    #tour-Service .container {
         width: 80vw;
         max-width: 80vw;
         margin: 0 auto;
         padding-top: 0;
     }
 
-    .tour-Service .big-box {
+    #tour-Service .big-box {
         width: 50%;
         margin: 0 auto;
         float: none;
         text-align: center;
     }
 
-    .tour-Service .big-box h1 {
-        float: none;
-        font-size: 20px;
-        line-height: 30px;
-    }
-
-    .tour-Service .big-box h1 hr {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    .tour-Service .big-box h1 span {
-        font-size: 20px;
-    }
-
-    .tour-Service .big-box .box {
-        position: relative;
-        height: 132px;
-        padding: 15px;
-        left: calc(50% - 164px);
-        top: 350px;
-    }
-
-    .tour-Service .big-box .box .href {
-        margin: 0;
-        margin-top: 3px;
-    }
-
-    .tour-Service .big-box .box p {
-        margin-top: 6px;
-    }
-
-    .tour-Service .content {
+    #tour-Service .big-box h1 {
         width: 100%;
-        max-width: 100%;
-        margin-left: 0;
-        text-align: center;
-        position: relative;
-        top: -230px;
-    }
-
-    .tour-Service .content span {
-        line-height: 35px;
-        letter-spacing: 2px;
-    }
-
-    .tour-Service .content p {
-        margin-top: 30px;
-        line-height: 35px;
-        letter-spacing: 2px;
-    }
-
-    .tour-Service .text {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .description{
-        position: relative;
-        top: -550px;
-    }
-
-    .description .container{
-        width: 80vw;
-        max-width: 80vw;
         margin: 0 auto;
-    }
-
-    .description .big-box1 {
-        width: 100%;
-        display: flex;
-        flex-flow: wrap;
-        justify-content: center;
-    }
-
-    .description .big-box2 {
-        width: 100%;
-        display: flex;
-        flex-flow: wrap;
-        justify-content: center;
-        margin-top: 40px;
-    }
-
-    .description .big-box1 .icon1 {
-        width: 78px;
-        height: 78px;
-    }
-
-    .description .big-box1 .boxA {
-        width: 100%;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .description .big-box2 .icon2 {
-        width: 78px;
-        height: 78px;
-    }
-
-    .description .big-box2 .boxB {
-        width: 100%;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .footer-img {
-        margin-top: 250px;
-    }
-
-    footer{
-        position: relative;
-        bottom: 0;
-    }
-
-    .footer .container {
-        width: 100%;
-        position: relative;
-    }
-
-    .footer .container .left-box{
-        position: absolute;
-        top: 120px;
-        left: calc(50% - 137px);
-    }
-
-    .footer .container .left-box h1 {
-        margin-top: 0;
-        font-size: 34px;
-        margin-right: 10px;
-    }
-
-    .footer .container .left-box span {
-        margin: 0;
-        font-size: 5px;
-    }
-
-    .footer .container .mid-box {
-        position: absolute;
-        top: 40px;
-        left: calc(50% - 135px);
-        padding: 0 10px;
-    }
-
-    .footer .container .mid-box .text1 {
-        width: 50%;
-        margin: 0;
-        margin: 0;
-    }
-
-    .footer .container .mid-box .text1 div {
-        margin-right: 15px;
-    }
-
-    .footer .container .mid-box .text1 h1 {
-        margin-right: 15px;
-        margin-bottom: 0;
-        letter-spacing: 8px;
-        font-size: 15px;
-
-    }
-
-    .footer .container .mid-box .text1 span {
-        display: none;
-    }
-
-    .footer .container .mid-box .text2 {
-        width: 50%;
-        margin: 0;
-    }
-
-    .footer .container .mid-box .text2 div {
-        margin-right: 15px;
-    }
-
-    .footer .container .mid-box .text2 h1 {
-        margin-right: 15px;
-        margin-bottom: 0;
-        letter-spacing: 8px;
-        font-size: 15px;
-
-    }
-
-    .footer .container .mid-box .text2 span {
-        display: none;
-    }
-
-    .footer .container .mid-box .text3 {
-        width: 50%;
-        margin: 0;
-    }
-
-    .footer .container .mid-box .text3 div {
-        margin-right: 15px;
-    }
-
-    .footer .container .mid-box .text3 h1 {
-        margin-right: 15px;
-        margin-bottom: 0;
-        letter-spacing: 8px;
-        font-size: 15px;
-
-    }
-
-    .footer .container .mid-box .text3 span {
-        display: none;
-    }
-
-    .footer .container .mid-box .text4 {
-        width: 50%;
-        margin: 0;
-    }
-
-    .footer .container .mid-box .text4 div {
-        margin-right: 15px;
-    }
-
-    .footer .container .mid-box .text4 h1 {
-        margin-right: 15px;
-        margin-bottom: 0;
-        letter-spacing: 8px;
-        font-size: 15px;
-    }
-
-    .footer .container .mid-box .text4 span {
-        display: none;
-    }
-
-    .footer .right-box {
-        display: none;
-    }
-
-}
-
-@media screen and (max-width: 495px){
-    .history .map{
-        height: 35vh;
-    }
-
-    .description {
-        top: -640px;
-    }
-
-    .tour-Service .big-box .box {
-        top: 430px;
-    }
-}
-
-@media screen and (max-width: 471px){
-    #nav-inner .big-box h1 {
-        font-size: 28px;
-        letter-spacing: 3px;
-    }
-}
-
-@media screen and (max-width: 412px){
-    .description {
-        top: -700px;
-    }
-
-    .tour-Service .big-box .box {
-        top: 470px;
-    }
-}
-
-@media screen and (max-width: 381px){
-    .description {
-        top: -740px;
-    }
-
-    .tour-Service .big-box .box {
-        top: 520px;
-    }
-}
-
-
-@media screen and (max-width: 375px){
-    #window{
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        margin-left: 0;
-        left: 0;
-    }
-
-    #menubtn{
-        display: none;
-    }
-
-    #mb-menubtn{
-        display: flex;
-        top: 10px;
-        left: 10px;
-    }
-
-    #hamburger {
-        position: fixed;
-        top: 18px;
-        left: 12px;
-    }
-
-    #nav-inner {
-        width: 100%;
-    }
-
-    #nav-inner.show {
-        left: 0;
-    }
-
-    #nav-inner .big-box h1{
-        font-size: 30px;
-        letter-spacing: 14px;
-        
-    }
-
-    .nav{
-        position: absolute;
-        width: 100%;
-        height: 225px;
-        z-index: 1;
-    }
-
-    .nav .nav-title {
-        display: none;
-    }
-
-    .main .home{
-        width: 100%;
-        height: 40vh;
-    }
-
-    .main .home .main-title {
-        position: absolute;
-        top: 5px;
-        right: 45px;
-        font-size: 45px;
-        letter-spacing: 1px;
-        z-index: 2;
-        color: white;
-        letter-spacing: 5px;
-    }
-
-    .main .home .line {
-        display: none;
-    }
-
-    .main .home .text1 {
-        display: none;
-    }
-
-    .main .home .text2{
-        text-align: right;
-        margin-top: 15px;
-        position: absolute;
-        top: 75px;
-        right: 55px;
-        z-index: 2;
-        color: white;
-        font-size: 7px;
-        line-height: 20px;
-    }
-
-    .main .home .city-img {
-        display: none;
-    }
-
-    .nav-img{
-        width: 100%;
-        height: 460px;
-        top: 185px;
-    }
-
-    .history{
-        width: 100%;
-    }
-
-    .history .container{
-        width: 80vw;
-        max-width: 80vw;
-        margin: 0 auto;
-        margin-top: 0px;
-    }
-
-    .history .map {
-       display: none;
-
-    }
-
-    .history p{
-        padding-top: 120px;
-    }
-
-    .history h1 {
-        display: none;
-    }
-
-    .history2 .secition1 {
-        display: none;
-    }
-
-    .introduction{
-        width: 100%;
-    }
-
-    .introduction .container {
-        width: 80vw;
-        max-width: 80vw;
-        margin: 0 auto;
-        padding-top: 30px;
-    }
-
-    .introduction h1 {
-        writing-mode: horizontal-tb;
-    }
-
-    .introduction .pc-title{
-        display: none;
-    }
-
-    .introduction .mb-title{
-        display: block;
-        margin: 0 auto;
-        font-size: 20px;
+        font-size: 3.250em;
         font-weight: bold;
         text-align: center;
     }
 
-    .introduction .mb-title div{
+    #tour-Service .big-box h1 hr {
+        width: 85%;
         margin-top: 5px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 110px;
-        border-top-style: solid;
-        border-top-color: black;
-        border-top-width: 1px; 
+        margin-bottom: 0;
     }
 
-    .introduction .mb-title span{
-        font-size: 20px;
+    #tour-Service .big-box h1 span {
+        font-size: 2.250rem;
         font-weight: 600;
     }
 
-    .introduction .text {
+    #tour-Service .big-box .box {
         display: none;
     }
 
-    .introduction #slides {
-        top: 100px;
-    }
-
-    .introduction #slides #swiper {
-        max-width: 100vw;
-    }
-
-    .introduction .secition2 {
-        width: 140px;
-        height: 30px;
-        margin-top: 540px;
-        text-align: center;
-        
-    }
-
-    .introduction .secition2 span {
-        font-size: 14px;
-        font-weight: bold;
-        line-height: 30px;
-    }
-
-    .tourism .container {
-        padding-top: 0px;
-    }
-
-    .tourism .map-grounp .container {
-        width: 80vw;
-        max-width: 80vw;
-        margin: 0 auto;
-    }
-
-    .tourism .map-grounp {
-        width: 100%;
-    }
-
-    .tourism h1 {
-        display: none;
-    }
-
-    .tourism .map-grounp .mapbtn #mapswiper .swiper-slide {
-        width: 33.33%;
-        font-size: 15px;
-    }
-
-    .tourism .map-grounp .map {
-        width: 100%;
-        top: 50px;
-    }
-
-    .tourism .map-grounp .map-img1.show{
-        display: none;
-    }
-
-    .tourism .map-grounp .map-img2.show{
-        display: none;
-    }
-
-    .tourism .map-grounp .map-img3.show{
-        display: none;
-    }
-
-    .tourism .map-grounp .map-img4.show{
-        display: none;
-    }
-
-    .tourism .map-grounp .map-img5.show{
-        display: none;
-    }
-
-    .tourism .map-grounp .map-img6.show{
-        display: none;
-    }
-
-    .tourism .mb-swiper{
-        display: flex;
-        width: 100vw;
-        height: 200px;
-        position: absolute;
-        top: 575px;
-        left: 0px;
-    }
-
-    .tourism .mb-swiper #mb-slide .swiper-slide{
-        width: 120px;
-        height: 120px;
-        border-radius: 10px;
-        background-color: #000;
-
-    }
-
-    .tourism .map-grounp .map-href {
-        width: 227px;
-        height: 40px;
-        margin-top: 820px;
-        font-size: 18px;
-        line-height: 40px;
-    }
-
-    .tourism .map-grounp p {
-        margin-top: -190px;
-    }
-
-    .tour-Service {
-        width: 100%;
-        position: relative;
-        top: 680px;
-
-    }
-
-    .tour-Service .container {
-        width: 80vw;
-        max-width: 80vw;
-        margin: 0 auto;
-        padding-top: 0;
-    }
-
-    .tour-Service .big-box {
-        width: 50%;
-        margin: 0 auto;
-        float: none;
-        text-align: center;
-    }
-
-    .tour-Service .big-box h1 {
-        float: none;
-        font-size: 20px;
-        line-height: 30px;
-    }
-
-    .tour-Service .big-box h1 hr {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    .tour-Service .big-box h1 span {
-        font-size: 20px;
-    }
-
-    .tour-Service .big-box .box {
-        position: relative;
-        height: 132px;
-        padding: 15px;
-        left: calc(50% - 164px);
-        top: 510px;
-    }
-
-    .tour-Service .big-box .box .href {
+    #tour-Service .big-box .box .href {
         margin: 0;
         margin-top: 3px;
     }
 
-    .tour-Service .big-box .box p {
+    #tour-Service .big-box .box p {
         margin-top: 6px;
     }
 
-    .tour-Service .content {
+    #tour-Service .content {
         width: 100%;
         max-width: 100%;
         margin-left: 0;
         text-align: center;
         position: relative;
-        top: -230px;
+        top: 40px;
     }
 
-    .tour-Service .content span {
+    #tour-Service .content span {
         line-height: 35px;
         letter-spacing: 2px;
     }
 
-    .tour-Service .content p {
+    #tour-Service .content p {
         margin-top: 30px;
         line-height: 35px;
         letter-spacing: 2px;
     }
 
-    .tour-Service .text {
+    #tour-Service .text {
         width: 100%;
         max-width: 100%;
     }
 
-    .description{
+    #description{
         position: relative;
-        top: -720px;
+        top: -500px;
     }
 
-    .description .container{
+    #description .container{
         width: 80vw;
         max-width: 80vw;
         margin: 0 auto;
     }
 
-    .description .big-box1 {
+    #description .big-box1 {
         width: 100%;
         display: flex;
         flex-flow: wrap;
         justify-content: center;
     }
 
-    .description .big-box2 {
+    #description .big-box2 {
         width: 100%;
         display: flex;
         flex-flow: wrap;
@@ -2987,23 +2330,23 @@ a:link,a:visited,a:hover,a:active{
         margin-top: 40px;
     }
 
-    .description .big-box1 .icon1 {
+    #description .big-box1 .icon1 {
         width: 78px;
         height: 78px;
     }
 
-    .description .big-box1 .boxA {
+    #description .big-box1 .boxA {
         width: 100%;
         margin-left: 0;
         text-align: center;
     }
 
-    .description .big-box2 .icon2 {
+    #description .big-box2 .icon2 {
         width: 78px;
         height: 78px;
     }
 
-    .description .big-box2 .boxB {
+    #description .big-box2 .boxB {
         width: 100%;
         margin-left: 0;
         text-align: center;
@@ -3013,51 +2356,34 @@ a:link,a:visited,a:hover,a:active{
         margin-top: 250px;
     }
 
-    footer{
+    #footer{
         position: relative;
         bottom: 0;
+        width: 100vw;
     }
 
-    .footer .container {
+    #footer .container {
         width: 100%;
         position: relative;
     }
 
-    .footer .container .left-box{
+    #footer .container .mid-box {
         position: absolute;
-        top: 120px;
-        left: calc(50% - 137px);
-    }
-
-    .footer .container .left-box h1 {
-        margin-top: 0;
-        font-size: 34px;
-        margin-right: 10px;
-    }
-
-    .footer .container .left-box span {
-        margin: 0;
-        font-size: 5px;
-    }
-
-    .footer .container .mid-box {
-        position: absolute;
-        top: 40px;
-        left: calc(50% - 135px);
         padding: 0 10px;
+        margin-top: 48px;
     }
 
-    .footer .container .mid-box .text1 {
+    #footer .container .mid-box .text1 {
         width: 50%;
         margin: 0;
         margin: 0;
     }
 
-    .footer .container .mid-box .text1 div {
+    #footer .container .mid-box .text1 div {
         margin-right: 15px;
     }
 
-    .footer .container .mid-box .text1 h1 {
+    #footer .container .mid-box .text1 h1 {
         margin-right: 15px;
         margin-bottom: 0;
         letter-spacing: 8px;
@@ -3065,20 +2391,20 @@ a:link,a:visited,a:hover,a:active{
 
     }
 
-    .footer .container .mid-box .text1 span {
+    #footer .container .mid-box .text1 span {
         display: none;
     }
 
-    .footer .container .mid-box .text2 {
+    #footer .container .mid-box .text2 {
         width: 50%;
         margin: 0;
     }
 
-    .footer .container .mid-box .text2 div {
+    #footer .container .mid-box .text2 div {
         margin-right: 15px;
     }
 
-    .footer .container .mid-box .text2 h1 {
+    #footer .container .mid-box .text2 h1 {
         margin-right: 15px;
         margin-bottom: 0;
         letter-spacing: 8px;
@@ -3086,20 +2412,20 @@ a:link,a:visited,a:hover,a:active{
 
     }
 
-    .footer .container .mid-box .text2 span {
+    #footer .container .mid-box .text2 span {
         display: none;
     }
 
-    .footer .container .mid-box .text3 {
+    #footer .container .mid-box .text3 {
         width: 50%;
         margin: 0;
     }
 
-    .footer .container .mid-box .text3 div {
+    #footer .container .mid-box .text3 div {
         margin-right: 15px;
     }
 
-    .footer .container .mid-box .text3 h1 {
+    #footer .container .mid-box .text3 h1 {
         margin-right: 15px;
         margin-bottom: 0;
         letter-spacing: 8px;
@@ -3107,74 +2433,36 @@ a:link,a:visited,a:hover,a:active{
 
     }
 
-    .footer .container .mid-box .text3 span {
+    #footer .container .mid-box .text3 span {
         display: none;
     }
 
-    .footer .container .mid-box .text4 {
+    #footer .container .mid-box .text4 {
         width: 50%;
         margin: 0;
     }
 
-    .footer .container .mid-box .text4 div {
+    #footer .container .mid-box .text4 div {
         margin-right: 15px;
     }
 
-    .footer .container .mid-box .text4 h1 {
+    #footer .container .mid-box .text4 h1 {
         margin-right: 15px;
         margin-bottom: 0;
         letter-spacing: 8px;
         font-size: 15px;
     }
 
-    .footer .container .mid-box .text4 span {
+    #footer .container .mid-box .text4 span {
         display: none;
     }
 
-    .footer .right-box {
-        display: none;
-    }
-}  
-
-@media screen and (max-width: 366px){
-    #nav-inner .big-box h1 {
+    #footer .right-box {
         display: none;
     }
 
-    #nav-inner .big-box span {
-        display: none;
-    }
-
-    #nav-inner .logo {
-        display: none;
-    }
-
-    #nav-inner .inner-title {
-        width: 100%;
-    }
-
-    #nav-inner .inner-title .text {
-        margin: 0 13px;
-    }
 }
 
-@media screen and (max-width: 325px){
-    .history .map{
-        height: 25vh;
-    }
-
-    .tourism .map-grounp p {
-        margin-top: -200px;
-    }
-
-    .description {
-        top: -840px;
-    }
-
-    .tour-Service .big-box .box {
-        top: 600px;
-    }
-}
 
 .line3pic1{
     background-image: url("img/Group116.png");

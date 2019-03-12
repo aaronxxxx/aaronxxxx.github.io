@@ -30,6 +30,7 @@ $(function () {
 
         $('#mb-hamburger').toggleClass('show');
 
+        $('#hamburger').toggleClass('active');
     });
 
 });
@@ -42,7 +43,7 @@ $(function () {
 
         $('#mb-hamburger').toggleClass('show');
 
-
+        $('#hamburger').toggleClass('active');
     });
 
 });
@@ -55,7 +56,7 @@ $(function () {
 
         $('#mb-hamburger').toggleClass('show');
 
-
+        $('#hamburger').toggleClass('active');
     });
 
 });
@@ -68,7 +69,7 @@ $(function () {
 
         $('#mb-hamburger').toggleClass('show');
 
-
+        $('#hamburger').toggleClass('active');
     });
 
 });
