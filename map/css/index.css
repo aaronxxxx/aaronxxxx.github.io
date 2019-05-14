@@ -1,0 +1,401 @@
+/* 通用 */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+header, section {
+    display: block;
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: #F15A24;
+}
+
+.title>div:first-child {
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    font-size: 4.9375rem;
+}
+
+.title>div:nth-child(2) {
+    font-size: 3.375rem;
+    border-bottom: solid 5px #000;
+}
+
+.link {
+    display: block;
+    width: 11.8125rem;
+    height: 3.25rem;
+    background-color: #000;
+    font-size: 1.875rem;
+    letter-spacing: 0.0394rem;
+    color: #F2F2F2;
+    text-align: center;
+    line-height: 3.25rem;
+    text-decoration: none;
+}
+
+/* 通用到此 */
+
+/* header */
+
+.header .container {
+    max-width: 1545px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4.375rem;
+    color: #F15A24;
+}
+
+.header .container .title>h1 {
+    margin: 0;
+    font-family: LiGothicMed;
+    font-size: 4.4375rem;
+    letter-spacing: 0.8431rem;
+}
+
+.header .container .title>div {
+    width: 100%;
+    font-family: LiGothicMed;
+    font-size: 2.125rem;
+    letter-spacing: 0.0444rem;
+    border: none;
+}
+
+.header .container .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .container .navbar>a {
+    font-size: 2.5rem;
+    letter-spacing: 0.0525rem;
+    text-decoration: none;
+    color: #F15A24;
+    margin-left: 1.5625rem;
+}
+
+.header .container .navbar>a:nth-child(2) {
+    margin-left: 1.5625rem;
+}
+
+/* header到此 */
+
+/* City Tour */
+
+.cityTour {
+    margin-top: 12.5rem;
+}
+
+.cityTour .banner {
+    width: 96.5625rem;
+    height: 46.25rem;
+    margin: 0 auto;
+    background-color: #666666;
+}
+
+/* City Tour到此 */
+
+/* Guided Service */
+
+.guidedService {
+    margin-top: 10.9375rem;
+}
+
+.guidedService .container {
+    max-width: 1545px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.guidedService .container .title>div:first-child {
+    letter-spacing: 0.4938rem;
+}
+
+.guidedService .container .title>div:nth-child(2) {
+    letter-spacing: 0.0369rem;
+}
+
+.guidedService .container .link {
+    margin: 1.25rem 0.4375rem 0 0;
+    align-self: flex-end;
+}
+
+.guidedService .container .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10.4375rem;
+}
+
+.guidedService .container .intro>div {
+    width: 14.375rem;
+    height: 29.6875rem;
+    background-color: #F7931E;
+    margin-right: 0.625rem;
+}
+
+.guidedService .container .intro>div:last-child {
+    margin: 0;
+}
+
+/* Guided Service到此 */
+
+/* Small Issue */
+
+.smallIssue {
+    margin-top: 5.8125rem;
+}
+
+.smallIssue .container {
+    max-width: 1545px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.smallIssue .container>div:first-child {
+    position: relative;
+}
+
+.smallIssue .container .swiperTable {
+    width: 57.5rem;
+    height: 92.8125rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#swiper1 {
+    background-color: #F15A24;
+}
+
+#swiper2 {
+    opacity: 0;
+    background-color: rgb(183, 201, 26);
+}
+
+#swiper3 {
+    opacity: 0;
+    background-color: rgb(31, 28, 194);
+}
+
+#swiper4 {
+    opacity: 0;
+    background-color: rgb(175, 56, 105);
+}
+
+.smallIssue .container .swiperTable .swiper-pagination {
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.smallIssue .container .swiperTable .swiper-pagination-bullet {
+    width: 1.75rem;
+    height: 1.75rem;
+    background: #CCCCCC;
+    margin: 0 0.3125rem;
+}
+
+.smallIssue .container .swiperTable .swiper-pagination-bullet-active {
+    background-color: #666666;
+}
+
+.smallIssue .container .title {
+    margin: 21.125rem 14rem 0 0;
+}
+
+.smallIssue .container .title>div:first-child {
+    letter-spacing: 0.1037rem;
+}
+
+.smallIssue .container .title>div:nth-child(2) {
+    letter-spacing: 0.4288rem;
+}
+
+.smallIssue .container #issueBtn {
+    width: 34.375rem;
+    height: 59.375rem;
+    background-color: #84807C;
+    margin-top: 1.625rem;
+}
+
+.smallIssue .container #issueBtn .swiper-pagination-bullets {
+    bottom: 1.875rem;
+}
+
+.smallIssue .container #issueBtn .swiper-pagination-bullet {
+    width: 1.75rem;
+    height: 1.75rem;
+    background: #CCCCCC;
+    margin: 0 0.3125rem;
+}
+
+.smallIssue .container #issueBtn .swiper-pagination-bullet-active {
+    background-color: #666666;
+}
+
+.smallIssue .container .link {
+    margin-top: 0.75rem;
+}
+
+/* Small Issue到此 */
+
+/* Photo Lightbox */
+
+.photoLightbox {
+    margin-top: 1.875rem;
+}
+
+.photoLightbox .container {
+    height: 56.25rem;
+    max-width: 1545px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.photoLightbox .container>a {
+    transition: all 0.8s;
+}
+
+.photoLightbox .container>a:hover {
+    transition: all 0.8s;
+    opacity: 1;
+    z-index: 4;
+}
+
+.photoLightbox .container>a>img {
+    width: 100%;
+    height: 100%;
+}
+
+.photoLightbox .container .img1 {
+    width: 55.9375rem;
+    height: 32.1875rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0.8;
+    z-index: 3;
+}
+
+.photoLightbox .container .img2 {
+    width: 44.6875rem;
+    height: 34.6875rem;
+    position: absolute;
+    top: 150px;
+    right: 450px;
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.photoLightbox .container .img3 {
+    width: 385px;
+    height: 300px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.photoLightbox .container .img4 {
+    width: 385px;
+    height: 300px;
+    position: absolute;
+    top: 450px;
+    left: 0;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.photoLightbox .container .img5 {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 240px;
+    opacity: 0.4;
+}
+
+/* Photo Lightbox到此 */
+
+/* video */
+
+video {
+    width: 100%;
+    margin-top: 5rem;
+}
+
+/* video到此 */
+
+/* Contact Us */
+
+.contactUs {
+    position: relative;
+    height: 960px;
+    overflow: hidden;
+}
+
+.contactUs .container {
+    max-width: 1545px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contactUs .container .intro {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #F15A24;
+    margin-top: 23.125rem;
+}
+
+.contactUs .container .intro .title {
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    font-size: 4.0625rem;
+    letter-spacing: 0.0856rem;
+    margin-top: 2.5rem;
+}
+
+.contactUs .container .intro div:last-child {
+    font-weight: bold;
+    font-size: 4.1875rem;
+    letter-spacing: 0.18rem;
+    margin-top: 2.8125rem;
+}
+
+.contactUs .contactBg {
+    position: absolute;
+    bottom: -400px;
+    right: 0;
+    width: 1075px;
+    height: 1075px;
+    border-radius: 50%;
+    background: #F7931E;
+}
+
+/* Contact Us到此 */
