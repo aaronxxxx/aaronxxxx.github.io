@@ -6,14 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>台中SlowMotion</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="taichungrwd.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:200,300,400,500,600,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-        crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script>
+        function placeholderPic() {
+            var w = document.documentElement.offsetWidth;
+            var s = Math.floor(w / 60);
+            document.documentElement.style.fontSize = s + 'px';
+        }
+        placeholderPic();
+        window.onresize = function () {
+            placeholderPic();
+        }
+    </script>
 </head>
 
 <body>
@@ -68,7 +77,6 @@
             </div>
         </div>
         <div class="logo"></div>
-        <div class="clearfix"></div>
         <div class="box">
             <h1>慢速台中
                 <hr><span>Taichung in Slow Motion</span></h1>
@@ -77,7 +85,7 @@
     <div id="window">
         <div id="main">
             <div class="home">
-                <div class="main-title" data-aos="fade-up"  data-aos-easing="linear" data-aos-duration="1500">舊城漫漫</div>
+                <div class="main-title" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">舊城漫漫</div>
                 <div class="line"></div>
                 <span class="text1">慢慢舊城<br>
                     漫步舊城</span>
@@ -87,16 +95,16 @@
                 <div class="city-img"></div>
             </div>
             <div class="nav-img"></div>
-            <div class="clearfix"></div>
         </div>
         <div id="history">
             <div class="container">
+                <div>
+                    <h1 data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">歲月穿梭
+                        <hr><span>History</span></h1>
+                    <p>台中中區是目前台灣都市中，少數仍保有老城中
+                        心與日治文化地景的城市，沿著火車站到臺灣大道的軸線，可以明顯看出老城中心之發展變化與不可取代文化記憶。</p>
+                </div>
                 <div class="map"></div>
-                <h1 data-aos="fade-up"  data-aos-easing="linear" data-aos-duration="1000">歲月穿梭
-                    <hr><span>History</span></h1>
-                <p>台中中區是目前台灣都市中，少數仍保有老城中
-                    心與日治文化地景的城市，沿著火車站到臺灣大道的軸線，可以明顯看出老城中心之發展變化與不可取代文化記憶。</p>
-                <div class="clearfix"></div>
             </div>
         </div>
         <div id="history2">
@@ -261,11 +269,10 @@
                 </div>
             </div>
             <div class="secition2" type="button"><a href="Introduction2.html">景點一覽</a></div>
-            <div class="clearfix"></div>
         </div>
         <div id="tourism">
             <div class="container">
-                <h1 data-aos="fade-up"  data-aos-easing="linear" data-aos-duration="1000">路線推薦
+                <h1 data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">路線推薦
                     <hr><span>Tourism</span></h1>
             </div>
             <div class="map-grounp">
@@ -377,16 +384,16 @@
                             文創潛力團體等。歡迎大家邀家人朋友踴躍參加。
                         </span>
                     </div>
-                    <div class="clearfix"></div>
+
                     <div class="map-href">
-                        <a href="https://www.facebook.com/seetaichungcity/" style="color:white; text-decoration:none">預約導覽</a>
+                        <a href="https://www.facebook.com/seetaichungcity/"
+                            style="color:white; text-decoration:none">預約導覽</a>
                     </div>
                     <p>第一廣場變成怎麼樣？台中舊城區有多少文創社團進駐？方圓1公里<br>
                         內有很多人文薈萃萬分精彩！</p>
                 </div>
                 <div class="map" id="map"></div>
             </div>
-            <div class="clearfix"></div>
         </div>
         <div id="tour-Service">
             <div id="tour-con" class="container">
@@ -395,15 +402,18 @@
                         <hr><span>Tour Service</span>
                     </h1>
                     <div class="box">
-                        <span>「看見台中城」</span>
-                        <div class="href">
-                            <a href="#"><i class="fas fa-envelope-square"></i></a>
-                            <a href="#"><i class="fab fa-facebook-square"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        <div>
+                            <span>「看見台中城」</span>
+                            <div class="href">
+                                <a href="#"><i class="fas fa-envelope-square"></i></a>
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
                         </div>
-                        <div class="clearfix"></div>
-                        <p>詹小姐 0931629772</p>
-                        <p>seetaichungcity@gmail.com </p>
+                        <div>
+                            <p>詹小姐 0931629772</p>
+                            <p>seetaichungcity@gmail.com </p>
+                        </div>
                     </div>
                 </div>
                 <div class="content">
@@ -416,13 +426,14 @@
                             供隱者們一份工作來源，更能幫助他們改變人生。</p>
                     </div>
                 </div>
-                <div class="clearfix"></div>
+
             </div>
         </div>
         <div id="description">
             <div class="container">
                 <div class="big-box1">
-                    <div class="icon1"  data-aos="flip-left" data-aos-easing="linear" data-aos-duration="800" data-aos-anchor-placement="center-bottom"></div>
+                    <div class="icon1" data-aos="flip-left" data-aos-easing="linear" data-aos-duration="800"
+                        data-aos-anchor-placement="center-bottom"></div>
                     <div class="boxA">
                         <h1>NT.250/位</h1>
                         <span>團體預約報名請留言預計日期跟時段，<br>工作人員將會跟您接洽。</span>
@@ -430,26 +441,26 @@
                     </div>
                 </div>
                 <div class="big-box2">
-                    <div class="icon2"  data-aos="flip-right" data-aos-easing="linear" data-aos-duration="800" data-aos-anchor-placement="center-bottom"></div>
+                    <div class="icon2" data-aos="flip-right" data-aos-easing="linear" data-aos-duration="800"
+                        data-aos-anchor-placement="center-bottom"></div>
                     <div class="boxB">
                         <h1>導覽說明</h1>
                         <span>平日三人出團，周末五人出團 接受團體預約<br>早上10:00至12:00 下午16:00至18:00<br>購票方式 網路售票系統 Line預約</span>
                     </div>
                 </div>
-                <div class="clearfix"></div>
             </div>
         </div>
-        <div>
-            <img id="footer-img" src="img/Group208.png"></img>
-            <div id="footer">
-                <div class="container">
-                    <div class="left-box">
-                        <h1>舊城漫漫</h1>
-                        <span>Taichung City<br>
-                            Tourism<br>
-                            Introduction.</span>
-                    </div>
-                    <div class="mid-box">
+        <img id="footer-img" src="img/Group208.png"></img>
+        <div id="footer">
+            <div class="container">
+                <div class="left-box">
+                    <h1>舊城漫漫</h1>
+                    <span>Taichung City<br>
+                        Tourism<br>
+                        Introduction.</span>
+                </div>
+                <div class="mid-box">
+                    <div>
                         <div class="text1">
                             <div></div>
                             <h1>導覽服務</h1><span>Tour Service</span>
@@ -458,7 +469,8 @@
                             <div></div>
                             <h1>路線推薦</h1><span>Tourism</span>
                         </div>
-                        <div class="clearfix"></div>
+                    </div>
+                    <div>
                         <div class="text3">
                             <div></div>
                             <h1>景點介紹</h1><span>Introduction</span>
@@ -468,24 +480,24 @@
                             <h1>歲月穿梭</h1><span>History</span>
                         </div>
                     </div>
-                    <div class="right-box">
-                        <h1>慢速台中
-                            <hr><span>Taichung</span></h1>
-                    </div>
+                </div>
+                <div class="right-box">
+                    <h1>慢速台中
+                        <hr><span>Taichung</span></h1>
                 </div>
             </div>
         </div>
     </div>
 
     <script src="js/jquery-min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/aos.js"></script>
     <script>
         AOS.init();
     </script>
     <script src="taichung.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEctB0JlLfeRvt-F420WliVMLq5VaWhYs"></script>
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEctB0JlLfeRvt-F420WliVMLq5VaWhYs"></script>
 
     <script type="text/javascript">
         // When the window has finished loading create our google map below
