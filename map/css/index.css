@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 16px;
-}
-
 header, section {
     display: block;
     width: 100%;
@@ -24,24 +20,24 @@ header, section {
 .title>div:first-child {
     font-family: 微軟正黑體;
     font-weight: bold;
-    font-size: 4.9375rem;
+    font-size: 2.25rem;
 }
 
 .title>div:nth-child(2) {
-    font-size: 3.375rem;
-    border-bottom: solid 5px #000;
+    font-size: 1.5625rem;
+    border-bottom: solid 0.1562rem #000;
 }
 
 .link {
     display: block;
-    width: 11.8125rem;
-    height: 3.25rem;
+    width: 5.9063rem;
+    height: 1.625rem;
     background-color: #000;
-    font-size: 1.875rem;
-    letter-spacing: 0.0394rem;
+    font-size: 0.9375rem;
+    letter-spacing: 0.0313rem;
     color: #F2F2F2;
     text-align: center;
-    line-height: 3.25rem;
+    line-height: 1.625rem;
     text-decoration: none;
 }
 
@@ -50,27 +46,26 @@ header, section {
 /* header */
 
 .header .container {
-    max-width: 1545px;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 4.375rem;
+    padding-top: 2.1875rem;
     color: #F15A24;
 }
 
 .header .container .title>h1 {
     margin: 0;
     font-family: LiGothicMed;
-    font-size: 4.4375rem;
-    letter-spacing: 0.8431rem;
+    font-size: 2.1875rem;
+    letter-spacing: 0.4063rem;
 }
 
 .header .container .title>div {
     width: 100%;
     font-family: LiGothicMed;
-    font-size: 2.125rem;
-    letter-spacing: 0.0444rem;
+    font-size: 1.0625rem;
     border: none;
 }
 
@@ -81,15 +76,15 @@ header, section {
 }
 
 .header .container .navbar>a {
-    font-size: 2.5rem;
-    letter-spacing: 0.0525rem;
+    font-size: 1.25rem;
+    letter-spacing: 0.0262rem;
     text-decoration: none;
     color: #F15A24;
-    margin-left: 1.5625rem;
+    margin-left: 0.7813rem;
 }
 
 .header .container .navbar>a:nth-child(2) {
-    margin-left: 1.5625rem;
+    margin-left: 0.7813rem;
 }
 
 /* header到此 */
@@ -97,12 +92,12 @@ header, section {
 /* City Tour */
 
 .cityTour {
-    margin-top: 12.5rem;
+    margin-top: 6.25rem;
 }
 
 .cityTour .banner {
-    width: 96.5625rem;
-    height: 46.25rem;
+    width: 48.2813rem;
+    height: 23.125rem;
     margin: 0 auto;
     background-color: #666666;
 }
@@ -112,11 +107,11 @@ header, section {
 /* Guided Service */
 
 .guidedService {
-    margin-top: 10.9375rem;
+    margin-top: 5.4688rem;
 }
 
 .guidedService .container {
-    max-width: 1545px;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -124,15 +119,16 @@ header, section {
 }
 
 .guidedService .container .title>div:first-child {
-    letter-spacing: 0.4938rem;
+    text-indent: 0.3125rem;
+    letter-spacing: 0.2344rem;
 }
 
 .guidedService .container .title>div:nth-child(2) {
-    letter-spacing: 0.0369rem;
+    letter-spacing: 0.0094rem;
 }
 
 .guidedService .container .link {
-    margin: 1.25rem 0.4375rem 0 0;
+    margin: 0.625rem 0.3437rem 0 0;
     align-self: flex-end;
 }
 
@@ -140,14 +136,14 @@ header, section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10.4375rem;
+    margin-top: 4.7813rem;
 }
 
 .guidedService .container .intro>div {
-    width: 14.375rem;
-    height: 29.6875rem;
+    width: 7.1875rem;
+    height: 14.8438rem;
     background-color: #F7931E;
-    margin-right: 0.625rem;
+    margin-right: 0.1562rem;
 }
 
 .guidedService .container .intro>div:last-child {
@@ -159,11 +155,11 @@ header, section {
 /* Small Issue */
 
 .smallIssue {
-    margin-top: 5.8125rem;
+    margin-top: 2.9063rem;
 }
 
 .smallIssue .container {
-    max-width: 1545px;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -171,12 +167,13 @@ header, section {
 }
 
 .smallIssue .container>div:first-child {
+    width: 100%;
     position: relative;
 }
 
 .smallIssue .container .swiperTable {
-    width: 57.5rem;
-    height: 92.8125rem;
+    width: 95.875%;
+    padding: 23.1875rem 0;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -204,16 +201,16 @@ header, section {
 }
 
 .smallIssue .container .swiperTable .swiper-pagination {
-    bottom: -70px;
+    bottom: -2.1875rem;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .smallIssue .container .swiperTable .swiper-pagination-bullet {
-    width: 1.75rem;
-    height: 1.75rem;
+    width: 0.875rem;
+    height: 0.875rem;
     background: #CCCCCC;
-    margin: 0 0.3125rem;
+    margin: 0 0.1562rem;
 }
 
 .smallIssue .container .swiperTable .swiper-pagination-bullet-active {
@@ -221,33 +218,33 @@ header, section {
 }
 
 .smallIssue .container .title {
-    margin: 21.125rem 14rem 0 0;
+    margin: 10.9688rem 7.25rem 0 0;
 }
 
 .smallIssue .container .title>div:first-child {
-    letter-spacing: 0.1037rem;
+    letter-spacing: 0.2344rem;
 }
 
 .smallIssue .container .title>div:nth-child(2) {
-    letter-spacing: 0.4288rem;
+    letter-spacing: 0.2125rem;
 }
 
 .smallIssue .container #issueBtn {
-    width: 34.375rem;
-    height: 59.375rem;
+    width: 17.1875rem;
+    height: 29.6875rem;
     background-color: #84807C;
-    margin-top: 1.625rem;
+    margin-top: 0.8125rem;
 }
 
 .smallIssue .container #issueBtn .swiper-pagination-bullets {
-    bottom: 1.875rem;
+    bottom: 0.9375rem;
 }
 
 .smallIssue .container #issueBtn .swiper-pagination-bullet {
-    width: 1.75rem;
-    height: 1.75rem;
+    width: 0.875rem;
+    height: 0.875rem;
     background: #CCCCCC;
-    margin: 0 0.3125rem;
+    margin: 0 0.1562rem;
 }
 
 .smallIssue .container #issueBtn .swiper-pagination-bullet-active {
@@ -255,7 +252,7 @@ header, section {
 }
 
 .smallIssue .container .link {
-    margin-top: 0.75rem;
+    margin-top: 0.375rem;
 }
 
 /* Small Issue到此 */
@@ -263,12 +260,12 @@ header, section {
 /* Photo Lightbox */
 
 .photoLightbox {
-    margin-top: 1.875rem;
+    margin-top: 0.9375rem;
 }
 
 .photoLightbox .container {
-    height: 56.25rem;
-    max-width: 1545px;
+    height: 28.125rem;
+    width: 80%;
     margin: 0 auto;
     position: relative;
 }
@@ -289,8 +286,8 @@ header, section {
 }
 
 .photoLightbox .container .img1 {
-    width: 55.9375rem;
-    height: 32.1875rem;
+    width: 27.9688rem;
+    height: 16.0937rem;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -299,41 +296,41 @@ header, section {
 }
 
 .photoLightbox .container .img2 {
-    width: 44.6875rem;
-    height: 34.6875rem;
+    width: 22.3438rem;
+    height: 17.3438rem;
     position: absolute;
-    top: 150px;
-    right: 450px;
+    top: 4.6875rem;
+    right: 14.0625rem;
     opacity: 0.8;
     z-index: 2;
 }
 
 .photoLightbox .container .img3 {
-    width: 385px;
-    height: 300px;
+    width: 12.0313rem;
+    height: 9.375rem;
     position: absolute;
-    top: 100px;
+    top: 3.125rem;
     left: 0;
     opacity: 0.6;
     z-index: 1;
 }
 
 .photoLightbox .container .img4 {
-    width: 385px;
-    height: 300px;
+    width: 12.0313rem;
+    height: 9.375rem;
     position: absolute;
-    top: 450px;
+    top: 14.0625rem;
     left: 0;
     opacity: 0.6;
     z-index: 1;
 }
 
 .photoLightbox .container .img5 {
-    width: 400px;
-    height: 300px;
+    width: 12.5rem;
+    height: 9.375rem;
     position: absolute;
     bottom: 0;
-    left: 240px;
+    left: 7.5rem;
     opacity: 0.4;
 }
 
@@ -343,7 +340,7 @@ header, section {
 
 video {
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 2.5rem;
 }
 
 /* video到此 */
@@ -352,12 +349,12 @@ video {
 
 .contactUs {
     position: relative;
-    height: 960px;
+    height: 30rem;
     overflow: hidden;
 }
 
 .contactUs .container {
-    max-width: 1545px;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: flex-start;
@@ -370,30 +367,30 @@ video {
     justify-content: center;
     align-items: flex-start;
     color: #F15A24;
-    margin-top: 23.125rem;
+    margin-top: 11.5625rem;
 }
 
 .contactUs .container .intro .title {
     font-family: 微軟正黑體;
     font-weight: bold;
-    font-size: 4.0625rem;
-    letter-spacing: 0.0856rem;
-    margin-top: 2.5rem;
+    font-size: 2.0312rem;
+    letter-spacing: 0.0428rem;
+    margin-top: 1.25rem;
 }
 
 .contactUs .container .intro div:last-child {
     font-weight: bold;
-    font-size: 4.1875rem;
-    letter-spacing: 0.18rem;
-    margin-top: 2.8125rem;
+    font-size: 2.0312rem;
+    letter-spacing: 0.09rem;
+    margin-top: 1.4063rem;
 }
 
 .contactUs .contactBg {
     position: absolute;
-    bottom: -400px;
+    bottom: -12.5rem;
     right: 0;
-    width: 1075px;
-    height: 1075px;
+    width: 33.5938rem;
+    height: 33.5938rem;
     border-radius: 50%;
     background: #F7931E;
 }
