@@ -15,8 +15,16 @@
     <script>
         function placeholderPic() {
             var w = document.documentElement.offsetWidth;
-            var s = Math.floor(w / 60);
-            document.documentElement.style.fontSize = s + 'px';
+            var c = Math.floor(w / 60);
+            var p = Math.floor(w / 35);
+            var m = Math.floor(w / 25);
+            if (w > 1025) {
+                document.documentElement.style.fontSize = c + 'px';
+            } else if (w <= 1024 && w > 576) {
+                document.documentElement.style.fontSize = p + 'px';
+            } else if (w <= 576) {
+                document.documentElement.style.fontSize = m + 'px';
+            }
         }
         placeholderPic();
         window.onresize = function () {
@@ -26,21 +34,21 @@
 </head>
 
 <body>
-    <div id="mb-menubtn">
-        <div id="mb-hamburger">
+    <div class="mb_menuBtn">
+        <div id="mb_hamburger" class="mb_hamburger">
             <span></span>
             <span></span>
             <span></span>
         </div>
-        <div id="mb-cross">
+        <div id="mb_cross">
             <span></span>
             <span></span>
         </div>
     </div>
-    <div id="nav">
-        <span class="nav-title">TAICHUNG<span>CITY</span><span>TOURISM</span></span>
-        <div id="menubtn">
-            <div id="hamburger">
+    <div class="nav">
+        <span class="navTitle">TAICHUNG<span>CITY</span><span>TOURISM</span></span>
+        <div class="menuBtn">
+            <div id="hamburger" class="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -51,14 +59,14 @@
             </div>
         </div>
     </div>
-    <div id="nav-inner">
-        <div class="big-box">
+    <div class="navInner">
+        <div class="bigBox">
             <h1>舊城漫漫</h1>
             <span>Taichung City<br>
                 Tourism<br>
                 Introduction.</span>
         </div>
-        <div class="inner-title">
+        <div class="innerTitle">
             <div class="text">
                 <hr>
                 <a id="tou2" href="#tour-Service">導覽服務</a><span>Tour Service</span>
@@ -82,24 +90,25 @@
                 <hr><span>Taichung in Slow Motion</span></h1>
         </div>
     </div>
-    <div id="window">
-        <div id="main">
+    <div class="window">
+        <div class="main">
             <div class="home">
-                <div class="main-title" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">舊城漫漫</div>
+                <div class="mainTitle" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">舊城漫漫</div>
                 <div class="line"></div>
                 <span class="text1">慢慢舊城<br>
                     漫步舊城</span>
                 <span class="text2">Taichung City<br>
                     Tourism<br>
                     Introduction.</span>
-                <div class="city-img"></div>
+                <div class="cityImg"></div>
             </div>
-            <div class="nav-img"></div>
+            <div class="navImg"></div>
         </div>
-        <div id="history">
+        <div id="history" class="history">
             <div class="container">
                 <div>
-                    <h1 data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">歲月穿梭
+                    <h1 data-aos="fade-up" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom"
+                        data-aos-duration="1500">歲月穿梭
                         <hr><span>History</span></h1>
                     <p>台中中區是目前台灣都市中，少數仍保有老城中
                         心與日治文化地景的城市，沿著火車站到臺灣大道的軸線，可以明顯看出老城中心之發展變化與不可取代文化記憶。</p>
@@ -107,27 +116,27 @@
                 <div class="map"></div>
             </div>
         </div>
-        <div id="history2">
+        <div class="history2">
             <div class="container">
-                <div id="history-btn" class="secition1" type="button"><a href="#history-inner">歷史介紹</a></div>
+                <button id="historyBtn" class="secition1 button"><a href="#historyInner">歷史介紹</a></button>
             </div>
             <div class="historyani">
-                <div id="line"></div>
-                <div id="circle"></div>
-                <div id="circle2"></div>
+                <div class="line"></div>
+                <div class="circle"></div>
+                <div class="circle2"></div>
             </div>
-            <div id="history-inner">
+            <div id="historyInner" class="historyInner">
                 <div class="slides">
                     <div id="scroll" class="swiper-container">
                         <div class="swiper-wrapper">
-                            <div id="scroll-swiper1" class="swiper-slide swiper-no-swiping">
+                            <div class="swiper-slide swiper-no-swiping scrollSwiper1">
                                 <h1>1764</h1>
                                 <h5>「大墩 」</h5>
                                 <span>臺中市中區舊稱為「大墩街」，早在清乾隆末年<br>
                                     聚落已逐漸形成街肆，從此大墩街日漸繁榮。</span>
                                 <div></div>
                             </div>
-                            <div id="scroll-swiper2" class="swiper-slide swiper-no-swiping">
+                            <div class="swiper-slide swiper-no-swiping scrollSwiper2">
                                 <div></div>
                                 <h5>「市井」</h5>
                                 <h1>1874</h1>
@@ -138,7 +147,7 @@
                                     、蔬菜、鮮魚的露天市場和墓地等。在這三條主要街道<br>
                                     的西側有舊街和窄巷，形成交錯的巷道網。 </span>
                             </div>
-                            <div id="scroll-swiper3" class="swiper-slide swiper-no-swiping">
+                            <div class="swiper-slide swiper-no-swiping scrollSwiper3">
                                 <div></div>
                                 <h1>1903</h1>
                                 <span>日人在台中實施市區改正計畫，開闢斜貫大墩下街之舊<br>
@@ -148,12 +157,12 @@
                                     及公園路至民權路之地區為商業區，商業日益鼎盛。</span>
                                 <h5>「改正」</h5>
                             </div>
-                            <div id="scroll-swiper4" class="swiper-slide swiper-no-swiping">
+                            <div class="swiper-slide swiper-no-swiping scrollSwiper4">
                                 <div class="img1"></div>
                                 <div class="img2"></div>
                                 <div class="img3"></div>
                             </div>
-                            <div id="scroll-swiper5" class="swiper-slide swiper-no-swiping">
+                            <div class="swiper-slide swiper-no-swiping scrollSwiper5">
                                 <h1>1945</h1>
                                 <h5>「更迭 」</h5>
                                 <span>而光復後因大批隨著國民政府來台的人口，都市人口快<br>
@@ -164,13 +173,12 @@
                                     之眾多。同時光復後國民黨政府接手行啟紀念館作為憲<br>
                                     兵隊用地，1961年拆除紀念館並改建成綜合大樓。
                                 </span>
-                                <div></div>
                             </div>
-                            <div id="scroll-swiper6" class="swiper-slide swiper-no-swiping">
+                            <div class="swiper-slide swiper-no-swiping scrollSwiper6">
                                 <div class="img1"></div>
                                 <div class="img2"></div>
                             </div>
-                            <div id="scroll-swiper7" class="swiper-slide swiper-no-swiping">
+                            <div class="swiper-slide swiper-no-swiping scrollSwiper7">
                                 <h5>「成形 」</h5>
                                 <h1>1980</h1>
                                 <span>由於百貨公司沿著台中港路(今臺灣大道)往屯區發展，<br>
@@ -188,9 +196,8 @@
                                     以及繼光商圈後來崛起的東南亞異國美食。
                                 </p>
                             </div>
-                            <div id="scroll-swiper8" class="swiper-slide swiper-no-swiping">
-                                <div class="img">
-                                </div>
+                            <div class="swiper-slide swiper-no-swiping scrollSwiper8">
+                                <div class="img"></div>
                                 <h1>現今</h1>
                                 <span>台中市中區是目前台灣都市中，少數仍保有老城中心與<br>
                                     日治文化地景的城市，沿著火車站到臺灣大道的軸線，<br>
@@ -205,18 +212,20 @@
             </div>
         </div>
         <div class="space"></div>
-        <div id="introduction">
+        <div id="introduction" class="introduction">
             <div class="container">
-                <h1 class="pc-title">
+                <h1 class="pcTitle">
                     <div></div><span>Introduction</span><br>景點介紹
                 </h1>
-                <h1 class="mb-title">
-                    景點介紹<div></div><span>Introduction</span>
+                <h1 class="mbTitle" data-aos="fade-up" data-aos-easing="linear"
+                    data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500">
+                    景點介紹
+                    <hr><span>Introduction</span>
                 </h1>
                 <span class="text">青山依舊在，幾度夕陽紅。慣看<br>秋月春風。一壺濁酒喜相逢，浪</span>
             </div>
-            <div id="slides">
-                <div id="swiper">
+            <div class="slides">
+                <div class="swiper">
                     <div id="ture" class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide line1pic1"></div>
@@ -233,7 +242,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="swiper">
+                <div class="swiper">
                     <div id="reverse" class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide line2pic1"></div>
@@ -250,7 +259,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="swiper">
+                <div class="swiper">
                     <div id="ture2" class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide line3pic1"></div>
@@ -268,28 +277,29 @@
                     </div>
                 </div>
             </div>
-            <div class="secition2" type="button"><a href="Introduction2.html">景點一覽</a></div>
+            <button class="secition2 button"><a href="Introduction2.html">景點一覽</a></button>
         </div>
-        <div id="tourism">
+        <div id="tourism" class="tourism">
             <div class="container">
-                <h1 data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">路線推薦
+                <h1 data-aos="fade-up" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom"
+                    data-aos-duration="1500">路線推薦
                     <hr><span>Tourism</span></h1>
             </div>
-            <div class="map-grounp">
+            <div class="mapGrounp">
                 <div class="container">
-                    <div class="mapbtn">
-                        <div id="mapswiper" class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide mapslide1" type="button">散步觀光地圖</div>
-                                <div class="swiper-slide mapslide2" type="button">鈴蘭通深度旅行</div>
-                                <div class="swiper-slide mapslide3" type="button">美軍大兵寫真映像</div>
-                                <div class="swiper-slide mapslide4" type="button">千越大樓華麗轉身</div>
-                                <div class="swiper-slide mapslide5" type="button">人生交易所</div>
-                                <div class="swiper-slide mapslide6" type="button">親親時光印記</div>
-                            </div>
+                    <div class="mapBtn">
+                        <div id="mapSwiper" class="swiper-container mapSwiper">
+                            <ul class="swiper-wrapper buttonGroup">
+                                <li class="swiper-slide mapslide1"><button class="button">散步觀光地圖</button></li>
+                                <li class="swiper-slide mapslide2"><button class="button">鈴蘭通深度旅行</button></li>
+                                <li class="swiper-slide mapslide3"><button class="button">美軍大兵寫真映像</button></li>
+                                <li class="swiper-slide mapslide4"><button class="button">千越大樓華麗轉身</button></li>
+                                <li class="swiper-slide mapslide5"><button class="button">人生交易所</button></li>
+                                <li class="swiper-slide mapslide6"><button class="button">親親時光印記</button></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="map-img1">
+                    <div class="mapImg1">
                         <div class="map1pic1"></div>
                         <div class="map1pic2"></div>
                         <div class="map1pic3"></div>
@@ -304,7 +314,7 @@
                             文創潛力團體等。歡迎大家邀家人朋友踴躍參加。
                         </span>
                     </div>
-                    <div class="map-img2">
+                    <div class="mapImg2">
                         <div class="map2pic1"></div>
                         <div class="map2pic2"></div>
                         <div class="map2pic3"></div>
@@ -320,7 +330,7 @@
                             文創潛力團體等。歡迎大家邀家人朋友踴躍參加。
                         </span>
                     </div>
-                    <div class="map-img3">
+                    <div class="mapImg3">
                         <div class="map3pic1"></div>
                         <div class="map3pic2"></div>
                         <div class="map3pic3"></div>
@@ -339,7 +349,7 @@
                             文創潛力團體等。歡迎大家邀家人朋友踴躍參加。
                         </span>
                     </div>
-                    <div class="map-img4">
+                    <div class="mapImg4">
                         <div class="map4pic1"></div>
                         <div class="map4pic2"></div>
                         <div class="map4pic3"></div>
@@ -354,7 +364,7 @@
                             文創潛力團體等。歡迎大家邀家人朋友踴躍參加。
                         </span>
                     </div>
-                    <div class="map-img5">
+                    <div class="mapImg5">
                         <div class="map5pic1"></div>
                         <div class="map5pic2"></div>
                         <div class="map5pic3"></div>
@@ -369,7 +379,7 @@
                             文創潛力團體等。歡迎大家邀家人朋友踴躍參加。
                         </span>
                     </div>
-                    <div class="map-img6">
+                    <div class="mapImg6">
                         <div class="map6pic1"></div>
                         <div class="map6pic2"></div>
                         <div class="map6pic3"></div>
@@ -384,8 +394,7 @@
                             文創潛力團體等。歡迎大家邀家人朋友踴躍參加。
                         </span>
                     </div>
-
-                    <div class="map-href">
+                    <div class="mapHref">
                         <a href="https://www.facebook.com/seetaichungcity/"
                             style="color:white; text-decoration:none">預約導覽</a>
                     </div>
@@ -395,10 +404,11 @@
                 <div class="map" id="map"></div>
             </div>
         </div>
-        <div id="tour-Service">
-            <div id="tour-con" class="container">
-                <div class="big-box">
-                    <h1>導覽服務
+        <div id="tourService" class="tourService">
+            <div id="tourCon" class="container">
+                <div class="bigBox">
+                    <h1 data-aos="fade-up" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom"
+                        data-aos-duration="1500">導覽服務
                         <hr><span>Tour Service</span>
                     </h1>
                     <div class="box">
@@ -426,12 +436,11 @@
                             供隱者們一份工作來源，更能幫助他們改變人生。</p>
                     </div>
                 </div>
-
             </div>
         </div>
-        <div id="description">
+        <div id="description" class="description">
             <div class="container">
-                <div class="big-box1">
+                <div class="bigBox1">
                     <div class="icon1" data-aos="flip-left" data-aos-easing="linear" data-aos-duration="800"
                         data-aos-anchor-placement="center-bottom"></div>
                     <div class="boxA">
@@ -440,48 +449,46 @@
                         <p>親親時光印記為$360元/位</p>
                     </div>
                 </div>
-                <div class="big-box2">
+                <div class="bigBox2">
                     <div class="icon2" data-aos="flip-right" data-aos-easing="linear" data-aos-duration="800"
                         data-aos-anchor-placement="center-bottom"></div>
                     <div class="boxB">
                         <h1>導覽說明</h1>
-                        <span>平日三人出團，周末五人出團 接受團體預約<br>早上10:00至12:00 下午16:00至18:00<br>購票方式 網路售票系統 Line預約</span>
+                        <span>平日三人出團，周末五人出團，接受團體預約<br>早上10:00至12:00 下午16:00至18:00<br>購票方式 網路售票系統 Line預約</span>
                     </div>
                 </div>
             </div>
         </div>
-        <img id="footer-img" src="img/Group208.png"></img>
-        <div id="footer">
+        <img class="footerImg" src="img/Group208.png"></img>
+        <div id="footer" class="footer">
             <div class="container">
-                <div class="left-box">
-                    <h1>舊城漫漫</h1>
-                    <span>Taichung City<br>
-                        Tourism<br>
-                        Introduction.</span>
+                <div class="leftBox">
+                    <h1 data-aos="fade-up" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom"
+                        data-aos-duration="500">舊城漫漫</h1>
                 </div>
-                <div class="mid-box">
+                <div class="midBox">
                     <div>
-                        <div class="text1">
+                        <a id="tou2" href="#tourService" class="text1">
                             <div></div>
                             <h1>導覽服務</h1><span>Tour Service</span>
-                        </div>
-                        <div class="text2">
+                        </a>
+                        <a id="tou" href="#tourism" class="text2">
                             <div></div>
                             <h1>路線推薦</h1><span>Tourism</span>
-                        </div>
+                        </a>
                     </div>
                     <div>
-                        <div class="text3">
+                        <a id="int" href="#introduction" class="text3">
                             <div></div>
                             <h1>景點介紹</h1><span>Introduction</span>
-                        </div>
-                        <div class="text4">
+                        </a>
+                        <a id="his" href="#history" class="text4">
                             <div></div>
                             <h1>歲月穿梭</h1><span>History</span>
-                        </div>
+                        </a>
                     </div>
                 </div>
-                <div class="right-box">
+                <div class="rightBox">
                     <h1>慢速台中
                         <hr><span>Taichung</span></h1>
                 </div>

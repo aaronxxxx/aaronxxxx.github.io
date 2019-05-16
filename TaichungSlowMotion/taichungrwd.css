@@ -1,3 +1,5 @@
+/* 通用 */
+
 * {
     box-sizing: border-box;
     font-family: 'Noto Serif TC', serif;
@@ -13,25 +15,162 @@ body {
     background-image: url("img/BG2081.png");
 }
 
-.container {
-    width: 80%;
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
-#window {
-    position: relative;
-    margin-left: 1.875rem;
-    width: calc(100% - 1.875rem);
-    overflow: hidden;
+button {
+    outline: none;
 }
 
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
 }
 
-#nav {
-    height: 100vh;
+.container {
+    width: 80%;
+    max-width: 61.856%;
+    margin: 0 auto;
+}
+
+.button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+.button {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    padding: 0.1875rem 0.625rem;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid #bbb;
+    overflow: visible;
+    font: bold 0.4063rem arial, helvetica, sans-serif;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #555;
+    background-color: #ddd;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0)));
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    -webkit-transition: background-color .2s ease-out;
+    -moz-transition: background-color .2s ease-out;
+    -ms-transition: background-color .2s ease-out;
+    -o-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    background-clip: padding-box;
+    -moz-border-radius: 0.0938rem;
+    -webkit-border-radius: 0.0938rem;
+    border-radius: 0.0938rem;
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .9);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.button:hover {
+    background-color: #eee;
+    color: #555;
+}
+
+.button:active {
+    background: #e9e9e9;
+    position: relative;
+    top: 0.0313rem;
+    text-shadow: none;
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+}
+
+.button[disabled], .button[disabled]:hover, .button[disabled]:active {
+    border-color: #eaeaea;
+    background: #fafafa;
+    cursor: default;
+    position: static;
+    color: #999;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.buttonGroup, .buttonGroup li {
+    display: flex;
+    zoom: 1;
+}
+
+.buttonGroup {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.buttonGroup li {
+    margin-right: -0.0313rem;
+}
+
+.buttonGroup .button {
+    width: 100%;
+    font-size: 0.75rem;
+    text-align: center;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.buttonGroup .button:active {
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 5px 0 5px -3px rgba(0, 0, 0, .2) inset, -5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 5px 0 5px -3px rgba(0, 0, 0, .2) inset, -5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 5px 0 5px -3px rgba(0, 0, 0, .2) inset, -5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+}
+
+.buttonGroup li:first-child .button {
+    -moz-border-radius: 0.0938rem 0 0 0.0938rem;
+    -webkit-border-radius: 0.0938rem 0 0 0.0938rem;
+    border-radius: 0.0938rem 0 0 0.0938rem;
+}
+
+.buttonGroup li:first-child .button:active {
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, -5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, -5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, -5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+}
+
+.buttonGroup li:last-child .button {
+    -moz-border-radius: 0 0.0938rem 0.0938rem 0;
+    -webkit-border-radius: 0 0.0938rem 0.0938rem 0;
+    border-radius: 0 0.0938rem 0.0938rem 0;
+}
+
+.buttonGroup li:last-child .button:active {
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+}
+
+/* 通用到此 */
+
+/* 主頁 */
+
+.window {
+    position: relative;
+    margin-left: 1.875rem;
+    width: calc(100% - 1.875rem);
+    overflow: hidden;
+}
+
+/* 側欄 */
+
+.nav {
+    height: 100%;
     width: 1.875rem;
     background-color: #423F4B;
     position: fixed;
@@ -39,21 +178,22 @@ a:link, a:visited, a:hover, a:active {
     z-index: 52;
 }
 
-#nav .nav-title {
+.nav .navTitle {
     writing-mode: vertical-lr;
     position: absolute;
-    top: 4.625rem;
-    left: 0.625rem;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 0.375rem;
     letter-spacing: 0.0625rem;
     color: white;
 }
 
-#nav .nav-title span {
+.nav .navTitle span {
     padding-top: 0.25rem;
 }
 
-#menubtn {
+.nav .menuBtn {
     position: relative;
     top: 50%;
     left: 50%;
@@ -67,12 +207,12 @@ a:link, a:visited, a:hover, a:active {
     z-index: 53;
 }
 
-#hamburger {
+.nav .menuBtn .hamburger {
     width: 0.7813rem;
     cursor: pointer;
 }
 
-#hamburger span {
+.nav .menuBtn .hamburger span {
     display: block;
     width: 100%;
     height: 0.125rem;
@@ -83,60 +223,68 @@ a:link, a:visited, a:hover, a:active {
     transition: all 0.3s ease-in-out;
 }
 
-#hamburger.active span:nth-child(1) {
+.nav .menuBtn .hamburger.active span:nth-child(1) {
     transform: translateY(0.375rem) rotate(45deg);
 }
 
-#hamburger.active span:nth-child(2) {
+.nav .menuBtn .hamburger.active span:nth-child(2) {
     opacity: 0;
 }
 
-#hamburger.active span:nth-child(3) {
+.nav .menuBtn .hamburger.active span:nth-child(3) {
     transform: translateY(-0.375rem) rotate(-45deg);
 }
 
-#mb-menubtn {
-    position: relative;
+/* 側欄到此 */
+
+/* 手機板側欄 */
+
+.mb_menuBtn {
+    position: fixed;
+    top: 0.625rem;
+    left: 0.625rem;
     display: none;
     justify-content: center;
     align-items: center;
-    float: left;
-    margin: 0 1%;
     overflow: hidden;
     z-index: 53;
 }
 
-#mb-hamburger {
+.mb_menuBtn .mb_hamburger {
     width: 1.0938rem;
     cursor: pointer;
 }
 
-#mb-hamburger span {
+.mb_menuBtn .mb_hamburger span {
     display: block;
     width: 100%;
     height: 0.125rem;
     border-radius: 0.125rem;
-    background-color: #fff;
+    background-color: #1a1a1a;
     margin-bottom: 0.25rem;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
-#mb-hamburger.active span:nth-child(1) {
+.mb_menuBtn .mb_hamburger.active span:nth-child(1) {
     transform: translateY(0.375rem) rotate(45deg);
 }
 
-#mb-hamburger.active span:nth-child(2) {
+.mb_menuBtn .mb_hamburger.active span:nth-child(2) {
     opacity: 0;
 }
 
-#mb-hamburger.active span:nth-child(3) {
+.mb_menuBtn .mb_hamburger.active span:nth-child(3) {
     transform: translateY(-0.375rem) rotate(-45deg);
 }
 
-#nav-inner {
+/* 手機板側欄到此 */
+
+/* 側欄內頁 */
+
+.navInner {
     width: calc(100% - 1.875rem);
-    height: 100vh;
+    height: 100%;
     background: url("img/backgroup.png") no-repeat center center;
     background-size: cover;
     color: white;
@@ -147,29 +295,29 @@ a:link, a:visited, a:hover, a:active {
     padding: 2.8125rem 4.375rem;
 }
 
-#nav-inner.show {
+.navInner.show {
     left: 1.875rem;
     transition: cubic-bezier(0.34, 0.08, 0.44, 0.82) 1.5s;
 }
 
-#nav-inner .big-box {
+.navInner .bigBox {
     float: left;
 }
 
-#nav-inner .big-box h1 {
+.navInner .bigBox>h1 {
     font-size: 1.375rem;
     font-weight: bold;
     margin-bottom: 0.7813rem;
     letter-spacing: 0.4375rem;
 }
 
-#nav-inner .big-box span {
+.navInner .bigBox>span {
     font-size: 0.375rem;
     font-weight: 500;
     line-height: 0.75rem;
 }
 
-#nav-inner .inner-title {
+.navInner .innerTitle {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -177,21 +325,21 @@ a:link, a:visited, a:hover, a:active {
     display: flex;
 }
 
-#nav-inner .inner-title .text {
+.navInner .innerTitle .text {
     writing-mode: vertical-rl;
     text-align: center;
     display: flex;
     margin: 0 0.8125rem;
 }
 
-#nav-inner .inner-title .text hr {
+.navInner .innerTitle .text>hr {
     width: 0.625rem;
     border: 1px solid white;
     margin: 0 0.4688rem;
     margin-bottom: 1.1563rem;
 }
 
-#nav-inner .inner-title .text a {
+.navInner .innerTitle .text>a {
     color: white;
     text-decoration: none;
     margin: 0;
@@ -201,14 +349,14 @@ a:link, a:visited, a:hover, a:active {
     letter-spacing: 0.6563rem;
 }
 
-#nav-inner .inner-title .text span {
+.navInner .innerTitle .text>span {
     font-size: 0.625rem;
     font-weight: 500;
     line-height: 1.5rem;
     letter-spacing: 0.0313rem;
 }
 
-#nav-inner .logo {
+.navInner .logo {
     width: 3.125rem;
     height: 3.125rem;
     border-radius: 50%;
@@ -217,7 +365,7 @@ a:link, a:visited, a:hover, a:active {
     float: right;
 }
 
-#nav-inner .box {
+.navInner .box {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -226,29 +374,29 @@ a:link, a:visited, a:hover, a:active {
     margin-bottom: 2.25rem;
 }
 
-#nav-inner .box h1 {
+.navInner .box>h1 {
     margin: 0;
     font-size: 0.4688rem;
     font-weight: 600;
     letter-spacing: 0.3125rem;
 }
 
-#nav-inner .box hr {
+.navInner .box>h1>hr {
     width: 2.8125rem;
     border: 1px solid white;
 }
 
-#nav-inner .box span {
+.navInner .box>h1>span {
     font-size: 0.1875rem;
     font-weight: 500;
     letter-spacing: 0rem;
 }
 
-#main .home {
-    height: 100vh;
-}
+/* 側欄內頁到此 */
 
-#main .home .main-title {
+/* 首頁 */
+
+.main .home .mainTitle {
     font-size: 3.0938rem;
     font-weight: 500;
     letter-spacing: 0.9375rem;
@@ -257,7 +405,7 @@ a:link, a:visited, a:hover, a:active {
     top: 5.4375rem;
 }
 
-#main .home .line {
+.main .home .line {
     height: 6.4063rem;
     border-left: 3px solid black;
     position: absolute;
@@ -265,7 +413,7 @@ a:link, a:visited, a:hover, a:active {
     top: 6.5625rem;
 }
 
-#main .home .text1 {
+.main .home .text1 {
     font-size: 0.5rem;
     font-weight: 500;
     letter-spacing: 0.0938rem;
@@ -275,7 +423,7 @@ a:link, a:visited, a:hover, a:active {
     top: 6.3438rem;
 }
 
-#main .home .text2 {
+.main .home .text2 {
     font-size: 0.4375rem;
     line-height: 0.9063rem;
     position: absolute;
@@ -283,45 +431,36 @@ a:link, a:visited, a:hover, a:active {
     top: 11.625rem;
 }
 
-#main .home .city-img {
+.main .home .cityImg {
     width: 4.0313rem;
     height: 4.0313rem;
-    background-image: url("img/Path188.png");
+    background: url("img/Path188.png") no-repeat center center;
+    background-size: contain;
     border-radius: 50%;
     position: absolute;
     right: 12rem;
     top: 11.625rem;
 }
 
-#main .nav-img {
+.main .navImg {
     width: 47.5rem;
     height: 18.75rem;
-    position: absolute;
-    left: 0rem;
-    top: 18.75rem;
     background: url("img/Group114.png") no-repeat center center;
+    margin-top: 18.75rem;
 }
 
-#history .container {
-    padding-top: 9.375rem;
+/* 首頁到此 */
+
+/* 歷史 */
+
+.history .container {
+    padding-top: 3.125rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#history .container p {
-    max-width: 13.125rem;
-}
-
-#history .map {
-    width: 21.875rem;
-    height: 23.4375rem;
-    background: url("img/map2.png") no-repeat center center;
-    background-size: contain;
-    z-index: -1;
-}
-
-#history h1 {
+.history .container>div>h1 {
     font-size: 1.75rem;
     letter-spacing: 0.1875rem;
     font-weight: 600;
@@ -329,7 +468,7 @@ a:link, a:visited, a:hover, a:active {
     margin-top: 10rem;
 }
 
-#history h1 hr {
+.history .container>div>h1>hr {
     margin: 0;
     border: 2px solid black;
     width: 7.1875rem;
@@ -337,59 +476,61 @@ a:link, a:visited, a:hover, a:active {
     margin-bottom: 0.1563rem;
 }
 
-#history h1 span {
+.history .container>div>h1>span {
     letter-spacing: 0.1563rem;
 }
 
-#history p {
+.history .container>div>p {
     font-size: 0.5625rem;
     padding-top: 1.7813rem;
     line-height: 1.1563rem;
     letter-spacing: 0.0625rem;
+    max-width: 13.125rem;
     margin: 0;
     text-align: justify;
 }
 
-#history2 {
+.history .container .map {
+    width: 21.875rem;
+    height: 23.4375rem;
+    background: url("img/map2.png") no-repeat center center;
+    background-size: contain;
+    z-index: -1;
+}
+
+/* 歷史到此 */
+
+/* 歷史內頁 */
+
+.history2 {
     position: relative;
 }
 
-#history2 .secition1 {
+.history2 .container .secition1 {
     width: 7.125rem;
-    height: 1.5rem;
-    border: 1.5px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#history2 .secition1 a {
+.history2 .container .secition1>a {
     color: black;
     text-decoration: none;
     font-size: 0.75rem;
     letter-spacing: 0.25rem;
 }
 
-.space {
-    display: none;
-}
-
-.space.show {
-    height: 80vh;
-    display: block;
-}
-
-.historyani {
+.history2 .historyani {
     opacity: 1;
 }
 
-.historyani.show {
+.history2 .historyani.show {
     opacity: 0;
     transition-delay: 16s;
     transition: 3s;
 }
 
-#history2 #line {
+.history2 .historyani .line {
     height: 0rem;
     border-left: 1px solid black;
     display: none;
@@ -401,7 +542,7 @@ a:link, a:visited, a:hover, a:active {
     animation-duration: 2s;
 }
 
-#history2 #circle {
+.history2 .historyani .circle {
     width: 0.75rem;
     height: 0.75rem;
     border-radius: 50%;
@@ -415,7 +556,7 @@ a:link, a:visited, a:hover, a:active {
     animation-duration: 2s;
 }
 
-#history2 #circle2 {
+.history2 .historyani .circle2 {
     width: 0.75rem;
     height: 0.75rem;
     border-radius: 50%;
@@ -427,17 +568,17 @@ a:link, a:visited, a:hover, a:active {
     z-index: 4;
 }
 
-#history2 #line.show {
+.history2 .historyani .line.show {
     height: 21.4375rem;
     display: block;
 }
 
-#history2 #circle.show {
+.history2 .historyani .circle.show {
     top: 24.2188rem;
     display: block;
 }
 
-#history2 #circle2.show {
+.history2 .historyani .circle2.show {
     display: block;
 }
 
@@ -459,7 +600,7 @@ a:link, a:visited, a:hover, a:active {
     }
 }
 
-#history2 #history-inner {
+.history2 .historyInner {
     width: 100%;
     height: 25.625rem;
     display: none;
@@ -468,7 +609,7 @@ a:link, a:visited, a:hover, a:active {
     overflow: hidden;
 }
 
-#history2 #history-inner.show {
+.history2 .historyInner.show {
     display: block;
     position: absolute;
     top: 6.4375rem;
@@ -486,27 +627,27 @@ a:link, a:visited, a:hover, a:active {
     }
 }
 
-#history2 #history-inner .slides {
+.history2 .historyInner .slides {
     width: 100%;
     height: 100%;
 }
 
-#history2 #history-inner #scroll {
+.history2 .historyInner #scroll {
     width: 100%;
     height: 100%;
 }
 
-#history2 #history-inner .swiper-slide {
+.history2 .historyInner #scroll .swiper-wrapper .swiper-slide {
     transition-timing-function: ease-in;
 }
 
-#history2 #history-inner .slides #scroll-swiper1 {
+.history2 .historyInner .slides #scroll .swiper-wrapper .scrollSwiper1 {
     width: calc(100vw - 3.1875rem);
     height: 25.625rem;
     position: relative;
 }
 
-#history2 #history-inner .slides #scroll-swiper1 h1 {
+.history2 .historyInner .slides .scrollSwiper1>h1 {
     font-size: 3.75rem;
     font-weight: bold;
     margin: 0;
@@ -515,7 +656,7 @@ a:link, a:visited, a:hover, a:active {
     top: 8.7813rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper1 h5 {
+.history2 .historyInner .slides .scrollSwiper1>h5 {
     font-size: 2.5rem;
     font-weight: 600;
     margin: 0;
@@ -524,7 +665,7 @@ a:link, a:visited, a:hover, a:active {
     top: 15.2188rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper1 span {
+.history2 .historyInner .slides .scrollSwiper1>span {
     font-size: 0.5625rem;
     font-weight: 500;
     line-height: 1.25rem;
@@ -533,7 +674,7 @@ a:link, a:visited, a:hover, a:active {
     top: 18.375rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper1 div {
+.history2 .historyInner .slides .scrollSwiper1>div {
     width: 16.375rem;
     height: 24.125rem;
     background-color: #555;
@@ -542,13 +683,13 @@ a:link, a:visited, a:hover, a:active {
     right: 3.0313rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper2 {
+.history2 .historyInner .slides .scrollSwiper2 {
     width: calc(100vw - 3.1875rem);
     height: 25.625rem;
     position: relative;
 }
 
-#history2 #history-inner .slides #scroll-swiper2 div {
+.history2 .historyInner .slides .scrollSwiper2>div {
     width: 11.7188rem;
     height: 17.25rem;
     background-color: #555;
@@ -557,7 +698,7 @@ a:link, a:visited, a:hover, a:active {
     left: -2rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper2 h5 {
+.history2 .historyInner .slides .scrollSwiper2>h5 {
     font-size: 2.5rem;
     font-weight: 600;
     margin: 0;
@@ -566,7 +707,7 @@ a:link, a:visited, a:hover, a:active {
     top: 5rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper2 h1 {
+.history2 .historyInner .slides .scrollSwiper2>h1 {
     font-size: 3.75rem;
     font-weight: bold;
     margin: 0;
@@ -575,7 +716,7 @@ a:link, a:visited, a:hover, a:active {
     top: 7.5625rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper2 span {
+.history2 .historyInner .slides .scrollSwiper2>span {
     font-size: 0.5625rem;
     font-weight: 500;
     line-height: 1.25rem;
@@ -584,13 +725,13 @@ a:link, a:visited, a:hover, a:active {
     left: 24.2188rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper3 {
+.history2 .historyInner .slides .scrollSwiper3 {
     width: calc(100vw - 3.1875rem);
     height: 25.625rem;
     position: relative;
 }
 
-#history2 #history-inner .slides #scroll-swiper3 div {
+.history2 .historyInner .slides .scrollSwiper3>div {
     width: 20.0625rem;
     height: 22.6563rem;
     background-color: #555;
@@ -599,7 +740,7 @@ a:link, a:visited, a:hover, a:active {
     top: 2.0313rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper3 h1 {
+.history2 .historyInner .slides .scrollSwiper3>h1 {
     font-size: 3.75rem;
     font-weight: bold;
     margin: 0;
@@ -608,7 +749,7 @@ a:link, a:visited, a:hover, a:active {
     bottom: 4.9688rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper3 span {
+.history2 .historyInner .slides .scrollSwiper3>span {
     font-size: 0.5625rem;
     font-weight: 500;
     line-height: 1.25rem;
@@ -617,7 +758,7 @@ a:link, a:visited, a:hover, a:active {
     top: 8.5625rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper3 h5 {
+.history2 .historyInner .slides .scrollSwiper3>h5 {
     font-size: 2.5rem;
     font-weight: 600;
     margin: 0;
@@ -626,13 +767,13 @@ a:link, a:visited, a:hover, a:active {
     bottom: 5.6563rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper4 {
+.history2 .historyInner .slides .scrollSwiper4 {
     width: calc(100vw - 3.1875rem);
     height: 25.625rem;
     position: relative;
 }
 
-#history2 #history-inner .slides #scroll-swiper4 .img1 {
+.history2 .historyInner .slides .scrollSwiper4 .img1 {
     width: 40rem;
     height: 25.625rem;
     background-color: #555;
@@ -641,7 +782,7 @@ a:link, a:visited, a:hover, a:active {
     left: -21.5625rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper4 .img2 {
+.history2 .historyInner .slides .scrollSwiper4 .img2 {
     width: 14.5625rem;
     height: 19.6875rem;
     background-color: #555;
@@ -650,7 +791,7 @@ a:link, a:visited, a:hover, a:active {
     left: 21.25rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper4 .img3 {
+.history2 .historyInner .slides .scrollSwiper4 .img3 {
     width: 15.75rem;
     height: 10.1563rem;
     background-color: #555;
@@ -659,13 +800,13 @@ a:link, a:visited, a:hover, a:active {
     right: 3.0938rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper5 {
+.history2 .historyInner .slides .scrollSwiper5 {
     width: calc(100vw - 3.1875rem);
     height: 25.625rem;
     position: relative;
 }
 
-#history2 #history-inner .slides #scroll-swiper5 h1 {
+.history2 .historyInner .slides .scrollSwiper5>h1 {
     font-size: 3.75rem;
     font-weight: bold;
     margin: 0;
@@ -674,7 +815,7 @@ a:link, a:visited, a:hover, a:active {
     top: 2.1563rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper5 h5 {
+.history2 .historyInner .slides .scrollSwiper5>h5 {
     font-size: 2.5rem;
     font-weight: 600;
     margin: 0;
@@ -683,7 +824,7 @@ a:link, a:visited, a:hover, a:active {
     top: 5.25rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper5 span {
+.history2 .historyInner .slides .scrollSwiper5>span {
     font-size: 0.5625rem;
     font-weight: 500;
     line-height: 1.25rem;
@@ -692,13 +833,13 @@ a:link, a:visited, a:hover, a:active {
     top: 11.25rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper6 {
+.history2 .historyInner .slides .scrollSwiper6 {
     width: calc(100vw - 3.1875rem);
     height: 25.625rem;
     position: relative;
 }
 
-#history2 #history-inner .slides #scroll-swiper6 .img1 {
+.history2 .historyInner .slides .scrollSwiper6 .img1 {
     width: 40.375rem;
     height: 25.625rem;
     background-color: #555;
@@ -707,7 +848,7 @@ a:link, a:visited, a:hover, a:active {
     left: -23.0313rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper6 .img2 {
+.history2 .historyInner .slides .scrollSwiper6 .img2 {
     width: 23.4688rem;
     height: 18.2188rem;
     background-color: #555;
@@ -716,13 +857,13 @@ a:link, a:visited, a:hover, a:active {
     left: 19.75rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper7 {
+.history2 .historyInner .slides .scrollSwiper7 {
     width: calc(100vw - 3.1875rem);
     height: 25.625rem;
     position: relative;
 }
 
-#history2 #history-inner .slides #scroll-swiper7 h5 {
+.history2 .historyInner .slides .scrollSwiper7>h5 {
     font-size: 2.5rem;
     font-weight: 600;
     margin: 0;
@@ -731,7 +872,7 @@ a:link, a:visited, a:hover, a:active {
     left: -11.5625rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper7 h1 {
+.history2 .historyInner .slides .scrollSwiper7>h1 {
     font-size: 3.75rem;
     font-weight: bold;
     margin: 0;
@@ -740,7 +881,7 @@ a:link, a:visited, a:hover, a:active {
     left: -10.4688rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper7 span {
+.history2 .historyInner .slides .scrollSwiper7>span {
     font-size: 0.5625rem;
     font-weight: 500;
     line-height: 1.25rem;
@@ -749,7 +890,7 @@ a:link, a:visited, a:hover, a:active {
     left: -10.0313rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper7 div {
+.history2 .historyInner .slides .scrollSwiper7>div {
     width: 15.5625rem;
     height: 11.625rem;
     background-color: #555;
@@ -758,7 +899,7 @@ a:link, a:visited, a:hover, a:active {
     top: 7.0313rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper7 p {
+.history2 .historyInner .slides .scrollSwiper7>p {
     font-size: 0.5625rem;
     font-weight: 500;
     line-height: 1.25rem;
@@ -767,13 +908,13 @@ a:link, a:visited, a:hover, a:active {
     left: 24.3438rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper8 {
+.history2 .historyInner .slides .scrollSwiper8 {
     width: calc(100vw - 3.1875rem);
     height: 25.625rem;
     position: relative;
 }
 
-#history2 #history-inner .slides #scroll-swiper8 div {
+.history2 .historyInner .slides .scrollSwiper8 .img {
     width: 34.9375rem;
     height: 25.625rem;
     background-color: #555;
@@ -782,7 +923,7 @@ a:link, a:visited, a:hover, a:active {
     top: 0;
 }
 
-#history2 #history-inner .slides #scroll-swiper8 h1 {
+.history2 .historyInner .slides .scrollSwiper8>h1 {
     font-size: 3.75rem;
     font-weight: bold;
     margin: 0;
@@ -791,7 +932,7 @@ a:link, a:visited, a:hover, a:active {
     top: 8.9688rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper8 span {
+.history2 .historyInner .slides .scrollSwiper8>span {
     font-size: 0.5625rem;
     font-weight: 500;
     line-height: 1.25rem;
@@ -800,42 +941,31 @@ a:link, a:visited, a:hover, a:active {
     left: 37.8438rem;
 }
 
-#history2 #history-inner .slides #scroll-swiper8 .scroll-secition {
-    width: 7.1875rem;
-    height: 1.5rem;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 18.5rem;
-    left: 40.6875rem;
+.space {
+    display: none;
 }
 
-#history2 #history-inner .slides #scroll-swiper8 .scroll-secition a {
-    font-size: 0.75rem;
-    letter-spacing: 0.25rem;
-    margin: 0;
-    color: black;
-    text-decoration: none;
+.space.show {
+    height: 80vh;
+    display: block;
 }
 
-#introduction {
+/* 歷史內頁到此 */
+
+/* 景點介紹 */
+
+.introduction {
     position: relative;
 }
 
-#introduction .container {
+.introduction .container {
     padding-top: 7.8125rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-#introduction .mb-title {
-    display: none;
-}
-
-#introduction .pc-title {
+.introduction .container .pcTitle {
     font-size: 1.9375rem;
     writing-mode: vertical-lr;
     letter-spacing: 0.2188rem;
@@ -845,43 +975,47 @@ a:link, a:visited, a:hover, a:active {
     z-index: 2;
 }
 
-#introduction .pc-title span {
-    letter-spacing: 0rem;
-}
-
-#introduction .pc-title div {
+.introduction .container .pcTitle>div {
     border-left-style: solid;
     margin-right: 0.4688rem;
 }
 
-#introduction .text {
+.introduction .container .pcTitle>span {
+    letter-spacing: 0rem;
+}
+
+.introduction .container .mbTitle {
+    display: none;
+}
+
+.introduction .container .text {
     font-size: 0.5625rem;
     color: black;
     letter-spacing: 0.1563rem;
     padding-top: 2.125rem;
 }
 
-#introduction #slides {
+.introduction .slides {
     position: absolute;
     top: 11.875rem;
     right: 0;
 }
 
-#introduction #slides #swiper {
+.introduction .slides .swiper {
     max-width: calc(100vw - 1.875rem);
     overflow: hidden;
 }
 
-#introduction #slides #swiper .swiper-container {
+.introduction .slides .swiper .swiper-container {
     width: 100%;
     height: 100%;
 }
 
-#introduction #slides #swiper .swiper-container .swiper-wrapper {
+.introduction .slides .swiper .swiper-container .swiper-wrapper {
     transition-timing-function: linear;
 }
 
-#introduction #slides #swiper .swiper-container .swiper-slide {
+.introduction .slides .swiper .swiper-container .swiper-slide {
     width: 9.375rem;
     height: 5rem;
     background-color: #999999;
@@ -890,37 +1024,38 @@ a:link, a:visited, a:hover, a:active {
     position: relative;
 }
 
-#introduction #slides #swiper .swiper-container .swiper-slide:hover {
+.introduction .slides .swiper .swiper-container .swiper-slide:hover {
     filter: opacity(100%);
 }
 
-#introduction .secition2 {
+.introduction .secition2 {
     width: 7.125rem;
-    height: 1.5rem;
-    border: 1px solid black;
     margin: 10rem auto 0 auto;
-    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#introduction .secition2 a {
+.introduction .secition2>a {
     color: black;
     text-decoration: none;
     font-size: 0.75rem;
     letter-spacing: 0.25rem;
 }
 
-#tourism {
+/* 景點介紹到此 */
+
+/* 路線推薦 */
+
+.tourism {
     position: relative;
 }
 
-#tourism .container {
+.tourism .container {
     padding-top: 3.125rem;
 }
 
-#tourism h1 {
+.tourism .container>h1 {
     width: 8.4375rem;
     font-size: 1.9375rem;
     line-height: 1.25rem;
@@ -930,52 +1065,33 @@ a:link, a:visited, a:hover, a:active {
     text-align: center;
 }
 
-#tourism h1 hr {
+.tourism .container>h1>hr {
     border: 1px solid black;
     margin-top: 0.9375rem;
     margin-bottom: 0.375rem;
 }
 
-#tourism h1 span {
+.tourism .container>h1>span {
     line-height: 1.0313rem;
     letter-spacing: 0rem;
 }
 
-#tourism .map-grounp .mapbtn {
+.tourism .mapGrounp .container .mapBtn {
     margin: 0 auto;
 }
 
-#tourism .map-grounp .mapbtn #mapswiper {
+.tourism .mapGrounp .container .mapBtn .mapSwiper {
     width: 100%;
     height: 100%;
+    background: rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding: 0.2188rem;
+    -moz-border-radius: 0.2188rem;
+    -webkit-border-radius: 0.2188rem;
+    border-radius: 0.2188rem;
 }
 
-#tourism .map-grounp .mapbtn #mapswiper .swiper-slide {
-    height: 1.5625rem;
-    line-height: 1.5625rem;
-    font-size: 0.9375rem;
-    text-align: center;
-    cursor: pointer;
-    border: 1px solid black;
-}
-
-#tourism .map-grounp .mapbtn #mapswiper .mapslide.click {
-    width: 7.5rem;
-    height: 1.5625rem;
-    font-size: 0.9375rem;
-    text-align: center;
-}
-
-#tourism .map-grounp .map {
-    width: calc(100vw - 1.875rem);
-    height: 15.625rem;
-    background-color: #B3B3B3;
-    position: absolute;
-    top: 13.7188rem;
-    right: 0;
-}
-
-.map-img1, .map-img2, .map-img3, .map-img4, .map-img5, .map-img6 {
+.mapImg1, .mapImg2, .mapImg3, .mapImg4, .mapImg5, .mapImg6 {
     width: 100%;
     max-width: 36.5625rem;
     display: none;
@@ -983,14 +1099,14 @@ a:link, a:visited, a:hover, a:active {
     margin-top: 18.125rem;
 }
 
-.map-img1.show, .map-img2.show, .map-img3.show, .map-img4.show, .map-img5.show, .map-img6.show {
+.mapImg1.show, .mapImg2.show, .mapImg3.show, .mapImg4.show, .mapImg5.show, .mapImg6.show {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
 }
 
-.map-img1 div, .map-img2 div, .map-img3 div, .map-img4 div, .map-img5 div, .map-img6 div {
+.mapImg1>div, .mapImg2>div, .mapImg3>div, .mapImg4>div, .mapImg5>div, .mapImg6>div {
     width: 6.25rem;
     height: 6.25rem;
     border-radius: 50%;
@@ -998,7 +1114,7 @@ a:link, a:visited, a:hover, a:active {
     margin-top: 1.5625rem;
 }
 
-#tourism .map-grounp span {
+.tourism .mapGrounp .container span {
     font-size: 0.5rem;
     font-weight: 500;
     line-height: 1.0313rem;
@@ -1007,7 +1123,7 @@ a:link, a:visited, a:hover, a:active {
     margin-top: 2.6875rem;
 }
 
-#tourism .map-grounp .map-href {
+.tourism .mapGrounp .container .mapHref {
     width: 13.4375rem;
     height: 2.3438rem;
     line-height: 2.3438rem;
@@ -1019,7 +1135,7 @@ a:link, a:visited, a:hover, a:active {
     margin: 2.4063rem auto 0 auto;
 }
 
-#tourism .map-grounp p {
+.tourism .mapGrounp .container p {
     padding: 0;
     margin: 0;
     font-size: 0.5rem;
@@ -1030,26 +1146,39 @@ a:link, a:visited, a:hover, a:active {
     margin: 0.875rem auto 0 auto;
 }
 
-#tourism .mb-swiper {
+.tourism .mapGrounp .map {
+    width: calc(100vw - 1.875rem);
+    height: 15.625rem;
+    background-color: #B3B3B3;
+    position: absolute;
+    top: 13.7188rem;
+    right: 0;
+}
+
+.tourism .mbSwiper {
     display: none;
 }
 
-#tour-Service .container {
+/* 路線推薦到此 */
+
+/* 導覽服務 */
+
+.tourService .container {
     padding-top: 10.9375rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-#tour-Service .container.move {
+.tourService .container.move {
     padding-top: 4.6875rem;
 }
 
-#tour-Service .big-box {
+.tourService .container .bigBox {
     width: 10.25rem;
 }
 
-#tour-Service .big-box h1 {
+.tourService .container .bigBox>h1 {
     width: 8.4375rem;
     font-size: 1.9375rem;
     line-height: 1.25rem;
@@ -1058,19 +1187,19 @@ a:link, a:visited, a:hover, a:active {
     margin: 0;
 }
 
-#tour-Service .big-box h1 hr {
+.tourService .container .bigBox>h1>hr {
     border: 1px solid black;
     margin-top: 0.9375rem;
     margin-bottom: 0.375rem;
 }
 
-#tour-Service .big-box h1 span {
+.tourService .container .bigBox>h1>span {
     font-size: 1.3438rem;
     font-weight: 600;
     letter-spacing: -0.0313rem;
 }
 
-#tour-Service .big-box .box {
+.tourService .container .bigBox .box {
     width: 10.25rem;
     height: 4.125rem;
     padding: 0.4688rem;
@@ -1084,55 +1213,58 @@ a:link, a:visited, a:hover, a:active {
     align-items: flex-start;
 }
 
-#tour-Service .big-box .box>div:first-child {
+.tourService .container .bigBox .box>div:first-child {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#tour-Service .big-box .box span {
+.tourService .container .bigBox .box span {
     font-size: 0.625rem;
     letter-spacing: 0.0625rem;
     font-weight: 800;
 }
 
-#tour-Service .big-box .box .href {
+.tourService .container .bigBox .box .href {
     line-height: 0;
 }
 
-#tour-Service .box .href a {
+.tourService .box .href>a {
     color: black;
     font-size: 0.7813rem;
     margin-right: 0.1563rem;
 }
 
-#tour-Service .big-box .box p {
+.tourService .container .bigBox .box p {
     font-size: 0.5rem;
-    float: left;
     margin: 0;
     letter-spacing: 0.0313rem;
     margin-left: 0.375rem;
 }
 
-#tour-Service .text {
-    width: 100%;
-    max-width: 21.25rem;
+.tourService .container .content {
+    margin-left: 4.2188rem;
 }
 
-#tour-Service .content h2 {
+.tourService .container .content>h2 {
     margin: 0;
     font-size: 0.8125rem;
     letter-spacing: 0.0938rem;
 }
 
-#tour-Service .content span {
+.tourService .container .content .text {
+    width: 100%;
+    max-width: 21.25rem;
+}
+
+.tourService .container .content .text>span {
     font-size: 0.5rem;
     letter-spacing: 0.0313rem;
     font-weight: 400;
     line-height: 1.3125rem;
 }
 
-#tour-Service .content p {
+.tourService .container .content .text>p {
     margin: 1.4063rem 0 0 0;
     padding: 0;
     font-size: 0.5rem;
@@ -1141,19 +1273,23 @@ a:link, a:visited, a:hover, a:active {
     line-height: 1.3125rem;
 }
 
-#description .container {
+/* 導覽服務到此 */
+
+/* 導覽說明 */
+
+.description .container {
     margin-top: 3.125rem;
     display: flex;
 }
 
-.big-box1, .big-box2 {
+.bigBox1, .bigBox2 {
     width: 50%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
-#description .big-box1 .icon1 {
+.description .container .bigBox1 .icon1 {
     width: 4.6875rem;
     height: 4.6875rem;
     border-radius: 50%;
@@ -1161,30 +1297,30 @@ a:link, a:visited, a:hover, a:active {
     background-size: contain;
 }
 
-#description .big-box1 .boxA {
+.description .container .bigBox1 .boxA {
     margin-left: 1.5625rem;
 }
 
-#description .big-box1 .boxA h1 {
+.description .container .bigBox1 .boxA>h1 {
     font-size: 1.125rem;
     margin: 0;
     margin-bottom: 0.6875rem;
 }
 
-#description .big-box1 .boxA span {
+.description .container .bigBox1 .boxA>span {
     font-size: 0.5rem;
     font-weight: 500;
     line-height: 0.8438rem;
 }
 
-#description .big-box1 .boxA p {
+.description .container .bigBox1 .boxA>p {
     font-size: 0.5rem;
     margin: 0.5625rem 0 0 0;
     font-weight: 500;
     opacity: 0.8;
 }
 
-#description .big-box2 .icon2 {
+.description .container .bigBox2 .icon2 {
     width: 4.6875rem;
     height: 4.6875rem;
     border-radius: 50%;
@@ -1192,1262 +1328,732 @@ a:link, a:visited, a:hover, a:active {
     background-size: contain;
 }
 
-#description .big-box2 .boxB {
+.description .container .bigBox2 .boxB {
     margin-left: 1.5625rem;
 }
 
-#description .big-box2 .boxB h1 {
+.description .container .bigBox2 .boxB>h1 {
     font-size: 1.125rem;
     margin: 0 0 0.6875rem 0;
 }
 
-#description .big-box2 .boxB span {
+.description .container .bigBox2 .boxB>span {
     font-size: 0.5rem;
     font-weight: 500;
     line-height: 0.8438rem;
 }
 
-#footer-img {
+/* 導覽說明到此 */
+
+.footerImg {
     width: 100%;
     height: 18.9063rem;
     margin-top: 4.6875rem;
 }
 
-#footer {
+/* Footer */
+
+.footer {
     height: 6.25rem;
     background-color: #1a1a1a;
 }
 
-#footer .container {
+.footer .container {
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#footer .left-box {
+.footer .container .leftBox {
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#footer .left-box h1 {
+.footer .container .leftBox>h1 {
     margin: 0;
     font-size: 1.25rem;
     font-weight: 600;
     letter-spacing: 0.375rem;
 }
 
-#footer .left-box span {
-    font-size: 0.25rem;
-    font-weight: 500;
-    margin-left: 0.1563rem;
-    line-height: 0.4375rem;
-}
-
-#footer .mid-box {
+.footer .container .midBox {
     color: white;
     display: flex;
 }
 
-#footer .mid-box>div {
+.footer .container .midBox>div {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: flex-start;
 }
 
-#footer .mid-box .text1 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-#footer .mid-box .text1 div {
-    border-left-style: solid;
-    border-left-color: white;
-    height: 0.4375rem;
-    margin-right: 0.5313rem;
-}
-
-#footer .mid-box .text1 h1 {
-    font-size: 0.375rem;
-    font-weight: 500;
-    letter-spacing: 0.1563rem;
-    margin: 0;
-    margin-right: 0.6563rem;
-}
-
-#footer .mid-box .text1 span {
-    font-size: 0.1875rem;
-    font-weight: 500;
-    letter-spacing: 0.1563rem;
-}
-
-#footer .mid-box .text2 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-#footer .mid-box .text2 div {
-    border-left-style: solid;
-    border-left-color: white;
-    height: 0.4375rem;
-    margin-right: 0.5313rem;
-}
-
-#footer .mid-box .text2 h1 {
-    font-size: 0.375rem;
-    font-weight: 500;
-    letter-spacing: 0.1563rem;
-    margin: 0;
-    margin-right: 0.6563rem;
-}
-
-#footer .mid-box .text2 span {
-    font-size: 0.1875rem;
-    font-weight: 500;
-    letter-spacing: 0.1563rem;
-}
-
-#footer .mid-box .text3 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-#footer .mid-box .text3 div {
-    border-left-style: solid;
-    border-left-color: white;
-    height: 0.4375rem;
-    margin-right: 0.5313rem;
-}
-
-#footer .mid-box .text3 h1 {
-    font-size: 0.375rem;
-    font-weight: 500;
-    letter-spacing: 0.1563rem;
-    margin: 0;
-    margin-right: 0.6563rem;
-}
-
-#footer .mid-box .text3 span {
-    font-size: 0.1875rem;
-    font-weight: 500;
-    letter-spacing: 0.1563rem;
-}
-
-#footer .mid-box .text4 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-#footer .mid-box .text4 div {
-    border-left-style: solid;
-    border-left-color: white;
-    height: 0.4375rem;
-    margin-right: 0.5313rem;
-}
-
-#footer .mid-box .text4 h1 {
-    font-size: 0.375rem;
-    font-weight: 500;
-    letter-spacing: 0.1563rem;
-    margin: 0;
-    margin-right: 0.6563rem;
-}
-
-#footer .mid-box .text4 span {
-    font-size: 0.1875rem;
-    font-weight: 500;
-    letter-spacing: 0.1563rem;
-}
-
-#footer .right-box {
+.footer .container .midBox>div>a {
     color: white;
 }
 
-#footer .right-box h1 {
+.footer .container .midBox>div:last-child {
+    margin-left: 0.625rem;
+}
+
+.text1, .text2, .text3, .text4 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.text2, .text4 {
+    margin-top: 0.3125rem;
+}
+
+.text1>div, .text2>div, .text3>div, .text4>div {
+    border-left-style: solid;
+    border-left-color: white;
+    height: 0.5313rem;
+    margin-right: 0.5313rem;
+}
+
+.text1>h1, .text2>h1, .text3>h1, .text4>h1 {
+    font-size: 0.5625rem;
+    font-weight: 500;
+    letter-spacing: 0.1563rem;
+    margin: 0;
+    margin-right: 0.6563rem;
+}
+
+.text1>span, .text2>span, .text3>span, .text4>span {
+    font-size: 0.1875rem;
+    font-weight: 500;
+    letter-spacing: 0.1563rem;
+}
+
+.footer .container .rightBox {
+    color: white;
+}
+
+.footer .container .rightBox>h1 {
     margin: 0;
     font-size: 0.4375rem;
     letter-spacing: 0.0938rem;
 }
 
-#footer .right-box h1 hr {
+.footer .container .rightBox>h1>hr {
     margin: 0.25rem 0 0.0938rem 0;
     border: 1px solid white;
 }
 
-#footer .right-box h1 span {
+.footer .container .rightBox>h1>span {
     font-size: 0.1563rem;
     letter-spacing: 0.0625rem;
 }
 
-@media screen and (max-width:1024px) {
-    html {
-        font-size: 12px;
-    }
-    #nav .nav-title {
-        top: 1.4063rem;
-    }
-    #history .container {
-        padding-top: 19.375rem;
-    }
-}
+/* Footer到此 */
 
-@media screen and (max-width:768px) {
-    html {
-        font-size: 11px;
-    }
-    #window {
-        left: -0.625rem;
-        width: calc(100% - 1.25rem);
-        overflow: hidden;
-    }
-    #nav {
-        height: 100%;
-        width: 1.25rem;
-    }
-    #nav .nav-title {
-        top: 3.5625rem;
-        left: 0.3438rem;
-    }
-    #nav-inner {
-        width: 100%;
-    }
-    #nav-inner.show {
-        left: 0;
-    }
-    #main .home {
-        width: calc(100% - 1.25rem);
-    }
-    #main .home .line {
-        right: 4.2188rem;
-        top: 6.3125rem;
-    }
-    #main .home .main-title {
-        letter-spacing: 0.6875rem;
-        right: 4.9375rem;
-        top: 5.5313rem;
-    }
-    #main .home .text1 {
-        right: 1.125rem;
-        top: 6.0313rem;
-    }
-    #main .home .text2 {
-        line-height: 0.6875rem;
-        right: 10.9688rem;
-        top: 10.5625rem;
-    }
-    #main .home .city-img {
-        right: 5.5313rem;
-        top: 10.6875rem;
-    }
-    #history {
-        width: calc(100vw - 1.25rem);
-    }
-    #history .container {
-        padding-top: 11.875rem;
-    }
-    #history .map {
-        width: 100%;
-        height: 60vh;
-        float: none;
-        margin: 0 auto;
-    }
-    #history h1 {
-        margin-top: 1.5625rem;
-        text-align: center;
-    }
-    #history .container hr {
-        width: 33%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #history .container p {
-        max-width: 100%;
-    }
-    #history2 .container {
-        display: none;
-    }
-    #introduction {
-        width: calc(100vw - 1.25rem);
-    }
-    #introduction .container {
-        padding-top: 3.125rem;
-    }
-    #introduction #slides {
-        top: 6.5625rem;
-    }
-    #introduction #slides #swiper {
-        max-width: calc(100vw - 1.25rem);
-        overflow: hidden;
-    }
-    #introduction .secition2 {
-        margin-top: 20.375rem;
-    }
-    #tourism .container {
-        padding-top: 2.5rem;
-    }
-    #tourism h1 hr {
-        width: 65%;
-    }
-    #tourism .map-grounp .map {
-        width: calc(100vw - 1.25rem);
-        top: 11.5625rem;
-    }
-    #tourism .map-grounp .container {
-        width: 22.5rem;
-    }
-    #tourism .map-grounp .mapbtn #mapswiper .swiper-slide {
-        height: 1rem;
-    }
-    #tour-Service {
-        width: calc(100vw - 1.25rem);
-    }
-    #tour-Service .big-box {
-        width: 100%;
-        display: block;
-        margin-right: 100%;
-        margin-bottom: 2.5rem;
-    }
-    #tour-Service .big-box h1 {
-        width: 50%;
-        text-align: center;
-        float: none;
-        margin: 0 auto;
-    }
-    #tour-Service .big-box h1 hr {
-        width: 70%;
-    }
-    #tour-Service .big-box .box span {
-        margin-bottom: 0;
-        display: block;
-        width: 4.8125rem;
-        margin-right: 100%;
-        margin-bottom: 0.3125rem;
-    }
-    #tour-Service .big-box .box {
-        width: 100%;
-        padding-top: 0.625rem;
-        padding-left: 3.125rem;
-        padding-right: 3.125rem;
-        padding-bottom: 0.625rem;
-    }
-    #tour-Service .big-box .box .href {
-        margin-right: 0;
-    }
-    #tour-Service .content {
-        max-width: 37.5rem;
-        width: 100%;
-        margin-left: 0rem;
-    }
-    #tour-Service .content .text {
-        max-width: 100vw;
-        width: 100%;
-    }
-    #description .container {
-        margin-top: 4.6875rem;
-    }
-    #description .big-box1 {
-        width: 100%;
-        float: none;
-        margin: 0 auto;
-        margin-bottom: 1.875rem;
-    }
-    #description .big-box2 {
-        width: 100%;
-        float: none;
-        margin: 0 auto;
-    }
-    .map-grounp {
-        width: calc(100vw - 1.25rem);
-    }
-    #footer {
-        width: calc(100vw - 1.25rem);
-        height: 3.75rem;
-        overflow: hidden;
-    }
-    #footer-img {
-        height: 10.9375rem;
-    }
-    #footer .container .left-box {
-        display: block;
-        margin-right: 4.6875rem;
-    }
-    #footer .container .left-box h1 {
-        display: none;
-    }
-    #footer .container .left-box span {
-        display: none;
-    }
-    #footer .container .mid-box {
-        width: 100%;
-        padding: 0;
-        margin-top: 1.1875rem;
-    }
-    #footer .mid-box .text1 {
-        margin: 0;
-    }
-    #footer .mid-box .text2 {
-        margin-top: 0;
-    }
-    #footer .mid-box .text3 {
-        margin-top: 0.4688rem;
-    }
-    #footer .mid-box .text4 {
-        margin-top: 0.4688rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    #window {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        margin-left: 0;
-        left: 0;
-    }
-    #menubtn {
-        display: none;
-    }
-    #mb-menubtn {
-        position: fixed;
-        display: flex;
-        top: 0.3125rem;
-        left: 0.3125rem;
-    }
-    #hamburger {
-        position: fixed;
-        top: 0.5625rem;
-        left: 0.375rem;
-    }
-    #nav-inner {
-        width: 100%;
-    }
-    #nav-inner.show {
-        left: 0;
-    }
-    #nav-inner .big-box h1 {
-        display: none;
-    }
-    #nav-inner .big-box span {
-        display: none;
-    }
-    #nav-inner .logo {
-        display: none;
-    }
-    #nav {
-        position: absolute;
-        width: 100%;
-        height: 7.0313rem;
-        z-index: 1;
-    }
+@media screen and (max-width:1200px) {
     #nav .nav-title {
         display: none;
-    }
-    #main .home {
-        width: 100%;
-        height: 40vh;
-    }
-    #main .home .main-title {
-        position: absolute;
-        top: 1.4063rem;
-        right: 1.4063rem;
-        font-size: 1.4063rem;
-        letter-spacing: 0.0313rem;
-        z-index: 2;
-        color: white;
-        letter-spacing: 0.1563rem;
-    }
-    #main .home .line {
-        display: none;
-    }
-    #main .home .text1 {
-        display: none;
-    }
-    #main .home .text2 {
-        text-align: right;
-        margin-top: 0.4688rem;
-        position: absolute;
-        top: 3.5938rem;
-        right: 1.7188rem;
-        z-index: 2;
-        color: white;
-        font-size: 0.2188rem;
-        line-height: 0.625rem;
-    }
-    #main .home .city-img {
-        display: none;
-    }
-    .nav-img {
-        width: 100%;
-        height: 14.375rem;
-        top: 5.7813rem;
-    }
-    #main .nav-img {
-        top: 6.5625rem;
-    }
-    #history {
-        width: 100%;
-    }
-    #history .container {
-        width: 80vw;
-        max-width: 80vw;
-        margin: 0 auto;
-        margin-top: 0rem;
-        padding-top: 18.125rem;
-    }
-    #history h1 {
-        display: none;
-    }
-    #history2 .secition1 {
-        display: none;
-    }
-    #history p {
-        padding-top: 0;
-    }
-    #introduction {
-        width: 100%;
-    }
-    #introduction .container {
-        width: 80vw;
-        max-width: 80vw;
-        margin: 0 auto;
-        padding-top: 0.9375rem;
-    }
-    #introduction h1 {
-        writing-mode: horizontal-tb;
-    }
-    #introduction .pc-title {
-        display: none;
-    }
-    #introduction .mb-title {
-        display: block;
-        margin: 0 auto;
-        font-size: 3.250em;
-        font-weight: bold;
-        text-align: center;
-    }
-    #introduction .mb-title div {
-        margin-top: 0.1563rem;
-        margin-left: auto;
-        margin-right: auto;
-        width: 4.375rem;
-        border-top: 2px solid black;
-    }
-    #introduction .mb-title span {
-        font-size: 2.25rem;
-        font-weight: 600;
-    }
-    #introduction .text {
-        display: none;
-    }
-    #introduction #slides {
-        top: 4.375rem;
-    }
-    #introduction #slides #swiper {
-        max-width: 100vw;
-    }
-    #introduction .secition2 {
-        width: 4.375rem;
-        height: 0.9375rem;
-        margin-top: 16.875rem;
-        text-align: center;
-    }
-    #introduction .secition2 a {
-        letter-spacing: 0;
-        line-height: 0.9063rem;
-        font-weight: 600;
-    }
-    #tourism .container {
-        padding-top: 0.9375rem;
-    }
-    #tourism .map-grounp .container {
-        width: 80vw;
-        max-width: 80vw;
-        margin: 0 auto;
-    }
-    #tourism .map-grounp {
-        width: 100%;
-    }
-    #tourism h1 {
-        display: none;
-    }
-    #tourism .map-grounp .mapbtn #mapswiper .swiper-slide {
-        width: 33.33%;
-        height: 0.6875rem;
-        font-size: 0.625rem;
-    }
-    #tourism .map-grounp .map {
-        width: 100%;
-        top: 3.4375rem;
-    }
-    #tourism .map-grounp .map-img1.show {
-        display: none;
-    }
-    #tourism .map-grounp .map-img2.show {
-        display: none;
-    }
-    #tourism .map-grounp .map-img3.show {
-        display: none;
-    }
-    #tourism .map-grounp .map-img4.show {
-        display: none;
-    }
-    #tourism .map-grounp .map-img5.show {
-        display: none;
-    }
-    #tourism .map-grounp .map-img6.show {
-        display: none;
-    }
-    #tourism .mb-swiper {
-        display: flex;
-        width: 100vw;
-        height: 6.25rem;
-        position: absolute;
-        top: 17.9688rem;
-        left: 0rem;
-    }
-    #tourism .map-grounp .map-href {
-        width: 7.0938rem;
-        height: 1.25rem;
-        margin-top: 25.625rem;
-        font-size: 0.5625rem;
-        line-height: 1.25rem;
-    }
-    #tourism .map-grounp p {
-        margin-top: -5.3125rem;
-    }
-    #tour-Service {
-        width: 100%;
-        position: relative;
-        top: 16.25rem;
-    }
-    #tour-Service .container {
-        width: 80vw;
-        max-width: 80vw;
-        margin: 0 auto;
-        padding-top: 0;
-    }
-    #tour-Service .big-box {
-        width: 50%;
-        margin: 0 auto;
-        float: none;
-        text-align: center;
-    }
-    #tour-Service .big-box h1 {
-        width: 100%;
-        margin: 0 auto;
-        font-size: 3.250em;
-        font-weight: bold;
-        text-align: center;
-    }
-    #tour-Service .big-box h1 hr {
-        width: 85%;
-        margin-top: 0.1563rem;
-        margin-bottom: 0;
-    }
-    #tour-Service .big-box h1 span {
-        font-size: 2.25rem;
-        font-weight: 600;
-    }
-    #tour-Service .big-box .box {
-        display: none;
-    }
-    #tour-Service .big-box .box .href {
-        margin: 0;
-        margin-top: 0.0938rem;
     }
     #tour-Service .big-box .box p {
-        margin-top: 0.1875rem;
+        letter-spacing: 0;
     }
-    #tour-Service .content {
-        width: 100%;
-        max-width: 100%;
-        margin-left: 0;
+}
+
+@media screen and (max-width:1024px) {
+    .history .container {
+        flex-flow: column-reverse;
+    }
+    .history .container>div:first-child {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .history .container>div>h1 {
+        margin: 0;
+    }
+    .history .container>div>p {
+        padding: 0.3448rem;
         text-align: center;
-        position: relative;
-        top: 1.25rem;
     }
-    #tour-Service .content span {
-        line-height: 1.0938rem;
-        letter-spacing: 0.0625rem;
-    }
-    #tour-Service .content p {
-        margin-top: 0.9375rem;
-        line-height: 1.0938rem;
-        letter-spacing: 0.0625rem;
-    }
-    #tour-Service .text {
-        width: 100%;
-        max-width: 100%;
-    }
-    #description {
-        position: relative;
-        top: -15.625rem;
-    }
-    #description .container {
-        width: 80vw;
-        max-width: 80vw;
+    .history2 .container .secition1 {
         margin: 0 auto;
     }
-    #description .big-box1 {
-        width: 100%;
+    .tourService .container {
+        flex-flow: column;
+    }
+    .tourService .container .bigBox {
+        width: initial;
         display: flex;
-        flex-flow: wrap;
-        justify-content: center;
     }
-    #description .big-box2 {
-        width: 100%;
-        display: flex;
-        flex-flow: wrap;
-        justify-content: center;
-        margin-top: 1.25rem;
+    .tourService .container .bigBox .box {
+        width: initial;
+        margin: 0 0 0 0.6897rem;
     }
-    #description .big-box1 .icon1 {
-        width: 2.4375rem;
-        height: 2.4375rem;
-    }
-    #description .big-box1 .boxA {
-        width: 100%;
-        margin-left: 0;
+    .tourService .container .content {
+        margin: 0.6897rem 0 0 0;
         text-align: center;
     }
-    #description .big-box2 .icon2 {
-        width: 2.4375rem;
-        height: 2.4375rem;
-    }
-    #description .big-box2 .boxB {
+    .bigBox1, .bigBox2 {
         width: 100%;
-        margin-left: 0;
-        text-align: center;
     }
-    .footer-img {
-        margin-top: 7.8125rem;
+    .boxA, .boxB {
+        width: 11.0345rem;
     }
-    #footer {
-        position: relative;
-        bottom: 0;
-        width: 100vw;
-    }
-    #footer .container {
+    .description .container {
         width: 100%;
-        position: relative;
+        max-width: 100%;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
     }
-    #footer .container .mid-box {
-        position: absolute;
-        padding: 0 0.3125rem;
-        margin-top: 1.5rem;
+    .description .container .bigBox2 .boxB {
+        margin-top: 1.3793rem;
     }
-    #footer .container .mid-box .text1 {
-        width: 50%;
-        margin: 0;
-        margin: 0;
+    .footer .container {
+        max-width: 100%;
     }
-    #footer .container .mid-box .text1 div {
-        margin-right: 0.4688rem;
-    }
-    #footer .container .mid-box .text1 h1 {
-        margin-right: 0.4688rem;
-        margin-bottom: 0;
-        letter-spacing: 0.25rem;
-        font-size: 0.4688rem;
-    }
-    #footer .container .mid-box .text1 span {
-        display: none;
-    }
-    #footer .container .mid-box .text2 {
-        width: 50%;
-        margin: 0;
-    }
-    #footer .container .mid-box .text2 div {
-        margin-right: 0.4688rem;
-    }
-    #footer .container .mid-box .text2 h1 {
-        margin-right: 0.4688rem;
-        margin-bottom: 0;
-        letter-spacing: 0.25rem;
-        font-size: 0.4688rem;
-    }
-    #footer .container .mid-box .text2 span {
-        display: none;
-    }
-    #footer .container .mid-box .text3 {
-        width: 50%;
-        margin: 0;
-    }
-    #footer .container .mid-box .text3 div {
-        margin-right: 0.4688rem;
-    }
-    #footer .container .mid-box .text3 h1 {
-        margin-right: 0.4688rem;
-        margin-bottom: 0;
-        letter-spacing: 0.25rem;
-        font-size: 0.4688rem;
-    }
-    #footer .container .mid-box .text3 span {
-        display: none;
-    }
-    #footer .container .mid-box .text4 {
-        width: 50%;
-        margin: 0;
-    }
-    #footer .container .mid-box .text4 div {
-        margin-right: 0.4688rem;
-    }
-    #footer .container .mid-box .text4 h1 {
-        margin-right: 0.4688rem;
-        margin-bottom: 0;
-        letter-spacing: 0.25rem;
-        font-size: 0.4688rem;
-    }
-    #footer .container .mid-box .text4 span {
-        display: none;
-    }
-    #footer .right-box {
+    .footer .container .rightBox>h1 {
         display: none;
     }
 }
 
+@media screen and (max-width:576px) {
+    .nav {
+        display: none;
+    }
+    .mb_menuBtn {
+        display: block;
+    }
+    .navInner.show {
+        width: 100%;
+        left: 0;
+    }
+    .mb_menuBtn .mb_hamburger.active span {
+        background-color: #FFF;
+    }
+    .window {
+        width: 100%;
+        margin-left: 0;
+    }
+    .main .home .mainTitle {
+        font-size: 2.2609rem;
+        right: 6.9rem;
+    }
+    .main .home .line {
+        right: 7rem;
+    }
+    .main .home .text1 {
+        font-size: 0.7826rem;
+        right: 2.8rem;
+    }
+    .main .home .text2 {
+        margin-top: 0;
+        font-size: 0.6957rem;
+        right: 15rem;
+    }
+    .main .home .cityImg {
+        right: 8rem;
+    }
+    .history .container>div>p {
+        max-width: 100%;
+    }
+    .history .container .map {
+        width: 13.0435rem;
+        height: 13.0435rem;
+    }
+    .introduction .container {
+        padding-top: 3.0435rem;
+        justify-content: center;
+    }
+    .introduction .container .pcTitle {
+        display: none;
+    }
+    .introduction .container .mbTitle {
+        display: block;
+        font-size: 1.75rem;
+        letter-spacing: 0.1875rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    .introduction .container .mbTitle>hr {
+        margin: 0.5625rem auto 0.1563rem auto;
+        border: 2px solid black;
+        width: 7.1875rem;
+    }
+    .introduction .container .mbTitle>span {
+        letter-spacing: 0;
+    }
+    .introduction .container .text {
+        display: none;
+    }
+    .introduction .slides .swiper {
+        max-width: 100vw;
+    }
+    .introduction .secition2 {
+        margin-top: 17.3913rem;
+    }
+    .tourism .mapGrounp .map {
+        width: 100vw;
+    }
+    .tourService .container .bigBox {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tourService .container .bigBox .box {
+        margin: 1.3043rem 0 0 0;
+    }
+    .footer .container {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+/* 圖片區 */
+
 .line3pic1 {
-    background-image: url("img/Group116.png");
-    background-size: contain;
+    background: url("img/Group116.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line3pic2 {
-    background-image: url("img/Group118.png");
-    background-size: contain;
+    background: url("img/Group118.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line3pic3 {
-    background-image: url("img/Group120.png");
-    background-size: contain;
+    background: url("img/Group120.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line3pic4 {
-    background-image: url("img/Group124.png");
-    background-size: contain;
+    background: url("img/Group124.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line3pic5 {
-    background-image: url("img/Group126.png");
-    background-size: contain;
+    background: url("img/Group126.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line3pic6 {
-    background-image: url("img/Group132.png");
-    background-size: contain;
+    background: url("img/Group132.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line3pic7 {
-    background-image: url("img/Group116.png");
-    background-size: contain;
+    background: url("img/Group116.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line3pic8 {
-    background-image: url("img/Group118.png");
-    background-size: contain;
+    background: url("img/Group118.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line3pic9 {
-    background-image: url("img/Group120.png");
-    background-size: contain;
+    background: url("img/Group120.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line3pic10 {
-    background-image: url("img/Group124.png");
-    background-size: contain;
+    background: url("img/Group124.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line3pic11 {
-    background-image: url("img/Group126.png");
-    background-size: contain;
+    background: url("img/Group126.png") no-repeat center center;
+    background-size: cover;
 }
 
 /* 第二行 */
 
 .line2pic1 {
-    background-image: url("img/Group134.png");
-    background-size: contain;
+    background: url("img/Group134.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line2pic2 {
-    background-image: url("img/Group138.png");
-    background-size: contain;
+    background: url("img/Group138.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line2pic3 {
-    background-image: url("img/Group140.png");
-    background-size: contain;
+    background: url("img/Group140.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line2pic4 {
-    background-image: url("img/Group142.png");
-    background-size: contain;
+    background: url("img/Group142.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line2pic5 {
-    background-image: url("img/Group145.png");
-    background-size: contain;
+    background: url("img/Group145.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line2pic6 {
-    background-image: url("img/Group148.png");
-    background-size: contain;
+    background: url("img/Group148.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line2pic7 {
-    background-image: url("img/Group134.png");
-    background-size: contain;
+    background: url("img/Group134.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line2pic8 {
-    background-image: url("img/Group138.png");
-    background-size: contain;
+    background: url("img/Group138.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line2pic9 {
-    background-image: url("img/Group140.png");
-    background-size: contain;
+    background: url("img/Group140.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line2pic10 {
-    background-image: url("img/Group142.png");
-    background-size: contain;
+    background: url("img/Group142.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line2pic11 {
-    background-image: url("img/Group145.png");
-    background-size: contain;
+    background: url("img/Group145.png") no-repeat center center;
+    background-size: cover;
 }
 
 /* 第一行 */
 
 .line1pic1 {
-    background-image: url("img/Group150.png");
-    background-size: contain;
+    background: url("img/Group150.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line1pic2 {
-    background-image: url("img/Group152.png");
-    background-size: contain;
+    background: url("img/Group152.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line1pic3 {
-    background-image: url("img/Group154.png");
-    background-size: contain;
+    background: url("img/Group154.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line1pic4 {
-    background-image: url("img/Group157.png");
-    background-size: contain;
+    background: url("img/Group157.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line1pic5 {
-    background-image: url("img/Group148.png");
-    background-size: contain;
+    background: url("img/Group148.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line1pic6 {
-    background-image: url("img/Group150.png");
-    background-size: contain;
+    background: url("img/Group150.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line1pic7 {
-    background-image: url("img/Group152.png");
-    background-size: contain;
+    background: url("img/Group152.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line1pic8 {
-    background-image: url("img/Group154.png");
-    background-size: contain;
+    background: url("img/Group154.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line1pic9 {
-    background-image: url("img/Group157.png");
-    background-size: contain;
+    background: url("img/Group157.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line1pic10 {
-    background-image: url("img/Group124.png");
-    background-size: contain;
+    background: url("img/Group124.png") no-repeat center center;
+    background-size: cover;
 }
 
 .line1pic11 {
-    background-image: url("img/Group120.png");
-    background-size: contain;
+    background: url("img/Group120.png") no-repeat center center;
+    background-size: cover;
 }
 
 /* 歷史介紹 */
 
 .history2 #history-inner .slides #scroll-swiper1 div {
-    background-image: url("img/Group91.png");
-    background-size: contain;
+    background: url("img/Group91.png") no-repeat center center;
+    background-size: cover;
 }
 
 .history2 #history-inner .slides #scroll-swiper2 div {
-    background-image: url("img/p026a.jpg");
+    background: url("img/p026a.jpg") no-repeat center center;
     background-size: cover;
     background-position: center;
 }
 
 .history2 #history-inner .slides #scroll-swiper3 div {
-    background-image: url("img/Group85.png");
-    background-size: contain;
+    background: url("img/Group85.png") no-repeat center center;
+    background-size: cover;
 }
 
 .history2 #history-inner .slides #scroll-swiper4 .img1 {
-    background-image: url("img/Group87.png");
-    background-size: contain;
+    background: url("img/Group87.png") no-repeat center center;
+    background-size: cover;
 }
 
 .history2 #history-inner .slides #scroll-swiper4 .img2 {
-    background-image: url("img/Group89.png");
-    background-size: contain;
+    background: url("img/Group89.png") no-repeat center center;
+    background-size: cover;
 }
 
 .history2 #history-inner .slides #scroll-swiper4 .img3 {
-    background-image: url("img/Group2109.png");
-    background-size: contain;
+    background: url("img/Group2109.png") no-repeat center center;
+    background-size: cover;
 }
 
 .history2 #history-inner .slides #scroll-swiper6 .img1 {
-    background-image: url("img/Group96.png");
-    background-size: contain;
+    background: url("img/Group96.png") no-repeat center center;
+    background-size: cover;
 }
 
 .history2 #history-inner .slides #scroll-swiper6 .img2 {
-    background-image: url("img/Rectangle114.png");
-    background-size: contain;
+    background: url("img/Rectangle114.png") no-repeat center center;
+    background-size: cover;
 }
 
 .history2 #history-inner .slides #scroll-swiper7 div {
-    background-image: url("img/Rectangle112.png");
-    background-size: contain;
+    background: url("img/Rectangle112.png") no-repeat center center;
+    background-size: cover;
 }
 
 .history2 #history-inner .slides #scroll-swiper8 .img {
-    background-image: url("img/Rectangle113.png");
-    background-size: contain;
+    background: url("img/Rectangle113.png") no-repeat center center;
+    background-size: cover;
 }
 
 /* 推薦路線 */
 
 .map1pic1 {
-    background-image: url("img/05/01.jpg");
+    background: url("img/05/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map1pic2 {
-    background-image: url("img/08/01.jpg");
+    background: url("img/08/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map1pic3 {
-    background-image: url("img/12/01.jpg");
+    background: url("img/12/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map1pic4 {
-    background-image: url("img/09/01.jpg");
+    background: url("img/09/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map1pic5 {
-    background-image: url("img/03/02.jpg");
+    background: url("img/03/02.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map1pic6 {
-    background-image: url("img/10/01.jpg");
+    background: url("img/10/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 /* 深度旅行 */
 
 .map2pic1 {
-    background-image: url("img/05/01.jpg");
+    background: url("img/05/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map2pic2 {
-    background-image: url("img/08/01.jpg");
+    background: url("img/08/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map2pic3 {
-    background-image: url("img/12/01.jpg");
+    background: url("img/12/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map2pic4 {
-    background-image: url("img/09/01.jpg");
+    background: url("img/09/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map2pic5 {
-    background-image: url("img/03/02.jpg");
+    background: url("img/03/02.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map2pic6 {
-    background-image: url("img/10/01.jpg");
+    background: url("img/10/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map2pic7 {
-    background-image: url("img/10/01.jpg");
+    background: url("img/10/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 /* 美軍大兵 */
 
 .map3pic1 {
-    background-image: url("img/05/01.jpg");
+    background: url("img/05/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map3pic2 {
-    background-image: url("img/08/01.jpg");
+    background: url("img/08/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map3pic3 {
-    background-image: url("img/12/01.jpg");
+    background: url("img/12/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map3pic4 {
-    background-image: url("img/09/01.jpg");
+    background: url("img/09/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map3pic5 {
-    background-image: url("img/03/02.jpg");
+    background: url("img/03/02.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map3pic6 {
-    background-image: url("img/10/01.jpg");
+    background: url("img/10/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map3pic7 {
-    background-image: url("img/12/02.jpg");
+    background: url("img/12/02.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map3pic8 {
-    background-image: url("img/06/ca02f08a07b73c7c8ea49328e78955353_22310450_190117_0004.jpg");
+    background: url("img/06/ca02f08a07b73c7c8ea49328e78955353_22310450_190117_0004.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map3pic9 {
-    background-image: url("img/04/01.jpg");
+    background: url("img/04/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map3pic10 {
-    background-image: url("img/07/lan.jpg");
+    background: url("img/07/lan.jpg") no-repeat center center;
     background-size: cover;
 }
 
 /* 千越大樓 */
 
 .map4pic1 {
-    background-image: url("img/05/01.jpg");
+    background: url("img/05/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map4pic2 {
-    background-image: url("img/08/01.jpg");
+    background: url("img/08/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map4pic3 {
-    background-image: url("img/12/01.jpg");
+    background: url("img/12/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map4pic4 {
-    background-image: url("img/09/01.jpg");
+    background: url("img/09/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map4pic5 {
-    background-image: url("img/03/02.jpg");
+    background: url("img/03/02.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map4pic6 {
-    background-image: url("img/10/01.jpg");
+    background: url("img/10/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 /* 人生交易所 */
 
 .map5pic1 {
-    background-image: url("img/05/01.jpg");
+    background: url("img/05/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map5pic2 {
-    background-image: url("img/08/01.jpg");
+    background: url("img/08/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map5pic3 {
-    background-image: url("img/12/01.jpg");
+    background: url("img/12/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map5pic4 {
-    background-image: url("img/09/01.jpg");
+    background: url("img/09/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map5pic5 {
-    background-image: url("img/03/02.jpg");
+    background: url("img/03/02.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map5pic6 {
-    background-image: url("img/10/01.jpg");
+    background: url("img/10/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 /* 時光印記 */
 
 .map6pic1 {
-    background-image: url("img/05/01.jpg");
+    background: url("img/05/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map6pic2 {
-    background-image: url("img/08/01.jpg");
+    background: url("img/08/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map6pic3 {
-    background-image: url("img/12/01.jpg");
+    background: url("img/12/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map6pic4 {
-    background-image: url("img/09/01.jpg");
+    background: url("img/09/01.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map6pic5 {
-    background-image: url("img/03/02.jpg");
+    background: url("img/03/02.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .map6pic6 {
-    background-image: url("img/10/01.jpg");
+    background: url("img/10/01.jpg") no-repeat center center;
     background-size: cover;
 }
+
+/* 圖片區到此 */

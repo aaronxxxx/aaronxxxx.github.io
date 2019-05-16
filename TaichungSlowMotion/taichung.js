@@ -1,110 +1,63 @@
+//  頁面載入
 $(function () {
-
     $('#hamburger').on('click', function () {
 
-        $('#nav-inner').toggleClass('show');
+        $('.navInner').toggleClass('show');
 
         $(this).toggleClass('active');
 
     });
+    $('#mb_hamburger').on('click', function () {
 
-});
-
-$(function () {
-
-    $('#mb-hamburger').on('click', function () {
-
-        $('#nav-inner').toggleClass('show');
+        $('.navInner').toggleClass('show');
 
         $(this).toggleClass('active');
 
     });
-
-});
-
-$(function () {
-
     $('#his').on('click', function () {
 
-        $('#nav-inner').toggleClass('show');
+        $('.navInner').toggleClass('show');
 
-        $('#mb-hamburger').toggleClass('show');
+        $('mb_hamburger').toggleClass('show');
 
         $('#hamburger').toggleClass('active');
     });
-
-});
-
-$(function () {
-
     $('#int').on('click', function () {
 
-        $('#nav-inner').toggleClass('show');
+        $('.navInner').toggleClass('show');
 
-        $('#mb-hamburger').toggleClass('show');
+        $('mb_hamburger').toggleClass('show');
 
         $('#hamburger').toggleClass('active');
     });
-
-});
-
-$(function () {
-
     $('#tou').on('click', function () {
 
-        $('#nav-inner').toggleClass('show');
+        $('.navInner').toggleClass('show');
 
-        $('#mb-hamburger').toggleClass('show');
+        $('mb_hamburger').toggleClass('show');
 
         $('#hamburger').toggleClass('active');
     });
-
-});
-
-$(function () {
-
     $('#tou2').on('click', function () {
 
-        $('#nav-inner').toggleClass('show');
+        $('.navInner').toggleClass('show');
 
-        $('#mb-hamburger').toggleClass('show');
+        $('mb_hamburger').toggleClass('show');
 
         $('#hamburger').toggleClass('active');
     });
 
+    $('#historyBtn').click(function () {
+        $('.historyInner').toggleClass('show');
+        $('.line').toggleClass('show');
+        $('.circle').toggleClass('show');
+        $('.circle2').toggleClass('show');
+        $('.space').toggleClass('show');
+        $('.historyani').toggleClass('show');
+    })
 });
 
-
-
-
-
-var historyBtn = document.getElementById('history-btn');
-
-var historyInner = document.getElementById('history-inner');
-
-var historyLine = document.getElementById('line');
-
-var historyCircle = document.getElementById('circle');
-
-var historyCircle2 = document.getElementById('circle2');
-
-var space = document.querySelector('.space');
-
-var ani = document.querySelector('.historyani');
-
-historyBtn.onclick = function () {
-
-    historyInner.classList.toggle('show');
-    historyLine.classList.toggle('show');
-    historyCircle.classList.toggle('show');
-    historyCircle2.classList.toggle('show');
-    space.classList.toggle('show');
-    ani.classList.toggle('show');
-
-}
-
 var scroll = new Swiper("#scroll", {
-
     mousewheel: true,
     freeMode: true,
     observer: true,
@@ -122,8 +75,7 @@ var swiper1 = new Swiper("#ture", {
     },
     loop: true,
     loopAdditionalSlides: 7,
-    width: 300,
-    height: 160,
+    slidesPerView: 6,
 });
 var swiper2 = new Swiper("#reverse", {
     speed: 15000,
@@ -135,8 +87,7 @@ var swiper2 = new Swiper("#reverse", {
     },
     loop: true,
     loopAdditionalSlides: 7,
-    width: 300,
-    height: 160,
+    slidesPerView: 6,
 });
 var swiper3 = new Swiper("#ture2", {
     speed: 15000,
@@ -145,8 +96,7 @@ var swiper3 = new Swiper("#ture2", {
     },
     loop: true,
     loopAdditionalSlides: 7,
-    width: 300,
-    height: 160,
+    slidesPerView: 6,
 });
 var swiper4 = new Swiper("#ture3", {
     speed: 2000,
@@ -231,13 +181,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-var mySwiper = new Swiper('#mapswiper', {
+var mySwiper = new Swiper('#mapSwiper', {
 
-    initialSlide :2,
+    initialSlide: 2,
     slideToClickedSlide: true,
     centeredSlides: true,
-    slidesPerView: 3,
-
+    slidesPerView: 2,
+    breakpoints: {
+        1024: {
+            slidesPerView: 2,
+        }
+    }
 })
 
 var mapBtn1 = document.querySelector('.mapslide1');
@@ -252,21 +206,21 @@ var mapBtn5 = document.querySelector('.mapslide5');
 
 var mapBtn6 = document.querySelector('.mapslide6');
 
-var imgChange1 = document.querySelector('.map-img1');
+var imgChange1 = document.querySelector('.mapImg1');
 
-var imgChange2 = document.querySelector('.map-img2');
+var imgChange2 = document.querySelector('.mapImg2');
 
-var imgChange3 = document.querySelector('.map-img3');
+var imgChange3 = document.querySelector('.mapImg3');
 
-var imgChange4 = document.querySelector('.map-img4');
+var imgChange4 = document.querySelector('.mapImg4');
 
-var imgChange5 = document.querySelector('.map-img5');
+var imgChange5 = document.querySelector('.mapImg5');
 
-var imgChange6 = document.querySelector('.map-img6');
+var imgChange6 = document.querySelector('.mapImg6');
 
-var tourCon = document.getElementById('tour-con');
+var tourCon = document.getElementById('tourCon');
 
-mapBtn1.onclick = function(){
+mapBtn1.onclick = function () {
     imgChange1.classList.add('show');
     imgChange2.classList.remove('show');
     imgChange3.classList.remove('show');
@@ -276,7 +230,7 @@ mapBtn1.onclick = function(){
     tourCon.classList.add('move');
 }
 
-mapBtn2.onclick = function(){
+mapBtn2.onclick = function () {
     imgChange2.classList.add('show');
     imgChange1.classList.remove('show');
     imgChange3.classList.remove('show');
@@ -286,7 +240,7 @@ mapBtn2.onclick = function(){
     tourCon.classList.add('move');
 }
 
-mapBtn3.onclick = function(){
+mapBtn3.onclick = function () {
     imgChange3.classList.add('show');
     imgChange2.classList.remove('show');
     imgChange1.classList.remove('show');
@@ -296,7 +250,7 @@ mapBtn3.onclick = function(){
     tourCon.classList.add('move');
 }
 
-mapBtn4.onclick = function(){
+mapBtn4.onclick = function () {
     imgChange4.classList.add('show');
     imgChange2.classList.remove('show');
     imgChange3.classList.remove('show');
@@ -306,7 +260,7 @@ mapBtn4.onclick = function(){
     tourCon.classList.add('move');
 }
 
-mapBtn5.onclick = function(){
+mapBtn5.onclick = function () {
     imgChange5.classList.add('show');
     imgChange2.classList.remove('show');
     imgChange3.classList.remove('show');
@@ -316,7 +270,7 @@ mapBtn5.onclick = function(){
     tourCon.classList.add('move');
 }
 
-mapBtn6.onclick = function(){
+mapBtn6.onclick = function () {
     imgChange6.classList.add('show');
     imgChange2.classList.remove('show');
     imgChange3.classList.remove('show');
@@ -335,7 +289,7 @@ var swiper1 = new Swiper("#mb-slide", {
     loopAdditionalSlides: 6,
     width: 120,
     height: 120,
-    
+
 });
 
 
