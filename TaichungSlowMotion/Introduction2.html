@@ -5,19 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>景點一覽</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css">
     <link rel="stylesheet" href="Introduction2.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:200,300,400,500,600,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-        crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script>
+        function placeholderPic() {
+            var w = document.documentElement.offsetWidth;
+            var c = Math.floor(w / 60);
+            var p = Math.floor(w / 35);
+            var m = Math.floor(w / 25);
+            if (w > 1025) {
+                document.documentElement.style.fontSize = c + 'px';
+            } else if (w <= 1024 && w > 576) {
+                document.documentElement.style.fontSize = p + 'px';
+            } else if (w <= 576) {
+                document.documentElement.style.fontSize = m + 'px';
+            }
+        }
+        placeholderPic();
+        window.onresize = function () {
+            placeholderPic();
+        }
+    </script>
 </head>
 
 <body>
-    <div id="bag"></div>
+    <div id="bag" class="bag"></div>
     <div id="menubtn">
         <div id="hamburger">
             <span></span>
@@ -30,14 +48,18 @@
         </div>
     </div>
     </nav>
-    <div id="nav-inner">
-        <div class="big-box">
+    <div class="navInner">
+        <div class="bigBox">
             <h1>舊城漫漫</h1>
             <span>Taichung City<br>
                 Tourism<br>
                 Introduction.</span>
         </div>
-        <div class="inner-title">
+        <div class="box">
+            <h1>慢速台中
+                <hr><span>Taichung in Slow Motion</span></h1>
+        </div>
+        <div class="innerTitle">
             <div class="text">
                 <hr>
                 <h1>導覽服務</h1><span>Tour Service</span>
@@ -56,118 +78,110 @@
             </div>
         </div>
         <div class="logo"></div>
-        <div class="clearfix"></div>
-        <div class="box">
-            <h1>慢速台中
-                <hr><span>Taichung in Slow Motion</span></h1>
-        </div>
     </div>
     <div class="main">
-        <div id="big-box">
+        <div class="bigBox">
             <h1>舊城漫漫</h1>
-            <span>Taichung City<br>
-                Tourism<br>
-                Introduction.</span>
         </div>
-        <div id="box">
+        <div class="box">
             <h1>慢速台中</h1>
             <div class="line"></div>
             <span>Taichung in Slow Motion</span>
         </div>
         <div class="title">
-            <div class="line1">
+            <div class="line1 swiperBtn" data-table="swiper1">
                 <span>台中市中區台灣大道一段1號
-                    </span>
+                </span>
                 <a href="Introduction1-2.html">台中火車站</a>
             </div>
-            <div class="line2" style="clear:both;">
+            <div class="line2 swiperBtn" data-table="swiper2">
                 <span>台中市中區20號
-                    </span>
+                </span>
                 <a href="Introduction1-3.html">宮原眼科</a>
             </div>
-            <div class="line3" style="clear:both;">
+            <div class="line3 swiperBtn" data-table="swiper3">
                 <span>台中市中區中山路26號
-                    </span>
+                </span>
                 <a href="Introduction1-4.html">盛橋刈包</a>
             </div>
-            <div class="line4" style="clear:both;">
+            <div class="line4 swiperBtn" data-table="swiper4">
                 <span>宮原眼科旁邊
-                    </span>
+                </span>
                 <a href="Introduction1-5.html">新盛綠川水岸廊道</a>
             </div>
-            <div class="line5" style="clear:both;">
+            <div class="line5 swiperBtn" data-table="swiper5">
                 <span>台中市中區綠川西街135號
-                    </span>
+                </span>
                 <a href="Introduction1-6.html">第一廣場</a>
             </div>
-            <div class="line6" style="clear:both;">
+            <div class="line6 swiperBtn" data-table="swiper6">
                 <span>臺中市中區成功路90巷
-                    </span>
+                </span>
                 <a href="Introduction1-7.html">青草街</a>
             </div>
-            <div class="line7" style="clear:both;">
+            <div class="line7 swiperBtn" data-table="swiper7">
                 <span>臺中市中區繼光街
-                    </span>
+                </span>
                 <a href="Introduction1-8.html">繼光商街</a>
             </div>
-            <div class="line8" style="clear:both;">
-                <span>台中市中區台灣大道一段137號 
-                    </span>
+            <div class="line8 swiperBtn" data-table="swiper8">
+                <span>台中市中區台灣大道一段137號
+                </span>
                 <a href="Introduction1-9.html">幸發亭</a>
             </div>
-            <div class="line9" style="clear:both;">
+            <div class="line9 swiperBtn" data-table="swiper9">
                 <span>台中市中區綠川西街113號
-                    </span>
+                </span>
                 <a href="Introduction">千越大樓</a>
             </div>
-            <div class="line10" style="clear:both;">
+            <div class="line10 swiperBtn" data-table="swiper10">
                 <span>台中市自由路與中正路口
-                    </span>
+                </span>
                 <a href="Introduction1-10.html">遠東百貨</a>
             </div>
-            <div class="line11" style="clear:both;">
+            <div class="line11 swiperBtn" data-table="swiper11">
                 <span>台中市中區中山路69號2樓
-                    </span>
+                </span>
                 <a href="Introduction1-11.html">中區再生基地</a>
             </div>
-            <div class="line12" style="clear:both;">
+            <div class="line12 swiperBtn" data-table="swiper12">
                 <span>台中市中區中山路72號
-                    </span>
+                </span>
                 <a href="Introduction1-12.html">第四信用合作社</a>
             </div>
-            <div class="line13" style="clear:both;">
+            <div class="line13 swiperBtn" data-table="swiper13">
                 <span>中山路與中正路103巷路口
-                    </span>
+                </span>
                 <a href="Introduction1-13.html">丸山呢絨行</a>
             </div>
-            <div class="line14" style="clear:both;">
+            <div class="line14 swiperBtn" data-table="swiper14">
                 <span>台中市中區中山路127號
-                    </span>
+                </span>
                 <a href="Introduction1-13.html">南夜大舞廳</a>
             </div>
-            <div class="line15" style="clear:both;">
+            <div class="line15 swiperBtn" data-table="swiper15">
                 <span>位於市府路與中山路交叉口
-                    </span>
+                </span>
                 <a href="Introduction1-13.html">別府日本料理店</a>
             </div>
-            <div class="line16" style="clear:both;">
+            <div class="line16 swiperBtn" data-table="swiper16">
                 <span>台中市中區中山路
-                    </span>
+                </span>
                 <a href="Introduction1-13.html">深鑐牙科診所</a>
             </div>
-            <div class="line17" style="clear:both;">
+            <div class="line17 swiperBtn" data-table="swiper17">
                 <span>台中市中區中山路192號
-                    </span>
+                </span>
                 <a href="Introduction1-13.html">台中永生蔘藥行</a>
             </div>
-            <div class="line18" style="clear:both;">
+            <div class="line18 swiperBtn" data-table="swiper18">
                 <span>台中市中區中山路192號
-                    </span>
+                </span>
                 <a href="Introduction1-13.html">華山珠寶銀樓</a>
             </div>
-            <div class="line19" style="clear:both;">
+            <div class="line19 swiperBtn" data-table="swiper19">
                 <span>台中市中區中山路192號
-                    </span>
+                </span>
                 <a href="Introduction1-13.html">奎輝堂</a>
             </div>
         </div>
@@ -457,22 +471,9 @@
             <div class="swiper-slide pic11"></div>
         </div>
     </div>
-    <i id="btn" class="fas fa-chevron-circle-down"></i>
 
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
+    <script src="js/jquery-min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="Introduction2.js"></script>
 </body>
 

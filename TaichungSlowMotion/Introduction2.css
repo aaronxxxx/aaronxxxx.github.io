@@ -1,8 +1,8 @@
-body{
+body {
     position: relative;
 }
 
-#bag {
+.bag {
     width: 100vw;
     height: 100vh;
     opacity: 0;
@@ -14,23 +14,18 @@ body{
     z-index: -1;
 }
 
-
-#bag.show {
+.bag.show {
     opacity: 1;
     filter: blur(0px);
     animation: box-filter 0.5s;
     background-color: #242424;
-    
 }
-
-
 
 @keyframes box-hide {
     0% {
         opacity: 1;
         filter: blur(0px);
     }
-
     100% {
         opacity: 0;
         filter: blur(5px);
@@ -40,19 +35,18 @@ body{
 @keyframes box-filter {
     0% {
         opacity: 0;
-        filter: blur(5px)
+        filter: blur(5px);
     }
-
     100% {
         opacity: 1;
-        filter: blur(0px)
+        filter: blur(0px);
     }
 }
 
 #menubtn {
     position: fixed;
-    top: 32px;
-    right: 267px;
+    top: 1rem;
+    right: 8.3438rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,31 +56,30 @@ body{
 }
 
 #menubtn:before {
-     content: " ";
-     display: block;
-     padding-top: 100%;
+    content: " ";
+    display: block;
+    padding-top: 100%;
 }
-  
+
 #hamburger {
-    width: 40px;
+    width: 1.25rem;
     cursor: pointer;
 }
-  
-#hamburger span {
+
+#hamburger>span {
     display: block;
     width: 100%;
-    height: 4px;
-    border-radius: 4px;
+    height: 0.125rem;
+    border-radius: 0.125rem;
     background-color: black;
-    margin-bottom: 8px;
+    margin-bottom: 0.25rem;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-  
+
 #hamburger.active span:nth-child(1) {
-    
-    transform: translateY(12px) rotate(45deg);
-    background-color: black;
+    transform: translateY(0.375rem) rotate(45deg);
+    background-color: #FFF;
 }
 
 #hamburger.active span:nth-child(2) {
@@ -94,238 +87,212 @@ body{
 }
 
 #hamburger.active span:nth-child(3) {
-    
-    transform: translateY(-12px) rotate(-45deg);
-    background-color: black;
+    transform: translateY(-0.375rem) rotate(-45deg);
+    background-color: #FFF;
 }
 
-#nav-inner{
-    width: calc(100vw - 17px);
+.navInner {
+    width: 100%;
     height: 100vh;
-    background-color: white;
-    top: -2500px;
+    background: url(img/backgroup.png) no-repeat center center;
+    background-size: cover;
+    top: -78.125rem;
     transition: cubic-bezier(0.34, 0.08, 0.44, 0.82) 2.5s;
     z-index: 52;
     position: fixed;
-    padding: 90px 140px;
-
-    
+    padding: 2.8125rem 4.375rem;
+    color: #FFF;
 }
 
-#nav-inner.show{
+.navInner.show {
     top: 0;
-    transition:  cubic-bezier(0.34, 0.08, 0.44, 0.82) 1.5s;
-
-
+    transition: cubic-bezier(0.34, 0.08, 0.44, 0.82) 1.5s;
 }
 
-#nav-inner .big-box{
+.navInner .bigBox {
     float: left;
 }
 
-#nav-inner .big-box h1{
-    font-size: 44px;
+.navInner .bigBox>h1 {
+    font-size: 1.375rem;
     font-weight: bold;
-    margin-bottom: 25px;
-    letter-spacing: 14px;
+    margin-bottom: 0.7813rem;
+    letter-spacing: 0.4375rem;
 }
 
-#nav-inner .big-box span{
-    font-size: 12px;
+.navInner .bigBox>span {
+    font-size: 0.375rem;
     font-weight: 500;
-    line-height: 24px;
-    
+    line-height: 0.75rem;
 }
 
-#nav-inner .inner-title{
+.navInner .innerTitle {
     position: absolute;
     margin: 0 auto;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-#nav-inner .inner-title .text{
+.navInner .innerTitle .text {
     writing-mode: vertical-rl;
-    text-align: center;
     display: flex;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    margin:0 26px;
+    align-items: center;
+    margin: 0 0.8125rem;
 }
 
-#nav-inner .inner-title .text hr{
-    width: 20px;
-    border: 1px solid black;
-    margin:0 15px;
-    margin-bottom: 37px;
+.navInner .innerTitle .text>hr {
+    width: 25px;
+    border: 1px solid #FFF;
+    margin: 0 0.4688rem 1.1563rem 0.4688rem;
 }
 
-#nav-inner .inner-title .text h1{
-    margin: 0;
-    font-size: 28px;
-    margin-bottom: 37px;
-    line-height: 52px;
-    letter-spacing: 21px;
+.navInner .innerTitle .text>h1 {
+    margin: 0 0 1.1563rem 0;
+    font-size: 0.875rem;
+    letter-spacing: 0.6563rem;
 }
 
-#nav-inner .inner-title .text span{
-    font-size: 20px;
+.navInner .innerTitle .text>span {
+    font-size: 0.625rem;
     font-weight: 500;
-    line-height: 48px;
-    letter-spacing: 1px;
-     
+    letter-spacing: 0.0313rem;
 }
 
-#nav-inner .logo{
-    width: 100px;
-    height: 100px;
+.navInner .logo {
+    width: 3.125rem;
+    height: 3.125rem;
     border-radius: 50%;
-    background-color: #808080;
+    background: url(img/Path188.png) no-repeat center center;
+    background-size: cover;
     float: right;
 }
 
-#nav-inner .box{
+.navInner .box {
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%);
     text-align: center;
-    margin-bottom: 72px;
+    margin-bottom: 2.25rem;
 }
 
-#nav-inner .box h1{
-    margin: 0; 
-    font-size: 15px;
+.navInner .box>h1 {
+    margin: 0;
+    font-size: 0.4688rem;
     font-weight: 600;
-    letter-spacing: 10px;
+    letter-spacing: 0.3125rem;
 }
 
-#nav-inner .box hr{
-    width: 90px;
-    border: 1px solid black;
+.navInner .box>h1>hr {
+    width: 2.8125rem;
+    border: 1px solid #FFF;
+    margin: 0.3125rem auto 0.3125rem auto;
 }
 
-#nav-inner .box span{   
-    font-size: 6px;
+.navInner .box>h1>span {
+    font-size: 0.1875rem;
     font-weight: 500;
     letter-spacing: 0px;
 }
 
-.main.show{
+.main.show {
     color: white;
 }
 
-.main #big-box{
+.main .bigBox {
     position: fixed;
     z-index: 2;
-    top: 105px;
-    left: 145px;
+    top: 3.2813rem;
+    left: 4.5313rem;
 }
 
-
-.main #big-box h1{
-    font-size: 44px;
+.main .bigBox>h1 {
+    font-size: 1.375rem;
     font-weight: bold;
-    margin-bottom: 25px;
-    letter-spacing: 14px;
+    letter-spacing: 0.4375rem;
 }
 
-.main #big-box span{
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 24px;
-    
-}
-
-.main #big-box.show{
-    color: white;
-}
-
-.main #box{
+.main .box {
     position: fixed;
     z-index: 2;
-    top: 285px;
-    left: 145px;
+    top: 5.7813rem;
+    left: 4.5313rem;
 }
 
-
-.main #box h1{
-    margin: 0; 
-    font-size: 15px;
+.main .box>h1 {
+    margin: 0;
+    font-size: 0.4688rem;
     font-weight: 600;
-    letter-spacing: 10px;
-    margin-bottom: 7px;
+    letter-spacing: 0.3125rem;
+    margin-bottom: 0.2188rem;
 }
 
-.main #box span{   
-    font-size: 6px;
+.main .box>span {
+    font-size: 0.1875rem;
     font-weight: 500;
     letter-spacing: 0px;
 }
 
-.main #box.show{
+.bigBox.show, .box.show {
     color: white;
 }
 
-.main .title{
-    width: calc(100vw - 457px);
-    float: right;
-    margin-top: 250px;
-    position: relative;
+.main .title {
+    width: calc(100vw - 14.2813rem);
+    margin-top: 7.8125rem;
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    right: 0;
     z-index: 3;
 }
 
-.main .title div{
-    border-top-style: solid;
-    border-top-color: black;
-    border-width: 1px;
-    height: 159px;
-    
+.main .title .swiperBtn {
+    border-top: 1px solid black;
+    height: 4.9688rem;
 }
 
-.main .title div span{
-    width: 180px;
-    font-size: 14px;
+.main .title .swiperBtn>span {
+    width: 5.625rem;
+    font-size: 0.4375rem;
     font-weight: 500;
     text-align: left;
     float: left;
-    margin-top: 40px;
+    margin-top: 1.25rem;
 }
 
-.main .title div a{
+.main .title .swiperBtn>a {
     color: black;
     text-decoration: none;
-    font-size: 97px;
+    font-size: 3.0313rem;
     font-weight: bold;
-    margin-top: 15px;
-    margin-left: 400px;
-    
+    margin: 0.4688rem 0 0 12.5rem;
 }
 
-.main .title div a:hover{
+.main .title .swiperBtn>a.show {
     color: white;
 }
 
-
-.main .title div.show{
+.main .title .swiperBtn.show {
     color: white;
     border-top-style: solid;
     border-top-color: white;
-    border-width: 1px;
-    text-shadow: 20px 5px 40px rgb(130, 63, 255),0px 5px 40px rgb(255, 0, 85),-20px 5px 40px rgb(228, 77, 31);
+    border-width: 0.0313rem;
+    text-shadow: 20px 5px 40px rgb(130, 63, 255), 0px 5px 40px rgb(255, 0, 85), -20px 5px 40px rgb(228, 77, 31);
     opacity: 0.8;
 }
 
-.main .title div:hover{
+.main .title .swiperBtn:hover {
     color: white;
 }
 
-
 .swiper-container {
-    height: 360px;
-    max-width: calc(100vw - 17px);
+    height: 11.25rem;
+    max-width: 100%;
     overflow: hidden;
     position: fixed;
     top: 50%;
@@ -334,118 +301,9 @@ body{
     animation: hide 0.5s;
     opacity: 0;
     z-index: 1;
-
 }
 
-#swiper1.show {
-    opacity: 1;
-    filter: blur(0px);
-    animation: filter 0.5s;
-}
-
-#swiper2.show {
-    opacity: 1;
-    filter: blur(0px);
-    animation: filter 0.5s;
-}
-
-#swiper3.show {
-    opacity: 1;
-    filter: blur(0px);
-    animation: filter 0.5s;
-}
-
-#swiper4.show {
-    opacity: 1;
-    filter: blur(0px);
-    animation: filter 0.5s;
-}
-
-#swiper5.show {
-    opacity: 1;
-    filter: blur(0px);
-    animation: filter 0.5s;
-}
-
-#swiper6.show {
-    opacity: 1;
-    filter: blur(0px);
-    animation: filter 0.5s;
-}
-
-#swiper7.show {
-    opacity: 1;
-    filter: blur(0px);
-    animation: filter 0.5s;
-}
-
-#swiper8.show {
-    opacity: 1;
-    filter: blur(0px);
-    animation: filter 0.5s;
-}
-
-#swiper9.show {
-    opacity: 1;
-    filter: blur(0px);
-    animation: filter 0.5s;
-}
-
-#swiper10.show {
-    opacity: 1;
-    filter: blur(0px);
-    animation: filter 0.5s;
-}
-
-#swiper11.show {
-    opacity: 1;
-    filter: blur(0px);
-    animation: filter 0.5s;
-}
-
-#swiper12.show {
-    opacity: 1;
-    filter: blur(0px);
-    animation: filter 0.5s;
-}
-
-#swiper13.show {
-    opacity: 1;
-    filter: blur(0px);
-    animation: filter 0.5s;
-}
-
-#swiper14.show {
-    opacity: 1;
-    filter: blur(0px);
-    animation: filter 0.5s;
-}
-
-#swiper15.show {
-    opacity: 1;
-    filter: blur(0px);
-    animation: filter 0.5s;
-}
-
-#swiper16.show {
-    opacity: 1;
-    filter: blur(0px);
-    animation: filter 0.5s;
-}
-
-#swiper17.show {
-    opacity: 1;
-    filter: blur(0px);
-    animation: filter 0.5s;
-}
-
-#swiper18.show {
-    opacity: 1;
-    filter: blur(0px);
-    animation: filter 0.5s;
-}
-
-#swiper19.show {
+.swiper-container.show {
     opacity: 1;
     filter: blur(0px);
     animation: filter 0.5s;
@@ -456,1163 +314,1122 @@ body{
 }
 
 .swiper-container .swiper-wrapper .swiper-slide {
-    width: 560px;
-    height: 360px;
+    width: 17.5rem;
+    height: 11.25rem;
     background-color: #999999;
-
 }
 
 @keyframes filter {
     0% {
-        
         filter: blur(10px)
     }
-
     100% {
-        
         filter: blur(0px)
     }
 }
 
 @keyframes hide {
     0% {
-        
         filter: blur(0px)
     }
-
     100% {
-        
         filter: blur(10px)
     }
 }
 
-#btn{
-    font-size: 100px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
+@media screen and (max-width:1024px) {
+    .main .title {
+        width: 27.5862rem;
+        margin-top: 8.6207rem;
+    }
+    .main .title>div {
+        height: 3.5rem;
+    }
+    .main .title>div>a {
+        font-size: 2rem;
+        margin: 0;
+    }
 }
 
 /* 放圖片進來 */
 
-
-#swiper1 .swiper-wrapper .pic1{
+#swiper1 .swiper-wrapper .pic1 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper1 .swiper-wrapper .pic2{
+#swiper1 .swiper-wrapper .pic2 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper1 .swiper-wrapper .pic3{
+#swiper1 .swiper-wrapper .pic3 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper1 .swiper-wrapper .pic4{
+#swiper1 .swiper-wrapper .pic4 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
 
-#swiper1 .swiper-wrapper .pic5{
+#swiper1 .swiper-wrapper .pic5 {
     background-image: url("img/05/taichung.jpg");
     background-size: cover;
 }
 
-#swiper1 .swiper-wrapper .pic6{
+#swiper1 .swiper-wrapper .pic6 {
     background-image: url("img/05/first.jpg");
     background-size: cover;
 }
 
-#swiper1 .swiper-wrapper .pic7{
+#swiper1 .swiper-wrapper .pic7 {
     background-image: url("img/05/second.jpg");
     background-size: cover;
 }
 
-#swiper1 .swiper-wrapper .pic8{
+#swiper1 .swiper-wrapper .pic8 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper1 .swiper-wrapper .pic9{
+#swiper1 .swiper-wrapper .pic9 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper1 .swiper-wrapper .pic10{
+#swiper1 .swiper-wrapper .pic10 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper1 .swiper-wrapper .pic11{
+#swiper1 .swiper-wrapper .pic11 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
 
-
 /* 第二行 */
 
-#swiper2 .swiper-wrapper .pic1{
+#swiper2 .swiper-wrapper .pic1 {
     background-image: url("img/08/01.jpg");
     background-size: cover;
 }
 
-#swiper2 .swiper-wrapper .pic2{
+#swiper2 .swiper-wrapper .pic2 {
     background-image: url("img/08/02.jpg");
     background-size: cover;
 }
 
-#swiper2 .swiper-wrapper .pic3{
+#swiper2 .swiper-wrapper .pic3 {
     background-image: url("img/08/03.jpg");
     background-size: cover;
 }
 
-#swiper2 .swiper-wrapper .pic4{
+#swiper2 .swiper-wrapper .pic4 {
     background-image: url("img/08/04.jpg");
     background-size: cover;
 }
 
-#swiper2 .swiper-wrapper .pic5{
+#swiper2 .swiper-wrapper .pic5 {
     background-image: url("img/08/ca02f08a07b73c7c8ea49328e78955353_22309465_190117_0003.jpg");
     background-size: cover;
 }
 
-#swiper2 .swiper-wrapper .pic6{
+#swiper2 .swiper-wrapper .pic6 {
     background-image: url("img/08/01.jpg");
     background-size: cover;
 }
 
-#swiper2 .swiper-wrapper .pic7{
+#swiper2 .swiper-wrapper .pic7 {
     background-image: url("img/08/02.jpg");
     background-size: cover;
 }
 
-#swiper2 .swiper-wrapper .pic8{
+#swiper2 .swiper-wrapper .pic8 {
     background-image: url("img/08/03.jpg");
     background-size: cover;
 }
 
-#swiper2 .swiper-wrapper .pic9{
+#swiper2 .swiper-wrapper .pic9 {
     background-image: url("img/08/04.jpg");
     background-size: cover;
 }
 
-#swiper2 .swiper-wrapper .pic10{
+#swiper2 .swiper-wrapper .pic10 {
     background-image: url("img/08/ca02f08a07b73c7c8ea49328e78955353_22309465_190117_0003.jpg");
     background-size: cover;
 }
 
-#swiper2 .swiper-wrapper .pic11{
+#swiper2 .swiper-wrapper .pic11 {
     background-image: url("img/08/01.jpg");
     background-size: cover;
 }
-
-
 
 /* 第三行 */
 
-
-#swiper3 .swiper-wrapper .pic1{
+#swiper3 .swiper-wrapper .pic1 {
     background-image: url("img/09/01.jpg");
     background-size: cover;
 }
 
-#swiper3 .swiper-wrapper .pic2{
+#swiper3 .swiper-wrapper .pic2 {
     background-image: url("img/09/02.jpg");
     background-size: cover;
 }
 
-#swiper3 .swiper-wrapper .pic3{
+#swiper3 .swiper-wrapper .pic3 {
     background-image: url("img/09/03.jpg");
     background-size: cover;
 }
 
-#swiper3 .swiper-wrapper .pic4{
+#swiper3 .swiper-wrapper .pic4 {
     background-image: url("img/09/04.jpg");
     background-size: cover;
 }
 
-#swiper3 .swiper-wrapper .pic5{
+#swiper3 .swiper-wrapper .pic5 {
     background-image: url("img/09/ca02f08a07b73c7c8ea49328e78955353_22309471_190117_0005.jpg");
     background-size: cover;
 }
 
-#swiper3 .swiper-wrapper .pic6{
+#swiper3 .swiper-wrapper .pic6 {
     background-image: url("img/09/01.jpg");
     background-size: cover;
 }
 
-#swiper3 .swiper-wrapper .pic7{
+#swiper3 .swiper-wrapper .pic7 {
     background-image: url("img/09/02.jpg");
     background-size: cover;
 }
 
-#swiper3 .swiper-wrapper .pic8{
+#swiper3 .swiper-wrapper .pic8 {
     background-image: url("img/09/03.jpg");
     background-size: cover;
 }
 
-#swiper3 .swiper-wrapper .pic9{
+#swiper3 .swiper-wrapper .pic9 {
     background-image: url("img/09/04.jpg");
     background-size: cover;
 }
 
-#swiper3 .swiper-wrapper .pic10{
+#swiper3 .swiper-wrapper .pic10 {
     background-image: url("img/09/ca02f08a07b73c7c8ea49328e78955353_22309471_190117_0005.jpg");
     background-size: cover;
 }
 
-#swiper3 .swiper-wrapper .pic11{
+#swiper3 .swiper-wrapper .pic11 {
     background-image: url("img/09/04.jpg");
     background-size: cover;
 }
-
 
 /* 第四行 */
 
-
-#swiper4 .swiper-wrapper .pic1{
+#swiper4 .swiper-wrapper .pic1 {
     background-image: url("img/12/01.jpg");
     background-size: cover;
 }
 
-#swiper4 .swiper-wrapper .pic2{
+#swiper4 .swiper-wrapper .pic2 {
     background-image: url("img/12/02.jpg");
     background-size: cover;
 }
 
-#swiper4 .swiper-wrapper .pic3{
+#swiper4 .swiper-wrapper .pic3 {
     background-image: url("img/12/03.jpg");
     background-size: cover;
 }
 
-#swiper4 .swiper-wrapper .pic4{
+#swiper4 .swiper-wrapper .pic4 {
     background-image: url("img/12/04.jpg");
     background-size: cover;
 }
 
-#swiper4 .swiper-wrapper .pic5{
+#swiper4 .swiper-wrapper .pic5 {
     background-image: url("img/12/05.jpg");
     background-size: cover;
 }
 
-#swiper4 .swiper-wrapper .pic6{
+#swiper4 .swiper-wrapper .pic6 {
     background-image: url("img/12/img-1543554329-11765.jpg");
     background-size: cover;
 }
 
-#swiper4 .swiper-wrapper .pic7{
+#swiper4 .swiper-wrapper .pic7 {
     background-image: url("img/12/T_190118_0019_0.jpg");
     background-size: cover;
 }
 
-#swiper4 .swiper-wrapper .pic8{
+#swiper4 .swiper-wrapper .pic8 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper4 .swiper-wrapper .pic9{
+#swiper4 .swiper-wrapper .pic9 {
     background-image: url("img/12/02.jpg");
     background-size: cover;
 }
 
-#swiper4 .swiper-wrapper .pic10{
+#swiper4 .swiper-wrapper .pic10 {
     background-image: url("img/12/03.jpg");
     background-size: cover;
 }
 
-#swiper4 .swiper-wrapper .pic11{
+#swiper4 .swiper-wrapper .pic11 {
     background-image: url("img/12/04.jpg");
     background-size: cover;
 }
 
-
 /* 第五行 */
 
-
-#swiper5 .swiper-wrapper .pic1{
+#swiper5 .swiper-wrapper .pic1 {
     background-image: url("img/01/14910410_1127722610597903_1334434285265983764_n.jpg");
     background-size: cover;
 }
 
-#swiper5 .swiper-wrapper .pic2{
+#swiper5 .swiper-wrapper .pic2 {
     background-image: url("img/01/16422633_1218236021546561_4168359449025589505_o.jpg");
     background-size: cover;
 }
 
-#swiper5 .swiper-wrapper .pic3{
+#swiper5 .swiper-wrapper .pic3 {
     background-image: url("img/01/mpark.news-2018-01-21_01-41-00_546036-770x513.jpg");
     background-size: cover;
 }
 
-#swiper5 .swiper-wrapper .pic4{
+#swiper5 .swiper-wrapper .pic4 {
     background-image: url("img/01/Pic_190117_0001.jpg");
     background-size: cover;
 }
 
-#swiper5 .swiper-wrapper .pic5{
+#swiper5 .swiper-wrapper .pic5 {
     background-image: url("img/01/14910410_1127722610597903_1334434285265983764_n.jpg");
     background-size: cover;
 }
 
-#swiper5 .swiper-wrapper .pic6{
+#swiper5 .swiper-wrapper .pic6 {
     background-image: url("img/01/16422633_1218236021546561_4168359449025589505_o.jpg");
     background-size: cover;
 }
 
-#swiper5 .swiper-wrapper .pic7{
+#swiper5 .swiper-wrapper .pic7 {
     background-image: url("img/01/Pic_190117_0001.jpg");
     background-size: cover;
 }
 
-#swiper5 .swiper-wrapper .pic8{
+#swiper5 .swiper-wrapper .pic8 {
     background-image: url("img/01/mpark.news-2018-01-21_01-41-00_546036-770x513.jpg");
     background-size: cover;
 }
 
-#swiper5 .swiper-wrapper .pic9{
+#swiper5 .swiper-wrapper .pic9 {
     background-image: url("img/01/14910410_1127722610597903_1334434285265983764_n.jpg");
     background-size: cover;
 }
 
-#swiper5 .swiper-wrapper .pic10{
+#swiper5 .swiper-wrapper .pic10 {
     background-image: url("img/01/16422633_1218236021546561_4168359449025589505_o.jpg");
     background-size: cover;
 }
 
-#swiper5 .swiper-wrapper .pic11{
+#swiper5 .swiper-wrapper .pic11 {
     background-image: url("img/01/Pic_190117_0001.jpg");
     background-size: cover;
 }
-
 
 /* 第六行 */
 
-
-#swiper6 .swiper-wrapper .pic1{
+#swiper6 .swiper-wrapper .pic1 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper6 .swiper-wrapper .pic2{
+#swiper6 .swiper-wrapper .pic2 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper6 .swiper-wrapper .pic3{
+#swiper6 .swiper-wrapper .pic3 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper6 .swiper-wrapper .pic4{
+#swiper6 .swiper-wrapper .pic4 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
 
-#swiper6 .swiper-wrapper .pic5{
+#swiper6 .swiper-wrapper .pic5 {
     background-image: url("img/05/taichung.jpg");
     background-size: cover;
 }
 
-#swiper6 .swiper-wrapper .pic6{
+#swiper6 .swiper-wrapper .pic6 {
     background-image: url("img/05/first.jpg");
     background-size: cover;
 }
 
-#swiper6 .swiper-wrapper .pic7{
+#swiper6 .swiper-wrapper .pic7 {
     background-image: url("img/05/second.jpg");
     background-size: cover;
 }
 
-#swiper6 .swiper-wrapper .pic8{
+#swiper6 .swiper-wrapper .pic8 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper6 .swiper-wrapper .pic9{
+#swiper6 .swiper-wrapper .pic9 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper6 .swiper-wrapper .pic10{
+#swiper6 .swiper-wrapper .pic10 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper6 .swiper-wrapper .pic11{
+#swiper6 .swiper-wrapper .pic11 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
-
 
 /* 第七行 */
 
-
-#swiper7 .swiper-wrapper .pic1{
+#swiper7 .swiper-wrapper .pic1 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper7 .swiper-wrapper .pic2{
+#swiper7 .swiper-wrapper .pic2 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper7 .swiper-wrapper .pic3{
+#swiper7 .swiper-wrapper .pic3 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper7 .swiper-wrapper .pic4{
+#swiper7 .swiper-wrapper .pic4 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
 
-#swiper7 .swiper-wrapper .pic5{
+#swiper7 .swiper-wrapper .pic5 {
     background-image: url("img/05/taichung.jpg");
     background-size: cover;
 }
 
-#swiper7 .swiper-wrapper .pic6{
+#swiper7 .swiper-wrapper .pic6 {
     background-image: url("img/05/first.jpg");
     background-size: cover;
 }
 
-#swiper7 .swiper-wrapper .pic7{
+#swiper7 .swiper-wrapper .pic7 {
     background-image: url("img/05/second.jpg");
     background-size: cover;
 }
 
-#swiper7 .swiper-wrapper .pic8{
+#swiper7 .swiper-wrapper .pic8 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper7 .swiper-wrapper .pic9{
+#swiper7 .swiper-wrapper .pic9 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper7 .swiper-wrapper .pic10{
+#swiper7 .swiper-wrapper .pic10 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper7 .swiper-wrapper .pic11{
+#swiper7 .swiper-wrapper .pic11 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
-
 
 /* 第八行 */
 
-
-#swiper8 .swiper-wrapper .pic1{
+#swiper8 .swiper-wrapper .pic1 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper8 .swiper-wrapper .pic2{
+#swiper8 .swiper-wrapper .pic2 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper8 .swiper-wrapper .pic3{
+#swiper8 .swiper-wrapper .pic3 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper8 .swiper-wrapper .pic4{
+#swiper8 .swiper-wrapper .pic4 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
 
-#swiper8 .swiper-wrapper .pic5{
+#swiper8 .swiper-wrapper .pic5 {
     background-image: url("img/05/taichung.jpg");
     background-size: cover;
 }
 
-#swiper8 .swiper-wrapper .pic6{
+#swiper8 .swiper-wrapper .pic6 {
     background-image: url("img/05/first.jpg");
     background-size: cover;
 }
 
-#swiper8 .swiper-wrapper .pic7{
+#swiper8 .swiper-wrapper .pic7 {
     background-image: url("img/05/second.jpg");
     background-size: cover;
 }
 
-#swiper8 .swiper-wrapper .pic8{
+#swiper8 .swiper-wrapper .pic8 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper8 .swiper-wrapper .pic9{
+#swiper8 .swiper-wrapper .pic9 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper8 .swiper-wrapper .pic10{
+#swiper8 .swiper-wrapper .pic10 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper8 .swiper-wrapper .pic11{
+#swiper8 .swiper-wrapper .pic11 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
-
 
 /* 第九行 */
 
-
-#swiper9 .swiper-wrapper .pic1{
+#swiper9 .swiper-wrapper .pic1 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper9 .swiper-wrapper .pic2{
+#swiper9 .swiper-wrapper .pic2 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper9 .swiper-wrapper .pic3{
+#swiper9 .swiper-wrapper .pic3 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper9 .swiper-wrapper .pic4{
+#swiper9 .swiper-wrapper .pic4 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
 
-#swiper9 .swiper-wrapper .pic5{
+#swiper9 .swiper-wrapper .pic5 {
     background-image: url("img/05/taichung.jpg");
     background-size: cover;
 }
 
-#swiper9 .swiper-wrapper .pic6{
+#swiper9 .swiper-wrapper .pic6 {
     background-image: url("img/05/first.jpg");
     background-size: cover;
 }
 
-#swiper9 .swiper-wrapper .pic7{
+#swiper9 .swiper-wrapper .pic7 {
     background-image: url("img/05/second.jpg");
     background-size: cover;
 }
 
-#swiper9 .swiper-wrapper .pic8{
+#swiper9 .swiper-wrapper .pic8 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper9 .swiper-wrapper .pic9{
+#swiper9 .swiper-wrapper .pic9 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper9 .swiper-wrapper .pic10{
+#swiper9 .swiper-wrapper .pic10 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper9 .swiper-wrapper .pic11{
+#swiper9 .swiper-wrapper .pic11 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
-
 
 /* 第十行 */
 
-
-#swiper10 .swiper-wrapper .pic1{
+#swiper10 .swiper-wrapper .pic1 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper10 .swiper-wrapper .pic2{
+#swiper10 .swiper-wrapper .pic2 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper10 .swiper-wrapper .pic3{
+#swiper10 .swiper-wrapper .pic3 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper10 .swiper-wrapper .pic4{
+#swiper10 .swiper-wrapper .pic4 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
 
-#swiper10 .swiper-wrapper .pic5{
+#swiper10 .swiper-wrapper .pic5 {
     background-image: url("img/05/taichung.jpg");
     background-size: cover;
 }
 
-#swiper10 .swiper-wrapper .pic6{
+#swiper10 .swiper-wrapper .pic6 {
     background-image: url("img/05/first.jpg");
     background-size: cover;
 }
 
-#swiper10 .swiper-wrapper .pic7{
+#swiper10 .swiper-wrapper .pic7 {
     background-image: url("img/05/second.jpg");
     background-size: cover;
 }
 
-#swiper10 .swiper-wrapper .pic8{
+#swiper10 .swiper-wrapper .pic8 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper10 .swiper-wrapper .pic9{
+#swiper10 .swiper-wrapper .pic9 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper10 .swiper-wrapper .pic10{
+#swiper10 .swiper-wrapper .pic10 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper10 .swiper-wrapper .pic11{
+#swiper10 .swiper-wrapper .pic11 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
-
 
 /* 第十一行 */
 
-
-#swiper11 .swiper-wrapper .pic1{
+#swiper11 .swiper-wrapper .pic1 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper11 .swiper-wrapper .pic2{
+#swiper11 .swiper-wrapper .pic2 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper11 .swiper-wrapper .pic3{
+#swiper11 .swiper-wrapper .pic3 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper11 .swiper-wrapper .pic4{
+#swiper11 .swiper-wrapper .pic4 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
 
-#swiper11 .swiper-wrapper .pic5{
+#swiper11 .swiper-wrapper .pic5 {
     background-image: url("img/05/taichung.jpg");
     background-size: cover;
 }
 
-#swiper11 .swiper-wrapper .pic6{
+#swiper11 .swiper-wrapper .pic6 {
     background-image: url("img/05/first.jpg");
     background-size: cover;
 }
 
-#swiper11 .swiper-wrapper .pic7{
+#swiper11 .swiper-wrapper .pic7 {
     background-image: url("img/05/second.jpg");
     background-size: cover;
 }
 
-#swiper11 .swiper-wrapper .pic8{
+#swiper11 .swiper-wrapper .pic8 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper11 .swiper-wrapper .pic9{
+#swiper11 .swiper-wrapper .pic9 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper11 .swiper-wrapper .pic10{
+#swiper11 .swiper-wrapper .pic10 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper11 .swiper-wrapper .pic11{
+#swiper11 .swiper-wrapper .pic11 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
-
 
 /* 第十二行 */
 
-
-#swiper12 .swiper-wrapper .pic1{
+#swiper12 .swiper-wrapper .pic1 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper12 .swiper-wrapper .pic2{
+#swiper12 .swiper-wrapper .pic2 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper12 .swiper-wrapper .pic3{
+#swiper12 .swiper-wrapper .pic3 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper12 .swiper-wrapper .pic4{
+#swiper12 .swiper-wrapper .pic4 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
 
-#swiper12 .swiper-wrapper .pic5{
+#swiper12 .swiper-wrapper .pic5 {
     background-image: url("img/05/taichung.jpg");
     background-size: cover;
 }
 
-#swiper12 .swiper-wrapper .pic6{
+#swiper12 .swiper-wrapper .pic6 {
     background-image: url("img/05/first.jpg");
     background-size: cover;
 }
 
-#swiper12 .swiper-wrapper .pic7{
+#swiper12 .swiper-wrapper .pic7 {
     background-image: url("img/05/second.jpg");
     background-size: cover;
 }
 
-#swiper12 .swiper-wrapper .pic8{
+#swiper12 .swiper-wrapper .pic8 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper12 .swiper-wrapper .pic9{
+#swiper12 .swiper-wrapper .pic9 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper12 .swiper-wrapper .pic10{
+#swiper12 .swiper-wrapper .pic10 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper12 .swiper-wrapper .pic11{
+#swiper12 .swiper-wrapper .pic11 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
-
-
 
 /* 第十三行 */
 
-
-#swiper13 .swiper-wrapper .pic1{
+#swiper13 .swiper-wrapper .pic1 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper13 .swiper-wrapper .pic2{
+#swiper13 .swiper-wrapper .pic2 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper13 .swiper-wrapper .pic3{
+#swiper13 .swiper-wrapper .pic3 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper13 .swiper-wrapper .pic4{
+#swiper13 .swiper-wrapper .pic4 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
 
-#swiper13 .swiper-wrapper .pic5{
+#swiper13 .swiper-wrapper .pic5 {
     background-image: url("img/05/taichung.jpg");
     background-size: cover;
 }
 
-#swiper13 .swiper-wrapper .pic6{
+#swiper13 .swiper-wrapper .pic6 {
     background-image: url("img/05/first.jpg");
     background-size: cover;
 }
 
-#swiper13 .swiper-wrapper .pic7{
+#swiper13 .swiper-wrapper .pic7 {
     background-image: url("img/05/second.jpg");
     background-size: cover;
 }
 
-#swiper13 .swiper-wrapper .pic8{
+#swiper13 .swiper-wrapper .pic8 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper13 .swiper-wrapper .pic9{
+#swiper13 .swiper-wrapper .pic9 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper13 .swiper-wrapper .pic10{
+#swiper13 .swiper-wrapper .pic10 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper13 .swiper-wrapper .pic11{
+#swiper13 .swiper-wrapper .pic11 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
-
 
 /* 第十四行 */
 
-
-#swiper14 .swiper-wrapper .pic1{
+#swiper14 .swiper-wrapper .pic1 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper14 .swiper-wrapper .pic2{
+#swiper14 .swiper-wrapper .pic2 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper14 .swiper-wrapper .pic3{
+#swiper14 .swiper-wrapper .pic3 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper14 .swiper-wrapper .pic4{
+#swiper14 .swiper-wrapper .pic4 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
 
-#swiper14 .swiper-wrapper .pic5{
+#swiper14 .swiper-wrapper .pic5 {
     background-image: url("img/05/taichung.jpg");
     background-size: cover;
 }
 
-#swiper14 .swiper-wrapper .pic6{
+#swiper14 .swiper-wrapper .pic6 {
     background-image: url("img/05/first.jpg");
     background-size: cover;
 }
 
-#swiper14 .swiper-wrapper .pic7{
+#swiper14 .swiper-wrapper .pic7 {
     background-image: url("img/05/second.jpg");
     background-size: cover;
 }
 
-#swiper14 .swiper-wrapper .pic8{
+#swiper14 .swiper-wrapper .pic8 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper14 .swiper-wrapper .pic9{
+#swiper14 .swiper-wrapper .pic9 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper14 .swiper-wrapper .pic10{
+#swiper14 .swiper-wrapper .pic10 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper14 .swiper-wrapper .pic11{
+#swiper14 .swiper-wrapper .pic11 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
-
-
 
 /* 第十五行 */
 
-
-#swiper15 .swiper-wrapper .pic1{
+#swiper15 .swiper-wrapper .pic1 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper15 .swiper-wrapper .pic2{
+#swiper15 .swiper-wrapper .pic2 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper15 .swiper-wrapper .pic3{
+#swiper15 .swiper-wrapper .pic3 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper15 .swiper-wrapper .pic4{
+#swiper15 .swiper-wrapper .pic4 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
 
-#swiper15 .swiper-wrapper .pic5{
+#swiper15 .swiper-wrapper .pic5 {
     background-image: url("img/05/taichung.jpg");
     background-size: cover;
 }
 
-#swiper15 .swiper-wrapper .pic6{
+#swiper15 .swiper-wrapper .pic6 {
     background-image: url("img/05/first.jpg");
     background-size: cover;
 }
 
-#swiper15 .swiper-wrapper .pic7{
+#swiper15 .swiper-wrapper .pic7 {
     background-image: url("img/05/second.jpg");
     background-size: cover;
 }
 
-#swiper15 .swiper-wrapper .pic8{
+#swiper15 .swiper-wrapper .pic8 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper15 .swiper-wrapper .pic9{
+#swiper15 .swiper-wrapper .pic9 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper15 .swiper-wrapper .pic10{
+#swiper15 .swiper-wrapper .pic10 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper15 .swiper-wrapper .pic11{
+#swiper15 .swiper-wrapper .pic11 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
-
 
 /* 第十六行 */
 
-
-#swiper16 .swiper-wrapper .pic1{
+#swiper16 .swiper-wrapper .pic1 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper16 .swiper-wrapper .pic2{
+#swiper16 .swiper-wrapper .pic2 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper16 .swiper-wrapper .pic3{
+#swiper16 .swiper-wrapper .pic3 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper16 .swiper-wrapper .pic4{
+#swiper16 .swiper-wrapper .pic4 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
 
-#swiper16 .swiper-wrapper .pic5{
+#swiper16 .swiper-wrapper .pic5 {
     background-image: url("img/05/taichung.jpg");
     background-size: cover;
 }
 
-#swiper16 .swiper-wrapper .pic6{
+#swiper16 .swiper-wrapper .pic6 {
     background-image: url("img/05/first.jpg");
     background-size: cover;
 }
 
-#swiper16 .swiper-wrapper .pic7{
+#swiper16 .swiper-wrapper .pic7 {
     background-image: url("img/05/second.jpg");
     background-size: cover;
 }
 
-#swiper16 .swiper-wrapper .pic8{
+#swiper16 .swiper-wrapper .pic8 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper16 .swiper-wrapper .pic9{
+#swiper16 .swiper-wrapper .pic9 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper16 .swiper-wrapper .pic10{
+#swiper16 .swiper-wrapper .pic10 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper16 .swiper-wrapper .pic11{
+#swiper16 .swiper-wrapper .pic11 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
-
-
 
 /* 第十七行 */
 
-
-#swiper17 .swiper-wrapper .pic1{
+#swiper17 .swiper-wrapper .pic1 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper17 .swiper-wrapper .pic2{
+#swiper17 .swiper-wrapper .pic2 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper17 .swiper-wrapper .pic3{
+#swiper17 .swiper-wrapper .pic3 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper17 .swiper-wrapper .pic4{
+#swiper17 .swiper-wrapper .pic4 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
 
-#swiper17 .swiper-wrapper .pic5{
+#swiper17 .swiper-wrapper .pic5 {
     background-image: url("img/05/taichung.jpg");
     background-size: cover;
 }
 
-#swiper17 .swiper-wrapper .pic6{
+#swiper17 .swiper-wrapper .pic6 {
     background-image: url("img/05/first.jpg");
     background-size: cover;
 }
 
-#swiper17 .swiper-wrapper .pic7{
+#swiper17 .swiper-wrapper .pic7 {
     background-image: url("img/05/second.jpg");
     background-size: cover;
 }
 
-#swiper17 .swiper-wrapper .pic8{
+#swiper17 .swiper-wrapper .pic8 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper17 .swiper-wrapper .pic9{
+#swiper17 .swiper-wrapper .pic9 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper17 .swiper-wrapper .pic10{
+#swiper17 .swiper-wrapper .pic10 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper17 .swiper-wrapper .pic11{
+#swiper17 .swiper-wrapper .pic11 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
-
-
 
 /* 第十八行 */
 
-
-#swiper18 .swiper-wrapper .pic1{
+#swiper18 .swiper-wrapper .pic1 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper18 .swiper-wrapper .pic2{
+#swiper18 .swiper-wrapper .pic2 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper18 .swiper-wrapper .pic3{
+#swiper18 .swiper-wrapper .pic3 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper18 .swiper-wrapper .pic4{
+#swiper18 .swiper-wrapper .pic4 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
 
-#swiper18 .swiper-wrapper .pic5{
+#swiper18 .swiper-wrapper .pic5 {
     background-image: url("img/05/taichung.jpg");
     background-size: cover;
 }
 
-#swiper18 .swiper-wrapper .pic6{
+#swiper18 .swiper-wrapper .pic6 {
     background-image: url("img/05/first.jpg");
     background-size: cover;
 }
 
-#swiper18 .swiper-wrapper .pic7{
+#swiper18 .swiper-wrapper .pic7 {
     background-image: url("img/05/second.jpg");
     background-size: cover;
 }
 
-#swiper18 .swiper-wrapper .pic8{
+#swiper18 .swiper-wrapper .pic8 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper18 .swiper-wrapper .pic9{
+#swiper18 .swiper-wrapper .pic9 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper18 .swiper-wrapper .pic10{
+#swiper18 .swiper-wrapper .pic10 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper18 .swiper-wrapper .pic11{
+#swiper18 .swiper-wrapper .pic11 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
-
 
 /* 第十九行 */
 
-
-#swiper19 .swiper-wrapper .pic1{
+#swiper19 .swiper-wrapper .pic1 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper19 .swiper-wrapper .pic2{
+#swiper19 .swiper-wrapper .pic2 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper19 .swiper-wrapper .pic3{
+#swiper19 .swiper-wrapper .pic3 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper19 .swiper-wrapper .pic4{
+#swiper19 .swiper-wrapper .pic4 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
 
-#swiper19 .swiper-wrapper .pic5{
+#swiper19 .swiper-wrapper .pic5 {
     background-image: url("img/05/taichung.jpg");
     background-size: cover;
 }
 
-#swiper19 .swiper-wrapper .pic6{
+#swiper19 .swiper-wrapper .pic6 {
     background-image: url("img/05/first.jpg");
     background-size: cover;
 }
 
-#swiper19 .swiper-wrapper .pic7{
+#swiper19 .swiper-wrapper .pic7 {
     background-image: url("img/05/second.jpg");
     background-size: cover;
 }
 
-#swiper19 .swiper-wrapper .pic8{
+#swiper19 .swiper-wrapper .pic8 {
     background-image: url("img/05/01.jpg");
     background-size: cover;
 }
 
-#swiper19 .swiper-wrapper .pic9{
+#swiper19 .swiper-wrapper .pic9 {
     background-image: url("img/05/1966.jpg");
     background-size: cover;
 }
 
-#swiper19 .swiper-wrapper .pic10{
+#swiper19 .swiper-wrapper .pic10 {
     background-image: url("img/05/20181008001513_18.jpg");
     background-size: cover;
 }
 
-#swiper19 .swiper-wrapper .pic11{
+#swiper19 .swiper-wrapper .pic11 {
     background-image: url("img/05/Pic_190117_0010.jpg");
     background-size: cover;
 }
