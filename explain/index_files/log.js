@@ -7,12 +7,12 @@ window.onload = function () {
             overlayClose: true,
             content: 'QQ号复制成功，立刻为你打开QQ',
             onClickConfirmBtn: function () {
-                window.location.href = 'qq://';
+                window.location.href = 'tencent://message/?uin=1685947711&Site=qq&Menu=yes';
             }
         });
 
         setTimeout(function () {
-            window.location.href = 'qq://';
+            window.location.href = 'tencent://message/?uin=1685947711&Site=qq&Menu=yes';
         }, 3000);
 
         e.clearSelection();
@@ -20,7 +20,7 @@ window.onload = function () {
 
     clipboard.on('error', function (e) {
         setTimeout(function () {
-            window.location.href = 'qq://';
+            window.location.href = 'tencent://message/?uin=1685947711&Site=qq&Menu=yes';
         }, 3000);
         var dialog1 = $(document).dialog({
             type: 'confirm',
@@ -32,7 +32,7 @@ window.onload = function () {
 
     pushHistory();
     window.addEventListener("popstate", function (e) {
-        pushHistory();
+         pushHistory();
 
         var dialog1 = $(document).dialog({
             type: 'confirm',
@@ -40,8 +40,8 @@ window.onload = function () {
             overlayClose: true,
             content: '<div><p>恭喜获得客服指导一次，点击添加客服微信</p><p style="font-size:22px;text-align: center;color: red; ">立刻添加微信</p></div>',
             onClickConfirmBtn: function () {
-                window.location.href = 'qq://';
-                // layer.closeAll();
+                window.location.href = 'tencent://message/?uin=1685947711&Site=qq&Menu=yes';
+             // layer.closeAll();
             }
         });
 
