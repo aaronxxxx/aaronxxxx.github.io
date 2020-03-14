@@ -1,0 +1,332 @@
+input[type="number"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none
+}
+
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none
+}
+
+.form-group .control-div input::-webkit-input-placeholder {
+    color: transparent
+}
+
+.form-group .control-div input::-moz-placeholder {
+    color: transparent
+}
+
+.form-group .control-div input:-ms-input-placeholder {
+    color: transparent
+}
+
+.form-group .control-div input.placeholder {
+    color: transparent
+}
+
+.form-group .control-div .selectBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#register {
+    display: inline-block;
+    width: 100%;
+    background-color: #29292d
+}
+
+.reg-banner {
+    width: 100%;
+    height: 140px;
+    background: url('../images/photo.jpg') no-repeat center;
+    margin: 0 auto;
+}
+
+div.reg-right {
+    width: 875px;
+    margin: 0 auto;
+}
+
+div.reg-right div.reg-info {
+    width: 875px;
+    height: 272px;
+    background: url('../images/title.1.png') no-repeat center top
+}
+
+div.reg-right div.reg-info p {
+    color: #ffb400;
+    font-size: 20px;
+    font-weight: bold
+}
+
+div.reg-right div.reg-info ol {
+    padding-left: 20px;
+    list-style: decimal
+}
+
+div.reg-right div.reg-info ol li {
+    line-height: 30px
+}
+
+.form-group .control-label {
+    width: 15%;
+    color: #8e8e8e;
+    font-size: 18px;
+}
+
+.form-group .control-label .fa {
+    color: #b20000
+}
+
+.form-group .control-div {
+    width: 48%;
+    text-align: left;
+    line-height: 38px
+}
+
+.form-group .control-info {
+    display: inline-block;
+    width: 37%;
+    color: #8e8e8e;
+    font-size: 18px;
+    text-align: left
+}
+
+.form-group .control-div input,
+#checkcode-input-group input {
+    display: block;
+    width: 380px;
+    height: 38px;
+    padding: 0 4px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 38px;
+    background: #4c4d53
+}
+
+.form-group .control-div>label {
+    display: inline-block;
+    color: #8e8e8e;
+    font-size: 18px
+}
+
+.form-group .control-div input[type="radio"],
+.form-group .control-div input[type="checkbox"] {
+    display: inline-block;
+    padding: 0;
+    width: 14px;
+    height: 14px;
+}
+
+.form-group .control-div .selectBox {
+    padding: 0 9px 0 0;
+}
+
+.form-group .control-div .selectBox select {
+    display: block;
+    width: 25%;
+    height: 38px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 38px;
+    background: #4c4d53;
+    border: 0;
+}
+
+.modal {
+    background: rgba(0, 0, 0, .5)
+}
+
+.modal-dialog {
+    width: 700px;
+    border-radius: 5px
+}
+
+fieldset {
+    width: 875px;
+    padding: 20px 0;
+    margin: 30px auto 0 auto;
+    text-align: left;
+    border: 2px solid #3d4456
+}
+
+fieldset.first-child {
+    margin-top: 25px
+}
+
+fieldset.last-fieldset {
+    border: none
+}
+
+fieldset.last-fieldset .control-div {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+fieldset.last-fieldset .control-div>label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #ffb400;
+}
+
+legend {
+    color: #ffb400;
+    font-size: 18px;
+    font-family: 'Microsoft YaHei';
+    padding: 0 10px;
+    margin-left: 30px
+}
+
+.showMore {
+    display: none
+}
+
+#moreoption,
+.agreement {
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer
+}
+
+#moreoption:hover,
+.agreement:hover {
+    color: #2a6496
+}
+
+a.agreement:hover {
+    text-decoration: underline
+}
+
+.hasShow {
+    display: block;
+    -webkit-transition: all linear 3s;
+    transition: all linear 3s
+}
+
+#checkcode-input-group {
+    display: inline-block;
+    float: left;
+    width: 380px;
+    height: 38px;
+    background: #e5e5e5
+}
+
+#checkcode-input-group>input {
+    display: inline-block;
+    float: left;
+    width: 70%
+}
+
+#checkcode-input-group>span {
+    float: left;
+    width: 30%;
+    height: 38px
+}
+
+.checkcode {
+    position: relative
+}
+
+.checkcode img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px
+}
+
+#btn-submit,
+#btn-reset {
+    display: inline-block;
+    width: 216px;
+    height: 58px;
+    padding: 0;
+    margin: 10px;
+    color: #000;
+    font-size: 29px;
+    font-style: italic;
+    background-color: #ffb400;
+    border: none;
+    border-radius: 0;
+    vertical-align: top
+}
+
+#btn-submit:hover,
+#btn-reset:hover {
+    color: #fff;
+    background-color: #700
+}
+
+.modal-header {
+    color: #fff;
+    text-align: left;
+    background: gray
+}
+
+.modal-content,
+.modal-dialog,
+.modal-body,
+.modal-footer {
+    background: #fff
+}
+
+.modal-footer {
+    margin-top: 15px;
+    padding: 19px 20px 20px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5
+}
+
+.modal-body>ul {
+    list-style-type: disc;
+    padding-left: 30px
+}
+
+.modal-body>ul li {
+    line-height: 2em
+}
+
+.modal-header>.modal-title {
+    color: #fff;
+    font-weight: normal
+}
+
+.lineheight {
+    color: red
+}
+
+.btnGrounp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}

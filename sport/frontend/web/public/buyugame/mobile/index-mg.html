@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>mg</title>
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+	<link rel="shortcut icon" href="../aomen/img/mg.png">
+	<script type="text/javascript" src="../mobile/js/vendor.js"></script>
+	<script src="../js/jquery-1.12.4.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
+	<link rel="apple-touch-icon-precomposed" href="https://www.tbk-app.com/g1337/version/pkg/icon.png">
+	<link href="../mobile/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../mobile/css/vendor.css" rel="stylesheet">
+	<link href="../mobile/css/app.css" rel="stylesheet">
+	<link href="../mobile/css/style.css" rel="stylesheet">
+</head>
+<script>
+	$(document).ready(function () {
+    playGame('all');
+});
+
+
+function playGame(gtype) {
+	// $(".gameList").html('');
+	page_title(gtype)
+    if (gtype == 'hot') {
+        var json_url = '../json/mg-hot-list.json';
+    } else {
+        var json_url = '../json/mg-game-list-m.json';
+    }
+    $.ajax({
+        type: "GET",
+        url: json_url,
+        dataType: 'json',
+        success: function (result) {
+            // console.log(result);
+            // console.log( typeof result);
+            var list = result.list;
+            if (gtype == 'all' || gtype == 'hot') {
+                var result_list = list;
+            } else {
+                var result_list = list.filter(function (list, index) {
+                    return list.type == gtype;
+                });
+            }
+            // console.log(result_list);
+            var html = '';
+            for (var i = 0; i < result_list.length; i++) {
+                var code = result_list[i].code, //遊戲代碼
+                    ename = result_list[i].ename, //遊戲英文名稱
+                    cname = result_list[i].cname,
+					img = result_list[i].img; //遊戲中文名稱
+                html += '<div class="wrap" data-index="' + ename + '">';
+                html += '<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 game-item">';
+                html += '<a style="text-decoration: none;" href="/?r=game/login/index&type=1006&flash_id=' + code + '"><div class="thumbnail">';
+                html += '<div style="background-image:url(../images/mg/' + img + '.png);background-repeat:no-repeat;background-position: center center; background-size: cover;width:120px;height:111px;margin:0 auto;"></div>';
+                html += '<div class="caption text-center"><h5 title="' + cname + '" class="game-name" style="white-space:nowrap;text-overflow: ellipsis; overflow: hidden; ">' + cname + '</h5></div>';
+                html += '</div></a></div></div>';
+            }
+            $('.gameList').html(html);
+        }
+    });
+}
+function page_title(gtype) {
+	switch (gtype) {
+		case 'hot':
+			$('#pageTitle').html('热门游戏');
+			break;
+		case 'all':
+			$('#pageTitle').html('全部游戏');
+			break;
+		case 'video':
+			$('#pageTitle').html('视频扑克');
+			break;
+		case 'table':
+			$('#pageTitle').html('桌牌');
+			break;
+		case 'slot':
+			$('#pageTitle').html('老虎机');
+			break;
+		case 'other':
+			$('#pageTitle').html('其它');
+			break;
+		default:
+		console.log("游戏类型出错了!")
+			break;
+	}
+}
+	
+
+</script>
+
+<body class="common_style">
+	<div class="layout-main" style="height: 757px;">
+		<div class="game-module game-module-index">
+			<div class="module-top" style="height: 40px;">
+				<div class="top-container navbar-nav" style="float: none;margin: 0;" text-align: center;padding: 7px 0; width:
+				 100%; display: inline-block; position: relative;>
+					<a href="/?r=mobile/disp/index">
+						<p style="margin-top:3px;margin-left: 5px;font-size: 15px;font-weight: 700;background: darkseagreen;border-radius: 5px;width: 70px;float: left;color: #fff;">返回首页</p>
+					</a>
+					<div id="pageTitle" class="page-title" style="display: inline-block;width: 70%;color: #fff;margin-left: -75px;margin-top: -3px;font-size: 18px;">全部游戏</div>
+					<div class="main-menu-btn right-menu dropdown">
+						<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+							<!-- <span aria-hidden="true" class="glyphicon glyphicon-list"> -->
+							<p style="margin-top: 6px;margin-left: 5px;font-size: 15px;font-weight: 700;background: orangered;border-radius: 5px;width: 70px;">选择分类</p>
+							<!-- </span> -->
+						</a>
+						<div class="dropdown-menu">
+							<div id="tab-demo" class="menu-head">
+								<span aria-hidden="true" class="glyphicon glyphicon-list" style="display: inline-flex;margin-left:-20px;">
+									<p style="margin-top:-3px;margin-left: 5px;">游戏分类</p>
+								</span></div>
+							<ul class="menu-body diy-scrollbar tab-title">
+								<li><a href="javascript:void(0)" onclick="playGame('hot');">热门游戏</a></li>
+								<li><a href="javascript:void(0)" onclick="playGame('all');">全部游戏</a></li>
+								<li><a href="javascript:void(0)" onclick="playGame('video');">视频扑克</a></li>
+								<li><a href="javascript:void(0)" onclick="playGame('table');">桌牌</a></li>
+								<li><a href="javascript:void(0)" onclick="playGame('slot');">老虎机</a></li>
+								<li><a href="javascript:void(0)" onclick="playGame('other');">其它</a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div style="min-height: 680px;">
+				<div class="search-bar" style="padding: 10px 10px 0 10px;
+						position: relative;">
+					<span class="icon-area" style="position: absolute;top: 18px;left: 16px;">
+						<span aria-hidden="true" class="glyphicon glyphicon-search"></span>
+					</span>
+					<div class="search-form">
+						<input id="search-input" class="form-control" placeholder="游戏名称" name="game" style="padding: 6px 24px;" />
+						<style id="m-search"></style>
+					</div>
+					<br>
+					<span class="close-area" style="position: absolute;top: 13px;right: 12px;display: none;">
+						<button type="button" class="close" aria-label="Close">
+							<span aria-hidden="true">×</span>
+						</button>
+					</span>
+				</div>
+				<!-- search start-->
+				<script>
+					var that = $(this);
+					var mSearch = $("#m-search");
+					$("#search-input").bind("change paste keyup", function () {
+						var value = $(this).val();
+						if (!value) {
+							mSearch.html("");
+							return;
+						};
+						mSearch.html('.wrap:not([data-index*="' + value.toLowerCase() + '"]) {display: none;}');
+					});
+				</script>
+				<!-- search end-->
+				<div class="main-container">
+					<div class="gameList">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

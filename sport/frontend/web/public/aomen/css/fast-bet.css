@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* 
+* @Date:   2016-08-29 16:00:00
+* @Last Modified by:   mq
+* @Last Modified time: 2016-08-29 09:54:56
+*/
+
+	.selectedinput.hxx{
+		width:100px;
+		}
+	.mbtop{         
+/*	    margin: 7px 0 4px 0;
+            overflow: auto; 
+            margin-top: -10px;*/
+    margin: 0px 0 10px 0;
+    overflow: auto;
+    white-space:nowrap; 
+    /* margin-top: -10px; */
+	   }
+	.input-text{
+	        border: 1px solid #d0d0d0;
+		border-radius: 3px;
+		line-height: 20px;
+		height: 20px;
+		width: 40%;
+		text-align:center;
+		}
+	.selected-bet{
+	    background-color: #FCEC3D;
+        }
+	.list{
+		list-style:none;
+		}
+	.list li{
+                font-size: 14px;
+                margin-left:2%;
+		float:left;
+		background-color: #C3E3FF;
+		border-radius: 20%;
+		text-align:center;
+                    width: 11%;
+                height: 30px;
+                line-height: 30px;
+		}
+	.list .imgchk{
+		background:#FCEC3D;
+	}
+	.input-money {
+               float: left;
+                   width: 31%;
+              /* width: 29%;*/
+               margin: 0px 0 0 3%;
+        }
+       .input-money label {
+               margin-left: 5px;
+               font-size: 14px;
+               text-align: center;
+               line-height: 30px;
+                }
+       .input-money div input {
+               width: 110%;
+               height: 20px;
+               border: none;
+               outline: none;
+               text-align: center;
+             }
+
+

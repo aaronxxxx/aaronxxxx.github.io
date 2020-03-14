@@ -1,0 +1,72 @@
+html, body {
+  background: #333366;
+  font-family: Microsoft JhengHei; }
+
+header {
+  color: #ffffff;
+  padding: 37px 0px 20px 0px; }
+  header h1 {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center; }
+  header nav {
+    padding: 0 15px; }
+    header nav .navItem {
+      width: 55px; }
+  header .header {
+    position: relative; }
+  header .sound {
+    width: 30px;
+    position: absolute;
+    right: 15px;
+    bottom: 0; }
+
+.marquee {
+  padding: 0 15px;
+  background: #262340; }
+  .marquee .notice-icon {
+    width: 26px; }
+  .marquee .notice-marquee {
+    float: right;
+    padding: 0 5px; }
+
+main {
+  padding: 0 15px 25px 15px;
+  background: #161630; }
+  main .mainTitle {
+    padding: 10px 0 0 0; }
+    main .mainTitle div {
+      width: 103px; }
+  main .mainContent .d-flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 10px; }
+  main .mainContent .gameItem {
+    width: 100%; }
+
+footer {
+  padding: 20px 15px; }
+  footer .footerItem p {
+    color: #868498;
+    font-weight: 500; }
+  footer .index, footer .lobby, footer .activity, footer .member {
+    width: 35px;
+    height: 36px;
+    background-image: url(../images/kg/footer_icons_blue.211e5cc7-1.png); }
+
+.index {
+  background-position: -23px -7px; }
+
+.lobby {
+  background-position: -66px -7px; }
+
+.activity {
+  background-position: 100px -7px; }
+
+.member {
+  background-position: 57px -7px; }
+
+#m_bg_music {
+  visibility: hidden;
+  position: absolute; }

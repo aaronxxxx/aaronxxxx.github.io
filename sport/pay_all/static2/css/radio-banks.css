@@ -1,0 +1,333 @@
+.radio-img-bank
+{
+    float: left;
+    height: 28px;
+}
+
+.radio-img-netbank
+{
+    background-image: url('../imgs/netbank.png');
+    width: 154px;
+    height:33px;
+    float:left;
+}
+
+.radio-img-quick
+{
+    background-image: url('../imgs/quick.png');
+    width: 154px;
+    height:33px;
+    float:left;
+}
+
+.radio-img-abc
+{
+    background-image: url('../imgs/combo-banks.png');
+    width: 126px;
+    height:36px;
+    float:left;
+}
+
+.radio-img-icbc
+{
+    background: url('../imgs/combo-banks.png') 0px -36px;
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+
+.radio-img-ccb
+{
+    background: url('../imgs/combo-banks.png') 0px -72px;
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+
+.radio-img-psbc
+{
+    background: url('../imgs/combo-banks.png') 0px -108px;
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+
+.radio-img-boc
+{
+    background: url('../imgs/combo-banks.png') 0px -144px;
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+
+.radio-img-cmbc
+{
+    background: url('../imgs/combo-banks.png') 0px -180px;
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+
+.radio-img-bocom
+{
+    background: url('../imgs/combo-banks.png') 0px -216px;
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+
+.radio-img-spdb
+{
+    background: url('../imgs/combo-banks.png') 0px -252px;
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+
+.radio-img-cebbank
+{
+    background: url('../imgs/combo-banks.png') 0px -288px;
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+
+.radio-img-ecitic
+{
+    background: url('../imgs/combo-banks.png') 0px -324px;
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+
+.radio-img-pingan
+{
+    background: url('../imgs/combo-banks.png') 0px -360px;
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+
+.radio-img-cmbcs
+{
+    background: url('../imgs/combo-banks.png') 0px -396px;
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+
+.radio-img-hxb
+{
+    background: url('../imgs/combo-banks.png') 0px -432px;
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+
+.radio-img-cgb
+{
+    background: url('../imgs/combo-banks.png') 0px -468px;
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-cib
+{
+    background: url('../imgs/cib.png');
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-zfb
+{
+    background: url('../imgs/zfb.jpg');
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-weixin
+{
+    background: url('../imgs/weixin.png');
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-qq
+{
+    background: url('../imgs/qq.png');
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-wy
+{
+    background: url('../imgs/wangyin.jpg');
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-weixinwap
+{
+    background: url('../imgs/weixinwap.jpg');
+    width: 52px;
+    height: 52px;
+    float:left;
+    display: inline;
+}
+.radio-img-srcb
+{
+    background: url('../imgs/srcb.jpg');
+    width: 126px;
+    height: 35px;
+    float:left;
+    display: inline;
+}
+.radio-img-gateway
+{
+    background: url('../imgs/gateway.jpg');
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-unionpay
+{
+    background: url('../imgs/unionpay.jpg');
+    width: 51px;
+    height: 32px;
+    float:left;
+    display: inline;
+}
+.radio-img-jdpaywap
+{
+    background: url('../imgs/jdpaywap.jpg');
+	width: 52px;
+    height: 52px;
+    float:left;
+    display: inline;
+}
+.radio-img-jdpay
+{
+    background: url('../imgs/jdpay.jpg');
+	width: 126px;
+    height: 33px;
+    float:left;
+    display: inline;
+}
+
+.radio-img-czb
+{
+    background: url('../imgs/czb.png');
+	width: 126px;
+    height: 29px;
+    float:left;
+    display: inline;
+}
+.radio-img-sdb
+{
+    background: url('../imgs/sdb.png');
+	width: 126px;
+    height: 33px;
+    float:left;
+    display: inline;
+}
+.radio-img-bjrcb
+{
+    background: url('../imgs/bjrcb.jpg');
+	width: 126px;
+    height: 30px;
+    float:left;
+    display: inline;
+}
+.radio-img-cttic
+{
+    background: url('../imgs/cttic.jpg');
+	width: 126px;
+    height: 40px;
+    float:left;
+    display: inline;
+}
+.radio-img-nbcb
+{
+    background: url('../imgs/nbcb.jpg');
+	width: 126px;
+    height: 46px;
+    float:left;
+    display: inline;
+}
+.radio-img-hkbea
+{
+    background: url('../imgs/hkbea.jpg');
+	width: 126px;
+    height: 31px;
+    float:left;
+    display: inline;
+}
+.radio-img-cbhb
+{
+    background: url('../imgs/cbhb.jpg');
+	width: 126px;
+    height: 39px;
+    float:left;
+    display: inline;
+}
+.radio-img-pinganbank
+{
+    background: url('../imgs/pinganbank.jpg');
+	width: 126px;
+    height: 40px;
+    float:left;
+    display: inline;
+}
+.radio-img-njcb
+{
+    background: url('../imgs/njcb.jpg');
+	width: 126px;
+    height: 35px;
+    float:left;
+    display: inline;
+}
+.radio-img-bccb
+{
+    background: url('../imgs/bccb.png');
+	width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+
+.radio-img-shb
+{
+    background: url('../imgs/shb.png');
+	width: 126px;
+    height: 33px;
+    float:left;
+    display: inline;
+}
+
+.radio-img-ysf
+{
+    background: url('../imgs/unionpay_ysf.png');
+	width: 52px;
+    height: 52px;
+    float:left;
+    display: inline;
+}

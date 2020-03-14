@@ -1,0 +1,2 @@
+<iframe width="1000" height="1000" frameborder="0" style="width: 100%; height: 1000px;" onload="this.height = mainFrame.document.body.scrollHeight" allowtransparency="true" src="?r=lottery/cqssc/index/index" scrolling="no" name="mainFrame" id="mainFrame">
+</iframe>

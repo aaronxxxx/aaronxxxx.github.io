@@ -1,0 +1,2627 @@
+/*----------------------------------------*/
+/*2010-10-01-For NewSI2*/
+/*----------------------------------------*/
+/*@charset "UTF-8";*/
+html #OSEL, body#OSEL { margin:0;text-align: center;background-color: #493721;behavior:url(../img/csshover.htc);
+    overflow-x: hidden;}
+#main {	margin: 0 auto;}/*竚い砞﹚*/
+form {	margin: 0px;	padding: 0px;}
+/*a:link, a:visited {	color: #FFF;}
+a:hover {	color: #FC0; text-decoration:none;}
+/*夹帽*/
+#menu {	width: 216px;	background-color:#FEF6E4;	*padding-bottom: 0px/*IE Hack*/;	font: 0.75em Arial, Helvetica, sans-serif;}
+html>body #menu { height:42px; }/*Mac Hack*/
+
+
+#menu .ord_btn {padding-top: 13px;	cursor: hand;	float: left; width:99px;	height: 32px;color: #E9B567;	font-weight:bold!important; background: url(../img/order_ord_btn_out.gif) no-repeat left top;}
+
+
+#menu .ord_btnrg {
+  color: #E9B567;
+    font-weight: bold!important;
+    padding-top: 12px;
+    height: 30px;
+    text-align: center;
+    background: url(../img/order_record_btn_out.gif) no-repeat right top;
+}
+
+#menu .record_btn {padding-top: 13px;	cursor: hand;float: right;width: 117px;	height: 32px;color: #E9B567; font-weight:bold!important; background: url(../img/order_record_btn_out.gif) no-repeat right top;}
+html>body #menu .ord_btn { padding-top: 12px;	height: 30px;    text-align: center;}/*Mac Hack*/
+html>body #menu .record_btn { padding-top: 12px;	height: 30px;}/*Mac Hack*/
+#order_div {	clear: both;margin-bottom:0px;width: 216px;}
+/* 猔矗眶碠body砞﹚ *//**/
+.bet_info { margin:0; padding:0; background-color:#E3CFAA!important;left:0;top:0;}
+/*传夹帽┏︹*/
+/*-------Thie is for IE Hack notes ,Don't delete-----*/
+#menu .ord_on {padding-top: 11px;	cursor: hand;	float: left; width: 99px;	height: 32px;color: #3B2D1B;	font-weight:bold!important; background: url(../img/order_ord_btn_on.gif) no-repeat left top;}
+
+
+/*#menu .record_on {
+    padding-top: 11px;	cursor: hand;float: right;width: 117px;	height: 32px;color: #3B2D1B;font-weight:bold!important; 
+    background: url(../img/order_record_btn_on.gif) no-repeat right top;
+
+}*/
+#menu .ord_btn.record_on {
+  
+    cursor: hand;
+    float: left;
+    width: 99px;
+    height: 32px;
+    color: #3B2D1B;
+    font-weight: bold!important;
+    background: url(../img/order_ord_btn_on.gif) no-repeat left top;
+
+}
+#menu .ord_btnrg.record_on {
+cursor: hand;float: right;width: 117px;	height: 32px;color: #3B2D1B;font-weight:bold!important; 
+    background: url(../img/order_record_btn_on.gif) no-repeat right top;
+
+}
+#menu .ord_btn, #menu .record_btn , #menu .ord_on , #menu .record_on { cursor:pointer;}
+html>body #menu .ord_on { padding-top: 10px;	height: 32px;}/*Mac Hack*/
+html>body #menu .record_on { padding-top: 10px;	height: 32px;    text-align: center;    float: left;}/*Mac Hack*/
+/*夹帽菲筁跑︹*//**/
+/*div#menu div.ord_btn:hover ,  div#menu div.record_btn:hover  { color:#FF0;} */
+
+/*そ*/
+#bet_div {z-index: 1000;}
+#info_div {/*height:50;*/*left:2; clear: both;}
+
+/*  2012-06-13而笲э  */
+#info_div .msg_box { clear:both;color: #FFF;	width: 216px; height:118px;
+margin-bottom: 5px;
+margin-left:0px; 
+}
+html>body #info_div .msg_box {margin-left:0px;}
+
+/*   2012-06-13而笲э玡
+#info_div .msg_box {	color: #FFF;	width: 216px; height:118px;
+position: fixed !important;
+bottom: 5px; *bottom:0%;
+_position:absolute;
+left:10px; *left:0px; 
+}*/
+#info_div .msg_box h2 {	margin:11px 0 0 0;	padding: 11px 0 0 11px; height: 34px; text-align:left;font: 0.75em Arial, Helvetica, sans-serif; color:#E9B567; font-weight:bold;	background: url(../img/order_msg_h2.gif) no-repeat left top;}
+#info_div .msg_box h2 .more {	float: right;	*margin-top: -14px/*IE Hack*/;	margin-right: 11px;font-weight:normal;}
+#info_div .msg_box .msg_main { clear:right;	padding: 5px 10px; font: 0.75em Arial, Helvetica, sans-serif; color:#2F2F2F;	background-color: #DFCCA8;}
+html>body #info_div .msg_box .msg_main{ margin-top:-10px; text-align:left;}/*Mac Hack*/
+/*iframe 丁禯砞﹚*/
+#order_div #bet_div, #order_div #rec5_div {	width: 100%;	display: block; left:0; top:0;}
+/*LiveTV*/
+#live_box { margin-top:6px;	color: #FFF;	width: 216px;}
+#live_box h2 {margin: 0px;	padding: 10px 0 0 32px;	height: 34px; text-align:left;font: 0.75em Arial, Helvetica, sans-serif; color:#E9B567; font-weight:bold;	background: url(../img/order_live_h2.gif) no-repeat left top;	 }
+html>body #live_box h2 {margin-bottom:-10px;}/*Mac Hack*/
+#live_box h2 .more {float: right;	*margin-top: -13px/*IE Hack*/;	margin-right: 11px; font-weight:normal;}
+#live_box .live_main { padding-bottom:2px;color:#2F2F2F;	background-color: #DFCCA8;}
+#live_box .live_main ul.live_list{ width:198px; margin:0; padding:0;}
+#live_box .live_main li { margin-bottom:-5px;/*留旅娩絬*/ padding:6px 0px 3px 0px;	list-style-type: none; border-bottom: 1px dotted #2F2F2F;height: 2em; line-height:2em;font: 0.75em Arial, Helvetica, sans-serif;  display:block; clear:left;}
+html>body #live_box .live_main li {line-height: 180%; height:inherit;margin-bottom:-1px; padding-bottom:0px;}
+html>body #live_box .live_main ul.live_list {overflow:auto; zoom:1; margin-bottom:2px;}
+#live_box .live_main span {	display: block;}
+#live_box .live_main .time {	float: left;width: 40px;}
+#live_box .live_main .team {float: left;	padding-left: 0px;	text-align: left; display:inline;	}
+html>body #live_box .live_main ul.live_list { padding: 2px 10px 14px;}
+
+/*羛挡侣呼*//**/
+#switch_web { cursor:hand \9; cursor:pointer; width:216px; height:43px; margin:0 0 10px 0; background: url(../img/NewtoOld_chs.gif) no-repeat;}
+/*html>body #switch_web {height:44px; margin-left:-8px;}
+/*#switch_web a:link, #switch_web a:visited {	color: #FFF; text-decoration:none;}
+#switch_web a:hover {	color: #F8C100;}*/
+
+/*20140120-left banner*/
+.left_banner { margin-top:8px; margin-top:11px \9; margin-bottom:8px;}
+.banner_tw { background:url(../img/433sitebanner_tw.jpg) no-repeat 0 0; width:215px; height:60px; display:block; cursor:pointer;}
+.banner_cn { background:url(../img/433sitebanner_cn.jpg) no-repeat 0 0; width:215px; height:60px; display:block; cursor:pointer;}
+/*141202-オ凹約*/
+.new_banner { width:216px; margin:11px 0; font-size:12px; font-family:simsun; text-align:left;}
+.banner_title { height: 20px; height:30px\9; background: url(../img/banner_title.gif) no-repeat left top; display:block; padding:10px 0 0 11px; color:#E9B467;}
+.banner_con { padding:11px; background:#E5CB74;}
+.banner_pic_tw { display:block; background:url(../img/banner_pic_tw.jpg) no-repeat 0 0; width:194px; height:235px; margin-bottom:11px;}
+.banner_pic_cn { display:block; background:url(../img/banner_pic_cn.jpg) no-repeat 0 0; width:194px; height:235px; margin-bottom:11px;}
+.text_color { color:#730B00; font-weight: bold;}
+
+/*150112-add left benner(live228)*/
+.live228_tw { background:url(../img/live228_tw.jpg) no-repeat 0 0; width:216px; height:244px; display:block; cursor:pointer;}
+.live228_cn { background:url(../img/live228_cn.jpg) no-repeat 0 0; width:216px; height:244px; display:block; cursor:pointer;}
+
+
+
+
+html, body {height:100%;}
+body.bodyset { margin:0; padding: 10px 0 0 10px; background-color: #FFF;behavior:url(../img/csshover.htc);}
+ /*background:url(../img/test_bg.gif) no-repeat 0 0;*/
+body.bodyset, .leg_mem {/* 捲軸-上色 */
+ scrollbar-face-color: #DCD1C5;
+ scrollbar-shadow-color: #B9A38B;
+ scrollbar-highlight-color: #E6DED6;
+ scrollbar-3dlight-color: #B9A38B;
+ scrollbar-darkshadow-color: #33281C;
+ scrollbar-track-color: #33281C;
+ scrollbar-arrow-color: #413528;
+ }
+ /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~盤面寬度~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*  FT    */
+body.FTR #box { width:715px;}
+body.FTR td#page_no { width:393px;}
+body.FTR .mem .team,  body.FTRE .mem .team,   body.FTPD .mem .team, body.FTP3 .mem .team,  body.FTF .mem .team
+ {	min-width:160px;	width: auto !important;	width: 160px;	}
+body.FTRE #box { width:669px;}
+body.FTRE td#page_no { width:347px;}
+body.FTT #box { width:544px;}
+body.FTT td#page_no { width:222px;}
+body.FTPD #box { width:734px;}
+body.FTPD td#page_no { width:412px;}
+body.FTP3 #box { width:715px;}
+body.FTP3 td#page_no { width:393px;}
+body.FTF #box { width:652px;}
+body.FTF td#page_no { width:330px;}
+/* BK / BS / TN / VB -- RE / FTT / FUT*/
+body.BKRE #box, body.BSRE #box, body.TNRE #box, body.VBRE #box { width:674px;}
+body.BKRE td#page_no, body.BSRE td#page_no, body.TNRE td#page_no, body.VBRE td#page_no { width:193px;}
+body.BKRE .mem .team, body.BSRE .mem .team, body.TNRE .mem .team, body.VBRE .mem .team,  body.FTT .mem .team, body.FUT .mem .team { width:260px;}
+/* BK */
+body.BKP3 #box, body.BKR #box  { width: 521px;}
+body.BKP3 td#page_no, body.BKR td#page_no { width:199px;}
+body.BKP3 .mem .team, body.BKR .mem .team { width:220px;}
+/* BS */
+body.BSR #box { width:674px;}
+body.BSR td#page_no { width:352px;}
+body.BSR .mem .team { width:160px;}
+/* BS P3*/
+body.BSP3 #box { width:502px;}
+body.BSP3 td#page_no { width:180px;}
+body.BSP3 .mem .team { width:160px;}
+/* OP */
+body.OPRE #box { width:585px;}
+body.OPRE td#page_no { width:263px;}
+body.OPRE .mem .team { width:160px;}
+/* OP / TN / VB -- R(PR) */
+body.OPR #box, body.OPP3 #box,body.TNR #box, body.TNP3 #box, body.VBR #box, body.VBP3 #box { width:562px;}
+body.OPR td#page_no, body.OPP3 td#page_no, body.TNR td#page_no, body.TNP3 td#page_no, body.VBR td#page_no, body.VBP3 td#page_no { width:240px;}
+body.OPR .mem .team, body.OPP3 .mem .team, body.TNR .mem .team, body.TNP3 .mem .team, body.TNPD .mem .team, body.VBR .mem .team, body.VBP3 .mem .team { width:220px;}
+/* OU / TU / VU -- R(PR) */
+body.OUR #box, body.OUP3 #box,body.TUR #box, body.TUP3 #box, body.VUR #box, body.VUP3 #box { width:562px;}
+body.OUR td#page_no, body.OUP3 td#page_no, body.TUR td#page_no, body.TUP3 td#page_no, body.VUR td#page_no, body.VUP3 td#page_no { width:240px;}
+body.OUR .mem .team, body.OUP3 .mem .team, body.TUR .mem .team, body.TUP3 .mem .team, body.TUPD .mem .team, body.VUR .mem .team, body.VUP3 .mem .team { width:220px;}
+/* TN */
+body.TNPD #box { width:553px;}
+body.TNPD td#page_no { width:231px;}
+/* VB */
+body.VBPD #box { width:511px;}
+body.VBPD td#page_no { width:189px;}
+body.VBPD .mem .team { width:280px;}
+/*    FU早餐   */
+body.FUR #box { width:715px;}
+body.FUR td#page_no { width:393px;}
+/* FUR / FUPD / FUT / FUF  -- team */
+body.FUR .mem .team, body.FUPD .mem .team, body.FUF .mem .team,  body.FUP3 .mem .team  {	min-width:160px;	width: auto !important;	width: 160px;	}
+body.FUPD #box { width:734px;}
+body.FUPD td#page_no { width:412px;}
+body.FUT #box { width:544px;}
+body.FUT td#page_no { width:222px;}
+body.FUF #box { width:652px;}
+body.FUF td#page_no { width:330px;}
+/* BU */
+body.BUP3 #box, body.BUR #box  { width: 521px;}
+body.BUP3 td#page_no, body.BUR td#page_no { width:203px;}
+body.BUP3 .mem .team, body.BUR .mem .team { width:224px;}
+/* BE */
+body.BER #box { width:674px;}
+body.BER td#page_no { width:352px;}
+body.BER .mem .team { width:160px;}
+/* BE P3*/
+body.BEP3 #box { width:502px;}
+body.BEP3 td#page_no { width:213px;}
+body.BEP3 .mem .team { width:193px;}
+/* TU */
+body.TUPD #box { width:553px;}
+body.TUPD td#page_no { width:231px;}
+/* VU */
+body.VUPD #box { width:511px;}
+body.VUPD td#page_no { width:203px;}
+body.VUPD .mem .team { width:294px;}
+ /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~盤面寬度  END~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+body.bodyset_cal { margin:0; padding: 10px 0 0 5px; background: #FFF;}
+form { margin:0; padding:0;}
+a { text-decoration: none; }
+
+/* 轉頁loading */
+#LoadLayer {position:absolute;	width:100%;	height:100%;	z-index:1;	/*text-align:center;*/ text-align:left;	padding-top:40px;background-color:#F3F3F3;	border: 1px solid #000; /*visibility:visible;*/	visibility:hidden;	/*left: 8px;*/}
+#controlscroll { display:none; position:absolute;width:100%;height:99.9%;	z-index:1;	text-align:center;left:0;top:0; /*display: none;*/
+opacity: 0.6;  *filter:alpha(opacity=60);
+background-color:#000;}
+#controlscroll table.loadBox { width:100%;height:99%; text-align:center; background:  url(../img/iphone_load.gif) no-repeat 330px 50%;filter:alpha(opacity=100);}
+
+#box { width:734px; position: relative; margin-bottom:12px;}
+/*title*/
+.top { position: relative;background: #4E432A url(../img/mem_h1_ft.gif) no-repeat 100% 0; color:#FFF; clear:both;}
+.top h1 { margin:0 15px 0 0; padding: 4px 2px 1px 11px; font:0.75em/1.2;background:url(../img/mem_h1_ft.gif) no-repeat 0 0;   text-align: left;}
+html>body .top h1 {padding: 6px 2px 3px 11px;}/*Mac Hack*/
+.top em { width:56px; white-space: nowrap;font-style: normal; font-weight:bold; margin-top:4px; margin-bottom:2px;color: white;
+ }
+.top .rig { position: absolute; top:6px; right:13px; width:auto; white-space:nowrap;font:1em/1.2 Arial, Helvetica, sans-serif; text-align:right;}
+.top strong { margin: 0 0 0 8px; font-weight: normal;}
+/*.rig strong { position-top:10px;}*/
+.rig .txt { margin-left:5px; margin-right:5px;}
+input, select { vertical-align: middle; height: 18px;font:1em Arial, Helvetica, sans-serif;}
+.rig .button {}
+.top a { margin-left: 6px; margin-right:4px;}
+.top a:hover { color:#FF0!important; text-decoration:none!important;}
+.top a:link, .top a:visited { color:#FFF; text-decoration:underline;}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~mem~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.mem { border: 2px solid #BC9A3F; border-top-width: 0; border-bottom:1px solid #D7D7C1; padding:3px; background-color:#D7D7C1; clear:both;}
+h2 { white-space:nowrap; margin:0; padding: 0px 8px 0px; height:29px;font:normal 0.75em Arial, Helvetica, sans-serif; background-color:#86715c;/*border:1px solid #B9B9A3;*/ border-bottom:1px solid #D7D7C1;}
+html>body h2 { padding: 0px 8px 5px; }/*Mac Hack*/
+h2 a:link, h2 a:visited {color:#FF0;}
+h2 a:hover { color:#F8C100!important; }
+h2 a {text-decoration: none;}
+/*我的最愛功能列*/
+table#fav_bar { height:34px; color:#FFF;}
+table#fav_bar td{	white-space: nowrap; font:normal 0.75em Arial, Helvetica, sans-serif; height:26px; padding:0;    text-align: left;}
+/*頁次*/
+td#page_no { width:412px; white-space:nowrap;text-align: left;color: #fff;}
+/*下拉上色*/
+td#page_no select, .OrderType select { border:1px solid #B6ACAA; font-size: 12px;}
+/*工具第二層table*/
+#tool_td { text-align:right;}
+#tool_td .tool_box { margin:0; padding:0; color:#FFF;}
+/*~~~~~~~~~切換我的最愛~~~~~~~~~*/
+#fav_btn { /*width:90px;*/width:50px; text-align:left; padding-right:10px;}
+#fav_btn img {border: none; *cursor:hand; cursor:pointer; width:40px; height:26; margin-top:3px \9;}
+.fav_null { width:40px; height:26px;background: url(../img/mem_fav_null.gif) no-repeat 0 0;}/*無資料*//**/
+.fav_out { *cursor:hand; cursor:pointer;  width:40px; height:26px; background: url(../img/mem_fav_out.gif) no-repeat 0 0;}/*有資料*//**/
+.fav_on { *cursor:hand; cursor:pointer; width:40px; height:26px; background: url(../img/mem_fav_on.gif) no-repeat 0 0;}/*點選*/
+/*滑過變色*//**/
+div.fav_out:hover {background: url(../img/mem_fav_out.gif) no-repeat 0 -26px;} 
+div.fav_on:hover {background: url(../img/mem_fav_on.gif) no-repeat 0 -26px;} 
+
+/*我的最愛計次*//**/
+#fav_num { *cursor:hand; cursor:pointer;width:17px; height:17px; padding-top:2px; color:#8F5E01; font-size:10px; text-align:center; z-index:100;}
+html>body #fav_num { position:absolute;margin-top:-2px;margin-left:32px;padding-top:3px; background: url(../img/fav_num.png) no-repeat;}/*mac*/
+*#fav_num { position: absolute \9; margin-top:-5px \9; margin-left:32px \9; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/fav_num.png');}/*IE6 png透明*/
+
+/*上刷新*/
+td.refresh_btn , td.refresh_on { width:74px;}
+td.refresh_btn div , td.refresh_on div {  *cursor:hand; cursor:pointer; height:26px; width:64px; text-align: center; padding:6px 3px 0 0;}
+td.refresh_btn div {  color:#F9C100; background:url(../img/mem_refresh_btn.gif) no-repeat;font-size: 12px;}
+html>body td.refresh_btn div, html>body td.refresh_on div   { margin-top: 5px; font-size: 12px;}
+.refresh_btn font, .refresh_on font  { margin-left:25px; width:36px;}
+/*html>body td.refresh_btn div font, html>body td.refresh_on div font {  float:right; clear:right;padding:0 3px 0 0;}/*Mac Hack*/
+td.refresh_on div {  color:#FF0;background:url(../img/mem_refresh_S_on.gif) no-repeat;}
+/*滑過變色*//**/
+/*td.refresh_btn div:hover { color: #FF0;} 
+
+/*============history 刷新============*/
+/* history 賽果-冠軍 無字 刷新 */
+td.rsu_refresh , td.rsu_refresh_on { width:48px; padding-left:10px; text-align:right;}
+td.rsu_refresh div, td.rsu_refresh_on div {
+      *cursor:hand; cursor:pointer; height:26px; width:38px; text-align: center;
+       /*padding:6px 3px 0 10px;*/}
+td.rsu_refresh div { background:url(../img/his_refresh_btn.gif) no-repeat 0 0;}
+td.rsu_refresh_on div { background:url(../img/his_refresh_on.gif) no-repeat 0 0;}
+html>body td.rsu_refresh div, html>body td.rsu_refresh_on div  { /*margin-bottom:-6px;*/}
+/* 滑過變色 //**/
+/*td.rsu_refresh div:hover {color:#F9C100; background:url(../img/his_refresh_btn.gif) no-repeat 0 -30px;} */
+
+/*選擇聯賽*/
+td.leg_btn {	width: 99px; text-align:center;}
+td.leg_btn div { color:#F9C100; *cursor:hand; cursor:pointer; height: 26px; width: 99px; padding-top:6px; background: url(../img/mem_league_btn.gif) no-repeat;font-size: 12px;}
+html>body td.leg_btn div { margin-top:5px;    text-align: center; font-size: 12px;}/*Mac Hack*/
+/*滑過變色*//**/
+td.leg_btn div:hover { color: #FF0;} 
+
+/*#pg_txt a {float: none;}*/
+/*盤口類別*/
+.OrderType { width:73px; text-align:right; }
+/*早餐日期*/
+.date_btn {/*width:140px; width:129px \9; */ margin-left:10px;text-align:right; white-space:nowrap!important;}
+.date_btn span { margin-left:5px;}/*字與下拉的間距*/
+/*h2 span { float:left; margin-top:2px;}*/
+/*table--外框邊線*/
+.mem .game {	width:100%;	background-color:#B9B9A3;	clear: both;	font-size:12px; border-top:1px solid #B9B9A3;border-left:1px solid #B9B9A3;}
+/*盤面表頭加線*/
+.game th, .more th {color:#000;	background-color:#C8A670;white-space:nowrap;	font-weight: normal;padding:2px 2px 1px; border-right:1px solid #B9B9A3; border-bottom:1px solid #B9B9A3;font-family: Arial, Helvetica, SimSun, sans-serif;}
+/*盤面表格加線*/
+.game td, .more td { padding:1px 4px; /*white-space:nowrap; */font-size:12px; border-right:1px solid #B9B9A3; border-bottom:1px solid #B9B9A3;font-family: Arial, Helvetica, SimSun, sans-serif;}
+/*雙盤粗線-足球單雙
+.r_line {border-right:2px solid #B9B9A3!important;}*/
+
+
+/*取消第二層表格包表格線框*/
+.game td td, .more td td{ border: none;}
+/*td*/
+.mem .time { width:65px;}
+.mem .time_re { width:70px;}
+.mem .team { width:38%;}
+.mem .num { width:7%;}
+.h_1x2 { width:40px;white-space:nowrap;}
+.h_r { width:80px;white-space:nowrap!important;}
+/*.h_r_ft { width:80px;white-space:nowrap!important;}*/
+.h_ou { width:90px; white-space:nowrap;}
+.h_oe { width:50px; white-space:nowrap;}
+.h_pd { width:50px;white-space:nowrap;}
+.h_pd_ft  { width:30px;white-space:nowrap;}
+.h_t { width:65px;white-space:nowrap;}
+.h_f { width:45px;white-space:nowrap;}
+/*Live TV*/
+.tv_icon_on { cursor:pointer; width:14px;height:15px;background:url(../img/live_tv_s.gif) no-repeat;}
+.tv_icon_out { cursor:pointer; width:14px;height:15px;background:url(../img/live_tv_s.gif) no-repeat 0 -40px;}
+
+/*隊伍*//*和局*/
+.team_name { line-height:19px; background-color:#FFF; text-align:left; color:#493721; white-space:nowrap;}
+.none {border-bottom-color:#FFF!important;}/*取消有和局的底線*/
+.drawn_td  { background-color:#FFF; text-align:left; color:#493721;height:18px; padding:0!important;}
+.drawn_td td { color:#493721;}/*被包在我的最愛table裡的和局顏色設定*/
+.drawn_td .hot_td { text-align: left;padding:0; width:29px;}/*我的最愛星星-足球*/
+.hot_star { text-align: left;padding:0; width:29px;}/*我的最愛星星-其他球*/
+
+
+.hot_tv { text-align: right;padding:0; width:15px; padding-bottom:1px;}/*live TV td*/
+.fav_tab { position:relative;float:right; margin-top:-19px; width:44px;}/*其它球類小星星/電視table*/
+html>body .fav_tab {margin-top:0;}
+/*FT -BS- OP drawn td ie8 Hack 顯現和局右方邊線消失*//**/
+/*.drawn_ie8 {
+	*border-right:1px solid #B9B9A3;/* IE6 Hanck*/ 
+/*	border-right:2px solid #B9B9A3 \9;  /*IE7、IE8 Hanck*/
+/*}*/
+	
+/**+.drawn_td .hot_td { background-color:#FF0;}*/
+/*偏好星星*/
+/*.fov_icon_on { width:15px; height:15px; background:url(../img/mem_fav_s_on.gif) no-repeat;}
+.fov_icon_out { width:15px; height:15px; background:url(../img/mem_fav_s_out.gif) no-repeat;}*/
+.fov_icon_on {cursor:pointer; display:block;width:16px; height:15px;background: url(../img/mem_icon.gif) no-repeat 0 -40px;}
+.fov_icon_out {cursor:pointer;display:block;width:16px; height:15px;background:url(../img/mem_icon.gif) no-repeat 0 -60px;}
+/* 偏好星星 For fireFox */
+@-moz-document url-prefix() {
+	body.OPRE .fov_icon_on,	body.OPRE .fov_icon_out,
+	body.BKRE .fov_icon_on,	body.BKRE .fov_icon_out,
+	body.BKR .fov_icon_on,		body.BKR .fov_icon_out,
+	body.BUR .fov_icon_on,		body.BUR .fov_icon_out,
+	body.BSRE .fov_icon_on,	body.BSRE .fov_icon_out,
+	body.BSR .fov_icon_on,		body.BSR .fov_icon_out,
+	body.BER .fov_icon_on,		body.BER .fov_icon_out,
+	body.VBRE .fov_icon_on,	body.VBRE .fov_icon_out,
+	body.VBR .fov_icon_on,		body.VBR .fov_icon_out,
+	body.VUR .fov_icon_on,		body.VUR .fov_icon_out,
+	body.TNRE .fov_icon_on,		body.TNRE .fov_icon_out,
+	body.TNR .fov_icon_on,		body.TNR .fov_icon_out,
+	body.TUR .fov_icon_on,		body.TUR .fov_icon_out
+  { 
+	  margin-top:-15px;
+  }
+}
+
+/*無賽事欄位*//**/
+.no_game {  clear:both;height:60px; text-align:center; background-color:#FFF; width:722px;font:12px  Arial, Helvetica, sans-serif; padding-top:15px;}/* EN Change */
+/* 無賽事欄位 For fireFox */
+@-moz-document url-prefix() {
+  .no_game_fox {
+	 clear:left;height:60px; line-height:60px; width:652px; text-align:center; background-color: #FFF; width:722px;font:12px  Arial, Helvetica, sans-serif; padding:3px 163px 3px 163px; border:1px solid #B9B9A3;
+  }
+}
+
+/*============無和局二行格式之我的最愛==============*/
+#fav_box { float:right; text-align:right ; width:20px; *margin-top:-18px; }
+/*#fav_box div { float:right; border:1px dotted #390;}*/
+/*#fav_box .fov_icon_on {background-color:#F90;}*/
+/*側面刷新鈕*/
+/*#refresh_right { position:relative!Important; right:0px!Important; top:0; border:1px solid #F00;}/*右邊刷新*/
+#myTable {text-align:center;    padding-left: 10px;}
+/*#refresh_right { position:absolute; right:-105px; top:10; border:1px solid #F00;}/*右邊刷新*/
+.refresh_M_btn , .refresh_M_on {width:100px; height:45px; line-height:45px; *cursor:hand; cursor:pointer; padding:17px 0 0 50px;  font:normal 0.75em Arial, Helvetica, sans-serif; white-space:nowrap;}
+.btn {padding:17px 0 0 5px;}
+.refresh_M_btn {color:#F8C100; background:url(../img/mem_refresh_M_btn.gif) no-repeat;}/*圖片出現手*/
+.refresh_M_btn  img { display:none; /*border:none;width:100px; height:45px;*/}
+/*點擊換圖*//**/
+.refresh_M_on {color: #FF0;background:url(../img/mem_refresh_M_on.gif) no-repeat;}
+/*div.refresh_M_btn:hover { color: #FF0;/*background:url(../img/mem_refresh_M_btn.gif) no-repeat;} */
+#myTable div#refresh_down { text-align:left;}
+html>body #refresh_down { margin-left:auto; margin-right:auto;}
+.more_txt a { font-weight:normal;}
+.maxbet { float:right; margin-top:-19px \9; clear:right; font-family: Arial, Helvetica, SimSun, sans-serif; }/*單注最高派彩*/
+/* For fireFox */
+@-moz-document url-prefix() {
+  .maxbet { margin-top:-15px;
+  }
+}
+/*Handicap + Over Under*/
+.game td.pr, td.ou { width:22%;/*padding:2px 2px;*/ text-align:right;}
+#PRbox {width:580px;position: relative;margin-bottom:12px;}
+#pr .time { width:15%; /*text-align:left;*/}
+#pr .team { width:40%; /*text-align:left;*/}
+#pr .num { width:7%; /*text-align:left;*/}
+#pr .pr  {width:15%; /*text-align:left;*/}
+#pr .ou {width:23%; /*text-align:left;*/}
+.game th.1st,.game th.1st2 ,#p3 .hpm{ /*background-color:#630; color:#FFF;*/}
+/*============盤面tr聯盟與收合============*//**/
+.b_hline {  background-color: #FCF9CE;padding-top:3px; position: relative;    height: 20px;}/**/
+.b_hline td {color:#4b3621;font-weight: bold;}
+.showleg { width:15px; height:18px; margin:0;  vertical-align: middle; *cursor:hand; cursor:pointer;}
+.leg_bar { *cursor:hand; cursor:pointer;}/*聯盟名稱*/
+/*#ShowLeg { width:15px; height:14px; margin:0 12px 0 7px; float:left; clear:left;}*/
+html>body .showleg { width:100%; height:14px; /*margin:0 12px 0 7px; float:left;*/ clear:left;}
+.legicon { padding:0; width:22px; text-align:center; *cursor:hand; cursor:pointer; /*border: dotted 1px #F90;*/}
+/*html>body #ShowLeg { clear:both; border: solid 1px #0CF; background:#C93;}/*Mac Hack*/
+html>body  #LegOpen {  display:block; }/*mac hack*/
+html>body  #LegClose {  display:block; }/*mac hack*/
+/*#LegOpen {width:15px; height:14px; margin:1px 1px 0 0px; background:url(../img/mem_arr.gif) no-repeat 0 0;}*/
+#LegClose {width:15px; height:14px; margin:1px 1px 0 0px;  background:url(../img/mem_arr.gif) no-repeat 0 -20px;}
+/*===========所有按鈕滑過效果===========*/
+.refresh_M_btn {}
+
+/*------P3------*/
+#P3box { width:950px;position: relative; margin-bottom:12px;}
+#p3 .team { width:18%; }
+#p3 .num, #p3 .time  { width:5%; }
+#p3 .eo { width:9%; }
+#p3 .pr, { width:11%; }
+#p3 .ou, { width:12%; }
+#p3 .pm,#p3 .hpm, #p3 .hpm2{ width:7%; }
+#p3 .1st { width:11%; }
+#p3 .1st2 { width:14%; }
+#p3 .b_1st {text-align: center; width:14%;}
+#p3 .b_1st_S {text-align: right; ; width:11%;}
+/*#p3 .b_1stR {text-align: right; width:14%;}*/
+/*p3*/
+/*#p3 .hpm2,#p3 .b_1st,#p3 .b_1stR,#p3 .b_1st_S{background-color: #f0f1b5}*/
+#MFT .full {	background-color:#960;color: #FFF;}
+/*#MFU .game th.1st,#MFU .game th.1st2, body#MFT #game_list_3 .game th.1st,#MFU .game th.hpm { background-color:#4376A7;}
+#MOP .game th.1st, #MOP .game th.1st2 ,#MOP .game th.hpm {background-color: #a25100;}
+#MOM .game th.1st, #MOM .game th.1st2 , #MOM .game th.hpm{background-color:#A23C25;}
+#MBE .game th.1st, #MBE .game th.1st2 , #MBE .game th.hpm{background-color:#7E620B;}
+#MBS .game th.1st, #MBS .game th.1st2 , #MBS .game th.hpm{background-color:#35460D;}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~foot~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#foot { width:100%; height:11px; background:url(../img/mem_foot_ft.gif) no-repeat 100% 100%; vertical-align: bottom;}
+#foot b {float:left; display:block;width:30px; height:11px; line-height:11px; background:url(../img/mem_foot_ft.gif) no-repeat 0 100%;}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~more game~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+body.BODYMORE { margin:0; padding:0;}
+@media all and (min-width: 768px) {
+	body.BODYMORE { width:100%;  }
+}
+@media all and (min-width: 1024px) {
+	body.BODYMORE { width:100%; }
+}
+.more {position: relative;width:700px;	/*background-color: #433E27;*//*border: 3px solid #433E27;*//*padding: 4px;*/}
+.game  {	background-color:#B9B9A3;	font-size:0.75em;width: 717px;}
+.game_team  { height:22px; line-height:22px;background-color:#241706; color:#f6dbba;font:12px "Arial", Gadget, sans-serif; text-align:center;}
+.game_team tt , .game tt{font-size: 12px; font-family:Arial, Helvetica, sans-serif;}
+.game_title    { line-height:20px; height:20px;background-color: #FCF9CE;	color: #493721;	font-weight: lighter;	font: 12px Arial, Helvetica, sans-serif;text-align: center;}
+.caption { text-align:left; font-size: 12px;}
+/*caption b {display:block;	white-space:nowrap;	font-weight: normal;	text-align:center;	width:100%;	color: #FFF;	background-color: #7B0000;	margin: 0 0 -2px -1px;	padding: 4px 6px 1px 6px;}*/
+input.close { float:right; *margin:-14px 5px 2px 2px; *cursor:hand; cursor:pointer; width:13px; height:12px; font:0.75em Arial, Helvetica, sans-serif; border:none; background:url(../img/mem_icon.gif) no-repeat 0 -100px;}
+#copyright { width:530px;font-size:0.72em; color:#555; text-align:center;}
+.BODYMORE table.game{border:0;margin:0;border-collapse:collapse;border-bottom:2px solid #B9B9A3;}
+.vs { color:#FFF;}
+/*body.BODYMORE table.game td{padding:0;}
+/*more game--future */
+/*body#MFU .more {	position: relative;	width:620px;background-color: #333;	border: 5px solid #C49400;	padding: 4px;}*/
+/*body#MFU .game_title  {background-color: #4675A8;}
+body#MOP .game_title  {background-color:#a25100;}
+body#MOM .game_title  {background-color: #A23C25;}
+body#MBE .game_title  {background-color:#7E620B;}
+body#MBS .game_title  {background-color: #35460D;}
+/*body#MFU .game_title,body#MOP .game_title, body#MOM .game_title,body#MBS .game_title ,body#MBE .game_title  {color: #FFF;	font-weight: lighter;font:12px Arial, Helvetica, sans-serif;	text-align: center;}*/
+/*body#MFU .game_title th{color:#000;background-color:#C8A670;}
+body#MOP .game_title th{color:#000;background-color:#ff9f19;}
+body#MOM .game_title th{color:#000;background-color:#ff9080;}
+body#MFU .game_title th , body#MOP .game_title th , body#MOM .game_title th{white-space:nowrap;font-weight: normal;}*/
+.no { color:#C00; height: 20px;}
+.yes { height: 20px;}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~old style~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.b_cen { background-color: #FFF; text-align:center; white-space:nowrap;}/*table style*/
+.b_foot {font-size:11px; text-align:center;}
+.mem tr, .more tr {font-family:"Arial";}
+.b_rig {background-color:#FFF; text-align:right;white-space:nowrap;/*解決賠率斷行*/}
+.b_lef {background-color:#FFF; text-align:left;}
+/*============賠率間距==============*//**/
+.con { padding-right:0px;}
+.ratio { padding-left:3px; width:33px;}
+.con_oe {}/*單雙中文字*/
+/*league*/
+/*============選擇聯賽頁面==============*//**/
+/*選擇聯賽--父層div set*//**/
+.legView {
+    position: absolute;
+    width: 721px;
+    left: 5px;
+    top: 156px;
+}
+.legView iframe { width:721px!important; /*min-height:190px;	height: auto !important;	height: 190px; /*height:357px;*/margin:0; padding:0;}
+.leg_head {  height:10px; font:bold 12px  Arial, Helvetica, sans-serif; color:#F8C100; background-repeat:no-repeat; }/*最外層header*//**/
+html>body .leg_head {height:10px; padding: 0; background: url(../img/leg_head.png) no-repeat;}/*mac*/
+* .leg_head { padding: 17px 0 0 47px;  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/leg_head.png');}/*IE6 png透明*/
+.leg_main { background-color:#493721;}
+.close_td { text-align:right; width: 16%;}
+.close_boxs { *cursor:hand; cursor:pointer; float:right; position:relative;margin:0 10px 0 2px; height:14px; padding:1px 19px 0 0; *padding-top:3px; font-weight:normal; font-size:12px;background: url(../img/close_leg.gif) no-repeat right 0;}/*close button box*/
+span.close_box:hover { color: #C60;}
+.close_leg { *cursor:hand; cursor:pointer; margin: 0 0 0 4px; width:15px; height:14px; vertical-align: text-bottom;border:none; background:url(../img/close_leg.gif) no-repeat 0 0;}
+.leg_foot { height:10px;background-repeat:no-repeat;}
+html>body .leg_foot  {background: url(../img/leg_foot.png) no-repeat;}/*mac*/
+* .leg_foot  {filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/leg_foot.png');}/*IE6 png透明*/
+/*選擇聯賽--子層*//**/
+body #LEG { margin:0; padding:0 10px; text-align:center; background-color:#493721;/* border:solid 1px #9C0;*/}
+body #LEG #box{ margin:0 auto;width:701px;background-color:#D5D4C8;}
+body #LEG #box td {font:12px  Arial, Helvetica, sans-serif;}
+.leg_top table { height:46px; margin:0; padding:0;}
+.leg_top h1 {height:23px; height:29px \9; margin:0; padding:6px 0 0 6px; color:#2F2F2F; font-style:normal;font: bold 12px  Arial, Helvetica, sans-serif; vertical-align:bottom;}
+/*全選*/
+@-moz-document url-prefix() {
+  .all_sel { vertical-align: bottom;
+  }
+}
+
+.leg_mem { clear:right; vertical-align:top;overflow-x:hidden; overflow-y: auto;
+					 /*min-height:95px;	height: auto !important;	height: 95px;	/*height:265px;/* *height:247px; */background-color:#FFF;/*出現捲軸-上色*/}
+.btn_td { text-align:center; width:40%;}
+.btn_box  {height:36px; height:46px \9; width:701px; padding-top:10px; text-align:center; background-color:#D5D4C8;    margin: 0 auto;}
+.leg_game { width:100%;background-color:#D5D4C8;}/*小表格table*//**/
+.leg_game td { width:33.3%; padding: 0 4px 0 9px; height:14px;  height:18px \9; color:#2F2F2F; background-color:#FFF;}/*聯盟欄位*//**/ 
+html>body .leg_game td { height:22px;}
+.leg_top input { margin: 0 6px 0 0px;}
+.league input { margin: 0 0 0 -4px; float:left;}
+.league font {display:block; margin-left:17px; margin-top:2px;}/*聯賽名稱齊頭*//**/
+
+html>body .leg_top input , html>body  .league font  { margin-top:4px;float:left}
+.enter_btn {color:#F9C100; *cursor:hand; cursor:pointer; height: 26px; width: 99px; padding-top:2px; border:0; font:12px Arial, Helvetica, sans-serif; font-weight:bold; background: url(../img/mem_league_btn.gif) no-repeat;}
+/* For fireFox */
+@-moz-document url-prefix() {
+  .enter_btn {
+	 padding-top:0px;
+  }
+}
+.league { vertical-align:top; width:217px; background-color: #FFF;	padding: 3px; font-size:11px;}
+.league_all {	background-color: #F8E8BE;	padding: 3px; color: #F00;}
+body#MFU .league {	background-color: #E4EFF9;	}
+body#MFU .league_all {	background-color: #C2D1EB;}
+/*R.B lst tr-color*/
+.b_1st {background-color: #f0f1b5;text-align: center;}
+.b_1stR {background-color: #f0f1b5; text-align: right;white-space:nowrap;/*解決賠率斷行*/}
+/*1x2 pr td-color*/
+.b_pradio {  color: #C00; background-color: #FFC; font-weight: bold;}/*D*/
+.b_radio { color: #060; background-color: #e4f0f3 ; font-weight: bold;}/*pr*/
+.za_dot {height:12px; width:12px; margin-bottom:2px;}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ For Mac/Safari Fix ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+html>body .top h1 { font-size:12px;}
+html>body #foot b { line-height:0;}
+/*Red card */
+b.card{position:relative; margin-top:-12px;}
+.R_card {color: #FF0000;font-size: 7px;font-style: oblique;}
+/*Red card Revision*/
+.top h1 { font-size:0.75em;}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ Special Early Hight ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#game_list_4 td { height:8px;}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ NEW FS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.b_hline_nfs {text-align:center; background-color: #FCF9CE;padding-top:3px;}/**/
+.b_leg {background-color:#FFFFFF;text-align:left;padding-top: 2px;padding-bottom: 1px;padding-left: 6px;padding-right: 6px;}
+.r_bold {font-size: 12px;font-weight: bold;color: #CC0000;padding-right: 4px;}/*more vs*/
+.b_tab {background-color: #A0D8FF;}
+
+h3 .rig {	display: block;float: right;}
+h3 .left {float: left;display: block;}
+h3 {white-space:nowrap; margin:0; font:normal 0.75em Arial, Helvetica, sans-serif;	padding: 0 8px;}
+/*mem2*/
+/*#MFU .mem2 {background-color:#CDDEE3;border-right: 2px solid #357CCC;border-left: 2px solid #357CCC;}
+#MBK .mem2{background-color:#D9EAD6;border-right: 2px solid #518A57;border-left: 2px solid #518A57;}
+#MBU .mem2{background-color:#F1E5CE; border-right: 2px solid #A98030;border-left: 2px solid #A98030;}
+#MTN .mem2{background-color:#EDC6C8; border-right: 2px solid #DE5A31;border-left: 2px solid #DE5A31;}
+#MTU .mem2{background-color:#F2DAD5; border-right: 2px solid #D68977;border-left: 2px solid #D68977;}
+#MVB .mem2{background-color:#CED2E9; border-right: 2px solid #6758DB;border-left: 2px solid #6758DB;}
+#MVU .mem2{background-color:#C8E4EF; border-right: 2px solid #377FE2;border-left: 2px solid #377FE2;}
+#MFS .mem2{background-color:#DBCFE0; border-right: 2px solid #8C659A;border-left: 2px solid #8C659A;}
+/*#MNFS .mem2{background-color:#70B5D9; border-right: 2px solid #5F9ADC;border-left: 2px solid #5F9ADC;}
+#MBS .mem2{background-color:#E9F4CD; border-right: 2px solid #98C629;border-left: 2px solid #98C629;}
+#MOP .mem2{background-color:#FFE6CD; border-right: 2px solid #F28E17;border-left: 2px solid #F28E17;}
+#MOM .mem2{background-color:#F5DFDA; border-right: 2px solid #E0927F;border-left: 2px solid #E0927F;}
+#MBE .mem2{background-color:#FAF0CF;  border-right: 2px solid #ECBC29;border-left: 2px solid #ECBC29;}
+*/
+.right { text-align:right;}
+.left { text-align:left;}
+.center { text-align:center;}
+.rg {
+
+float:right;}
+
+/*=============today wagers=============*/
+.today_league { color:#000;}
+.his_result { color: #900; /*font-weight:bold;*/ text-decoration:none;}
+.his_sp {color:#0101f7;text-decoration:none;}/*特殊*/
+.his_score { color:#F00;font-weight:bold;}/*比分*//**/
+.his_con {color:#d20107;}/*球頭*/
+.his_odd { color:#000; font-weight:bold;}/*@xx */
+.bold { font-weight:bold;}
+/*re time*/
+/*.re_time { width:65px; text-align:center; background:#FFF url(../img/mem_re_bg.gif) no-repeat 0 0;}
+.re_box { margin:4px;height:51px; text-align:center;}*/
+/*.re_score { color:#AF5F27;font-weight:bold; text-align: center;}/*比分*//**/
+/*滾球欄位*//**/
+.re_team_box td { padding:0;}
+.re_team { line-height:1.4em; white-space:nowrap; padding:0;}
+.red_card {display:block; margin-left:5px; padding-top:2px; width:12px; height:15px; color:#FFF; font-size:10px; text-align:center; background: url(../img/mem_redcard.gif) no-repeat 0 0; }
+/*滾球頁時間欄位*//**/
+.rb_box {border-collapse: collapse; border:0; padding:0;  width:61px; height:34px;background: url(../img/mem_rb_bg.gif) no-repeat 0 0; }
+.rb_time { color:#F8C100; line-height:14px;text-align:center;}
+.rb_score { line-height:17px; color:#AF5F27; text-align:center; font-weight:bold; margin-top:-1px;}
+.rbsc_w {color:#AF5F27;}/*比分-弱隊*//**/
+.rbsc_s { color:#C00;}/*比分-強隊*//**/
+
+/*For Firefox Hack*/
+#fav_btn img, td.refresh_btn div, td.leg_btn div, .refresh_M_btn, input.close, .legicon,.showleg, .wag_btn, .wag_btn_back, .close_leg, .leg_bar {cursor: pointer;}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ Marquee ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.m_lef { text-align: left;word-break:break-all;/*強迫斷行*/}/**/
+.m_rig{ text-align: right;}
+.m_cen { text-align: center;}
+.menu_set { color:#FFF; background-color:#86715c; font-size:12px;}
+.menu_set td {padding:4px 5px;height:19px; }
+.menu_set select { height:19px; margin:0;}
+.ent_btn { *cursor:hand; cursor:pointer; width:60px; height:26px; color:#FFF; border:none; font-weight:bold; background:url(../img/enter_btn.gif) no-repeat}
+#MSG .scr_on { color:#F9C100!important; text-decoration:none!important; *cursor:hand; cursor:pointer;}
+#MSG .scr_out { color:#FFF;*cursor:hand; cursor:pointer;}
+/*============隔行換色==============*/
+.color_bg1 { background-color:#E9DBC6;}
+.color_bg2 { background-color:#F2E9DD;}
+.color_bg3 { background-color:#F9C100;}
+/*============籃球滾球圖==============*/
+.ball_re { height:20px; background:url(../img/icon_bklive.gif) no-repeat 50% 0;}
+.statement_textbox2 {border-bottom:1px #303030 dotted; }
+
+#show_run_time { color:#FFF;}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ Game chuang ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*top*/
+/*body#MFU .top, body#MFU h1, #MALL .top, #MALL h1, body#MFT #game_list_2 .top, body#MFT #game_list_2 h1 { background-image: url(../img/mem_h1_fu.gif);}
+body#MBK .top, body#MBK h1 { background-image: url(../img/mem_h1_bk.gif);}
+body#MBU .top, body#MBU h1, body#MBK #game_list_2 .top, body#MBK #game_list_2 h1 { background-image: url(../img/mem_h1_bu.gif);}
+body#MTN .top, body#MTN h1 { background-image: url(../img/mem_h1_tn.gif);}
+body#MTU .top, body#MTU h1, body#MTN #game_list_2 .top, body#MTN #game_list_2 h1 { background-image: url(../img/mem_h1_tu.gif);}
+body#MVB .top, body#MVB h1 { background-image: url(../img/mem_h1_vb.gif);}
+body#MVU .top, body#MVU h1, body#MVB #game_list_2 .top, body#MVB #game_list_2 h1 { background-image: url(../img/mem_h1_vu.gif);}
+body#MFS .top, body#MFS h1 { background-image: url(../img/mem_h1_fs.gif);}
+/*body#MNFS .top, body#MNFS h1 { background-image: url(../img/mem_h1_nfs.gif);}
+body#MBS .top, body#MBS h1 { background-image: url(../img/mem_h1_bs.gif);}
+body#MOP .top, body#MOP h1 { background-image: url(../img/mem_h1_op.gif);}
+body#MOM .top, body#MOM h1 { background-image: url(../img/mem_h1_om.gif);}
+body#MBE .top, body#MBE h1, body#MBS #game_list_2 .top, body#MBS #game_list_2 h1 { background-image: url(../img/mem_h1_be.gif);}
+/*mem*/
+/*body#MFU .mem, #MFU .mem, #MALL .mem, body#MFT #game_list_3 .mem { background-color:#CDDEE3; border-color:#357CCC;border-bottom-color:#CDDEE3;}
+body#MBK .mem, #MBK .mem { background-color:#D9EAD6; border-color:#518A57;border-bottom-color:#D9EAD6;}
+body#MBU .mem, #MBU .mem, body#MBK #game_list_3 .mem { background-color:#F1E5CE; border-color:#A98030;border-bottom-color:#F1E5CE;}
+body#MTN .mem, #MTN .mem { background-color:#EDC6C8; border-color:#DE5A31;border-bottom-color:#EDC6C8;}
+body#MTU .mem, #MTU .mem, body#MTN #game_list_3 .mem { background-color:#F2DAD5; border-color:#D68977;border-bottom-color:#F2DAD5;}
+body#MVB .mem, #MVB .mem { background-color:#CED2E9; border-color:#6758DB;border-bottom-color:#CED2E9;}
+body#MVU .mem, #MVU .mem, body#MVB #game_list_3 .mem { background-color:#C8E4EF; border-color:#377FE2;border-bottom-color:#C8E4EF;}
+body#MFS .mem, #MFS .mem { background-color:#DBCFE0; border-color:#8C659A;border-bottom-color:#DBCFE0;}
+/*body#MNFS .mem, #MNFS .mem{background-color:#70B5D9; border-color:#5F9ADC;border-bottom-color:#D9E5F2;}
+body#MBS .mem, #MBS .mem {background-color:#E9F4CD; border-color:#98C629;border-bottom-color:#E9F4CD;}
+body#MOP .mem, #MOP .mem {background-color:#FFE6CD;border-color:#F28E17;border-bottom-color:#FCE5CB;}
+body#MOM .mem, #MOM .mem {background-color:#F5DFDA;border-color:#E0927F;border-bottom-color:#F5DFDA;}
+body#MBE .mem, #MBE .mem, body#MBS #game_list_3 .mem {background-color:#FAF0CF;border-color: #ECBC29;border-bottom-color:#FAF0CF;}
+/*h2 + game*/
+/*body#MFU h2, body#MFU .mem .game, #MALL .mem .game, body#MFT #game_list_3 .mem .game {background-color:#B9B9A3; border-color:#CDDEE3;}
+body#MBK h2, body#MBK .mem .game {background-color:#B9B9A3; border-color:#D9EAD6;}
+body#MBU h2, body#MBU .mem .game, body#MBK #game_list_3 .mem .game {background-color:#C7B7A0; border-color:#F1E5CE;}
+body#MTN h2, body#MTN .mem .game {background-color:#EDAAAA; border-color:#EDC6C8;}
+body#MTU h2, body#MTU .mem .game, body#MTN #game_list_3 .mem .game {background-color:#E4A99C; border-color:#F2DAD5;}
+body#MVB h2, body#MVB .mem .game {background-color:#ADB4DA; border-color:#CED2E9;}
+body#MVU h2, body#MVU .mem .game, body#MVB #game_list_3 .mem .game {background-color:#97C0EB; border-color:#C8E4EF;}
+body#MFS h2, body#MFS .mem .game {background-color:#CAB3E0; border-color:#DBCFE0;}
+/*body#MNFS h2, body#MNFS .mem .game {background-color:#D9E5F2;border-color: #E3EFFC;}
+body#MBS h2, body#MBS .mem .game {background-color:#DCF484; border-color:#DBCFE0;}
+body#MBE h2, body#MBE .mem .game, body#MBS #game_list_3 .mem .game {background-color:#FAE6B3; border-color:#DBCFE0;}
+body#MOP h2, body#MOP .mem .game {background-color: #fad37c;border-color: #FFC;}
+body#MOM h2, body#MOM .mem .game {background-color:#F5C2AC;border-color: #FFC;}
+/*th*/
+/*body#MFU .game th, body#MFU .more th, #MALL .game th, body#MFT #game_list_3 .game th {background-color:#A7D7F8;}
+body#MBK .game th, body#MBK .more th { background-color:#57593A; color:#FFF;}
+body#MBU .game th, body#MBU .more th, body#MBK #game_list_3 .game th { background-color:#8A6827; color:#FFF;}
+body#MTN .game th, body#MTN .more th { background-color:#E78686;}
+body#MTU .game th, body#MTU .more th, body#MTN #game_list_3 .game th { background-color:#D9897D;}
+body#MVB .game th, body#MVB .more th { background-color:#808BDB;}
+body#MVU .game th, body#MVU .more th, body#MVB #game_list_3 .game th { background-color:#529ED5;}
+body#MFS .game th, body#MFS .more th { background-color:#B48CE0;}
+/*body#MNFS .game th, body#MNFS .more th { background-color:#63BAE7;}
+body#MBS .game th, body#MBS .more th { background-color: #86b425;}
+body#MBE .game th, body#MBE .more th, body#MBS #game_list_3 .game th { background-color:#F5D140;}
+body#MOP .game th, body#MOP .more th {background-color: #ff9f19;}
+body#MOM .game th, body#MOM .more th {background-color: #ff9080;}
+/*foot*/
+/*body#MFU #foot, body#MFU #foot b, #MALL #foot, #MALL #foot b, body#MFT #fem #foot, body#MFT #fem #foot b { background-image: url(../img/mem_foot_fu.gif);}
+body#MBK #foot, body#MBK #foot b { background-image: url(../img/mem_foot_bk.gif);}
+body#MBU #foot, body#MBU #foot b, body#MBK #fem #foot, body#MBK #fem #foot b { background-image: url(../img/mem_foot_bu.gif);}
+body#MTN #foot, body#MTN #foot b { background-image: url(../img/mem_foot_tn.gif);}
+body#MTU #foot, body#MTU #foot b, body#MTN #fem #foot, body#MTN #fem #foot b { background-image: url(../img/mem_foot_tu.gif);}
+body#MVB #foot, body#MVB #foot b { background-image: url(../img/mem_foot_vb.gif);}
+body#MVU #foot, body#MVU #foot b, body#MVB #fem #foot, body#MVB #fem #foot b { background-image: url(../img/mem_foot_vu.gif);}
+body#MFS #foot, body#MFS #foot b { background-image: url(../img/mem_foot_fs.gif);}
+body#MBS #foot, body#MBS #foot b { background-image: url(../img/mem_foot_bs.gif);}
+body#MOP #foot, body#MOP #foot b { background-image: url(../img/mem_foot_op.gif);}
+body#MOM #foot, body#MOM #foot b { background-image: url(../img/mem_foot_om.gif);}
+/*body#MNFS #foot, body#MNFS #foot b { background-image: url(../img/mem_foot_nfs.gif);}
+body#MBE #foot, body#MBE #foot b, body#MBS #fem #foot, body#MBS #fem #foot b { background-image: url(../img/mem_foot_be.gif);}*/
+
+/*131119-td高度瀏覽器*/
+.td_h { height:17px; height: auto\9; }
+.td_h1 { height:19px; height: auto\9; }
+/*131119-詳細設定頁切、調整*/
+.btn_table { font-size:12px; color:#FFF; text-align:center; line-height:25px; font-weight:bold;}
+.btn_out { background:#86715C; border-right:#630 solid 3px; height:25px; width:25%;}
+.btn_on { background:#C8A670; border-right:#630 solid 3px; height:25px; color:#000; width:25%;}
+/*131120-帳戶歷史調整*/
+#MWAG #box { width:850px;position: relative; margin-bottom:12px;}
+#M{CLASS_TITLE} #box { width:715px;position: relative; margin-bottom:12px;}
+
+/*140306 id="SortGame"*/
+.SortGame select{width:95px; font-size:12px;color:#000; text-align:center;border:1px solid #B6ACAA; margin-left:3px;}
+
+/*140506-多玩法*/
+.star_up { background:url(../img/star_up.png) no-repeat 0 0; width:15px; height:15px; cursor:pointer; display:block; margin:5px 0 0 5px;}
+.star_down { background:url(../img/star_down.png) no-repeat 0 0; width:15px; height:15px; cursor:pointer; display:block; margin:5px 0 0 5px;}
+.bg_yellow { background:#FFD9A1;}
+.bg_white {}
+.mod_up { background:url(../img/mod_up.gif) no-repeat 0 0; width:159px; height:28px; text-align:center; color:#FFF; cursor:pointer; font-family:"Arial"; line-height:28px; line-height:30px\9;}
+.mod_down { background:url(../img/mod_down.gif) no-repeat 0 0; width:159px; height:28px; text-align:center; color:#FFF; cursor:pointer; font-family:"Arial"; line-height:28px; line-height:30px\9;}
+.mod_none { background:url(../img/mod_none.gif) no-repeat 0 0; width:159px; height:28px; text-align:center; color:#8E8E8E; font-family:"Arial"; line-height:28px; line-height:30px\9;}
+
+.more_table { width:588px; background:#FFF; font-family:"Arial";/* border-top:15px solid #FFF*/; border-right:40px solid #FFF; border-bottom:9px solid #FFF; border-left:15px solid #FFF; height:100%;}
+.more_table table { width:100%; font-size:12px;}
+.more_title { background:url(../img/more_title.jpg) repeat 0 0; width:533px; height:28px; font-family:"Arial"; font-weight:bold; font-size:14px; color:#FFF; padding-left:10px; line-height:26px; border:1px solid #342819;}
+.more_long { width:430px; float:left; text-shadow:1px 1px 2px #000;/* position:absolute;*/ filter:progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=180, Strength=1); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.more_x { float:right; background:url(../img/close_icon.jpg) no-repeat 0 0; width:28px; height:28px; border:none; cursor:pointer;}
+.more_re { float:right; background:url(../img/refresh_icon.jpg) no-repeat 0 0; width:28px; height:28px; font-size:13px; font-family:"Arial"; font-weight:bold;}
+.more_re_t { position:relative; left:10px; top:3px; top:5px\9;}
+.more_tv_on { float:right; background:url(../img/tv_icon.jpg) no-repeat 0 0; width:28px; height:28px; border:none; cursor:pointer;}
+.more_tv_out { float:right; background:url(../img/tv_icon.jpg) no-repeat 0 -28px; width:28px; height:28px; border:none; cursor:pointer;}
+.more_btn8 { font-family:"Arial"; font-size:12px; text-align:center; margin:5px 0 5px 0;}
+.more_h { height:28px;}
+.more_8_tr { height:5px; height:3px\9;}
+.more_ma { margin-top:6px;}
+.more_w { width:25%;}
+
+/*計分板*/
+.more_bg_table { font-family:"Arial"; text-align:center; line-height:26px; background:url(../img/more_bg.jpg) repeat 0 0; height:85px; padding:0 7px 8px 7px; border-left:1px solid #342819; border-right:1px solid #342819; border-bottom:1px solid #342819;}
+.more_bg_table_re { font-family:"Arial"; text-align:center; line-height:26px; background:url(../img/more_bg.jpg) repeat 0 0; height:85px; padding:0 7px 8px 7px; border-left:1px solid #342819; border-right:1px solid #342819;}
+.more_bg1 { font-size:13px; font-weight: normal; height:27px; line-height:27px;}
+.more_bg2 { color:#F5E1BE; font-size:15px; font-weight:normal; vertical-align: middle; width:100%; height:50px; line-height:18px; background:url(../img/more_alpha.png) repeat 0 0;}
+.more_score { color:#c7a53f; margin:0  0 0 20px; font-size:18px;}
+.more_score2 { color:#c7a53f; margin:0  20px 0 0; font-size:18px;}
+.more_red { background:#8F0D11; color:#FFF; padding:0 5px; font-weight:bold; font-size:14px;}
+.more_card { padding:0 3px 0 3px; float:left;}
+.more_card2 { padding:0 3px 0 3px; float:right;}
+.mo_rbg_1 { width:45%; width:42%\9; text-align:right;/* text-shadow:1px 1px 2px #000; color:#f5e1be; filter:progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=180, Strength=1);*/}
+.mo_rbg_2 { white-space:nowrap; width:10%; width:18%\9; font-size:18px;/* text-shadow:1px 1px 2px #000; filter:progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=180, Strength=1);*/}
+.mo_rbg_3 { width:45%; width:42%\9; text-align:left;/* text-shadow:1px 1px 2px #000; color:#f5e1be; filter:progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=180, Strength=1);*/}
+.mo_bg_1 { width:245px; width:244px\9; text-align:right;/* text-shadow:1px 1px 2px #000;*/ color:#f5e1be;}
+.mo_bg_2 { width:86px; width:87px\9; font-size:15px; font-weight:bold; color:#FFCE39;}
+.mo_bg_3 { width:243px; text-align:left;/* text-shadow:1px 1px 2px #000;*/ color:#f5e1be;}
+.more_team { display:table-cell; float:right;}
+.more_team2 { display:table-cell; float:left;}
+
+/*140901-多玩法新計分板*/
+.more_live { text-align:left; color:#FFCE39; font-size:13px;}
+.more_ln { margin-right:10px;}
+.more_date { text-align:right; font-size:13px; color:#F5E1BE;}
+.more_n { /*position:relative; top:3px;*/ vertical-align:sub;}
+.more_n_re { position:relative; top:4px; top:5px\9; padding-right:5px;}
+/* Firefox */
+@-moz-document url-prefix()
+{html>body .more_n_re { position:relative; top:3px; top:5px\9; padding-right:5px;}}
+.more_left { text-align:left;}
+.more_right_t { text-align:right; color:#FFF;}
+.more_yellow { color:#FFCD39;}
+.more_yellow_2 { color:#FBFF00;}
+.more_yellow_ft { color:#FFCE39; float:right; position:relative; top:2px\9;}
+.more_time { color:#F5E1BE; float:right; margin-left:10px;}
+
+.more_hand { cursor:pointer;}
+.more_title2 { background:url(../img/more_title2.jpg) repeat-x 0 0; height:28px; color:#FFF; line-height:28px; font-family:"Arial"; font-size:14px; font-weight:bold;}
+.more_up { float:left; background:url(../img/more_arrow.jpg) no-repeat 0 0; width:28px; height:28px; cursor:pointer; margin-right:5px;}
+.more_out { float:left; background:url(../img/more_arrow.jpg) no-repeat 0 -28px; width:28px; height:28px; cursor:pointer; margin-right:5px;}
+.more_star { float:left; background:url(../img/star_up.png) no-repeat 0 0; width:17px; height:17px; margin:6px 0 0 5px;}
+
+.more_title3 { background:url(../img/more_title3.jpg) repeat-x 0 0; height:28px; color:#FFF; line-height:28px; font-family:"Arial"; font-size:14px; font-weight:bold;}
+.more_black { float:right; background:url(../img/more_black.jpg) no-repeat 0 0; width:28px; height:28px; text-align:center;}
+.more_line { position:relative; top:-2px; color:#787878; padding-left:4px; padding-right:4px;}
+.more_bold { font-weight:bold; color:#FFCE39;}
+/*.more_table2 { background:#c2b1a1; text-align:right; margin-bottom:6px; color:#313131;}
+.more_table2 td { height:25px; padding:0 3px 0 6px;}*/
+.mo_bor_bom {}
+/*.mo_bor_bom td { border-bottom:none!important;}*/
+.more_table2 { border:1px solid #7e603a; text-align:right; margin-bottom:6px; color:#313131;}
+.more_table2 td { height:25px; padding:0 3px 0 6px; border-bottom:1px  solid #c2b1a1; border-left:1px solid #c2b1a1;}
+.more_table2 td:first-child { border-left: none;}
+.more_table2 tr:last-child td { border-bottom: none;}
+.more_other { border-left:none!important;}
+
+.more_white { background:#FFF;}
+.more_color { background:#E2DFD9;}
+.more_color2 { background:#E2DFD9; text-align: center;}
+.more_te_left { text-align:left; word-break: break-word; white-space: pre-wrap;}
+.more_title4 { background:url(../img/more_title4.jpg) repeat 0 0; height:28px; color:#fff; line-height:28px; font-family:"Arial"; font-size:12px; font-weight:normal; padding:0 3px 0 6px; text-align:right;}
+.more_star_bg { float:right; background:url(../img/more_star_bg.jpg) no-repeat 0 0; height:28px; margin-left:3px;}
+
+/*右邊btn*/
+.more_three_btn { position:fixed;}
+.more_right_btn { position:absolute; left:720px; top:15px; width:100px;}
+.more_btn_re_tw { background:url(../img/refresh_img_tw.jpg) no-repeat 0 0; width:100px; height:45px; border:none; cursor:pointer; outline:none; margin-bottom:11px;}
+.more_btn_close_tw { background:url(../img/more_close_tw.jpg) no-repeat 0 0; width:100px; height:45px; border:none; cursor:pointer; outline:none; margin-bottom:11px;}
+.more_btn_back_tw { background:url(../img/backtotop_img_tw.jpg) no-repeat 0 0; width:100px; height:45px; border:none; cursor:pointer; outline:none;}
+
+.more_btn_re_cn { background:url(../img/refresh_img_cn.jpg) no-repeat 0 0; width:100px; height:45px; border:none; cursor:pointer; outline:none; margin-bottom:11px;}
+.more_btn_close_cn { background:url(../img/more_close_cn.jpg) no-repeat 0 0; width:100px; height:45px; border:none; cursor:pointer; outline:none; margin-bottom:11px;}
+.more_btn_back_cn { background:url(../img/backtotop_img_cn.jpg) no-repeat 0 0; width:100px; height:45px; border:none; cursor:pointer; outline:none;}
+
+
+.m_left { float:left;}
+.more_font { width:100%; display:table;}
+.m_team { float:left; display: table-cell; text-align: left; }
+.m_middle { font-weight:bold; color:#6b6b6b; display:table-cell; width:55px; vertical-align:middle;}
+.m_red_bet { font-weight:bold; display:table-cell; width:50px; vertical-align:middle;}
+.m_red { font-weight:bold;}
+.m_red2 { float:right; font-weight:bold;}
+.m_pointer { cursor:pointer; text-align:left;}
+.more_over { width:578px; height:94%; overflow:auto; overflow-x:hidden; position:relative; left:100px; top:3px; border-right:15px solid #fff; border-top:15px solid #fff; border-bottom:15px solid #fff;}
+.more_no { text-align:center; font-family:"Arial"; background:#312316; height:35px; font-weight:bold; color:#F6E2D0;}
+.more_no2 { text-align:center; font-family:"Arial"; background:#fff; height:35px;  font-weight:bold; color:#000;}
+/*遮罩*/
+.more_b_bg { width:100%; height:100%; top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,0.5);z-index: 10000;
+background: -ms-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */ overflow-x:none; width:100%!important;}
+
+.more_og { color:#ffbf42; float:left;}
+.more_og2 { color:#ffbf42; float:left; position:relative;/* top:-2px\9;*/ left:2px\9; width:390px; text-align:left;}
+.more_og3 { color:#ffbf42; float:left; position:relative; top:-2px\9; left:2px\9; width:445px; text-align:left;}
+.more_og4 { color:#fff; float:left; position:relative;/* top:-2px\9;*/ left:2px\9; width:445px; text-align:left;}
+.more_og5 { color:#ffbf42;}
+.more_og6 { color:#fbddb6;}
+.more_og7 { color:#FFF;}
+.more_text { text-align:right\9;}
+.more_bar { overflow:hidden;}
+
+.show_more { background:url(../img/more_btn.jpg) repeat-x 0 0; width:100%; height:25px; color:#FFF; text-align:center; line-height:25px; cursor:pointer;}
+.mo_bg_h { vertical-align:top;}
+
+/*140718-多玩法loading畫面*/
+.more_load { padding-top:245px!important; padding-left:362px;}
+
+/*140812-維護畫面*/
+.fix_div { margin:50px 0 0 50px;}
+.fix_table { width:450px; height:200px; text-align:center; font-family:"Arial"; font-size:12px; border:1px solid #A49687;}
+.fix_table div { margin:5px 0 5px 0;}
+.fix_title { height:40px; line-height:40px; background:#694A35; color:#fff; font-weight:bold;}
+.fix_green { color:#390;}
+
+/*140904-籃球-網球多玩法*/
+.more_bg_table_bkr { font-family:"Arial"; text-align:center; line-height:25px; background:url(../img/more_bg_bk.jpg) repeat 0 0; height:78px; padding:7px 7px 8px 7px; border-left:1px solid #342819; border-right:1px solid #342819;}
+.more_bg_table_bk { font-family:"Arial"; text-align:center; line-height:26px; background:url(../img/more_bg_bk.jpg) repeat 0 0; height:85px; padding:0 7px 8px 7px; border-left:1px solid #342819; border-right:1px solid #342819;}
+.more_bg1_bk { font-size:11px; font-weight: normal; height:30px; line-height:30px; background:url(../img/more_bk_bg.png) repeat 0 0; color:#828282;}
+.more_bg2_bk { font-size:13px; vertical-align: middle; width:100%; height:100%; background:url(../img/more_alpha.png) repeat 0 0; color:#F5E1BE;}
+.more_bk_h { background:url(../img/more_bk_bg2.png) repeat 0 0; border-left:1px solid #532C14; font-weight:bold;}
+.more_bk_og { color:#FFCD39; font-weight:bold;}
+.mbk_title { /*width:180px;*/ text-align:left; padding-left:6px; font-size:15px;}
+.mbk_left { text-align:left;}
+.mbk_ytitle { color:#FFCE39; text-align:left; padding-right:5px;}
+.mbk_white { color:#F5E1BE; text-align:left; padding-right:6px;}
+.more_bk_td { width:270px; text-align:left; padding-left:6px; font-size:13px;}
+.more_tn_td { text-align:left; padding-left:6px; font-size:13px;}
+/*籃球計分板寬度*/
+.bk_w { width:33px;}
+.bk_w2 { width:33px; /*padding-right:10px;*/}
+.bk_w3 { width:33px; /*padding-left:10px;*/}
+.bk_ht { width:40px; white-space:nowrap;}
+.bk_extra { width:35px;}
+.bk_total { width:40px;}
+
+.more_bg_table_tnr { font-family:"Arial"; text-align:center; /*line-height:25px;*/ background:url(../img/more_bg_tn.jpg) repeat 0 0; height:85px; padding:8px 7px 7px 7px; border-left:1px solid #342819; border-right:1px solid #342819;}
+.more_bg_table_tn { font-family:"Arial"; text-align:center; line-height:26px; background:url(../img/more_bg_tn.jpg) repeat 0 0; height:85px; padding:0 7px 8px 7px; border-left:1px solid #342819; border-right:1px solid #342819;}
+.more_bg1_tn { font-size:11px; font-weight: normal; height:30px; line-height:30px; background:url(../img/more_bk_bg.png) repeat 0 0; color:#828282; text-align:center;}
+.more_bg2_tn { font-size:13px; font-weight:bold; vertical-align: middle; width:100%; height:25px; line-height:20px; background:url(../img/more_alpha.png) repeat 0 0; color:#F5E1BE; text-align:center;}
+.more_dot_on { background:url(../img/more_dot_on.png) no-repeat 0 0; width:10px; height:7px; position:relative; left:6px; display:block;}
+.more_dot_out { background:url(../img/more_dot_out.png) no-repeat 0 0; width:10px; height:7px; position:relative; left:6px; display:block;}
+.mtn_title { /*width:320px*/; text-align:left; padding-left:6px; font-weight:normal; font-size:15px; vertical-align:top; padding-top:2px; padding-bottom:3px;}
+.mtn_title2 {/* width:205px;*/ text-align:left; padding-left:6px; font-weight:normal; font-size:15px; vertical-align:top; padding-top:2px; padding-bottom:3px;}
+.tn_w { width:24px;}
+.tn_point { width:48px;}
+.tn_pw { width:42px;}
+.tn_total { width:58px;}
+.more_tn_h { background:url(../img/more_bk_bg2.png) repeat 0 0; border-left:1px solid #324718; color:#FFCD39;}
+.tn_color { color:#FFCD39;}
+.mtn_weather { color:#E33030;}
+.mtnr_dot_w { width:11px;}
+/*網球計分板斷兩行*/
+.mtnr_team { float:left; max-height:40px; overflow:hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp:2; -webkit-box-orient: vertical;}
+/*.mtnr_team:before { content:"..."; font-weight:bold; position: relative; top:20px; float: right; background:#2F3817; width:20px;}*/
+.mtn_team_r { float:right; max-height:35px; overflow:hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp:2; -webkit-box-orient: vertical;}
+.mtn_team_l { float:left; max-height:35px; overflow:hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp:2; -webkit-box-orient: vertical;}
+
+/*141111-羽毛球*/
+.more_bg_table_bm { font-family:"Arial"; text-align:center; line-height:26px; background: #37939E url(../img/more_bg_bm.jpg) no-repeat 0; height:85px; padding:0 7px 8px 7px; border-left:1px solid #342819; border-right:1px solid #342819;}
+.more_bg_table_bmr { font-family:"Arial"; text-align:center; /*line-height:25px;*/ background: #37939E url(../img/more_bg_bm.jpg) no-repeat 0 0; height:95px; padding:8px 7px 7px 7px; border-left:1px solid #342819; border-right:1px solid #342819; background-position:bottom center;}
+
+/*排球-背景+左側右側間距20px*/
+.more_bg_table_vb { font-family:"Arial"; text-align:center; line-height:26px; background: #916D49 url(../img/more_bg_vb.jpg) repeat 0 0; height:85px; padding:0 7px 8px 7px; border-left:1px solid #342819; border-right:1px solid #342819;}
+.more_bg_table_vbr { font-family:"Arial"; text-align:center; /*line-height:26px;*/ background: #916D49 url(../img/more_bg_vb.jpg) repeat 0 0; height:95px; padding:8px 7px 8px 7px; border-left:1px solid #342819; border-right:1px solid #342819;  background-position:bottom center;}
+
+.mo_bg_1_L { width:245px; width:244px\9; text-align:right;/* text-shadow:1px 1px 2px #000;*/ color:#f5e1be; padding-left:20px;/*safari-5.1.7*///General
+*.safarihack ( padding-left:20px;) //Safari only}
+.mo_bg_3_R { width:243px; width:242px\9; text-align:left;/* text-shadow:1px 1px 2px #000;*/ color:#f5e1be; padding-right:20px;/*safari-5.1.7*///General
+*.safarihack ( padding-right:20px;) //Safari only}
+
+/*141120-乒乓球*/
+.more_bg_table_tt { font-family:"Arial"; text-align:center; line-height:26px; background:url(../img/more_bg_tt.jpg) repeat 0 0; height:85px; padding:0 7px 8px 7px; border-left:1px solid #342819; border-right:1px solid #342819;}
+.more_bg_table_ttr { font-family:"Arial"; text-align:center; /*line-height:25px;*/ background: #872F2D url(../img/more_bg_tt.jpg) no-repeat 0 0; height:95px; padding:8px 7px 7px 7px; border-left:1px solid #342819; border-right:1px solid #342819; background-position:bottom center;}
+.more_tt_h { background:url(../img/more_bk_bg2.png) repeat 0 0; border-left:1px solid #4B1C1A; color:#FFCD39;}
+
+/*羽毛球-綜合過關欄寬*/
+body.BMP3 .mem .h_r { width:87px;}
+body.BMP3 .mem .h_ou { width:87px;}
+.team_BMP3 { width:320px;}
+
+/*141210-賽果斷行*/
+.re_b_cen { background-color: #FFF; text-align:center; word-break: break-all;}/*table style*/
+
+/*141226-羽球字變細*/
+.normal { font-weight:normal;}
+
+/*150623-排球滾球多玩法背景*/
+.more_vb_h { background:url(../img/more_bk_bg2.png) repeat 0 0; border-left:1px solid #532C14; font-weight:bold; color:#FFCD39;}
+
+/*150706-公告頁改頁切*/
+.msg_top { background:url(../img/mem_msg_bg.jpg) no-repeat 0 0; width:600px; height:23px; font-size:12px; font-weight:bold;}
+.msg_top div { display:inline-block; width:200px; text-align:center; height:23px; line-height:23px;    float: left;    color: white;
+
+}
+.msg_text { background:url(../img/letter_text.png) 0 0 no-repeat; width:17px; height:17px; line-height:17px; position:absolute; top:3px; display:inline-block; text-align:center; margin-left:5px; color:#fff;}
+.msg_left_on { background:url(../img/mem_msg_bg_on.jpg) no-repeat 0 0; width:200px; height:23px;}
+.msg_center_on { background:url(../img/mem_msg_bg_on.jpg) no-repeat -200px 0; width:200px; height:23px;}
+.msg_right_on { background:url(../img/mem_msg_bg_on.jpg) no-repeat -400px 0; width:200px; height:23px;}
+.chk_on {
+
+    color: #F9C100!important;
+    text-decoration: none!important;
+    cursor: pointer;        background: url(..images/mem_msg_bg_on.jpg) no-repeat 0 0;}
+.scr_on {
+    color: #F9C100!important;
+    text-decoration: none!important;
+    cursor: pointer;
+ 
+}
+.msg_top .one {
+     background: url(../img/mem_msg_bg_on.jpg) no-repeat -200px 0 0;
+}
+.msg_top .three {
+        background: url(../img/mem_msg_bg_on.jpg) no-repeat -400px 0;
+}
+/***********************************/
+
+/*For scroll_history*/
+body#MSG { margin:0; padding:0;}
+#MSG #box { width:600px; margin-top:84px;}
+#box_top { width:600px;position:fixed; top:0px; left:0px; z-index:1000;}
+.his_box {position:fixed; top:0px; left:0px; z-index:1000;}
+th { padding:4px!important;}
+#all { margin-right: 6px; margin-left:1px;}
+#today ,#yesterday, #before {margin:auto 6px; }
+.info { width:476px;}
+.m_lef { width:476px;}
+.mem_top { border: 2px solid #BC9A3F; border-top-width: 0; border-bottom:1px solid #D7D7C1; padding:3px; background-color:#D7D7C1; clear:both;}
+.his_top { border-bottom:none; padding-bottom:0;}
+.his_body { border-top: none; padding-top:0;}
+.search { width:230px ; text-align:right;}
+.ccroll_input { width:130px; height:14px; margin:0 ; padding:3px; border:solid 1px #666; font-size:12px;}
+.ccroll_btn { font-size:12px;cursor:hand; cursor:pointer;margin:0 0 0 1px; width:85px; height:26px; border:none; padding-top:2px; color:#FFF; font-weight:bold; background: #3D3D3D url(../img/order_btn.gif) no-repeat 0 -80px;}
+
+/*************************************************************/
+/*----------------------------------------*/
+/*2012-06-11-For NewSI2 Olympics*/
+/*----------------------------------------*/
+/*@charset "UTF-8";*/
+
+#euro_close { margin-top:10px;cursor: hand; cursor:pointer; color:#FFF; width:216px; height:33px; background:url(../img/euro_title_out_cn.gif);}
+#euro_open { margin-top:10px;}
+
+/* title img*/
+#oly_title { width: 216px; height:33px; background:url(../img/oly_title_in.gif) no-repeat;}
+/*夹帽*/
+#euro_menu { width: 216px; height:31px;*padding-bottom: 0px/*IE Hack*/;	}
+/*html>body #euro_menu {height:23px;}/*Mac Hack*/
+/*#euro_menu { *margin-bottom:-33px;}*/
+
+/*篈out*/
+#euro_menu .rb_btn {
+	cursor: hand;
+	float: left;
+	width:216px;
+	height:31px;
+	background: url(../img/oly_roll_ball_cn.gif) no-repeat 0 0;
+}
+#euro_menu .hot_btn {
+	cursor: hand;
+	float: left;
+	width:72px;
+	height:31px;
+	background: url(../img/oly_hot_game_cn.gif) no-repeat 0 0;
+}
+#euro_menu .early_btn {cursor: hand;float: right;width:72px; height: 31px; background: url(../img/oly_hot_game_early_cn.gif) no-repeat right 0;}
+html>body #euro_menu .rb_btn { padding-top: 12px;height: 19px;}/*Mac Hack*/
+html>body #euro_menu .early_btn { padding-top: 12px;height: 19px;}/*Mac Hack*/
+
+/*over*/
+#euro_menu .rb_over {cursor: hand; float: left;width:216px;height:31px; background: url(../img/oly_roll_ball_cn.gif) no-repeat 0 -31px;}
+#euro_menu .hot_over {cursor: hand;float: left;width:72px;height:31px; background: url(../img/oly_hot_game_cn.gif) no-repeat right -31px;}
+#euro_menu .early_over {cursor: hand;float: right;width:72px;height:31px; background: url(../img/oly_hot_game_early_cn.gif) no-repeat right -31px;}
+
+/*up*/
+#euro_menu .rb_up {cursor: hand; float: left;width:216px; height:31px; background: url(../img/oly_roll_ball_cn.gif) no-repeat 0 -62px;}
+#euro_menu .hot_up {cursor: hand;float: right;width:72px;height:31px; background: url(../img/oly_hot_game_cn.gif) no-repeat right -62px;}
+#euro_menu .early_up {cursor: hand;float: right;width:72px;height:31px; background: url(../img/oly_hot_game_early_cn.gif) no-repeat right -62px;}
+
+/*-------Thie is for IE Hack notes ,Don't delete-----*/
+#euro_menu .hot_up {cursor: hand;	float: left; width: 72px;	height: 31px; background: url(../img/oly_hot_game_cn.gif) no-repeat right -62px;}
+#euro_menu .early_up {cursor: hand;float: right;width: 72px;	height: 31px; background: url(../img/oly_hot_game_early_cn.gif) no-repeat right -62px;}
+#euro_menu .rb_btn, #euro_menu .early_btn , #euro_menu .hot_up , #euro_menu .early_up, .oly_tr { cursor:pointer;}
+html>body #euro_menu .hot_up { /*padding-top: 10px;*/	height: 31px;}/*Mac Hack*/
+html>body #euro_menu .early_up { /*padding-top: 10px;*/	height: 31px;}/*Mac Hack*/
+
+/*game*/
+.oly_tr { height:30px; line-height:30px; width:216px;  padding-left:44px; padding-top:5px;cursor:hand; text-align:left; border:1px solid #977F62; border-top:none; font:13px  Arial, Helvetica, sans-serif; background-color:#E3CFAA;}
+html>body .oly_tr { clear:both; width:170px; height:23px; padding-top:7px;}
+
+/*FT*/
+div#FT_FT, div#FT_FU, div#FT_RB {background:url(../img/oly_tr_ft.gif) repeat-x 0 0;}
+#RB_oly a {
+
+    color: #2F2F2F;    display: block;}
+div#FT_FT:hover, div#FT_FU:hover , div#FT_RB:hover{ background:url(../img/oly_tr_ft.gif) repeat-x 0 -32px;}
+/*BK*/
+div#BK_FT, div#BK_FU, div#BK_RB {background:url(../img/oly_tr_bk.gif) repeat-x 0 0;}
+div#BK_FT:hover, div#BK_FU:hover, div#BK_RB:hover { background:url(../img/oly_tr_bk.gif) repeat-x 0 -32px;}
+/*TN*/
+div#TN_FT, div#TN_FU , div#TN_RB{background:url(../img/oly_tr_tn.gif) repeat-x 0 0;}
+div#TN_FT:hover, div#TN_FU:hover, div#TN_RB:hover { background:url(../img/oly_tr_tn.gif) repeat-x 0 -32px;}
+/*VB*/
+div#VB_FT, div#VB_FU, div#VB_RB {background:url(../img/oly_tr_vb.gif) repeat-x 0 0;}
+div#VB_FT:hover, div#VB_FU:hover, div#VB_RB:hover { background:url(../img/oly_tr_vb.gif) repeat-x 0 -32px;}
+/*BM*/
+div#BM_FT, div#BM_FU, div#BM_RB {background:url(../img/oly_tr_bm.gif) repeat-x 0 0;}
+div#BM_FT:hover, div#BM_FU:hover, div#BM_RB:hover { background:url(../img/oly_tr_bm.gif) repeat-x 0 -32px;}
+/*TT*/
+div#TT_FT, div#TT_FU, div#TT_RB {background:url(../img/oly_tr_tt.gif) repeat-x 0 0;}
+div#TT_FT:hover, div#TT_FU:hover, div#TT_RB:hover { background:url(../img/oly_tr_tt.gif) repeat-x 0 -32px;}
+/*BS*/
+div#BS_FT, div#BS_FU, div#BS_RB {background:url(../img/oly_tr_bs.gif) repeat-x 0 0;}
+div#BS_FT:hover, div#BS_FU:hover, div#BS_RB:hover { background:url(../img/oly_tr_bs.gif) repeat-x 0 -32px;}
+/*OP*/
+div#OP_FT, div#OP_FU, div#OP_RB {background:url(../img/oly_tr_op.gif) repeat-x 0 0;}
+div#OP_FT:hover, div#OP_FU:hover, div#OP_RB:hover { background:url(../img/oly_tr_op.gif) repeat-x 0 -32px;}
+
+
+#oly_main { position:relative; width:216px;}
+/*#early_oly { position:absolute; top:0; left:0;}*/
+/*html>body #oly_main  { margin-top:32px;}*/
+
+/*140418-オ娩benner+簎瞴さらΝ繺btn*/
+.euro_btn { background:url(../img/2014_left_banner_cn.jpg) no-repeat 0 0; width:216px; height:43px; margin-top:5px;}
+.left_btn { font-family:"Arial"; font-size:12px; font-weight:bold; line-height:14px; line-height:18px\9; margin-top:-1px; width:216px; height:70px; cursor:pointer;}
+.rb_left_tw_on { background:url(../img/rb_left_tw.jpg) no-repeat 0 0; width:72px; height:28px; color:#FC0; float:left;}
+.rb_left_tw_out { background:url(../img/rb_left_tw.jpg) no-repeat 0 -28px; width:72px; height:28px; color:#40301C; float:left;}
+.text_s { font-size:10px; line-height:11px; line-height:2px\9;}
+.hot_left_tw_on { background:url(../img/hot_left_tw.jpg) no-repeat 0 0; width:72px; height:28px; color:#FC0; float:left;}
+.hot_left_tw_out { background:url(../img/hot_left_tw.jpg) no-repeat 0 -28px; width:72px; height:28px; color:#40301C; float:left;}
+.early_left_tw_on { background:url(../img/early_left_tw.jpg) no-repeat 0 0; width:72px; height:28px; color:#FC0; float:left;}
+.early_left_tw_out { background:url(../img/early_left_tw.jpg) no-repeat 0 -28px; width:72px; height:28px; color:#40301C; float:left;}
+
+.rb_left_cn_on { background:url(../img/rb_left_cn.jpg) no-repeat 0 0; width:72px; height:28px; color:#FC0; float:left;}
+.rb_left_cn_out { background:url(../img/rb_left_cn.jpg) no-repeat 0 -28px; width:72px; height:28px; color:#40301C; float:left;}
+.hot_left_cn_on { background:url(../img/hot_left_cn.jpg) no-repeat 0 0; width:72px; height:28px; color:#FC0; float:left;}
+.hot_left_cn_out { background:url(../img/hot_left_cn.jpg) no-repeat 0 -28px; width:72px; height:28px; color:#40301C; float:left;}
+.early_left_cn_on { background:url(../img/early_left_cn.jpg) no-repeat 0 0; width:72px; height:28px; color:#FC0; float:left;}
+.early_left_cn_out { background:url(../img/early_left_cn.jpg) no-repeat 0 -28px; width:72px; height:28px; color:#40301C; float:left;}
+
+/*150706-癟獺*/
+.msg_float { float:left;}
+.letter_bg { display:inline-block; background:url(../img/letter_bg.png) 0 0 no-repeat; width:22px; height:16px; position:relative; top:-1px; left:5px; text-decoration:none;}
+.letter_text { background:url(../img/letter_text.png) 0 0 no-repeat; width:17px; height:17px; position:absolute; top:-5px; left:11px; text-align:center; line-height:17px;}
+.msg_info { position:relative; position:absolute\9; left:40px; left:70px\9; background:url(../img/message_bg.png) no-repeat 0 0; width:77px; height:27px; line-height:27px; z-index:999; display:block; color:#64615D; font-family:"Arial"; font-size:12px; text-align:center;}
+
+/******************************************/
+
+/*----------------------------------------*/
+/*2010-09-20-For NewSI2*/
+/*----------------------------------------*/
+/*  *腹  \9 IE Hack */
+/*  >Mac Hack */
+/*@charset "UTF-8";*/
+html, body.bodyset {	text-align: center;	margin: 0px;	padding: 0px;	}
+form {	margin: 0px;	padding: 0px;}
+*input {vertical-align:middle;}
+.ord, .ord2 {	text-align: left;	margin: 0 auto;	width: 216px;	padding: 0 0 3px;	background-color: #E3D0AA;	font: 12px  Arial, Helvetica, SimSun, sans-serif;}
+/*----------------------------------------          そ          ----------------------------------------*/
+.msg_box {}
+/*----------------------------------------               ----------------------------------------------------------*/
+div.ord p { margin:0;    padding: 0 0 4px 0;text-align:left;}
+/*error ps竭瞯跑笆*/
+div.ord p tt { color: #F00; font:12px/140% Arial, Helvetica, SimSun, sans-serif; display:block; padding:5px 0px; margin-bottom:4px;}
+/*夹繷*//*span*/
+/*.ord .title { margin:0 6px;	color: #FFF;	height: 22px;	background: #614F35 url(../img/order_main_bg.jpg) repeat-x left 0px;}*/
+.ord .title { margin:0; padding-right:5px;	color: #2F2F2F;	height: 22px;	background: #F1E3C6 url(../img/order_h1_ft.jpg) repeat-x left top;    width: 210px;}
+.ord .title h1 {	
+    
+    /*margin: 0;	padding: 7px 48px 1px 8px; word-break:break-all; height:22px; width:100%;	font-size: 12px; font-weight:bold;*/
+        margin: 0;
+    padding: 7px 0 1px 8px;
+    word-break: break-all;
+    height: 22px;
+    text-align: left;
+    width: 100%;
+    font-size: 12px;
+    font-weight: bold;
+}
+html>body .ord .title h1 { padding-top:0;}
+/*计穝*//**/
+.ord .title .tiTimer {	float: right;	margin-top: -19px;	width: 46px; height:22px;	padding-right: 0px; padding-left:7px; text-align:right; *vertical-align:text-top;     background: url(../img/order_btn.gif) no-repeat 0 -119px;}
+.tiTimer { *cursor:hand; cursor:pointer;}
+#OFS .tiTimer {*margin-top: -24px; *height:24px;}/*IE Hack*/
+html>body .ord .title .tiTimer {    margin-top: -28px; padding:2px 0 0;height:20px;}/*mac hack*/
+.ord .title #checkOrder { *margin-top:-1px;}/*IE Hack*/
+/*璶戈跋*//**/
+.ord .main { clear:right; width:210px; font-size: 12px;	margin: 3px; color:#2F2F2F;}
+/*羛幅*//**/
+.ord .main .leag {	font-size: 12px; line-height:18px;	padding: 0px 8px; border: 1px solid #937B52; border-bottom:none; background: #CFC0A1 /*url(../img/order_main_bg.jpg) repeat-x left -50px*/;}
+/*猭*/
+.ord .main .gametype {/* height:17px;*/padding: 1px 8px 1px; border-left: 1px solid #937B52; border-right: 1px solid #937B52; background-color:#E1D6C2;/*	background: url(../img/order_main_bg.jpg) repeat-x 0 -100px;*/}
+.ord .main .gametype15 {/* height:34px;*/padding: 1px 8px 1px; border-left: 1px solid #937B52; border-right: 1px solid #937B52; background-color:#E1D6C2;/*	background: url(../img/order_main_bg.jpg) repeat-x 0 -100px;*/}
+/*疭猭*/
+.gametype font {  margin-top:6px; *margin-bottom:-2px; *padding-bottom:0;}
+.game_hr { color:#C00;}/*初猔虫*/
+/*钉ヮ*/
+html>body .ord .main .teamName { margin-top:-4px;}/*mac hack*/
+.ord .main .teamName { padding:4px 8px 3px;border: 1px solid #937B52; border-top:none; background-color:#E1D6C2;/*word-break:break-all;overflow:auto;/*word-break: normal;/*ㄌ酚跋遏眏琿︽,ぃ穦篒耞璣ゅ虫*//**/}
+.ord .main .teamName .tName {	 mini-height:14px;}
+.ord .main .teamName .score {color: #BA2700; padding-left:10px; font-weight:bold; height:14px;}
+.radio {color: #BA2700;} /*瞴繷*/
+/**/
+.ord .main .team { margin:3px 0; padding:3px 8px 2px ; text-align: left; border: 2px solid #937B52;	background-color: #FFF;}
+    .ord .main .team em {
+    
+        color: #BB2700 !important;}
+.ord .main .auto  { margin:3px 0; padding:3px 8px 2px 4px; text-align: left; border: 1px solid #937B52;	background-color: #E1D6C2; font-weight:bold;}
+.ord .main .auto input { margin-top:-3px;}
+.auto_info { *cursor:hand; cursor:pointer;}
+#OFS .team { margin-top:0;}
+em {	color: #BB2700;	font-style: normal;}/*team*/
+em.bold { font-weight:bold;}
+strong.light {	color: #BA2700;}/*@XX*/
+strong.lightOn {color: #BA2700; background-color:#EDDF67;}/*竭瞯跑笆蠢传light*/
+.ord .main .error {	clear: both;margin: 0; min-height:25px;height: auto !important;height: 25px; padding:3px 8px 2px 32px ; border: solid 1px #937B52; border-bottom:none; background:#EDDF67 url(../img/order_icon.gif) no-repeat -445px 2px;}
+/*戈跋遏*//**/
+.ord .main .betdata { padding:6px 5px 9px 8px ; line-height:110%; border: 1px solid #937B52; background-color:#E1D6C2;/*	background:#BBA887 url(../img/order_main_bg.jpg) repeat-x 0 -180px;*/}
+
+.ord .main .amount .txt {height: 22px;	width: 127px;border: 1px solid #937B52; font-weight:bold;    margin-bottom: 2px;}
+/*.ord .main .mayWin {}/*墓肂*/
+/*.ord .main .maxBet {	}/*虫猔程蔼-戈*/
+/*altゅ*/
+/*.ord .main .maxBet span.notes {display: none }/*肂爹秆*/
+/*.ord .main .maxBet a {position:relative; text-decoration:none; color:#000;}
+/*.ord .main .maxBet .info:hover span.notes  {display:block;position:absolute;top:-45px;left:-100px; width:150px; padding:5px; line-height:120%; border:1px solid #CAA565; background:#FFEDCD; }*/
+.ord .betBox {	margin-top: 0px;	text-align: center;}/*猔秙*/
+.ord .betBox input.no, div.betChk input.no { *cursor:hand; cursor:pointer;margin:0 1px 0 0; width:85px; height:26px; border:none; padding-top:2px; color:#FFF; font-weight:bold; background: #3D3D3D url(../img/order_btn.gif) no-repeat 0 -80px; border-radius: 0;}
+.ord .betBox input.yes, div.betChk input.yes {*cursor:hand; cursor:pointer; margin:0; width:122px; height:26px; border:none; padding-top:2px; color:#F8C100; font-weight:bold; background: #3D3D3D url(../img/order_btn.gif) no-repeat 0 0; border-radius: 0;}
+/*猔肂霍繷砞﹚*/
+.ord .bet_txt {/* width:74px; color:#F00;*/}
+/*絋﹚猔*/
+.ord .betChk {	width: 216px;	padding: 2px 6px 6px;	color: #C00;	text-align: center;	background-color: #E3D0AA;}
+.ord .betChk .notice {	display: block;	margin-bottom: 5px;}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~history show10~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+body#OHIS {margin: 0px; padding: 0px; background-color: #E3D0AA;}
+html>body#OHIS { padding-top:1px;}/*mac hack*/
+/*#OHIS .title { padding-top:6px; height:16px; background:#614F35 url(../img/order_h1_ft.jpg) no-repeat left -50px;}*/
+#OHIS .ord .title h1 {padding: 6px 48px 2px 8px; height:20px; }
+
+#OHIS .ord .title .tiTimer { width:21px!important; *height:22px; *cursor:hand; cursor:pointer;}/*title*/
+#OHIS .show { clear:right; width:210px; margin:0px 3px -1px; padding:0; font: 12px Arial, Helvetica, SimSun, sans-serif; background-color:#E3D0AA; 	/*background:#E1D6C2 url(../img/order_main_bg.jpg) repeat-x 0 -180px;border: 1px solid #937B52;	*/}
+html>body#OHIS .show  { margin-top:-1px;/* margin-left:6px;*/}/*mac hack*/
+#OHIS .show_info {width: 216px;height:85px;	background-color: #E3CFAA;	font: 0.75em Arial, Helvetica, SimSun, sans-serif; font-weight:bold;} /*礚猔戈*//**/
+.show_top { display:block; height:22px; margin-bottom:22px; background: #614F35 url(../img/order_h1_ft.jpg) repeat-x left top;}
+#OHIS .tname { margin-bottom:3px!important; text-align:left;padding:1px 6px 2px; border: solid 1px  #937B52; background-color:#E1D6C2;}
+/*#OHIS p { margin:0 0 -2px;/*留旅娩絬 }*/
+#OHIS em {  color:000;}
+#OHIS .error {margin: 0 0 -1px; height:15px;	line-height:15px; padding: 1px 6px 0 21px; /*color:#0000FE;*/ font-weight:bold;background:#E1D6C2 url(../img/order_icon.gif) no-repeat -218px 2px;}
+/*繧瞴篈砞﹚*//**/
+.dan_red { color:#d60008!important;font-weight: bold;}
+.dan_blue {color: #0101f7!important;font-weight: bold;}
+.dan_green {color: #090!important;font-weight: bold;}
+
+
+.his_result { color:#BA2700;/* font-weight:bold; */text-decoration:none;}
+.his_sp {color:#0101f7;text-decoration:none; display:block; margin-top:2px;}/*疭*/
+.his_score { color:#BA2700; font-weight:bold;}/*ゑだ*//**/
+.his_odd { color:#BA2700; font-weight:bold;}/*@xx */
+.gold { text-align:left; display: block; padding-top:2px;}/*Paying money*/
+/**/
+/*Home Away vs*/.his_h, .his_a { color:#2F2F2F;}
+.his_vs { color: #C00;}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~font~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*#pc {color:#C00;}/*Mode*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~P3~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*#OFTP3 .teamNameP3 { padding:4px auto 10px;border: 1px solid #937B52; border-top:none; background:#CEC0A3 url(../img/order_main_bg.jpg) repeat-x 0 -196px;}*/
+.deletebtn {float:right; position:relative; *margin-top:-16px;*right:4px; top:0px;}
+html>body .deletebtn { top:4px;}
+.deletebtn input { right:0; clear:right;width:10px; height:9px; border:none; margin:0; color:#F00; *cursor:hand; cursor:pointer; background: url(../img/order_icon.gif) no-repeat 0 0;}
+/*#OFTP3 .teamP3 { margin:3px 0; padding:0 10px 2px; text-align: left; }*/
+#OFTP3 .leag { *padding-right:20px;border-top: 1px solid #937B52;}
+#OFTP3 .errorP3 {	clear: both;margin: 0 0 4px; height:17px;	line-height:17px; padding-left:32px; color:#C00; background: url(../img/order_icon.gif) no-repeat;}
+#OFTP3 .errorP3 { background-position:-220px 50%;}
+#OFTP3 .team { margin-top:0;}
+#OFTP3 .team_ch {  margin:0 0 3px;padding:3px 8px 2px ; text-align: left; border: 2px solid #937B52; background-color: #FF6;}/*筁闽猭跑笆矗ボ*//**/
+/*.ord .main .team { margin:3px 0; padding:3px 8px 2px ; text-align: left; border: 2px solid #937B52;	background-color: #FFF;}*/
+
+
+#OFTP3 .teamName { border-bottom:none;}
+.leag_txt { padding-right:16px;}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~Finish~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#OFIN .ord .title .tiTimer { width:21px!important; *height:22px; *margin-top:-20px; *cursor:hand; cursor:pointer;}/*title*/
+.fin_title { padding:6px 7px; border: 1px solid #937B52; background-color:#E8FFC7;}
+.fin_acc { padding-left:20px; height:15px;color:#589410; font-weight:bold;background: url(../img/order_icon.gif) no-repeat -710px 0px;}
+.fin_uid {padding-left:20px; height:17px; text-decoration:underline;}
+#OFIN .error {margin: 0 ; height:15px;	line-height:15px; padding: 2px 6px 0 20px; border:none; color:#0000FE; font-weight:bold;background: url(../img/order_icon.gif) no-repeat -220px 3px;}
+#OFIN .leag { margin-top:2px;}
+.teamNameP3 .fin_team {margin-top:0!important; border-top:1px solid #937B52;}
+/*team*/
+.fin_amount  { padding:0 7px; line-height:21px;margin-top:3px!important;margin-bottom:0; border:1px solid #937B52;background-color:#E1D6C2;}
+.fin_gold { font-weight:bold;}
+.fin_team { margin-top:3px!important; padding:3px 7px 2px;border:2px solid #937B52;background-color:#E1D6C2;}
+.fin_team strong {color: #BA2700;}/*odd*/
+.score {color: #BA2700; padding-left:10px; font-weight:bold; height:14px;}
+.close, .print  {*cursor:hand; cursor:pointer; width:102px; height:26px; border:none; padding-top:2px;  font-weight:bold; background: #3D3D3D url(../img/order_btn.gif) no-repeat 0 -40px;}
+.close {margin:0; color:#F8C100; }
+.print { margin:0 1px 0 0;  color:#FFF;}
+/**/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~Comfirm window~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+body#OFIN2, body#GRAY, body#BLUE, body#PINK { /*margin-top:39px;*/}
+body#GRAY div, body#BLUE div, body#PINK div {text-align:center; font: 12px  Arial, Helvetica, SimSun, sans-serif; border:5px solid; margin:6px; padding:6px;}
+body#GRAY {  background-color:#FC6;}
+body#GRAY div {	color: #000; border-color:#F90; background-color:#FFE39D;}
+/*既氨ゎユ*/
+body#BLUE {  background:#E3CFAA url(../img/order_none.jpg) repeat-x 0 0;}
+body#BLUE div {	color: #000; border: none; margin-top:25px;}
+body#BLUE p { margin:5px 0 0; padding:0;}
+/*Mac Hack*/
+html>body#BLUE {width:216px; height:125px; height:95px\9; margin-left:0;}
+html>body#BLUE div { margin-top:-8px; padding-top:25px;}
+body#PINK {  background-color:#EDAAAA;}
+body#PINK div {	color: #C00; border-color:#E78686; background-color:#EDC6C8;}
+body#BLUE .yes {*cursor:hand; cursor:pointer; margin:0; width:122px; height:26px; border:none; padding-top:2px; color:#F8C100; font-weight:bold; background: #3D3D3D url(../img/order_btn.gif) no-repeat 0 0; }
+
+/*131114-穝糤+-瓜┏絬*/
+.parlay_span{ display:block; float:left; height:22px; line-height:22px;}
+.icon_show {display:block; float:left; background:url(../img/show_icon01.jpg) no-repeat center; width:14px; height:14px; cursor:hand; cursor:pointer; margin-left:3px; margin-top:3px;}
+.icon_close {display:block; float:left; background:url(../img/show_icon02.jpg) no-repeat center; width:14px; height:14px; cursor:hand; cursor:pointer; margin-left:3px;margin-top:3px;}
+.order_line { clear:both; height:2px; background:url(../img/order_line01.jpg) repeat-x center;}
+.order_line2 { height:20px;background:url(../img/order_line02.jpg) repeat-x center}
+.order_line3 { clear:both; height:15px; background:url(../img/order_line01.jpg) repeat-x center;}
+.tname_em{display:block;font-size:12px; padding-top:5px;}
+.gold_span{ display:block;padding-top:10px}
+
+/*呼瞴-order虫*/
+.gametype2 { /*height:30px;*/padding: 1px 8px 1px; border-left: 1px solid #937B52; border-right: 1px solid #937B52; background-color:#E1D6C2;/*	background: url(../img/order_main_bg.jpg) repeat-x 0 -100px;*/}
+.gametype2 font { display:block; margin-top:4px;}
+
+/*150206-阁ぱ綛竛肅︹*/
+.day_y_title { background:#E9C670!important; color:#A2883E;}
+.day_y { background:#F1D280!important; color:#AC9247;}
+
+/*150209-阁ぱorder*/
+.day_red { background:#8A0006; background:url(../img/day_order.png) no-repeat 12px 9px #8A0006;background:url(../img/day_order.png) no-repeat 12px 5px #8A0006\9; color:#fff; font-family:"Arial", Gadget, sans-serif; font-size:15px; padding:5px; margin:3px 0;}
+.day_text { position:relative; left:23px;}
+
+
+/*****************************************/
+/*----------------------------------------*/
+/*2010-10-01-For NewSI2*/
+/*----------------------------------------*/
+@charset "UTF-8";
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ Logout (Link1) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+iframe { border:none;}
+/*back*/
+div#back { width:279px;	position: absolute;float: left;top:1px; margin-left: 700px;font-family: Arial, Helvetica, SimSun, sans-serif;z-index:1000;}
+
+
+body.bodyset {margin: 0px;padding: 0px;background: #8A4102  repeat-x left top;}
+#container { /*position: relative;*/font-family: Arial, Helvetica, SimSun, sans-serif;}
+#header {	margin: 0px;	padding: 0px;}
+#header h1 {/*behavior: url(png-opacity.htc);*/	/*background: transparent url(../img/inda_head_l.png) no-repeat left top;margin: 0px;	display: block;	height: 56px;	padding: 0px;*/}
+#header span {	/*background: transparent url(../img/inda_head_r.jpg) no-repeat right top;	display: block;height: 56px;*/}
+ul {	margin: 0;	padding: 0;}
+a { text-decoration: none;}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ Welcome (Link2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#welcome {position: absolute; top:27px; margin:0; padding:0; width:980px; color:#FFF; clear:left;}
+#welcome li {list-style: none; float: left; margin-right: 3px; text-align:center;  font-size: 14px; line-height: 34px; padding-top:3px; white-space: nowrap;/*background: url(../img/head_focus_btn_out.gif) no-repeat left top;*/}
+#welcome a {display: block; /*float: left; *//* width: .1em;*/ padding: 0; /*width:130px;*/ font-weight: bold;  color: #E7B565;}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#welcome a {float: none;}            /* End IE5-Mac hack */
+#welcome a:link, #welcome a:visited { color: #E7B565;}
+#welcome a:hover {color: #F8C100;}
+#welcome li.name { display:block; width:240px; margin-right: 0;	height:34px; line-height:16px; font:12px Arial, Helvetica, sans-serif; font-weight:bold; background:none;}
+#welcome .pass { position: absolute; right:0px; padding-top:2px; padding-right:0px; text-align:right;font:12px Arial, Helvetica, sans-serif;}
+#welcome .pass a { font-weight:normal!important; }
+.rb_sum { font:12px  Arial, Helvetica, sans-serif; font-weight:bold;}
+/*簎瞴瓜*//**//**/
+#welcome li.rb {width:107px;background: url(../img/head_rb_btn.gif) no-repeat left top;}
+#welcome li.today {width:128px;background: url(../img/head_today_btn.gif) no-repeat left top;}
+#welcome li.early { width:114px;background: url(../img/head_early_btn.gif) no-repeat left top;}
+/*#HFT #welcome li.rb .ball {display: block;background: url(../img/head_ball_ft.gif) no-repeat 13px 50%;}
+/*传夹帽┏︹*/
+/*~~~~~~~~~~~~~~~~~Notice! Don't delete this note, For IE hack~~~~~~~~~~~~~~~~~*/
+#welcome li.rb_on  { width:107px; color: #F8C100; background: url(../img/head_rb_btn.gif) 0 -40px no-repeat;}
+#welcome li.today_on  { width:128px; color: #F8C100; background: url(../img/head_today_btn.gif) 0 -40px no-repeat;}
+#welcome li.early_on { width:114px; color: #F8C100; background: url(../img/head_early_btn.gif) 0 -40px no-repeat;}
+#welcome li.rb_on a:link, #welcome li.rb_on a:visited, #welcome li.today_on a:link, #welcome li.today_on a:visited,  #welcome li.early_on a:link, #welcome li.early_on a:visited{ color: #F8C100;}
+#welcome li.live_tv {  margin-left:2px; width:28px; height:29px;background: url(../img/live_tv_m.gif) 0 0 no-repeat;}
+/*~~~~~~~~~~~~~~~~~礚瞴辽~~~~~~~~~~~~~~~~~*//**/
+#welcome li.rb_null  { width:107px; color: #7D6342; font-weight:bold; background: url(../img/head_rb_btn.gif) 0 -80px no-repeat;}
+#welcome li.today_null  { width:128px; color: #7D6342; font-weight:bold;  background: url(../img/head_today_btn.gif) 0 -80px no-repeat;}
+#welcome li.early_null { width:114px; color: #7D6342; font-weight:bold;  background: url(../img/head_early_btn.gif) 0 -80px no-repeat;}
+#welcome li.rb_null a:link, #welcome li.rb_null a:visited, #welcome li.today_null a:link, #welcome li.today_null a:visited,  #welcome li.early_null a:link, #welcome li.early_null a:visited{ color: #7D6342;}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~Game Type ( link 3) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#nav, #nav_re {     
+    padding: 0;
+ 
+    clear: left;
+    background: #D7D7C1 url(../img/head_nav_bg_ft.gif) 0 0 repeat-x;
+    border: solid 1px #FFF;
+    white-space: nowrap;
+    
+    overflow: auto;}
+#nav li, #nav_re li {list-style: none; float: left; text-align:center;  font-size: 0.75em; line-height: 22px; white-space: nowrap;
+                     }
+#nav a, #nav_re a {display: block; float: left; clear:left;  width: .1em; padding: 4px 13px 4px 13px;  color: #FFF;}
+/**/
+html>body #nav a, html>body #nav_re a {width: auto;}    /* fixes IE6 hack */
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#nav a, #nav_re a {float: none;}            /* End IE5-Mac hack */
+
+#nav a:link, #nav a:visited, #nav_re a:link, #nav_re a:visited { color: #FFF;}
+#nav a:hover, #nav_re a:hover {color: #FF0;}
+/*======瞴摸icon================*/
+
+#nav li.ft, #nav_re li.ft { background: none; margin-left:-4px;}
+#nav li.ft a, #nav_re li.ft a { padding-left:15px;}
+/*#nav li.ft .ball, #nav_re li.ft .ball {	background: url(../img/head_ball_ft.gif) no-repeat 20px 50%;}
+/**/
+/*#nav li.bk .ball, #nav_re li.bk .ball {	background: url(../img/head_ball_bk.gif) no-repeat 11px 50%;}
+/* ball icon Live 2 */
+/*#nav li.bk span.ball_nf, #nav_re li.bk span.ball_nf { display:inline-block;vertical-align: text-bottom; margin:0 5px 0 4px; width:16px; height:17px;background: url(../img/head_ball_nf.gif) no-repeat 0 0px;}
+#nav li.bk span.ball_rl, #nav_re li.bk span.ball_rl  { display:inline-block;vertical-align: text-bottom; margin:0 4px; width:16px; height:17px;background: url(../img/head_ball_rl.gif) no-repeat 0 0px;}
+#nav li.vb span.ball_bad, #nav_re li.vb span.ball_bad { display:inline-block;vertical-align: text-bottom; margin:0 4px; width:15px; height:17px;background: url(../img/head_ball_bad.gif) no-repeat 0 0px;}
+#nav li.vb span.ball_tt, #nav_re li.vb span.ball_tt { display:inline-block;vertical-align: text-bottom; margin:0 4px; width:18px; height:17px;background: url(../img/head_ball_tt.gif) no-repeat 0 0px;}
+
+#nav li.op a, #nav_re li.op a { padding-left:11px;}
+#nav li.tn .ball, #nav_re li.tn .ball {	background: url(../img/head_ball_tn.gif) no-repeat 11px 50%;}
+#nav li.vb .ball, #nav_re li.vb .ball {	background: url(../img/head_ball_vb.gif) no-repeat 10px 50%;}
+/*141024+╊瞴摸*/
+/*#nav li.bm .ball, #nav_re li.bm .ball {	background: url(../img/head_ball_bad.gif) no-repeat 10px 50%;}
+#nav li.tt .ball, #nav_re li.tt .ball {	background: url(../img/head_ball_tt.gif) no-repeat 10px 50%;}
+
+#nav li.bs .ball, #nav_re li.bs .ball {	background: url(../img/head_ball_bs.gif) no-repeat 10px 50%;}
+#nav li .ball, #nav_re li .ball {	display: block;}*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ Type RE (Link4) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*#type_re {position: absolute; top:31px; margin:0 0 0 -1px; padding:0 10px; width:100%; clear:left; background: #260707 url(../img/head_type_bg_ft.gif) 0 0 repeat-x;border-left: solid 1px #FFF; white-space: nowrap;z-index:90;  line-height: 26px;}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ Type (Link4) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.qiulei {
+    position: fixed;    z-index: 99;
+    overflow: auto;
+width: 100%;
+    overflow-x:hidden;
+    left:0;
+}
+#type, #type_re {
+    
+    padding: 0 18px;
+    clear: left;
+    background: #260707;
+    border-left: solid 1px #FFF;
+    white-space: nowrap;
+
+    overflow: auto;
+}
+#type_re .re { background-image: none;}
+#type li, #type_re li {list-style: none; float: left; text-align:center;  font-size: 0.75em; line-height: 26px; white-space: nowrap;
+            padding: 0;               }
+#type a, #type_re a {display: block; float: left;  width: .1em; padding: 0px 15px 0px 15px; color: #FFF;}
+html>body #type a, html>body #type_re a {width: auto;}    /* fixes IE6 hack */
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#type a, #type_re a {float: none;}            /* End IE5-Mac hack */
+#type a:link, #type a:visited, #type_re a:link, #type_re a:visited { color: #FFF;}
+#type a:hover, #type_re a:hover {color: #FF0;}
+#type ul, #type_re ul { margin-left:-11px;}/*辽狦﹚ 癸霍癶秙*/
+#type .result, #type_re .result{  /*float:right;*/ position:absolute; left:688px; padding-right:8px; background: none;}/*辽狦綼*/
+/*----猭匡----*//**/
+#type .type_on:link, #type .type_on:visited, #type_re .type_on:link, #type_re .type_on:visited { color: #F9C100;}
+/*----猭箇砞----*//**/
+#type .type_out:link, #type .type_out:visited, #type_re .type_out:link, #type_re .type_out:visited { color: #FFF;}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ Game chuang ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*既ノì瞴
+#HFU #type { background-image: url(../img/head_typ_fu.jpg);}
+#HBK #type { background-image: url(../img/head_typ_bk.jpg);}
+#HTN #type { background-image: url(../img/head_typ_tn.jpg);}
+#HTU #type { background-image: url(../img/head_typ_tu.jpg);}
+#HVB #type { background-image: url(../img/head_typ_vb.jpg);}
+html#HVU, body#HVU { background-image: url(../img/head_bg_vu.jpg); }
+#HVU #type { background-image: url(../img/head_typ_vu.jpg);}
+html#HFS, body#HFS { background-image: url(../img/head_bg_fs.jpg); }
+#HFS #type { background-image: url(../img/head_typ_fs.jpg);}
+html#HBU, body#HBU { background-image: url(../img/head_bg_bu.jpg); }
+#HBU #type { background-image: url(../img/head_typ_bu.jpg);}
+html#HBS, body#HBS { background-image: url(../img/head_bg_bs.jpg); }
+#HBS #type { background-image: url(../img/head_typ_bs.jpg);}
+html#HBE, body#HBE { background-image: url(../img/head_bg_be.jpg); }
+#HBE #type { background-image: url(../img/head_typ_be.jpg);}
+html#HOP, body#HOP { background-image: url(../img/head_bg_op.jpg); }
+#HOP #type { background-image: url(../img/head_typ_op.jpg);}
+html#HOM, body#HOM { background-image: url(../img/head_bg_om.jpg); }
+#HOM #type { background-image: url(../img/head_typ_om.jpg);}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~Game Selection (Link3)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+body#HFT li.ft a:link, body#HFT li.ft a:visited,
+body#HFU li.ft a:link, body#HFU li.ft a:visited,
+body#HBK li.bk a:link, body#HBK li.bk a:visited,
+body#HBU li.bk a:link, body#HBU li.bk a:visited, body#HBU #nav li.bu a,
+body#HTN li.tn a:link, body#HTN li.tn a:visited,
+body#HTU li.tn a:link, body#HTU li.tn a:visited, body#HTU #nav li.tu a,
+body#HVB li.vb a:link, body#HVB li.vb a:visited,
+body#HVU li.vb a:link, body#HVU li.vb a:visited, body#HVU #nav li.vu a,
+body#HBM li.bm a:link, body#HBM li.bm a:visited,
+body#HBMFU li.bm a:link, body#HBMFU li.bm a:visited, body#HBMFU #nav li.bmfu a,
+body#HTT li.tt a:link, body#HTT li.tt a:visited,
+body#HTTFU li.tt a:link, body#HTTFU li.tt a:visited, body#HTTFU #nav li.ttfu a,
+/*body#HFS li.fs a:link, body#HFS li.fs a:visited,*/
+body#HBS li.bs a:link, body#HBS li.bs a:visited,
+body#HBE li.bs a:link, body#HBE li.bs a:visited, body#HBE #nav li.be a,
+body#HOP li.op a:link, body#HOP li.op a:visited,
+body#HOU li.op a:link, body#HOU li.op a:visited, body#HOU #nav li.op a
+{ color: #F9C100;}
+/*----猭匡----*//**/
+.type_on { color: #F9C100;}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ For Mac/Safari Fix ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*html > body #nav { width: 640px; margin-top: 7px;}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ Hideaway link ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#extra2 {	display: none;}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Extra link R.B ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*#extra1 {}*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ Extra link Baccarat ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*#extra2 {	position: absolute;	left: 250px;	top: 2px;width:140px; height:27px; background: url(../img/head_ad_ba.gif) no-repeat 0 0;}
+#extra2 a { display:block; width:140px; height:27px;}*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 眀め癘魁 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#mem_box {	clear: both;
+    /* position: absolute; */
+    /* top: 61px; */
+    width: 240px;
+    height: 57px;
+    /*padding-top: 9px;*/
+    text-align: center;
+    color: #FFF;
+    /* border-top: 1px solid #FFF; */
+    background-color: #493721;
+    font: 0.75em Arial, Helvetica, sans-serif;}
+#mem_box a:link, #mem_box a:visited { color: #FFF;}
+#mem_box a:hover {color: #F8C100;}
+#mem_box #mem_main .his {	padding-right: 25px;}
+#mem_box #mem_main .wag {	padding-left: 25px;}
+#mem_box #credit_main {	text-align: left;	height: 24px;padding: 0 12px;	line-height: 24px;font-weight: bold;	background: url(../img/head_credit_icon.gif) no-repeat 12px top;}
+#mem_box #credit {	margin-left: 29px;}
+#mem_box .re_credit { position: relative; top:4px \0;margin: 2px 0 0 10px; height: 16px;	width: 16px;border: none;	*cursor: hand; cursor:pointer;background: url(../img/head_credit_refresh.gif) no-repeat 0 0;}
+html>body #mem_box .re_credit { background-image: url(../img/head_credit_refresh.gif);} /*mac hack*/
+/*菲筁跑︹*//**/
+div#mem_box input.re_credit:hover  {background: url(../img/head_credit_refresh.gif) no-repeat 0 -20px;} 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ら戳 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#head_date {	color: #FFF; font-weight:normal;}
+
+/*#head_date {	position: absolute;	top: 37px;	left: 856px;	color: #FFF;font: 0.75em Arial, Helvetica, sans-serif;}*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ RB Menu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+div#welcome li.rb, div#welcome li.rb_on { position:relative;}
+div#welcome .level2 a { display:block; float:left; /*padding:5px 4px 5px;*/ height:36px;text-decoration:none;}
+#welcome li.rb_on .level2 a:link, #welcome li.rb_on .level2 a:visited, #welcome ul.level2 a:link, #welcome ul.level2 a:visited  { color: #44321C;}
+
+div#welcome .level2 a:hover {color: #900;}
+div#welcome ul ul li { list-style:none;margin-right: 0px; padding-top:0; background-color:#FEF7E7;}
+div#welcome ul.level1 li.rb:hover ul.level2, div#welcome ul.level1 li.rb_on:hover ul.level2 { display:block; height:36px;}
+div#welcome ul.level2 {position:absolute; height:36px;line-height:36px;width: 800px; top:34px!important;	z-index:1000;	left:0px; font-family:Arial, Helvetica, sans-serif;
+	display:none;
+	visibility: visible;
+}
+html > body div#welcome ul ul { white-space:nowrap;}
+html > body div#welcome ul.level2 {top: -27px;}
+html > body .rb:hover .level2, html > body .rb_on:hover .level2 { display:block;}
+
+#RB_MENU li.rb_bg_right { width:4px; height:36px; margin-left:-1px; background:url(../img/head_rb_menu_r.gif) no-repeat 100% 100%;}
+#RB_MENU li.rb_bg_left { width:4px; height:36px; background:url(../img/head_rb_menu_l.gif) no-repeat 0 100%;}
+
+#RB_FT, #RB_BK, #RB_TN, #RB_VB, #RB_BS, #RB_OP {padding:0 10px; background:url(../img/head_rb_menu_line.gif) no-repeat 100% 0;}
+/* 翴匡赣簎瞴 -- 旧凝︹ rb_menu_on */
+#welcome .level2 .rb_menu_on a:link , #welcome .level2 .rb_menu_on a:visited { color:#900!important;}
+/* 翴匡赣簎瞴 -- ㄤ菲筁︹ rb_out */
+#welcome .level2 .rb_out a:hover { color:#900!important;}
+
+
+
+/*2013/07/31 hide */
+/*#type_re .pd, #type_re .to, #type_re .hf { display:none;}*/
+
+/*2015-01-07-header-縒墓竚*/
+.re_left { margin-left:-11px;}
+
+/***************************************************/
+/*2010-09-20-For NewSI2 ======= Add Special Early ======*/
+html, body {height:100%;}
+body.bodyset { margin:0; background-color: #FFF;}
+ /*background:url(../img/test_bg.gif) no-repeat 0 0;*/
+body.bodyset, .leg_mem {/* 捲軸-上色 */
+ scrollbar-face-color: #DCD1C5;
+ scrollbar-shadow-color: #B9A38B;
+ scrollbar-highlight-color: #E6DED6;
+ scrollbar-3dlight-color: #B9A38B;
+ scrollbar-darkshadow-color: #33281C;
+ scrollbar-track-color: #33281C;
+ scrollbar-arrow-color: #413528;
+ }
+
+/* BK / BS / TN / VB -- RE / FTT / FUT / BUR */
+body.TNRE #box {width:715px; /*width:990px\9;*/}
+body.VBRE #box { width:715px;}
+body.BKRE #box { width:715px;}
+body.BKRE td#page_no, body.TNRE td#page_no { width:360px;}
+body.VBRE td#page_no {width:360px;}
+body.VBRE .mem .team { width:294px;}
+body.BKRE .mem .team { width:258px;}
+body.TNRE .mem .team { /*width:510px\9;*/}
+
+body.VUR #box, body.OUR #box { /*width: 850px;*/}
+body.BUR #box { width: 715px;}
+body.TUR #box { width:715px;/* width:1050px\9;*/}
+body.TUR td#page_no, body.VUR td#page_no, body.OUR td#page_no  { width:330px;}
+body.BUR td#page_no { width:300px;}
+body.BUR .mem .team { /*width:364px;*/}
+body.VUR .mem .team, body.OUR .mem .team { width:323px;}
+body.TUR .mem .team { /*width:510px;*/}
+
+body.BSRE #box { width:515px;}
+body.BSRE td#page_no { width:193px;}
+body.BSRE .mem .team, body.FTT .mem .team { width:260px;}
+body.FUT .mem .team { width:332px;}
+/* BK */
+body.BKP3 #box { width: 715px;}
+body.BKR #box { width: 715px;}
+body.BKR td#page_no { width:300px;}
+body.BKP3 td#page_no { width:425px;}
+body.BKP3 .mem .team { /*width:248px;*/}
+body.BKR .mem .team { /*width:248px;*/}
+/* BS */
+
+/* OP / TN / VB -- R(PR) */
+body.OPR #box, body.OPP3 #box, body.VBR #box, body.VBP3 #box { width:715px;}
+body.TNP3 #box { width:715px;}
+body.TNR #box { width:715px;/* width:1050px\9;*/}
+body.OPR td#page_no, body.OPP3 td#page_no, body.VBR td#page_no, body.VBP3 td#page_no { width:300px;}
+body.TNR td#page_no { width:300px;}
+body.TNP3 td#page_no { width:425px;}
+body.OPR .mem .team, body.OPP3 .mem .team, body.TNPD .mem .team, body.VBR .mem .team, body.VBP3 .mem .team { width:220px;}
+body.TNP3 .mem .team { width:35%;}
+body.TNR .mem .team { /*width:510px;*/}
+/* OU / TU / VU -- R(PR) */
+body.OUP3 #box { width:562px;}
+body.VUP3 #box { width:715px;}
+body.TUP3 #box { width:715px;}
+body.OUP3 td#page_no, body.VUP3 td#page_no { width:425px;}
+body.TUP3 td#page_no { width:425px;}
+body.OUP3 .mem .team, body.TUPD .mem .team, body.VUP3 .mem .team { width:220px;}
+body.TUP3 .mem .team { width:35%;}
+/* TN */
+
+/* BU */
+body.BUP3 #box  { width: 715px;}
+body.BUP3 td#page_no { width:425px;}
+body.BUP3 .mem .team { /*width:224px;*/}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ Game chuang ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*top*/
+/*body#MFU .top, body#MFU h1, #MALL .top, #MALL h1, body#MFT #game_list_2 .top, body#MFT #game_list_2 h1 { background-image: url(../img/mem_h1_fu.gif);}
+body#MBK .top, body#MBK h1 { background-image: url(../img/mem_h1_bk.gif);}
+body#MBU .top, body#MBU h1, body#MBK #game_list_2 .top, body#MBK #game_list_2 h1 { background-image: url(../img/mem_h1_bu.gif);}
+body#MTN .top, body#MTN h1 { background-image: url(../img/mem_h1_tn.gif);}
+body#MTU .top, body#MTU h1, body#MTN #game_list_2 .top, body#MTN #game_list_2 h1 { background-image: url(../img/mem_h1_tu.gif);}
+body#MVB .top, body#MVB h1 { background-image: url(../img/mem_h1_vb.gif);}
+body#MVU .top, body#MVU h1, body#MVB #game_list_2 .top, body#MVB #game_list_2 h1 { background-image: url(../img/mem_h1_vu.gif);}
+body#MFS .top, body#MFS h1 { background-image: url(../img/mem_h1_fs.gif);}
+/*body#MNFS .top, body#MNFS h1 { background-image: url(../img/mem_h1_nfs.gif);}
+body#MBS .top, body#MBS h1 { background-image: url(../img/mem_h1_bs.gif);}
+body#MOP .top, body#MOP h1 { background-image: url(../img/mem_h1_op.gif);}
+body#MOM .top, body#MOM h1 { background-image: url(../img/mem_h1_om.gif);}
+body#MBE .top, body#MBE h1, body#MBS #game_list_2 .top, body#MBS #game_list_2 h1 { background-image: url(../img/mem_h1_be.gif);}
+/*mem*/
+/*body#MFU .mem, #MFU .mem, #MALL .mem, body#MFT #game_list_3 .mem { background-color:#CDDEE3; border-color:#357CCC;border-bottom-color:#CDDEE3;}
+body#MBK .mem, #MBK .mem { background-color:#D9EAD6; border-color:#518A57;border-bottom-color:#D9EAD6;}
+body#MBU .mem, #MBU .mem, body#MBK #game_list_3 .mem { background-color:#F1E5CE; border-color:#A98030;border-bottom-color:#F1E5CE;}
+body#MTN .mem, #MTN .mem { background-color:#EDC6C8; border-color:#DE5A31;border-bottom-color:#EDC6C8;}
+body#MTU .mem, #MTU .mem, body#MTN #game_list_3 .mem { background-color:#F2DAD5; border-color:#D68977;border-bottom-color:#F2DAD5;}
+body#MVB .mem, #MVB .mem { background-color:#CED2E9; border-color:#6758DB;border-bottom-color:#CED2E9;}
+body#MVU .mem, #MVU .mem, body#MVB #game_list_3 .mem { background-color:#C8E4EF; border-color:#377FE2;border-bottom-color:#C8E4EF;}
+body#MFS .mem, #MFS .mem { background-color:#DBCFE0; border-color:#8C659A;border-bottom-color:#DBCFE0;}
+/*body#MNFS .mem, #MNFS .mem{background-color:#70B5D9; border-color:#5F9ADC;border-bottom-color:#D9E5F2;}
+body#MBS .mem, #MBS .mem {background-color:#E9F4CD; border-color:#98C629;border-bottom-color:#E9F4CD;}
+body#MOP .mem, #MOP .mem {background-color:#FFE6CD;border-color:#F28E17;border-bottom-color:#FCE5CB;}
+body#MOM .mem, #MOM .mem {background-color:#F5DFDA;border-color:#E0927F;border-bottom-color:#F5DFDA;}
+body#MBE .mem, #MBE .mem, body#MBS #game_list_3 .mem {background-color:#FAF0CF;border-color: #ECBC29;border-bottom-color:#FAF0CF;}
+/*h2 + game*/
+/*body#MFU h2, body#MFU .mem .game, #MALL .mem .game, body#MFT #game_list_3 .mem .game {background-color:#B9B9A3; border-color:#CDDEE3;}
+body#MBK h2, body#MBK .mem .game {background-color:#B9B9A3; border-color:#D9EAD6;}
+body#MBU h2, body#MBU .mem .game, body#MBK #game_list_3 .mem .game {background-color:#C7B7A0; border-color:#F1E5CE;}
+body#MTN h2, body#MTN .mem .game {background-color:#EDAAAA; border-color:#EDC6C8;}
+body#MTU h2, body#MTU .mem .game, body#MTN #game_list_3 .mem .game {background-color:#E4A99C; border-color:#F2DAD5;}
+body#MVB h2, body#MVB .mem .game {background-color:#ADB4DA; border-color:#CED2E9;}
+body#MVU h2, body#MVU .mem .game, body#MVB #game_list_3 .mem .game {background-color:#97C0EB; border-color:#C8E4EF;}
+body#MFS h2, body#MFS .mem .game {background-color:#CAB3E0; border-color:#DBCFE0;}
+/*body#MNFS h2, body#MNFS .mem .game {background-color:#D9E5F2;border-color: #E3EFFC;}
+body#MBS h2, body#MBS .mem .game {background-color:#DCF484; border-color:#DBCFE0;}
+body#MBE h2, body#MBE .mem .game, body#MBS #game_list_3 .mem .game {background-color:#FAE6B3; border-color:#DBCFE0;}
+body#MOP h2, body#MOP .mem .game {background-color: #fad37c;border-color: #FFC;}
+body#MOM h2, body#MOM .mem .game {background-color:#F5C2AC;border-color: #FFC;}
+/*th*/
+/*body#MFU .game th, body#MFU .more th, #MALL .game th, body#MFT #game_list_3 .game th {background-color:#A7D7F8;}
+body#MBK .game th, body#MBK .more th { background-color:#57593A; color:#FFF;}
+body#MBU .game th, body#MBU .more th, body#MBK #game_list_3 .game th { background-color:#8A6827; color:#FFF;}
+body#MTN .game th, body#MTN .more th { background-color:#E78686;}
+body#MTU .game th, body#MTU .more th, body#MTN #game_list_3 .game th { background-color:#D9897D;}
+body#MVB .game th, body#MVB .more th { background-color:#808BDB;}
+body#MVU .game th, body#MVU .more th, body#MVB #game_list_3 .game th { background-color:#529ED5;}
+body#MFS .game th, body#MFS .more th { background-color:#B48CE0;}
+/*body#MNFS .game th, body#MNFS .more th { background-color:#63BAE7;}
+body#MBS .game th, body#MBS .more th { background-color: #86b425;}
+body#MBE .game th, body#MBE .more th, body#MBS #game_list_3 .game th { background-color:#F5D140;}
+body#MOP .game th, body#MOP .more th {background-color: #ff9f19;}
+body#MOM .game th, body#MOM .more th {background-color: #ff9080;}
+/*foot*/
+/*body#MFU #foot, body#MFU #foot b, #MALL #foot, #MALL #foot b, body#MFT #fem #foot, body#MFT #fem #foot b { background-image: url(../img/mem_foot_fu.gif);}
+body#MBK #foot, body#MBK #foot b { background-image: url(../img/mem_foot_bk.gif);}
+body#MBU #foot, body#MBU #foot b, body#MBK #fem #foot, body#MBK #fem #foot b { background-image: url(../img/mem_foot_bu.gif);}
+body#MTN #foot, body#MTN #foot b { background-image: url(../img/mem_foot_tn.gif);}
+body#MTU #foot, body#MTU #foot b, body#MTN #fem #foot, body#MTN #fem #foot b { background-image: url(../img/mem_foot_tu.gif);}
+body#MVB #foot, body#MVB #foot b { background-image: url(../img/mem_foot_vb.gif);}
+body#MVU #foot, body#MVU #foot b, body#MVB #fem #foot, body#MVB #fem #foot b { background-image: url(../img/mem_foot_vu.gif);}
+body#MFS #foot, body#MFS #foot b { background-image: url(../img/mem_foot_fs.gif);}
+body#MBS #foot, body#MBS #foot b { background-image: url(../img/mem_foot_bs.gif);}
+body#MOP #foot, body#MOP #foot b { background-image: url(../img/mem_foot_op.gif);}
+body#MOM #foot, body#MOM #foot b { background-image: url(../img/mem_foot_om.gif);}
+/*body#MNFS #foot, body#MNFS #foot b { background-image: url(../img/mem_foot_nfs.gif);}
+body#MBE #foot, body#MBE #foot b, body#MBS #fem #foot, body#MBS #fem #foot b { background-image: url(../img/mem_foot_be.gif);}*/
+/* 奧運*/
+#euro_btn { float:right; cursor: hand; cursor:pointer; margin-right:10px; width:129px; height:26px; background:url(../img/world_cup_tw.gif) no-repeat 0 0;}
+#euro_up { float:right; cursor: hand; cursor:pointer; margin-right:10px; width:129px; height:26px; background:url(../img/oly_all_ft_tw.gif) no-repeat 0 0;}
+
+/*Euro over*/
+.euro_over#euro_btn { float:right; cursor: hand; cursor:pointer; margin-right:10px; width:129px; height:26px; background:url(../img/world_cup_tw.gif) no-repeat 0 -30px;}
+.euro_up_over#euro_up { float:right; cursor: hand; cursor:pointer; margin-right:10px; width:129px; height:26px; background:url(../img/oly_all_ft_tw.gif) no-repeat 0 -30px;}
+/*Fix space*/
+
+/* BK */
+body.BKR #euro_up,body.BUR #euro_up,body.BKRE #euro_up { background-image:url(../img/oly_all_bk_tw.gif);}
+body.BKR .euro_up_over#euro_up, body.BUR .euro_up_over#euro_up, body.BKRE .euro_up_over#euro_up {background:url(../img/oly_all_bk_tw.gif) no-repeat 0 -30px;}
+/* TN */
+body.TNR #euro_up,body.TUR #euro_up,body.TNRE #euro_up { background-image:url(../img/oly_all_tn_tw.gif);}
+body.TNR .euro_up_over#euro_up, body.TUR .euro_up_over#euro_up, body.TNRE .euro_up_over#euro_up {background:url(../img/oly_all_tn_tw.gif) no-repeat 0 -30px;}
+/* VB */
+body.VBR #euro_up,body.VUR #euro_up,body.VBRE #euro_up { background-image:url(../img/oly_all_vb_tw.gif);}
+body.VBR .euro_up_over#euro_up, body.VUR .euro_up_over#euro_up, body.VBRE .euro_up_over#euro_up {background:url(../img/oly_all_vb_tw.gif) no-repeat 0 -30px;}
+/* OP 
+body.OPR #euro_up,body.OUR #euro_up,body.OPRE #euro_up { background-image:url(../img/oly_all_op_tw.gif);}
+body.OPR .euro_up_over#euro_up, body.OUR .euro_up_over#euro_up, body.OPRE .euro_up_over#euro_up {background:url(../img/oly_all_op_tw.gif) no-repeat 0 -30px;}
+/* FS */
+body#MNFS #euro_up { background-image:url(../img/oly_all_op_tw.gif);}
+body#MNFS .euro_up_over#euro_up {background:url(../img/oly_all_op_tw.gif) no-repeat 0 -30px;}
+
+/*131119-td高度瀏覽器*/
+.td_h { height:17px; height: auto\9; }
+.td_h1 { height:21px;/* height: auto\9;*/ }
+/*140303 id="SortGame"
+.SortGame{ width:100px; text-align:center;color:#000;}
+.SortGame_span{ display:block;  width:81px;width:90px \9; height:18px; line-height:19px; text-align:left;padding-left:7px;border:1px solid #a9a9a9;
+background: url(../img/sortgameBG.jpg) no-repeat 75px center #fff; margin-left:10px; }
+.SortTable table{ width:90px;background-color:#fff; border-bottom:1px solid #a9a9a9;border-left:1px solid #a9a9a9;border-right:1px solid #a9a9a9;
+ font-size:12px;}
+.SortTable table td{ height:18px; line-height:19px; padding-left:5px; font-family:Arial, Helvetica, sans-serif;cursor:default;}*/
+
+/*140306 id="SortGame"*/
+.SortGame{}
+.SortGame select{width:95px; font-size:12px;color:#000; text-align:center;border:1px solid #B6ACAA; margin-left:3px;}
+
+/*140424-logo前拉壩上下置中IE*/
+.pg_top { position:relative; top:2px\9;    font-size: 12px;}
+
+/*140513-more*/
+.more_bar { overflow:hidden;}
+
+/*140611-多玩法背景寬*/
+.more_iframe_w { width:100%; width:2000px\9;}
+
+/*140820-網球盤面背景+文字顏色*/
+.bg_light { background:#FCF9E7; text-align:center; white-space:nowrap; text-align:right; width:88px;}
+.bg_dark { background:#ECE3C4; text-align:center; white-space:nowrap; text-align:right; width:88px;}
+.text_green { color:#24B335;}
+.text_brown { color:#b48438;}
+
+.bg_light_bk { background:#FCF9E7; text-align:center; white-space:nowrap; text-align:right; width:88px;}
+.bg_dark_bk { background:#ECE3C4; text-align:center; white-space:nowrap; text-align:right; width:88px;}
+
+/*140821-欄位寬度*/
+.h_ouhc { /*width:120px;*/ white-space:nowrap;}
+.h_ou_tn { width:90px;}
+.h_r_tn { width:80px;}
+
+/*140829-足球滾球框框*/
+.rb_box_ft {border-collapse: collapse; border:0; padding:0;  width:68px; height:36px;background: url(../img/mem_rb_bg_ft.gif) no-repeat 0 0; }
+
+/*140903-網球多玩法*/
+.tn_team_c { float:left;}
+.tn_more { float:right; font-weight:normal; white-space:nowrap;}
+.tn_more a { font-weight:normal;}
+/*140912-籃球滾球框框+調整*/
+.rb_box_bk {border-collapse: collapse; border:0; padding:0; width:68px\9; width:70px; height:36px; }
+/*。rb_box_bk{background: url(../img/mem_rb_bg_bk.gif) no-repeat 0 0;}*/
+.bk_team_c { float:left;}
+.bk_more { float:right;}
+.rb_time_bk { color:#FFCE39; height:14px; line-height:14px;text-align:center; font-size:11px!important; padding:0px!important; position:relative; left:-1px\9; left:-2px;}
+.rb_time_color { color:#F5E1BE;}
+.rb_score_bk { line-height:17px; color:#9D834C; text-align:center; font-weight:bold; margin-top:-1px;}
+.bk_color { color:#BB3E00;}
+.bk_w { width:70px;}
+
+/*盤面右上切換按鈕*/
+.rmf_text { text-align:right;}
+.rmf_left { float:left; margin-top:0px!important;}
+.rmf_right { cursor:pointer; color:#f9c100; font-family:arial; font-weight:normal;}
+.rmf_line { margin:0 5px 0 5px;}
+
+/*140915-網球滾球框框*/
+.rb_box_tn { text-align:center; border-collapse: collapse; border:0; padding:0; width:68px; height:50px;background: url(../img/mem_rb_bg_tn.gif) no-repeat 0 0;}
+.rb_box_tn td { padding:0 0 3px 0; padding:0 0 2px 0\9; font-size:12px;}
+.rb_tn_f { font-size:11px!important; font-size:10px\9!important; position:relative; top:1px; top:2px\9; -webkit-transform:scale(0.91);}
+/*safari only*/
+::i-block-chrome,.rb_tn_f {
+ font-size:12px!important; font-size:10px\9!important; position:relative; top:2px\9;
+}}
+.tn_td { width:15px;}
+.tn_dot_on { background:url(../img/tn_dot_on.png) no-repeat 0 0; width:10px; height:10px; position:relative; top:0px; top:1px\9; left:2px;}
+.tn_dot_out { background:url(../img/tn_dot_out.png) no-repeat 0 0; width:10px; height:10px; position:relative; top:0px; top:1px\9; left:2px;}
+.rb_tn_tr { height:17px; font-weight:bold; color:#bb3e00;}
+.tn_pcolor { color:#9d834c; width:20px;}
+.tn_w { width:70px;}
+
+/*140924-籃球修改*/
+.bc_h { height:21px;}
+.h_m { width:42px;}
+
+/*141121-乒乓球*/
+.tt_dot_on { background:url(../img/tn_dot_on.png) no-repeat 0 0; width:20px; height:10px; position:relative; top:0px; top:0px\9; left:5px;}
+.tt_dot_out { background:url(../img/tn_dot_out.png) no-repeat 0 0; width:20px; height:10px; position:relative; top:0px; top:0px\9; left:5px;}
+
+/*141125-羽毛球欄寬*/
+body.BMR .mem .time, body.BMUR .mem .time { width:64px;}
+body.BMRE .mem .time { width:74px;}
+.team_bm { width:278px;}
+.team_rbm { width:268px;}
+body.BMR .mem .h_1x2, body.BMUR .mem .h_1x2, body.BMRE .mem .h_1x2 { width:42px;}
+body.BMR .mem .h_r, body.BMUR .mem .h_r, body.BMRE .mem .h_r { width:87px;}
+body.BMR .mem .h_ou, body.BMUR .mem .h_ou, body.BMRE .mem .h_ou { width:87px;}
+
+/*141128-星星位置
+body.BMR .mem .fav_tab, body.BMUR .mem .fav_tab, body.BMRE .mem .fav_tab { margin-top:-19px!important;}
+.star_all { float:right;}*/
+
+/*141219-羽球計分板*/
+.rb_box_bm { text-align:center; border-collapse: collapse; border:0; padding:0; width:68px; height:50px;background: url(../img/mem_rb_bg_bm.gif) no-repeat 0 0; }
+.rb_box_bm td { padding:0 0 3px 0; padding:0 0 2px 0\9; font-size:12px;}
+.bm_td { width:15px!important;}
+.bm_pcolor { width:30px;}
+.bm_dot_on { background:url(../img/tn_dot_on.png) no-repeat 0 0; width:10px; height:10px; position:relative; top:0px; top:1px\9; left:5px;}
+.bm_dot_out { background:url(../img/tn_dot_out.png) no-repeat 0 0; width:10px; height:10px; position:relative; top:0px; top:1px\9; left:5px;}
+
+/*150210-過關跨天*/
+.day_title {     font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: left;}
+.day_date {     position: relative;
+    top: -5px;
+    text-align: left;
+    font-size: 14px;}
+.day_date span { margin:0 15px; cursor:pointer;}
+
+.day_black { position:absolute; top:28px; left:1px; background:url(../img/day_black.png) no-repeat 0 0; width:237px; height:48px; z-index:999; display:block; color:#fff; font-family:"Arial"; font-size:14px; padding-top:17px; padding-top:15px\9; padding-left:15px;}
+.day_text_red { color:#A73842;}
+
+/*150225-乒乓球計分板*/
+.rb_box_tt { text-align:center; border-collapse: collapse; border:0; padding:0; width:68px; height:50px;background: url(../img/mem_rb_bg_tt.gif) no-repeat 0 0; }
+.rb_box_tt td { padding:0 0 3px 0; padding:0 0 2px 0\9; font-size:12px;}
+.tt_pcolor { width:30px; color:#9D834B;}
+
+/*150330-新增籃球過關背景*/
+.bg_rig_bk {background-color:#FFF; text-align:right;white-space:nowrap;/*解決賠率斷行*/}
+.bg_rig {background-color:#FFF; text-align:right;white-space:nowrap;/*解決賠率斷行*/}
+.bg_cen { background-color: #FFF; text-align:center; white-space:nowrap;}/*table style*/
+
+/*150529-網球天氣延賽遮罩*/
+.delay_bg { position: absolute; width:68px; height:30px; line-height:30px; background:url(../img/delay_bg.png) repeat 0 0; color:#fff; font-family:Arial; z-index:999;}
+.delay_text { position:relative; top:0px;}
+
+/*150707-排球計分板*/
+.rb_box_vb { text-align:center; border-collapse: collapse; border:0; padding:0; width:68px; height:50px;background: url(../img/mem_rb_bg_vb.gif) no-repeat 0 0; }
+.rb_box_vb td { padding:0 0 3px 0; padding:0 0 2px 0\9; font-size:12px;}
+.vb_pcolor { width:30px; color:#9d834c;}
+
+
+
+
+/*2010-09-20-For NewSI2 =======chg passwd ======*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ chg_passwd~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+form { margin:0; padding:0;}
+/*�ק��K�X��<div class="{MAIN_CLASS}">--����class*/
+.main {width:530px; /*height:634px;*/ font: 16px simsun; text-align:left; background-color:#f0eadf; margin:0 auto;}
+.main_top {width:530px; /*height:634px;*/ font: 16px simsun; text-align:left; background-color:#f0eadf; margin:0 auto; margin-top:131px;}
+
+/*h1 {margin: 0px; padding-left:30px; padding-right:30px; height:55px; height:54px\9; line-height:55px; font-size: 16px;color:#FFF; background:#52402a; font-weight:normal;}*/
+/*h2 {clear:right; height: 46px; font-size:12px; margin:0 0 2px 20px; padding:15px 10px 0 63px; text-align:left; font-weight:normal; background:url(../..../img/chg_icon.gif) no-repeat 0 0px;}*/
+html>body h2 { height:31px;}
+/*����*/
+.close_box { *cursor:hand; cursor:pointer; float:right; position:relative;margin:0px 10px 0 0; *margin-top:-15px; padding:1px 19px 0 0; height:14px; font-weight:normal; font-size:11px;background: url(../img/close_qa.gif) no-repeat right 0;}/*close button box*/
+span.close_box:hover { color: #C60;}
+
+.main_bg { clear:right; /*height:210px; */background-color:#f0eadf; padding:18px 29px 30px 30px; padding:17px 26px 30px 30px\9;}
+.main_bg_w { width:470px;}
+
+/*.main_box { height:154px;*height:164px; padding-top:10px;}*/
+em{width:86px; font-style:normal;white-space: nowrap;color:#000;text-align:right;font-size: 12px;}
+p { margin:0; padding:5px 0 4px 0; padding:4px 0 3px 0\9; text-align:right;}
+.main .keyin { text-align: right; padding-top:6px; padding-top:7px\9;}
+.keyin { text-align: right; padding-top:10px; padding-right:2px\9;}
+.keyin input { padding-left:10px; font-size:16px; color:#323232; line-height:55px\9; outline:none;}
+.keyin_txt { font-family: simsun; color:#463D2F; position:relative; top:18px; float:left;}
+/*safari only*/
+::i-block-chrome,.keyin_txt {
+   font-family: simsun; color:#463D2F; position:relative; top:18px; float:left;
+}
+/* Firefox */
+@-moz-document url-prefix()
+{html>body .keyin_txt { top:18px;}}
+
+/*�خش��ܦr����*/
+::-webkit-input-placeholder { /* WebKit browsers */ 
+color: #463d2f!important; opacity:0.8;
+filter:alpha(opacity=80);opacity:0.8;zoom:1;
+} 
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+color: #463d2f!important; opacity:0.8;
+filter:alpha(opacity=80);opacity:0.8;zoom:1;
+} 
+::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+color: #463d2f!important; opacity:0.8;
+filter:alpha(opacity=80);opacity:0.8;zoom:1;
+} 
+:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+color: #463d2f!important; opacity:0.8;
+filter:alpha(opacity=80);opacity:0.8;zoom:1;
+} 
+.info { vertical-align: top; padding-left:32px; padding-top:5px;  line-height:18px;font: 12px  Arial, Helvetica, sans-serif;}
+.info span { display:block; margin-bottom:5px;}
+tt { margin-left:0px;}
+.bb { display:block; font-weight:bold;}
+.txt { width:330px; height:55px; margin-bottom:15px; border:1px solid #e0d4c0;}
+.foot { height:55px; /*width:470px;*/ width:474px\9; padding-top:5px; text-align:left; font:16px Arial, Helvetica, sans-serif;}
+.foot input { font-size:16px; padding-left:0px; padding-right:0px;}
+.bottom { height:10px; padding:0; background: url(../..../img/pass_foot.gif) no-repeat 0 100%;}
+
+.no {color:#FFF; cursor:pointer; height: 55px; width: 229px; margin-right:8px; padding-top:2px; border:0; background:#484540;}
+.no:hover { background:#5d5953;}
+.yes {color:#FFF; cursor:pointer; height: 55px; width:229px; padding-top:2px; border:0; background:#658c18;}
+.yes:hover { background:#729e1b;}
+
+.chg_no {color:#FFF; cursor:pointer; height: 55px; width: 229px; margin-right:8px; margin-right:8px\9; padding-top:2px; border:0; background:#484540;}
+.chg_no:hover { background:#5d5953;}
+.chg_yes {color:#FFF; cursor:pointer; height: 55px; width:229px; padding-top:2px; border:0; background:#658c18;}
+.chg_yes:hover { background:#729e1b;}
+
+
+.min_main { width:304px; height:176px; font: 12px  Arial, Helvetica, sans-serif;background:  url(../..../img/pass_head_min.gif) no-repeat 0 0;}
+h3 {margin: 0px;padding-top: 12px; padding-left:38px;height:25px; *height:37px; text-align:left;font-size: 12px;color:#F8C100;}
+.title { margin:20px 0 0 95px; width:162px; text-align:center;}
+.min_box { width:284px; height:130px; text-align:left; border:1px solid #F90;}
+.min_info { margin:5px 0 0 95px;width:162px;}
+.show td {width:54px ;height:20px; line-height:20px; text-align:center; font-weight:bold; font: 12px  Arial, Helvetica, sans-serif;}
+.bar_1,.bar_2,.bar_3 { width:54px; height:12px; padding:0; }
+.bar_1 { background-color:#FF1D1E;}
+.bar_2 { background-color:#FF0;}
+.bar_3 { background-color:#5FDA43;}
+#BLUE .foot { background-color: none;}
+
+/*1006-�����s�W*/
+.text_box { height:100px; line-height:39px; font-size:16px; color:#463D2F;}
+/*�K�X�����Z*/
+.text_1 { margin-top:0px;}
+.text_2 { margin-top:1px\9;}
+.text_3 { margin-top:0px;}
+.text_4 { margin-top:0px;}
+/*�ק��K�Xerror*/
+.err_info { text-align:left; font-size:16px; width:423px; width:470px\9; padding:16px 10px 17px 35px; line-height:20px; margin-top:5px; margin-bottom:19px; margin-left:auto; margin-right:auto; color:#A73339; border:1px solid #D3797C; background:#F1D9DA; background:url(../..../img/index_error.png) 10px no-repeat #F1D9DA;}
+
+/*�Ыرb��error*/
+.err_info_ID { text-align:left; font-size:16px; width:420px; width:470px\9; padding:16px 10px 17px 35px; line-height:20px; margin-top:8px; margin-bottom:15px; margin-left:auto; margin-right:auto; color:#A73339; border:1px solid #D3797C; background:#F1D9DA; background:url(../..../img/index_error.png) 10px no-repeat #F1D9DA;}
+
+/*���㸹�L�H�ϥ�*/
+.ok_info { text-align:left; font-size:16px; width:420px; width:470px\9; padding:16px 10px 17px 35px; line-height:20px; margin-top:8px; margin-bottom:15px; margin-left:auto; margin-right:auto; color:#658B18; border:1px solid #99c250; background:#e4eed1; background:#F1D9DA; background:url(../..../img/ok_pic.png) 10px no-repeat #e4eed1;}
+
+/*IE10*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
+.err_info { width:423px;}
+.err_info_ID { width:420px;}
+.ok_info { width:420px;}
+}
+/**/
+
+/*1006-�Ыصn���b��*/
+.chg_left { float:left;}
+.chg_right { float:right; cursor:pointer; color:#F5B16B;}
+.chg_txt { width:272px; height:55px; line-height:55px\9; margin-bottom:15px; margin-right:-8px; margin-right:-10px\9; border:1px solid #e0d4c0;}
+.chg_btn { width:119px; width:120px\9; height:55px; background:url(../..../img/zh-tw/chg_tick.jpg) 0 0 no-repeat ; border:none; position:relative; left:0px; left:2px\9; top:21px; top:-15px\9; cursor:pointer; margin-top:-55px; margin-top:0px\9;}
+/*IE10*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
+.chg_btn { top:-1px;}
+}
+/**/
+.chg_btn:hover { background:url(../..../img/zh-tw/chg_tick.jpg) 0 -55px no-repeat ;}
+/*safari only*/
+::i-block-chrome,.chg_btn {
+  width:120px; width:120px\9; height:55px; background:url(../..../img/zh-tw/chg_tick.jpg) 0 0 no-repeat ; border:none; position:relative; left:0px; left:2px\9; top:-16px; top:-15px\9; cursor:pointer; margin-top:0px;
+}
+::i-block-chrome,.chg_btn:hover { background:url(../..../img/zh-tw/chg_tick.jpg) 0 -55px no-repeat ;}
+/* Firefox */
+@-moz-document url-prefix()
+{html>body .chg_btn { top:0px; margin-top:0px;}}
+
+.chg_main {width:530px;/* height:560px;*/ font: 16px simsun; text-align:left; background-color:#f0eadf; margin:0 auto; margin-top:131px;}
+.chg_list { font-size:16px; line-height:20px; padding:6px 0 17px 0; color:#463D2F;}
+.red { color:#7B0F0F;}
+.chgtext_box { height:100px; line-height:20px; font-size:16px; color:#463D2F;}
+/*�Ыرb�������Z*/
+.chtext_1 { margin-top:9px; margin-top:11px\9;}
+.chtext_2 { margin-top:19px; margin-top:20px\9;}
+.chtext_3 { margin-top:19px; margin-top:21px\9;}
+.chtext_4 { margin-top:19px; margin-top:21px\9; margin-bottom:11px; margin-bottom:10px\9;}
+/*1007-���U����*/
+.gui_div { width:950px; margin:36px auto 55px auto; text-align:center;}
+.gui_title { font-family:simsun; color:#463D2F; font-size:27px; height:60px; padding-left:56px; background:url(../..../img/help_ipic.png) no-repeat; border-bottom:1px solid #E5DCCC;}
+.gui_h { height:30px;}
+.gui_pic_w { width:358px;}
+.gui_w { width:30px;}
+.gui_txt_w { width:562px; font-size:16px; vertical-align:top; font-family:simsun; color:#463D2F;}
+
+/*IE10�خ�X�M�p�����h��*/
+input::-ms-clear { display:none;}
+input::-ms-reveal { display:none;}
+
+
+.moresname{    margin: 11px 0 0 0;
+    padding: 11px 0 0 11px;
+    height: 34px;
+    text-align: left;
+    font: 0.75em Arial, Helvetica, sans-serif;
+    color: #E9B567;
+    font-weight: bold;
+    background: url(../img/order_msg_h2.gif) no-repeat left top;}
+
+    .mores{float: right;
+    margin-right: 11px;
+    font-weight: normal;    color: #FFF;}
+     .mores a{color: #FFF;}
+.jiaoyidan {
+    display:none;    
+    width: 216px;
+}
+    .jiaoyidan b {
+    font: 0.75em Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 63px;
+    text-align: center;
+    padding-top: 16px;
+    font-weight: bold;
+    width: 216px;
+    display: block;
+    background-color: #E3CFAA!important;
+    margin-top: -3px;
+    }
+
+.navleft{
+       /* overflow-y: auto; */
+    width: 217px;
+    height: 100%;
+    /* padding-left: 12px; */
+    margin: 0 auto;
+}
+
+.red {
+
+color:red;}
+
+.xiao{
+        color: #C00;
+}
+
+.total_color{
+        color: #C00;font-weight: bold;
+}
+
+.dxbg{
+    background-color: yellow;    color: #C00;
+font-weight:bold;
+}
+.legicon{
+           width: 15px;
+    height: 14px;
+        margin: 2px 1px 4px 0px;
+     
+    background: url(../img/mem_arr.gif) 0px 0px;
+     background-repeat: no-repeat; 
+    padding: 0 !important;
+    display: block;
+ background-repeat:no-repeat; 
+
+}
+
+.legclose{
+        width: 15px;
+    height: 14px;
+    margin: 1px 1px 0 0px;
+    background: url(../img/mem_arr.gif) no-repeat 0 -20px;
+}
+
+.tanfoot{
+        background: url(../img/leg_foot.png) no-repeat;
+    margin-top: -3px;    height: 5px;
+}
+
+.refresh_right {
+    color: #F8C100;
+    background: url(../img/mem_refresh_M_btn.gif) no-repeat;
+    width: 100px;
+    height: 45px;
+    line-height: 45px;
+    cursor: pointer;
+    padding: 0 0 0 26px;
+    font: normal 0.75em Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    position: absolute;
+        top: 97px;
+    left: 780px;
+}
+
+body {
+
+margin:0; padding:0;    background: transparent;}
+.gamecenter {
+
+         padding: 39px 0 0 0px;
+    position: relative;}
+.check_on {
+ color: #F9C100 !important;
+}
+/*.check_on a{
+    color: #F9C100;}*/
+
+.refresh_rights{
+        color: #F8C100;
+    background: url(../img/mem_refresh_M_btn.gif) no-repeat;
+    width: 100px;
+    height: 45px;
+    line-height: 45px;
+    cursor: pointer;
+    padding: 0 0 0 26px;
+    font: normal 0.75em Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    position: absolute;
+    top: 97px;
+    left: 806px;
+}
+
+.pd {
+
+padding:10px 0 0 10px;}
+
+.detaile_table {
+
+display:none;}
+
+.gonggaobox {
+       
+    display:none;
+
+}
+
+.jiaoyi_info,.jir {
+
+display:none;
+overflow: auto;
+}
+
+#type li {
+color:white;}
+
+.jri {
+    float:left;
+display:none;
+overflow:auto;    padding: 0 0 0 10px;
+}
+
+.ying {
+    margin-left: 165px;}
+
+.no_game_fox {
+    clear: left;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #FFF;
+    width: 722px;
+    font: 12px Arial, Helvetica, sans-serif;
+    padding: 30px 0px 0px 0px;
+    border: 1px solid #B9B9A3;
+    display: block;
+}
+
+
+.mem .game {
+    width: 100%;
+    background-color: #B9B9A3;
+    clear: both;
+    font-size: 12px;
+    border-top: 1px solid #B9B9A3;
+    border-left: 1px solid #B9B9A3;
+}
+.game {
+    background-color: #B9B9A3;
+    font-size: 0.75em;
+    width: 717px;
+}
+
+.ft {
+  width: 100%;
+    height: 11px;
+    background: url(../img/mem_foot_ft.gif) no-repeat 100% 100%;
+    vertical-align: bottom;
+}.ft b {
+    display: block;
+    width: 30px;
+    height: 11px;
+    line-height:0;
+    line-height: 11px;
+    background: url(../img/mem_foot_ft.gif) no-repeat 0 100%;
+}
+
+  .hr {
+    text-align: center;
+    background-color: #EAEAEA;
+}
+ .full {
+    text-align: center;
+    background-color: #D4E8FF;
+}
+ .full_title {
+    width: 65px;
+    white-space: nowrap!important;
+    padding: 3px 0;
+    color: #C00;
+}
+ .vs {
+    width: 25px;
+    color: #000;
+    padding: 3px 0;
+    text-align: center;
+}
+.saitxt{
+        margin-left: 5px;
+    margin-right: 5px;
+}.full_main {
+    width: 294px;
+    font-weight: bold;
+    color: #C00;
+    padding: 3px 0;
+}.team_c {
+    /* width: 246px!important; */
+    width: 270px;
+}.team_h {
+    /* width: 246px!important; */
+    width: 270px;
+}
+ .mem .hr_main {
+    width: 294px;
+    font-weight: bold;
+    padding: 3px 0;
+} .mem .hr_title {
+    width: 65px;
+    white-space: nowrap!important;
+    padding: 3px 0;
+}
+
+  .b_hline .showleg {
+/*    width: 15px;
+    height: 18px;
+    margin: 0;
+    vertical-align: middle;
+    cursor: hand;
+    margin-left: 6px;
+    padding-right: 10px;
+    float: left;
+    clear: left;*/
+width: 15px; */
+    height: 18px;
+    margin: 0;
+    /* vertical-align: middle; */
+    cursor: hand;
+    /* margin-left: 6px; */
+    /* padding-right: 10px; */
+    float: left;
+    /* clear: left; */
+}
+ .b_hline .showleg .LegOpen {
+         width: 15px;
+    height: 14px;
+    margin: 1px 1px 0 0px;
+    background: url(../img/mem_arr.gif) no-repeat 0 0;    display: inline-block;
+}   
+ .b_hline .leg_bark{
+          float: left;
+    line-height: 17px;
+    /* color: #4b3621; */
+    color: #4b3621;
+    font-weight: bold;
+}.teams {
+    text-align: center;
+    width: 65px!important;
+    background-color: #FFF;
+    white-space: nowrap!important;
+    padding: 3px 0;
+}
+
+/*.result .type_out {
+
+    color: #F9C100 !important;}*/
+.tool_box {
+
+float:right;}
+.team_c_tn {
+    width: 262px;
+}.team_h_tn {
+    width: 262px;
+}
+ .hr_main_tn {
+    width: 251px;
+    font-weight: bold;
+    padding: 3px 0;
+}.full_title_tn {
+    width: 85px;
+    white-space: nowrap!important;
+    text-transform: uppercase;
+    color: #C00;
+}.full_main_tn {
+    width: 251px;
+    font-weight: bold;
+    color: #C00;
+    padding: 3px 0;
+}
+
+.loading_fixed {
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /*background: rgba(0,0,0,.3);*/
+    z-index: 1000;
+    display: block;
+    top: 38px;
+
+}
+
+.loading_fixed img {
+
+ 
+    width:38px;
+    height:38px;
+    position: absolute;
+    top: 40%;
+    left: 18%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);}
+
+.team_c_ft {
+    /* width: 246px!important; */
+   width: 270px;
+}
+    .team_c_ft a {
+            color: #C00;
+            font-weight:bold;
+    }
+        .team_c_ft a:hover {
+        
+            color: #000;}
+.IN {
+
+position:relative;}
+        .IN .show_p3 td, .game_team .show_p3 td {
+    height: 16px;
+    font-size: 11px;
+    font-family: Arial;
+    font-weight: bold;
+    vertical-align: top;
+    color: #000;
+}
+        .IN .show_p3 .p3_num1, .game_team .show_p3 .p3_num1 {
+    padding: 0 1px 0 3px;
+    line-height: 12px;
+    background: url(../img/show_p3_left.gif) no-repeat 0 0;
+    white-space: nowrap;
+}.IN .show_p3 .em, .game_team .show_p3 .em {
+    width: 11px;
+    /* font-size: 11px!important; */
+    padding: 0;
+    background: url(../img/show_p3_bg.gif) no-repeat 0 0;    display: inline-block;
+}
+
+ .IN .show_p3 .p3_num2, .game_team .show_p3 .p3_num2 {
+    padding: 0 4px 0 0px;
+    line-height: 12px;
+    background: url(../img/show_p3_right.gif) no-repeat 100% 0;
+}html > body .game td .IN .show_p3 {
+    position: absolute;
+    margin-right: 8px;
+    margin-top: -7px;
+    right: 0px;
+}
+
+.game .leg_bar {
+
+    position: absolute;
+   top: 2px;
+    left: 21px;  }
+
+
+.mem .fav_bar {
+    height: 34px;
+    color: #FFF;
+}.mem .fav_bar td {
+    white-space: nowrap;
+    font: normal 0.75em Arial, Helvetica, sans-serif;
+    height: 26px;
+    padding: 0;
+    text-align: left;
+}
+
+.b_hline .IN {
+
+    position: absolute;
+    top: 9px;
+    right: 0;}
+
+
+    .deletebtn .btn{right: 0;
+    clear: right;
+    width: 10px;
+    height: 9px;
+    border: none;
+    margin: 0;
+    color: #F00;
+    cursor: pointer;
+    background: url(../img/order_icon.gif) no-repeat 0 0;
+    margin-top: -9px;}
+
+    /****************************************冠军*******************************************/
+    .guanjuns {
+
+width:679px;}
+        .guanjuns .top {
+        
+            position: relative;
+    background: #4E432A url(../img/mem_h1_ft.gif) no-repeat 100% 0;
+    color: #FFF;
+    clear: both;}
+.guanjunname {
+
+      margin: 0 15px 0 0;
+    padding: 4px 2px 1px 11px;
+    font: 0.75em/1.2;
+    white-space: nowrap;
+    background: url(../img/mem_h1_ft.gif) no-repeat 0 0;
+    text-align: left;
+    padding: 6px 2px 3px 11px;
+    font-size: 12px;
+    color: white;}
+    .guanjunname em {
+    
+    color:white;}
+
+.guanjunct {
+
+    border: 2px solid #BC9A3F;
+    border-top-width: 0;
+    border-bottom: 1px solid #D7D7C1;
+    padding: 3px;
+    background-color: #D7D7C1;
+    clear: both;}
+    .guanjunct .xuanze {
+      overflow: AUTO;
+    background: #86715C;
+    border-bottom: 3px solid #B9B9A3;
+    padding: 5px 0 5px 8px;
+
+    }
+
+    .guanjunct .xuanze .shuaxin{
+             cursor: pointer;
+    height: 26px;
+    width: 38px;
+    float: left;
+    text-align: center;
+    display: inline-block;
+    background: url(../img/his_refresh_btn.gif) no-repeat 0 0;
+    }
+
+      .guanjunct .xuanze .selctchk{
+              color: #F9C100;
+    cursor: pointer;
+    height: 26px;
+    width: 99px;
+    line-height: 26px;
+    /* padding-top: 6px; */
+    background: url(../img/mem_league_btn.gif) no-repeat;
+    cursor: pointer;
+    /* margin-top: 5px; */
+    margin-left: 10px;
+    font-size: 12px;
+    float: left;
+    text-align: center;
+    display: inline-block;    margin-right: 20px;
+    }
+
+  .guanjunct .names{
+    padding: 1px 4px;
+    /* white-space: nowrap; */
+    font-size: 12px;
+    border-left: 2px solid #B9B9A3;
+    border-right: 2px solid #B9B9A3;
+    /* border-bottom: 2px solid #B9B9A3; */
+    font-family: Arial, Helvetica, SimSun, sans-serif;
+    background-color: #FCF9CE;
+    line-height: 22px;
+    height: 22px;
+    color: #4b3621;
+    font-weight: bold;
+        cursor: pointer;
+}
+.guanjunct .names i {
+            width: 15px;
+    height: 14px;
+    margin: 4px 7px 0 0px;
+    background: url(../img/mem_arr.gif) no-repeat 0 0;
+    padding: 0 !important;
+    display: block;
+    float: left;
+   
+
+}
+    .guanjunct .names .time {
+      margin-left:10px;
+    }
+    .guanjunct .names span {
+    
+    float:left;}
+
+    .guanjunct .neirong {
+      background-color: white;
+    overflow: auto;
+    border-left: 2px solid #B9B9A3;
+    border-right: 2px solid #B9B9A3;
+    border-bottom: 2px solid #B9B9A3;
+    }
+        .guanjunct .neirong p {
+       padding: 5px 4px 5px 8px;
+    font-size: 12px;
+    background-color: #B9B9A3;
+    text-align: left;
+    font-family: Arial, Helvetica, SimSun, sans-serif;
+        clear:both;
+        }
+        .guanjunct .neirong li {
+        
+         padding: 1px 4px;
+    font-size: 12px;
+    display: block;
+    line-height: 19px;
+    color: #493721;
+    white-space: nowrap;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+        }
+            .guanjunct .neirong li .red {
+         
+    font-weight: bold;
+    color: #CC0000;
+    text-align:right;
+    float:right;
+
+            }
+        .guanjunct .neirong .lf {
+        
+        float:left;
+        border-right:2px solid  #B9B9A3;
+        width:346px;
+
+        }
+
+         .guanjunct .neirong .rgs {
+        
+       margin-left:348px;
+        
+
+        }
+      .guanjunct .xuanze .page_no{
+    
+        float: left;}
+        .guanjunct .xuanze .page_no span {
+        
+       color: white;
+    font-size: 14px;
+    margin-top: 4px;
+    display: inline-block;
+        }
+
+.guanjunct .xuanze .page_no span em {
+
+    color: white;
+    padding-top: 2px;
+    display: inline-block;
+    width: inherit;
+    /* border: 1px solid; */
+    float: left;
+    margin-right: 8px;}
+
+.qiulei #type {
+    float:left;
+    /*width:843px;*/
+        width: 100%;
+}
+
+.gamecenter .Table19 {
+
+    width: 715px;}
+.pd10 {
+
+padding-left:10px;}
+
+.btn_td #closebtn{
+        margin-right: 16px;
+}
+
+.leg_top h1 #chkall{
+        vertical-align: middle;
+    margin: 0 17px 0 0;
+}
+
+.leg_top h1 .all_sel{    float: left;text-align: left;
+    display: inline-block;}

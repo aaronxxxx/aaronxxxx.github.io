@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase/
+RewriteRule ^DepositCallback\.php$ 
+RewriteRule ^(.*)/([\w\-]+)$ $1/$2.php

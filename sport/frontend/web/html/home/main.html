@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>首页</title>
+        <link href="css/meigaomei.css" rel="stylesheet" />
+        <link href="css/standard.css" rel="stylesheet" />
+        <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+        <script src="js/server.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                getMsgInfo();
+                $(window.parent.document).find("#mainFrame").height(755);
+                $(".closePopbtn").click(function () {
+                    $(".mess").hide();
+                })
+            })
+            /**
+        * 获取用户登录后的信息
+        * @returns {}
+        */
+            function getMsgInfo() {
+                $.post("/?r=passport/user-api/json", {},
+                    function (rst) {
+                        $("#msg").html(rst);
+                    },
+                "json");
+            }
+        </script>
+    </head>
+    <body>
+        <div id="index-banner-wrap" class="clearfix">
+            <!--首页banner start-->
+            <div class="index-banner-pos">
+                <div class="index-banner">
+                    <div id="kinMaxShow" style="width: 100%; height: 410px; overflow: visible; position: relative; visibility: visible; display: block;">
+                        <style type="text/css">
+                            #kinMaxShow * {
+                                margin: 0;
+                                padding: 0;
+                            }
+
+                            #kinMaxShow .KMSPrefix_kinMaxShow_image_box {
+                                width: 100%;
+                                height: 410px;
+                                position: relative;
+                                z-index: 1;
+                            }
+
+                            #kinMaxShow .KMSPrefix_kinMaxShow_image_box .KMSPrefix_kinMaxShow_image_item {
+                                width: 100%;
+                                height: 410px;
+                                position: absolute;
+                                overflow: hidden;
+                            }
+
+                            #kinMaxShow .KMSPrefix_kinMaxShow_image_box .KMSPrefix_kinMaxShow_image_item a.KMSPrefix_kinMaxShow_coverlink {
+                                width: 100%;
+                                height: 410px;
+                                display: block;
+                                text-decoration: none;
+                                padding: 0;
+                                margin: 0;
+                                background: transparent;
+                                text-indent: 0;
+                                outline: none;
+                                hide-focus: expression(this.hideFocus=true);
+                            }
+                        </style>
+                    </div>
+                </div>
+            </div>
+            <!--首页banner end-->
+        </div>
+        <div id="wram-wrap" class="clearfix">
+            <div class="whole-auto wram-wrap-inner">
+                <a class="openAccount-btn" onclick="javascript:menu_url(70);return false" href="javascript:void(0);"></a>
+                <a class="onlineService-btn" href="javascript:;" onclick="openOnlineServiceWindow();"></a>
+                <div class="news-bar">
+                    <marquee scrollamount="2" scrolldelay="10" class="recent_news_scroll" direction="left" nowarp="" onmouseover="this.stop();" onmouseout="this.start();">
+                        <span id="msg" onclick="HotNewsHistory();" class="msg-col">欢迎光临</span>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+        <div id="page-index-wrap" class="clearfix">
+            <div class="whole-auto">
+                <div class="page-index-pho-live index-pho-attr"><a href="../business/live.html" target="mainFrame"></a></div>
+                <div class="page-index-pho-game index-pho-attr"><a href="../business/sport.html" target="mainFrame"></a></div>
+                <div class="page-index-pho-magic"><a href="#"></a></div>
+                <div class="page-index-pho-lottery"><a href="../business/lottery.html" target="mainFrame"></a></div>
+                <div class="page-index-pho-ele index-pho-attr"><a href="../business/game.html" target="mainFrame"></a></div>
+            </div>
+        </div>
+        <div class="mess">
+            <p class="Poptop">
+                <span class="Poptitle">【美高梅娱乐城】 欢迎您！</span><span class="closePopbtn">关闭</span>
+            </p>
+            <p class="Popcontent">
+                <a href="" target="_blank"> <img src="images/redpocket.jpg"></a>
+            </p>
+        </div>
+    </body>
+</html>

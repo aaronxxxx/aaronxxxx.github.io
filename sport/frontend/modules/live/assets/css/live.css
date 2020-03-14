@@ -1,0 +1,140 @@
+.ele-live-wrap {
+    padding: 3px 0 20px;
+    font-size: 0;
+    overflow: hidden;
+    width: 900px;
+    margin: 0 auto;
+}
+.ele-live-align{
+    position: relative;
+    height: 650px;
+}
+.ele-live-align > a{
+    position: absolute;
+    box-sizing: border-box;
+    height: 650px;
+}
+.ele-live-align a.ele-live-bb {
+    left: 0;
+}
+.ele-live-obg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: opacity 0.25s linear 0s;
+    -moz-transition: opacity 0.25s linear 0s;
+    -webkit-transition: opacity 0.25s linear 0s;
+    -o-transition: opacity 0.25s linear 0s;
+}
+.ele-current .ele-live-obg{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.ele-live-cbg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.is-only-bb.ele-live-bb .ele-live-obg {
+    background-image: url('/public/publics/images/bbin900_h.jpg');
+}
+.is-only-bb.ele-live-bb .ele-live-cbg {
+    background-image: url('/public/publics/images/bbin900_n.jpg');
+}
+.ele-live-bb .ele-live-obg {
+    background-image: url('/public/publics/images/bbin450_n.jpg');
+}
+.ele-live-bb .ele-live-cbg {
+    background-image: url('/public/publics/images/bbin450_h.jpg');
+}
+.ele-live-ag .ele-live-obg {
+    background-image: url('/public/publics/images/ag450_n.jpg?v=1');
+}
+.ele-live-ag .ele-live-cbg {
+    background-image: url('/public/publics/images/ag450_h.jpg?v=1');
+}
+.ele-live-ab .ele-live-obg {
+    background-image: url('/public/publics/images/allbet450_n.jpg');
+}
+.ele-live-ab .ele-live-cbg {
+    background-image: url('/public/publics/images/allbet450_h.jpg');
+}
+.ele-live-og .ele-live-obg {
+    background-image: url('/public/publics/images/og450_n.jpg');
+}
+.ele-live-og .ele-live-cbg {
+    background-image: url('/public/publics/images/og450_h.jpg');
+}
+.ele-live-gd .ele-live-obg {
+    background-image: url('/public/publics/images/gd450_n.jpg');
+}
+.ele-live-gd .ele-live-cbg {
+    background-image: url('/public/publics/images/gd450_h.jpg');
+}
+.ele-live-sa .ele-live-obg {
+    background-image: url('/public/publics/images/sa450_n.jpg');
+}
+.ele-live-sa .ele-live-cbg {
+    background-image: url('/public/publics/images/sa450_h.jpg');
+}
+.ele-live-obg,
+.ele-live-cbg{
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+.change-bg-pos .ele-live-cbg{
+    background-position: -125px 0;
+}
+/* ag-live login */
+#ele-livelogin-overlay {
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/public/publics/images/modal_bg.png') repeat;
+}
+#ele-livelogin-content {
+    background-color: #FFF;
+    position: fixed;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    width: 620px;
+    height: 324px;
+    margin: -160px 0 0 -310px;
+    padding: 10px;
+}
+.ele-livelogin-ag {
+    background: url('/public/publics/images/login-ag.png') #FFF 50% 50% no-repeat;
+}
+.ele-livelogin-ab {
+    background: url('/public/publics/images/login-ab.jpg') #FFF 50% 50% no-repeat;
+}
+.ele-livelogin-og {
+    background: url('/public/publics/images/login-og.jpg') #FFF 50% 50% no-repeat;
+}
+.ele-livelogin-gd {
+    background: url('/public/publics/images/login-gd.jpg') #FFF 50% 50% no-repeat;
+}
+.ele-livelogin-sa {
+    background: url('/public/publics/images/login-sa.jpg') #FFF 50% 50% no-repeat;
+}
+#ele-livelogin-close {
+    background: url('/public/publics/images/modal_close.png') #666 50% 50% no-repeat;
+    position: absolute;
+    top: 0;
+    right: -60px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+#ele-livelogin-close:hover {
+    background-color: #606060;
+}

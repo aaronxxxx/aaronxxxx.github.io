@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta charset="UTF-8">
+    <title>美高梅</title>
+    <meta name="keywords" content="美高梅">
+    <meta name="description" content="美高梅">
+    <link href="home/css/meigaomei.css" rel="stylesheet" />
+    <link href="home/css/standard.css" rel="stylesheet" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="home/js/server.js"></script>
+    <script src="home/js/jquery.s-animate.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#float .float-img-right").animateFloatBlock({
+                position: "right",
+                actionEvent: "hover",
+                actionCss: 0,
+                gapTopWithWindowDivisor: 8
+            });
+            $("#close").click(function () {
+
+                $("#float").hide();
+            })
+        })
+    </script>
+</head>
+<body>
+    <iframe id="topFrame" src="home/top.html" name="topFrame" frameborder="0"
+        width="100%" height="157" marginheight="0" marginwidth="0"
+        border="0" scrolling="no" allowtransparency="true"></iframe>
+    <iframe id="mainFrame" src="home/main.html" name="mainFrame" frameborder="0"
+        width="100%" height="755" marginheight="0" marginwidth="0"
+        border="0" scrolling="auto" allowtransparency="true"></iframe>
+    <iframe id="bottomFrame" src="home/bottom.html" name="bottomFrame" frameborder="0"
+        width="100%" height="675" marginheight="0" marginwidth="0" border="0"
+        scrolling="no" allowtransparency="true"></iframe>
+    <!--客服-->
+    <div id="float">
+
+        <div class="float-list float-img-right" style="right: 0px; top: 84.125px; transition: right 0.35s ease-out;">
+            <a href="javascript:BBOnlineService();">
+                <span class="img_png kf-server img-png-r"></span>
+            </a>
+            <a href="javascript:void(0)">
+                <span class="img_png kf-freeReg img-png-r"></span>
+            </a>
+            <a href="home/subiframe/wentiframe.html" target="mainFrame">
+                <span class="img_png kf-newGuid img-png-r"></span>
+            </a>
+            <a href="home/subiframe/regframe.html" target="mainFrame">
+                <span class="img_png kf-agent img-png-r"></span>
+            </a>
+            <a href="javascript:void(0)">
+                <span class="img_png kf-band img-png-r"></span>
+            </a>
+            <a href="javascript:void(0)">
+                <span class="img_png kf-close-r img-png-r" id="close"></span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

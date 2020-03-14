@@ -1,0 +1,56 @@
+@CHARSET "UTF-8";
+
+/* befor 下注提示框 */
+
+div#gold-ui-menu{
+	background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(128, 128, 128, 0.7) 0%, rgba(17, 17, 17, 1) 100%) repeat scroll 0 0;
+    border: 1px solid #111;
+    border-radius: 8px;
+    box-shadow: 9px 9px 9px rgba(17, 17, 17, 0.3);
+    display: none;
+    padding: 7px;
+    position: absolute;
+    width: 120px;
+    z-index: 10005;
+	
+}
+
+div#gold-ui-menu a {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    color: black;
+    display: block;
+    font-size: 10pt;
+    font-weight: normal;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    width: 118px;
+}
+
+div#gold-ui-menu a:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(192, 192, 192, 0.7) inset;
+}
+div#gold-ui-menu a:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+div#gold-ui-menu a:hover {
+    background-color: #bbdded;
+}
+
+#gold-ui-mask {
+    display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+/* end 下注提示框 */

@@ -1,0 +1,5104 @@
+@charset "UTF-8";
+#sport {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+  /* Document
+   ========================================================================== */
+  /**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+  /* Sections
+     ========================================================================== */
+  /**
+   * Remove the margin in all browsers.
+   */
+  /**
+   * Render the `main` element consistently in IE.
+   */
+  /**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+  /* Grouping content
+     ========================================================================== */
+  /**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  /* Text-level semantics
+     ========================================================================== */
+  /**
+   * Remove the gray background on active links in IE 10.
+   */
+  /**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+  /**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  /**
+   * Add the correct font size in all browsers.
+   */
+  /**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+  /* Embedded content
+     ========================================================================== */
+  /**
+   * Remove the border on images inside links in IE 10.
+   */
+  /* Forms
+     ========================================================================== */
+  /**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+  /**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+  /**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+  /**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */
+  /**
+   * Correct the padding in Firefox.
+   */
+  /**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+  /**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+  /**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+  /**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+  /**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+  /**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+  /**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+  /**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+  /* Interactive
+     ========================================================================== */
+  /*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+  /*
+   * Add the correct display in all browsers.
+   */
+  /* Misc
+     ========================================================================== */
+  /**
+   * Add the correct display in IE 10+.
+   */
+  /**
+   * Add the correct display in IE 10.
+   */
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+  /* HTML5 display-role reset for older browsers */
+  /*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.2
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2017 Daniel Eden
+ */
+  /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+  /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+  /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+  /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+  /**
+ * ----------------------------------------
+ * animation rotate-in-ver
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation slit-in-vertical
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation slit-in-horizontal
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation slit-out-vertical
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation flip-in-ver-right
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation slide-in-bck-center
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation slide-in-bck-top
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation slide-in-fwd-center
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation slide-in-fwd-top
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation slide-in-top
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation slide-out-top
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation slide-out-bck-center
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation slide-out-bck-center
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation slide-out-fwd-center
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation swing-in-top-bck
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation swing-out-top-bck
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation swing-out-top-fwd
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation fade-in-bck
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation fade-in-top
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation fade-in-bottom
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation fade-in-left
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation fade-in-right
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation fade-out
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation puff-in-center
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation kenburns-bottom
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation kenburns-bottom-fade
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation tracking-in-contract
+ * ----------------------------------------
+ */
+  /**
+ * ----------------------------------------
+ * animation width-expand
+ * ----------------------------------------
+ */
+  /* Animation Set */ }
+  #sport html {
+    line-height: 1.15;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */ }
+  #sport body {
+    margin: 0; }
+  #sport main {
+    display: block; }
+  #sport h1 {
+    font-size: 2em;
+    margin: 0.67em 0; }
+  #sport hr {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    /* 1 */
+    height: 0;
+    /* 1 */
+    overflow: visible;
+    /* 2 */ }
+  #sport pre {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */ }
+  #sport a {
+    background-color: transparent; }
+  #sport abbr[title] {
+    border-bottom: none;
+    /* 1 */
+    text-decoration: underline;
+    /* 2 */
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+    /* 2 */ }
+  #sport b,
+  #sport strong {
+    font-weight: bolder; }
+  #sport code,
+  #sport kbd,
+  #sport samp {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */ }
+  #sport small {
+    font-size: 80%; }
+  #sport sub,
+  #sport sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline; }
+  #sport sub {
+    bottom: -0.25em; }
+  #sport sup {
+    top: -0.5em; }
+  #sport img {
+    border-style: none; }
+  #sport button,
+  #sport input,
+  #sport optgroup,
+  #sport select,
+  #sport textarea {
+    font-family: inherit;
+    /* 1 */
+    font-size: 100%;
+    /* 1 */
+    line-height: 1.15;
+    /* 1 */
+    margin: 0;
+    /* 2 */ }
+  #sport button {
+    border: 0;
+    padding: 0;
+    border-radius: 0; }
+  #sport button,
+  #sport input {
+    /* 1 */
+    overflow: visible; }
+  #sport button,
+  #sport select {
+    /* 1 */
+    text-transform: none; }
+  #sport button,
+  #sport [type="button"],
+  #sport [type="reset"],
+  #sport [type="submit"] {
+    -webkit-appearance: button; }
+  #sport button::-moz-focus-inner,
+  #sport [type="button"]::-moz-focus-inner,
+  #sport [type="reset"]::-moz-focus-inner,
+  #sport [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0; }
+  #sport button:-moz-focusring,
+  #sport [type="button"]:-moz-focusring,
+  #sport [type="reset"]:-moz-focusring,
+  #sport [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText; }
+  #sport fieldset {
+    padding: 0.35em 0.75em 0.625em; }
+  #sport legend {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* 1 */
+    color: inherit;
+    /* 2 */
+    display: table;
+    /* 1 */
+    max-width: 100%;
+    /* 1 */
+    padding: 0;
+    /* 3 */
+    white-space: normal;
+    /* 1 */ }
+  #sport progress {
+    vertical-align: baseline; }
+  #sport textarea {
+    overflow: auto; }
+  #sport [type="checkbox"],
+  #sport [type="radio"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */ }
+  #sport [type="number"]::-webkit-inner-spin-button,
+  #sport [type="number"]::-webkit-outer-spin-button {
+    height: auto; }
+  #sport [type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    outline-offset: -2px;
+    /* 2 */ }
+  #sport [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+  #sport ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    /* 1 */
+    font: inherit;
+    /* 2 */ }
+  #sport details {
+    display: block; }
+  #sport summary {
+    display: list-item; }
+  #sport template {
+    display: none; }
+  #sport [hidden] {
+    display: none; }
+  #sport html, #sport body, #sport div, #sport span, #sport applet, #sport object, #sport iframe,
+  #sport h1, #sport h2, #sport h3, #sport h4, #sport h5, #sport h6, #sport p, #sport blockquote, #sport pre,
+  #sport a, #sport abbr, #sport acronym, #sport address, #sport big, #sport cite, #sport code,
+  #sport del, #sport dfn, #sport em, #sport img, #sport ins, #sport kbd, #sport q, #sport s, #sport samp,
+  #sport small, #sport strike, #sport strong, #sport sub, #sport sup, #sport tt, #sport var,
+  #sport b, #sport u, #sport i, #sport center,
+  #sport dl, #sport dt, #sport dd, #sport ol, #sport ul, #sport li,
+  #sport fieldset, #sport form, #sport label, #sport legend,
+  #sport table, #sport caption, #sport tbody, #sport tfoot, #sport thead, #sport tr, #sport th, #sport td,
+  #sport article, #sport aside, #sport canvas, #sport details, #sport embed,
+  #sport figure, #sport figcaption, #sport footer, #sport header, #sport hgroup,
+  #sport menu, #sport nav, #sport output, #sport ruby, #sport section, #sport summary,
+  #sport time, #sport mark, #sport audio, #sport video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+  #sport article, #sport aside, #sport details, #sport figcaption, #sport figure,
+  #sport footer, #sport header, #sport hgroup, #sport menu, #sport nav, #sport section {
+    display: block; }
+  #sport body {
+    line-height: 1; }
+  #sport ol, #sport ul {
+    list-style: none; }
+  #sport blockquote, #sport q {
+    quotes: none; }
+  #sport blockquote:before, #sport blockquote:after,
+  #sport q:before, #sport q:after {
+    content: '';
+    content: none; }
+  #sport table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  #sport html {
+    font-family: 'Microsoft JhengHei', '微軟正黑體', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  #sport html,
+  #sport body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    overflow-x: hidden; }
+  #sport img {
+    max-width: 100%; }
+  #sport button {
+    background: none;
+    cursor: pointer; }
+    #sport button.button {
+      position: relative;
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease; }
+      #sport button.button:active {
+        left: 2px;
+        top: 2px; }
+  #sport .hr {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    margin-top: 4px;
+    margin-bottom: 4px; }
+  #sport ul {
+    padding-left: 0;
+    list-style: none; }
+  #sport .red {
+    color: #FF4747 !important; }
+  #sport a {
+    text-decoration: none; }
+  #sport [data-hidden=true],
+  #sport .hidden {
+    display: none !important; }
+  #sport .p-0 {
+    padding: 0 !important; }
+  #sport .px-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+  #sport .py-0 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important; }
+  #sport .history-btn,
+  #sport .order-btn {
+    display: block;
+    padding: 3px 12px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.35;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.7); }
+  #sport .order-btn {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffb400), color-stop(50%, #ff8400), color-stop(51%, #ff8400), to(#ffb400));
+    background: -webkit-linear-gradient(top, #ffb400 0%, #ff8400 50%, #ff8400 51%, #ffb400 100%);
+    background: -o-linear-gradient(top, #ffb400 0%, #ff8400 50%, #ff8400 51%, #ffb400 100%);
+    background: linear-gradient(to bottom, #ffb400 0%, #ff8400 50%, #ff8400 51%, #ffb400 100%);
+    background-size: 100% 200%;
+    -webkit-transition: background-position .5s;
+    -o-transition: background-position .5s;
+    transition: background-position .5s; }
+    .active #sport .order-btn {
+      background: -webkit-gradient(linear, left top, left bottom, from(#8B8B8B), to(#5B5B5B)) !important;
+      background: -webkit-linear-gradient(top, #8B8B8B 0%, #5B5B5B 100%) !important;
+      background: -o-linear-gradient(top, #8B8B8B 0%, #5B5B5B 100%) !important;
+      background: linear-gradient(to bottom, #8B8B8B 0%, #5B5B5B 100%) !important;
+      cursor: default; }
+    #sport .order-btn:not(.disble_btn).active {
+      pointer-events: none; }
+    #sport .order-btn:not(.disble_btn):hover {
+      background-position: 0 100%; }
+  #sport .history-btn {
+    background-color: #FF8400; }
+    #sport .history-btn:hover {
+      background: #ffb400; }
+  #sport .media .order-btn:before {
+    content: '下单'; }
+  #sport .media.active .order-btn.active:before {
+    content: '已下单'; }
+  #sport .layui-layer-tips[type=tips] .layui-layer-content {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100px;
+    border-radius: 5px; }
+  #sport .disble_btn {
+    background: -webkit-gradient(linear, left top, left bottom, from(#8B8B8B), to(#5B5B5B)) !important;
+    background: -webkit-linear-gradient(top, #8B8B8B 0%, #5B5B5B 100%) !important;
+    background: -o-linear-gradient(top, #8B8B8B 0%, #5B5B5B 100%) !important;
+    background: linear-gradient(to bottom, #8B8B8B 0%, #5B5B5B 100%) !important; }
+  #sport .animated {
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  #sport .animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
+  #sport .animated.hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s; }
+  #sport .animated.flipOutX,
+  #sport .animated.flipOutY,
+  #sport .animated.bounceIn,
+  #sport .animated.bounceOut {
+    -webkit-animation-duration: .75s;
+    animation-duration: .75s; }
+
+@-webkit-keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  40%, 43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0); }
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0); }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0); } }
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  40%, 43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0); }
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0); }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0); } }
+  #sport .bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    transform-origin: center bottom; }
+
+@-webkit-keyframes flash {
+  from, 50%, to {
+    opacity: 1; }
+  25%, 75% {
+    opacity: 0; } }
+
+@keyframes flash {
+  from, 50%, to {
+    opacity: 1; }
+  25%, 75% {
+    opacity: 0; } }
+  #sport .flash {
+    -webkit-animation-name: flash;
+    animation-name: flash; }
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+  #sport .pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse; }
+
+@-webkit-keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+@keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+  #sport .rubberBand {
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand; }
+
+@-webkit-keyframes shake {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0); }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0); } }
+
+@keyframes shake {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0); }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0); } }
+  #sport .shake {
+    -webkit-animation-name: shake;
+    animation-name: shake; }
+
+@-webkit-keyframes headShake {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  6.5% {
+    -webkit-transform: translateX(-6px) rotateY(-9deg);
+    transform: translateX(-6px) rotateY(-9deg); }
+  18.5% {
+    -webkit-transform: translateX(5px) rotateY(7deg);
+    transform: translateX(5px) rotateY(7deg); }
+  31.5% {
+    -webkit-transform: translateX(-3px) rotateY(-5deg);
+    transform: translateX(-3px) rotateY(-5deg); }
+  43.5% {
+    -webkit-transform: translateX(2px) rotateY(3deg);
+    transform: translateX(2px) rotateY(3deg); }
+  50% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+@keyframes headShake {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  6.5% {
+    -webkit-transform: translateX(-6px) rotateY(-9deg);
+    transform: translateX(-6px) rotateY(-9deg); }
+  18.5% {
+    -webkit-transform: translateX(5px) rotateY(7deg);
+    transform: translateX(5px) rotateY(7deg); }
+  31.5% {
+    -webkit-transform: translateX(-3px) rotateY(-5deg);
+    transform: translateX(-3px) rotateY(-5deg); }
+  43.5% {
+    -webkit-transform: translateX(2px) rotateY(3deg);
+    transform: translateX(2px) rotateY(3deg); }
+  50% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+  #sport .headShake {
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-name: headShake;
+    animation-name: headShake; }
+
+@-webkit-keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg); }
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg); }
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg); }
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg); }
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg); } }
+
+@keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg); }
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg); }
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg); }
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg); }
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg); } }
+  #sport .swing {
+    -webkit-transform-origin: top center;
+    -ms-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-animation-name: swing;
+    animation-name: swing; }
+
+@-webkit-keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  10%, 20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg); }
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg); }
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  10%, 20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg); }
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg); }
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+  #sport .tada {
+    -webkit-animation-name: tada;
+    animation-name: tada; }
+
+@-webkit-keyframes wobble {
+  from {
+    -webkit-transform: none;
+    transform: none; }
+  15% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg); }
+  30% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg); }
+  45% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg); }
+  60% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg); }
+  75% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg); }
+  to {
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes wobble {
+  from {
+    -webkit-transform: none;
+    transform: none; }
+  15% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg); }
+  30% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg); }
+  45% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg); }
+  60% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg); }
+  75% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg); }
+  to {
+    -webkit-transform: none;
+    transform: none; } }
+  #sport .wobble {
+    -webkit-animation-name: wobble;
+    animation-name: wobble; }
+
+@-webkit-keyframes jello {
+  from, 11.1%, to {
+    -webkit-transform: none;
+    transform: none; }
+  22.2% {
+    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+    transform: skewX(-12.5deg) skewY(-12.5deg); }
+  33.3% {
+    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+    transform: skewX(6.25deg) skewY(6.25deg); }
+  44.4% {
+    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+    transform: skewX(-3.125deg) skewY(-3.125deg); }
+  55.5% {
+    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+    transform: skewX(1.5625deg) skewY(1.5625deg); }
+  66.6% {
+    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    transform: skewX(-0.78125deg) skewY(-0.78125deg); }
+  77.7% {
+    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
+    transform: skewX(0.39062deg) skewY(0.39062deg); }
+  88.8% {
+    -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
+    transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
+
+@keyframes jello {
+  from, 11.1%, to {
+    -webkit-transform: none;
+    transform: none; }
+  22.2% {
+    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+    transform: skewX(-12.5deg) skewY(-12.5deg); }
+  33.3% {
+    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+    transform: skewX(6.25deg) skewY(6.25deg); }
+  44.4% {
+    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+    transform: skewX(-3.125deg) skewY(-3.125deg); }
+  55.5% {
+    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+    transform: skewX(1.5625deg) skewY(1.5625deg); }
+  66.6% {
+    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    transform: skewX(-0.78125deg) skewY(-0.78125deg); }
+  77.7% {
+    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
+    transform: skewX(0.39062deg) skewY(0.39062deg); }
+  88.8% {
+    -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
+    transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
+  #sport .jello {
+    -webkit-animation-name: jello;
+    animation-name: jello;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center; }
+
+@-webkit-keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1); }
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03); }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97); }
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1); }
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03); }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97); }
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+  #sport .bounceIn {
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn; }
+
+@-webkit-keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0); }
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0); }
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0); }
+  to {
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0); }
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0); }
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0); }
+  to {
+    -webkit-transform: none;
+    transform: none; } }
+  #sport .bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown; }
+
+@-webkit-keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0); }
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0); }
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0); }
+  to {
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0); }
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0); }
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0); }
+  to {
+    -webkit-transform: none;
+    transform: none; } }
+  #sport .bounceInLeft {
+    -webkit-animation-name: bounceInLeft;
+    animation-name: bounceInLeft; }
+
+@-webkit-keyframes bounceInRight {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0); }
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0); }
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0); }
+  to {
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes bounceInRight {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0); }
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0); }
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0); }
+  to {
+    -webkit-transform: none;
+    transform: none; } }
+  #sport .bounceInRight {
+    -webkit-animation-name: bounceInRight;
+    animation-name: bounceInRight; }
+
+@-webkit-keyframes bounceInUp {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0);
+    transform: translate3d(0, 3000px, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0); }
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0); }
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0); }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes bounceInUp {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0);
+    transform: translate3d(0, 3000px, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0); }
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0); }
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0); }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+  #sport .bounceInUp {
+    -webkit-animation-name: bounceInUp;
+    animation-name: bounceInUp; }
+
+@-webkit-keyframes bounceOut {
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9); }
+  50%, 55% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1); }
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); } }
+
+@keyframes bounceOut {
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9); }
+  50%, 55% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1); }
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); } }
+  #sport .bounceOut {
+    -webkit-animation-name: bounceOut;
+    animation-name: bounceOut; }
+
+@-webkit-keyframes bounceOutDown {
+  20% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0); }
+  40%, 45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0); }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0); } }
+
+@keyframes bounceOutDown {
+  20% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0); }
+  40%, 45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0); }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0); } }
+  #sport .bounceOutDown {
+    -webkit-animation-name: bounceOutDown;
+    animation-name: bounceOutDown; }
+
+@-webkit-keyframes bounceOutLeft {
+  20% {
+    opacity: 1;
+    -webkit-transform: translate3d(20px, 0, 0);
+    transform: translate3d(20px, 0, 0); }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0); } }
+
+@keyframes bounceOutLeft {
+  20% {
+    opacity: 1;
+    -webkit-transform: translate3d(20px, 0, 0);
+    transform: translate3d(20px, 0, 0); }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0); } }
+  #sport .bounceOutLeft {
+    -webkit-animation-name: bounceOutLeft;
+    animation-name: bounceOutLeft; }
+
+@-webkit-keyframes bounceOutRight {
+  20% {
+    opacity: 1;
+    -webkit-transform: translate3d(-20px, 0, 0);
+    transform: translate3d(-20px, 0, 0); }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0); } }
+
+@keyframes bounceOutRight {
+  20% {
+    opacity: 1;
+    -webkit-transform: translate3d(-20px, 0, 0);
+    transform: translate3d(-20px, 0, 0); }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0); } }
+  #sport .bounceOutRight {
+    -webkit-animation-name: bounceOutRight;
+    animation-name: bounceOutRight; }
+
+@-webkit-keyframes bounceOutUp {
+  20% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0); }
+  40%, 45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0); }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0); } }
+
+@keyframes bounceOutUp {
+  20% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0); }
+  40%, 45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0); }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0); } }
+  #sport .bounceOutUp {
+    -webkit-animation-name: bounceOutUp;
+    animation-name: bounceOutUp; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  #sport .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn; }
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+  #sport .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown; }
+
+@-webkit-keyframes fadeInDownBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInDownBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+  #sport .fadeInDownBig {
+    -webkit-animation-name: fadeInDownBig;
+    animation-name: fadeInDownBig; }
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+  #sport .fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft; }
+
+@-webkit-keyframes fadeInLeftSmall {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-20px, 0, 0);
+    transform: translate3d(-20px, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInLeftSmall {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-20px, 0, 0);
+    transform: translate3d(-20px, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+  #sport .fadeInLeftSmall {
+    -webkit-animation-name: fadeInLeftSmall;
+    animation-name: fadeInLeftSmall; }
+
+@-webkit-keyframes fadeInLeftBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInLeftBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+  #sport .fadeInLeftBig {
+    -webkit-animation-name: fadeInLeftBig;
+    animation-name: fadeInLeftBig; }
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+  #sport .fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight; }
+
+@-webkit-keyframes fadeInRightSmall {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(20px, 0, 0);
+    transform: translate3d(20px, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInRightSmall {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(20px, 0, 0);
+    transform: translate3d(20px, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+  #sport .fadeInRightSmall {
+    -webkit-animation-name: fadeInRightSmall;
+    animation-name: fadeInRightSmall; }
+
+@-webkit-keyframes fadeInRightBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInRightBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+  #sport .fadeInRightBig {
+    -webkit-animation-name: fadeInRightBig;
+    animation-name: fadeInRightBig; }
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+  #sport .fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp; }
+
+@-webkit-keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+  #sport .fadeInUpBig {
+    -webkit-animation-name: fadeInUpBig;
+    animation-name: fadeInUpBig; }
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+  #sport .fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut; }
+
+@-webkit-keyframes fadeOutDown {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); } }
+
+@keyframes fadeOutDown {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); } }
+  #sport .fadeOutDown {
+    -webkit-animation-name: fadeOutDown;
+    animation-name: fadeOutDown; }
+
+@-webkit-keyframes fadeOutDownBig {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0); } }
+
+@keyframes fadeOutDownBig {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0); } }
+  #sport .fadeOutDownBig {
+    -webkit-animation-name: fadeOutDownBig;
+    animation-name: fadeOutDownBig; }
+
+@-webkit-keyframes fadeOutLeft {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); } }
+
+@keyframes fadeOutLeft {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); } }
+  #sport .fadeOutLeft {
+    -webkit-animation-name: fadeOutLeft;
+    animation-name: fadeOutLeft; }
+
+@-webkit-keyframes fadeOutLeftBig {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0); } }
+
+@keyframes fadeOutLeftBig {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0); } }
+  #sport .fadeOutLeftBig {
+    -webkit-animation-name: fadeOutLeftBig;
+    animation-name: fadeOutLeftBig; }
+
+@-webkit-keyframes fadeOutRight {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); } }
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); } }
+  #sport .fadeOutRight {
+    -webkit-animation-name: fadeOutRight;
+    animation-name: fadeOutRight; }
+
+@-webkit-keyframes fadeOutRightBig {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0); } }
+
+@keyframes fadeOutRightBig {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0); } }
+  #sport .fadeOutRightBig {
+    -webkit-animation-name: fadeOutRightBig;
+    animation-name: fadeOutRightBig; }
+
+@-webkit-keyframes fadeOutUp {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); } }
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); } }
+  #sport .fadeOutUp {
+    -webkit-animation-name: fadeOutUp;
+    animation-name: fadeOutUp; }
+
+@-webkit-keyframes fadeOutUpBig {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0); } }
+
+@keyframes fadeOutUpBig {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0); } }
+  #sport .fadeOutUpBig {
+    -webkit-animation-name: fadeOutUpBig;
+    animation-name: fadeOutUpBig; }
+
+@-webkit-keyframes flip {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  40% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  50% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  80% {
+    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
+    transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; } }
+
+@keyframes flip {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  40% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  50% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  80% {
+    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
+    transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; } }
+  #sport .animated.flip {
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    -webkit-animation-name: flip;
+    animation-name: flip; }
+
+@-webkit-keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0; }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1; }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px); } }
+
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0; }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1; }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px); } }
+  #sport .flipInX {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInX;
+    animation-name: flipInX; }
+
+@-webkit-keyframes flipInY {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0; }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1; }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg); }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px); } }
+
+@keyframes flipInY {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0; }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1; }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg); }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px); } }
+  #sport .flipInY {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInY;
+    animation-name: flipInY; }
+
+@-webkit-keyframes flipOutX {
+  from {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px); }
+  30% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1; }
+  to {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0; } }
+
+@keyframes flipOutX {
+  from {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px); }
+  30% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1; }
+  to {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0; } }
+  #sport .flipOutX {
+    -webkit-animation-name: flipOutX;
+    animation-name: flipOutX;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important; }
+
+@-webkit-keyframes flipOutY {
+  from {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px); }
+  30% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    opacity: 1; }
+  to {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    opacity: 0; } }
+
+@keyframes flipOutY {
+  from {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px); }
+  30% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    opacity: 1; }
+  to {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    opacity: 0; } }
+  #sport .flipOutY {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipOutY;
+    animation-name: flipOutY; }
+
+@-webkit-keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0; }
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1; }
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1; }
+  to {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1; } }
+
+@keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0; }
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1; }
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1; }
+  to {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1; } }
+  #sport .lightSpeedIn {
+    -webkit-animation-name: lightSpeedIn;
+    animation-name: lightSpeedIn;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+
+@-webkit-keyframes lightSpeedOut {
+  from {
+    opacity: 1; }
+  to {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0; } }
+
+@keyframes lightSpeedOut {
+  from {
+    opacity: 1; }
+  to {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0; } }
+  #sport .lightSpeedOut {
+    -webkit-animation-name: lightSpeedOut;
+    animation-name: lightSpeedOut;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+
+@-webkit-keyframes rotateIn {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0; }
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1; } }
+
+@keyframes rotateIn {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0; }
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1; } }
+  #sport .rotateIn {
+    -webkit-animation-name: rotateIn;
+    animation-name: rotateIn; }
+
+@-webkit-keyframes rotateInDownLeft {
+  from {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0; }
+  to {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1; } }
+
+@keyframes rotateInDownLeft {
+  from {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0; }
+  to {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1; } }
+  #sport .rotateInDownLeft {
+    -webkit-animation-name: rotateInDownLeft;
+    animation-name: rotateInDownLeft; }
+
+@-webkit-keyframes rotateInDownRight {
+  from {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0; }
+  to {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1; } }
+
+@keyframes rotateInDownRight {
+  from {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0; }
+  to {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1; } }
+  #sport .rotateInDownRight {
+    -webkit-animation-name: rotateInDownRight;
+    animation-name: rotateInDownRight; }
+
+@-webkit-keyframes rotateInUpLeft {
+  from {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0; }
+  to {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1; } }
+
+@keyframes rotateInUpLeft {
+  from {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0; }
+  to {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1; } }
+  #sport .rotateInUpLeft {
+    -webkit-animation-name: rotateInUpLeft;
+    animation-name: rotateInUpLeft; }
+
+@-webkit-keyframes rotateInUpRight {
+  from {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -90deg);
+    transform: rotate3d(0, 0, 1, -90deg);
+    opacity: 0; }
+  to {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1; } }
+
+@keyframes rotateInUpRight {
+  from {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -90deg);
+    transform: rotate3d(0, 0, 1, -90deg);
+    opacity: 0; }
+  to {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1; } }
+  #sport .rotateInUpRight {
+    -webkit-animation-name: rotateInUpRight;
+    animation-name: rotateInUpRight; }
+
+@-webkit-keyframes rotateOut {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    opacity: 1; }
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, 200deg);
+    transform: rotate3d(0, 0, 1, 200deg);
+    opacity: 0; } }
+
+@keyframes rotateOut {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    opacity: 1; }
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, 200deg);
+    transform: rotate3d(0, 0, 1, 200deg);
+    opacity: 0; } }
+  #sport .rotateOut {
+    -webkit-animation-name: rotateOut;
+    animation-name: rotateOut; }
+
+@-webkit-keyframes rotateOutDownLeft {
+  from {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    opacity: 1; }
+  to {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0; } }
+
+@keyframes rotateOutDownLeft {
+  from {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    opacity: 1; }
+  to {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0; } }
+  #sport .rotateOutDownLeft {
+    -webkit-animation-name: rotateOutDownLeft;
+    animation-name: rotateOutDownLeft; }
+
+@-webkit-keyframes rotateOutDownRight {
+  from {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    opacity: 1; }
+  to {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0; } }
+
+@keyframes rotateOutDownRight {
+  from {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    opacity: 1; }
+  to {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0; } }
+  #sport .rotateOutDownRight {
+    -webkit-animation-name: rotateOutDownRight;
+    animation-name: rotateOutDownRight; }
+
+@-webkit-keyframes rotateOutUpLeft {
+  from {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    opacity: 1; }
+  to {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0; } }
+
+@keyframes rotateOutUpLeft {
+  from {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    opacity: 1; }
+  to {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0; } }
+  #sport .rotateOutUpLeft {
+    -webkit-animation-name: rotateOutUpLeft;
+    animation-name: rotateOutUpLeft; }
+
+@-webkit-keyframes rotateOutUpRight {
+  from {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    opacity: 1; }
+  to {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 90deg);
+    transform: rotate3d(0, 0, 1, 90deg);
+    opacity: 0; } }
+
+@keyframes rotateOutUpRight {
+  from {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    opacity: 1; }
+  to {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 90deg);
+    transform: rotate3d(0, 0, 1, 90deg);
+    opacity: 0; } }
+  #sport .rotateOutUpRight {
+    -webkit-animation-name: rotateOutUpRight;
+    animation-name: rotateOutUpRight; }
+
+@-webkit-keyframes hinge {
+  0% {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out; }
+  20%, 60% {
+    -webkit-transform: rotate3d(0, 0, 1, 80deg);
+    transform: rotate3d(0, 0, 1, 80deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out; }
+  40%, 80% {
+    -webkit-transform: rotate3d(0, 0, 1, 60deg);
+    transform: rotate3d(0, 0, 1, 60deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    opacity: 1; }
+  to {
+    -webkit-transform: translate3d(0, 700px, 0);
+    transform: translate3d(0, 700px, 0);
+    opacity: 0; } }
+
+@keyframes hinge {
+  0% {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out; }
+  20%, 60% {
+    -webkit-transform: rotate3d(0, 0, 1, 80deg);
+    transform: rotate3d(0, 0, 1, 80deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out; }
+  40%, 80% {
+    -webkit-transform: rotate3d(0, 0, 1, 60deg);
+    transform: rotate3d(0, 0, 1, 60deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    opacity: 1; }
+  to {
+    -webkit-transform: translate3d(0, 700px, 0);
+    transform: translate3d(0, 700px, 0);
+    opacity: 0; } }
+  #sport .hinge {
+    -webkit-animation-name: hinge;
+    animation-name: hinge; }
+
+@-webkit-keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.1) rotate(30deg);
+    transform: scale(0.1) rotate(30deg);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom; }
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg); }
+  70% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg); }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.1) rotate(30deg);
+    transform: scale(0.1) rotate(30deg);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom; }
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg); }
+  70% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg); }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+  #sport .jackInTheBox {
+    -webkit-animation-name: jackInTheBox;
+    animation-name: jackInTheBox; }
+
+@-webkit-keyframes rollIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+  #sport .rollIn {
+    -webkit-animation-name: rollIn;
+    animation-name: rollIn; }
+
+@-webkit-keyframes rollOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg); } }
+
+@keyframes rollOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg); } }
+  #sport .rollOut {
+    -webkit-animation-name: rollOut;
+    animation-name: rollOut; }
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+  #sport .zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+
+@-webkit-keyframes zoomInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+@keyframes zoomInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+  #sport .zoomInDown {
+    -webkit-animation-name: zoomInDown;
+    animation-name: zoomInDown; }
+
+@-webkit-keyframes zoomInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+@keyframes zoomInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+  #sport .zoomInLeft {
+    -webkit-animation-name: zoomInLeft;
+    animation-name: zoomInLeft; }
+
+@-webkit-keyframes zoomInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+@keyframes zoomInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+  #sport .zoomInRight {
+    -webkit-animation-name: zoomInRight;
+    animation-name: zoomInRight; }
+
+@-webkit-keyframes zoomInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+@keyframes zoomInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+  #sport .zoomInUp {
+    -webkit-animation-name: zoomInUp;
+    animation-name: zoomInUp; }
+
+@-webkit-keyframes zoomOut {
+  from {
+    opacity: 1; }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  to {
+    opacity: 0; } }
+
+@keyframes zoomOut {
+  from {
+    opacity: 1; }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  to {
+    opacity: 0; } }
+  #sport .zoomOut {
+    -webkit-animation-name: zoomOut;
+    animation-name: zoomOut; }
+
+@-webkit-keyframes zoomOutDown {
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+@keyframes zoomOutDown {
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+  #sport .zoomOutDown {
+    -webkit-animation-name: zoomOutDown;
+    animation-name: zoomOutDown; }
+
+@-webkit-keyframes zoomOutLeft {
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0); }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.1) translate3d(-2000px, 0, 0);
+    transform: scale(0.1) translate3d(-2000px, 0, 0);
+    -webkit-transform-origin: left center;
+    transform-origin: left center; } }
+
+@keyframes zoomOutLeft {
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0); }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.1) translate3d(-2000px, 0, 0);
+    transform: scale(0.1) translate3d(-2000px, 0, 0);
+    -webkit-transform-origin: left center;
+    transform-origin: left center; } }
+  #sport .zoomOutLeft {
+    -webkit-animation-name: zoomOutLeft;
+    animation-name: zoomOutLeft; }
+
+@-webkit-keyframes zoomOutRight {
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0); }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.1) translate3d(2000px, 0, 0);
+    transform: scale(0.1) translate3d(2000px, 0, 0);
+    -webkit-transform-origin: right center;
+    transform-origin: right center; } }
+
+@keyframes zoomOutRight {
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0); }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.1) translate3d(2000px, 0, 0);
+    transform: scale(0.1) translate3d(2000px, 0, 0);
+    -webkit-transform-origin: right center;
+    transform-origin: right center; } }
+  #sport .zoomOutRight {
+    -webkit-animation-name: zoomOutRight;
+    animation-name: zoomOutRight; }
+
+@-webkit-keyframes zoomOutUp {
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+@keyframes zoomOutUp {
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+  #sport .zoomOutUp {
+    -webkit-animation-name: zoomOutUp;
+    animation-name: zoomOutUp; }
+
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+  #sport .slideInDown {
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown; }
+
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+  #sport .slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft; }
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+  #sport .slideInRight {
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight; }
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+  #sport .slideInUp {
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp; }
+
+@-webkit-keyframes slideOutDown {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); } }
+
+@keyframes slideOutDown {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); } }
+  #sport .slideOutDown {
+    -webkit-animation-name: slideOutDown;
+    animation-name: slideOutDown; }
+
+@-webkit-keyframes slideOutLeft {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); } }
+
+@keyframes slideOutLeft {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); } }
+  #sport .slideOutLeft {
+    -webkit-animation-name: slideOutLeft;
+    animation-name: slideOutLeft; }
+
+@-webkit-keyframes slideOutRight {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); } }
+
+@keyframes slideOutRight {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); } }
+  #sport .slideOutRight {
+    -webkit-animation-name: slideOutRight;
+    animation-name: slideOutRight; }
+
+@-webkit-keyframes slideOutUp {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); } }
+
+@keyframes slideOutUp {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); } }
+  #sport .slideOutUp {
+    -webkit-animation-name: slideOutUp;
+    animation-name: slideOutUp; }
+
+@-webkit-keyframes rotate-in-ver {
+  0% {
+    -webkit-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    opacity: 1; } }
+
+@keyframes rotate-in-ver {
+  0% {
+    -webkit-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    opacity: 1; } }
+  #sport .rotate-in-ver {
+    -webkit-animation-name: rotate-in-ver;
+    animation-name: rotate-in-ver; }
+
+@-webkit-keyframes slit-in-vertical {
+  0% {
+    -webkit-transform: translateZ(-800px) rotateY(90deg);
+    transform: translateZ(-800px) rotateY(90deg);
+    opacity: 0; }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateY(87deg);
+    transform: translateZ(-160px) rotateY(87deg);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateZ(0) rotateY(0);
+    transform: translateZ(0) rotateY(0); } }
+
+@keyframes slit-in-vertical {
+  0% {
+    -webkit-transform: translateZ(-800px) rotateY(90deg);
+    transform: translateZ(-800px) rotateY(90deg);
+    opacity: 0; }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateY(87deg);
+    transform: translateZ(-160px) rotateY(87deg);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateZ(0) rotateY(0);
+    transform: translateZ(0) rotateY(0); } }
+  #sport .slit-in-vertical {
+    -webkit-animation-name: slit-in-vertical;
+    animation-name: slit-in-vertical; }
+
+@-webkit-keyframes slit-in-horizontal {
+  0% {
+    -webkit-transform: translateZ(-800px) rotateX(90deg);
+    transform: translateZ(-800px) rotateX(90deg);
+    opacity: 0; }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateX(87deg);
+    transform: translateZ(-160px) rotateX(87deg);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateZ(0) rotateX(0);
+    transform: translateZ(0) rotateX(0); } }
+
+@keyframes slit-in-horizontal {
+  0% {
+    -webkit-transform: translateZ(-800px) rotateX(90deg);
+    transform: translateZ(-800px) rotateX(90deg);
+    opacity: 0; }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateX(87deg);
+    transform: translateZ(-160px) rotateX(87deg);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateZ(0) rotateX(0);
+    transform: translateZ(0) rotateX(0); } }
+  #sport .slit-in-horizontal {
+    -webkit-animation-name: slit-in-horizontal;
+    animation-name: slit-in-horizontal; }
+
+@-webkit-keyframes slit-out-vertical {
+  0% {
+    -webkit-transform: translateZ(0) rotateY(0);
+    transform: translateZ(0) rotateY(0);
+    opacity: 1; }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateY(87deg);
+    transform: translateZ(-160px) rotateY(87deg);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateZ(-800px) rotateY(90deg);
+    transform: translateZ(-800px) rotateY(90deg);
+    opacity: 0; } }
+
+@keyframes slit-out-vertical {
+  0% {
+    -webkit-transform: translateZ(0) rotateY(0);
+    transform: translateZ(0) rotateY(0);
+    opacity: 1; }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateY(87deg);
+    transform: translateZ(-160px) rotateY(87deg);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateZ(-800px) rotateY(90deg);
+    transform: translateZ(-800px) rotateY(90deg);
+    opacity: 0; } }
+  #sport .slit-out-vertical {
+    -webkit-animation-name: slit-out-vertical;
+    animation-name: slit-out-vertical; }
+
+@-webkit-keyframes flip-in-ver-right {
+  0% {
+    -webkit-transform: rotateY(-80deg);
+    transform: rotateY(-80deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    opacity: 1; } }
+
+@keyframes flip-in-ver-right {
+  0% {
+    -webkit-transform: rotateY(-80deg);
+    transform: rotateY(-80deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    opacity: 1; } }
+  #sport .flip-in-ver-right {
+    -webkit-animation-name: flip-in-ver-right;
+    animation-name: flip-in-ver-right; }
+
+@-webkit-keyframes slide-in-bck-center {
+  0% {
+    -webkit-transform: translateZ(600px);
+    transform: translateZ(600px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+@keyframes slide-in-bck-center {
+  0% {
+    -webkit-transform: translateZ(600px);
+    transform: translateZ(600px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+  #sport .slide-in-bck-center {
+    -webkit-animation-name: slide-in-bck-center;
+    animation-name: slide-in-bck-center; }
+
+@-webkit-keyframes slide-in-bck-top {
+  0% {
+    -webkit-transform: translateZ(700px) translateY(-300px);
+    transform: translateZ(700px) translateY(-300px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1; } }
+
+@keyframes slide-in-bck-top {
+  0% {
+    -webkit-transform: translateZ(700px) translateY(-300px);
+    transform: translateZ(700px) translateY(-300px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1; } }
+  #sport .slide-in-bck-top {
+    -webkit-animation-name: slide-in-bck-top;
+    animation-name: slide-in-bck-top; }
+
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+  #sport .slide-in-fwd-center {
+    -webkit-animation-name: slide-in-fwd-center;
+    animation-name: slide-in-fwd-center; }
+
+@-webkit-keyframes slide-in-fwd-top {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateY(-800px);
+    transform: translateZ(-1400px) translateY(-800px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1; } }
+
+@keyframes slide-in-fwd-top {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateY(-800px);
+    transform: translateZ(-1400px) translateY(-800px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1; } }
+  #sport .slide-in-fwd-top {
+    -webkit-animation-name: slide-in-fwd-top;
+    animation-name: slide-in-fwd-top; }
+
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+  #sport .slide-in-top {
+    -webkit-animation-name: slide-in-top;
+    animation-name: slide-in-top; }
+
+@-webkit-keyframes slide-out-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0; } }
+
+@keyframes slide-out-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0; } }
+  #sport .slide-out-top {
+    -webkit-animation-name: slide-out-top;
+    animation-name: slide-out-top; }
+
+@-webkit-keyframes slide-out-bck-center {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateZ(-1100px);
+    transform: translateZ(-1100px);
+    opacity: 0; } }
+
+@keyframes slide-out-bck-center {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateZ(-1100px);
+    transform: translateZ(-1100px);
+    opacity: 0; } }
+  #sport .slide-out-bck-center {
+    -webkit-animation-name: slide-out-bck-center;
+    animation-name: slide-out-bck-center; }
+
+@keyframes slide-out-bck-center {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateZ(-1100px);
+    transform: translateZ(-1100px);
+    opacity: 0; } }
+  #sport .slide-out-bck-center {
+    -webkit-animation-name: slide-out-bck-center;
+    animation-name: slide-out-bck-center; }
+
+@-webkit-keyframes slide-out-fwd-center {
+  0% {
+    -webkit-transform: translateZ(1);
+    transform: translateZ(1);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateZ(600px);
+    transform: translateZ(600px);
+    opacity: 0; } }
+
+@keyframes slide-out-fwd-center {
+  0% {
+    -webkit-transform: translateZ(1);
+    transform: translateZ(1);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateZ(600px);
+    transform: translateZ(600px);
+    opacity: 0; } }
+  #sport .slide-out-fwd-center {
+    -webkit-animation-name: slide-out-fwd-center;
+    animation-name: slide-out-fwd-center; }
+
+@-webkit-keyframes swing-in-top-bck {
+  0% {
+    -webkit-transform: rotateX(70deg);
+    transform: rotateX(70deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1; } }
+
+@keyframes swing-in-top-bck {
+  0% {
+    -webkit-transform: rotateX(70deg);
+    transform: rotateX(70deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1; } }
+  #sport .swing-in-top-bck {
+    -webkit-animation-name: swing-in-top-bck;
+    animation-name: swing-in-top-bck; }
+
+@-webkit-keyframes swing-out-top-bck {
+  0% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1; }
+  100% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0; } }
+
+@keyframes swing-out-top-bck {
+  0% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1; }
+  100% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0; } }
+  #sport .swing-out-top-bck {
+    -webkit-animation-name: swing-out-top-bck;
+    animation-name: swing-out-top-bck; }
+
+@-webkit-keyframes swing-out-top-fwd {
+  0% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1; }
+  100% {
+    -webkit-transform: rotateX(70deg);
+    transform: rotateX(70deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0; } }
+
+@keyframes swing-out-top-fwd {
+  0% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1; }
+  100% {
+    -webkit-transform: rotateX(70deg);
+    transform: rotateX(70deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0; } }
+  #sport .swing-out-top-fwd {
+    -webkit-animation-name: swing-out-top-fwd;
+    animation-name: swing-out-top-fwd; }
+
+@-webkit-keyframes fade-in-bck {
+  0% {
+    -webkit-transform: translateZ(80px);
+    transform: translateZ(80px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+@keyframes fade-in-bck {
+  0% {
+    -webkit-transform: translateZ(80px);
+    transform: translateZ(80px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+  #sport .fade-in-bck {
+    -webkit-animation-name: fade-in-bck;
+    animation-name: fade-in-bck; }
+
+@-webkit-keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+  #sport .fade-in-top {
+    -webkit-animation-name: fade-in-top;
+    animation-name: fade-in-top; }
+
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+  #sport .fade-in-bottom {
+    -webkit-animation-name: fade-in-bottom;
+    animation-name: fade-in-bottom; }
+
+@-webkit-keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+  #sport .fade-in-left {
+    -webkit-animation-name: fade-in-left;
+    animation-name: fade-in-left; }
+
+@-webkit-keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+  #sport .fade-in-right {
+    -webkit-animation-name: fade-in-right;
+    animation-name: fade-in-right; }
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+  #sport .puff-in-center {
+    -webkit-animation-name: puff-in-center;
+    animation-name: puff-in-center; }
+
+@-webkit-keyframes kenburns-bottom {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 84%;
+    transform-origin: 50% 84%; }
+  100% {
+    -webkit-transform: scale(1.25) translateY(15px);
+    transform: scale(1.25) translateY(15px);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom; } }
+
+@keyframes kenburns-bottom {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 84%;
+    transform-origin: 50% 84%; }
+  100% {
+    -webkit-transform: scale(1.25) translateY(15px);
+    transform: scale(1.25) translateY(15px);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom; } }
+  #sport .kenburns-bottom {
+    -webkit-animation-name: kenburns-bottom;
+    animation-name: kenburns-bottom; }
+
+@-webkit-keyframes kenburns-bottom-fade {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 84%;
+    transform-origin: 50% 84%;
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1.25) translateY(15px);
+    transform: scale(1.25) translateY(15px);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 0; } }
+
+@keyframes kenburns-bottom-fade {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 84%;
+    transform-origin: 50% 84%;
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1.25) translateY(15px);
+    transform: scale(1.25) translateY(15px);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 0; } }
+  #sport .kenburns-bottom-fade {
+    -webkit-animation-name: kenburns-bottom-fade;
+    animation-name: kenburns-bottom-fade;
+    animation-direction: reverse; }
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+  #sport .tracking-in-expand {
+    -webkit-animation-name: tracking-in-expand;
+    animation-name: tracking-in-expand; }
+
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    letter-spacing: normal;
+    opacity: 1; } }
+
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    letter-spacing: normal;
+    opacity: 1; } }
+  #sport .tracking-in-contract {
+    -webkit-animation-name: tracking-in-contract;
+    animation-name: tracking-in-contract; }
+
+@-webkit-keyframes width-expand {
+  0% {
+    width: 0; }
+  100% {
+    width: 120px; } }
+
+@keyframes width-expand {
+  0% {
+    width: 0; }
+  100% {
+    width: 120px; } }
+  #sport .width-expand {
+    -webkit-animation-name: width-expand;
+    animation-name: width-expand; }
+  #sport .reverse {
+    animation-direction: reverse; }
+  #sport .a025s {
+    -webkit-animation-duration: 0.25s;
+    animation-duration: 0.25s; }
+  #sport .a05s {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s; }
+  #sport .a075s {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s; }
+  #sport .a2s {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s; }
+  #sport .a3s {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s; }
+  #sport .d025s {
+    -webkit-animation-delay: 0.25s;
+    animation-delay: 0.25s; }
+  #sport .d05s {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s; }
+  #sport .d075s {
+    -webkit-animation-delay: 0.75s;
+    animation-delay: 0.75s; }
+  #sport .d1s {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s; }
+  #sport .d15s {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s; }
+  #sport .d2s {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s; }
+  #sport .d3s {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s; }
+  #sport .easeInOutCubic {
+    -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1); }
+  #sport #sport_content {
+    position: relative; }
+    #sport #sport_content > .container {
+      max-width: 1200px;
+      background-color: #464646;
+      padding-top: 15px;
+      padding-bottom: 15px; }
+    #sport #sport_content > .container:last-of-type {
+      padding-bottom: 15px; }
+    #sport #sport_content .main-title {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: #9e9e9e;
+      background: -webkit-gradient(linear, left top, left bottom, from(#9e9e9e), color-stop(25%, #7e7e7e), color-stop(50%, #6e6e6e), to(#1e1e1e));
+      background: -webkit-linear-gradient(top, #9e9e9e 0%, #7e7e7e 25%, #6e6e6e 50%, #1e1e1e 100%);
+      background: -o-linear-gradient(top, #9e9e9e 0%, #7e7e7e 25%, #6e6e6e 50%, #1e1e1e 100%);
+      background: linear-gradient(to bottom, #9e9e9e 0%, #7e7e7e 25%, #6e6e6e 50%, #1e1e1e 100%);
+      color: #FFF;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px; }
+      #sport #sport_content .main-title [class*=heading] {
+        font-size: 42px;
+        text-align: center;
+        text-shadow: 0 2px 6px black; }
+    #sport #sport_content .lists {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: #fff;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px; }
+      #sport #sport_content .lists .lists-group li + li {
+        margin-top: 15px; }
+      #sport #sport_content .lists .lists-group .media {
+        -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease; }
+        #sport #sport_content .lists .lists-group .media:hover {
+          -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.65);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.65); }
+        #sport #sport_content .lists .lists-group .media-header {
+          padding-left: 0;
+          padding-right: 0; }
+        #sport #sport_content .lists .lists-group .media-header {
+          padding-top: 10px;
+          padding-bottom: 10px; }
+          #sport #sport_content .lists .lists-group .media-header [class*=heading] {
+            font-size: 28px;
+            color: #5B5B5B; }
+          #sport #sport_content .lists .lists-group .media-header .media-rangfen {
+            background: #FF4747;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #FFF;
+            padding: 5px;
+            margin-top: 10px; }
+          #sport #sport_content .lists .lists-group .media-header .pkid {
+            font-size: 28px;
+            color: #8B8B8B; }
+        #sport #sport_content .lists .lists-group .media-body {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          border-top: solid 2px #dfdfdf;
+          font-size: 28px; }
+        #sport #sport_content .lists .lists-group .media .figure-group {
+          padding: 10px;
+          border-radius: 2px;
+          border: solid 1px #dfdfdf;
+          -webkit-transition: all .3s ease;
+          -o-transition: all .3s ease;
+          transition: all .3s ease; }
+          #sport #sport_content .lists .lists-group .media .figure-group.active {
+            background-color: #EEE;
+            border-color: #EEE; }
+          #sport #sport_content .lists .lists-group .media .figure-group .figure {
+            text-align: center;
+            position: relative; }
+          #sport #sport_content .lists .lists-group .media .figure-group .card {
+            padding-left: 10px;
+            padding-right: 0; }
+            #sport #sport_content .lists .lists-group .media .figure-group .card > * {
+              padding: 0; }
+            #sport #sport_content .lists .lists-group .media .figure-group .card-header {
+              padding-bottom: 8px; }
+              #sport #sport_content .lists .lists-group .media .figure-group .card-header .odds {
+                color: #F00;
+                font-weight: bold; }
+            #sport #sport_content .lists .lists-group .media .figure-group .card-body {
+              padding-top: 8px;
+              padding-bottom: 8px;
+              line-height: 1.35; }
+            #sport #sport_content .lists .lists-group .media .figure-group .card-footer > * {
+              padding: 0; }
+            #sport #sport_content .lists .lists-group .media .figure-group .card-footer .tools {
+              padding-top: 10px;
+              padding-bottom: 10px; }
+              #sport #sport_content .lists .lists-group .media .figure-group .card-footer .tools > * {
+                padding: 0; }
+              #sport #sport_content .lists .lists-group .media .figure-group .card-footer .tools .btn + .btn {
+                margin-left: 10px; }
+              #sport #sport_content .lists .lists-group .media .figure-group .card-footer .tools .btn {
+                width: 30px;
+                height: 30px;
+                display: inline-block;
+                vertical-align: middle; }
+                #sport #sport_content .lists .lists-group .media .figure-group .card-footer .tools .btn img {
+                  position: relative;
+                  max-width: 100%;
+                  pointer-events: none;
+                  -webkit-transition: all .3s ease;
+                  -o-transition: all .3s ease;
+                  transition: all .3s ease; }
+                #sport #sport_content .lists .lists-group .media .figure-group .card-footer .tools .btn:not(.disble_a):hover img {
+                  -webkit-transform: scale(1.125);
+                  -ms-transform: scale(1.125);
+                  transform: scale(1.125); }
+                #sport #sport_content .lists .lists-group .media .figure-group .card-footer .tools .btn:not(.disble_a):active img {
+                  left: 3px;
+                  top: 3px; }
+        #sport #sport_content .lists .lists-group .media .order-btn {
+          display: block;
+          padding: 3px 12px;
+          width: 100%;
+          font-size: 28px;
+          line-height: 1.35;
+          text-align: center; }
+    #sport #sport_content .pk-mode .lists .lists-group .media-body {
+      padding-left: 0;
+      padding-right: 0; }
+    #sport #sport_content .pk-mode .lists .lists-group .media .figure-group .figure .pic {
+      width: 150px;
+      height: 150px;
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 150px;
+      flex: 1 1 150px; }
+    #sport #sport_content .pk-mode .lists .lists-group .media .figure-group .figure figcaption {
+      background-color: #5b5b5b;
+      color: #FFF;
+      padding: 6px 12px;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto; }
+    #sport #sport_content .pk-mode .lists .lists-group .media .figure-group .card-body, #sport #sport_content .pk-mode .lists .lists-group .media .figure-group .card-footer {
+      border-top: solid 1px #dfdfdf; }
+    #sport #sport_content .pk-mode .lists .lists-group .media .figure-group .card-body {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+      flex: 1 1 100%; }
+
+@-webkit-keyframes imgOpacity {
+  0% {
+    opacity: 0;
+    left: 0; }
+  100% {
+    opacity: 1;
+    left: 140px; } }
+
+@keyframes imgOpacity {
+  0% {
+    opacity: 0;
+    left: 0; }
+  100% {
+    opacity: 1;
+    left: 140px; } }
+    #sport #sport_content .pk-mode .lists .lists-group .media .comity-body {
+      width: 200px; }
+      #sport #sport_content .pk-mode .lists .lists-group .media .comity-body .rangfen-num {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-size: 22px;
+        text-align: center; }
+        #sport #sport_content .pk-mode .lists .lists-group .media .comity-body .rangfen-num span:nth-child(2) {
+          margin: 0 4px; }
+        #sport #sport_content .pk-mode .lists .lists-group .media .comity-body .rangfen-num strong {
+          font-size: 30px; }
+      #sport #sport_content .pk-mode .lists .lists-group .media .comity-body .rangfen-img {
+        position: relative;
+        height: 60px; }
+        #sport #sport_content .pk-mode .lists .lists-group .media .comity-body .rangfen-img img {
+          opacity: 0;
+          position: absolute;
+          left: 0;
+          width: 60px;
+          height: 60px;
+          -webkit-animation: imgOpacity 1.8s ease both infinite;
+          animation: imgOpacity 1.8s ease both infinite; }
+    #sport #sport_content .pk-mode .lists .lists-group .media .arrow-reverse {
+      -webkit-transform: rotateX(180deg) rotateY(0) rotateZ(180deg);
+      transform: rotateX(180deg) rotateY(0) rotateZ(180deg); }
+    #sport #sport_content .multi-mode .lists .lists-group .media {
+      padding-top: 20px; }
+      #sport #sport_content .multi-mode .lists .lists-group .media-header {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        min-height: 140px;
+        position: relative; }
+        #sport #sport_content .multi-mode .lists .lists-group .media-header .title {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+        #sport #sport_content .multi-mode .lists .lists-group .media-header p {
+          margin-top: 10px; }
+        #sport #sport_content .multi-mode .lists .lists-group .media-header.color-dark [class*=heading] {
+          color: #FFF; }
+        #sport #sport_content .multi-mode .lists .lists-group .media-header.color-dark p {
+          color: #FFF; }
+        #sport #sport_content .multi-mode .lists .lists-group .media-header.color-light [class*=heading] {
+          color: #FFF; }
+        #sport #sport_content .multi-mode .lists .lists-group .media-header.color-light p {
+          color: #eee; }
+      #sport #sport_content .multi-mode .lists .lists-group .media-body {
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 0;
+        border: 0; }
+        #sport #sport_content .multi-mode .lists .lists-group .media-body > .row > [class*=col] {
+          padding-left: 10px;
+          padding-right: 10px; }
+        #sport #sport_content .multi-mode .lists .lists-group .media-body > .row > .col-12 {
+          margin-top: 10px; }
+      #sport #sport_content .multi-mode .lists .lists-group .media .col.figure-group + .col.figure-group {
+        margin-left: 10px; }
+      #sport #sport_content .multi-mode .lists .lists-group .media .figure-group.col .figure .pic {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%; }
+        #sport #sport_content .multi-mode .lists .lists-group .media .figure-group.col .figure .pic + figcaption {
+          margin-left: 10px; }
+      #sport #sport_content .multi-mode .lists .lists-group .media .figure-group.col .figure figcaption {
+        font-size: 20px;
+        font-weight: bold; }
+      #sport #sport_content .multi-mode .lists .lists-group .media .figure-group.col .figure + .card {
+        position: relative; }
+        #sport #sport_content .multi-mode .lists .lists-group .media .figure-group.col .figure + .card:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          width: 1px;
+          height: 66px;
+          background-color: #dfdfdf; }
+  #sport #sidebar {
+    position: absolute;
+    top: auto;
+    right: 0;
+    z-index: 99; }
+    #sport #sidebar .card {
+      background: transparent -webkit-gradient(linear, left top, left bottom, from(#DFDFDF), color-stop(51%, #FFFFFF), to(#DFDFDF)) 0% 0% no-repeat padding-box;
+      background: transparent -webkit-linear-gradient(top, #DFDFDF 0%, #FFFFFF 51%, #DFDFDF 100%) 0% 0% no-repeat padding-box;
+      background: transparent -o-linear-gradient(top, #DFDFDF 0%, #FFFFFF 51%, #DFDFDF 100%) 0% 0% no-repeat padding-box;
+      background: transparent linear-gradient(180deg, #DFDFDF 0%, #FFFFFF 51%, #DFDFDF 100%) 0% 0% no-repeat padding-box;
+      -webkit-box-shadow: 0px 0px 10px #000000A6;
+      box-shadow: 0px 0px 10px #000000A6;
+      border-radius: 6px;
+      padding: 10px 10px 0 10px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      #sport #sidebar .card-time {
+        background: transparent -webkit-linear-gradient(323deg, #434343 0%, #8B8B8B 51%, #434343 100%) 0% 0% no-repeat padding-box;
+        background: transparent -o-linear-gradient(323deg, #434343 0%, #8B8B8B 51%, #434343 100%) 0% 0% no-repeat padding-box;
+        background: transparent linear-gradient(127deg, #434343 0%, #8B8B8B 51%, #434343 100%) 0% 0% no-repeat padding-box;
+        border-radius: 8px;
+        color: #FFF;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
+        #sport #sidebar .card-time .time-btn {
+          cursor: pointer; }
+          #sport #sidebar .card-time .time-btn .time-top {
+            width: 50%;
+            text-align: center;
+            padding: 9px 0;
+            background: transparent -webkit-gradient(linear, left top, left bottom, from(#434343), color-stop(49%, #8B8B8B), to(#434343)) 0% 0% no-repeat padding-box;
+            background: transparent -webkit-linear-gradient(top, #434343 0%, #8B8B8B 49%, #434343 100%) 0% 0% no-repeat padding-box;
+            background: transparent -o-linear-gradient(top, #434343 0%, #8B8B8B 49%, #434343 100%) 0% 0% no-repeat padding-box;
+            background: transparent linear-gradient(180deg, #434343 0%, #8B8B8B 49%, #434343 100%) 0% 0% no-repeat padding-box;
+            -webkit-box-shadow: 0px 2px 4px #00000080;
+            box-shadow: 0px 2px 4px #00000080; }
+            #sport #sidebar .card-time .time-btn .time-top:first-of-type {
+              border-radius: 5px 0px 0px 5px; }
+            #sport #sidebar .card-time .time-btn .time-top:last-of-type {
+              border-radius: 0px 5px 5px 0px; }
+          #sport #sidebar .card-time .time-btn [data-id=open].act {
+            background: transparent -webkit-gradient(linear, left top, left bottom, from(#FFB400), color-stop(49%, #FF8400), to(#FFB400)) 0% 0% no-repeat padding-box;
+            background: transparent -webkit-linear-gradient(top, #FFB400 0%, #FF8400 49%, #FFB400 100%) 0% 0% no-repeat padding-box;
+            background: transparent -o-linear-gradient(top, #FFB400 0%, #FF8400 49%, #FFB400 100%) 0% 0% no-repeat padding-box;
+            background: transparent linear-gradient(180deg, #FFB400 0%, #FF8400 49%, #FFB400 100%) 0% 0% no-repeat padding-box;
+            -webkit-box-shadow: 0px 0px 8px #FF8400;
+            box-shadow: 0px 0px 8px #FF8400;
+            border: 1px solid #FF8400;
+            border-radius: 5px 0px 0px 5px; }
+          #sport #sidebar .card-time .time-btn [data-id=feng].act {
+            background: transparent -webkit-gradient(linear, left top, left bottom, from(#FFB400), color-stop(49%, #FF8400), to(#FFB400)) 0% 0% no-repeat padding-box;
+            background: transparent -webkit-linear-gradient(top, #FFB400 0%, #FF8400 49%, #FFB400 100%) 0% 0% no-repeat padding-box;
+            background: transparent -o-linear-gradient(top, #FFB400 0%, #FF8400 49%, #FFB400 100%) 0% 0% no-repeat padding-box;
+            background: transparent linear-gradient(180deg, #FFB400 0%, #FF8400 49%, #FFB400 100%) 0% 0% no-repeat padding-box;
+            -webkit-box-shadow: 0px 0px 8px #FF8400;
+            box-shadow: 0px 0px 8px #FF8400;
+            border: 1px solid #FF8400;
+            border-radius: 0px 5px 5px 0px; }
+        #sport #sidebar .card-time .time-tab .time-bottom {
+          position: relative;
+          padding: 10px;
+          text-shadow: 0px 0px 4px #00000080;
+          text-align: center; }
+          #sport #sidebar .card-time .time-tab .time-bottom span:first-child {
+            font: Bold 22px/30px Microsoft JhengHei;
+            letter-spacing: 1px; }
+          #sport #sidebar .card-time .time-tab .time-bottom span:last-child {
+            font: Bold 30px/40px Microsoft JhengHei;
+            letter-spacing: 2px; }
+          #sport #sidebar .card-time .time-tab .time-bottom hr {
+            margin: 0; }
+      #sport #sidebar .card-top {
+        margin-top: 10px; }
+        #sport #sidebar .card-top a {
+          width: 100%;
+          padding: 7px 0;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          font: Bold 16px/21px Microsoft JhengHei;
+          text-shadow: 0px 0px 2px #000000B3;
+          background: transparent -webkit-gradient(linear, left top, left bottom, from(#FFB400), to(#FF8400)) 0% 0% no-repeat padding-box;
+          background: transparent -webkit-linear-gradient(top, #FFB400 0%, #FF8400 100%) 0% 0% no-repeat padding-box;
+          background: transparent -o-linear-gradient(top, #FFB400 0%, #FF8400 100%) 0% 0% no-repeat padding-box;
+          background: transparent linear-gradient(180deg, #FFB400 0%, #FF8400 100%) 0% 0% no-repeat padding-box;
+          border-radius: 5px;
+          -webkit-transition: all 0.2s;
+          -o-transition: all 0.2s;
+          transition: all 0.2s; }
+          #sport #sidebar .card-top a:hover {
+            -webkit-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s;
+            -webkit-box-shadow: 0px 0px 8px #FF8400;
+            box-shadow: 0px 0px 8px #FF8400; }
+          #sport #sidebar .card-top a img {
+            width: 20px;
+            height: 20px;
+            margin-right: 4px; }
+      #sport #sidebar .card-bottom {
+        margin-top: 10px;
+        border-top: 1px solid #BBB; }
+        #sport #sidebar .card-bottom .btn-group {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          width: 100%; }
+          #sport #sidebar .card-bottom .btn-group .btn {
+            -webkit-box-flex: 1;
+            -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+            padding: 9px;
+            font: Bold 28px Microsoft JhengHei;
+            color: #8B8B8B;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center; }
+            #sport #sidebar .card-bottom .btn-group .btn:focus {
+              outline: none; }
+            #sport #sidebar .card-bottom .btn-group .btn .icon,
+            #sport #sidebar .card-bottom .btn-group .btn span {
+              display: block; }
+            #sport #sidebar .card-bottom .btn-group .btn .icon img {
+              max-height: 100%;
+              display: block; }
+            #sport #sidebar .card-bottom .btn-group .btn span {
+              margin-left: 4px; }
+          #sport #sidebar .card-bottom .btn-group .btn + .btn {
+            position: relative; }
+            #sport #sidebar .card-bottom .btn-group .btn + .btn:before {
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 50%;
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+              width: 1px;
+              height: 25px;
+              background-color: #8B8B8B; }
+
+.header-wrapper {
+  width: 1237px;
+  padding: 18px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.header-logo {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 305px;
+  flex: 0 0 305px; }
+
+#header {
+  top: 0; }
+
+#LoginForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 372px; }
+  #LoginForm .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 220px;
+    flex: 0 0 220px; }
+    #LoginForm .form-group + .form-group {
+      margin-left: 6px;
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto; }
+  #LoginForm .form-inline {
+    position: relative; }
+    #LoginForm .form-inline input {
+      padding-right: 4rem;
+      max-width: 220px; }
+    #LoginForm .form-inline .account-btn {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      #LoginForm .form-inline .account-btn a {
+        font-size: .75rem; }
+  #LoginForm .btn-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch; }
+    #LoginForm .btn-wrapper [class*=-btn] {
+      width: auto;
+      -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+      flex-grow: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      -ms-flex-preferred-size: calc(50% - 3px);
+      flex-basis: calc(50% - 3px);
+      margin: 0; }
+  #LoginForm #check-code-wrapper input {
+    width: auto;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin: 0;
+    padding-right: 80px; }
+
+@-webkit-keyframes autofill {
+  to {
+    color: #666;
+    background-color: #000;
+    background-image: url(../images/icon_account.png); } }
+  #LoginForm input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both; }
+  #LoginForm #rmNum {
+    padding-right: 4.5rem; }
+  #LoginForm #vPic {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 3px; }
+
+#account-box {
+  width: auto;
+  height: 100%;
+  background-image: none; }
+  #account-box form input + input,
+  #account-box form .form-group-item + .form-group-item {
+    margin-top: 6px; }
+  #account-box form input {
+    margin: 0;
+    width: auto;
+    font-size: 1rem; }
+
+#userinfoss {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0; }
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block; }
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent; }
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%; }
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none; }
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+button {
+  border: 0;
+  padding: 0;
+  border-radius: 0; }
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline; }
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto; }
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block; }
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item; }
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none; }
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-family: 'Microsoft JhengHei', '微軟正黑體', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+html,
+body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  overflow-x: hidden; }
+
+img {
+  max-width: 100%; }
+
+button {
+  background: none;
+  cursor: pointer; }
+  button.button {
+    position: relative;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+    button.button:active {
+      left: 2px;
+      top: 2px; }
+
+.hr {
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  margin-top: 4px;
+  margin-bottom: 4px; }
+
+ul {
+  padding-left: 0;
+  list-style: none; }
+
+.red {
+  color: #FF4747 !important; }
+
+a {
+  text-decoration: none; }
+
+[data-hidden=true],
+.hidden {
+  display: none !important; }
+
+.p-0 {
+  padding: 0 !important; }
+
+.px-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+.py-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important; }
+
+.history-btn,
+.order-btn {
+  display: block;
+  padding: 3px 12px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 1.35;
+  text-align: center;
+  color: #FFF;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.7); }
+
+.order-btn {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffb400), color-stop(50%, #ff8400), color-stop(51%, #ff8400), to(#ffb400));
+  background: -webkit-linear-gradient(top, #ffb400 0%, #ff8400 50%, #ff8400 51%, #ffb400 100%);
+  background: -o-linear-gradient(top, #ffb400 0%, #ff8400 50%, #ff8400 51%, #ffb400 100%);
+  background: linear-gradient(to bottom, #ffb400 0%, #ff8400 50%, #ff8400 51%, #ffb400 100%);
+  background-size: 100% 200%;
+  -webkit-transition: background-position .5s;
+  -o-transition: background-position .5s;
+  transition: background-position .5s; }
+  .active .order-btn {
+    background: -webkit-gradient(linear, left top, left bottom, from(#8B8B8B), to(#5B5B5B)) !important;
+    background: -webkit-linear-gradient(top, #8B8B8B 0%, #5B5B5B 100%) !important;
+    background: -o-linear-gradient(top, #8B8B8B 0%, #5B5B5B 100%) !important;
+    background: linear-gradient(to bottom, #8B8B8B 0%, #5B5B5B 100%) !important;
+    cursor: default; }
+  .order-btn:not(.disble_btn).active {
+    pointer-events: none; }
+  .order-btn:not(.disble_btn):hover {
+    background-position: 0 100%; }
+
+.history-btn {
+  background-color: #FF8400; }
+  .history-btn:hover {
+    background: #ffb400; }
+
+.media .order-btn:before {
+  content: '下单'; }
+
+.media.active .order-btn.active:before {
+  content: '已下单'; }
+
+.layui-layer-tips[type=tips] .layui-layer-content {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100px;
+  border-radius: 5px; }
+
+.disble_btn {
+  background: -webkit-gradient(linear, left top, left bottom, from(#8B8B8B), to(#5B5B5B)) !important;
+  background: -webkit-linear-gradient(top, #8B8B8B 0%, #5B5B5B 100%) !important;
+  background: -o-linear-gradient(top, #8B8B8B 0%, #5B5B5B 100%) !important;
+  background: linear-gradient(to bottom, #8B8B8B 0%, #5B5B5B 100%) !important; }
+
+#betting_list {
+  background-color: #fff;
+  font-weight: bold !important; }
+  #betting_list .betting_list_head {
+    width: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9e9e9e), color-stop(25%, #7e7e7e), color-stop(50%, #6e6e6e), to(#1e1e1e));
+    background: -webkit-linear-gradient(top, #9e9e9e 0%, #7e7e7e 25%, #6e6e6e 50%, #1e1e1e 100%);
+    background: -o-linear-gradient(top, #9e9e9e 0%, #7e7e7e 25%, #6e6e6e 50%, #1e1e1e 100%);
+    background: linear-gradient(to bottom, #9e9e9e 0%, #7e7e7e 25%, #6e6e6e 50%, #1e1e1e 100%); }
+    #betting_list .betting_list_head h2 {
+      color: #fff;
+      text-shadow: #000000 0 2px 6px;
+      padding: 15px 0;
+      font-size: 28px;
+      text-align: center; }
+  #betting_list .betting_list_container {
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    margin: 0 80px; }
+    #betting_list .betting_list_container .betting_list_content .betting_list_single_project {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+      flex-flow: column;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      padding: 10px 20px;
+      font-size: 18px; }
+    #betting_list .betting_list_container .betting_list_content .betting_list_banner {
+      width: 100%; }
+      #betting_list .betting_list_container .betting_list_content .betting_list_banner .detail {
+        -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); }
+        #betting_list .betting_list_container .betting_list_content .betting_list_banner .detail .banner {
+          background-image: url(../images/sport/listtitle.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          width: 760px;
+          height: 160px; }
+          #betting_list .betting_list_container .betting_list_content .betting_list_banner .detail .banner .people-container {
+            height: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            padding: 25px 60px 35px 60px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+          #betting_list .betting_list_container .betting_list_content .betting_list_banner .detail .banner .people {
+            position: relative;
+            width: 110px;
+            height: 110px; }
+          #betting_list .betting_list_container .betting_list_content .betting_list_banner .detail .banner .pic {
+            width: 100%;
+            height: 100%; }
+          #betting_list .betting_list_container .betting_list_content .betting_list_banner .detail .banner p {
+            margin-top: 4px;
+            text-align: center;
+            color: #FFF; }
+    #betting_list .betting_list_container .betting_list_content .betting_list_body {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      border-top: 1px solid #dfdfdf;
+      border-bottom: 1px solid #dfdfdf;
+      margin-top: 10px;
+      padding: 10px 0; }
+      #betting_list .betting_list_container .betting_list_content .betting_list_body .betting_list_data {
+        width: 50%;
+        border-right: solid 1px #dfdfdf;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        #betting_list .betting_list_container .betting_list_content .betting_list_body .betting_list_data li {
+          margin-bottom: 10px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+        #betting_list .betting_list_container .betting_list_content .betting_list_body .betting_list_data :last-child {
+          margin-bottom: 0; }
+        #betting_list .betting_list_container .betting_list_content .betting_list_body .betting_list_data label {
+          color: #5b5b5b;
+          font-size: 16px;
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
+          flex: 0 0 auto; }
+        #betting_list .betting_list_container .betting_list_content .betting_list_body .betting_list_data span {
+          color: #8b8b8b;
+          padding: 0 10px;
+          font-size: 16px; }
+      #betting_list .betting_list_container .betting_list_content .betting_list_body .betting_list_money {
+        width: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 10px 0; }
+        #betting_list .betting_list_container .betting_list_content .betting_list_body .betting_list_money .list_money_box {
+          width: 100%;
+          padding-left: 10px;
+          color: #5b5b5b; }
+          #betting_list .betting_list_container .betting_list_content .betting_list_body .betting_list_money .list_money_box .list_money_input {
+            border-bottom: solid 1px #dfdfdf;
+            padding-bottom: 10px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center; }
+            #betting_list .betting_list_container .betting_list_content .betting_list_body .betting_list_money .list_money_box .list_money_input input {
+              width: 296px;
+              height: 30px;
+              border: solid 1px #707070;
+              border-radius: 5px;
+              line-height: 30px;
+              padding: 0 4px; }
+          #betting_list .betting_list_container .betting_list_content .betting_list_body .betting_list_money .list_money_box .list_money_display {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            padding-top: 10px; }
+    #betting_list .betting_list_container .betting_list_content .betting_list_text {
+      padding-top: 20px; }
+      #betting_list .betting_list_container .betting_list_content .betting_list_text .betting_list_textarea {
+        width: 100%;
+        height: 90px;
+        padding: 5px 10px;
+        border: 1px solid #707070;
+        border-radius: 5px;
+        resize: none;
+        font-size: 14px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
+        #betting_list .betting_list_container .betting_list_content .betting_list_text .betting_list_textarea::-webkit-input-placeholder {
+          font-size: 18px;
+          color: #DFDFDF; }
+        #betting_list .betting_list_container .betting_list_content .betting_list_text .betting_list_textarea:-ms-input-placeholder {
+          font-size: 18px;
+          color: #DFDFDF; }
+        #betting_list .betting_list_container .betting_list_content .betting_list_text .betting_list_textarea::-ms-input-placeholder {
+          font-size: 18px;
+          color: #DFDFDF; }
+        #betting_list .betting_list_container .betting_list_content .betting_list_text .betting_list_textarea::placeholder {
+          font-size: 18px;
+          color: #DFDFDF; }
+    #betting_list .betting_list_container .betting_list_footer {
+      padding: 0 20px 23px 20px; }
+      #betting_list .betting_list_container .betting_list_footer .list_btnbox {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 20px; }
+        #betting_list .betting_list_container .betting_list_footer .list_btnbox button {
+          width: 49%;
+          line-height: 40px;
+          font-weight: bold;
+          color: #fff;
+          font-size: 22px;
+          cursor: pointer;
+          text-shadow: #0000009c 0 0 2px;
+          -webkit-transition: all 0.6s;
+          -o-transition: all 0.6s;
+          transition: all 0.6s; }
+        #betting_list .betting_list_container .betting_list_footer .list_btnbox .cancel_btn {
+          background-color: #ffb400; }
+          #betting_list .betting_list_container .betting_list_footer .list_btnbox .cancel_btn:hover {
+            background-color: #ff8400; }
+        #betting_list .betting_list_container .betting_list_footer .list_btnbox .confirm_btn {
+          background: -webkit-gradient(linear, left top, left bottom, from(#ffb400), color-stop(50%, #ff8400), color-stop(51%, #ff8400), to(#ffb400));
+          background: -webkit-linear-gradient(top, #ffb400 0%, #ff8400 50%, #ff8400 51%, #ffb400 100%);
+          background: -o-linear-gradient(top, #ffb400 0%, #ff8400 50%, #ff8400 51%, #ffb400 100%);
+          background: linear-gradient(to bottom, #ffb400 0%, #ff8400 50%, #ff8400 51%, #ffb400 100%);
+          background-size: 100% 200%;
+          -webkit-transition: background-position .5s;
+          -o-transition: background-position .5s;
+          transition: background-position .5s; }
+          #betting_list .betting_list_container .betting_list_footer .list_btnbox .confirm_btn:not(.disble_btn):hover {
+            background-position: 0 100%; }
+  #betting_list .list_confirm_head {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #9e9e9e;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9e9e9e), color-stop(25%, #7e7e7e), color-stop(50%, #6e6e6e), to(#1e1e1e));
+    background: -webkit-linear-gradient(top, #9e9e9e 0%, #7e7e7e 25%, #6e6e6e 50%, #1e1e1e 100%);
+    background: -o-linear-gradient(top, #9e9e9e 0%, #7e7e7e 25%, #6e6e6e 50%, #1e1e1e 100%);
+    background: linear-gradient(to bottom, #9e9e9e 0%, #7e7e7e 25%, #6e6e6e 50%, #1e1e1e 100%);
+    color: #FFF; }
+    #betting_list .list_confirm_head [class*=heading] {
+      font-size: 42px;
+      text-align: center;
+      text-shadow: 0 2px 6px black; }
+  #betting_list .list_confirm_content {
+    width: 100%;
+    height: calc(100% - 76px);
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    .macos #betting_list .list_confirm_content {
+      width: 100%;
+      height: 100%;
+      margin-top: 0;
+      padding: 10px 20px 0 20px;
+      overflow: auto; }
+    #betting_list .list_confirm_content .list_confirm_item_container {
+      min-width: 980px; }
+    #betting_list .list_confirm_content .list_confirm_item {
+      font-size: 14px;
+      color: #8B8B8B;
+      border: 1px solid #dfdfdf;
+      border-radius: 5px;
+      width: 940px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease; }
+      #betting_list .list_confirm_content .list_confirm_item:hover {
+        -webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.35);
+        box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.35); }
+      #betting_list .list_confirm_content .list_confirm_item .confirm_item_header {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        cursor: pointer;
+        padding: 10px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
+        #betting_list .list_confirm_content .list_confirm_item .confirm_item_header .header_left {
+          padding: 5px 0;
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 140px;
+          flex: 0 0 140px; }
+          #betting_list .list_confirm_content .list_confirm_item .confirm_item_header .header_left [data-id=number] {
+            margin-left: 4px; }
+        #betting_list .list_confirm_content .list_confirm_item .confirm_item_header .header_mid {
+          width: 667px;
+          -webkit-box-flex: 1;
+          -ms-flex: 1 1 667px;
+          flex: 1 1 667px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          padding: 2px 20px 2px 10px;
+          border-left: 1px solid #dfdfdf;
+          border-right: 1px solid #dfdfdf;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+          #betting_list .list_confirm_content .list_confirm_item .confirm_item_header .header_mid span:first-child {
+            -webkit-box-flex: 1;
+            -ms-flex: 1 2 33%;
+            flex: 1 2 33%; }
+          #betting_list .list_confirm_content .list_confirm_item .confirm_item_header .header_mid span:nth-child(2) {
+            -webkit-box-flex: 1;
+            -ms-flex: 1 1 18%;
+            flex: 1 1 18%; }
+          #betting_list .list_confirm_content .list_confirm_item .confirm_item_header .header_mid span:nth-child(3) {
+            -webkit-box-flex: 1;
+            -ms-flex: 1 1 15%;
+            flex: 1 1 15%; }
+          #betting_list .list_confirm_content .list_confirm_item .confirm_item_header .header_mid strong {
+            margin-left: 4px; }
+          #betting_list .list_confirm_content .list_confirm_item .confirm_item_header .header_mid .result-wait {
+            width: 76px;
+            height: 26px;
+            line-height: 26px;
+            background: #DFDFDF;
+            border-radius: 5px;
+            text-align: center; }
+          #betting_list .list_confirm_content .list_confirm_item .confirm_item_header .header_mid .result-no {
+            width: 76px;
+            height: 26px;
+            line-height: 26px;
+            background: #8B8B8B;
+            border-radius: 5px;
+            text-align: center; }
+          #betting_list .list_confirm_content .list_confirm_item .confirm_item_header .header_mid .result-yes {
+            width: 76px;
+            height: 26px;
+            line-height: 26px;
+            background: #FF4747;
+            border-radius: 5px;
+            text-align: center; }
+        #betting_list .list_confirm_content .list_confirm_item .confirm_item_header .header_right {
+          width: auto;
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 100px;
+          flex: 0 0 100px;
+          color: #FF8400;
+          padding: 7px 0;
+          padding-left: 10px;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          text-align: center; }
+          #betting_list .list_confirm_content .list_confirm_item .confirm_item_header .header_right i {
+            width: 8px;
+            height: 8px;
+            margin-right: 4px; }
+      #betting_list .list_confirm_content .list_confirm_item .confirm_item_body {
+        display: none;
+        border-top: 1px solid #dfdfdf; }
+        #betting_list .list_confirm_content .list_confirm_item .confirm_item_body .body_container {
+          width: auto;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          padding-left: 162px;
+          padding-top: 10px;
+          padding-right: 10px;
+          padding-bottom: 10px;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+          #betting_list .list_confirm_content .list_confirm_item .confirm_item_body .body_container .body_intro li:not(:first-child) {
+            margin-top: 10px; }
+            #betting_list .list_confirm_content .list_confirm_item .confirm_item_body .body_container .body_intro li:not(:first-child) span {
+              margin-left: 4px; }
+          #betting_list .list_confirm_content .list_confirm_item .confirm_item_body .body_container .body_textarea {
+            width: 63%;
+            height: 110px;
+            background: #eee;
+            border-radius: 5px;
+            padding: 10px;
+            resize: none;
+            border: none; }
+  #betting_list .list_confirm_footer {
+    margin-top: 10px;
+    padding: 0 10px 20px 10px; }
+    #betting_list .list_confirm_footer .record_btn_box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding-top: 10px; }
+      #betting_list .list_confirm_footer .record_btn_box button {
+        width: 49%;
+        line-height: 40px;
+        font-weight: bold;
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+        text-shadow: #0000009c 0 0 2px;
+        -webkit-transition: all 0.6s;
+        -o-transition: all 0.6s;
+        transition: all 0.6s;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ffb400), to(#ff8400));
+        background: -webkit-linear-gradient(top, #ffb400 0%, #ff8400 100%);
+        background: -o-linear-gradient(top, #ffb400 0%, #ff8400 100%);
+        background: linear-gradient(to bottom, #ffb400 0%, #ff8400 100%); }
+        #betting_list .list_confirm_footer .record_btn_box button:hover {
+          background: -webkit-gradient(linear, left top, left bottom, from(#ff8400), to(#ffb400));
+          background: -webkit-linear-gradient(top, #ff8400 0%, #ffb400 100%);
+          background: -o-linear-gradient(top, #ff8400 0%, #ffb400 100%);
+          background: linear-gradient(to bottom, #ff8400 0%, #ffb400 100%); }
+
+.banner-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #FFF;
+  text-shadow: 0 0 3px #000000; }
+
+.activeBorder {
+  border: 2px solid #FF8400;
+  -webkit-box-shadow: 0 0 12px #FFB400;
+  box-shadow: 0 0 12px #FFB400; }

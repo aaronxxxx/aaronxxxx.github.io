@@ -1,0 +1,1262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>重庆时时彩</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1" />
+    <link href="../css/base.css" rel="stylesheet" />
+    <link href="../css/game.css" rel="stylesheet" />
+
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            //号码 单双 大小
+            $('.htitle li').hover(function () {
+                $(this).addClass('reply').siblings().removeClass('reply');
+                $('.hcontent').eq($(this).index()).show().siblings('.hcontent').hide();
+
+            })
+            //最近交易记录
+            $('.otitle li').click(function () {
+                $(this).addClass('reply').siblings().removeClass('reply');
+                $('.ocontent>div').eq($(this).index()).show().siblings('.ocontent>div').hide();
+
+            })
+
+            //第几球
+            $('.ctitle li').click(function () {
+                $(this).addClass('reply').siblings().removeClass('reply');
+                $('.ccs_chk').eq($(this).index()).show().siblings('.ccs_chk').hide();
+
+            })
+
+            //露珠图
+            $('.ftitle li').click(function () {
+                $(this).addClass('reply').siblings().removeClass('reply');
+                $('.fcontent').eq($(this).index()).show().siblings('.fcontent').hide();
+				$w=$(this).index()+1;
+				dropmap();
+            })
+
+            //露珠图大小单双切换
+            $('.fcontent li').click(function () {
+                $(this).addClass('answer').siblings().removeClass('answer');
+                //$(this).parents(".fcontent").find(".luzhuitem").eq($(this).index()).show().siblings('.luzhuitem').hide();
+				$type=$(this).index();
+				dropmap();
+            })
+
+
+
+        })
+    </script>
+</head>
+<body>
+    <div class="game">
+
+        <div class="content pd10">
+
+            <!--左边-->
+            <div class="content_left">
+                <div class="car">
+                    <div class="htitle">
+                        <ul>
+                            <li class="reply">号码</li>
+                            <li class="project">单双</li>
+                            <li class="project">大小</li>
+                        </ul>
+                    </div>
+                    <!--号码-->
+                    <div class="hcontent" style="display: block;">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr class="alt">
+                                        <td class="ltd" style="height: 26px;">期数</td>
+                                        <td>一</td>
+                                        <td>二</td>
+                                        <td>三</td>
+                                        <td>四</td>
+                                        <td>五</td>
+                                    </tr>
+                                    <tr ds-type="1">
+                                        <td class="ltd periods" id="hmqs_1">536842</td>
+                                        <td><span class="blu" id="hm_1_1">10</span></td>
+                                        <td><span class="blu" id="hm_1_2">8</span></td>
+                                        <td><span class="blu" id="hm_1_3">2</span></td>
+                                        <td><span class="blu" id="hm_1_4">5</span></td>
+                                        <td><span class="blu" id="hm_1_5">7</span></td>
+                                    </tr>
+                                    <tr ds-type="1" class="alt">
+                                        <td class="ltd periods" id="hmqs_2">536841</td>
+                                        <td><span class="blu" id="hm_2_1">10</span></td>
+                                        <td><span class="blu" id="hm_2_2">8</span></td>
+                                        <td><span class="blu" id="hm_2_3">2</span></td>
+                                        <td><span class="blu" id="hm_2_4">5</span></td>
+                                        <td><span class="blu" id="hm_2_5">7</span></td>
+                                    </tr>
+                                    <tr ds-type="1">
+                                        <td class="ltd periods" id="hmqs_3">536840</td>
+                                        <td><span class="blu" id="hm_3_1">10</span></td>
+                                        <td><span class="blu" id="hm_3_2">8</span></td>
+                                        <td><span class="blu" id="hm_3_3">2</span></td>
+                                        <td><span class="blu" id="hm_3_4">5</span></td>
+                                        <td><span class="blu" id="hm_3_5">7</span></td>
+                                    </tr>
+                                    <tr ds-type="1" class="alt">
+                                        <td class="ltd periods" id="hmqs_4">536839</td>
+                                        <td><span class="blu" id="hm_4_1">10</span></td>
+                                        <td><span class="blu" id="hm_4_2">8</span></td>
+                                        <td><span class="blu" id="hm_4_3">2</span></td>
+                                        <td><span class="blu" id="hm_4_4">5</span></td>
+                                        <td><span class="blu" id="hm_4_5">7</span></td>
+                                    </tr>
+                                    <tr ds-type="1">
+                                        <td class="ltd periods" id="hmqs_5">536838</td>
+                                        <td><span class="blu" id="hm_5_1">10</span></td>
+                                        <td><span class="blu" id="hm_5_2">8</span></td>
+                                        <td><span class="blu" id="hm_5_3">2</span></td>
+                                        <td><span class="blu" id="hm_5_4">5</span></td>
+                                        <td><span class="blu" id="hm_5_5">7</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                    <!--单双-->
+                    <div class="hcontent">
+                         <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                             <tbody>
+                                 <tr class="alt">
+                                     <td class="ltd" style="height: 26px;">期数</td>
+                                     <td>一</td>
+                                     <td>二</td>
+                                     <td>三</td>
+                                     <td>四</td>
+                                     <td>五</td>
+                                 </tr>
+                                 <tr ds-type="2" class="alt">
+                                     <td class="ltd periods" id="dsqs_1">536842</td>
+                                     <td><span class="blu" id="ds_1_1">双</span></td>
+                                     <td><span class="blu" id="ds_1_2">双</span></td>
+                                     <td><span class="blu" id="ds_1_3">双</span></td>
+                                     <td><span class="red" id="ds_1_4">单</span></td>
+                                     <td><span class="red" id="ds_1_5">单</span></td>
+                                 </tr>
+                                 <tr ds-type="2">
+                                     <td class="ltd periods" id="dsqs_2">536841</td>
+                                     <td><span class="blu" id="ds_2_1">双</span></td>
+                                     <td><span class="blu" id="ds_2_2">双</span></td>
+                                     <td><span class="blu" id="ds_2_3">双</span></td>
+                                     <td><span class="red" id="ds_2_4">单</span></td>
+                                     <td><span class="red" id="ds_2_5">单</span></td>
+                                 </tr>
+                                 <tr ds-type="2" class="alt">
+                                     <td class="ltd periods" id="dsqs_3">536840</td>
+                                     <td><span class="blu" id="ds_3_1">双</span></td>
+                                     <td><span class="blu" id="ds_3_2">双</span></td>
+                                     <td><span class="blu" id="ds_3_3">双</span></td>
+                                     <td><span class="red" id="ds_3_4">单</span></td>
+                                     <td><span class="red" id="ds_3_5">单</span></td>
+                                 </tr>
+                                 <tr ds-type="2">
+                                     <td class="ltd periods" id="dsqs_4">536839</td>
+                                     <td><span class="blu" id="ds_4_1">双</span></td>
+                                     <td><span class="blu" id="ds_4_2">双</span></td>
+                                     <td><span class="blu" id="ds_4_3">双</span></td>
+                                     <td><span class="red" id="ds_4_4">单</span></td>
+                                     <td><span class="red" id="ds_4_5">单</span></td>
+                                 </tr>
+                                 <tr ds-type="2" class="alt">
+                                     <td class="ltd periods" id="dsqs_5">536838</td>
+                                     <td><span class="blu" id="ds_5_1">双</span></td>
+                                     <td><span class="blu" id="ds_5_2">双</span></td>
+                                     <td><span class="blu" id="ds_5_3">双</span></td>
+                                     <td><span class="red" id="ds_5_4">单</span></td>
+                                     <td><span class="red" id="ds_5_5">单</span></td>
+                                 </tr>
+                             </tbody>
+                         </table>
+                    </div>
+                    <!--大小-->
+                    <div class="hcontent">
+                           <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                               <tbody>
+                                   <tr class="alt">
+                                       <td class="ltd" style="height: 26px;">期数</td>
+                                       <td>一</td>
+                                       <td>二</td>
+                                       <td>三</td>
+                                       <td>四</td>
+                                       <td>五</td>
+                                   </tr>
+                                   <tr>
+                                       <td class="ltd periods" id="dxqs_1">536842</td>
+                                       <td><span class="red" id="dx_1_1">大</span></td>
+                                       <td><span class="red" id="dx_1_2">大</span></td>
+                                       <td><span class="blu" id="dx_1_3">小</span></td>
+                                       <td><span class="blu" id="dx_1_4">小</span></td>
+                                       <td><span class="red" id="dx_1_5">大</span></td>
+                                   </tr>
+                                   <tr class="alt">
+                                       <td class="ltd periods" id="dxqs_2">536841</td>
+                                       <td><span class="red" id="dx_2_1">大</span></td>
+                                       <td><span class="red" id="dx_2_2">大</span></td>
+                                       <td><span class="blu" id="dx_2_3">小</span></td>
+                                       <td><span class="blu" id="dx_2_4">小</span></td>
+                                       <td><span class="red" id="dx_2_5">大</span></td>
+                                   </tr>
+                                   <tr>
+                                       <td class="ltd periods" id="dxqs_3">536840</td>
+                                       <td><span class="red" id="dx_3_1">大</span></td>
+                                       <td><span class="red" id="dx_3_2">大</span></td>
+                                       <td><span class="blu" id="dx_3_3">小</span></td>
+                                       <td><span class="blu" id="dx_3_4">小</span></td>
+                                       <td><span class="red" id="dx_3_5">大</span></td>
+                                   </tr>
+                                   <tr class="alt">
+                                       <td class="ltd periods" id="dxqs_4">536839</td>
+                                       <td><span class="red" id="dx_4_1">大</span></td>
+                                       <td><span class="red" id="dx_4_2">大</span></td>
+                                       <td><span class="blu" id="dx_4_3">小</span></td>
+                                       <td><span class="blu" id="dx_4_4">小</span></td>
+                                       <td><span class="red" id="dx_4_5">大</span></td>
+                                   </tr>
+                                   <tr>
+                                       <td class="ltd periods" id="dxqs_5">536838</td>
+                                       <td><span class="red" id="dx_5_1">大</span></td>
+                                       <td><span class="red" id="dx_5_2">大</span></td>
+                                       <td><span class="blu" id="dx_5_3">小</span></td>
+                                       <td><span class="blu" id="dx_5_4">小</span></td>
+                                       <td><span class="red" id="dx_5_5">大</span></td>
+                                   </tr>
+                               </tbody>
+                           </table>
+                    </div>
+
+                </div>
+                <div class="orb">
+                    <div class="otitle">
+                        <ul>
+                            <li class="reply project" style="margin-right: 0px;">两面长龙排行</li>
+                            <li class="project">最近交易记录</li>
+                        </ul>
+
+                    </div>
+                    <div class="ocontent">
+                        <!--两面长龙排行-->
+                        <div style="display: block;">
+                            <ul>
+                                <li class="lli"><span style="color: #863316;">第一球 - 双</span></li>
+                                <li class="rli"><span class="red">5期</span>&nbsp;</li>
+                            </ul>
+                            <ul>
+                                <li class="lli"><span style="color: #863316;">第二球 - 双</span></li>
+                                <li class="rli"><span>3期</span>&nbsp;</li>
+                            </ul>
+                            <ul>
+                                <li class="lli"><span style="color: #863316;">总和 - 双</span></li>
+                                <li class="rli"><span>3期</span>&nbsp;</li>
+                            </ul>
+                            <ul>
+                                <li class="lli"><span style="color: #863316;">第五球 - 单</span></li>
+                                <li class="rli"><span>2期</span>&nbsp;</li>
+                            </ul>
+                        </div>
+                        <!--最近交易记录-->
+                        <div style="display: none;">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="ltd" style="text-align: center">时间</td>
+                                        <td class="ltd" style="text-align: center">详情</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!--右边-->
+            
+            <div class="code">
+                <div class="ctitle">
+                    <ul>
+                        <li class="reply">1~5球</li>
+                        <li class="project pointr">总和/龙虎</li>
+                        <li class="project pointr">前中后三球</li>
+                        <li class="project pointr">牛牛</li>
+
+                    </ul>
+                </div>
+                <form name="orders" action="/app/lottery/cqssc/order_cqssc.php?1=1" method="post" target="">
+                <div id="lottoPlayRegion" class="ccontent">
+                    <div class="cqtoday">
+                        <ul>
+                            <li class="result">
+                                <b>重庆时时彩</b>
+                                <span class="font_jr">今日输赢:</span>
+                                <span class="font_jr" id="ds_main_minBunko">0.00</span>
+                            </li>
+                            <li class="bjperiod kj_left">快捷金额：<input class="span80 kj_text" maxlength="6" type="text">
+                                <a id="btnReset1" href="javascript:;">
+                                    <img src="../images/type_min_ct.gif" width="45" height="23"></a>
+                                <a id="btnSubmit1" href="javascript:;">
+                                    <img src="../images/type_min_xz.gif" width="45" height="23"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cqball">
+                        <ul>
+                            <li class="tt">第 <b id="numbers"></b> 期开奖结果
+                            </li>
+                            <li class="tc open_number">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr>
+                                            <td><span id="ds_main_drawNums1"><img src="../img/lhj.gif"/></span></td>
+                                            <td><span id="ds_main_drawNums2"><img src="../img/lhj.gif"/></span></td>
+                                            <td><span id="ds_main_drawNums3"><img src="../img/lhj.gif"/></span></td>
+                                            <td><span id="ds_main_drawNums4"><img src="../img/lhj.gif"/></span></td>
+                                            <td><span id="ds_main_drawNums5"><img src="../img/lhj.gif"/></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>万</td>
+                                            <td>千</td>
+                                            <td>百</td>
+                                            <td>十</td>
+                                            <td>个</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cqopen">
+                        第 <b id="open_qihao"></b> 期<br>
+                        <label id="ds_main_timestate">截止投注还有</label>
+                        <br>
+                        <span id="cqc_time" class="ds_main_time"></span>
+                        <div id="soundShow">
+                            <button type="button" class="on"></button>
+                        </div>
+                    </div>
+                    <div id="ds_lotto_main">
+                        <div class="beijing">
+                            <!--1~5球-->
+                            <div class="ccs_chk" style="display: block;">
+                                <table border="0" cellspacing="0" cellpadding="0" class="hao span160">
+                                    <tbody class="tt">
+                                        <tr>
+                                            <td class="fontwhite" colspan="3">第一球(万位)</td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">大</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_1_h11"></td>
+                                            <td class="bian_td_inp" id="ball_1_t11">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">小</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_1_h12"></td>
+                                            <td class="bian_td_inp" id="ball_1_t12">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">单</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_1_h13"></td>
+                                            <td class="bian_td_inp" id="ball_1_t13">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">双</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_1_h14"></td>
+                                            <td class="bian_td_inp" id="ball_1_t14">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">0</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_1_h1"></td>
+                                            <td class="bian_td_inp" id="ball_1_t1">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">1</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_1_h2"></td>
+                                            <td class="bian_td_inp" id="ball_1_t2">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">2</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_1_h3"></td>
+                                            <td class="bian_td_inp" id="ball_1_t3">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">3</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_1_h4"></td>
+                                            <td class="bian_td_inp" id="ball_1_t4">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">4</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_1_h5"></td>
+                                            <td class="bian_td_inp" id="ball_1_t5">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">5</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_1_h6"></td>
+                                            <td class="bian_td_inp" id="ball_1_t6">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">6</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_1_h7"></td>
+                                            <td class="bian_td_inp" id="ball_1_t7">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">7</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_1_h8"></td>
+                                            <td class="bian_td_inp" id="ball_1_t8">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">8</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_1_h9"></td>
+                                            <td class="bian_td_inp" id="ball_1_t9">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">9</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_1_h10"></td>
+                                            <td class="bian_td_inp" id="ball_1_t10">
+                                                
+                                        </tr>
+
+                                    </tbody>
+
+                                </table>
+
+                                <table border="0" cellspacing="0" cellpadding="0" class="hao span160">
+                                    <tbody class="tt">
+                                        <tr>
+                                            <td class="fontwhite" colspan="3">第二球(千位)</td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">大</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_2_h11"></td>
+                                            <td class="bian_td_inp" id="ball_2_t11">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">小</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_2_h12"></td>
+                                            <td class="bian_td_inp" id="ball_2_t12">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">单</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_2_h13"></td>
+                                            <td class="bian_td_inp" id="ball_2_t13">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">双</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_2_h14"></td>
+                                            <td class="bian_td_inp" id="ball_2_t14">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">0</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_2_h1"></td>
+                                            <td class="bian_td_inp" id="ball_2_t1">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">1</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_2_h2"></td>
+                                            <td class="bian_td_inp" id="ball_2_t2">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">2</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_2_h3"></td>
+                                            <td class="bian_td_inp" id="ball_2_t3">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">3</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_2_h4"></td>
+                                            <td class="bian_td_inp" id="ball_2_t4">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">4</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_2_h5"></td>
+                                            <td class="bian_td_inp" id="ball_2_t5">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">5</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_2_h6"></td>
+                                            <td class="bian_td_inp" id="ball_2_t6">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">6</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_2_h7"></td>
+                                            <td class="bian_td_inp" id="ball_2_t7">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">7</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_2_h8"></td>
+                                            <td class="bian_td_inp" id="ball_2_t8">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">8</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_2_h9"></td>
+                                            <td class="bian_td_inp" id="ball_2_t9">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">9</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_2_h10"></td>
+                                            <td class="bian_td_inp" id="ball_2_t10">
+                                                
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                                <table border="0" cellspacing="0" cellpadding="0" class="hao span160">
+                                    <tbody class="tt">
+                                        <tr>
+                                            <td class="fontwhite" colspan="3">第三球(百位)</td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">大</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_3_h11"></td>
+                                            <td class="bian_td_inp" id="ball_3_t11">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">小</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_3_h12"></td>
+                                            <td class="bian_td_inp" id="ball_3_t12">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">单</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_3_h13"></td>
+                                            <td class="bian_td_inp" id="ball_3_t13">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">双</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_3_h14"></td>
+                                            <td class="bian_td_inp" id="ball_3_t14">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">0</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_3_h1"></td>
+                                            <td class="bian_td_inp" id="ball_3_t1">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">1</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_3_h2"></td>
+                                            <td class="bian_td_inp" id="ball_3_t2">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">2</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_3_h3"></td>
+                                            <td class="bian_td_inp" id="ball_3_t3">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">3</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_3_h4"></td>
+                                            <td class="bian_td_inp" id="ball_3_t4">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">4</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_3_h5"></td>
+                                            <td class="bian_td_inp" id="ball_3_t5">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">5</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_3_h6"></td>
+                                            <td class="bian_td_inp" id="ball_3_t6">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">6</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_3_h7"></td>
+                                            <td class="bian_td_inp" id="ball_3_t7">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">7</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_3_h8"></td>
+                                            <td class="bian_td_inp" id="ball_3_t8">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">8</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_3_h9"></td>
+                                            <td class="bian_td_inp" id="ball_3_t9">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">9</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_3_h10"></td>
+                                            <td class="bian_td_inp" id="ball_3_t10">
+                                                
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                                <table border="0" cellspacing="0" cellpadding="0" class="hao span160">
+                                    <tbody class="tt">
+                                        <tr>
+                                            <td class="fontwhite" colspan="3">第四球(十位)</td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">大</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_4_h11"></td>
+                                            <td class="bian_td_inp" id="ball_4_t11">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">小</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_4_h12"></td>
+                                            <td class="bian_td_inp" id="ball_4_t12">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">单</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_4_h13"></td>
+                                            <td class="bian_td_inp" id="ball_4_t13">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">双</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_4_h14"></td>
+                                            <td class="bian_td_inp" id="ball_4_t14">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">0</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_4_h1"></td>
+                                            <td class="bian_td_inp" id="ball_4_t1">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">1</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_4_h2"></td>
+                                            <td class="bian_td_inp" id="ball_4_t2">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">2</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_4_h3"></td>
+                                            <td class="bian_td_inp" id="ball_4_t3">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">3</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_4_h4"></td>
+                                            <td class="bian_td_inp" id="ball_4_t4">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">4</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_4_h5"></td>
+                                            <td class="bian_td_inp" id="ball_4_t5">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">5</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_4_h6"></td>
+                                            <td class="bian_td_inp" id="ball_4_t6">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">6</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_4_h7"></td>
+                                            <td class="bian_td_inp" id="ball_4_t7">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">7</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_4_h8"></td>
+                                            <td class="bian_td_inp" id="ball_4_t8">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">8</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_4_h9"></td>
+                                            <td class="bian_td_inp" id="ball_4_t9">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">9</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_4_h10"></td>
+                                            <td class="bian_td_inp" id="ball_4_t10">
+                                                
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                                <table border="0" cellspacing="0" cellpadding="0" class="hao span160">
+                                    <tbody class="tt">
+                                        <tr>
+                                            <td class="fontwhite" colspan="3">第五球(个位)</td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">大</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_5_h11"></td>
+                                            <td class="bian_td_inp" id="ball_5_t11">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">小</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_5_h12"></td>
+                                            <td class="bian_td_inp" id="ball_5_t12">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">单</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_5_h13"></td>
+                                            <td class="bian_td_inp" id="ball_5_t13">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">双</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_5_h14"></td>
+                                            <td class="bian_td_inp" id="ball_5_t14">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">0</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_5_h1"></td>
+                                            <td class="bian_td_inp" id="ball_5_t1">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">1</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_5_h2"></td>
+                                            <td class="bian_td_inp" id="ball_5_t2">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">2</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_5_h3"></td>
+                                            <td class="bian_td_inp" id="ball_5_t3">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">3</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_5_h4"></td>
+                                            <td class="bian_td_inp" id="ball_5_t4">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">4</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_5_h5"></td>
+                                            <td class="bian_td_inp" id="ball_5_t5">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">5</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_5_h6"></td>
+                                            <td class="bian_td_inp" id="ball_5_t6">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">6</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_5_h7"></td>
+                                            <td class="bian_td_inp" id="ball_5_t7">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">7</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_5_h8"></td>
+                                            <td class="bian_td_inp" id="ball_5_t8">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">8</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_5_h9"></td>
+                                            <td class="bian_td_inp" id="ball_5_t9">
+                                                
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font15 span40 pointr">9</td>
+                                            <td class="bian_td_odds peilv span50 pointr" id="ball_5_h10"></td>
+                                            <td class="bian_td_inp" id="ball_5_t10">
+                                                
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--总和/龙虎-->
+                            <div class="ccs_chk">
+                                <div class="dragon chong">
+
+                                    <ul>
+                                        <li class="tou span800">总和/龙虎</li>
+                                        <li>
+                                            <table class="span198" border="0" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="tl span60 font15 pointr">总和大</td>
+                                                        <td class="peilv span60 pointr" id="ball_6_h1">1.985</td>
+                                                        <td class="bian_td_inp" id="ball_6_t1">
+                                                            <input class="span55" type="text" maxlength="6"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tl span60 font15 pointr">总和小</td>
+                                                        <td class="peilv span60 pointr" id="ball_6_h2">1.985</td>
+                                                        <td class="bian_td_inp" id="ball_6_t2">
+                                                            <input class="span55" type="text" maxlength="6"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="span198" border="0" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="tl span60 font15 pointr">总和单</td>
+                                                        <td class="peilv span60 pointr" id="ball_6_h3">1.985</td>
+                                                        <td class="bian_td_inp" id="ball_6_t3">
+                                                            <input class="span55" type="text" maxlength="6"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tl span60 font15 pointr">总和双</td>
+                                                        <td class="peilv span60 pointr" id="ball_6_h4">1.985</td>
+                                                        <td class="bian_td_inp" id="ball_6_t4">
+                                                            <input class="span55" type="text" maxlength="6"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="span198" border="0" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="tl span60 font15 pointr">龙</td>
+                                                        <td class="peilv span60 pointr" id="ball_6_h5">1.985</td>
+                                                        <td class="bian_td_inp" id="ball_6_t5">
+                                                            <input class="span55" type="text" maxlength="6"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tl span60 font15 pointr">虎</td>
+                                                        <td class="peilv span60 pointr" id="ball_6_h6">1.985</td>
+                                                        <td class="bian_td_inp" id="ball_6_t6">
+                                                            <input class="span55" type="text" maxlength="6"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="span198" border="0" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="tl span60 font15 pointr">和</td>
+                                                        <td class="peilv span60 pointr" id="ball_6_h7">9</td>
+                                                        <td class="bian_td_inp" id="ball_6_h7">
+                                                            <input class="span55" type="text" maxlength="6"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <!--前中后三球-->
+                            <div class="ccs_chk">
+                                <div class="dragon chong">
+                                    <ul class="bottom10">
+                                        <li class="tou span800">前三球</li>
+                                        <li>
+                                            <table class="hao span800" border="0" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="span40 pointr"><span>豹子</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_7_h1"></td>
+                                                        <td class="bian_td_inp" id="ball_7_t1">
+                                                            
+                                                        <td class="span40 pointr"><span>顺子</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_7_h2"></td>
+                                                        <td class="bian_td_inp" id="ball_7_t2">
+                                                            
+                                                        <td class="span40 pointr"><span>对子</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_7_h3"></td>
+                                                        <td class="bian_td_inp" id="ball_7_t3">
+                                                            
+                                                        <td class="span40 pointr"><span>半顺</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_7_h4"></td>
+                                                        <td class="bian_td_inp" id="ball_7_t4">
+                                                            
+                                                        <td class="span40 pointr"><span>杂六</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_7_h5"></td>
+                                                        <td class="bian_td_inp" id="ball_7_t5">
+                                                            
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </li>
+                                    </ul>
+                                    <ul class="bottom10">
+                                        <li class="tou span800">中三球</li>
+                                        <li>
+                                            <table class="hao span800" border="0" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="span40 pointr"><span>豹子</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_8_h1"></td>
+                                                        <td class="bian_td_inp" id="ball_8_t1">
+                                                            
+                                                        <td class="span40 pointr"><span>顺子</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_8_h2"></td>
+                                                        <td class="bian_td_inp" id="ball_8_t2">
+                                                            
+                                                        <td class="span40 pointr"><span>对子</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_8_h3"></td>
+                                                        <td class="bian_td_inp" id="ball_8_t3">
+                                                            
+                                                        <td class="span40 pointr"><span>半顺</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_8_h4"></td>
+                                                        <td class="bian_td_inp" id="ball_8_t4">
+                                                            
+                                                        <td class="span40 pointr"><span>杂六</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_8_h5"></td>
+                                                        <td class="bian_td_inp" id="ball_8_t5">
+                                                            
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </li>
+                                    </ul>
+                                    <ul class="bottom10">
+                                        <li class="tou span800">后三球</li>
+                                        <li>
+                                            <table class="hao span800" border="0" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="span40 pointr"><span>豹子</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_9_h1"></td>
+                                                        <td class="bian_td_inp" id="ball_9_t1">
+                                                            
+                                                        <td class="span40 pointr"><span>顺子</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_9_h2"></td>
+                                                        <td class="bian_td_inp" id="ball_9_t2">
+                                                            
+                                                        <td class="span40 pointr"><span>对子</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_9_h3"></td>
+                                                        <td class="bian_td_inp" id="ball_9_t3">
+                                                            
+                                                        <td class="span40 pointr"><span>半顺</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_9_h4"></td>
+                                                        <td class="bian_td_inp" id="ball_9_t4">
+                                                            
+                                                        <td class="span40 pointr"><span>杂六</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_9_h5"></td>
+                                                        <td class="bian_td_inp" id="ball_9_t5">
+                                                            
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <!--牛牛-->
+                            <div class="ccs_chk">
+                                <div class="dragon chong">
+                                    <ul class="bottom10">
+                                        <li class="tou span800">牛牛</li>
+                                        <li>
+                                            <table class="hao span800" border="0" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="span40 pointr"><span>无牛</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_10_h1">2.30</td>
+                                                        <td class="bian_td_inp" id="ball_10_t1">
+                                                            
+                                                        <td class="span40 pointr"><span>牛1	</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_10_h2">11.00</td>
+                                                        <td class="bian_td_inp" id="ball_10_t2">
+                                                            
+                                                        <td class="span40 pointr"><span>牛2</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_10_h3">2.80</td>
+                                                        <td class="bian_td_inp" id="ball_10_t3">
+                                                            
+                                                        <td class="span40 pointr"><span>牛3</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_10_h4">2.10</td>
+                                                        <td class="bian_td_inp" id="ball_10_t4">
+                                                            
+                                                        <td class="span40 pointr"><span>牛4</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_10_h5">2.20</td>
+                                                        <td class="bian_td_inp" id="ball_10_t5">
+                                                            
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="span40 pointr"><span>牛5</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_10_h6">2.30</td>
+                                                        <td class="bian_td_inp" id="ball_10_t6">
+                                                            
+                                                        <td class="span40 pointr"><span>牛6	</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_10_h7">11.00</td>
+                                                        <td class="bian_td_inp" id="ball_10_t7">
+                                                            
+                                                        <td class="span40 pointr"><span>牛7</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_10_h8">2.80</td>
+                                                        <td class="bian_td_inp" id="ball_10_t8">
+                                                            
+                                                        <td class="span40 pointr"><span>牛8</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_10_h9">2.10</td>
+                                                        <td class="bian_td_inp" id="ball_10_t9">
+                                                            
+                                                        <td class="span40 pointr"><span>牛9</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_10_h10">2.20</td>
+                                                        <td class="bian_td_inp" id="ball_10_t10">
+                                                            
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="span40 pointr"><span>牛牛</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_10_h11">2.30</td>
+                                                        <td class="bian_td_inp" id="ball_10_t11">
+                                                            
+                                                        <td class="span40 pointr"><span>牛大	</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_10_h12">11.00</td>
+                                                        <td class="bian_td_inp" id="ball_10_t12">
+                                                            
+                                                        <td class="span40 pointr"><span>牛小</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_10_h13">2.80</td>
+                                                        <td class="bian_td_inp" id="ball_10_t13">
+                                                            
+                                                        <td class="span40 pointr"><span>牛单</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_10_h14">2.10</td>
+                                                        <td class="bian_td_inp" id="ball_10_t14">
+                                                            
+                                                        <td class="span40 pointr"><span>牛双</span></td>
+                                                        <td class="bian_td_odds peilv span50 pointr" id="ball_10_h15">2.20</td>
+                                                        <td class="bian_td_inp" id="ball_10_t15">
+                                                            
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <ul>
+                                <li class="ta">
+                                    <div style="float: left; margin-left: 10px;">
+                                        快捷金额：<input class="span80 kj_text" type="text">
+                                    </div>
+                                    <div style="float: left; margin-left: 120px;">
+                                        <a id="btnReset" href="javascript:;">
+                                            <img src="../images/an_cz.gif" width="85" height="23" onclick="reset()"></a>
+                                        <a id="btnSubmit" href="javascript:;">
+                                            <img src="../images/an_xz.gif" width="85" height="23" onclick="order();"></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="future">
+                        <h1>近期开奖露珠图</h1>
+                        <div class="ftitle">
+                            <ul>
+
+
+                                <li class="pointr reply">第1球</li>
+
+                                <li class="pointr">第2球</li>
+
+                                <li class="pointr">第3球</li>
+
+                                <li class="pointr">第4球</li>
+
+                                <li class="pointr">第5球</li>
+                            </ul>
+                        </div>
+                        <!--第1球-->
+                        <div class="fcontent" style="display: block;">
+                            <ul>
+                                <li class="answer pointr">
+                                    <table class="nobg" border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="../images/disk_single.png" width="25" height="25"></td>
+                                                <td>|</td>
+                                                <td>
+                                                    <img src="../images/disk_double.png" width="25" height="25"></td>
+                                            </tr>
+                                            <tr>
+                        <td><span id="c_single">0</span></td>
+                        <td>|</td>
+                        <td><span id="c_double">0</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li class="pointr">
+                                    <table class="nobg" border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="../images/disk_max.png"></td>
+                                                <td>|</td>
+                                                <td>
+                                                    <img src="../images/disk_min.png"></td>
+                                            </tr>
+                                            <tr>
+                        <td><span id="c_max">0</span></td>
+                        <td>|</td>
+                        <td><span id="c_min">0</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                            </ul>
+                            <div class="luzhuitem" style="display: block;">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="dishReload" id="lz_disp">
+                                </table>
+                        </div>
+
+                    </div>
+                </div>
+				</form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+    <script type="text/javascript" src="../jscript/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../jscript/base.js"></script>
+	<script type="text/javascript" src="../jscript/box/jquery.jBox-2.3.min.js?v=1005"></script>
+	<script type="text/javascript" src="../jscript/box/jquery.jBox-zh-CN.js?v=1005"></script>
+	<link type="text/css" rel="stylesheet" href="../jscript/box/jbox.css"/>
+        <script type="text/javascript">
+	  //露珠图异步刷新
+        $w=1,$type=0;
+		function dropmap(){
+			$.ajax({
+				'url':'/?r=lottery/cqssc/index/order-list',
+				async:true,
+				type:'GET',
+				//contentType:"JSON",
+				data:{'w':$w,'tp':$type},
+				success: function(data){
+					data=eval("("+data+")");
+					$('#lz_disp').html(data.ht);
+					$("#c_max").html(data.b);
+					$("#c_min").html(data.s);
+					$("#c_single").html(data.single);
+					$("#c_double").html(data.double);
+				}
+			});
+		}
+    </script>
+	<script type="text/javascript" src="cqssc.js"></script>
+	<script type="text/javascript">loadinfo()</script>

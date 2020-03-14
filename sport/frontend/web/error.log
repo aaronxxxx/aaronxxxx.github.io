@@ -1,0 +1,4 @@
+2019-08-30 09:13:34 文件：/Applications/MAMP/htdocs/sport_website/frontend/modules/live/services/OgService.php 错误行：64 错误信息：Undefined index: data
+2019-08-30 09:13:35 文件：/Applications/MAMP/htdocs/sport_website/frontend/vendor/yiisoft/yii2/db/Command.php 错误行：330 错误信息：Undefined offset: 0
+2019-08-30 09:13:36 文件：/Applications/MAMP/htdocs/sport_website/frontend/vendor/yiisoft/yii2/db/Command.php 错误行：330 错误信息：Undefined offset: 0
+2019-08-30 09:13:37 文件：/Applications/MAMP/htdocs/sport_website/frontend/modules/lottery/services/VrService.php 错误行：64 错误信息：Undefined index: data

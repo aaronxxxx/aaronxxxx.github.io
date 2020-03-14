@@ -1,0 +1,364 @@
+/*----------------------------------------*/
+/*2010-10-01-For NewSI2*/
+/*----------------------------------------*/
+@charset "UTF-8";
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ Logout (Link1) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+iframe { border:none;}
+/*back*/
+div#back { width:279px;	position: absolute;float: left;top:1px; margin-left: 700px;font-family: Arial, Helvetica, SimSun, sans-serif;z-index:1000;}
+@charset "UTF-8";
+/*Reset*/
+body, div, ul,  li,
+h1, h2, h3, h4, h5, h6, p, table {
+	margin: 0;
+	padding: 0;
+	}
+address, em, strong {
+	font-style: inherit;
+	font-weight: inherit;
+	}
+li {
+	list-style: none;
+	}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+	}
+
+
+/**//**/
+div#back ul {z-index:990;
+	font-size:12px;
+	}
+
+div#back ul li {
+	width:85px;/*change*/  /*需個別設定*/
+	height:25px;/*change*/
+	float:left;
+	line-height:25px;/*change*/
+	position:relative;
+	}
+		div#back ul li.lang_top li {height:24px;line-height:24px;}/*子層高度*/
+		div#back ul li.qa li {height:23px;line-height:23px;}/*子層高度*/
+		div#back ul li.qa_on {background-position:0 -25px;}
+	/* ~~~~~~~~~~主圖寬度~~~~~~~~~~ */
+	div#back ul li.lang_top {width:85px;background:url(../img/head_lang_cn.gif) no-repeat; text-align:left;}
+	div#back ul li.mail {width:70px;background:url(../img/head_mail.gif) no-repeat;text-align:center;}
+	div#back ul li.qa {width:70px;background:url(../img/head_qa.gif) no-repeat;text-align:left;}
+	div#back ul li.home {width:54px;background:url(../img/head_home.gif) no-repeat;text-align:center;}
+	
+div#back a {
+	display:block;
+	height:25px;/*change*/
+	text-decoration:none;
+	color:#FFF;/*change*/
+	}
+	div#back a:link, div#back a:visited { color:#FFF;}
+	
+	div#back li.lang_top li a {height:24px;/*子層高度*/}
+	div#back li.qa li a {height:23px;/*子層高度*/}
+	/*有次層之連結*/
+	div#back li.qa a:link {color:#FFF;}
+	div#back li.lang_top a:link {color:#FFF;}
+div#back a:hover {
+	background-position:0 -25px;/*change*//*需個別設定*/
+	color:#303030;/*change*/
+	}
+	/* ~~~~~~~~~~Menu Top img~~~~~~~~~~ */
+	div#back .lang_top a:link, div#back .lang_top a:visited { color:#FFF;}
+	div#back .lang_top a {background:url(../img/head_lang_cn.gif) no-repeat; padding-left:35px!important;}
+	div#back .mail a {background:url(../img/head_mail.gif) no-repeat; padding-top:1px;}
+	div#back .qa a {background:url(../img/head_qa.gif) no-repeat; padding-left:24px;}
+	div#back .home a {background:url(../img/head_home.gif) no-repeat; padding-top:1px;}
+	/*div#back .lang_top a:hover, */div#back .mail a:hover, /*div#back .qa a:hover,*/ div#back .home a:hover
+	{background-position:0 -25px;}
+		
+/*Menu Level2*/
+ul.pd { top:0;}/*change*/
+div#back ul ul.pd {
+	display:none;
+	font-size:100%;
+	padding:0;
+	}
+div#back ul li:hover ul.pd {
+	display:block;
+	position:absolute;
+	z-index:10;
+	}
+div#back ul ul.pd li {
+	float:none;
+	}
+	
+/*IE6 Hack*//**/
+div#back ul li a:hover ul.pd {
+	display:block;
+	position:absolute;
+	top:0px;/*change*/
+	z-index:1000; margin-top:0; margin-left:-1px;
+	}
+div#back ul li table {
+	border-collapse:collapse;
+	border:none;
+	position:absolute;
+	top:0;
+	left:0;
+	}
+
+
+/* 語系下拉圖片設定 */
+div#back ul ul.pd a:link, div#back ul ul.pd a:visited { color:#303030;}
+div#back ul ul.pd a:hover {color:#CC6600; }
+
+div#back ul ul.pd li.vi a:hover {  background-position: 0 -514px;}
+div#back ul ul.pd li.vi a { background: url(../img/head_lang.gif) no-repeat 0 -490px; width:71px; height:24px;}/*該語系使用父層圖*/
+
+div#back ul ul.pd li.cn a:hover {color:#303030; }
+div#back ul ul.pd li.cn a { background: url(../img/head_lang_cn.gif) no-repeat 0 -25px;}/*該語系使用父層圖*/
+/*div#back ul ul.pd li.tw a:hover { color:#CC6600; background-position: -106px 0;}*/
+div#back ul ul.pd li.tw a { background: url(../img/head_lang.gif) no-repeat 0 -70px; width:71px; height:24px;}
+div#back ul ul.pd li.tw a:hover {  background-position: 0 -94px;}
+
+/*div#back ul ul.pd li.cn a { background: url(../img/head_lang.gif) no-repeat; width:71px; height:24px;}
+div#back ul ul.pd li.cn a:hover {  background-position: 0 -24px;}*/
+div#back ul ul.pd li.us a { background: url(../img/head_lang.gif) no-repeat 0 -560px; width:71px; height:24px;}
+div#back ul ul.pd li.us a:hover {  background-position: 0 -584px;}
+/* 幫助下拉圖片設定 */
+div#back ul ul.pd li.qa_on a { width:50px; background: url(../img/head_qa.gif) no-repeat 0 -25px;}/*該語系使用父層圖*/
+div#back ul ul.pd li.msg a { background: url(../img/head_qa_sub.gif) no-repeat;}
+div#back ul ul.pd li.msg a:hover { background-position: 0 -23px;}
+div#back ul ul.pd li.roul a , div#back ul ul.pd li.wap a {background: url(../img/head_qa_sub.gif) no-repeat 0 -70px;}
+div#back ul ul.pd li.roul a:hover , div#back ul ul.pd li.wap a:hover {background-position: 0 -93px;}
+div#back ul ul.pd li.odd a { background: url(../img/head_qa_sub.gif) no-repeat 0 -140px;width:112px; height:24px; padding-left:12px; text-align: left;}
+div#back ul ul.pd li.odd a:hover {  background-position: 0 -164px;}
+/*共同寬度設定*/
+div#back ul ul.pd li.msg a , div#back ul ul.pd li.roul a , div#back ul ul.pd li.wap a
+{ width:112px; height:23px; padding-left:12px; text-align: left;}
+
+
+/*height*/
+.vi { display:none;}
+
+
+
+body.bodyset {margin: 0px;padding: 0px;background: #8A4102;behavior:url(/style/member/csshover.htc);}
+#container { /*position: relative;*/font-family: Arial, Helvetica, SimSun, sans-serif;}
+#header {	margin: 0px;	padding: 0px;}
+#header h1 {/*behavior: url(png-opacity.htc);*/	/*background: transparent url(../img/inda_head_l.png) no-repeat left top;margin: 0px;	display: block;	height: 56px;	padding: 0px;*/}
+#header span {	/*background: transparent url(../img/inda_head_r.jpg) no-repeat right top;	display: block;height: 56px;*/}
+ul {	margin: 0;	padding: 0;}
+a { text-decoration: none;}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ Welcome (Link2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#welcome {position: absolute; top:27px; margin:0; padding:0; width:980px; color:#FFF; clear:left;}
+#welcome li {list-style: none; float: left; margin-right: 3px; text-align:center;  font-size: 14px; line-height: 34px; padding-top:3px; white-space: nowrap;/*background: url(../img/head_focus_btn_out.gif) no-repeat left top;*/}
+#welcome a {display: block; /*float: left; *//* width: .1em;*/ padding: 0; /*width:130px;*/ font-weight: bold;  color: #E7B565;}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#welcome a {float: none;}            /* End IE5-Mac hack */
+#welcome a:link, #welcome a:visited { color: #E7B565;}
+#welcome a:hover {color: #F8C100;}
+#welcome li.name { display:block; width:240px; margin-right: 0;	height:34px; line-height:16px; font:12px Arial, Helvetica, sans-serif; font-weight:bold; background:none;}
+#welcome .name {     display: block;
+    width: 240px;
+    margin-right: 0;
+    height: 34px;
+    line-height: 16px;
+    font: 12px Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background: none;
+    list-style: none;
+    text-align: center;
+    padding-top: 3px;
+    white-space: nowrap;
+    float: left;}
+
+
+#welcome .pass { position: absolute; right:0px; padding-top:2px; padding-right:0px; text-align:right;font:12px Arial, Helvetica, sans-serif;}
+#welcome .pass a { font-weight:normal!important; }
+.rb_sum { font:12px  Arial, Helvetica, sans-serif; font-weight:bold;}
+/*�u�y��*//**//**/
+#welcome li.rb {width:107px;background: url(../img/head_rb_btn.gif) no-repeat left top;}
+#welcome li.today {width:128px;background: url(../img/head_today_btn.gif) no-repeat left top;}
+#welcome li.early { width:114px;background: url(../img/head_early_btn.gif) no-repeat left top;}
+/*#HFT #welcome li.rb .ball {display: block;background: url(../img/head_ball_ft.gif) no-repeat 13px 50%;}
+/*����ñ����*/
+/*~~~~~~~~~~~~~~~~~Notice! Don't delete this note, For IE hack~~~~~~~~~~~~~~~~~*/
+#welcome li.rb_on  { width:107px; color: #F8C100; background: url(../img/head_rb_btn.gif) 0 -40px no-repeat;}
+#welcome li.today_on  { color: #F8C100; background: url(../img/head_today_btn.gif) 0 -40px no-repeat;}
+#welcome li.early_on { width:114px; color: #F8C100; background: url(../img/head_early_btn.gif) 0 -40px no-repeat;}
+#welcome li.rb_on a:link, #welcome li.rb_on a:visited, #welcome li.today_on a:link, #welcome li.today_on a:visited,  #welcome li.early_on a:link, #welcome li.early_on a:visited{ color: #F8C100;}
+#welcome li.live_tv {  margin-left:2px; width:28px; height:29px;background: url(../img/live_tv_m.gif) 0 0 no-repeat;}
+/*~~~~~~~~~~~~~~~~~�L�y��~~~~~~~~~~~~~~~~~*//**/
+#welcome li.rb_null  { width:107px; color: #7D6342; font-weight:bold; background: url(../img/head_rb_btn.gif) 0 -80px no-repeat;}
+#welcome li.today_null  { width:128px; color: #7D6342; font-weight:bold;  background: url(../img/head_today_btn.gif) 0 -80px no-repeat;}
+#welcome li.early_null { width:114px; color: #7D6342; font-weight:bold;  background: url(../img/head_early_btn.gif) 0 -80px no-repeat;}
+#welcome li.rb_null a:link, #welcome li.rb_null a:visited, #welcome li.today_null a:link, #welcome li.today_null a:visited,  #welcome li.early_null a:link, #welcome li.early_null a:visited{ color: #7D6342;}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~Game Type ( link 3) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#nav, #nav_re {position: absolute; top:61px; margin:0 0 0 240px; padding:0; width:100%; clear:left; background: #D7D7C1 url(../img/head_nav_bg_ft.gif) 0 0 repeat-x;border: solid 1px #FFF; white-space: nowrap;z-index:99;}
+#nav li, #nav_re li {list-style: none; float: left; text-align:center;  font-size: 0.75em; line-height: 22px; white-space: nowrap;}
+#nav a, #nav_re a {display: block; float: left; clear:left;  width: .1em; padding: 4px 13px 4px 13px;  color: #FFF;}
+/**/
+html>body #nav a, html>body #nav_re a {width: auto;}    /* fixes IE6 hack */
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#nav a, #nav_re a {float: none;}            /* End IE5-Mac hack */
+
+#nav a:link, #nav a:visited, #nav_re a:link, #nav_re a:visited { color: #FFF;}
+#nav a:hover, #nav_re a:hover {color: #FF0;}
+/*======�y��icon================*/
+
+#nav li.ft, #nav_re li.ft { background: none; margin-left:-4px;}
+#nav li.ft a, #nav_re li.ft a { padding-left:15px;}
+
+
+.nav { position: absolute; top:61px; margin:0 0 0 240px; padding:0; width:100%; clear:left; background: #D7D7C1 url(../img/head_nav_bg_ft.gif) 0 0 repeat-x;border: solid 1px #FFF; white-space: nowrap;z-index:99;}
+.nav li{list-style: none; float: left; text-align:center;  font-size: 0.75em; line-height: 22px; white-space: nowrap;}
+.nav a{display: block; float: left; clear:left;  width: .1em; padding: 4px 13px 4px 13px;  color: #FFF;}
+/**/
+html>body .nav a{width: auto;}    /* fixes IE6 hack */
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+.nav a{float: none;}            /* End IE5-Mac hack */
+
+.nav a:link, .nav a:visited{ color: #FFF;}
+.nav a:hover{color: #FF0;}
+/*======�y��icon================*/
+
+.nav li.ft, .nav_re li.ft { background: none; margin-left:-4px;}
+.nav li.ft a, .nav_re li.ft a { padding-left:15px;}
+.navc {
+
+display:none;
+overflow:auto;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ Type (Link4) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#type, #type_re {position: absolute; top:93px; margin:0 0 0 240px; padding:0 10px; width:100%; clear:left; background: #260707 url(../img/head_type_bg_ft.gif) 0 0 repeat-x;border-left: solid 1px #FFF; white-space: nowrap;z-index:90;}
+#type_re .re { background-image: none;}
+#type li, #type_re li {list-style: none; float: left; text-align:center;  font-size: 0.75em; line-height: 26px; white-space: nowrap; background:url(../img/head_nav_arr.gif) no-repeat 0 50%;}
+#type a, #type_re a {display: block; float: left;  width: .1em; padding: 0px 15px 0px 15px; color: #FFF;}
+html>body #type a, html>body #type_re a {width: auto;}    /* fixes IE6 hack */
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#type a, #type_re a {float: none;}            /* End IE5-Mac hack */
+#type a:link, #type a:visited, #type_re a:link, #type_re a:visited { color: #FFF;}
+#type a:hover, #type_re a:hover {color: #FF0;}
+#type ul, #type_re ul { margin-left:-11px; width:751px;}/*�ɪG�w�� �����h�X�s*/
+#type .result, #type_re .result{  /*float:right;*/ position:absolute; left:688px; padding-right:8px; background: none;}/*�ɪG�a�k*/
+/*----���k����----*//**/
+#type .type_on:link, #type .type_on:visited, #type_re .type_on:link, #type_re .type_on:visited { color: #F9C100;}
+/*----���k�w�]----*//**/
+#type .type_out:link, #type .type_out:visited, #type_re .type_out:link, #type_re .type_out:visited { color: #FFF;}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ Game chuang ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*�Ȯɦ@�Ψ��y
+#HFU #type { background-image: url(../img/head_typ_fu.jpg);}
+#HBK #type { background-image: url(../img/head_typ_bk.jpg);}
+#HTN #type { background-image: url(../img/head_typ_tn.jpg);}
+#HTU #type { background-image: url(../img/head_typ_tu.jpg);}
+#HVB #type { background-image: url(../img/head_typ_vb.jpg);}
+html#HVU, body#HVU { background-image: url(../img/head_bg_vu.jpg); }
+#HVU #type { background-image: url(../img/head_typ_vu.jpg);}
+html#HFS, body#HFS { background-image: url(../img/head_bg_fs.jpg); }
+#HFS #type { background-image: url(../img/head_typ_fs.jpg);}
+html#HBU, body#HBU { background-image: url(../img/head_bg_bu.jpg); }
+#HBU #type { background-image: url(../img/head_typ_bu.jpg);}
+html#HBS, body#HBS { background-image: url(../img/head_bg_bs.jpg); }
+#HBS #type { background-image: url(../img/head_typ_bs.jpg);}
+html#HBE, body#HBE { background-image: url(../img/head_bg_be.jpg); }
+#HBE #type { background-image: url(../img/head_typ_be.jpg);}
+html#HOP, body#HOP { background-image: url(../img/head_bg_op.jpg); }
+#HOP #type { background-image: url(../img/head_typ_op.jpg);}
+html#HOM, body#HOM { background-image: url(../img/head_bg_om.jpg); }
+#HOM #type { background-image: url(../img/head_typ_om.jpg);}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~Game Selection (Link3)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+body#HFT li.ft a:link, body#HFT li.ft a:visited,
+body#HFU li.ft a:link, body#HFU li.ft a:visited,
+body#HBK li.bk a:link, body#HBK li.bk a:visited,
+body#HBU li.bk a:link, body#HBU li.bk a:visited, body#HBU #nav li.bu a,
+body#HTN li.tn a:link, body#HTN li.tn a:visited,
+body#HTU li.tn a:link, body#HTU li.tn a:visited, body#HTU #nav li.tu a,
+body#HVB li.vb a:link, body#HVB li.vb a:visited,
+body#HVU li.vb a:link, body#HVU li.vb a:visited, body#HVU #nav li.vu a,
+body#HBM li.bm a:link, body#HBM li.bm a:visited,
+body#HBMFU li.bm a:link, body#HBMFU li.bm a:visited, body#HBMFU #nav li.bmfu a,
+body#HTT li.tt a:link, body#HTT li.tt a:visited,
+body#HTTFU li.tt a:link, body#HTTFU li.tt a:visited, body#HTTFU #nav li.ttfu a,
+/*body#HFS li.fs a:link, body#HFS li.fs a:visited,*/
+body#HBS li.bs a:link, body#HBS li.bs a:visited,
+body#HBE li.bs a:link, body#HBE li.bs a:visited, body#HBE #nav li.be a,
+body#HOP li.op a:link, body#HOP li.op a:visited,
+body#HOU li.op a:link, body#HOU li.op a:visited, body#HOU #nav li.op a
+{ color: #FFFFFF;}
+/*----���k����----*//**/
+.type_on { color: #F9C100;}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ For Mac/Safari Fix ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*html > body #nav { width: 640px; margin-top: 7px;}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ Hideaway link ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#extra2 {	display: none;}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Extra link R.B ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*#extra1 {}*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ Extra link Baccarat ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*#extra2 {	position: absolute;	left: 250px;	top: 2px;width:140px; height:27px; background: url(../img/head_ad_ba.gif) no-repeat 0 0;}
+#extra2 a { display:block; width:140px; height:27px;}*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ �b���O�� ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#mem_box {	clear: both;	position: absolute;	top: 61px;	width:240px;	padding-top:9px;    height: 21px;	text-align:center;	color:#FFF;	border-top: 1px solid #FFF;	background-color:  #493721;	font: 0.75em Arial, Helvetica, sans-serif;}
+#mem_box a:link, #mem_box a:visited { color: #FFF;}
+#mem_box a:hover {color: #F8C100;}
+#mem_box #mem_main .his {	padding-right: 25px;}
+#mem_box #mem_main .wag {	padding-left: 25px;}
+#mem_box #credit_main {	text-align: left;	height: 24px;margin-top: 8px;	padding: 0 12px;	line-height: 24px;font-weight: bold;	background: url(../img/head_credit_icon.gif) no-repeat 12px top;}
+#mem_box #credit {	margin-left: 29px;}
+#mem_box .re_credit { position: relative; top:4px \0;margin: 2px 0 0 10px; height: 16px;	width: 16px;border: none;	*cursor: hand; cursor:pointer;background: url(../img/head_credit_refresh.gif) no-repeat 0 0;}
+html>body #mem_box .re_credit { background-image: url(../img/head_credit_refresh.gif);} /*mac hack*/
+/*�ƹL�ܦ�*//**/
+div#mem_box input.re_credit:hover  {background: url(../img/head_credit_refresh.gif) no-repeat 0 -20px;} 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ���� ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#head_date {	color: #FFF; font-weight:normal;}
+
+/*#head_date {	position: absolute;	top: 37px;	left: 856px;	color: #FFF;font: 0.75em Arial, Helvetica, sans-serif;}*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ RB Menu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+div#welcome li.rb, div#welcome li.rb_on { position:relative;}
+div#welcome .level2 a { display:block; float:left; /*padding:5px 4px 5px;*/ height:36px;text-decoration:none;}
+#welcome li.rb_on .level2 a:link, #welcome li.rb_on .level2 a:visited, #welcome ul.level2 a:link, #welcome ul.level2 a:visited  { color: #44321C;}
+
+div#welcome .level2 a:hover {color: #900;}
+div#welcome ul ul li { list-style:none;margin-right: 0px; padding-top:0; background-color:#FEF7E7;}
+div#welcome ul.level1 li.rb:hover ul.level2, div#welcome ul.level1 li.rb_on:hover ul.level2 { display:block; height:36px;}
+div#welcome ul.level2 {position:absolute; height:36px;line-height:36px;width: 800px; top:34px!important;	z-index:1000;	left:0px; font-family:Arial, Helvetica, sans-serif;
+	display:none;
+	visibility: visible;
+}
+html > body div#welcome ul ul { white-space:nowrap;}
+html > body div#welcome ul.level2 {top: -27px;}
+html > body .rb:hover .level2, html > body .rb_on:hover .level2 { display:block;}
+
+#RB_MENU li.rb_bg_right { width:4px; height:36px; margin-left:-1px; background:url(../img/head_rb_menu_r.gif) no-repeat 100% 100%;}
+#RB_MENU li.rb_bg_left { width:4px; height:36px; background:url(../img/head_rb_menu_l.gif) no-repeat 0 100%;}
+
+#RB_FT, #RB_BK, #RB_TN, #RB_VB, #RB_BS, #RB_OP {padding:0 10px; background:url(../img/head_rb_menu_line.gif) no-repeat 100% 0;}
+/* �I���Ӻu�y�� -- �����C�� rb_menu_on */
+#welcome .level2 .rb_menu_on a:link , #welcome .level2 .rb_menu_on a:visited { color:#900!important;}
+/* �I���Ӻu�y�� -- ���L�ƹL�� rb_out */
+#welcome .level2 .rb_out a:hover { color:#900!important;}
+
+
+
+/*2013/07/31 hide */
+/*#type_re .pd, #type_re .to, #type_re .hf { display:none;}*/
+
+/*2015-01-07-header-�WĹ�r���m*/
+.re_left { margin-left:-11px;}
+
+.live{    margin-left: 2px;
+    width: 28px;
+    height: 29px;
+    background: url(../img/live_tv_m.gif) 0 0 no-repeat;
+    float: left;
+  }
+        .live a {
+        
+         display: block !important;
+    height: inherit;}
+    .check_on{color: #F9C100 !important;}

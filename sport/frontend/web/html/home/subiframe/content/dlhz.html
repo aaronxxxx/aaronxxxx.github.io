@@ -1,0 +1,418 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>代理加盟</title>
+        <link href="../../css/meigaomei.css" rel="stylesheet" />
+        <link href="../../css/standard.css" rel="stylesheet" />
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/top.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(function () {
+                $(window.parent.parent.document).find("#mainFrame").height(1042);
+                $(window.parent.document).find("#iframepage").height(770);
+                $(window.parent.document).find("#mbody").height(770);
+                $('#Union li').click(function () {
+                    $(this).addClass('mtab').siblings().removeClass('mtab');
+                    $('.chkshow').eq($(this).index()).show().siblings('.chkshow').hide();
+                })
+            })
+        </script>
+    </head>
+    <style>
+        .inlkinput{
+            width: 174px;
+            height: 27px;
+            background: url(../../images/reg_input.png) no-repeat 0px -84px;
+            margin: 0px;
+            border: none 0px;
+            background-color: transparent;
+            padding: 0px 0px 0px 10px;
+            vertical-align: middle;
+            line-height: 27px;    font-size: 12px;
+        }
+        .copybtn{    width: 70px;
+                     height: 27px;
+                     background: url(../../images/reg_input.png) no-repeat 0px -84px;
+                     margin: 0px;
+                     border: none 0px;
+                     background-color: transparent;
+                     padding: 0px 0px 0px 0;
+                     vertical-align: middle;
+                     line-height: 27px;}
+        .chkshow fieldset{
+            border: 2px solid #9B836F;
+            border-radius: 8px;
+        }
+        .chkshow .agentregurl1{
+            /* line-height: 40px; */
+            color: #f8e678;
+            /* border-right: solid 2px #9b836f; */
+            /* border-left: solid 2px #9b836f; */
+            width: 572px;
+            /* margin-left: 15px; */
+            padding-left: 100px;
+            line-height: 40px;
+            /* position: relative; */
+            padding-bottom: 14px;
+        }
+        .chkshow .agentregurl1 .clearfloat span{
+            display: block;
+            width: 90px;
+            float: left;
+            text-align: right;
+            padding-right: 15px;
+            color: #FFF;
+
+        }
+        .chkshow .agentregurl1 .clearfloat{
+            color: #FFF;
+        }
+        .chkshow .agentregurl1 .clearfloat  input{    
+            width: 174px;
+            height: 27px;
+
+            background: url(../../images/reg_input.png) no-repeat 0px -84px;
+            margin: 0px;
+            border: none 0px;
+            background-color: transparent;
+            padding: 0px 0px 0px 10px;
+            vertical-align: middle;
+            line-height: 27px;}
+        .regbtn{
+            line-height: 33px;
+            height: 33px;
+            width: 92px;
+            background: url(../../images/reg_input.png) no-repeat -92px -112px;
+            font-size: 14px;
+            margin: 10px auto 10px auto;
+            display: block;
+            border: 0px;
+        }
+        img#rmNum.imgyzm{
+            margin-top: 11px;
+            width: 67px;
+            position: absolute;
+            margin-left: 5px;
+            height: 27px; 
+        }
+    </style>
+    <script language="javascript">
+        $(function () {
+            $("#submit").click(function () {
+                var username =$("#username1").val();
+                var possword=$("#password1").val(); 
+                var repassword=$("#repassword").val();
+                var realname=$("#username2").val(); 
+                var tel=$("#tel").val();
+                var email=$("#e_mail").val();
+                var verifyCode=$("#yzm").val();
+                var z= /^[0-9]*$/;
+                if(username.length <6 ){
+                    alert("会员帐号长度小于6位，请重新输入！");
+                    return false;
+                }
+                if(username.length >10 ){
+                    alert("会员帐号长度大于10位，请重新输入！");
+                    return false;
+                }
+                if(possword.length <6 ){
+                    alert("会员密码长度小于6位 ，请重新输入！");
+                    return false;
+                }
+                if(possword.length >10 ){
+                    alert("会员密码长度大于10位，请重新输入！");
+                    return false;
+                }
+                 if(possword !=  repassword){
+                    alert("密码不一致，请重新输入！");
+                    return false;
+                }
+                if(z.test(realname)){
+                    alert("真实姓名不能输入数字");    
+                     return false;
+                 }
+                 $.post("/?r=passport/user-api/agents-register", {
+                    username: username,
+                    password: possword,
+                    repassword: repassword,
+                    real_name: realname,
+                    tel: tel,
+                    email: email,
+                    verifyCode:verifyCode,
+                },function (result) {
+                    if(result.code == 0){
+                        alert("提交成功！等待工作人员审核！");
+                        history.go(-1);
+                    }else{
+                        alert(result.msg);
+                        history.go(-1);
+                    }
+                },'json');
+                 
+            });
+        });
+    </script>
+    <body>
+        <div id="page-main-wrap" class="clearfix">
+            <div class="whole-auto">
+                <div class="page-abount-list">
+
+                    <div class="page-abount-right abount-con">
+                        <h1>合作伙伴</h1>
+
+                        <div id="Union">
+                            <ul class="mtab-menual">
+                                <li id="#Union1" class="mtab">联盟方案</li>
+                                <li id="#Union2">联盟协议</li>
+                                <li id="#Union3">代理注册</li>
+                                <li><a href="/agent/agent_login.php" target="_blank">代理登入</a></li>
+                            </ul>
+                            <br />  <br /> <br /> 
+                            <div id="Union1" class="chkshow" style="clear:both;">
+                                <p>
+                                </p>
+                                <p>
+                                </p>
+                                <p>
+                                    美高梅娱乐城，与AG、BBIN、MG进行技术合作，拥有马来西亚合法注册之博彩公司，拥有多元化的产品，使用最公平、公正、公开的系统，在市场上的众多博彩网站中，我们自豪的提供会员最优惠的回馈，给予合作伙伴最优势的营利回报! 无论您拥有的是网络资源或是人脉资源，都欢迎您来加入
+                                    我们美高梅娱乐城合作伙伴的行列，您无须负担任何费用，就可以开始无上限的收入
+                                    ，从现在开始只要是从您这边介绍过来的客户有开户一次性充值1000元以上经过全额投注的就能向我们在线客服领取100元介绍费，每个月我们公司还将按您介绍过来的客户有效投注公司盈利的15%-25%佣金给您，月底财务按比例结算自动把佣金加到您的会员账上，活动长期有效，介绍越多佣金越多。
+                                </p>
+                                <p>
+                                    注：真人游戏及电子游艺的盈利需扣除15%的行政费用，（列如：这个月真人游戏及电子游艺，您这条代理线的盈利是10000需扣除15%等于8500再按比例佣金结算给您的）
+                                </p>
+                                <p>
+                                    申请方式：<br>
+                                        申请代理：您登入会员点击：会员中心，再点击：申请代理进行申请，申请成功就拥有两条代理钱，把代理线复制起来保存着，以后要您介绍的客户通过您的代理线注册成功都会自动成为您的下级，如果您介绍的客户是直接通过网站注册的，您可以告诉我们您介绍的会员号及姓名，我们也可以帮您设置为您的代理。
+                                </p>
+                                <table border="1" cellpadding="0" cellspacing="0" style="width: 593px;" width="593">
+                                    <tbody>
+                                        <tr>
+                                            <td style="background-color: rgb(102, 51, 102);">
+                                                <p align="center">
+                                                    <span style="color: #ffffff;">当月盈利</span>
+                                                </p>
+                                            </td>
+                                            <td style="background-color: rgb(102, 51, 102);">
+                                                <p align="center">
+                                                    <span style="color: #ffffff;">有效会员</span>
+                                                </p>
+                                            </td>
+                                            <td style="background-color: rgb(102, 51, 102);">
+                                                <p align="center">
+                                                    <span style="color: #FFFFFF">全场游戏</span>
+                                                </p>
+                                            </td>
+                                            <td style="background-color: rgb(102, 51, 102);">
+                                                <p align="center">
+                                                    <span style="color: #ffffff;">有效投注</span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p align="center">
+                                                    1-50000
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p align="center">
+                                                    无限制
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p align="center">
+                                                    15%
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p align="center">
+                                                    无限制
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p align="center">
+                                                    50001-100000
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p align="center">
+                                                    无限制
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p align="center">
+                                                    18%
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p align="center">
+                                                    无限制
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p align="center">
+                                                    100001-300000
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p align="center">
+                                                    无限制
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p align="center">
+                                                    20%
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p align="center">
+                                                    无限制
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p align="center">
+                                                    300001-500001
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p align="center">
+                                                    无限制
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p align="center">
+                                                    23%
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p align="center">
+                                                    无限制
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p align="center">
+                                                    500001以上
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p align="center">
+                                                    无限制
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p align="center">
+                                                    25%
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p align="center">
+                                                    无限制
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="Union2" style="display: none; clear:both;" class="chkshow">
+                                <p>
+                                    <strong>一、美高梅娱乐城对代理联盟的权利与义务</strong>
+                                </p>
+                                <ol>
+                                    <li align="left">美高梅娱乐城客服部会登记联盟的会员并会观察他们的投注状况，联盟及会员必须同意并遵守美高梅娱乐城的会员条例，政策及操作程序
+                                        ，美高梅娱乐城保留拒绝或冻结联盟/会员账户权利。。。。。</li>
+                                    <li align="left">代理联盟可随时登入接口观察旗下会员的下注状况及会员在网站的活动概况，美高梅娱乐城的客服部会根据代理联盟旗下的会员计算所得的佣金。</li>
+                                    <li align="left">美高梅娱乐城保留可以修改合约书上的任何条例，包括现有的佣金范围、佣金计划、付款程序、及参考计划条例的权力，美高梅娱乐城会以
+                                        网站站内消息、网站公告等方法通知代理联盟，代理联盟对于所做的修改有异议，代理联盟可选择终止合约，或洽客服人员反映意见， 如修改后代理联盟无任何异议
+                                        ，便视作默认合约修改，代理联盟必须遵守更改后的相关规定。</li>
+                                </ol>
+                                <p align="left">
+                                    <strong>二、代理联盟对美高梅娱乐城的权力及义务</strong>
+                                </p>
+                                <ol>
+                                    <li align="left">代理联盟应尽其所能，广泛地宣传、销售及推广美高梅娱乐城，使代理本身及美高梅娱乐城的利润最大化，代理联盟可在不违反法律下，以正面形象宣传、销售及推广美高梅娱乐城，并有责任义务告知旗下会员所有美高梅娱乐城的相关优惠条件及产品。</li>
+                                    <li align="left">代理联盟选择的美高梅娱乐城推广手法若需付费，则代理应承担该费用。</li>
+                                    <li align="left">任何美高梅娱乐城相关信息包括: 标志、报表、游戏画面、图样、文案等，代理联盟不得私自复制、公开、分发有关材料，美高梅娱乐城保留法律追诉权。
+                                        如代理在做业务推广有相关需要，请随时洽美高梅娱乐城。</li>
+                                </ol>
+                                <p align="left">
+                                    <strong>三、规则条款</strong>
+                                </p>
+                                <ol>
+                                    <li align="left">各阶层代理联盟不可在未经美高梅娱乐城许可情况下开设双/多个的代理账号，也不可从美高梅娱乐城账户或相关人士赚取佣金。请谨记任何阶层代理不能用代理帐户下注，美高梅娱乐城有权终止并封存账号及所有在游戏中赚取的佣金。</li>
+                                    <li align="left">为确保所有美高梅娱乐城会员账号隐私与权益，美高梅娱乐城不会提供任何会员密码，或会员个人资料。各阶层代理联盟亦不得以任何方式取得会员数据，或任意登入下层会员账号，如发现代理联盟有侵害美高梅娱乐城会员隐私行为，美高梅娱乐城有权取消代理联盟红利，并取消代理联盟账号。</li>
+                                    <li align="left">代理联盟旗下的会员不得开设多于一个的账户。美高梅娱乐城有权要求会员提供有效的身份证明以验证会员的身份，并保留以IP判定是否重复会员的权利。如违反上述事项，美高梅娱乐城有权终止玩家进行游戏并封存账号及所有于游戏中赚取的佣金</li>
+                                    <li align="left">代理联盟不可为自己或其他联盟下的有效投注会员,只能是公司直属下的有效投注会员, 代理每月需有5个下线有效投注（有效投注为每周至少上线3次进行正常投注），如有违反联盟协议美高梅娱乐城有权终止并封存账号及所有在游戏中赚取的佣金。</li>
+                                    <li align="left">如代理联盟旗下的会员因为违反条例而被禁止享用美高梅娱乐城的游戏，或美高梅娱乐城退回存款给会员，美高梅娱乐城将不会分配相应的佣金给代理联盟。如代理联盟旗下会员存款用的信用卡、银行资料须经审核，美高梅娱乐城保留相关佣金直至审核完成。</li>
+                                    <li align="left">合约内的条件会以美高梅娱乐城通知接受代理联盟加入后开始执行。美高梅娱乐城及代理联盟可随时终止此合约，在任何情况下，代理联盟如果想终止合约，都必须以书面/电邮方式提早于七日内通知美高梅娱乐城。
+                                        代理联盟的表现会3个月审核一次，如代理联盟已不是现有的合作成员则本合约书可以在任何时间终止。如合作伙伴违反合约条例，美高梅娱乐城有权立即终止合约。</li>
+                                    <li align="left">在没有美高梅娱乐城许可下，代理联盟不能透露及授权美高梅娱乐城相关密数据，包括代理联盟所获得的回馈、佣金报表、计算等;代理联盟有义务在合约终止后仍执行机密文件及数据的保密。</li>
+                                    <li align="left">在合约终止后，代理联盟及美高梅娱乐城将不须要履行双方的权利及义务。终止合约并不会解除代理联盟于终止合约前应履行的义务。</li>
+                                </ol>
+                            </div>
+                            <div id="Union3" style="display: none; clear:both;" class="chkshow">
+                                <!--代理注册页面代码开始-->
+                                <!--                            <div id="Union3" class="zuce" style="display: none; block; background-color: #5D470D;"> -->
+                                <fieldset>
+        <legend>代理申請</legend>
+        <div class="agentregurl1" style="color:#fff;">
+            作为尊贵的新葡京合作伙伴，您可以利用您的资源简单赚取高额佣金，轻松实现成功与财富的梦想！
+            代理商专属链接地址：<input name="inlk"  type="text" class="inlkinput" value="xxxx.com/?intr=代理帐号"/>&nbsp;&nbsp;<input type="button" class="copybtn" value="复制" style="width:70px;" onclick="fCopyToClicp();"></div>
+                    </fieldset>
+                    <form name="myFORM" id="myFORM" class="JoinMemForm" action="/?r=passport/user-api/agents-register" target="_self" method="post">
+                        <fieldset>                                            
+                            <legend>代理资料</legend>                          
+                            <div  class="agentregurl1"id="agboxbx1"><div>
+
+                                    <label class="clearfloat"><span>代理账号:</span>
+                                        <input name="username" class="first" type="text" id="username1" value="" maxlength="10"/> * 6-10个英文和数字组成 </label></div>
+
+                                <div><label class="clearfloat"><span>密    码:</span>
+                                        <input name="password" type="password" id="password1" value="" maxlength="10"/> * 6-10个任意字符组成 </label></div>
+
+                                <div><label class="clearfloat"><span>确认密码:</span>
+                                        <input name="repassword" type="password" id="repassword" value="" maxlength="10"> * 6-10个任意字符组成 </label></div>
+                            </div>
+                            <div class="agboxbot"><div class="agboxbotw"></div></div>
+                            <div class="reg_bottom"></div>
+                        </fieldset>                   
+                        <fieldset>
+                            <legend>个人资料</legend>                          
+                            <div  class="agentregurl1"id="agboxbx1"><div><label class="clearfloat"><span>真实姓名:</span>
+                                        <input name="real_name" class="first" type="text" id="username2" value="" maxlength="10"> * 名字必须与您的银行户口所用名字相同 </label></div>
+                                <div><label class="clearfloat"><span>联系电话:</span>
+                                        <input type="text" name="tel" id="tel" value="" maxlength="11"/> &nbsp;&nbsp;请填写您的固定电话或手机 </label></div>
+                                <div><label class="clearfloat"><span>邮箱:</span>
+                                        <input type="text" id="e_mail" maxlength="25" name="email" onfocusout="isEmail(this)"/> &nbsp;&nbsp;和您联系的重要渠道,请用正确的邮箱 </label></div>
+                                <div><label class="clearfloat"><span>验证码：</span>
+                                        <input name="verifyCode" type="text" id="yzm" size="4" maxlength="4" />
+                                        <img id='rmNum' src="/?r=site/captcha" class="imgyzm" border="0" />
+                                    </label><br />
+                                </div>
+                                <div class="agboxbot"><div class="agboxbotw"></div></div>
+                                <div class="reg_bottom"></div>
+                        </fieldset>
+                        <div class="submitDiv">                               
+                            <input name="submit" type="submit" id="submit" class="regbtn" style="cursor:pointer;" value=" 提 交 "></div>                                                        
+                        <div class="reg_bottom"></div>                                                     
+                    </form>  
+                    </div>
+                    </div>
+                                        <!--代理注册页面代码结束-->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>mg</title>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<link rel="shortcut icon" href="../aomen/img/mg.png">
+	<link href="css/share.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="css/css.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="css/pagination.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="css/game.css" media="screen" rel="stylesheet" type="text/css">
+	<!-- 跳頁 開始-->
+	<script src="js/jquery-1.12.4.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/pagination.min.js"></script>
+	<script>
+		$(function () {
+			$("#tabs").tabs();
+			$(".newgame_menu2_list").find('a').click(function () {
+				$(this).siblings('a').removeClass("cur");
+				$(this).addClass("cur");
+			})
+			game_type('all');
+		});
+		function game_type(gtype) {
+			if (gtype == 'hot'){
+				var json_url = 'json/mg-hot-list.json';
+			}else{
+				var json_url = 'json/mg-game-list.json';
+			}
+			$(".Pagination").pagination({
+				//items: 174,
+				//itemsOnPage: 3,
+				pageSize: 20,
+				className: 'paginationjs-gamelabel',
+				//cssStyle: 'light-theme',
+				dataSource: function (done) {
+					$.ajax({
+						type: 'GET',
+						url: json_url,
+						dataType: 'json',
+						complete: function (response) {
+							var gameList = JSON.stringify(response.responseJSON);
+							var result = [];
+							result = response.responseJSON.list;
+							if (gtype == 'all' || gtype == 'hot') {
+								var result_game = response.responseJSON.list;
+							} else {
+								var result_game = result.filter(function (item, index, array) {
+									return item.type == gtype;
+								});
+							}
+							done(result_game);
+							$("#totalitem").text('[' + result_game.length + ']');
+						}
+					});
+				},
+				callback: function (index, pagination) {
+					// showNum = pagination.pageSize;
+					// currpage = pagination.pageNumber;
+					// dataL = pagination.totalNumber;
+					var html = '';
+					for (var i = 0; i < index.length; i++) {
+						var code = index[i].code, //遊戲代碼
+							ename = index[i].ename, //遊戲英文名稱
+							cname = index[i].cname, //遊戲中文名稱
+							type = index[i].type,//遊戲類型
+							img = index[i].img; //圖片
+						if (i % 5 == 0) {
+							if (i != 0) {
+								html += '</div>';
+							}
+							html += '<div class="mgwrap" style="display: inline-flex;margin-left: -8px;">';
+						}
+						html += '<div class="wrap" data-index="' + ename + '" style="width:200px">';
+						html += '<div class="mgbox gtype' + type + '" data-type="' + type + '">';
+						html += '<div class="mgimg" > <a class="gameLink" href="/?r=game/login/index&type=1006&flash_id=' + code +
+							'" style="background-image:url(images/mg/' + img +
+							'.png); "></a></div>';
+						html += '<div class="mgbtxt"><a class="gameLink" href="/?r=game/login/index&type=1006&flash_id=' + code +
+							'" >' + cname + '</a></div>';
+						html += '</div>';
+						html += '</div>';
+					}
+					$('.list').html(html);
+				}
+			});
+		}
+	</script>
+	<!-- 跳頁 結束-->
+</head>
+
+<body>
+	<div id="wrapbox">
+		<div id="wrapw">
+			<div class="gamemiddleboxcenter">
+				<div class="newgame_menubox">
+					<ul>
+						<li><a href="game-mg.html" class="cur">MG电子</a></li>
+					</ul>
+				</div>
+				<div class="newgame_banner">
+					<div class="newgame_banner_in ngb_mg">
+						<div class="newgame_search">
+							<!-- search start -->
+							<div class="search-bar" style="padding: 10px 10px 0 10px;position: relative;">
+								<div class="search-form">
+									<input id="search-input" class="form-control" placeholder="请输入游戏名称" name="game" style="padding: 6px 24px;" />
+									<style id="m-search"></style>
+								</div>
+							</div>
+							<script>
+								var that = $(this);
+								var mSearch = $("#m-search");
+								$("#search-input").bind("change paste keyup", function () {
+									var value = $(this).val();
+									if (!value) {
+										mSearch.html("");
+										return;
+									};
+									mSearch.html('.wrap:not([data-index*="' + value.toLowerCase() + '"]) {display: none;}');
+								});
+							</script>
+							<!-- search end -->
+						</div>
+					</div>
+				</div>
+				<div class="newgame_menu2">
+					<div class="newgame_menu2_text">游戏分类：</div>
+					<div class="newgame_menu2_list">
+						<a href="javascript:void(0)" onclick="game_type('hot');">热门游戏</a>
+						<a href="javascript:void(0)" onclick="game_type('all');" class="cur">全部游戏</a>
+						<a href="javascript:void(0)" onclick="game_type('video');">视频扑克</a>
+						<a href="javascript:void(0)" onclick="game_type('table');">桌牌</a>
+						<a href="javascript:void(0)" onclick="game_type('slot');">老虎机</a>
+						<a href="javascript:void(0)" onclick="game_type('other');">其它</a>
+					</div>
+				</div>
+				<div class="newgame_main">
+					<div id="tabs">
+						<div class="list"></div>
+					</div>
+				</div>
+				<div class="setPageDiv">
+					<div><span class="totalitem" id="totalitem"></span></div>
+					<div class="Pagination" id="pagination"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

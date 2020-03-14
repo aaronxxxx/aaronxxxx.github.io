@@ -1,0 +1,545 @@
+ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, input, button, textarea, p, blockquote, table, th, td {
+        margin: 0;
+        padding: 0;
+        font-size:12px;
+        font-family: "SimSun","Microsoft YaHei";
+    }a {
+         outline: medium none;
+         text-decoration: none;
+     }
+
+    .layout1000, .layout {margin: 0 auto;width: 1000px;}
+    .clearfix::after, .layout::after, .layout980::after, .layout1000::after, .mod-forms li::after, .user-form::after, .mod-forms-list li::after {
+        clear: both;
+        content: ".";
+        display: block;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+    }
+    
+    .games-hd-menu{height:120px; left:0; top:0; width:102%; z-index:10;}
+    .games-hd-menu li{background:url(../images/games_spirits.png) no-repeat;}
+    .games-hd-menu li{cursor:pointer; display:inline; float:left; height:120px; text-indent:-9999em;     width: 250px;}
+
+    .games-hd-menu li.mg-menu{background-position:-250px -174px;}
+    .games-hd-menu li.bb-menu{background-position:-500px -174px;}
+    .games-hd-menu li.ag-menu{background-position:-750px -174px;}
+    .games-hd-menu li.agby-menu{background-position:0px -174px;}
+
+    .games-hd-menu li.mg-menu.current{background-position:-250px 0;}
+    .games-hd-menu li.bb-menu.current{background-position:-500px 0;}
+    .games-hd-menu li.ag-menu.current{background-position:-750px 0;}
+    .games-hd-menu li.agby-menu.current{background-position:0px 0;}
+
+    .games-panes {height: 720px; min-height:400px;}
+    .games-sub-menu li{color:#fff; cursor:pointer; display:inline; float:left; font-size:14px; height:31px; line-height:31px; margin-right:3px; padding-right:15px;}
+    .games-sub-menu li span{display:block; padding-left:15px;}
+    .games-sub-menu li.current {background:#fbcd30; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
+    .games-sub-menu li.current span{color:#000;}
+
+    .mod-games .games-item li{cursor:pointer; display:inline; float:left; margin:20px 30px 25px; overflow:hidden; text-align:center; width:180px;}
+    .mod-games .games-item li .game-name{color:#7d7d7d; margin-top:8px;}
+    .mod-games .games-item li:hover .game-name{color:#06b1b9;}
+    .mod-games .games-item li .game-rollover a{background:#2f2e2c; border:1px solid #181817; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; margin-top:12px; height:24px; line-height:24px; float:left; display:inline; color:#939393; width:178px;}
+    .mod-games .games-item li:hover .game-rollover a{border:1px solid #007baa; background:#06b1b9; color:#fff;}
+
+    .mod-games .mg-item .games-item li em{background-repeat:no-repeat; width:146px; height:120px; background-position:0 -8px; display:block; margin:0 auto;}
+    .mod-games .mg-item .games-item li:hover em{background-position:-145px -8px;}
+    .mod-games .bb-item .games-item li em{background-position:0 -170px; background-repeat:no-repeat; display:block; height:120px; margin:0 auto; width:180px;}
+    .mod-games .bb-item .games-item li:hover em{background-position:0 -20px;}
+
+    .mod-games .ag-item .games-item li{cursor:pointer; display:inline; float:left; margin:28px 13px -16px; overflow:hidden; text-align:center; width:216px;}
+    .mod-games .ag-item .games-item li em{background-repeat:no-repeat; width:216px; height:148px; background-position:0 0px; display:block; margin:0 auto;
+        filter:alpha(opacity=100); /*IE滤镜，透明度50%*/
+        -moz-opacity:1; /*Firefox私有，透明度50%*/
+        opacity:1;/*其他，透明度50%*/
+    }
+    .mod-games .ag-item .games-item li:hover em{
+        filter:alpha(opacity=80); /*IE滤镜，透明度50%*/
+        -moz-opacity:0.8; /*Firefox私有，透明度50%*/
+        opacity:0.8;/*其他，透明度50%*/
+
+    }
+
+    .mod-games .ag-item .games-item li .game-rollover a{background:#2f2e2c; border:1px solid #181817; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; margin-top:12px; height:24px; line-height:24px; float:left; display:inline; color:#939393; width:215px;}
+    .mod-games .ag-item .games-item li:hover .game-rollover a{border:1px solid #007baa; background:#06b1b9; color:#fff;}
+    .hide{display:none;}
+
+
+    /* AG捕鱼 */
+    .ag-content {
+        background: #fff none repeat scroll 0 0;
+        font-family: Microsoft YaHei;
+        margin: 0 auto 37px auto;
+        width: 1000px;
+    }
+    .ag-fishbanner {
+        background:url("../images/ag-fish.jpg") no-repeat scroll 0 0;
+        height: 120px;
+        padding-top: 390px;
+        width: 1000px;
+    }
+    .ag-fishbanner a {
+        background:url("../images/by-btn.png") no-repeat scroll 0 0;
+        display: block;
+        float: none;
+        height: 60px;
+        margin: 0 auto;
+        width: 217px;
+    }
+    .ag-fishbanner a:hover {
+        background-image: url("../images/by-btn-on.png");
+    }
+    .ag-list .f-title {
+        background: #3474c1 none repeat scroll 0 0;
+        color: #fff100;
+        font-size: 26px;
+        height: 70px;
+        line-height: 65px;
+        text-align: center;
+    }
+    .ag-f-tab {
+        background: #144989 none repeat scroll 0 0;
+        padding-top: 28px;
+        text-align: center;
+    }
+
+    #ftb-con {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .ag-f-tab ul {
+        height: 38px;
+        list-style: outside none none;
+        margin: 0 auto 33px;
+        padding-left: 0;
+        width: 656px;
+    }
+
+    .ag-f-tab ul li.last {
+        margin-right: 0;
+    }
+    .ag-f-tab ul li {
+        background:url("../images/f-tab-btn.png") no-repeat scroll 0 0;
+        float: left;
+        height: 38px;
+        line-height: 38px;
+        margin-right: 14px;
+        text-align: center;
+        width: 120px;
+    }
+    .ag-f-tab ul li a {
+        color: #fff;
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        height: 38px;
+        outline: 0 none;
+        text-decoration: none;
+        width: 120px;
+    }
+    .ag-f-tab ul li.active, .ag-f-tab ul li:hover {
+        background:url("../images/f-tab-btnh.png") no-repeat scroll 0 0;
+    }
+     /* 捕鱼 */
+    #index_loginbox { display:none; overflow: hidden; height:200%; width:100%; background: rgba(0,0,0,0.5); z-index:100; position: absolute; top:0; left:0;   }
+    #index_loginbox a { text-decoration:none; }
+    #index_loginbox .loginbox { box-shadow: 0 0  6px rgba(0,0,0,0.5);  margin-top:-270px;  position: fixed; top: 50%; left:50%; background: rgb(252,244,225);  border: 2px solid rgb(242, 218, 168); }
+    #index_loginbox .loginbox .loginbox-top {  height:35px; line-height:35px; margin-left:10px; }
+    #index_loginbox .loginbox .loginbox-top span {   display: inline-block; font-size: 15px; font-weight:bold; }
+    #index_loginbox .loginbox .loginbox-top a { display: inline-block; float: right; font-size: 25px; margin-right: 8px; }
+    #index_loginbox .loginbox .loginbox-main {  margin:0 auto; }
+
+    .RubyClassicBlackjackGold{background:url(../images/BTN_GoldSeries_ClassicBlackjack1.png);}
+    .pureplatinum{background:url(../images/BTN_PurePlatinum1.png);}
+    .BreakAway{background:url(../images/BTN_BreakAway1.png);}
+    .Thunderstruck2{background:url(../images/BTN_ThunderstruckTwo1.png);}
+    .AsianBeauty{background:url(../images/BTN_AsianBeauty1.png);}
+    .EuropeanBJGold{background:url(../images/BTN_EuroBlackjack1.png);}
+
+
+    /* 楂樼骇娓告垙 */
+    .AvalonII-L-QuestForTheGrail{background:url(../images/BTN_AvalonII.png);}
+    .TheDarkKnightRises{background:url(../images/BTN_TheDarkKnightRises.png);}
+    .LeaguesOfFortune{background:url(../images/BTN_LeaguesOfFortune1.png);}
+    .InItToWinIt{background:url(../images/BTN_InItToWinIt.png);}
+    .LooseCannon{background:url(../images/BTN_LooseCannon1.png);}
+    .Playboy{background:url(../images/BTN_Playboy1.png);}
+    .DrWattsUp{background:url(../images/BTN_DrWattsUp1.png);}
+    .UntamedCrownedEagle{background:url(../images/BTN_UntamedCrownedEagle.png);}
+    .GirlsWithGuns-L-JungleHeat{background:url(../images/BTN_GirlswithGuns1.png);}
+    .GirlswithGuns-L-FrozenDawn{background:url(../images/BTN_GirlswithGuns2.png);}
+    .BustTheBank{background:url(../images/BTN_BustTheBank1.png);}
+    .HighSociety{background:url(../images/BTN_HighSociety.png);}
+    .MysticDreams{background:url(../images/BTN_MysticDreams1.png);}
+    .SecretSanta{background:url(../images/BTN_SecretSanta.png);}
+    .RacingForPinks{background:url(../images/BTN_RacingForPinks.png);}
+    .StarlightKiss{background:url(../images/BTN_StarlightKiss.png);}
+    .LuckyKoi{background:url(../images/BTN_LuckyKoi.png);}
+    .DolphinQuest{background:url(../images/BTN_DolphinQuest.png);}
+    .Terminator2{background:url(../images/BTN_Terminator2_1.png);}
+
+    /* 濂栭噾娓告垙 */
+    .WheelOfWealthSpecialEdition{background:url(../images/BTN_WheelofWealthSE1.png);}
+    .BushTelegraph{background:url(../images/BTN_BushTelegraph1.png);}
+    .WhatonEarth{background:url(../images/BTN_WhatonEarth1.png);}
+    .TheTwistedCircus{background:url(../images/BTN_TwistedCircus.png);}
+    .MadHatters{background:url(../images/BTN_MadHatters1.png);}
+
+    .TombRaider{background:url(../images/BTN_TombRaider2.png);}
+    .TombRaider2{background:url(../images/BTN_TombRaiderSotS1.png);}
+    .MermaidsMillions{background:url(../images/BTN_MermaidsMillions1.png);}
+    .TheFinerReelsofLife{background:url(../images/BTN_FinerReelsofLife.png);}
+    .Cashville{background:url(../images/BTN_Cashville1.png);}
+
+    .WasabiSan{background:url(../images/BTN_WasabiSan4.png);}
+    .Cashanova{background:url(../images/BTN_Cashanova1.png);}
+    .DinoMight{background:url(../images/BTN_DinoMight1.png);}
+    .SkullDuggery{background:url(../images/BTN_SkullDuggery1.png);}
+    .ThunderstruckII{background:url(../images/BTN_ThunderstruckTwo1.png);}
+
+    .RoboJack{background:url(../images/BTN_robojack1.png);}
+    .PollenNation{background:url(../images/BTN_PollenNation1.png);}
+    .WitchesWealth{background:url(../images/BTN_WitchesWealth1.png);}
+    .MagicCharms{background:url(../images/BTN_MagicCharms.png);}
+    .SantasWildRide{background:url(../images/BTN_SantasWildRide1.png);}
+
+    .WheelofWealth{background:url(../images/BTN_WheelOfWealth1.png);}
+    .Halloweenies{background:url(../images/BTN_Halloweenies1.png);}
+    .Loaded{background:url(../images/BTN_Loaded1.png);}
+    .UntamedWolfPack{background:url(../images/BTN_UntamedWolfPack1.png);}
+    .UntamedBengalTiger{background:url(../images/BTN_UntamedBengalTiger1.png);}
+
+    .BreakDaBankAgain{background:url(../images/BTN_BreakDaBankAgain1.png);}
+    .Moonshine{background:url(../images/BTN_Moonshine1.png);}
+    .BigKahuna{background:url(../images/BTN_BigKahuna1.png);}
+    .HitMan{background:url(../images/BTN_Hitman1.png);}
+    .FootballStar{background:url(../images/BTN_footballstar1.png);}
+
+    /* 缁忓吀鑰佽檸鏈� */
+    .SpectacularWheelOfWealth{background:url(../images/BTN_SpectacularWheelOfWealth1.png);}
+    .CashCrazy{background:url(../images/BTN_CashCrazy9.png);}
+    .Belissimo{background:url(../images/BTN_Belissimo17.png);}
+    .FlyingAce{background:url(../images/BTN_FlyingAce2.png);}
+    .GoldCoast{background:url(../images/BTN_GoldCoast3.png);}
+
+    .GoldenDragon{background:url(../images/BTN_GoldenDragon6.png);}
+    .RapidReels{background:url(../images/BTN_RapidReels5.png);}
+    .CoolBuck{background:url(../images/BTN_CoolBuck1.png);}
+    .JackpotExpress{background:url(../images/BTN_JackpotExpress1.png);}
+    .JingleBells{background:url(../images/BTN_JingleBells6.png);}
+
+    .RomanRiches{background:url(../images/BTN_RomanRiches11.png);}
+    .Fantastic7s{background:url(../images/BTN_FantasticSevens1.png);}
+    .BreakDaBank{background:url(../images/BTN_BreakDaBank1.png);}
+    .ZanyZebra{background:url(../images/BTN_ZanyZebra1.png);}
+    .TripleMagic{background:url(../images/BTN_TripleMagic1.png);}
+
+    .CouchPotato{background:url(../images/BTN_CouchPotato2.png);}
+    .DoubleMagic{background:url(../images/BTN_DoubleMagic1.png);}
+    .DoubleWammy{background:url(../images/BTN_DoubleWammy1.png);}
+    .FruitSlots{background:url(../images/BTN_FruitSlots1.png);}
+    .CashClams{background:url(../images/BTN_CashClams2.png);}
+
+    .FortuneCookie{background:url(../images/BTN_FortuneCookie7.png);}
+    .RockTheBoat{background:url(../images/BTN_RocktheBoat18.png);}
+    .Legacy{background:url(../images/BTN_Legacy2.png);}
+    .CosmicCat{background:url(../images/BTN_CosmicCat1.png);}
+    .JurassicJackpot{background:url(../images/BTN_JurassicJackpot1.png);}
+
+
+    /* 3D鑰佽檸鏈� */
+    .ReelDrive{background:url(../images/BTN_5ReelDrive1.png);}
+    .HotShot{background:url(../images/BTN_HotShot3.png);}
+    .ImmortalRomance{background:url(../images/BTN_ImmortalRomance1.png);}
+    .GreatGriffin{background:url(../images/BTN_GreatGriffin1.png);}
+    .UntamedGiantPanda{background:url(../images/BTN_UntamedGiantPanda.png);}
+
+    .OrientalFortune{background:url(../images/BTN_OrientalFortune2.png);}
+    .CrazyChameleons{background:url(../images/BTN_CrazyChameleons1.png);}
+    .KaratePig{background:url(../images/BTN_KaratePig1.png);}
+    .SoManyMonsters{background:url(../images/BTN_somanymonsters.png);}
+    .MonsterMania{background:url(../images/BTN_MonsterMania1.png);}
+
+    .LadyInRed{background:url(../images/BTN_LadyInRed2.png);}
+    .RedHotDevil{background:url(../images/BTN_RedHotDevil.png);}
+    .GopherGold{background:url(../images/BTN_GopherGold2.png);}
+    .GoldenEra{background:url(../images/BTN_GoldenEra.png);}
+    .GeniesGems{background:url(../images/BTN_GeniesGems2.png);}
+
+    .Carnaval{background:url(../images/BTN_Carnaval2.png);}
+    .Cashapillar{background:url(../images/BTN_Cashapillar1.png);}
+    .ReelThunder{background:url(../images/BTN_ReelThunder2.png);}
+    .BigTop{background:url(../images/BTN_BigTop1.png);}
+    .WhatAHoot{background:url(../images/BTN_WhataHoot3.png);}
+
+    .BurningDesire{background:url(../images/BTN_BurningDesire1.png);}
+    .DeckTheHalls{background:url(../images/BTN_DeckTheHalls1.png);}
+    .Scrooge{background:url(../images/BTN_Scrooge1.png);}
+    .SoMuchSushi{background:url(../images/BTN_somuchsushi.png);}
+    .SunQuest{background:url(../images/BTN_SunQuest3.png);}
+
+    .SoMuchCandy{background:url(../images/BTN_somuchcandy.png);}
+    .TotemTreasure{background:url(../images/BTN_TotemTreasure1.png);}
+    .HappyNewYear{background:url(../images/BTN_HappyNewYear3.png);}
+    .RhymingReels-OldKingCole{background:url(../images/BTN_RRKing1.png);}
+    .TheOsbournes{background:url(../images/BTN_TheOsbournes1.png);}
+
+    .VinylCountdown{background:url(../images/BTN_VinylCountdown4.png);}
+    .MegaSpinsBreakDaBank{background:url(../images/BTN_BreakdaBankAgainMegaSpin1.png);}
+    .WinningWizards{background:url(../images/BTN_WinningWizards1.png);}
+    .LuckyFirecracker{background:url(../images/BTN_LuckyFirecracker.png);}
+    .MaxDamage{background:url(../images/BTN_MaxDamageSlot.png);}
+
+
+    /* 瑙嗛鎵戝厠 */
+    .li>DeucesAndJoker{background:url(../images/BTN_DeucesJoker1.png);}
+    .DoubleDoubleBonus{background:url(../images/BTN_DoubleDoubleBonus1.png);}
+    .LouisianaDouble{background:url(../images/BTN_LouisianaDouble1.png);}
+    .JacksOrBetter{background:url(../images/BTN_JacksOrBetter1.png);}
+    .TensOrBetter{background:url(../images/BTN_TensOrBetter1.png);}
+
+    .DeucesWild{background:url(../images/BTN_DeucesWild1.png);}
+
+    /* 鐗硅壊鑰佽檸鏈� */
+    .TheJoyOfSix{background:url(../images/BTN_JoyOfSix.png);}
+    .Avalon{background:url(../images/BTN_Avalon1.png);}
+    .ReelGems{background:url(../images/BTN_ReelGems1.png);}
+    .SpringBreak{background:url(../images/BTN_SpringBreak2.png);}
+    .GoodToGo{background:url(../images/BTN_GoodToGo2.png);}
+
+    .RetroReelsDiamondGlitz{background:url(../images/BTN_RRDiamondGlitz1.png);}
+    .RetroReels{background:url(../images/BTN_RetroReels1.png);}
+    .AdventurePalace{background:url(../images/BTN_AdventurePalace4.png);}
+    .Munchkins{background:url(../images/BTN_Munchkins2.png);}
+    .Harveys{background:url(../images/BTN_Harveys1.png);}
+
+    .RivieraRiches{background:url(../images/BTN_RivieraRiches1.png);}
+    .SovereignOfTheSevenSeas{background:url(../images/BTN_SovereignoftheSevenSeas.png);}
+    .HoHoHo{background:url(../images/BTN_Hohoho1.png);}
+    .GoldFactory{background:url(../images/BTN_GoldFactory1.png);}
+    .ReelStrike{background:url(../images/BTN_ReelStrike1.png);}
+
+    .Kathmandu{background:url(../images/BTN_Kathmandu1.png);}
+    .CoolWolf{background:url(../images/BTN_CoolWolf1.png);}
+    .Thunderstruck{background:url(../images/BTN_Thunderstruck1.png);}
+    .AgentJaneBlonde{background:url(../images/BTN_AgentJaneBlonde7.png);}
+    .SecretAdmirer{background:url(../images/BTN_SecretAdmirer1.png);}
+
+    .MagicBoxes{background:url(../images/BTN_MagicBoxes.png);}
+    .LadiesNite{background:url(../images/BTN_LadiesNite5.png);}
+    .FishParty{background:url(../images/BTN_FishParty1.png);}
+    .HotInk{background:url(../images/BTN_HotInk1.png);}
+    .Elementals{background:url(../images/BTN_Elementals2.png);}
+
+    .BattlestarGalactica{background:url(../images/BTN_BattlestarGalactica1.png);}
+    .TallyHo{background:url(../images/BTN_TallyHo1.png);}
+    .WesternFrontier{background:url(../images/BTN_WesternFrontier.png);}
+    .LuckyWitch{background:url(../images/BTN_LuckyWitch1.png);}
+    .RhymingReelsHeartsTarts{background:url(../images/BTN_RRHearts&Tarts1.png);}
+
+    .SilverFang{background:url(../images/BTN_SilverFang1.png);}
+
+    /* 浼戦棽娓告垙 */
+    .PremierTrotting{background:url(../images/BTN_PremierTrotting1.png);}
+    .PremierRacing{background:url(../images/BTN_PremierRacing1.png);}
+    .ElectroBingo{background:url(../images/BTN_ElectroBingo1.png);}
+    .PharaohBingo{background:url(../images/BTN_PharaohBingo1.png);}
+    .CrownAndAnchor{background:url(../images/BTN_CrownAndAnchor1.png);}
+
+    .MayanBingo{background:url(../images/BTN_MayanBingo1.png);}
+    .EnchantedWoods{background:url(../images/BTN_EnchantedWoods1.png);}
+    .SambaBingo{background:url(../images/BTN_SambaBingo1.png);}
+    .FourByFour{background:url(../images/BTN_FourByFour1.png);}
+    .Germinator{background:url(../images/BTN_Germinator1.png);}
+
+    .MaxDamageAndTheAlienAttack{background:url(../images/BTN_MaxDamage1.png);}
+
+    /* 妗岄潰娓告垙 */
+    .Baccarat{background:url(../images/BTN_Baccarat2.png);}
+    .BaccaratGold{background:url(../images/BTN_GoldSeries_Baccarat1.png);}
+    .SuperFun21{background:url(../images/BTN_SuperFun21Blackjack1.png);}
+    .FrenchRoulette{background:url(../images/BTN_FrenchRoulette1.png);}
+    .MultiWheelRouletteGold{background:url(../images/BTN_GoldSeries_MultiWheelRoulette1.png);}
+
+    .HighLimitBaccarat{background:url(../images/BTN_HighLimitBaccarat1.png);}
+    .AmericanRoulette{background:url(../images/BTN_USRoulette1.png);}
+    .HighLimitEuropeanBlackjack{background:url(../images/BTN_EuroBlackjackHighLimit1.png);}
+    .EuropeanRouletteGold{background:url(../images/BTN_GoldSeries_EuroRoulette1.png);}
+    .PokerPursuit{background:url(../images/BTN_PokerPursuit1.png);}
+
+    .CyberstudPoker{background:url(../images/BTN_Cyberstud1.png);}
+    .SpanishBlackjack{background:url(../images/BTN_SpanishBlackjack1.png);}
+
+    /* 鎵戝厠娓告垙 */
+    .DeucesAndJoker{background:url(../images/BTN_DeucesJokerPowerPoker1.png);}
+    .JacksOrBetter{background:url(../images/BTN_JacksorBetterPowerPoker1.png);}
+    .DoubleJoker{background:url(../images/BTN_DoubleJokerPowerPoker1.png);}
+    .AcesAndFaces{background:url(../images/BTN_AcesFacesPowerPoker1.png);}
+    .JokerPoker{background:url(../images/BTN_JokerPokerPowerPoker1.png);}
+    /* BBIN-娓告垙鍘� */
+    .Game_5001{background:url(../images/Game_5001.png);}
+    .Game_5002{background:url(../images/Game_5002.png);}
+    .Game_5003{background:url(../images/Game_5003.png);}
+    .Game_5004{background:url(../images/Game_5004.png);}
+    .Game_5011{background:url(../images/Game_5011.png);}
+    .Game_5012{background:url(../images/Game_5012.png);}
+    .Game_5013{background:url(../images/Game_5013.png);}
+    .Game_5014{background:url(../images/Game_5014.png);}
+    .Game_5015{background:url(../images/Game_5015.png);}
+    .Game_5016{background:url(../images/Game_5016.png);}
+    .Game_5017{background:url(../images/Game_5017.png);}
+    .Game_5018{background:url(../images/Game_5018.png);}
+    .Game_5019{background:url(../images/Game_5019.png);}
+    .Game_5020{background:url(../images/Game_5020.png);}
+    .Game_5025{background:url(../images/Game_5025.png);}
+    .Game_5026{background:url(../images/Game_5026.png);}
+    .Game_5027{background:url(../images/Game_5027.png);}
+    .Game_5028{background:url(../images/Game_5028.png);}
+    .Game_5029{background:url(../images/Game_5029.png);}
+    .Game_5030{background:url(../images/Game_5030.png);}
+    .Game_5034{background:url(../images/Game_5034.png);}
+    .Game_5035{background:url(../images/Game_5035.png);}
+    .Game_5039{background:url(../images/Game_5039.png);}
+    .Game_5040{background:url(../images/Game_5040.png);}
+    .Game_5041{background:url(../images/Game_5041.png);}
+    .Game_5042{background:url(../images/Game_5042.png);}
+    .Game_5047{background:url(../images/Game_5047.png);}
+    .Game_5048{background:url(../images/Game_5048.png);}
+    .Game_5049{background:url(../images/Game_5049.png);}
+    .Game_5050{background:url(../images/Game_5050.png);}
+    .Game_5057{background:url(../images/Game_5057.png);}
+    .Game_5058{background:url(../images/Game_5058.png);}
+    .Game_5059{background:url(../images/Game_5059.png);}
+    .Game_5060{background:url(../images/Game_5060.png);}
+    .Game_5061{background:url(../images/Game_5061.png);}
+    .Game_5062{background:url(../images/Game_5062.png);}
+    .Game_5070{background:url(../images/Game_5070.png);}
+    .Game_5073{background:url(../images/Game_5073.png);}
+    .Game_5076{background:url(../images/Game_5076.png);}
+    .Game_5077{background:url(../images/Game_5077.png);}
+    .Game_5078{background:url(../images/Game_5078.png);}
+    .Game_5079{background:url(../images/Game_5079.png);}
+    .Game_5080{background:url(../images/Game_5080.png);}
+    .Game_5083{background:url(../images/Game_5083.png);}
+    .Game_5084{background:url(../images/Game_5084.png);}
+    .Game_5086{background:url(../images/Game_5086.png);}
+    .Game_5088{background:url(../images/Game_5088.png);}
+    .Game_5089{background:url(../images/Game_5089.png);}
+    .Game_5091{background:url(../images/Game_5091.png);}
+    .Game_5092{background:url(../images/Game_5092.png);}
+    .Game_5093{background:url(../images/Game_5093.png);}
+    .Game_5094{background:url(../images/Game_5094.png);}
+    .Game_5095{background:url(../images/Game_5095.png);}
+    .Game_5101{background:url(../images/Game_5101.png);}
+    .Game_5102{background:url(../images/Game_5102.png);}
+    .Game_5103{background:url(../images/Game_5103.png);}
+    .Game_5104{background:url(../images/Game_5104.png);}
+    .Game_5106{background:url(../images/Game_5106.png);}
+    .Game_5115{background:url(../images/Game_5115.png);}
+    .Game_5116{background:url(../images/Game_5116.png);}
+    .Game_5117{background:url(../images/Game_5117.png);}
+    .Game_5118{background:url(../images/Game_5118.png);}
+    .Game_5131{background:url(../images/Game_5131.png);}
+    .Game_5201{background:url(../images/Game_5201.png);}
+    .Game_5202{background:url(../images/Game_5202.png);}
+    .Game_5203{background:url(../images/Game_5203.png);}
+    .Game_5204{background:url(../images/Game_5204.png);}
+    .Game_5401{background:url(../images/Game_5401.png);}
+    .Game_5402{background:url(../images/Game_5402.png);}
+    .Game_5403{background:url(../images/Game_5403.png);}
+    .Game_5404{background:url(../images/Game_5404.png);}
+    .Game_5405{background:url(../images/Game_5405.png);}
+    .Game_5407{background:url(../images/Game_5407.png);}
+    .Game_5601{background:url(../images/Game_5601.png);}
+    .Game_5701{background:url(../images/Game_5701.png);}
+    .Game_5703{background:url(../images/Game_5703.png);}
+    .Game_5704{background:url(../images/Game_5704.png);}
+    .Game_5705{background:url(../images/Game_5705.png);}
+    .Game_5706{background:url(../images/Game_5706.png);}
+    .Game_5707{background:url(../images/Game_5707.png);}
+    .Game_5708{background:url(../images/Game_5708.png);}
+    .Game_5801{background:url(../images/Game_5801.png);}
+    .Game_5802{background:url(../images/Game_5802.png);}
+    .Game_5803{background:url(../images/Game_5803.png);}
+    .Game_5804{background:url(../images/Game_5804.png);}
+    .Game_5805{background:url(../images/Game_5805.png);}
+    .Game_5806{background:url(../images/Game_5806.png);}
+    .Game_5808{background:url(../images/Game_5808.png);}
+    .Game_5809{background:url(../images/Game_5809.png);}
+    .Game_5810{background:url(../images/Game_5810.png);}
+    .Game_5811{background:url(../images/Game_5811.png);}
+    .Game_5821{background:url(../images/Game_5821.png);}
+    .Game_5823{background:url(../images/Game_5823.png);}
+    .Game_5824{background:url(../images/Game_5824.png);}
+    .Game_5825{background:url(../images/Game_5825.png);}
+    .Game_5826{background:url(../images/Game_5826.png);}
+    .Game_5827{background:url(../images/Game_5827.png);}
+    .Game_5828{background:url(../images/Game_5828.png);}
+    .Game_5831{background:url(../images/Game_5831.png);}
+    .Game_5832{background:url(../images/Game_5832.png);}
+    .Game_5833{background:url(../images/Game_5833.png);}
+    .Game_5835{background:url(../images/Game_5835.png);}
+    .Game_5836{background:url(../images/Game_5836.png);}
+    .Game_5837{background:url(../images/Game_5837.png);}
+    .Game_5901{background:url(../images/Game_5901.png);}
+    .Game_5902{background:url(../images/Game_5902.png);}
+    .Game_5903{background:url(../images/Game_5903.png);}
+    .Game_5888{background:url(../images/Game_5888.png);}
+    .Game_15006{background:url(../images/Game_15006.png);}
+    .Game_15016{background:url(../images/Game_15016.png);}
+    .Game_15018{background:url(../images/Game_15018.png);}
+    .Game_15019{background:url(../images/Game_15019.png);}
+    .Game_15021{background:url(../images/Game_15021.png);}
+    .Game_15022{background:url(../images/Game_15022.png);}
+    .Game_15024{background:url(../images/Game_15024.png);}
+    .Game_15027{background:url(../images/Game_15027.png);}
+    /* 鐢靛瓙娓告垙 end */
+    .ag101{background:url(../images/FRU.jpg );}
+    .ag102{background:url(../images/PKBJ.jpg);}
+    .ag103{background:url(../images/SLM1.jpg);}
+    .ag104{background:url(../images/SLM2.jpg);}
+    .ag105{background:url(../images/SLM3.jpg);}
+    .ag106{background:url(../images/SC01.jpg);}
+    .ag107{background:url(../images/TGLW.jpg);}
+    .ag108{background:url(../images/SB01.jpg);}
+    .ag109{background:url(../images/SB02.jpg);}
+    .ag110{background:url(../images/SB03.jpg);}
+    .ag111{background:url(../images/SB04.jpg);}
+    .ag112{background:url(../images/SB05.jpg);}
+    .ag113{background:url(../images/SB06.jpg);}
+    .ag114{background:url(../images/SB07.jpg);}
+    .ag115{background:url(../images/SB08.jpg);}
+    .ag116{background:url(../images/SB09.jpg);}
+    .ag117{background:url(../images/SB10.jpg);}
+    .ag118{background:url(../images/SB11.jpg);}
+    .ag119{background:url(../images/SB12.jpg);}
+    .ag120{background:url(../images/SB13.jpg);}
+    .ag121{background:url(../images/SB14.jpg);}
+    .ag122{background:url(../images/SB15.jpg);}
+    .ag123{background:url(../images/SB16.jpg);}
+    .ag124{background:url(../images/SB17.jpg);}
+    .ag125{background:url(../images/SB18.jpg);}
+    .ag126{background:url(../images/SB19.jpg);}
+    .ag127{background:url(../images/SB20.jpg);}
+    .ag128{background:url(../images/SB21.jpg);}
+    .ag129{background:url(../images/SB22.jpg);}
+    .ag130{background:url(../images/SB23.png);}
+    .ag131{background:url(../images/SB24.jpg);}
+    .ag132{background:url(../images/SB25.jpg);}
+    .ag133{background:url(../images/SB26.jpg);}
+    .ag134{background:url(../images/SB27.jpg);}
+    .ag135{background:url(../images/SB28.jpg);}
+    .ag136{background:url(../images/SB29.jpg);}
+    .ag137{background:url(../images/AV01.jpg);}
+    .ag138{background:url(../images/TGCW.jpg);}
+    .ag200{background:url(../images/XG01.jpg);}
+    .ag201{background:url(../images/XG02.jpg);}
+    .ag202{background:url(../images/XG03.jpg);}
+    .ag203{background:url(../images/XG04.jpg);}
+    .ag204{background:url(../images/XG05.jpg);}
+    .ag205{background:url(../images/XG06.jpg);}
+    .ag206{background:url(../images/XG07.jpg);}
+    .ag207{background:url(../images/XG08.jpg);}

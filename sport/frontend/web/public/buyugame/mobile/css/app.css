@@ -1,0 +1,383 @@
+		/*app.css 篩選後*/
+.page-title {
+    display: inline-block;
+    font-size: 25px;
+    width: 70%;
+    min-height: 30px;
+    color: #fff
+}
+
+.member-module-login .page-title {
+    visibility: hidden
+}
+
+.page-title {
+    font-size: 15px;
+    padding: 3px;
+    min-height: 23px
+}
+
+.youhui.mobile .common-module-youhuiDo .page-title {
+    font-size: 45px;
+    padding: 18px
+}
+
+.top-container .right-menu {
+    font-size: 20px
+}
+
+.top-container .left-menu>*:first-child,
+.top-container .right-menu>*:first-child {
+    color: #eee;
+    cursor: pointer
+}
+
+.top-container .left-menu>*:first-child span,
+.top-container .right-menu>*:first-child span {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    line-height: 24px
+}
+
+.top-container .right-menu {
+    position: absolute;
+    top: 4px;
+    right: 10px
+}
+
+.top-container .right-menu .dropdown-menu {
+    left: auto;
+    right: 0
+}
+
+.member-module-login .right-menu .btn {
+    color: #333;
+    border: none;
+    background: none
+}
+
+.top-container .left-menu>*:first-child span,
+.top-container .right-menu>*:first-child span {
+    line-height: 19px
+}
+
+.youhui.mobile .common-module-youhuiDo .top-container .left-menu>*:first-child span,
+.youhui.mobile .common-module-youhuiDo .top-container .right-menu>*:first-child span {
+    padding: 35px;
+    font-size: 50px
+}
+
+.top-container .right-menu.dropdown .dropdown-menu:before {
+    margin-left: -100%
+}
+
+.top-container .right-menu.dropdown.open .dropdown-menu:before {
+    margin-left: -100%
+}
+
+.top-container .right-menu .dropdown-menu {
+    right: -100%;
+    box-shadow: -3px 0 8px rgba(0, 0, 0, 0.5)
+}
+
+.top-container .right-menu.dropdown.open .dropdown-menu {
+    right: 0;
+    opacity: 1
+}
+
+.dropdown-menu>.disabled>a,
+.dropdown-menu>.disabled>a:focus,
+.dropdown-menu>.disabled>a:hover {
+    color: #999
+}
+
+.navbar-nav .dropdown-menu {
+    max-height: 75vh
+}
+
+.navbar-nav .open .dropdown-menu {
+    position: absolute;
+    float: left;
+    min-width: 160px;
+    padding: 0;
+    margin: 2px 0 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175)
+}
+
+.navbar-nav .open .dropdown-menu li>a {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 0;
+    text-align: center;
+    color: #333 !important
+}
+
+.navbar-nav .open .dropdown-menu li:first-child>a {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px
+}
+
+.navbar-nav .open .dropdown-menu li:last-child>a {
+    border-bottom: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px
+}
+
+.navbar-nav .dropdown-menu li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap
+}
+
+.navbar-nav .dropdown-menu li>a:hover,
+.navbar-nav .dropdown-menu li>a:focus {
+    color: #262626;
+    text-decoration: none;
+    background-color: #f5f5f5
+}
+
+.navbar-nav .dropdown-menu li.active>a,
+.navbar-nav .dropdown-menu li.active>a:hover,
+.navbar-nav .dropdown-menu li.active>a:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: cornflowerblue;
+    outline: 0
+}
+
+.navbar-nav .dropdown-menu li.disabled>a,
+.navbar-nav .dropdown-menu li.disabled>a:hover,
+.navbar-nav .dropdown-menu li.disabled>a:focus {
+    color: #777
+}
+
+.navbar-nav .dropdown-menu li.disabled>a:hover,
+.navbar-nav .dropdown-menu li.disabled>a:focus {
+    text-decoration: none;
+    cursor: not-allowed;
+    background-color: transparent;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false)
+}
+
+.user-info-btn .dropdown-menu {
+    left: auto;
+    right: 0
+}
+
+.member-module-login .dropdown-backdrop {
+    display: none
+}
+
+.layout-bottom .main-menu-area .dropdown-menu {
+    min-width: 110px
+}
+
+.dropup.more-menu .dropdown-menu {
+    width: 100%;
+    background-color: #efefef
+}
+
+.dropup.more-menu .dropdown-menu img {
+    display: inline-block;
+    min-height: 45px;
+    height: 45px
+}
+
+.dropup.more-menu .dropdown-menu ul li {
+    width: 33%;
+    display: inline-table
+}
+
+.dropup.more-menu .dropdown-menu ul li:last-child {
+    border-right: 1px solid #e5e5e5;
+    margin-left: 1px
+}
+
+.dropup.more-menu .dropdown-menu ul li:nth-child(3n+2) {
+    border-right: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    margin-left: 0
+}
+
+.dropup.more-menu .dropdown-menu ul li:nth-child(3n+3) {
+    border-right: none;
+    margin-left: 0
+}
+
+.dropup.more-menu .dropdown-menu ul li a {
+    padding: 4px 0;
+    text-align: center;
+    display: block;
+    text-decoration: none
+}
+
+.dropup.more-menu .dropdown-menu span.icon {
+    display: inline-block;
+    font-size: 25px;
+    color: #c9c9c9;
+    margin: 0;
+    vertical-align: middle;
+    line-height: 25px;
+    height: 25px
+}
+
+.dropup.more-menu .dropdown-menu span.item-name {
+    display: block;
+    padding-top: 5px;
+    margin: 0;
+    line-height: 25px
+}
+
+.top-container .dropdown .dropdown-menu:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 200%;
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+.top-container .dropdown .dropdown-menu {
+    position: fixed;
+    z-index: 15000;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 0;
+    display: block;
+    opacity: 0;
+    transition-property: left, right;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    border: none
+}
+
+.top-container .dropdown-menu .menu-head {
+    text-align: center;
+    color: #fff;
+    font-size: 16px
+}
+
+.top-container .dropdown-menu .menu-head>span {
+    padding: 15px 5px
+}
+
+.top-container .dropdown-menu .menu-body {
+    position: absolute;
+    top: 46px;
+    bottom: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow: auto;
+    background-color: #fff
+}
+
+.top-container .left-menu.dropdown .dropdown-menu:before {
+    margin-right: -100%
+}
+
+.top-container .right-menu.dropdown .dropdown-menu:before {
+    margin-left: -100%
+}
+
+.top-container .left-menu.dropdown.open .dropdown-menu:before {
+    margin-right: -100%
+}
+
+.top-container .right-menu.dropdown.open .dropdown-menu:before {
+    margin-left: -100%
+}
+
+.top-container .left-menu .dropdown-menu {
+    left: -100%;
+    box-shadow: 3px 0 8px rgba(0, 0, 0, 0.5)
+}
+
+.top-container .right-menu .dropdown-menu {
+    right: -100%;
+    box-shadow: -3px 0 8px rgba(0, 0, 0, 0.5)
+}
+
+.top-container .left-menu.dropdown.open .dropdown-menu {
+    left: 0;
+    opacity: 1
+}
+
+.top-container .right-menu.dropdown.open .dropdown-menu {
+    right: 0;
+    opacity: 1
+}
+
+.top-container .dropdown-menu li>a {
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e5e5
+}
+
+.top-container .dropdown-menu li:last-child>a {
+    border-bottom: none
+}
+
+.layout-bottom .main-menu-area .fa,
+.layout-bottom .main-menu-area .glyphicon {
+    font-size: 22px
+}
+
+.pull-down .glyphicon,
+.pull-up .glyphicon {
+    font-size: 30px;
+    top: 9px
+}
+
+.pull-down .glyphicon,
+.pull-up .glyphicon {
+    font-size: 28px
+}
+
+.layout-bottom .main-menu-area .fa,
+.layout-bottom .main-menu-area .glyphicon {
+    font-size: 22px
+}
+
+.page-title {
+display: inline-block;
+font-size: 25px;
+width: 70%;
+min-height: 30px;
+color: #fff
+}
+.member-module-login .page-title {
+visibility: hidden
+}
+.page-title {
+font-size: 15px;
+padding: 3px;
+min-height: 23px
+}
+.youhui.mobile .common-module-youhuiDo .page-title {
+font-size: 45px;
+padding: 18px
+}
+
+.top-container {
+text-align: center;
+padding: 7px 0;
+width: 100%;
+display: inline-block;
+position: relative;
+}

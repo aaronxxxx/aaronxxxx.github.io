@@ -1,0 +1,252 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 標準化樣式 */
+
+/* 手機版  */
+@media (max-width: 576px) { 
+	html,body{
+		background-color:#fff;
+	}
+	.phoneN{
+		display:none;
+	}
+	.MMain {
+		width: 100%;
+	}
+	#MACenterContent{
+		padding: 5px 10px;
+		margin: 0;
+	}
+	.tableTitle{
+		margin-bottom: 10px;
+		background-color: #54AAF7;
+	}
+	.MSubTitle{
+		font-size: 18px;
+		font-weight:bolder;
+	}
+	.MSubRemind{
+		font-size: 12px;
+		color: #FF0000;
+		background: rgba(255,255,255,0.5);
+		padding-left: 15px;
+	}
+	.MSubTitle,.MSubRemind{
+		padding: 5px 0 5px 10px;
+	    
+	}
+	.MMain {
+		width: 100%;
+	}
+	.MMain tbody{
+	}
+	.MMain th{
+		border:1px solid #ccc;
+		text-align: center;
+		padding: 5px 5px;
+		font-weight: bolder;
+		background:#AAD5F9;
+	}
+	.MMain td{
+		border:1px solid #ccc;
+		text-align: center;
+		padding: 5px 10px;
+		font-size: 16px;
+		font-weight: bolder;
+	}
+	.MMain td button{
+		padding: 3px 10px;
+		border: 0;
+		background:
+	}
+	.tableCol1{
+		width:25%;
+	}
+	.btnIn,.btnOut{
+		background-color:#4891D3;
+		border-radius: 10px;
+		width: 70%;
+		font-weight: bold;
+	}
+	
+	.functionBox{
+		padding:0;
+		display: flex;
+		justify-content: space-around;
+	}
+	.btnIn,.btnOut{
+		font-size:16px;
+	}
+	.playBtn{
+		margin-right: 20px;
+	}
+	.closeBtn,.playBtn{
+		padding: 8px 15px;
+		border: 0;
+		border-radius: 5px;
+		background-color:#4891D3;
+		font-weight:bolder;
+		font-size:16px;
+	}
+	
+ }
+ /* 網頁版  */
+ @media (min-width: 576px){
+	html,body{
+		background: #FFF !important;
+		background-size:cover;
+	}
+	#MACenterContent{
+	/*	background-color:rgba(0,0,0,0.5);*/
+		padding:10px 20px;
+		margin:0;	
+	}
+	.tableTitle{
+		margin-bottom: 10px;
+		border-top-left-radius:10px;
+		border-top-right-radius:10px;
+		/*background: url("../img/title.png") no-repeat;*/
+		background: linear-gradient(90deg, yellow 0%, #22b573 100%); 
+		background: -moz-linear-gradient(90deg, yellow 0%, #22b573 100%); 
+		background: -webkit-linear-gradient(90deg, yellow 0%, #22b573 100%);
+		background: -o-linear-gradient(90deg, yellow 0%, #22b573 100%); 
+	}
+	.MSubTitle{
+		font-size: 18px;
+		font-weight: 700;
+	}
+	.MSubRemind{
+		/*! margin-left: 15px; */ 
+		font-size: 15px;
+		color: #1b1464;
+		background: rgba(255,255,255,0.5);
+		padding-left: 15px;
+		letter-spacing: 1px;
+	}
+	.MSubTitle,.MSubRemind{
+		padding: 5px 0 5px 10px;
+		/*! background: rgba(0,0,0,0.5); */
+	}
+	.MMain{
+		width: 80%;
+		border: 3px inset #000;
+		margin: 0 auto;
+	}
+	.MMain tbody{
+		background: rgba(250, 100, 36, 0.3);
+	}
+	.MMain th{
+		border: 3px inset #000;
+		text-align: center;
+		padding: 5px 10px;
+		font-weight: bolder;
+		background: rgba(41, 117, 226, 0.5);
+	}
+	.MMain td{
+	  border: 3px inset #000;
+		text-align: center;
+		padding: 5px 10px;
+	}
+	.MMain td button{
+		padding: 3px 10px;
+		border: 0;
+	}
+	.btnIn,.btnOut{
+		/*background: url("../img/btn1.png");*/
+		background: linear-gradient(45deg, yellow 0%, #22b573 100%); 
+		background: -moz-linear-gradient(45deg, yellow 0%, #22b573 100%); 
+		background: -webkit-linear-gradient(45deg, yellow 0%, #22b573 100%);
+		background: -o-linear-gradient(45deg, yellow 0%, #22b573 100%); 
+		border-radius: 5px;
+		font-size: 18px;
+		font-weight: bolder;
+		cursor: pointer;
+	}
+	.btnIn:hover{
+		/*background: url("../img/btn2.png");*/
+		background: linear-gradient(45deg, #22b573 0%, yellow 100%); 
+		background: -moz-linear-gradient(45deg, #22b573 0%, yellow 100%); 
+		background: -webkit-linear-gradient(45deg, #22b573 0%, yellow 100%); 
+		background: -o-linear-gradient(45deg, #22b573 0%, yellow 100%); 
+	}
+	.btnOut:hover{
+		/*background: url("../img/btn2.png");*/
+		background: linear-gradient(45deg, #22b573 0%, yellow 100%); 
+		background: -moz-linear-gradient(45deg, #22b573 0%, yellow 100%); 
+		background: -webkit-linear-gradient(45deg, #22b573 0%, yellow 100%); 
+		background: -o-linear-gradient(45deg, #22b573 0%, yellow 100%); 
+	}
+	.functionBox{
+		padding:10px 20px;
+		height: 40px;
+		display: flex;
+		justify-content: flex-end;
+		
+	}
+	.playBtn{
+		margin-right: 20px;
+	}
+	.closeBtn,.playBtn{
+		padding: 8px 12px;
+		/* border: 0; */
+		border-radius: 10px;
+		box-shadow: 2px 3px 10px #262626;
+		background: url("../img/closebtn.png");
+		color:#22b573;
+		font-weight: 700;
+		cursor: pointer;
+	}
+	.closeBtn:hover{
+		background: url("../img/closebtn2.png");
+	}
+	.playBtn:hover{
+		background: url("../img/closebtn2.png");
+	}
+ }
+
+
+
+
+
+

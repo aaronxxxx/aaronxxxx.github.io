@@ -1,0 +1,325 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Microsoft JhengHei';
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background-color: #9D9D9D;
+    position: relative;
+}
+
+input {
+    font-family: 'Microsoft JhengHei';
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    min-height: 3.4rem;
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    background: -webkit-gradient(linear, left bottom, left top, from(#3D3C3C), color-stop(#6A6767), to(#3D3C3C));
+    background: linear-gradient(to top, #3D3C3C, #6A6767, #3D3C3C);
+}
+
+header .tittle_box {
+    width: 700px;
+    margin: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+header .tittle_box h1 {
+    line-height: 3.4rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+header .tittle_box a {
+    width: 1.3rem;
+    height: 1.3rem;
+    display: block;
+    position: absolute;
+    left: 0.5rem;
+    background: url(../images/icon003.png) center no-repeat;
+    background-size: cover;
+}
+
+main {
+    width: 700px;
+    margin: auto;
+    background-color: #fff;
+    min-height: 100vh;
+    padding-top: 3.4rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: bold;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+main .pay_box {
+    width: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#D9D9D9));
+    background: linear-gradient(to bottom, #fff, #D9D9D9);
+    padding: 2rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+main .pay_box h2 {
+    font-size: 1.6rem;
+    color: #0550B4;
+    padding-bottom: 1.4rem;
+}
+
+main .pay_box h2 span {
+    font-size: 1.2rem;
+    color: #656565;
+    padding-left: 0.4rem;
+}
+
+main .pay_box input {
+    width: 420px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#D9D9D9));
+    background: linear-gradient(to bottom, #FFFFFF, #D9D9D9);
+    height: 2rem;
+    font-size: 1rem;
+    padding-left: 0.3rem;
+    border: 1px solid #474747;
+    border-radius: 5px;
+    color: #656565;
+    font-weight: bold;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+main .pay_box p {
+    padding-top: 1rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #656565;
+    font-size: 0.8rem;
+}
+
+main .pay_check_box {
+    width: 100%;
+    padding: 1.4rem 0 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.pay_check_box .sort_box {
+    width: 420px;
+    padding-bottom: 1rem;
+}
+
+.pay_check_box .sort_box ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.pay_check_box .sort_box ul li a {
+    display: block;
+    padding-bottom: 0.4rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #656565;
+    font-size: 1.2rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.pay_check_box .sort_box ul li.active>a {
+    border-bottom: 2px solid #2C7EEB;
+    color: #04A9FF;
+}
+
+.pay_check_box .check_box {
+    padding-bottom: 1.6rem;
+    width: 420px;
+}
+
+.pay_check_box .check_box .tab-pane {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.pay_check_box .check_box .tab-pane div {
+    width: 31%;
+    margin: 0.6rem 0.2rem 0;
+}
+
+.pay_check_box .check_box .tab-pane input {
+    display: none;
+}
+
+.pay_check_box .check_box .tab-pane label {
+    display: block;
+    width: 100%;
+    height: 60px;
+    border: 1px solid #D9D9D9;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.pay_check_box .check_box .tab-pane label:hover {
+    border: 1px solid #9D9D9D;
+}
+
+.pay_check_box .check_box .tab-pane input:checked+label {
+    border: 4px solid #04A9FF;
+}
+
+.pay_check_box .check_box>.tab-pane {
+    display: none;
+}
+
+.pay_check_box .check_box>.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.pay_check_box .pay_submitBtn {
+    width: 420px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#04A9FF), to(#2C7EEB));
+    background: linear-gradient(to bottom, #04A9FF, #2C7EEB);
+    line-height: 2.2rem;
+    font-size: 1.2rem;
+    border: 1px solid #0550B4;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-top: 1rem;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    cursor: pointer;
+    font-family: 'Microsoft JhengHei';
+}
+
+.pay_check_box .pay_submitBtn:hover {
+    border: 1px solid #04A9FF;
+    -webkit-box-shadow: 0 0 10px #04A9FF;
+            box-shadow: 0 0 10px #04A9FF;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+@media only screen and (max-width: 705px) {
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+        font-size: 92%;
+    }
+    header .tittle_box {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+    }
+    main .pay_box input {
+        width: 94%;
+    }
+    main .pay_check_box h2 {
+        width: 94%;
+    }
+    .pay_check_box .sort_box {
+        width: 94%;
+    }
+    .pay_check_box .check_box {
+        width: 94%;
+    }
+    .pay_check_box .check_box .tab-pane div {
+        width: 48%;
+    }
+    .pay_check_box .pay_submitBtn {
+        width: 94%;
+    }
+}
+
+@media only screen and (max-width: 413px) {
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+        font-size: 84%;
+    }
+    main .pay_box h2 {
+        font-size: 1.4rem;
+    }
+}

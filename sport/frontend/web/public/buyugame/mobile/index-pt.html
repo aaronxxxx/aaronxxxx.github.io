@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>pt</title>
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+	<link rel="shortcut icon" href="../images/pt/fav.ico">
+	<script type="text/javascript" src="../mobile/js/vendor.js"></script>
+	<script type="text/javascript" src="../mobile/js/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
+	<link rel="apple-touch-icon-precomposed" href="https://www.tbk-app.com/g1337/version/pkg/icon.png">
+	<link href="../mobile/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../mobile/css/vendor.css" rel="stylesheet">
+	<link href="../mobile/css/app.css" rel="stylesheet">
+	<link href="../mobile/css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="https://login.winforfun88.com/jswrapper/integration.js.php?casino=winforfun88"></script>
+</head>
+<style>
+	.search-form{position: relative;}
+	.searcBtn{width: 50px;height: 30px;
+			 position: absolute;bottom:0;right:5px;background: transparent;border:0;
+			 background-image: url(../images/search_icon.png);background-repeat: no-repeat;
+			background-position: center right;cursor: pointer;}
+</style>
+<script>
+	$(document).ready(function(){
+		game_list();
+	});
+	function game_list(){
+		var searchText = $("#search-input").val();
+		$.ajax({
+	    url: "../json/pt-game-list.json",
+	    type: "GET",
+	    dataType: "json",
+	    success: function (result) {
+			// console.log(result.list);
+			var resultArr = result.list,
+					gameArr = new Array(),
+					html = '';
+			// console.log(typeof arr);
+			if(searchText == ''){
+				gamelen = result.list.length;
+				list = result.list;
+				for (var i = 0; i < list.length; i++) {
+					var code = list[i].code, //遊戲代碼
+						ename = list[i].ename, //遊戲英文名稱
+						cname = list[i].cname; //遊戲中文名稱
+					html += '<div class="wrap" data-index="' + ename + '">';
+					html += '<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 game-item">';
+					html += '<a style="text-decoration: none;" onclick="playGame(\''+code+'\');"><div class="thumbnail">';
+					html += '<div style="background-image:url(../images/pt/' + code + '.png);background-repeat:no-repeat;background-position: center center; background-size: cover;width:120px;height:111px;margin:0 auto;"></div>';
+					html += '<div class="caption text-center"><h5 title="' + cname + '" class="game-name" style="white-space:nowrap;text-overflow: ellipsis; overflow: hidden; ">' + cname + '</h5></div>';
+					html += '</div></a></div></div>';
+				}
+			}else{
+				resultArr.forEach(function(i) {
+					var name = i.cname,
+					code = i.code,
+					ename = i.ename;
+					if(name.indexOf(searchText) != -1){
+						gameArr.push({'cname':name , 'code':code ,'ename':ename});
+					}
+				});
+				for (var i = 0; i < gameArr.length; i++) {
+						var code = gameArr[i].code, //遊戲代碼
+							ename = gameArr[i].ename, //遊戲英文名稱
+							cname = gameArr[i].cname; //遊戲中文名稱
+						html += '<div class="wrap" data-index="' + ename + '">';
+						html += '<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 game-item">';
+						html += '<a style="text-decoration: none;" onclick="playGame(\''+code+'\');"><div class="thumbnail">';
+						html += '<div style="background-image:url(../images/pt/' + code + '.png);background-repeat:no-repeat;background-position: center center; background-size: cover;width:120px;height:111px;margin:0 auto;"></div>';
+						html += '<div class="caption text-center"><h5 title="' + cname + '" class="game-name" style="white-space:nowrap;text-overflow: ellipsis; overflow: hidden; ">' + cname + '</h5></div>';
+						html += '</div></a></div></div>';
+					}
+			}
+			$('.gameList').html(html);
+			$("#search-input").val('');
+		}
+	});
+	}
+	
+	var mobiledomain = "ld176988.com";
+	var systemidvar = "424";
+	var language = 'zh-cn';
+	var user = '';
+	var gameId = '';
+
+	playGame = function (game) {
+	    $.ajax({
+	        url: '/?r=game/login/index',
+	        type: 'GET',
+	        dataType: 'json',
+	        async: false, // 此处必须定义为同步
+	        data: {
+	            type: '1009',
+	            game: game
+	        },
+	        complete: function (data) {
+	            if (data.responseJSON) {
+	                user = data.responseJSON.name;
+	                gameId = game;
+	                iapiSetClientPlatform("mobile&deliveryPlatform=HTML5");
+	                var realMode = 1;
+	                iapiLogin(data.responseJSON.name, data.responseJSON.pwd, realMode, language);
+	            } else {
+	                alert(data.responseText);
+	            }
+	        }
+	    });
+	}
+
+	iapiSetCallout('Login', calloutLogin);
+
+	function calloutLogin(response) {
+	    if (response.errorCode) {
+	        alert("Login failed. " + response.playerMessage + " Error code: " + response.errorCode);
+	    } else {
+	        askTempandLaunchGame(gameId);
+	    }
+	}
+
+	function askTempandLaunchGame(gameId) {
+	    currentgame = gameId;
+	    var realMode = 1;
+	    iapiRequestTemporaryToken(realMode, systemidvar, 'GamePlay');
+	    iapiSetCallout('GetTemporaryAuthenticationToken', calloutGetTemporaryAuthenticationToken);
+	}
+
+	function calloutGetTemporaryAuthenticationToken(response) {
+	    if (response.errorCode) {
+	        alert("Token failed. " + response.playerMessage + " Error code: " + response.errorCode);
+	    } else {
+	        launchMobileClient(response.sessionToken.sessionToken);
+	    }
+	}
+
+	function launchMobileClient(temptoken) {
+	    //var clientUrl = 'http://hub.' + mobiledomain + '/igaming/' + '?gameId=' + currentgame + '&real=1' + '&username=' + getUrlVars()["username"] + '&lang=' + language + '&tempToken=' + temptoken + '&lobby=' + location.href.substring(0,location.href.lastIndexOf('/')+1) + 'lobby.html' + '&support=' + location.href.substring(0,location.href.lastIndexOf('/')+1) + 'support.html' + '&logout=' + location.href.substring(0,location.href.lastIndexOf('/')+1) + 'logout.html' + '&deposit=' + location.href.substring(0,location.href.lastIndexOf('/')+1) + 'deposit.html';
+	    var clientUrl = 'http://hub.' + mobiledomain + '/igaming/' + '?gameId=' + currentgame + '&real=1' + '&username=' +
+	        user + '&lang=' + language + '&tempToken=' + temptoken + '&lobby=' + location.href +
+	        '&support=htcmd:close&logout=htcmd:close&deposit=htcmd:close';
+	    document.location = clientUrl;
+	    //window.location.href = clientUrl;
+	    //window.location.target = "pt_game";
+	    //window.open(clientUrl, 'pt_game');
+	    /*
+	    var popup = window.open('about:blank', '_blank');
+	    $.ajax({
+	    	url: clientUrl,
+	    	type: 'GET',
+	    	async: true,  // 此处必须定义为同步
+	    	complete: function(data){
+	    		window.open(this.url, 'pt_game');
+	    	}
+	    })
+	    */
+
+	}
+</script>
+
+<body class="common_style">
+	<div class="layout-main" style="height: 757px;">
+		<div class="game-module game-module-index">
+			<div class="module-top" style="height: 40px;">
+				<div class="top-container navbar-nav" style="float: none;margin: 0; text-align: center;padding: 7px 0; width:
+				 100%; display: inline-block; position: relative;">
+					<a href="/?r=mobile/disp/index">
+						<p style="margin-top:3px;margin-left: 5px;font-size: 15px;font-weight: 700;background: darkseagreen;border-radius: 5px;width: 70px;float: left;color: #fff;">返回首页</p>
+					</a>
+					<div class="page-title" style="display: inline-block;width: 70%;color: #fff;margin-left: -75px;margin-top: -3px;font-size: 18px;">全部游戏</div>
+					<!-- <div class="main-menu-btn right-menu dropdown">
+						<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+							<p style="margin-top: 6px;margin-left: 5px;font-size: 15px;font-weight: 700;background: orangered;border-radius: 5px;width: 70px;">选择分类</p>
+						</a>
+						<div class="dropdown-menu">
+							<div id="tab-demo" class="menu-head">
+								<span aria-hidden="true" class="glyphicon glyphicon-list" style="display: inline-flex;margin-left:-20px;">
+									<p style="margin-top:-3px;margin-left: 5px;">游戏分类</p>
+								</span></div>
+							<ul class="menu-body diy-scrollbar tab-title">
+								<li><a href="mobile_popular.html">热门游戏</a></li>
+								<li><a href="mobile_index.html">全部游戏</a></li>
+								<li><a href="mobile_video.html">视频扑克</a></li>
+								<li><a href="mobile_table.html">桌牌</a></li>
+								<li><a href="mobile_slot.html">老虎机</a></li>
+								<li><a href="mobile_other.html">其它</a></li>
+							</ul>
+						</div>
+					</div> -->
+				</div>
+			</div>
+			<div style="min-height: 680px;">
+				<div class="search-bar" style="padding: 10px 10px 0 10px;
+						position: relative;">
+					<span class="icon-area" style="position: absolute;top: 18px;left: 16px;">
+						<span aria-hidden="true" class="glyphicon glyphicon-search"></span>
+					</span>
+					<div class="search-form">
+						<input id="search-input" class="form-control" placeholder="游戏名称" name="game" style="padding: 6px 24px;" />
+						<input type="button" id="m-search" class="searcBtn"  onclick="game_list();"/>
+					</div>
+					<br>
+					<span class="close-area" style="position: absolute;top: 13px;right: 12px;display: none;">
+						<button type="button" class="close" aria-label="Close">
+							<span aria-hidden="true">×</span>
+						</button>
+					</span>
+				</div>
+				<!-- search start-->
+				<script>
+					// var that = $(this);
+					// var mSearch = $("#m-search");
+					// $("#search-input").bind("change paste keyup", function () {
+					// 	var value = $(this).val();
+					// 	if (!value) {
+					// 		mSearch.html("");
+					// 		return;
+					// 	};
+					// 	mSearch.html('.wrap:not([data-index*="' + value.toLowerCase() + '"]) {display: none;}');
+					// });
+				</script>
+				<!-- search end-->
+				<div class="main-container">
+					<div class="gameList"></div>
+					<!-- 全部遊戲 結束-->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

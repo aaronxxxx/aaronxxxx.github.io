@@ -1,0 +1,279 @@
+<?php
+namespace app\modules\live\common;
+
+use app\modules\live\models\LiveConfig;
+use app\modules\live\models\LiveRpcConfig;
+use app\modules\live\models\UserList;
+use vendor\utils\string\RandStringUtil;
+
+/**
+ * LiveUtil 真人操作工具集
+ */
+class LiveUtil {
+    private static $_live_types = [
+            '1' => 'AG',
+            '2' => 'AG',
+            '3' => 'AGIN',
+            '4' => 'AGIN',
+            '5' => 'AG_BBIN',
+            '6' => 'AG_BBIN',
+            '7' => 'DS',
+            '8' => 'DS',
+            '9' => 'AG_OG',
+            '10' => 'AG_OG',
+            '11' => 'AG_MG',
+            '12' => 'AG_MG',
+        ];
+    
+    /**
+     * 获取厅标识
+     * @param int $type         操作编号
+     * @param boolean $isDouble 是否双组
+     */
+    public static function getLiveTypeByType($type, $isDouble = true) {
+        if (!$isDouble) {
+            self::$_live_types = [
+                '1' => 'AG',
+                '2' => 'AGIN',
+                '3' => 'AG_BBIN',
+                '4' => 'DS',
+                '5' => 'AG_OG',
+                '6' => 'AG_MG',
+                '7' => 'OG',
+            ];
+        }
+        
+        $live_type = array_key_exists((string)$type, self::$_live_types) ? 
+                self::$_live_types["$type"] : '';
+        
+        return $live_type;
+    }
+    
+    /**
+     * 获取电子游艺厅标识
+     * @param int $type         操作编号
+     * @param boolean $isDouble 是否双组
+     */
+    public static function getGameLiveTypeByType($type, $isDouble = true) {
+        if (!$isDouble) {
+            self::$_live_types = [
+                '1001' => 'AG',
+                '1002' => 'AGIN',
+                '1003' => 'AG_BBIN',
+                '1004' => 'DS',
+                '1005' => 'AG_OG',
+                '1006' => 'AG_MG',
+            ];
+        }
+        
+        $live_type = array_key_exists((string)$type, self::$_live_types) ? 
+                self::$_live_types["$type"] : '';
+        
+        return $live_type;
+    }
+    
+    /**
+     * 获取厅标识对应的操作编号
+     * @param string $live_type 厅标识
+     * @param boolean $isDouble 是否双组
+     * @return string
+     */
+    public static function getTypeByLiveType($live_type, $isDouble = false) {
+        if (!$isDouble) {
+            self::$_live_types = [
+                '1' => 'AG',
+                '2' => 'AGIN',
+                '3' => 'AG_BBIN',
+                '4' => 'DS',
+                '5' => 'AG_OG',
+                '6' => 'AG_MG',
+                '7' => 'OG',
+                'KG' => 'KG'
+            ];
+        }
+        
+        $types = array_flip(self::$_live_types);
+        
+        if (empty($types)) {
+            return '';
+        }
+        
+        $type = array_key_exists((string)$live_type, $types) ? 
+                $types["$live_type"] : '';
+        
+        return $type;
+    }
+    
+    /**
+     * 获取真人登录参数
+     * @param string $live_type 厅标识
+     * @return array
+     */
+    public static function getLoginParamsByLiveType($uid, $live_type) {
+        $live_config = LiveConfig::findOne(['live_type' => $live_type, 'status' => 1]);
+        $rpc_config = LiveRpcConfig::find()->one();
+        $live_user_info = LiveUserUtil::getOrCreateLiveUserInfo($uid, $live_type, $rpc_config);
+
+        if (empty($live_config) || empty($rpc_config)) {
+            return [];
+        }
+        
+        return [
+            'name' => $live_user_info['name'],
+            'pwd' => $live_user_info['pwd'],
+            'cagent' => $live_config['cagent'],
+            'actype' => 1,
+            'game_type' => $live_config['game_type'],
+            'nickname' => '',
+            'line' => 1,
+        ];
+    }
+    
+    /**
+     * 获取电子游艺登录参数
+     * @param string $live_type 厅标识
+     * @return array
+     */
+    public static function getGameLoginParamsByLiveType($uid, $live_type) {
+        $live_config = LiveConfig::findOne(['live_type' => $live_type, 'status' => 1]);
+        $rpc_config = LiveRpcConfig::find()->one();
+        $live_user_info = LiveUserUtil::getOrCreateLiveUserInfo($uid, $live_type, $rpc_config);
+
+        if (empty($live_config) || empty($rpc_config)) {
+            return [];
+        }
+        
+        return [
+            'name' => $live_user_info['name'],
+            'pwd' => $live_user_info['pwd'],
+            'cagent' => $live_config['cagent'],
+            'actype' => 1,
+            'game_type' => $live_config['e_game_type'],
+            'nickname' => '',
+            'line' => 1,
+        ];
+    }
+    
+    /**
+     * 获取真人查询余额参数
+     * @param int $uid          用户id
+     * @param string $live_type 厅标识
+     * @return array
+     */
+    public static function getQueryBalanceParamsByLiveType($uid, $live_type) {    
+        $live_config = LiveConfig::findOne(['live_type' => $live_type, 'status' => 1]);
+        $rpc_config = LiveRpcConfig::find()->one();
+        $live_user_info = LiveUserUtil::getOrCreateLiveUserInfo($uid, $live_type, $rpc_config);
+
+        if (empty($live_config) || empty($rpc_config)) {
+            return [];
+        }
+        
+        return [
+            'name' => $live_user_info['name'],
+            'pwd' => $live_user_info['pwd'],
+            'cagent' => $live_config['cagent'],
+            'actype' => 1,
+        ];
+    }
+    
+    /**
+     * 获取真人转账参数
+     * @param int $uid          用户id
+     * @param int $type         操作编号
+     * @param int $credit       操作金额
+     * @param string $live_type 厅标识
+     * @return array
+     */
+    public static function getExchangeParamsByLiveType($uid, $type, $credit, $live_type) {
+        $user = UserList::findOne(['user_id' => $uid]);
+        $live_config = LiveConfig::findOne(['live_type' => $live_type, 'status' => 1]);
+        $rpc_config = LiveRpcConfig::find()->one();
+        $live_user_info = LiveUserUtil::getOrCreateLiveUserInfo($uid, $live_type, $rpc_config);
+
+        if (empty($user) || empty($live_config) || empty($rpc_config)) {
+            return [];
+        }
+        
+        return [
+            'name' => $live_user_info['name'],
+            'pwd' => $live_user_info['pwd'],
+            'cagent' => $live_config['cagent'],
+            'actype' => 1,
+            'billno' => date("YmdHis") . RandStringUtil::generateNumber(4),
+            'credit' => $credit,
+            
+            'live_type' => $live_type,
+            'user_assets' => $user['money'],
+            'user_id' => $uid,
+            'zz_type' => $type,
+            'about' => '真人转账',
+        ];
+    }
+
+    /**
+     * 获取OG真人转账参数
+     * @param int $uid          用户id
+     * @param int $type         操作编号
+     * @param int $credit       操作金额
+     * @param string $live_type 厅标识
+     * @return array
+     */
+    public static function getExchangeParamsByLiveType2($uid, $type, $credit, $live_type) {
+        $user = UserList::findOne(['user_id' => $uid]);
+        $rpc_config = LiveRpcConfig::find()->one();
+        $live_user_info = LiveUserUtil::getOrCreateLiveUserInfo($uid, $live_type, $rpc_config);
+
+        if (empty($user) || empty($rpc_config)) {
+            return [];
+        }
+
+        return [
+            'name' => $live_user_info['name'],
+            'pwd' => $live_user_info['pwd'],
+            'actype' => 1,
+            'billno' => $live_type . date("YmdHis") . RandStringUtil::generateNumber(4),
+            'credit' => $credit,
+            'live_type' => $live_type,
+            'user_assets' => $user['money'],
+            'user_id' => $uid,
+            'zz_type' => $type,
+            'about' => '真人转账',
+            'og_rpc_domain' => $rpc_config['og_rpc_domain']
+        ];
+    }
+    
+    /**
+     * 获取真人可查询订单的真人标识，暂时只支持AG/AGIN/DS
+     * @return array
+     */
+    public static function getQueryOrderLiveTypes() {
+        return [
+            self::$_live_types['1'],
+            self::$_live_types['3'],
+            self::$_live_types['7'],
+        ];
+    }
+    
+    /**
+     * 获取AG真人对应操作编号
+     * @return array
+     */
+    public static function getAgTypes() {
+        return [
+            1,2,3,4,5,6,9,10,11,12
+        ];
+    }
+    
+    /**
+     * 获取DS真人对应操作编号
+     * @return array
+     */
+    public static function getDsTypes() {
+        return [
+            7,8
+        ];
+    }
+    
+    /* ============================ 华丽的分割线 =============================== */
+}

@@ -1,0 +1,203 @@
+.radio-img-bank
+{
+    float: left;
+    height: 28px;
+}
+.radio-img-nongcunshangye {background-image: url('../imgs/nongcunshangye.gif');width: 154px;height:33px;float:left;}
+.radio-img-zhongxin {background-image: url('../imgs/zhongxin.gif');width: 154px;height:33px;float:left;}
+.radio-img-zhongguo {background-image: url('../imgs/zhongguo.gif');width: 154px;height:33px;float:left;}
+.radio-img-nongye {background-image: url('../imgs/nongye.gif');width: 154px;height:33px;float:left;}
+.radio-img-jianshe {background-image: url('../imgs/jianshe.gif');width: 154px;height:33px;float:left;}
+.radio-img-gongshang {background-image: url('../imgs/gongshang.gif');width: 154px;height:33px;float:left;}
+.radio-img-zheshang {background-image: url('../imgs/zheshang.gif');width: 154px;height:33px;float:left;}
+.radio-img-chouzhoushangye {background-image: url('../imgs/chouzhoushangye.gif');width: 154px;height:33px;float:left;}
+.radio-img-zhaohang {background-image: url('../imgs/zhaohang.gif');width: 154px;height:33px;float:left;}
+.radio-img-youzheng {background-image: url('../imgs/youzheng.gif');width: 154px;height:33px;float:left;}
+.radio-img-xingye {background-image: url('../imgs/xingye.gif');width: 154px;height:33px;float:left;}
+.radio-img-shundexin {background-image: url('../imgs/shundexin.gif');width: 154px;height:33px;float:left;}
+.radio-img-shenfa {background-image: url('../imgs/shenfa.gif');width: 154px;height:33px;float:left;}
+.radio-img-shanghaibank {background-image: url('../imgs/shanghaibank.gif');width: 154px;height:33px;float:left;}
+.radio-img-shangnongshang {background-image: url('../imgs/shangnongshang.gif');width: 154px;height:33px;float:left;}
+.radio-img-shangpufa {background-image: url('../imgs/shangpufa.gif');width: 154px;height:33px;float:left;}
+.radio-img-pingan {background-image: url('../imgs/pingan.gif');width: 154px;height:33px;float:left;}
+.radio-img-nanjing {background-image: url('../imgs/nanjing.gif');width: 154px;height:33px;float:left;}
+.radio-img-minsheng {background-image: url('../imgs/minsheng.gif');width: 154px;height:33px;float:left;}
+.radio-img-jiaotong {background-image: url('../imgs/jiaotong.gif');width: 154px;height:33px;float:left;}
+.radio-img-huaxia {background-image: url('../imgs/huaxia.gif');width: 154px;height:33px;float:left;}
+.radio-img-hangzhou {background-image: url('../imgs/hangzhou.gif');width: 154px;height:33px;float:left;}
+.radio-img-guangnongxin {background-image: url('../imgs/guangnongxin.gif');width: 154px;height:33px;float:left;}
+.radio-img-guangzhoushangye {background-image: url('../imgs/guangzhoushangye.gif');width: 154px;height:33px;float:left;}
+.radio-img-guangfa {background-image: url('../imgs/guangfa.gif');width: 154px;height:33px;float:left;}
+.radio-img-guangda {background-image: url('../imgs/guangda.gif');width: 154px;height:33px;float:left;}
+.radio-img-dongya {background-image: url('../imgs/dongya.gif');width: 154px;height:33px;float:left;}
+.radio-img-bohai {background-image: url('../imgs/bohai.gif');width: 154px;height:33px;float:left;}
+.radio-img-beijing {background-image: url('../imgs/beijing.gif');width: 154px;height:33px;float:left;}
+.radio-img-zfb
+{
+    background: url('../imgs/zfb.jpg');
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-wx
+{
+    background: url('../imgs/weixin.jpg');
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-cft
+{
+    background: url('../imgs/cft.jpg');
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-kq
+{
+    background: url('../imgs/kq.jpg');
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-weixinwap
+{
+    background: url('../imgs/wangyinwap.jpg');
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-srcb
+{
+    background: url('../imgs/srcb.jpg');
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-gateway
+{
+    background: url('../imgs/gateway.jpg');
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-unionpay
+{
+    background: url('../imgs/unionpay.jpg');
+    width: 126px;
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-jdpaywap
+{
+    background: url('../imgs/jdpaywap.jpg');
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-jdpay
+{
+    background: url('../imgs/jdpay.jpg');
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-icbc
+{
+    background: url('../imgs/icbc.jpg');
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-czb
+{
+    background: url('../imgs/czb.jpg');
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-sdb
+{
+    background: url('../imgs/sdb.jpg');
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-bjrcb
+{
+    background: url('../imgs/bjrcb.jpg');
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-cttic
+{
+    background: url('../imgs/cttic.jpg');
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-nbcb
+{
+    background: url('../imgs/nbcb.jpg');
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-hkbea
+{
+    background: url('../imgs/hkbea.jpg');
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-cbhb
+{
+    background: url('../imgs/cbhb.jpg');
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-pinganbank
+{
+    background: url('../imgs/cbhb.jpg');
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-njcb
+{
+    background: url('../imgs/njcb.jpg');
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-bccb
+{
+    background: url('../imgs/bccb.png');
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-spdb
+{
+    background: url('../imgs/spdb.png');
+    height: 36px;
+    float:left;
+    display: inline;
+}
+.radio-img-shb
+{
+    background: url('../imgs/shb.png');
+    height: 36px;
+    float:left;
+    display: inline;
+}

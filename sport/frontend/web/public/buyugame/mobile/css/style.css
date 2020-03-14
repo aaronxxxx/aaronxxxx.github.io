@@ -1,0 +1,177 @@
+.common-module-home .page-top-area {
+    background: linear-gradient(rgb(76, 76, 255), rgb(0, 0, 255));
+}
+
+.common-module-home .user-info .icon {
+    color: rgb(127, 127, 255);
+}
+
+.btn-primary {
+    background-color: rgb(63, 63, 255) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: rgb(25, 25, 255) !important;
+}
+
+.type-list-head.btn-primary {
+    background: linear-gradient(rgb(153, 153, 255), rgb(51, 51, 255));
+}
+
+.type-list-head.btn-primary:hover,
+.type-list-head.btn-primary:focus,
+.type-list-head.btn-primary:active {
+    background: linear-gradient(rgb(127, 127, 255), rgb(25, 25, 255));
+}
+
+.layout-bottom .main-menu-area>div>a:focus,
+.layout-bottom .main-menu-area>div>a:active {
+    color: rgb(51, 51, 255) !important;
+}
+
+.common-module-home .notice-area {
+    box-shadow: 1px 1px 8px rgb(102, 102, 255);
+}
+
+.common-module-home .notice-area .notice-icon {
+    color: rgb(76, 76, 255);
+}
+
+.common_style .module-top {
+    background: linear-gradient(rgb(76, 76, 255), rgb(0, 0, 255));
+}
+
+.module-main .list-group-item:nth-child(even),
+.modal-body .list-group-item:nth-child(even) {
+    background-color: rgb(242, 242, 255);
+}
+
+.main-container.menu-area .list-group-item:active,
+.common-module-moreMenu .list-group-item:active,
+.sport-module-index .list-group-item .item-area:active,
+.member-module-recharge .list-group-item:active,
+.member-module-rechargeBank .list-group-item:active,
+.sport-module .rate-btn:active {
+    background-color: rgb(247, 247, 255);
+}
+
+.common_style .top-menu-area .active-tab {
+    background-color: rgb(51, 51, 255);
+}
+
+.module-main .panel-heading {
+    background-color: rgb(76, 76, 255);
+}
+
+.sport-module .team-info {
+    background-color: rgb(76, 76, 255);
+}
+
+.sport-module .team-h-txt,
+.sport-module .team-c-txt {
+    background-color: rgb(127, 127, 255);
+}
+
+.sport-module .match-item .rate-row:nth-child(even),
+.sport-result-module .rate-row:nth-child(even) {
+    background-color: rgb(234, 234, 255);
+}
+
+.sport-module .match-item .rate-row>div,
+.sport-result-module .rate-row>div {
+    border-color: rgb(244, 244, 255);
+}
+
+.sport-result-module .common-container {
+    background-color: rgb(234, 234, 255);
+}
+
+.sport-result-module .common-container .txt-important {
+    border-left: 1px solid rgb(244, 244, 255);
+}
+
+.layout-bottom .money-menu .icon {
+    color: rgb(51, 51, 255);
+}
+
+.main-container.menu-area .list-group-item .glyphicon,
+.main-container.menu-area .list-group-item .fa {
+    color: rgb(102, 102, 255);
+}
+
+.btn.order-item:before {
+    color: rgb(102, 102, 255);
+}
+
+.member-module-login .form-group>label,
+.member-module-gestureSetting .form-group>label {
+    color: rgb(76, 76, 255);
+}
+
+.main-container.menu-area .member-info-area .member-info {
+    background-color: rgba(0, 0, 255, 0.65);
+}
+
+.main-container.menu-area .member-info-area .more-info {
+    background-color: rgba(0, 0, 255, 0.85);
+}
+
+.common-module-home .module-main {
+    background-color: rgb(242, 242, 255);
+}
+
+.top-container .dropdown-menu .menu-head {
+    background: linear-gradient(rgb(76, 76, 255), rgb(0, 0, 255));
+}
+
+.sport-module-index .module-main .list-group-item .item-area-active {
+    background-color: rgb(51, 51, 255);
+}
+
+.common-module-youhui .module-main .list-group-item {
+    background-color: rgb(229, 229, 255);
+}
+
+.common-module-youhui .module-main .list-group-item:nth-child(even) {
+    background-color: rgb(229, 229, 255);
+}
+
+.member-module-login .right-menu .btn {
+    color: #fff !important;
+}
+
+.member-module-login .module-main {
+    background: linear-gradient(rgb(127, 127, 255), rgb(0, 0, 255));
+}
+
+.member-module-login .left-menu span {
+    color: #fff !important;
+}
+
+.common-module-dzp .module-main {
+    background: #f02d2f;
+}
+
+.ad-dialog-main .modal-header {
+    background: linear-gradient(rgb(127, 127, 255), rgb(0, 0, 255));
+    color: #fff;
+    border-bottom: none;
+    padding: 8px;
+}
+
+.ad-dialog-main .modal-content {
+    border-radius: 0;
+}
+
+.carousel-indicators li {
+    border-color: rgb(178, 178, 255) !important;
+}
+
+.carousel-indicators li.active {
+    background: rgb(178, 178, 255) !important;
+}
+.gameImg{
+    background-repeat:no-repeat;background-position: center center; background-size: cover;width:120px;height:111px;margin:0 auto;
+}

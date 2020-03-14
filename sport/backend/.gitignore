@@ -1,0 +1,61 @@
+# phpstorm project files
+.idea
+
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# composer vendor dir
+/vendor
+
+#runtime not need
+/runtime
+
+# composer itself is not needed
+composer.phar
+
+# Mac DS_Store Files
+.DS_Store
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+
+/cache
+/commands/WinhooksController.php
+/config/configs.php
+/config/db.php
+/config/params.php
+/config/services.php
+/config/version
+/config/supperpassword
+/config/web.php
+/config/whitelist.php
+/cron/log
+/runtime
+/vendor
+/web/error.log
+/web/login_fail.log
+/web/assets/
+/web/githooks.php
+/phpunit.xml
+/composer.lock
+config/collection_switch
+collectionData/
+#api 拉注單式 排除檔
+agentData/
+commands/@LiveCollectionController.php
+cron/agentData/
+cron/runtime/
+cron/@live-collection(sec).bat
+modules/core/passport/controllers/CollectionLotteryController.php
+web/runtime/LotteryCheckout/
+/web/one_key_steup_20181213_sKG1e1Kcn3.rar
+

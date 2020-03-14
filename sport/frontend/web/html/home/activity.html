@@ -1,0 +1,492 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>优惠活动</title>
+    <link href="css/meigaomei.css" rel="stylesheet" />
+    <link href="css/standard.css" rel="stylesheet" />
+    <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <script src="js/server.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(window.parent.document).find("#mainFrame").height(1131);
+
+            $(".memExclusive").click(function () {
+                $(window.parent.document).find("#mainFrame").height(2140);
+                var isclass = $(this).siblings(".eventtext");
+                if (isclass.hasClass("chk")) {
+                    isclass.removeClass("chk");
+                    $(window.parent.document).find("#mainFrame").height(1131);
+                } else {
+                    $(".eventtext").removeClass("chk");
+                    isclass.addClass("chk");
+                }
+            });
+			getMsgInfo();
+        });
+		/**
+        * 获取用户登录后的信息
+        * @returns {}
+        */
+       function getMsgInfo() {
+           $.post("/?r=passport/user-api/json", {},
+               function (rst) {
+                   $("#msg").html(rst);
+               }, 
+           "json");
+       }
+    </script>
+</head>
+<body>
+    <!--海报区-->
+    <div id="banner-wrap" class="clearfix">
+        <div class="banner-wrap-bg">
+            <div class="whole-auto banner-inner">
+                <img src="../home/images/LiveMain.png" id="page-banner" class="banner-lottery-title banner-attr" height="100%">
+            </div>
+        </div>
+    </div>
+     <!--公告区-->
+    <div id="wram-wrap" class="clearfix">
+        <div class="whole-auto wram-wrap-inner">
+            <a class="openAccount-btn" href="subiframe/regframe.html" target="mainFrame"></a>
+            <a class="onlineService-btn" href="javascript:BBOnlineService();"></a>
+            <div class="news-bar">
+                <marquee scrollamount="2" scrolldelay="10" class="recent_news_scroll" direction="left" nowarp="" onmouseover="this.stop();" onmouseout="this.start();">
+			<span id="msg" onclick="HotNewsHistory();">欢迎光临</span></marquee>
+            </div>
+        </div>
+    </div>
+    <div class="MemberExclusive_area">
+        <div class="actitem">
+            <div class="memExclusive">
+                <a href="#">
+                    <img src="images/139461233214.jpg" />
+                </a>
+            </div>
+            <div class="eventtext">
+                <p><span style="font-size: 14px"><strong>活动详情</strong></span></p>
+                <p><span style="color: #F0F8FF"><span style="font-size: 14px">美高梅娱乐城超级返水火热进行中，投注1元起，不计输赢，天天洗码返水，无上限。</span></span></p>
+                <table border="1" cellpadding="0" cellspacing="0" style="width: 500px">
+                    <tbody>
+                        <tr>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">有效投注</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">体育投注</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">BB体育</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">真人视讯</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">电子游艺</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">彩票游戏</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">最高金额</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">100万起</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.0%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">0.5%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.0%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.2%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">0.8%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">无上限</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">100元起</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.0%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">0.4%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.0%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.0%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">0.4%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="font-size: 14px"><span style="color: #FFFFFF">无上限</span></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-left: 15.95pt"><span style="font-size: 14px"><strong>VIP贵宾尊享更高返水</strong></span></p>
+                <table border="1" cellpadding="0" cellspacing="0" style="width: 500px">
+                    <tbody>
+                        <tr>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">有效投注</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">体育投注</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">BB体育</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">真人视讯</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">电子游艺</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">彩票游戏</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">最高金额</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">黄金VIP</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.0%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">0.5%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.0%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.3%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">0.8%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">无上限</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">白金VIP</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.0%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">0.5%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.0%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.5%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">0.8%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">无上限</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">钻石VIP</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.1%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">0.6%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.1%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.8%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">0.9%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">无上限</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">至尊VIP</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.2%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">0.8%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.2%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">2.0%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.0%</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">无上限</span></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-left: 15.95pt"><span style="font-size: 14px"><strong>返水优惠无需申请，结算和发放时间如下：</strong></span></p>
+                <table border="1" cellpadding="0" cellspacing="0" style="width: 500px">
+                    <tbody>
+                        <tr>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center">&nbsp;</td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">美东时间</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">北京时间</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">返水结算时间</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">当日00:00-23:59</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">当日12:00至次日11:59</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">返水发放时间</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">次日05:30-06:00</span></span></td>
+                            <td style="background-color: rgb(204, 102, 0); text-align: center"><span style="font-size: 14px"><span style="color: #FFFFFF">次日17:30-18:00</span></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-left: 16.0pt">
+                    <strong><span style="font-size: 14px">活动时间：生效中</span></strong><br>
+                    例如：会员当日总有效投注量60万 (视讯50万+电子10万)，则可获得6000返水彩金 (50万X1.0%+10万 X1.0%=6000)。
+                </p>
+                <p style="margin-left: 16.0pt"><strong>优惠规则：</strong></p>
+                <p>
+                    1. 洗码返水优惠以单个会员账号的有效投注额进行结算。<br>
+                    2. 每日返水无需经过投注，即可申请提出。<br>
+                    3. 会员无须提出申请，优惠额度将在每日香港时间18:00前自动加入会员账号。<br>
+                    4. 日结区间以香港时间当日中午12：00开始至次日香港时间中午11:59计算。<br>
+                    5. 在运动博弈投注，对冲或对打投注不计，在真人娱乐、电子游艺、彩票投注、无风险投注不计（无风险包括同时下注庄闲、大小、单双、红黑等，任何取消注单、赛事或局数不计）。<br>
+                    6. 每位会员，每一相同IP，每一电子邮箱，每一电话号码，相同支付方式(借记卡/信用卡/银行账户)及共享计算机环境（例如网吧，其他公共用计算机等）只能享有一次优惠；若会员有重复申请账号行为，公司保留取消或收回会员优惠彩金的权利。<br>
+                    7. 若会员对活动有争议时，为确保双方利益，杜绝身份盗用行为，美高梅娱乐城有权要求会员向我们提供充足有效的文件，用以确认是否享有该优惠的资质。<br>
+                    8.美高梅娱乐城的所有优惠特为玩家而设，如发现任何团体或个人，以不诚实方式套取红利或任何威胁、滥用公司优惠等行为，公司保留冻结、取消该团体或个人账户及账户结余的权利。<br>
+                    9.美高梅娱乐城保留对活动的最终解释权；以及在无通知的情况下修改、终止活动的权利；适用于所有优惠。
+                </p>
+
+            </div>
+        </div>
+        <div class="actitem">
+            <div class="memExclusive">
+                <a href="#">
+                    <img src="images/139461321648.jpg" />
+                </a>
+            </div>
+            <div class="eventtext">
+                <p>
+                    <!--StartFragment-->
+                    <span style="font-size: 14px"><strong>优惠方式</strong></span><!--EndFragment--></p>
+                <p><span style="font-size: 14px">美高梅娱乐城的新老会员通过网银，ATM ，手机银行转账或现金到柜台存入到公司指定银行账号进行游戏充值，即可享受充值金额1.2%的返利。只要您存款后提交完毕，我们将在2~3分钟内确认到您游戏账号里。</span></p>
+                <p><span style="font-size: 14px">
+                    <!--StartFragment-->
+                    <strong>活动规则</strong></span></p>
+                <p><span style="font-size: 14px">1、<!--StartFragment-->&nbsp;会员每次入款前,请先登入公司的网站，点击“线上存款”选择“银行卡入款”，再点击您要入款的银行,索取入款银行账号，或者与在线客服索取公司银行账号，确认账号是否使用.若入款前未与公司进行银行账户确认&nbsp;,&nbsp;款项误存入公司已停用之银行账户，公司怒不负责。<br>
+                    2、公司若发现会员利用公司入款非法程序下注或是下注套利等行为，公司有权将过往所得之优惠全部收回，并取消会员账号。<br>
+                    3、此活动可与其他优惠同时进行！</span></p>
+            </div>
+        </div>
+        <div class="actitem">
+            <div class="memExclusive">
+                <a href="#">
+                    <img src="images/139461293346.jpg" />
+                </a>
+            </div>
+            <div class="eventtext">
+                <p><span style="color: #FFFFFF"><span style="font-size: 14px">震撼消息：只要您注册成为美高梅娱乐城的会员并且进行第一次有效存款500元以上即可享受公司赠送彩金30%</span></span></p>
+                <table border="1" cellpadding="0" cellspacing="0" style="width: 500px">
+                    <tbody>
+                        <tr>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="font-size: 14px"><span style="color: #FFFFFF">存款次数</span></span></td>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="font-size: 14px"><span style="color: #FFFFFF">存款金额</span></span></td>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="font-size: 14px"><span style="color: #FFFFFF">存款红利</span></span></td>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="font-size: 14px"><span style="color: #FFFFFF">红利上限</span></span></td>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="font-size: 14px"><span style="color: #FFFFFF">有效投注</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="font-size: 14px"><span style="color: #FFFFFF">首次</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="font-size: 14px"><span style="color: #FFFFFF">500元起</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="font-size: 14px"><span style="color: #FFFFFF">30%</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="font-size: 14px"><span style="color: #FFFFFF">2888</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="font-size: 14px"><span style="color: #FFFFFF">20倍</span></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p><span style="font-size: 14px"><strong>优惠内容：</strong></span></p>
+                <p><span style="font-size: 14px">如果在美高梅娱乐城第一次存款500以上，就可以得到30%的彩金。成功首次存款后，必须编辑会员账号和存款金额发送到美高梅娱乐城会员部邮箱：联系24H在线客服 申请，经系统审核后，将在30分钟内帮您添加30%的赠送红利，最高赠送金额2888存入会员账户。会员首次存款+赠送红利,需有效投注达到20倍以上才可申请提款！</span></p>
+                <p><span style="color: #FFFFFF"><span style="font-size: 14px">（例：会员入款1000，获得赠送红利300，在有效下注金额达（1000+300）*20=26000以上即可申请提款）</span></span></p>
+                <p><strong><span style="font-size: 14px">优惠规则</span>：</strong></p>
+                <p><span style="font-size: 14px">1、 此活动只适合首次存款到美高梅娱乐城的会员.<br>
+                    2、 会员在美高梅娱乐城进行第一次有效存款时，如选择获取赠送红利.需达到首次存款+赠送红利的有效投注20倍方可申请提款。注意：如果首次存款后，申请还未通过，就进行下注，公司一律不给予赠送彩金，请在确认彩金已经到达您账号上，即可进行下注。<br>
+                    3、&nbsp;每位会员，每一相同IP，每一电子邮箱，每一电话号码，相同支付方式(借记卡/信用卡/银行账户)及共享计算机环境（例如网吧，其他公共用计算机等）只能享有一次优惠；若会员有重复申请账号行为，公司保留取消或收回会员优惠彩金的权利。<br>
+                    4、 会员必须在活动赠送红利后30天内达到投注门槛，否则在申请出款时美高梅娱乐城保留权利取消、收回存款赠送红利！<br>
+                    5、 若会员对活动有争议时，为确保双方利益，杜绝身份盗用行为，美高梅娱乐城有权要求会员向我们提供充足有效的文件，用以确认是否享有该优惠的资质。<br>
+                    6、 投注在运动博弈.对冲或者对打投注不计.未接受注单/赛果为平的注单不计。在真人娱乐/电子游艺/对战/彩票游戏投注. 无风险投注不计。无风险投注包括在百家乐同时投注庄家、闲家、轮盘同时投注黑色、红色、单双、大、小、任何取消注单赛事或者局数不计。<br>
+                    7.&nbsp; 美高梅娱乐城的所有优惠特为玩家而设，如发现任何团体或个人，以不诚实方式套取红利或任何威胁、滥用公司优惠等行为，公司保留冻结、取消该团体或个人账户及账户结余的权利。<br>
+                    8.&nbsp; 美高梅娱乐城保留所有权利在任何时候可以更改、停止、取消优惠活动。</span></p>
+            </div>
+        </div>
+        <div class="actitem">
+            <div class="memExclusive">
+                <a href="#">
+                    <img src="images/139461102936.jpg" />
+                </a>
+            </div>
+            <div class="eventtext">
+                <p><span style="font-size: 14px"><strong>晋升条件</strong></span></p>
+                <p><span style="font-size: 14px">即日起，使用银行卡入款单笔成功存入指定额度后，即刻荣升尊贵VIP。</span></p>
+                <table border="1" cellpadding="0" cellspacing="0" style="width: 500px">
+                    <tbody>
+                        <tr>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">黄金VIP</span></span></td>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">白金VIP</span></span></td>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">钻石VIP</span></span></td>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">至尊VIP</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">5万</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">10万</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">50万</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="font-size: 14px"><span style="color: #FFFFFF">特约贵宾</span></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-left: 16.0pt"><span style="font-size: 14px">特权1&nbsp;荣升尊贵VIP，最高可获28888荣誉礼金</span></p>
+                <table border="1" cellpadding="0" cellspacing="0" style="width: 500px">
+                    <tbody>
+                        <tr>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">黄金VIP</span></span></td>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">白金VIP</span></span></td>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">钻石VIP</span></span></td>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">至尊VIP</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">967</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">3888</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">8888</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">28888</span></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p><span style="font-size: 14px">VIP贵宾仅限申请一份晋级礼金，晋升至更高级别时，可再获得一份晋级礼金。</span><br>
+                    <span style="font-size: 14px">晋级礼金只需全额投注，即可提出</span>。</p>
+                <h3><span style="font-size: 14px">特权2&nbsp;顶级待遇超高返水，美高梅娱乐城倾情奉献，详情查看“返水”优惠活动。</span></h3>
+                <table border="1" cellpadding="0" cellspacing="0" style="width: 500px">
+                    <tbody>
+                        <tr>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">有效投注</span></span></td>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">体育投注</span></span></td>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">BB体育</span></span></td>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">真人视讯</span></span></td>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">电子游艺</span></span></td>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">彩票游戏</span></span></td>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">最高金额</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">黄金VIP</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.0%</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">0.5%</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.0%</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.3%</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">0.8%</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">无上限</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">白金VIP</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.0%</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">0.5%</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.0%</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.5%</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">0.8%</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">无上限</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">钻石VIP</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.1%</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">0.6%</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.1%</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.8%</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">0.9%</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">无上限</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">至尊VIP</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.2%</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">0.8%</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.2%</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">2.0%</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1.0%</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">无上限</span></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-left: 16.0pt"><span style="font-size: 14px">特权3&nbsp;VIP会员每周达到一定有效投注，如出现亏损的情况，可获得美高梅娱乐城贴心赠送您的转运金，详情如下：</span></p>
+                <table border="1" cellpadding="0" cellspacing="0" style="width: 500px">
+                    <tbody>
+                        <tr>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">周有效投注</span></span></td>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">负赢利</span></span></td>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">转运金</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">10万</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">5,000</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">158</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">50万</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">50,000</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1588</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">100万</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">500,000</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">15888</span></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-left: 16.0pt"><span style="font-size: 14px">更多特权</span></p>
+                <table border="1" cellpadding="0" cellspacing="0" style="width: 500px">
+                    <tbody>
+                        <tr>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">特权</span></span></td>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">黄金VIP</span></span></td>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">白金VIP</span></span></td>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">钻石VIP</span></span></td>
+                            <td style="background-color: rgb(204, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">至尊VIP</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">单注额度</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">20万</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">30万</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">40万</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">50万</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">单日出款</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">100万</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">200万</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">300万</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">500万</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">生日礼金</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">967元</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1888元</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">8888元</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">38888元</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">节日礼金</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">388元</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">1088元</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">3888元</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">10,888元</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">VIP存取通道</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">√</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">√</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">√</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">√</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">独享专属域名</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center">&nbsp;</td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">√</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">√</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">√</span></span></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">专属客服经理</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">√</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">√</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">√</span></span></td>
+                            <td style="background-color: rgb(153, 51, 0); text-align: center"><span style="color: #FFFFFF"><span style="font-size: 14px">√&nbsp;&nbsp;</span></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-left: 16.0pt"><span style="font-size: 14px"><strong>申请方式：</strong></span></p>
+                <h3 style="margin-left: 16pt">符合申请条件的会员只需联系在线客服进行申请！</h3>
+                <p style="margin-left: 16.0pt">&nbsp;<span style="font-size: 14px"><strong>活动细则</strong></span><strong>：</strong></p>
+                <p><span style="font-size: 14px">参与该优惠，即表示您同意《优惠规则与条款》。<br>
+                    1、所有优惠以人民币(CNY)为结算金额，以美东时间(EDT)为计时区间。<br>
+                    2、若发现VIP会员以不诚实的手段套取利益，本公司将直接取消VIP会员资格。<br>
+                    3、每位会员，每一相同IP，每一电子邮箱，每一电话号码，相同支付方式(借记卡/信用卡/银行账户)及共享计算机环境（例如网吧，其他公共用计算机等）只能享有一次优惠；若会员有重复申请账号行为，公司保留取消或收回会员优惠彩金的权利。<br>
+                    4、若会员对活动有争议时，为确保双方利益，杜绝身份盗用行为，美高梅娱乐城有权要求会员向我们提供充足有效的文件，用以确认是否享有该优惠的资质。<br>
+                    5、所有美高梅娱乐城的优惠特别为玩家而设，如发现任何团体或个人，以不诚实方式套取红利或任何威胁、滥用公司优惠等行为，公司保留冻结、取消该团体或个人账户及账户结余的权利。<br>
+                    6、美高梅娱乐城保留对活动的最终解释权；以及在无通知的情况下修改、终止活动的权利；适用于所有优惠。</span></p>
+            </div>
+        </div>
+        <div class="actitem">
+            <div class="memExclusive">
+                <a href="#">
+                    <img src="images/139461313455.jpg" />
+                </a>
+            </div>
+            <div class="eventtext">
+                <p><strong><span style="font-size: 14px">活动内容：</span></strong><br>
+                    <span style="font-size: 14px">为了表扬和鼓励一直以来勤奋、专注的会员们，美高梅娱乐城特地开设了这样一项奖励—全勤奖。全勤奖周周送、礼金大放送，美高梅娱乐城会员只要在活动期间一周期间内的，连续7天每一天入款总额度达到1000元以上，周有效投注达3万以上，周周可领奖金100元。</span></p>
+                <p><strong><span style="font-size: 14px">活动规则：</span></strong></p>
+                <p><span style="font-size: 14px">1、所有优惠以人民币(CNY)为结算金额，以美东时间(EDT)为计时区间。</span><br>
+                    <span style="font-size: 14px">2、具备得奖资格的会员，请跟24小时在线客服申请，提供会员账户，必须在周一当天申请，逾期视为放弃该优惠。<br>
+                        3、每一会员账号在每个周一结区间仅能申请一次全勤奖，每次只能申请上一周的全勤奖金。会员获得首存的当周不得申请全勤奖。<br>
+                        4、必须在任一周期的连续7天都有存款，且每天的入款总额都达到1000元以上，每周有效投注需达3万以上提出申请核准后即可获得奖金，若7天内有任何一天的存款总额未达到1000元以上，每周有效投注未达到3万以上，则不符合获奖资格。<br>
+                        5、获得全勤奖的会员，有效投注额只要达到(奖金的一倍）以上，即可申请提款。若未达到取款标准仍需出款，则将扣除奖金，以及用奖金所获得盈利之后再行出款。</span></p>
+            </div>
+        </div>
+         <div class="actitem">
+            <div class="memExclusive">
+                <a href="#">
+                    <img src="images/139522636554.jpg?" />
+                </a>
+            </div>
+           <div class="eventtext">
+		<p><span style="font-size:14px"><strong>活动详情：</strong><br>在百家乐中（庄和闲）游戏中投注及连赢6局以上（含6局），即可获得连赢奖金！会员只要在视讯直播厅（真人娱乐、旗舰厅、金臂厅）中的百家乐下注庄、闲、和连赢6局以上，即可获得奖金！具体活动如下：</span></p><table border="1" cellpadding="1" cellspacing="1" style="width:500px"><tbody><tr><td style="background-color:rgb(204, 102, 0); text-align:center"><span style="color:#F0FFF0"><span style="font-size:14px">连赢局数</span></span></td><td style="background-color:rgb(204, 102, 0); text-align:center"><span style="color:#F0FFF0"><span style="font-size:14px">可获金额</span></span></td><td style="background-color:rgb(204, 102, 0); text-align:center"><span style="color:#F0FFF0"><span style="font-size:14px">最低投注额</span></span></td></tr><tr><td style="background-color:rgb(102, 51, 51); text-align:center"><span style="color:#FFFFFF"><span style="font-size:14px">6局连赢</span></span></td><td style="background-color:rgb(102, 51, 51); text-align:center"><span style="color:#FFFFFF"><span style="font-size:14px">88元</span></span></td><td style="background-color:rgb(102, 51, 51); text-align:center"><span style="color:#FFFFFF"><span style="font-size:14px">100元</span></span></td></tr><tr><td style="background-color:rgb(102, 51, 51); text-align:center"><span style="color:#FFFFFF"><span style="font-size:14px">8局连赢</span></span></td><td style="background-color:rgb(102, 51, 51); text-align:center"><span style="color:#FFFFFF"><span style="font-size:14px">388元</span></span></td><td style="background-color:rgb(102, 51, 51); text-align:center"><span style="color:#FFFFFF"><span style="font-size:14px">100元</span></span></td></tr><tr><td style="background-color:rgb(102, 51, 51); text-align:center"><span style="color:#FFFFFF"><span style="font-size:14px">10局连赢</span></span></td><td style="background-color:rgb(102, 51, 51); text-align:center"><span style="color:#FFFFFF"><span style="font-size:14px">688元</span></span></td><td style="background-color:rgb(102, 51, 51); text-align:center"><span style="color:#FFFFFF"><span style="font-size:14px">100元</span></span></td></tr><tr><td style="background-color:rgb(102, 51, 51); text-align:center"><span style="color:#FFFFFF"><span style="font-size:14px">13局连赢</span></span></td><td style="background-color:rgb(102, 51, 51); text-align:center"><span style="color:#FFFFFF"><span style="font-size:14px">1888元</span></span></td><td style="background-color:rgb(102, 51, 51); text-align:center"><span style="color:#FFFFFF"><span style="font-size:14px">300元</span></span></td></tr><tr><td style="background-color:rgb(102, 51, 51); text-align:center"><span style="color:#FFFFFF"><span style="font-size:14px">15局连赢</span></span></td><td style="background-color:rgb(102, 51, 51); text-align:center"><span style="color:#FFFFFF"><span style="font-size:14px">5888元</span></span></td><td style="background-color:rgb(102, 51, 51); text-align:center"><span style="color:#FFFFFF"><span style="font-size:14px">500元</span></span></td></tr><tr><td style="background-color:rgb(102, 51, 51); text-align:center"><span style="color:#FFFFFF"><span style="font-size:14px">18局连赢</span></span></td><td style="background-color:rgb(102, 51, 51); text-align:center"><span style="color:#FFFFFF"><span style="font-size:14px">18888元</span></span></td><td style="background-color:rgb(102, 51, 51); text-align:center"><span style="color:#FFFFFF"><span style="font-size:14px">500元</span></span></td></tr><tr><td style="background-color:rgb(102, 51, 51); text-align:center"><span style="color:#FFFFFF"><span style="font-size:14px">20局连赢</span></span></td><td style="background-color:rgb(102, 51, 51); text-align:center"><span style="color:#FFFFFF"><span style="font-size:14px">28888元</span></span></td><td style="background-color:rgb(102, 51, 51); text-align:center"><span style="color:#FFFFFF"><span style="font-size:14px">500元</span></span></td></tr><tr><td style="background-color:rgb(102, 51, 51); text-align:center"><span style="color:#FFFFFF"><span style="font-size:14px">25局连赢</span></span></td><td style="background-color:rgb(102, 51, 51); text-align:center"><span style="color:#FFFFFF"><span style="font-size:14px">88888元</span></span></td><td style="background-color:rgb(102, 51, 51); text-align:center"><span style="color:#FFFFFF"><span style="font-size:14px">800元</span></span></td></tr></tbody></table><p><span style="font-size:14px"><strong>游戏规则：</strong><br>1、 会员需在活动日期内，在美高梅娱乐城视讯直播（真人娱乐 旗舰厅 金臂厅）连续获胜.领取红利后.无需洗码量即可申请提款申请！<br>2、 会员连赢局数不需连续的局牌号码.但必须是会员由第一手投注起计24小时内的连赢投注.如参加活动过程中有退回本金或登出情况.连赢局数重新计算。<br>3、 任何单局的投注获胜均计算在内，如有退还本金的投注连赢局数清零.投注不允许同一账户同一局牌同时作多项投注。<br>4、 会员申请红利时，请联系24小时在线客服.并提供会员帐号.（会员必须在连赢得到该局并停止投注，在24小时内申请红利，否则美高梅娱乐城有权视为会员自动放弃该红利）会员连赢局数累计.若会员申请红利后.连赢局数清零.（注意，红利不累计）</span></p><p><span style="font-size:14px"><strong>注意事项：</strong><br>1、&nbsp;每位会员，每一相同IP，每一电子邮箱，每一电话号码，相同支付方式(借记卡/信用卡/银行账户)及共享计算机环境（例如网吧，其他公共用计算机等）只能享有一次优惠；若会员有重复申请账号行为，公司保留取消或收回会员优惠彩金的权利。<br>2、 若会员对活动有争议时，为确保双方利益，杜绝身份盗用行为，美高梅娱乐城有权要求会员向我们提供充足有效的文件，用以确认是否享有该优惠的资质。<br>3、美高梅娱乐城的所有优惠特为玩家而设，如发现任何团体或个人，以不诚实方式套取红利或任何威胁、滥用公司优惠等行为，公司保留冻结、取消该团体或个人账户及账户结余的权利。<br>4 、 美高梅娱乐城保留随时终止或延长此活动的权利，并不作提前通知.</span></p>
+	  </div>
+        </div>
+    </div>
+<script language="javascript">
+//一般文案用
+
+//優惠活動使用
+ $.each($('.actitem > div'),function(i , o){
+  $(this).find('a').click(function(e){
+   e.preventDefault();
+//   hideExclusive(i);
+   $(this).parent().next().slideToggle(200);
+   setTimeout(setHeight,651);
+  });
+ });
+ function hideExclusive(i){
+  $.each($('.memExclusive'),function(k){
+     if(i != k && $(this).is(':visible')){
+     $(this).slideUp(200);
+     setTimeout(setHeight,651);
+    }
+  });
+ }
+ //按鈕特效 
+</script>
+</body>
+</html>

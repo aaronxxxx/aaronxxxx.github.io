@@ -1,0 +1,58 @@
+/* .layui-layer {
+    width: 70%;
+} */
+.layui-layer-title {
+    height: 70px;
+    background: rgb(149, 118, 51);/* Old browsers */
+    background: -moz-linear-gradient(top, rgba(149, 118, 51, 1) 1%, rgba(113, 65, 14, 1) 50%, rgba(149, 118, 51, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(149, 118, 51, 1) 1%, rgba(113, 65, 14, 1) 50%, rgba(149, 118, 51, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(149, 118, 51, 1) 1%, rgba(113, 65, 14, 1) 50%, rgba(149, 118, 51, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.layui-layer-dialog .layui-layer-content {
+    line-height: 38px;
+}
+
+.inner {
+    color: #1e1e1e;
+
+}
+
+.msg-title{
+    color:#583805;
+    font-size: 24px;
+}
+.limitMoney {
+    font-size: 20px;
+    justify-content: space-around;
+}
+.PlayType{
+    line-height: 35px;
+}
+.OrderGoldBtn {
+    display: flex;
+    justify-content: center;
+}
+.OrderGold{
+ height: 53px;
+ border-radius: 10px;
+}
+
+.OrderGoldBtn .layui-layer-btn0 {
+    margin: 0 10px 0 0;
+
+}
+
+.OrderGoldBtn .layui-layer-btn1 {
+    width: 30%;
+    display: block;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    background-color: #afb6ac;
+    color: #ffffff;
+}
+select[name=wkind],select[name=wstar]{
+    font-size: 24px;
+}
