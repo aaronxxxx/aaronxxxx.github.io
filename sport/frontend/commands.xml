@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!-- sleep:3秒 -->
-  <client type="lottery" sleep="3" />
-</root>

@@ -1,5 +1,0 @@
-http://63605.com/   要访问的网站
-business  功能内嵌的页面
-home  首页
-member  会员导航
-naviframe  底部导航iframe
