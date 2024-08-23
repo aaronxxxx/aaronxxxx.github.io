@@ -4540,9 +4540,9 @@ label {
 .contact-area {
     padding: 130px 0 120px;
 }
-.contact-wrap {
+/* .contact-wrap {
     margin: 0 90px 0 0;
-}
+} */
 .contact-title {
     margin: 0 0 80px;
 }
@@ -4579,6 +4579,7 @@ label {
     height: 60px;
     clip-path: polygon(97% 0, 100% 35%, 100% 100%, 3% 100%, 0 70%, 0 0);
     margin-bottom: 0;
+    text-align: center;
 }
 .contact-form .form-grp textarea {
     background: #171717;
