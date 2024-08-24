@@ -1306,11 +1306,15 @@
 .tournament-area-bg .live-streams-area {
     padding: 110px 0 117px;
 }
-
 .squad-details-area {
     padding: 120px 0 120px;
 }
-
+.category-menu {
+    right: -100%;
+}
+.category-menu-target {
+    display: block;
+}
 }
 
 

@@ -1,47 +1,3 @@
-/*
-  Theme Name: Halda - eSports Gaming React-Js Template.
-  Support: admin@gmail.com
-  Description: Halda - eSports Gaming React-Js Template.
-  Version: 1.0
-*/
-
-/* CSS Index
------------------------------------
-1. Theme default css
-2. Header
-3. Mobile-menu
-4. Search
-5. Breadcrumb
-6. Banner
-7. About
-9. Just-gamer-area
-10. Tournament
-11. Team
-12. Squad-area
-13. RoadMap-area
-14. Gallery
-15. Live-stream
-16. Stem
-17. My-match
-18. Give-player
-19. Live-match
-20. Offer
-21. Counter
-22. Countdown
-23. Match single
-24. Shop
-25. Pagination
-26. Blog
-27. Blog-details
-28. Contact
-29. Newsletter
-30. Footer
-31. Preloader
-
-*/
-
-
-
 /* 1. Theme default css */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap');
 @font-face {
@@ -1831,7 +1787,7 @@ label {
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: url(../img/images/section_line.png);
+    background-image: url(../img/section_line.png);
     height: 8px;
     width: 120px;
     margin: 0 auto;
@@ -3104,8 +3060,8 @@ label {
 .offer-item {
     display: block;
     height: 100%;
-    background: #2475c4;
-    box-shadow: 0px 4px 11.96px 1.04px rgba(0, 77, 128, 0.56);
+    background: #171717;
+    border-radius: 20px;
     padding: 45px 30px;
     position: relative;
     z-index: 1;
@@ -3338,6 +3294,7 @@ label {
     width: 100%;
 }
 .shop-thumb .shop-img {
+    max-width: 50%;
     position: absolute;
     left: 50%;
     top: calc(50% + 15px);
@@ -5048,4 +5005,49 @@ label {
     line-height: 1;
     color: #fff;
     z-index: 1;
+}
+.category-menu {
+    position: fixed;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #2475c4;
+    transition: 1s ease;
+    clip-path: polygon(20% 0%, 0% 20%, 0% 80%, 20% 100%, 100% 100%, 100% 0%);
+    z-index: 99;
+    padding: 20px;
+    transition: all .5s ease;
+}
+.category-menu.show {
+    right: 0;
+}
+.category-menu a {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.category-menu a:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+.category-menu-target {
+    display: none;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    z-index: 99;
+    color: #fff;
+    text-align: center;
+    background: #2475c4;
+    border-radius: 50%;
+    transition: all .5s ease;
+}
+.category-menu-target.active i {
+    transform: rotate(180deg);
 }
